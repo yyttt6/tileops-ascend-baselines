@@ -1,0 +1,29 @@
+{
+  "status": "validated_local_commits_not_pushed_not_merged_not_published",
+  "source_branch": "fix/shared-expert-baseline28-20261113",
+  "website_branch": "fix/shared-expert-baseline28-20261113",
+  "source_base": "a517b3765480c4c27f6c2fdb6d9cff10e7b68493",
+  "source_math_commit": "e9f7eb2b",
+  "source_commit": "86375428c9cac688b28fe23187f9c2bcfc060f11",
+  "website_base": "18acebccd851a17a169fecf367798a48c2ae00b4",
+  "website_commit": "9fcb4184b91905da487d1fb83fd788f431ee2467",
+  "snapshot_sha256": "571c36b1ae082f1452ef2fe2f1a32700a7a194a247f670993a631e04ea505194",
+  "observed_remote_heads": {
+    "ascend950-v0.1.0": "a517b3765480c4c27f6c2fdb6d9cff10e7b68493",
+    "website_main": "18acebccd851a17a169fecf367798a48c2ae00b4"
+  },
+  "cpu_tests": {
+    "reference_and_routed": 15,
+    "CI": 151,
+    "website": 104
+  },
+  "npu_cases": 28,
+  "raw_windows": 420,
+  "new_torch_ids_selected": 28,
+  "other_current_baseline_rows_unchanged": 7707,
+  "historical_rows": 261,
+  "source_memory_branch_read_only": ".agent_memory/THREADS/baseline-inspector-20261023",
+  "updated_at": "2026-11-13T11:44:40.052764+00:00",
+  "bundles_verified": true,
+  "source_lint": "ruff checked workloads/moe.py and tests/test_shared_expert_rounding.py: All checks passed"
+}

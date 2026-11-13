@@ -187876,5 +187876,4755 @@
     "raw_included": false,
     "reason": "gate absent or family failure limit",
     "attempts": []
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "00",
+    "key": [
+      "torch-eager",
+      "SharedExpertMLPFwdOp",
+      "glm45-t32-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "glm45-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "measurement_id": "46e5acdaf5024b4e759df608c8b9896ca451fc8781d18a1b0153b6b7ec8dfe19",
+    "previous_measurement_id": "1de72e494cd4bba209033ea7c54d892a974044a8c546da0fb2190dace388ead1",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 0.1143762,
+      "latency_samples_ms": [
+        0.116777,
+        0.115447,
+        0.113527,
+        0.115094,
+        0.111302,
+        0.117118,
+        0.1144,
+        0.112023,
+        0.113672,
+        0.113302,
+        0.116361,
+        0.115325,
+        0.114759,
+        0.112717,
+        0.113819
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 1,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "01",
+    "key": [
+      "torch-eager",
+      "SharedExpertMLPFwdOp",
+      "ds-v3-t32-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "ds-v3-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "measurement_id": "f962abe86eeb3e67c5a713e8905a25fe4f47ed5aadc4c9e2019d70e75f1cb5a3",
+    "previous_measurement_id": "cea5c4e32ea8980b75353178910d5c95610986976c524de78457ed6269c5c871",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 0.19086046666666667,
+      "latency_samples_ms": [
+        0.194836,
+        0.189785,
+        0.189389,
+        0.19265,
+        0.187683,
+        0.193754,
+        0.190769,
+        0.190086,
+        0.189726,
+        0.189838,
+        0.191114,
+        0.193187,
+        0.189893,
+        0.1895,
+        0.190697
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 1,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "02",
+    "key": [
+      "torch-eager",
+      "SharedExpertMLPFwdOp",
+      "ds-v3-t32-float16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "ds-v3-t32-float16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ]
+      },
+      "family": "moe"
+    },
+    "measurement_id": "8fa4feb4e8687a7eef0119d564fdc74167b8741ddd8d1247e59057768a70258b",
+    "previous_measurement_id": "daf4febe63eb11b4dc1b271bae4bd7206b4c18148106aebd53175387372ec175",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 0.19124893333333332,
+      "latency_samples_ms": [
+        0.194223,
+        0.189496,
+        0.190024,
+        0.193427,
+        0.188283,
+        0.195378,
+        0.192531,
+        0.190552,
+        0.191923,
+        0.189696,
+        0.189124,
+        0.192905,
+        0.19043,
+        0.190623,
+        0.190119
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 1,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "03",
+    "key": [
+      "torch-eager",
+      "SharedExpertMLPFwdOp",
+      "kimi-k2-t1-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "kimi-k2-t1-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "measurement_id": "23e762c5131f151e9bee295e709ebe6ed9592fd49ffa147603aa1c58c5d08f8e",
+    "previous_measurement_id": "7d7aa4c7cc97391ef7461cd6f77bf96fe04f5f016b1a14fe086389b0dafabcb1",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 1.2975256000000002,
+      "latency_samples_ms": [
+        1.291983,
+        1.293629,
+        1.298465,
+        1.295883,
+        1.294743,
+        1.297848,
+        1.29871,
+        1.298096,
+        1.295924,
+        1.297402,
+        1.303947,
+        1.295024,
+        1.298578,
+        1.300833,
+        1.301819
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 1,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "04",
+    "key": [
+      "torch-eager",
+      "SharedExpertMLPFwdOp",
+      "ds-v3-t4096-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "ds-v3-t4096-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "measurement_id": "9643383a2a6a8894972a40e604fd7d2bbeb2c156fbd10a9b47589f8c4c6bd015",
+    "previous_measurement_id": "88695c44ff10899686b01fa3c00c17b51e178d4246dade41fc676e93085eef0f",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 13.601705266666668,
+      "latency_samples_ms": [
+        13.602374,
+        13.600399,
+        13.604005,
+        13.602461,
+        13.600154,
+        13.601382,
+        13.60032,
+        13.601708,
+        13.602487,
+        13.600167,
+        13.601585,
+        13.600798,
+        13.601547,
+        13.603496,
+        13.602696
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 1,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "05",
+    "key": [
+      "torch-eager",
+      "SharedExpertMLPFwdOp",
+      "kimi-k2-t512-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "kimi-k2-t512-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "measurement_id": "aa00fefecf3ab59a22a8a2eb4586208ec608a1bf4a2a78e3444ae62b65777d90",
+    "previous_measurement_id": "507562c6051c9cf7d1715341caab33026b1f1b0699bbb5d3a7d658299f765df4",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 16.303579933333335,
+      "latency_samples_ms": [
+        16.303724,
+        16.308316,
+        16.301837,
+        16.306993,
+        16.303743,
+        16.304433,
+        16.299855,
+        16.304756,
+        16.299646,
+        16.305565,
+        16.3036,
+        16.302234,
+        16.304118,
+        16.304541,
+        16.300338
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 1,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "06",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "glm45-t1-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t1-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "f3b2457193d4941d8af3cfc5785bc78a3a7cdd96c583dea57d23896f2de1f1f4",
+    "previous_measurement_id": "7e602a94227de58ba15d5f72925b4756e724594f18ce8800151800ad6bd1971f",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 1.1765252666666666,
+      "latency_samples_ms": [
+        1.178402,
+        1.154762,
+        1.188327,
+        1.189921,
+        1.178775,
+        1.173719,
+        1.173697,
+        1.183967,
+        1.171727,
+        1.166376,
+        1.171314,
+        1.190654,
+        1.1703,
+        1.16952,
+        1.186418
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "07",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "ds-v3-grouped-t1-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t1-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "c2c1806a40478eca4df92089a62f2efc0d7023b4b4e11a9b0524d934c0cdeded",
+    "previous_measurement_id": "67c27c037bb67d1d5162b58cc438362179d93d2985dd23ccbd3d84c83505a7e4",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 2.0208476,
+      "latency_samples_ms": [
+        2.024774,
+        2.016774,
+        2.021666,
+        2.022763,
+        2.007164,
+        2.008952,
+        2.027601,
+        2.017011,
+        2.030832,
+        2.011723,
+        2.049789,
+        1.99107,
+        2.025566,
+        2.006731,
+        2.050298
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "08",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "kimi-k2-t1-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t1-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "226c565ecdcf7b4cd8297d6edc0480e45d040daa1f853a6ab7d36ec7ac7f8226",
+    "previous_measurement_id": "1ece87c322291c0901e2e511ceff78684d2828eb47d52356b063379a10384775",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 3.789405466666667,
+      "latency_samples_ms": [
+        3.805223,
+        3.757397,
+        3.80781,
+        3.793037,
+        3.808695,
+        3.774345,
+        3.733267,
+        3.79911,
+        3.83412,
+        3.817838,
+        3.760276,
+        3.799775,
+        3.778432,
+        3.797894,
+        3.773863
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "09",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "glm45-t32-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "3b7289a51ed5bdc8683bd5010f3247c58c01ddbdf2b6677828b95f8702ea9882",
+    "previous_measurement_id": "3e81b0804673a4bd3b2dc92d9283701d3b953867b0cf5bf3ba185db08f63d8ae",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 8.777801933333334,
+      "latency_samples_ms": [
+        8.780762,
+        8.780453,
+        8.79616,
+        8.758271,
+        8.797625,
+        8.754405,
+        8.763454,
+        8.762882,
+        8.792167,
+        8.765713,
+        8.792166,
+        8.799797,
+        8.790798,
+        8.753772,
+        8.778604
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "10",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "glm45-t64-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t64-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "27174342b49cad4b1d29d9050682715df5557ec33511ad48eab1c3d36303bd1c",
+    "previous_measurement_id": "7fa9fb203f1934014f3c14eaf0a139f003203f1f47aa3648638778ca3f2eec27",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 9.198180866666668,
+      "latency_samples_ms": [
+        9.182483,
+        9.221132,
+        9.199836,
+        9.228453,
+        9.216195,
+        9.175854,
+        9.211339,
+        9.171423,
+        9.195556,
+        9.20651,
+        9.186967,
+        9.214514,
+        9.173027,
+        9.191058,
+        9.198366
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "11",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "glm45-t128-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t128-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "8c65ae96290ec4be968f614d2b145d80f421ae24b4f48268c01c997500776c14",
+    "previous_measurement_id": "6b080690995a0c2d6ab28be9cfe1281b17321cb7f96b5436faf891f42c9a70e6",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 11.426601866666667,
+      "latency_samples_ms": [
+        11.451112,
+        11.429933,
+        11.427435,
+        11.418215,
+        11.384428,
+        11.393057,
+        11.407328,
+        11.424766,
+        11.477038,
+        11.437989,
+        11.42784,
+        11.442645,
+        11.427333,
+        11.403246,
+        11.446663
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "12",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "ds-v3-grouped-t32-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "46e832766029b4f921aa3020ca574baecf412e8c65099ad3f23015cc09cb425c",
+    "previous_measurement_id": "45d36b0d6b2c28ee6c507b4059e054d1e16b4663cba1cf04f0b317710e1d45a9",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 16.856785133333332,
+      "latency_samples_ms": [
+        16.877193,
+        16.864636,
+        16.846183,
+        16.832208,
+        16.875073,
+        16.843922,
+        16.859795,
+        16.832404,
+        16.870266,
+        16.829368,
+        16.855448,
+        16.871672,
+        16.854452,
+        16.891539,
+        16.847618
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "13",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "ds-v3-grouped-t32-float16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t32-float16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "gating_output": [
+          [
+            32,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "gating_output": [
+          [
+            32,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "c1eeba83145f7998756e8e96b7a89c9ccc9e6348c6647e8a61873f39d8ce2166",
+    "previous_measurement_id": "923d15a644434e286a585495a6a4ace2ee217a19eee12d3478c60a4ba17634d0",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 16.8561242,
+      "latency_samples_ms": [
+        16.848632,
+        16.842035,
+        16.848517,
+        16.853111,
+        16.900059,
+        16.859858,
+        16.883895,
+        16.831297,
+        16.854098,
+        16.822322,
+        16.869144,
+        16.87206,
+        16.852132,
+        16.889306,
+        16.815397
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "14",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "kimi-k2-t32-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "a8a1c7ced8603514693bb9212b79ce678c2b85d7714eba7060c13ddb793f29f0",
+    "previous_measurement_id": "875a9a5cd23e07b97556acdf95c0ddadd043da4d3ab792fc3ee7f3809fbd51b1",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 19.931373733333334,
+      "latency_samples_ms": [
+        19.920182,
+        19.915473,
+        19.915431,
+        19.954503,
+        19.929052,
+        19.944081,
+        19.942985,
+        19.934699,
+        19.907455,
+        19.944881,
+        19.908251,
+        19.949858,
+        19.950242,
+        19.941286,
+        19.912227
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "15",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "glm45-t512-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t512-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "4ac77945c7b19b5f327cee0d55f3bf6c6ff43e3538a0c06f7fd8f5220d006ced",
+    "previous_measurement_id": "ad6bd95bb343456a885297661b6e37ce77f1e8c1e16f8fde8510fdfdf4bfe92e",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 20.232309,
+      "latency_samples_ms": [
+        20.23043,
+        20.216457,
+        20.217882,
+        20.207152,
+        20.245332,
+        20.24967,
+        20.232293,
+        20.207956,
+        20.249323,
+        20.199933,
+        20.214103,
+        20.249612,
+        20.242279,
+        20.252346,
+        20.269867
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "16",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "ds-v3-grouped-t64-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t64-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "1a887b038f4c04b66930d8716f4f433bc25665b102f2caea9b5ae6d375ca5deb",
+    "previous_measurement_id": "14961d283638f8b2a1473cfedd0813c99dc92963379d115e6dffd7bfe2621593",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 20.71816433333333,
+      "latency_samples_ms": [
+        20.729242,
+        20.696438,
+        20.694001,
+        20.754253,
+        20.715426,
+        20.743504,
+        20.751871,
+        20.704517,
+        20.684215,
+        20.70275,
+        20.703383,
+        20.726736,
+        20.716018,
+        20.718727,
+        20.731384
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "17",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "kimi-k2-t64-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t64-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "75695f44bc4fe2cfca2ffbb72f8721b29e537510fa999f12d1c55d7624aa1f72",
+    "previous_measurement_id": "90895a019a2ea7ab233359a2bbcaf089b4f7a2c792de70f898c690cf8cd88890",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 24.542129199999998,
+      "latency_samples_ms": [
+        24.535308,
+        24.547306,
+        24.545053,
+        24.55906,
+        24.54158,
+        24.573859,
+        24.533366,
+        24.526532,
+        24.529061,
+        24.549283,
+        24.55905,
+        24.536796,
+        24.518243,
+        24.530577,
+        24.546864
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "18",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "ds-v3-grouped-t128-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t128-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "1206f76ea368f4bf09312e96dd333c71e222960a69a8299407482fe0fa97004b",
+    "previous_measurement_id": "6404dcfaab36abb527a60401c11caeaa74bb24741e93a07d3916ab7077017844",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 25.8459334,
+      "latency_samples_ms": [
+        25.84368,
+        25.830522,
+        25.85295,
+        25.827597,
+        25.86373,
+        25.864224,
+        25.844768,
+        25.82506,
+        25.853198,
+        25.842758,
+        25.865101,
+        25.831391,
+        25.867792,
+        25.852772,
+        25.823458
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "19",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "kimi-k2-t128-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t128-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "d50054c7f44acf7a7fddaec97355ed6a3c09a1f41342d08b572eab3d9a5c69c8",
+    "previous_measurement_id": "3d120877ea9c1f158d229cea7926fb7f256308360024b0b53e0e4511f4c89569",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 33.41987266666667,
+      "latency_samples_ms": [
+        33.414032,
+        33.395991,
+        33.443269,
+        33.461779,
+        33.419197,
+        33.407934,
+        33.400257,
+        33.391395,
+        33.420079,
+        33.388336,
+        33.427493,
+        33.433239,
+        33.416136,
+        33.436125,
+        33.442828
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "20",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "ds-v3-grouped-t512-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t512-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "c062e11a465dd679fec820cac4cf966bc69fc0cac477314f23fff97c93f070d8",
+    "previous_measurement_id": "e26f192df7b0632b1ddc69bfb14554664f8d1448042cd823be010435f0ff070e",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 42.29939406666667,
+      "latency_samples_ms": [
+        42.310167,
+        42.324704,
+        42.25603,
+        42.31819,
+        42.309819,
+        42.29263,
+        42.280207,
+        42.282469,
+        42.288673,
+        42.305288,
+        42.291437,
+        42.336411,
+        42.293076,
+        42.324242,
+        42.277568
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "21",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "glm45-t2048-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t2048-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "fc6794c2c4d0e12f8351d1a7f8c12ae75ef14d813ca093b1e54a7357aecaf4fd",
+    "previous_measurement_id": "ebe3dbe2983d2c5c843feb3aedcdae4d85495caa6e69fb9ec06c4333d438b889",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 48.026531266666666,
+      "latency_samples_ms": [
+        48.022732,
+        48.009391,
+        48.042132,
+        48.027355,
+        48.057362,
+        48.014081,
+        48.010113,
+        48.066906,
+        48.036549,
+        48.009374,
+        48.05931,
+        48.031034,
+        48.025066,
+        47.988487,
+        47.998077
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "22",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "kimi-k2-t512-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t512-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "c6b29fae3a3f067ad1890f0d0f4f8fd5a69a2fd990936ffbf13b37007ef2136b",
+    "previous_measurement_id": "dc817e3e533fcdaa7793f64123675f2d4bf47c2dad366a3a3235c9d37b7142d9",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 61.3103518,
+      "latency_samples_ms": [
+        61.299621,
+        61.34121,
+        61.298385,
+        61.308106,
+        61.286991,
+        61.298684,
+        61.270999,
+        61.313013,
+        61.292072,
+        61.270259,
+        61.37437,
+        61.338561,
+        61.319156,
+        61.326651,
+        61.317199
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "23",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "glm45-t4096-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t4096-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "e48ee7236315d6aed8b4b86ad3c08509f094f4510015d85fc5f69a61757bdaf8",
+    "previous_measurement_id": "edd19912354689a52b889f848a23475dcc23567c58db7d2a53200130d4b7d466",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 84.90671706666666,
+      "latency_samples_ms": [
+        84.90738,
+        84.905963,
+        84.898843,
+        84.93467,
+        84.884901,
+        84.91139,
+        84.900262,
+        84.904056,
+        84.887545,
+        84.920649,
+        84.906395,
+        84.929344,
+        84.908634,
+        84.895361,
+        84.905363
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "24",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "ds-v3-grouped-t2048-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t2048-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "0bbf63e6387697997a72368480e8e8db8954ff507c8daa5835404005bb0ffafc",
+    "previous_measurement_id": "1d761dfeec478ee74f756f2f9789f838dba6fe1537bd537b3e057c9449cb80af",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 94.09505940000001,
+      "latency_samples_ms": [
+        94.11511,
+        94.077756,
+        94.066079,
+        94.113957,
+        94.05468,
+        94.133392,
+        94.10829,
+        94.096992,
+        94.105404,
+        94.088589,
+        94.091787,
+        94.094974,
+        94.105741,
+        94.078373,
+        94.094767
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "25",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "kimi-k2-t2048-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t2048-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "a8577a4d2b51f647d9d0a948ddf1ed270afdb0adcdebf1c7f55d5cf4d4da0168",
+    "previous_measurement_id": "cec9ee99de7a5cfc5eabe7edd4f49fb76c28cfe1a6c17e8084c295a58fced616",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 156.35369546666666,
+      "latency_samples_ms": [
+        156.332242,
+        156.324471,
+        156.340318,
+        156.368212,
+        156.343178,
+        156.371708,
+        156.415493,
+        156.338776,
+        156.33422,
+        156.344482,
+        156.392661,
+        156.347982,
+        156.347825,
+        156.394515,
+        156.309349
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "26",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "ds-v3-grouped-t4096-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t4096-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "3345e3c973323f4d7d337dade4c8a814a269b84b33e45d0797d064a6062a953f",
+    "previous_measurement_id": "7932d29df997003ee976b2bad11376ad87dc7479b0fca70ce40a6bdcff969fc4",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 162.29764266666666,
+      "latency_samples_ms": [
+        162.270942,
+        162.282718,
+        162.227502,
+        162.288833,
+        162.296995,
+        162.319316,
+        162.322034,
+        162.315367,
+        162.299743,
+        162.275367,
+        162.302681,
+        162.334584,
+        162.327264,
+        162.30375,
+        162.297544
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
+  },
+  {
+    "campaign": "baseline-shared28-20261113",
+    "id": "27",
+    "key": [
+      "torch-eager",
+      "FusedMoESharedExpertFwdOp",
+      "kimi-k2-t4096-bfloat16"
+    ],
+    "status": "accepted",
+    "case": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t4096-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "measurement_id": "940dd0efde46d4e7b37b40ebe9e90035e2264a36a5a20671a5384c38d618344a",
+    "previous_measurement_id": "72fc5546d7c4e66921b9d5067598ea46efa706ae25ff42a9d554f537b1900df7",
+    "raw_sha256": "d07cda58e78a1bb4d6b5295bc1b5ac971512f6e34888b36b9ea63153815b9634",
+    "raw_included": false,
+    "measurement_summary": {
+      "latency_ms": 275.09487633333333,
+      "latency_samples_ms": [
+        275.110029,
+        275.021289,
+        275.106597,
+        275.036798,
+        275.106653,
+        275.120819,
+        275.050599,
+        275.132962,
+        275.069664,
+        275.08867,
+        275.105574,
+        275.149319,
+        275.155486,
+        275.111981,
+        275.056705
+      ],
+      "measurement_protocol": "ascend950-isolated-ffts-v3"
+    },
+    "validation": {
+      "outputs": 2,
+      "raw_windows_replayed": 15,
+      "guard_valid": true,
+      "source_manifest_sha256": "af242a340e7f23b7fc6a2b1b32468e6ee32d5d8a83cd157f66d4892ed2dd410c"
+    }
   }
 ]

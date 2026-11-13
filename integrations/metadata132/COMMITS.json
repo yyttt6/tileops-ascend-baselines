@@ -1,0 +1,30 @@
+{
+  "branch": "fix/baseline-metadata132-20261113",
+  "bases": {
+    "tileops": "a517b3765480c4c27f6c2fdb6d9cff10e7b68493",
+    "site": "18acebccd851a17a169fecf367798a48c2ae00b4"
+  },
+  "commits": {
+    "tileops": "82b01b3c00a451ccee6e8966c9bd8b0c42eed747",
+    "site": "253e95f5655dcd3ea66c6e6903ba4abcd31acc33"
+  },
+  "files": {
+    "tileops": [
+      "scripts/ci/baseline_contracts.py",
+      "scripts/ci/tests/fixtures/metadata132_cases.json",
+      "scripts/ci/tests/test_metadata132_aliases.py"
+    ],
+    "site": [
+      "scripts/baseline_contracts.py",
+      "scripts/baseline_contracts_v3.py",
+      "scripts/nightly_server2.py",
+      "scripts/nightly_snapshot.py",
+      "tests/fixtures/metadata132_cases.json",
+      "tests/test_metadata132_aliases.py",
+      "tests/test_metadata132_versioning.py"
+    ]
+  },
+  "pushed": false,
+  "merged": false,
+  "published": false
+}

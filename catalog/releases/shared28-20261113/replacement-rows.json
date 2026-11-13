@@ -1,0 +1,3940 @@
+[
+  {
+    "library": "torch-eager",
+    "op": "SharedExpertMLPFwdOp",
+    "case": "glm45-t32-bfloat16",
+    "latency_us": 114.3762,
+    "samples": 15,
+    "measurement_id": "46e5acdaf5024b4e759df608c8b9896ca451fc8781d18a1b0153b6b7ec8dfe19",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "glm45-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "SharedExpertMLPFwdOp",
+    "case": "ds-v3-t32-bfloat16",
+    "latency_us": 190.86046666666667,
+    "samples": 15,
+    "measurement_id": "f962abe86eeb3e67c5a713e8905a25fe4f47ed5aadc4c9e2019d70e75f1cb5a3",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "ds-v3-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "SharedExpertMLPFwdOp",
+    "case": "ds-v3-t32-float16",
+    "latency_us": 191.24893333333333,
+    "samples": 15,
+    "measurement_id": "8fa4feb4e8687a7eef0119d564fdc74167b8741ddd8d1247e59057768a70258b",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "ds-v3-t32-float16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ]
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "SharedExpertMLPFwdOp",
+    "case": "kimi-k2-t1-bfloat16",
+    "latency_us": 1297.5256000000002,
+    "samples": 15,
+    "measurement_id": "23e762c5131f151e9bee295e709ebe6ed9592fd49ffa147603aa1c58c5d08f8e",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "kimi-k2-t1-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "SharedExpertMLPFwdOp",
+    "case": "ds-v3-t4096-bfloat16",
+    "latency_us": 13601.705266666668,
+    "samples": 15,
+    "measurement_id": "9643383a2a6a8894972a40e604fd7d2bbeb2c156fbd10a9b47589f8c4c6bd015",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "ds-v3-t4096-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "SharedExpertMLPFwdOp",
+    "case": "kimi-k2-t512-bfloat16",
+    "latency_us": 16303.579933333334,
+    "samples": 15,
+    "measurement_id": "aa00fefecf3ab59a22a8a2eb4586208ec608a1bf4a2a78e3444ae62b65777d90",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "SharedExpertMLPFwdOp",
+      "case_id": "kimi-k2-t512-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "glm45-t1-bfloat16",
+    "latency_us": 1176.5252666666665,
+    "samples": 15,
+    "measurement_id": "f3b2457193d4941d8af3cfc5785bc78a3a7cdd96c583dea57d23896f2de1f1f4",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t1-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "ds-v3-grouped-t1-bfloat16",
+    "latency_us": 2020.8476000000003,
+    "samples": 15,
+    "measurement_id": "c2c1806a40478eca4df92089a62f2efc0d7023b4b4e11a9b0524d934c0cdeded",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t1-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "kimi-k2-t1-bfloat16",
+    "latency_us": 3789.405466666667,
+    "samples": 15,
+    "measurement_id": "226c565ecdcf7b4cd8297d6edc0480e45d040daa1f853a6ab7d36ec7ac7f8226",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t1-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            1,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            1,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "glm45-t32-bfloat16",
+    "latency_us": 8777.801933333334,
+    "samples": 15,
+    "measurement_id": "3b7289a51ed5bdc8683bd5010f3247c58c01ddbdf2b6677828b95f8702ea9882",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "glm45-t64-bfloat16",
+    "latency_us": 9198.180866666667,
+    "samples": 15,
+    "measurement_id": "27174342b49cad4b1d29d9050682715df5557ec33511ad48eab1c3d36303bd1c",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t64-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "glm45-t128-bfloat16",
+    "latency_us": 11426.601866666668,
+    "samples": 15,
+    "measurement_id": "8c65ae96290ec4be968f614d2b145d80f421ae24b4f48268c01c997500776c14",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t128-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "ds-v3-grouped-t32-bfloat16",
+    "latency_us": 16856.78513333333,
+    "samples": 15,
+    "measurement_id": "46e832766029b4f921aa3020ca574baecf412e8c65099ad3f23015cc09cb425c",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "ds-v3-grouped-t32-float16",
+    "latency_us": 16856.1242,
+    "samples": 15,
+    "measurement_id": "c1eeba83145f7998756e8e96b7a89c9ccc9e6348c6647e8a61873f39d8ce2166",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t32-float16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "gating_output": [
+          [
+            32,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "gating_output": [
+          [
+            32,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "float16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "float16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "kimi-k2-t32-bfloat16",
+    "latency_us": 19931.373733333334,
+    "samples": 15,
+    "measurement_id": "a8a1c7ced8603514693bb9212b79ce678c2b85d7714eba7060c13ddb793f29f0",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t32-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            32,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "glm45-t512-bfloat16",
+    "latency_us": 20232.309,
+    "samples": 15,
+    "measurement_id": "4ac77945c7b19b5f327cee0d55f3bf6c6ff43e3538a0c06f7fd8f5220d006ced",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t512-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "ds-v3-grouped-t64-bfloat16",
+    "latency_us": 20718.16433333333,
+    "samples": 15,
+    "measurement_id": "1a887b038f4c04b66930d8716f4f433bc25665b102f2caea9b5ae6d375ca5deb",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t64-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "kimi-k2-t64-bfloat16",
+    "latency_us": 24542.1292,
+    "samples": 15,
+    "measurement_id": "75695f44bc4fe2cfca2ffbb72f8721b29e537510fa999f12d1c55d7624aa1f72",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t64-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            64,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "ds-v3-grouped-t128-bfloat16",
+    "latency_us": 25845.933399999998,
+    "samples": 15,
+    "measurement_id": "1206f76ea368f4bf09312e96dd333c71e222960a69a8299407482fe0fa97004b",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t128-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "kimi-k2-t128-bfloat16",
+    "latency_us": 33419.87266666667,
+    "samples": 15,
+    "measurement_id": "d50054c7f44acf7a7fddaec97355ed6a3c09a1f41342d08b572eab3d9a5c69c8",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t128-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            128,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "ds-v3-grouped-t512-bfloat16",
+    "latency_us": 42299.394066666675,
+    "samples": 15,
+    "measurement_id": "c062e11a465dd679fec820cac4cf966bc69fc0cac477314f23fff97c93f070d8",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t512-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "glm45-t2048-bfloat16",
+    "latency_us": 48026.531266666665,
+    "samples": 15,
+    "measurement_id": "fc6794c2c4d0e12f8351d1a7f8c12ae75ef14d813ca093b1e54a7357aecaf4fd",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t2048-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "kimi-k2-t512-bfloat16",
+    "latency_us": 61310.3518,
+    "samples": 15,
+    "measurement_id": "c6b29fae3a3f067ad1890f0d0f4f8fd5a69a2fd990936ffbf13b37007ef2136b",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t512-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            512,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            512,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "glm45-t4096-bfloat16",
+    "latency_us": 84906.71706666666,
+    "samples": 15,
+    "measurement_id": "e48ee7236315d6aed8b4b86ad3c08509f094f4510015d85fc5f69a61757bdaf8",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "glm45-t4096-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            160
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            160,
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            160,
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            160
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            3072,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            5120,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            5120
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "ds-v3-grouped-t2048-bfloat16",
+    "latency_us": 94095.05940000001,
+    "samples": 15,
+    "measurement_id": "0bbf63e6387697997a72368480e8e8db8954ff507c8daa5835404005bb0ffafc",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t2048-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "kimi-k2-t2048-bfloat16",
+    "latency_us": 156353.69546666666,
+    "samples": 15,
+    "measurement_id": "a8577a4d2b51f647d9d0a948ddf1ed270afdb0adcdebf1c7f55d5cf4d4da0168",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t2048-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            2048,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            2048,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "ds-v3-grouped-t4096-bfloat16",
+    "latency_us": 162297.64266666665,
+    "samples": 15,
+    "measurement_id": "3345e3c973323f4d7d337dade4c8a814a269b84b33e45d0797d064a6062a953f",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "ds-v3-grouped-t4096-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            256
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            256,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            256,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.5,
+        "num_expert_group": 8,
+        "topk_group": 4,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  },
+  {
+    "library": "torch-eager",
+    "op": "FusedMoESharedExpertFwdOp",
+    "case": "kimi-k2-t4096-bfloat16",
+    "latency_us": 275094.8763333333,
+    "samples": 15,
+    "measurement_id": "940dd0efde46d4e7b37b40ebe9e90035e2264a36a5a20671a5384c38d618344a",
+    "protocol": "ascend950-isolated-ffts-v3",
+    "parser_revision": "v3-task-coverage-full32-20261103",
+    "workload": {
+      "op": "FusedMoESharedExpertFwdOp",
+      "case_id": "kimi-k2-t4096-bfloat16",
+      "tensors": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ]
+      },
+      "params": {
+        "hidden_states": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "gating_output": [
+          [
+            4096,
+            384
+          ],
+          "float32"
+        ],
+        "w_gate_up": [
+          [
+            384,
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "w_down": [
+          [
+            384,
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "correction_bias": [
+          [
+            384
+          ],
+          "float32"
+        ],
+        "shared_w_gate_up": [
+          [
+            36864,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "shared_w_down": [
+          [
+            7168,
+            18432
+          ],
+          "bfloat16"
+        ],
+        "shared_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "routed_output": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "top_k": 8,
+        "scoring_func": "sigmoid",
+        "renormalize": true,
+        "routed_scaling_factor": 2.827,
+        "num_expert_group": 1,
+        "topk_group": 1,
+        "tp_size": 1,
+        "tp_rank": 0,
+        "activation": "silu_and_mul"
+      },
+      "family": "moe"
+    },
+    "ratio": null,
+    "tileops_latency_us": null
+  }
+]

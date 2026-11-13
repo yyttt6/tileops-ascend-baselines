@@ -1,0 +1,12 @@
+{
+  "source_sha256": "5ac5c5f1660a0e76201037b036e9d3d49335d15bab749b6453f4b071671c0bee",
+  "manifest": "history/v2-marker-paused/SOURCES.json",
+  "reused_ids": [
+    "15",
+    "21",
+    "23",
+    "24",
+    "26"
+  ],
+  "reason": "Complete input/CPU oracle payloads retained from previous preparation; all generator, checker, formula, dtype and handoff bytes unchanged. Only device timer selection and controller output paths changed. No performance sample reused."
+}

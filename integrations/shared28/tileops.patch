@@ -1,0 +1,84 @@
+diff --git a/.github/workflows/ascend950.yml b/.github/workflows/ascend950.yml
+index 9071c9d1..b93650ba 100644
+--- a/.github/workflows/ascend950.yml
++++ b/.github/workflows/ascend950.yml
+@@ -44,7 +44,7 @@ jobs:
+       - uses: actions/checkout@v4
+         with:
+           repository: yyttt6/TileOPs.github.io
+-          ref: 8cc05d7b4d1bfb4f07ed9109d8e6ea71f0791c65
++          ref: 9fcb4184b91905da487d1fb83fd788f431ee2467
+           path: baseline-cache
+           persist-credentials: false
+       - name: Select affected operators without a device
+@@ -70,7 +70,7 @@ jobs:
+       - name: Package exact sources for isolated runners
+         id: package
+         run: |
+-          echo "f0b3227010d03c4ae9781d50272cf00d433b979a6909b5b10e5a4bcc113919ea  baseline-cache/data/baseline-cache/snapshot.json" | sha256sum --check
++          echo "571c36b1ae082f1452ef2fe2f1a32700a7a194a247f670993a631e04ea505194  baseline-cache/data/baseline-cache/snapshot.json" | sha256sum --check
+           mkdir -p "$RUNNER_TEMP/ci-sources"
+           git rev-parse HEAD > "$RUNNER_TEMP/ci-sources/source.commit"
+           git archive --format=tar HEAD > "$RUNNER_TEMP/ci-sources/source.tar"
+@@ -259,7 +259,7 @@ jobs:
+       - name: Verify published baseline snapshot
+         working-directory: ${{ runner.temp }}/ci-v010-source-${{ github.run_id }}-${{ github.run_attempt }}-${{ github.job }}
+         run: |
+-          echo "f0b3227010d03c4ae9781d50272cf00d433b979a6909b5b10e5a4bcc113919ea  baseline-cache/data/baseline-cache/snapshot.json" | sha256sum --check
++          echo "571c36b1ae082f1452ef2fe2f1a32700a7a194a247f670993a631e04ea505194  baseline-cache/data/baseline-cache/snapshot.json" | sha256sum --check
+       - name: Changed operator performance with final-output correctness
+         env:
+           PR_BASE: ${{ github.event.pull_request.base.sha || 'origin/ascend950-v0.1.0' }}
+diff --git a/tests/test_shared_expert_rounding.py b/tests/test_shared_expert_rounding.py
+new file mode 100644
+index 00000000..4d4b2488
+--- /dev/null
++++ b/tests/test_shared_expert_rounding.py
+@@ -0,0 +1,23 @@
++"""Shared activation rounding is observable after a cancelling down projection."""
++
++import pytest
++import torch
++
++from workloads.moe import ref_shared_expert
++
++pytestmark = pytest.mark.smoke
++
++
++@pytest.mark.parametrize(
++    ("dtype", "expected"),
++    [(torch.float16, -0.0146484375), (torch.bfloat16, -0.015625)],
++)
++def test_shared_activation_rounds_before_down(dtype, expected):
++    hidden = torch.tensor([[1]], dtype=dtype, device="cpu")
++    gate_up = torch.tensor([[1], [1.015625], [1], [1]], dtype=dtype, device="cpu")
++    down = torch.tensor([[1, -1]], dtype=dtype, device="cpu")
++
++    # FP32 SiLU values are approximately 0.7310586 and 0.7455902. Their
++    # token-dtype difference differs from subtracting first and narrowing last.
++    actual = ref_shared_expert(hidden, gate_up, down)
++    assert torch.equal(actual, torch.tensor([[expected]], dtype=dtype, device="cpu"))
+diff --git a/workloads/moe.py b/workloads/moe.py
+index 0e23b65b..b66640dd 100644
+--- a/workloads/moe.py
++++ b/workloads/moe.py
+@@ -1005,7 +1005,7 @@ class SharedExpertMLPWorkload(CallWorkload):
+     def ref_program(
+         self, hidden_states: torch.Tensor, w_gate_up: torch.Tensor, w_down: torch.Tensor
+     ) -> torch.Tensor:
+-        """``down(silu(gate) * up)`` in fp32, cast to the hidden dtype."""
++        """FP32 projections with the gated activation narrowed before the down projection."""
+         return ref_shared_expert(hidden_states, w_gate_up, w_down)
+ 
+     def verification(self, *inputs):
+@@ -1013,8 +1013,9 @@ class SharedExpertMLPWorkload(CallWorkload):
+ 
+ 
+ def ref_shared_expert(hidden, gate_up, down):
+-    """Shared expert MLP in FP32, narrowed once to the token dtype."""
++    """Use FP32 projections and narrow the activation and output to the token dtype."""
+     act = gated_activation(hidden.float() @ gate_up.float().T, "silu_and_mul")
++    act = act.to(hidden.dtype).float()
+     return (act @ down.float().T).to(hidden.dtype)
+ 
+ 

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "pairs": 28,
+  "raw_windows": 420,
+  "full_outputs": 50,
+  "physical_cores": {
+    "AIC": 32,
+    "AIV": 64
+  },
+  "toolchain_start_end_identical": true,
+  "protocol": "ascend950-isolated-ffts-v3",
+  "CPU_tests": {
+    "reference": 15,
+    "CI": 151,
+    "website": 104
+  },
+  "raw_included": false
+}

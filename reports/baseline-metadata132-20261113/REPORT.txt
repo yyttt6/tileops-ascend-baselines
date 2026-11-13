@@ -1,0 +1,36 @@
+132 case baseline 元数据匹配修复
+
+结果：132/132 恢复生产匹配，共关联480条原始记录；完整2267case目录检查通过，其余2135case匹配集合完全保留。
+范围：只处理7类metadata名称/字段/缺省值映射；其余几十项按用户要求留待后续，28项专项继续暂停。
+
+实现：
+- TileOPs CI与网站使用字节一致的canonicalizer；明确映射5个算子名、4类字段；GQA旧无validation标志仅对应当前False，True/None/0保留不同身份。
+- 保留完整shape/dtype/layout/标量、可选scale与case名称；遇到新旧字段并存直接拒绝，不模糊匹配。
+- 网站新增metadata join v4，冻结旧v3模块；旧v1/v2/v3 nightly继续按原版本重放。此处v4是元数据匹配版本，不是新的device测量协议。
+- baseline原始ID、数值、protocol和workload记录未改写；没有改kernel、参考公式、容差或运行NPU。
+
+验证：
+- 132组真实旧/新metadata正例，逐字段shape/dtype/layout/scale/flag等反例与歧义拒绝。
+- 全132case实际production matching调用修复前均为0、修复后均有torch及相应厂商候选。
+- 2267case索引全量比较：2135非目标case的measurement ID集合不变。
+- CI相关回归288通过；网站完整回归382通过；网站全量ruff检查与改动文件格式检查通过。
+- 站点测试补齐其CI固定9f3f655源码checkout后通过；初次缺该测试依赖的失败日志保留。
+- 6类实际参考计算body在字段重命名后AST相同；DSA空选集边界单列，源码审查仅用于确认字段角色，不能代替全部NPU数值资格。
+
+交付：
+- TileOPs commit: 82b01b3c00a451ccee6e8966c9bd8b0c42eed747
+- Website commit: 253e95f5655dcd3ea66c6e6903ba4abcd31acc33
+- 两仓库本地分支：fix/baseline-metadata132-20261113；补丁tileops.patch/site.patch。尚未push、merge或上线。
+- 独立记忆：.agent_memory/THREADS/baseline-metadata132-20261113；源baseline记忆分支只读。
+
+逐类结果：
+算子 / case数 / 关联原记录数
+GQAPagedFwdOp / 36 / 120
+MHAPagedFwdOp / 7 / 35
+MLADenseDecodeFwdOp / 26 / 100
+DSADenseFwdOp / 17 / 60
+FP8LightningIndexerFwdOp / 18 / 23
+BMMFP8FwdOp / 11 / 60
+MoEGroupedGEMMFwdOp / 17 / 82
+
+边界：480条候选的元数据关联不等于全部厂商二进制、正确性、guard、raw或性能比较已重新验收；原有准入政策与对应证据资格继续适用。

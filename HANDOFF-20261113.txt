@@ -1,0 +1,55 @@
+Baseline 修复交接（2026-11-13）
+
+已完成并归档：
+1. 28个 torch-eager baseline pair：SharedExpertMLPFwdOp 6个，带shared权重的FusedMoESharedExpertFwdOp 22个。修复activation先舍入到输入dtype、再转FP32做down投影；完整组合调用保留。shared-none case不变。
+   28/28通过；420/420原始窗口独立复算；原seed/输入/完整checker/负向控制/输入保护不变；物理32AIC/64AIV，统一栈首尾SHA一致；有效guard；全部isolated-v3、3warmup+15samples及原1GiB flush。原始trace与完整回执保留私有，仓库提供源码、摘要和原始归档SHA。
+2. 132个case的元数据匹配修复（7类算子），恢复480条既有记录的关联。未改变这些记录的ID、延时、协议或计算；不是132个新测pair。完整case清单与验证见reports/baseline-metadata132-20261113/VALIDATION.json。
+
+CI立即接入：
+- 从本仓库本次提交读取 catalog/releases/shared28-20261113/snapshot.json。
+- SHA256: 571c36b1ae082f1452ef2fe2f1a32700a7a194a247f670993a631e04ea505194
+- latest-release.json在同目录；完整28pair清单、旧/新延时及ID见results.csv与replacement-rows.json。
+- integrations/metadata132/tileops/scripts/ci/baseline_contracts.py 是修复132case的生产canonicalizer；配套测试/fixture同目录。应与网站canonicalizer同步，保留旧v3重放。
+- integrations/shared28/tileops.patch 包含参考修正、回归测试及此前本地CI pin；site.patch包含网站数据更新。补丁中的网站提交9fcb418...尚未推到网站仓库；CI紧急使用时应改为本baseline仓库本次提交及上述snapshot路径/SHA，不能照抄未上线的网站ref。
+- integrations/shared28/*.bundle保留精确本地Git提交；integrations/metadata132/保存对应CI/网站补丁。上游TileOPs和网站仓库本轮尚未push/merge/上线，本次只发布baseline归档仓库。
+
+保留边界：
+- 旧28条放入snapshot历史；其余7707条当前记录不变。当前7735条，历史261条。
+- 此前14个marker-v4实验未混入本次结果；本次28条全部重新取得isolated-v3数据。
+- 605项旧清单的合同匹配此前已由CI118/site17上线解决。本轮发现212旧TileOPs测量ID、393缺失ID，按用户要求本次不修复，也不声明其已解决。
+- 其余InstanceNorm补验证及尚待核查项留待后续；不将匹配恢复等同全部厂商重新验收。
+- 历史TileOPs/兼容快照不原地改写；本轮正确参考使用reports/baseline-shared28-20261113/source及对应SOURCES.json。启动脚本是原运行源码，路径需另配置，不是自动执行计划。
+
+132case分类：GQAPaged36、MHAPaged7、MLADenseDecode26、DSADense17、FP8LightningIndexer18、BMMFP8 11、MoEGroupedGEMM17。
+
+本轮统一栈：Python3.12.15 /Torch2.13.0+cpu /torch-npu2.13.0rc1 /TileLang0.1.15 /CANN SDK9.2.0、runtime/OPP9.1.0 /GCC12.3.0；驱动25.6.rc1、固件9.0.0.200.200，物理Ascend950DT_9582 32AIC/64AIV。
+
+28个实际修改的baseline pair（device微秒，旧→新）：
+torch-eager / SharedExpertMLPFwdOp / glm45-t32-bfloat16 : 109.189 → 114.376
+torch-eager / SharedExpertMLPFwdOp / ds-v3-t32-bfloat16 : 185.168 → 190.860
+torch-eager / SharedExpertMLPFwdOp / ds-v3-t32-float16 : 185.417 → 191.249
+torch-eager / SharedExpertMLPFwdOp / kimi-k2-t1-bfloat16 : 1291.909 → 1297.526
+torch-eager / SharedExpertMLPFwdOp / ds-v3-t4096-bfloat16 : 13580.607 → 13601.705
+torch-eager / SharedExpertMLPFwdOp / kimi-k2-t512-bfloat16 : 16277.851 → 16303.580
+torch-eager / FusedMoESharedExpertFwdOp / glm45-t1-bfloat16 : 1177.656 → 1176.525
+torch-eager / FusedMoESharedExpertFwdOp / ds-v3-grouped-t1-bfloat16 : 2015.202 → 2020.848
+torch-eager / FusedMoESharedExpertFwdOp / kimi-k2-t1-bfloat16 : 3790.719 → 3789.405
+torch-eager / FusedMoESharedExpertFwdOp / glm45-t32-bfloat16 : 8826.446 → 8777.802
+torch-eager / FusedMoESharedExpertFwdOp / glm45-t64-bfloat16 : 9233.019 → 9198.181
+torch-eager / FusedMoESharedExpertFwdOp / glm45-t128-bfloat16 : 11426.057 → 11426.602
+torch-eager / FusedMoESharedExpertFwdOp / ds-v3-grouped-t32-bfloat16 : 16840.458 → 16856.785
+torch-eager / FusedMoESharedExpertFwdOp / ds-v3-grouped-t32-float16 : 16848.824 → 16856.124
+torch-eager / FusedMoESharedExpertFwdOp / kimi-k2-t32-bfloat16 : 19927.199 → 19931.374
+torch-eager / FusedMoESharedExpertFwdOp / glm45-t512-bfloat16 : 20207.941 → 20232.309
+torch-eager / FusedMoESharedExpertFwdOp / ds-v3-grouped-t64-bfloat16 : 20709.897 → 20718.164
+torch-eager / FusedMoESharedExpertFwdOp / kimi-k2-t64-bfloat16 : 24540.408 → 24542.129
+torch-eager / FusedMoESharedExpertFwdOp / ds-v3-grouped-t128-bfloat16 : 25826.501 → 25845.933
+torch-eager / FusedMoESharedExpertFwdOp / kimi-k2-t128-bfloat16 : 33392.762 → 33419.873
+torch-eager / FusedMoESharedExpertFwdOp / ds-v3-grouped-t512-bfloat16 : 42283.106 → 42299.394
+torch-eager / FusedMoESharedExpertFwdOp / glm45-t2048-bfloat16 : 47998.684 → 48026.531
+torch-eager / FusedMoESharedExpertFwdOp / kimi-k2-t512-bfloat16 : 61281.078 → 61310.352
+torch-eager / FusedMoESharedExpertFwdOp / glm45-t4096-bfloat16 : 84874.769 → 84906.717
+torch-eager / FusedMoESharedExpertFwdOp / ds-v3-grouped-t2048-bfloat16 : 94050.315 → 94095.059
+torch-eager / FusedMoESharedExpertFwdOp / kimi-k2-t2048-bfloat16 : 156177.767 → 156353.695
+torch-eager / FusedMoESharedExpertFwdOp / ds-v3-grouped-t4096-bfloat16 : 162260.830 → 162297.643
+torch-eager / FusedMoESharedExpertFwdOp / kimi-k2-t4096-bfloat16 : 274797.122 → 275094.876

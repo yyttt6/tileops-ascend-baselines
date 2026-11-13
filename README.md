@@ -5,6 +5,12 @@ and compact result catalogs collected for TileOPs, including the fixed NV
 TileOPs v0.1.0 retest campaigns. This repository is a source and result snapshot,
 not a claim that every included adapter has passed the current contract.
 
+## 2026-11-13 baseline fixes
+
+See [handoff](HANDOFF-20261113.txt): 28 corrected and remeasured torch pairs,
+132-case metadata matching patches, and the exact CI snapshot/SHA.
+Raw traces remain private; upstream CI/site integration is separate.
+
 ## Layout
 
 - `TileOPs/benchmarks/`: public provider registry, library adapters, case definitions and timing support.

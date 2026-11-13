@@ -1,0 +1,90 @@
+{
+  "scope": "Reviewed metadata roles and defaults only; not a full requalification of all provider binaries, numeric outputs or raw timings.",
+  "groups": [
+    {
+      "op": "GQAPagedFwdOp",
+      "renamed_tensor_roles": {
+        "k_pages": "k_cache",
+        "v_pages": "v_cache",
+        "page_table": "block_table"
+      },
+      "computational_body_AST_identical_after_rename": true,
+      "old_file": "/root/dyq/workspace/reports/torch-all2208-20261105/source/workloads/attention/gqa/paged.py",
+      "new_file": "/root/dyq/workspace/reports/baseline-metadata132-20261113/tileops/workloads/attention/gqa/paged.py",
+      "old_sha256": "9261fcf93f228e715295618ee6795e53e1389b6466917ae351f4664906640068",
+      "new_sha256": "dfbdbb19f7f802050f03d257c7e3645a420882eef349bd118db98b49c776cfb7",
+      "validation_default": "Original API has no validation flag; current default False preserves the no-validation identity. Explicit True/None/0 stay distinct. is_causal is explicitly recorded and is not defaulted.",
+      "public_API_sources": {
+        "old_file": "/root/dyq/workspace/reports/torch-all2208-20261105/source/src/tileops/ops/attention/gqa/paged.py",
+        "new_file": "/root/dyq/workspace/reports/baseline-metadata132-20261113/tileops/src/tileops/_ops/attention/gqa/paged.py",
+        "old_sha256": "4fba8a02ce2e8dc2e3299b93cef4d8fecf11b276d14815c3aa92065ab09195a8",
+        "new_sha256": "1395a5e0babb61abfe07f26ac05b941676368c8ccbcc158b1f214c4dc0b526aa"
+      }
+    },
+    {
+      "op": "MHAPagedFwdOp",
+      "renamed_tensor_roles": {
+        "k": "k_cache",
+        "v": "v_cache",
+        "real_seqlen_kv": "cache_seqlens"
+      },
+      "computational_body_AST_identical_after_rename": true,
+      "old_file": "/root/dyq/workspace/reports/torch-all2208-20261105/source/workloads/attention/mha.py",
+      "new_file": "/root/dyq/workspace/reports/baseline-metadata132-20261113/tileops/workloads/attention/mha.py",
+      "old_sha256": "c5b769c365b4e8e29527d96818e43e00ec80b7a44a3fa898cb43d55717bc7768",
+      "new_sha256": "2a6798169fb67c90d78501c52d5a34d64731adead278479cc47be13815f07a38"
+    },
+    {
+      "op": "MLADenseDecodeFwdOp",
+      "renamed_tensor_roles": {},
+      "computational_body_AST_identical_after_rename": true,
+      "old_file": "/root/dyq/workspace/reports/torch-all2208-20261105/source/workloads/attention/mla.py",
+      "new_file": "/root/dyq/workspace/reports/baseline-metadata132-20261113/tileops/workloads/attention/mla.py",
+      "old_sha256": "2f00d6ab2e10da0632438024b42949296012ae9e7c87033345c985f9e7526170",
+      "new_sha256": "32a4fb049579a9efad28fad1441a74e508ccfe43f3cbc2cfa2f090a60446c8c0"
+    },
+    {
+      "op": "BMMFP8FwdOp",
+      "renamed_tensor_roles": {
+        "scale_a": "a_scale",
+        "scale_b": "b_scale"
+      },
+      "computational_body_AST_identical_after_rename": true,
+      "old_file": "/root/dyq/workspace/reports/torch-all2208-20261105/source/workloads/gemm.py",
+      "new_file": "/root/dyq/workspace/reports/baseline-metadata132-20261113/tileops/workloads/gemm.py",
+      "old_sha256": "c75349583a5dddf3fdebb7186970d966dc633bcf5ca993d501f60e0b349fd038",
+      "new_sha256": "7b9b5ec0a450a51cb6264455ba30a7beb557420c9fb1f469a695b5fd859b63d0"
+    },
+    {
+      "op": "MoEGroupedGEMMFwdOp",
+      "renamed_tensor_roles": {},
+      "computational_body_AST_identical_after_rename": true,
+      "old_file": "/root/dyq/workspace/reports/torch-all2208-20261105/source/workloads/moe.py",
+      "new_file": "/root/dyq/workspace/reports/baseline-metadata132-20261113/tileops/workloads/moe.py",
+      "old_sha256": "e991bb3bfb8ab1316e52d4203c129f415cd8dd66c6e61e4ba0190e7809541c10",
+      "new_sha256": "baf94df4da755d961686211062aa2aea8d042cf63fd9cfc8e3aad3320bd620e4"
+    },
+    {
+      "op": "FP8LightningIndexerFwdOp",
+      "renamed_tensor_roles": {
+        "cu_seqlen_ks": "starts",
+        "cu_seqlen_ke": "ends"
+      },
+      "computational_body_AST_identical_after_rename": true,
+      "old_file": "/root/dyq/workspace/reports/torch-all2208-20261105/source/workloads/attention/fp8_lightning_indexer.py",
+      "new_file": "/root/dyq/workspace/reports/baseline-metadata132-20261113/tileops/workloads/attention/fp8_lightning_indexer.py",
+      "old_sha256": "9c42dc479c30b5b3e62c22eaa590acb59c3cd3774ee404d0066e54273272e194",
+      "new_sha256": "8b7acd2d5867b6377cf8e9a6a71dacb777c681c064ec3186b3d30870aab543a1",
+      "scale_handling": "Actual benchmark entry is FP8LightningIndexerCall in both versions. It dequantizes optional per-key scales once before calling the base reference; the actual wrapper body is AST-identical after window-field renames. The current base optional scale argument is unused by that wrapper.",
+      "cases_with_explicit_scale": 14
+    },
+    {
+      "op": "DSADenseFwdOp",
+      "review": "Dense op name changed. Current reference adds zero handling for an empty selection. Frozen generator has K>0, stride>=1 and nonnegative q_start; its randperm-selected keys are visible, with key zero explicitly covered on the initial stride rows. Matching does not claim qualification of other inputs or archived NPU results.",
+      "old_file": "/root/dyq/workspace/reports/torch-all2208-20261105/source/workloads/attention/dsa.py",
+      "new_file": "/root/dyq/workspace/reports/baseline-metadata132-20261113/tileops/workloads/attention/dsa.py",
+      "old_sha256": "f5a69e3e86fbeddf76e8cb059635f0bd65a4f8bf867e256d485a4d1a8d0af1d6",
+      "new_sha256": "cd1964a04f9f342782ab259e8e4f3299e1d71cbfd55be73331142ea0bd4d8538"
+    }
+  ]
+}
