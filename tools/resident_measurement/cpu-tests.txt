@@ -1,0 +1,11 @@
+test_each_failure_stops (__main__.Batch) ... ok
+test_each_gate_failure_stops (__main__.Batch) ... ok
+test_exact_scope_and_environment_command (__main__.Batch) ... ok
+test_missing_environment_rejected (__main__.Batch) ... ok
+test_serial (__main__.Batch) ... ok
+test_unchanged_runner (__main__.Batch) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK

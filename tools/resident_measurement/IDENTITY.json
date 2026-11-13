@@ -1,0 +1,199 @@
+{
+  "original39_indices": [
+    2,
+    3,
+    4,
+    13
+  ],
+  "envID": "round-candidate03",
+  "protocol": "round-measurement04-patched-alternate-pending",
+  "backend_sha256": "0be87418b543e882f4e7351a21a0a9bcf578b33a8be271c81b0e861d6da853db",
+  "rows": [
+    {
+      "id": "1b4ca95a09baf1f42a40",
+      "op": "RoundFwdOp",
+      "case_id": "16M-float16",
+      "case": {
+        "op": "RoundFwdOp",
+        "case_id": "16M-float16",
+        "tensors": {
+          "input": [
+            [
+              4096,
+              4096
+            ],
+            "float16"
+          ],
+          "output": [
+            [
+              4096,
+              4096
+            ],
+            "float16"
+          ]
+        },
+        "params": {
+          "input": [
+            [
+              4096,
+              4096
+            ],
+            "float16"
+          ],
+          "output": [
+            [
+              4096,
+              4096
+            ],
+            "float16"
+          ],
+          "decimals": 0
+        }
+      },
+      "seed": 0,
+      "contract_sha256": "7019a45df6eeec98371f93a5a582315cf0e03f702af04e12db4c3c88dbaacd2c",
+      "priority": 2
+    },
+    {
+      "id": "8077771e58f80d961e08",
+      "op": "RoundFwdOp",
+      "case_id": "16M-float32",
+      "case": {
+        "op": "RoundFwdOp",
+        "case_id": "16M-float32",
+        "tensors": {
+          "input": [
+            [
+              4096,
+              4096
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              4096,
+              4096
+            ],
+            "float32"
+          ]
+        },
+        "params": {
+          "input": [
+            [
+              4096,
+              4096
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              4096,
+              4096
+            ],
+            "float32"
+          ],
+          "decimals": 0
+        }
+      },
+      "seed": 0,
+      "contract_sha256": "7a8129abade7e150eab8cfd13a4dfece8feecc8275fb68ec6802374c01b8f02b",
+      "priority": 2
+    },
+    {
+      "id": "0db7eff9a905e36a16a4",
+      "op": "RoundFwdOp",
+      "case_id": "256M-bfloat16",
+      "case": {
+        "op": "RoundFwdOp",
+        "case_id": "256M-bfloat16",
+        "tensors": {
+          "input": [
+            [
+              16384,
+              16384
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              16384,
+              16384
+            ],
+            "bfloat16"
+          ]
+        },
+        "params": {
+          "input": [
+            [
+              16384,
+              16384
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              16384,
+              16384
+            ],
+            "bfloat16"
+          ],
+          "decimals": 0
+        }
+      },
+      "seed": 0,
+      "contract_sha256": "2615e5211234fc892b61bf4be497659cbb6c91562b20182b0d678dc8831e7176",
+      "priority": 2
+    },
+    {
+      "id": "33de68368347566b0728",
+      "op": "RoundFwdOp",
+      "case_id": "256M-float16",
+      "case": {
+        "op": "RoundFwdOp",
+        "case_id": "256M-float16",
+        "tensors": {
+          "input": [
+            [
+              16384,
+              16384
+            ],
+            "float16"
+          ],
+          "output": [
+            [
+              16384,
+              16384
+            ],
+            "float16"
+          ]
+        },
+        "params": {
+          "input": [
+            [
+              16384,
+              16384
+            ],
+            "float16"
+          ],
+          "output": [
+            [
+              16384,
+              16384
+            ],
+            "float16"
+          ],
+          "decimals": 0
+        }
+      },
+      "seed": 0,
+      "contract_sha256": "3144b44b048f186a4fd57c348c46e49c7fb1bad05263d685e51650c10e9bf463",
+      "priority": 2
+    }
+  ],
+  "original_environment_states": [
+    "compile_failed",
+    "never_attempted",
+    "never_attempted",
+    "never_attempted"
+  ]
+}

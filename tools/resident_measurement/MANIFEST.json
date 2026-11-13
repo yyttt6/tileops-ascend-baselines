@@ -1,0 +1,29 @@
+{
+  "protocol": "round-measurement04-patched-alternate-pending",
+  "device_run": false,
+  "files": {
+    "BASE.json": "a97226e824e9878219ce4eb55008a66dcd2d03906a296bffa7c5aac469e7c6e1",
+    "CLAIM.json": "f50f7a9bd24b2b6068c84856b77fa46e6adccfd6e129ae9a4469a3c3e65da4c2",
+    "IDENTITY.json": "fbe5fcdf072f48cff65a66ad858ff214e1307906a8dc4ad93c890316788781b7",
+    "PLAN.txt": "80dbbebb177b21a7bd47c9ac9b8ed0578bd0339ec566de04b54a2b541112286c",
+    "audit.py": "ed8636d1d3ce917fb6ce8d508f8c4ba3021b8ded3687df939bfb1692dd4f744f",
+    "candidate_guard.py": "e0a6ea82cf89ecca53512333484a32d7859333a0bade780b261db925a285f490",
+    "case_watchdog.py": "7aa234cd9b8c2d7a59e290b22fa4374bd805665e58dd131045c2109dfac1f388",
+    "controller.py": "780c9f76f0f991f13a822fd4099378710b094ca067683c28234aaa3120f0c701",
+    "controller.py.patch": "5db7725cd00da289dcc57e734675abc88732bd722d1a74cc7ef030bea2d7644c",
+    "cpu-tests.txt": "6244dd9277a7f4f356c14bf396765c96ef48f6cfa2192a8104192865a523f553",
+    "environment_entry.py": "85b6272e474c133266d8fe5f5081bce24601562d9c33837f310d7dc652965e7d",
+    "fake_worker.py": "011bc97454fec1c5b7069b274f1aafa80b24c9923687e64ac2caee26e95f3117",
+    "integration.py": "64c9c5f62e704cde3b1fbcdeb61641db61f2b3be2b0e9bf5a6333f4c0947759a",
+    "measure_driver_provenance_v2.py": "96f85c58ba0e0b0c8d9fd227a728f50d8f321607671fd7a43e7dde4bd4485560",
+    "original_guard.py": "1c0e16cb3725a4cebf663b5d2f0339070939a562d4cd2c59158b42f8d465548d",
+    "pilot.py": "52e54c52b00b65508f3df1c0301296a55ffd48e4461f927b33f0bb932a18b33b",
+    "pilot.py.patch": "12f8e91dbb03a1136ab5cb315be69400a9322389d46efa57b7674cb66b92e688",
+    "real_worker.py": "95d30955a7f618ada93798af977abed16287904ac44f566cee7ef117903e5620",
+    "resident.py": "9c99069da27a05fce720ff7b9bdd2db44087d660138dce4bf59716fa19d4aa75",
+    "source-pins.json": "766f7b30a1c63ce7d90069aeb68697507273bcd96ce370c5a9fab31af25242a0",
+    "test_batch.py": "42e470b78c9e81161afd05f093ec74a15c128e6b79ea470c1b7ef83f023f3317",
+    "verify_env.py": "22d1878e5eb4e2afa4a7fa6556b899b6f499e0c17393895954b305e7e9b166e6",
+    "watchdog.py": "a26cbd47bdcac71814e7d53a88ab425ee836c34ab206cd1ca383111c39ea4a0a"
+  }
+}

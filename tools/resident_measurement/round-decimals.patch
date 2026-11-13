@@ -1,0 +1,19 @@
+--- a/torch/_inductor/fx_passes/post_grad.py
++++ b/torch/_inductor/fx_passes/post_grad.py
+@@ -1189,9 +1189,15 @@
+     return x.device == decode_device(device)
+ 
+ 
+-@register_noop_decomp([aten.ceil, aten.floor, aten.round, aten.trunc])
++@register_noop_decomp([aten.ceil, aten.floor, aten.trunc])
+ def int_noop(x):
+     return is_integer_dtype(x.dtype)
++
++
++@register_noop_decomp([aten.round])
++def round_int_noop(x, decimals=0):
++    # Negative decimals can change integer values; retain that operation.
++    return is_integer_dtype(x.dtype) and type(decimals) is int and decimals >= 0
+ 
+ 
+ @register_noop_decomp([aten.pow])

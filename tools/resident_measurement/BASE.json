@@ -1,0 +1,17 @@
+{
+  "base_asset": "resident04-measurement-batch02-review.tar.gz",
+  "base_archive_sha256": "7bfefa53caaf016a04dc4d623b8550bde11bd23f1424ce85d43b2f2fd75f3b36",
+  "inherited_files": {
+    "original_guard.py": "1c0e16cb3725a4cebf663b5d2f0339070939a562d4cd2c59158b42f8d465548d",
+    "candidate_guard.py": "e0a6ea82cf89ecca53512333484a32d7859333a0bade780b261db925a285f490",
+    "resident.py": "9c99069da27a05fce720ff7b9bdd2db44087d660138dce4bf59716fa19d4aa75",
+    "audit.py": "ed8636d1d3ce917fb6ce8d508f8c4ba3021b8ded3687df939bfb1692dd4f744f",
+    "real_worker.py": "95d30955a7f618ada93798af977abed16287904ac44f566cee7ef117903e5620",
+    "watchdog.py": "a26cbd47bdcac71814e7d53a88ab425ee836c34ab206cd1ca383111c39ea4a0a",
+    "source-pins.json": "766f7b30a1c63ce7d90069aeb68697507273bcd96ce370c5a9fab31af25242a0",
+    "integration.py": "64c9c5f62e704cde3b1fbcdeb61641db61f2b3be2b0e9bf5a6333f4c0947759a",
+    "case_watchdog.py": "7aa234cd9b8c2d7a59e290b22fa4374bd805665e58dd131045c2109dfac1f388",
+    "measure_driver_provenance_v2.py": "96f85c58ba0e0b0c8d9fd227a728f50d8f321607671fd7a43e7dde4bd4485560",
+    "fake_worker.py": "011bc97454fec1c5b7069b274f1aafa80b24c9923687e64ac2caee26e95f3117"
+  }
+}

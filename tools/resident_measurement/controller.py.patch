@@ -1,0 +1,22 @@
+--- neg06/controller.py
++++ round04/controller.py
+@@ -10,6 +10,10 @@
+ 
+ 
+ def gate(output,outer):
++    env=json.loads((output/'environment.json').read_text())
++    if env.get('status')!='verified' or env.get('protocol')!=PROTOCOL or env.get('envID')!='round-candidate03':raise ValueError('isolated environment not verified')
++    backend=env['environment']['modules']['torch._inductor.fx_passes.post_grad']
++    if backend['sha256']!='0be87418b543e882f4e7351a21a0a9bcf578b33a8be271c81b0e861d6da853db':raise ValueError('patched backend mismatch')
+     r=json.loads((output/'receipt.json').read_text());w=json.loads((outer/'watchdog-receipt.json').read_text())
+     if r['exit_code']!=0 or w['exit_code']!=0 or r['failure'] or r['audit_failed']:raise ValueError('guard failed')
+     if not r['cleanup']['reaped'] or r['cleanup']['errors'] or r['cleanup']['post_cleanup_proc'] is not None:raise ValueError('cleanup failed')
+@@ -64,7 +68,7 @@
+         record={};launches.append(record)
+         return launch_owned(cmd,received,record)
+     try:
+-        results,code=run_queue(command,[(a.output/f'case{i}',a.output/f'case{i}-outer') for i in range(1)],launch=launch)
++        results,code=run_queue(command,[(a.output/f'case{i}',a.output/f'case{i}-outer') for i in range(4)],launch=launch)
+     finally:
+         (a.output/'controller-receipt.json').write_text(json.dumps({'effective_protocol':PROTOCOL,'results':results,'launches':launches,'signals':received,'exit':code,'acceptance':'alternate/pending'},indent=2))
+         for sig,handler in handlers.items():signal.signal(sig,handler)
