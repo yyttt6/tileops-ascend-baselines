@@ -31,6 +31,8 @@ The dedicated server2 campaign covers all 71 fixed workloads with same-campaign 
 
 ## Baseline refresh (2026-11-16)
 
+[代码与结果交接（中文）](docs/handoffs/BASELINE_REFRESH_20261116.zh.md)。
+
 The separately frozen >3x review campaign now has **2119/2119 qualified case
 coverage**, including all last69 pending cases,42 exact golden corrections and6
 explicit complex input-check compatibility cases. Start with the

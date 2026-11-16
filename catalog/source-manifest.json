@@ -209371,8 +209371,14 @@
   },
   {
     "path": "README.md",
-    "source": "baseline refresh export navigation 20261116",
-    "sha256": "ed9ff8482b7bea80bf4d07fbdbb67196b573d04d7d5e15d98e10ddc8b6d0976e",
-    "bytes": 5580
+    "source": "baseline refresh handoff20261116",
+    "sha256": "3fc17ebf3f1b07f8d2a08a2b31165f211b7a1ca26b01c1a3caca4ca5f226aa72",
+    "bytes": 5667
+  },
+  {
+    "path": "docs/handoffs/BASELINE_REFRESH_20261116.zh.md",
+    "source": "baseline refresh handoff20261116",
+    "sha256": "05a043dc5d9c03d062acf7ce82d28df3323dcc6810bb99be2cd2231d9ea79693",
+    "bytes": 8892
   }
 ]
