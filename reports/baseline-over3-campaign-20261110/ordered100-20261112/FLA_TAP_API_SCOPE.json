@@ -1,0 +1,35 @@
+{
+  "ordinals": [
+    181,
+    180,
+    179,
+    178,
+    177,
+    176,
+    175,
+    137,
+    135,
+    136,
+    134,
+    133,
+    171,
+    169,
+    170,
+    191,
+    192,
+    190,
+    193,
+    194,
+    186,
+    185,
+    187,
+    188,
+    189,
+    184
+  ],
+  "ordering": "186 original full gate+tap+cumsum checker15raw/sourceELF guard qualified; skip accepted;185/187/188/189 stop new failure",
+  "golden42_scope_reinstatement": {
+    "ordinal": 184,
+    "reason": "User authorized exact golden repair; prior numeric hold preserved. Earlier routefix guard stopped at finite admission before load/factory/timed calls."
+  }
+}

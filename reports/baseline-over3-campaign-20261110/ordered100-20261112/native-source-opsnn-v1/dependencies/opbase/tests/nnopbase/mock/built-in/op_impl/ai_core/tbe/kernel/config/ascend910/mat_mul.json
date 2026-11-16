@@ -1,0 +1,2372 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "2cd052405dbe056ff66aa5d28838d7e79f4e714b6787761c5d768d4175d89889,a5b207f38afc396ad028d4b6383d53e0507f1d1d86d77fb44028563bf2c8dc3c,f66893b8802a653815c11359334fb4eed7b0e9b6e32b19c16a42ffde9f584ac5,86d8e50290cba9be715708caab7fe1c503f6d270505b9d5c093c292aa35321d3,65097e67ef29867b5a09eb78b17fb3e05e77e97e711f578de65e9bd29b77a83a",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_NZ_FP16_FP32_true_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "2cd052405dbe056ff66aa5d28838d7e79f4e714b6787761c5d768d4175d89889,a5b207f38afc396ad028d4b6383d53e0507f1d1d86d77fb44028563bf2c8dc3c,f66893b8802a653815c11359334fb4eed7b0e9b6e32b19c16a42ffde9f584ac5,86d8e50290cba9be715708caab7fe1c503f6d270505b9d5c093c292aa35321d3,65097e67ef29867b5a09eb78b17fb3e05e77e97e711f578de65e9bd29b77a83a",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_NZ_FP16_FP32_true_true_all_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "54359fb4f8c9a3482345aa75babadd5ee6ecbe4d70f0dddc8718be5386167e67,56a603fce8e5d316d90bcf6cafc09ddae961b27c42d372cdadadf735432b291b,27a67c9a2d215679041239f271e8cb702c83476509bda25134004054035c5a70,ed620e95714d14d7051c09c8e2d28ecc7adddc74ba8e2b7c2d9d286c8b729b2c,055df8ba66c1dcf2d51ebd25572cfad5a42a7e83628c8f65a69f5ad769f466b9",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_NZ_FP16_FP32_false_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "54359fb4f8c9a3482345aa75babadd5ee6ecbe4d70f0dddc8718be5386167e67,56a603fce8e5d316d90bcf6cafc09ddae961b27c42d372cdadadf735432b291b,27a67c9a2d215679041239f271e8cb702c83476509bda25134004054035c5a70,ed620e95714d14d7051c09c8e2d28ecc7adddc74ba8e2b7c2d9d286c8b729b2c,055df8ba66c1dcf2d51ebd25572cfad5a42a7e83628c8f65a69f5ad769f466b9",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_NZ_FP16_FP32_false_false_all_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "b88c3bf94b16e61f72f0d954d69a75649728dbf74a8b107c605c686c7e866a97,e983b8b8d39e659b408119d939f522b9b8b233eadb600ca2a3f45c0ee04f7754,ee930de5f6bc18d265cebc6e9e374dec977e2b13b308746e569741d836dce8f3,aa2020e140d5dd6c416fa056c9817660da20988543243bbc7f0233cf3df9efe6,fdc0693e2251480a234311ccf6b76cb7af14117d564759463bded07c008246a5",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_NZ_FP16_FP32_false_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "b88c3bf94b16e61f72f0d954d69a75649728dbf74a8b107c605c686c7e866a97,e983b8b8d39e659b408119d939f522b9b8b233eadb600ca2a3f45c0ee04f7754,ee930de5f6bc18d265cebc6e9e374dec977e2b13b308746e569741d836dce8f3,aa2020e140d5dd6c416fa056c9817660da20988543243bbc7f0233cf3df9efe6,fdc0693e2251480a234311ccf6b76cb7af14117d564759463bded07c008246a5",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_NZ_FP16_FP32_false_true_all_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "723ab93acc125d86640e15e3a95dad8f0cd3f252d499a3d1e57eeaccfaa3ca28,42f8c01793fd63c7c6287acc1f35ddb6e14ee9edec3812c568d2cb1230008eea,bd0fdbda7bc053c2e3d98fc6355ae570a1c8292575cf27b52e0294bef55e079f,af9f9782c0596f3e986867ac0ecf4ac3fce13a6a24fbc7e8fe6303582d945100,8b6d19539c987c6d0f727cf8a6b9b1b5ee5d6303841cd0644f4518fb83098947",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_NZ_FP16_FP32_true_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "723ab93acc125d86640e15e3a95dad8f0cd3f252d499a3d1e57eeaccfaa3ca28,42f8c01793fd63c7c6287acc1f35ddb6e14ee9edec3812c568d2cb1230008eea,bd0fdbda7bc053c2e3d98fc6355ae570a1c8292575cf27b52e0294bef55e079f,af9f9782c0596f3e986867ac0ecf4ac3fce13a6a24fbc7e8fe6303582d945100,8b6d19539c987c6d0f727cf8a6b9b1b5ee5d6303841cd0644f4518fb83098947",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_NZ_FP16_FP32_true_false_all_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "5d41b66a21e229816c90beb42535c7d3facbc6aa3556a465ab39d8a7321fe642,edc19697d84209c7e24a85b32fe3745e5cb647a6eff5712fae351d96c42f05a1,c85649bf3d3a7e58c09408026e3f9bf3eadbe7e355b97a8c1b23cb9ec40b0bd2,a16a2630d6dda02e48c111e61f5f16fcd44349865c52733ed9b78858e294ddb6,014d63d67d9a85f665637cab869f953c80acbcb01d7296ad0e39e8c0e17a84ab",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_ND_FP16_FP16_true_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "e4209f323481eee205e29fbd7d4c57f615a487041477ba3b20ab287edbba0f20,718060c430626a613f7653256c3c39972c703a997546b1bc438faa1518e5b9ae,d8936b62208aaa7866100248ff7179ea9815cc8bc31b17b6d27161ba71693581,930c5464204fa991e2ce6ea841f88a8a73c81da8227c5c04e67c89a790802cfb,1ba9968868ba63e13d5eb0a19fb89c3ac84e786d38fe6ba319d6cd320a58026c",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_ND_FP16_FP16_false_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "29554cb9da290ce0117dbde3f0515346a0e666cb5ada2fba1b7087ce570301b6,45638cc38235982ca48d23856746098872a69ef5e2f80c25b5ce125d29048ab3,9a0390bee810d3c30359be3d8e0f3170dd27cd38fa6180429013bebecdc12ddf,3e40ba51b32dad7270c49fcf3d6373e964343629ef2a4a8984993dc3b5db86e9,db7b65cbd23638043c16b72c7da7b8aa2f9ad5fa2445b3e5772109bf3286de72",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_ND_FP16_FP16_false_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "5849449522a552979b6b2ee1def14a71666020fd2996f5354d6cbbb1ef42d24d,049a0e5270ec50f82fb4e00a9b798fadcd4c10cbaf9e362b2dab9c814167fc43,8e38a046de2190737e663b9a0cda1fd6c94f31432979c4d7ab9552f40b833557,f9fbe0ca63f345b6c3df798bf23379687907b73453aa55bdbbeecba65644e847,47cb77c1fb5307018c998698fbf9bfc2bc683166f94a62a8a30095e30d18f8ac",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_ND_FP16_FP16_true_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "f445f999cd22880b05d70fd0d2245da789548eae7deaf4dddc8f9442a95ae9e1,461c3ab4c8087abac0aefa4b3aa13cdd81dbcf5c3a7a48974cccadadca80fb09,f9d948d9187082f3eee0c092ae8d4228a7905d4be62e25dfc86812a9a811ef1f,d8da9308e474272f6eb882bb1f98004ae5dc0dc04227eba5b069f1f32c83059a,dff5d7a7596dc33fe28eb85cdef2d51ef17765edbe8656000273e351dc17ab1b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP32_true_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "f445f999cd22880b05d70fd0d2245da789548eae7deaf4dddc8f9442a95ae9e1,461c3ab4c8087abac0aefa4b3aa13cdd81dbcf5c3a7a48974cccadadca80fb09,f9d948d9187082f3eee0c092ae8d4228a7905d4be62e25dfc86812a9a811ef1f,d8da9308e474272f6eb882bb1f98004ae5dc0dc04227eba5b069f1f32c83059a,dff5d7a7596dc33fe28eb85cdef2d51ef17765edbe8656000273e351dc17ab1b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP32_true_true_all_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "73878da3d1e2096cd66e325f7f8acfaf456f94521099f6bdd14cfca1755e5792,84a35b986b64293a7c0c19c3ec070e210f706145b726bc7e87e0abc2b29cbe5c,81ff941f7fdbfc9c634fd1a51a6c5f2b6524149b91520dc2ad52c0387dcf9da4,6d16d123fd02aa641469b834e2b375ac951c892f236c9551fb58f864003b84a2,7aded25907ada212203830880fca989c4ec7fa258f3941e9b54717a0ddfd9adc",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP32_false_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "73878da3d1e2096cd66e325f7f8acfaf456f94521099f6bdd14cfca1755e5792,84a35b986b64293a7c0c19c3ec070e210f706145b726bc7e87e0abc2b29cbe5c,81ff941f7fdbfc9c634fd1a51a6c5f2b6524149b91520dc2ad52c0387dcf9da4,6d16d123fd02aa641469b834e2b375ac951c892f236c9551fb58f864003b84a2,7aded25907ada212203830880fca989c4ec7fa258f3941e9b54717a0ddfd9adc",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP32_false_false_all_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "7693df77d109c401037c952a65a53e355b87af85000fe62badedb769236cbfef,ebac5e79b3892839091f068ec41b7ff13dd544fdabcc950ba91f89be1aa391a7,64f09f57f582aa0538ee7524b0345362168790047a808a36c8ebd13f49b868ea,19aec004e31cb2c6d41f62338859f8bf7b140247f1cd65b9d055a2918b5d28d8,0fb7920e5e296c8ac0ff25e55ff9770b3d18d6a95427de1ce66f229bda7f46b7",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP32_false_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "7693df77d109c401037c952a65a53e355b87af85000fe62badedb769236cbfef,ebac5e79b3892839091f068ec41b7ff13dd544fdabcc950ba91f89be1aa391a7,64f09f57f582aa0538ee7524b0345362168790047a808a36c8ebd13f49b868ea,19aec004e31cb2c6d41f62338859f8bf7b140247f1cd65b9d055a2918b5d28d8,0fb7920e5e296c8ac0ff25e55ff9770b3d18d6a95427de1ce66f229bda7f46b7",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP32_false_true_all_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "12d982d2af5c19bee35bd2a9aa6cfa9f3771b688f00bbff511dae3bd8e68eeda,ee2b89c9a12fd035075118cb28c76e4ed5fb69f093febee9f8d1c783c43ad81a,7d4beb26a22e8be8c960f6a61743e7c92cda6ed33f3ecdc8b14b0d8b10bc8a3c,59724dc299a87a0be5a5339b6e3faaa01e74ca59a57264e3cc9cdb5fa62efb84,e43c7178bd48363c59cc89adde4ff7746864bcf3c3f5619ff573c977ebc0ec59",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP32_true_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "12d982d2af5c19bee35bd2a9aa6cfa9f3771b688f00bbff511dae3bd8e68eeda,ee2b89c9a12fd035075118cb28c76e4ed5fb69f093febee9f8d1c783c43ad81a,7d4beb26a22e8be8c960f6a61743e7c92cda6ed33f3ecdc8b14b0d8b10bc8a3c,59724dc299a87a0be5a5339b6e3faaa01e74ca59a57264e3cc9cdb5fa62efb84,e43c7178bd48363c59cc89adde4ff7746864bcf3c3f5619ff573c977ebc0ec59",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP32_true_false_all_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "b8589085aa6632bf60f63ef7320dfd57dda4c6ede9f1b1ff41e538286003f3d4,b69da078c2d68ab821eec0c882ef41b18d4dc750f0baed798f6089e2881f6e1b,af47756022d010e1b7ac868e34f7276179347ed9b5d35d68935949be3825d346,8a78ffea37d776b453dc8d6444d5a4c35f53fce724fd06f5afd22a3914d7e892,57485276dd931d8c368cf45877b99f5f30b2531e88a70663fcb382db8196d575",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP16_true_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "51b726893b6474cad7818fc75aa006dadd27844acda43306ae75435736d63066,3bd2d6c88fbe1e6ba43ccb2451fb948802287f27037aeed90c5ce74edd1b457c,8c754723e78e790a3d948fba4f17ccef22d2bd1c9fa53d0f9105e88fb5666f06,808623378e270d93c6563cf1d601d5bc9665629fc680fa2e27184540432b2f07,8bb25c04ccf582d7ccba668068f1704fc918f5fd2fc3620eb6a1d232f60bcbc9",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP16_false_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "11b4463db111f768d7bb4dffc36ed0ddd17cd58e13ccb2e868cae946cf405494,f9b237fef3031175dabb26244de89ef32aa93a9225b5cde572038f9741c1d9d9,01c55c9953136533b78dc8844f8db9459929a3f17b28c618f8f2db352df14765,64fcd00f7af09e16def20c4754657f75613614bf17177554ca12705e02893778,f6b68387ed8cc9f785e1e1682e42a50da5b7f2733112547e7687fa3f66f639fa",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP16_false_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "7e633d1afbe4c14ea9073faec9bc6adb96eecce77060ee2353a3945530e3fa75,18d012e8a94f0ee22d0c525cf9095cbcab158f54348153a277f7b50194a9291d,c015d1a438ee017bf6319964907b3deeb945ffae3f827c6039de55aab09319ff,5fd97c3acb59547bbb86fe69d340dcc6f11958ed8e92d8093f267608631dc7a3,1d3bf2c1f29ee7e04192ce6724c383f35f1b28c632655ff26ee2d62c40990b91",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null,
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_FP16_FP16_true_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "5d904149816c01c11abc0adc92875e7b81c6a791633675da6f0236f57f34608f,c8871af87347cdde1eef09c36ec753b818a7889dbd3063abc3367e9ace65bfe0,63f00ac9761b697e738757f6895fefa0027df4319071d665893bb26f4ebf6093,385b0eadc343446775f5a2b3602b6a36c1c15f04c81b4216756293333486c845,8368b5cf6b18fe91a11cb6e9906a4d3b8663a0a50525a2439b96d4e38249b1a2",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_ND_ND_FP16_FP16_FP16_true_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "d7ece7417bef0243ba522b852c2b916101bf731639823b30f2339b93196779aa,e36a3e9f4a12e5ca74f2f778644205ace869baabc36bc4ad4bcd93f8f80dd9d4,76c404c7e62d97f696869c569671a8023ab6ce7b37a1d002dac50b4e2b0df616,4fed6e46a9528398a2abe1e876a85b0268875d5a588f14d30ef8e28a4a0c2347,4fd0178ec655ced1b9234f929763e9ce45ab232e4841bb519e7c3cadd9a46149",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_ND_ND_FP16_FP16_FP16_false_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "3d47b2f5068a39d5e07cc06b95a26117a90327f1701217f0daf90596e82b52ff,a551704979459125f2ce4309ef81def67d6e5c9cd78b4d199b6c0ecc33f0f7a9,be7151aa7e2a8bffd1287dca1b067b5079879c880499239d84a67e6e08b156f8,26a5517a48046e7784d2a33426411d76597816151075741e0b8393a70648b3e5,812e6bb85d53fc5835aa8c39ebfa5dbb03c8f0c523c60c17acd651c8b6fe7c2c",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_ND_ND_FP16_FP16_FP16_false_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "8470f2ff0f9542303e5e7575b3acc0677aa47e3b126cf4e05ce52d883c872a29,7b89793dd934e30ac8c590dcb5451b328a527b12240277c236c8bf80700db137,23c4285e276abb903b963b3a80f0488e2d2bb6a1b5c8d9029e10dd35218f37f7,693325b7592a54298751427080822d814a4fa79c05fcfd3edbf9d3fbdae2db30,8803991a9d680c00f510d60828b50a406b853e6c4da92c15d85c9d420f840e53",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_ND_ND_ND_FP16_FP16_FP16_true_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "cf0417d4e5a35ac21c2cd2a068aa4d1bb937c6a3d17933ceb6a821a3fa3c2519,f51df1a9a11cce0db96e258b62eea0eaa5f5bd6222a458b99f6d21d745b3b146,83b9145e59d34b2cef520b92a8be10b8dfcbe66087ad8be8aa9571123f20ef04,2c94c8c5363b2eddfab21bbdf5cc37821433438e0a8cce49c840f124e2550b02,79bb4057916f3858a709f590b0c854a6d8bb122c2d207fb362468a33cbc9222b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_ND_FP16_FP16_FP16_true_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "1067234c8fc013468465e617c299a86c3b80860abc47824509668fc94d96a105,6152bddfe4c91b91b98518202dd87f81375eb906e2a64805d6e6634260f1326b,de13a0b513fa047cbacaa62c17644426dbfe886a0f39d1d88327a7a921152e61,add0737f44ee7716ddfbb5526a68da31719a0b199b9845478545b3a5cea60531,59b53af9e4ed562a5ddd0267ac5dbbc6ef1400925a0443a2285b8c457a664a64",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_ND_FP16_FP16_FP16_false_false_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "633e5260f4f1fb10b441af55cbe06fec14714434b54a903675b4c3c9f9b6858a,ae139cd4136c78efb57b0a206db3c8fd8e3828be6bd0329520baeb14cb5b7169,4416fbd89e5b43f3eabf919a0a3fd7a646766459392ff14ecbf55ad46234f11f,41d43cf1b33605a8df7a2b99d9868736b5e000c762a2d4810203d6c4d8d516e4,0bc0becd442cc27b6b63ee9a443740afeb22bc28c1317f79617d189a007ebbc8",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_ND_FP16_FP16_FP16_false_true_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "86fbcc330b7de94a7bc9ee33431b11db79d7b587e1a672577473d2a3669a0b3e,4873ae8854279698ee81e115d27ce9906df31d6cb8f16efdc79380ea60a3a00f,4b06e3db00a1b0396fcba363bfc8427bf465f8fbe374a34d1ff465ca32b0fa2f,efe32d81c31c9a60f4c96ba7d115cb0e257c75cf0549eeaddd1da128f97c37e3,02b38d8b335faec59c25b921fe76963223a99379b9c6525036fe6bd88658fe9b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mat_mul/MatMulV2_NZ_NZ_ND_FP16_FP16_FP16_true_false_all.json"
+      }
+    }
+  ]
+}

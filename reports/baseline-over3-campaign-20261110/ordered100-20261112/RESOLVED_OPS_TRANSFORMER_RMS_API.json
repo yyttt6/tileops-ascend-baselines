@@ -1,0 +1,151 @@
+{
+  "checked_at": "2026-11-15T09:06:41.886223+00:00",
+  "accepted_complete_APIs": 8,
+  "rows": [
+    {
+      "ordinal": 786,
+      "key": [
+        "ops-transformer",
+        "RMSNormFwdOp",
+        "quack-throughput-256-float16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat full3output RMS mode4",
+      "device_us": 476.6412666666667,
+      "checkpoint": "rollout-ops-transformer-rms-api-sdk-786-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "89292a754d8aa01d96e4aa5ab3a8de218f3530e17eb22719b367cff26988bacf",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "d810313fbde374577646d1bb6a4e95181c9b4ec7a72a00040e893d61c1550ed0",
+      "prepare_sha256": "134fd69ec0ccbc79a33a18f705a0bf875e775b6100099cbf78732d8102832423",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 787,
+      "key": [
+        "ops-transformer",
+        "RMSNormFwdOp",
+        "quack-throughput-256-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat full3output RMS mode4",
+      "device_us": 477.3217333333333,
+      "checkpoint": "rollout-ops-transformer-rms-api-sdk-787-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "2b5832c054d37042d59dbc54678806357f8758b927b30239cbcfbaae50551eb9",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2dc994775aaadf4e8b0cb381218a7a4d67d75d64e4aa573c6672ef0bea9f224c",
+      "prepare_sha256": "4a6a2ac70a8c3f9bdba91f1faf23bd2b327a7b8f21193d759f15470402e63246",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 788,
+      "key": [
+        "ops-transformer",
+        "RMSNormFwdOp",
+        "quack-throughput-512-float16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat full3output RMS mode4",
+      "device_us": 695.6434,
+      "checkpoint": "rollout-ops-transformer-rms-api-sdk-788-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "6ed8d60a909ea6320a7012596d6cd497720246e000b794ce6656c375b9552e35",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "56e134752a0d13c29664667f435f41e0aca390706a7236ac18a7020661bedba2",
+      "prepare_sha256": "3fbdc795a550e30aaddd6f017903819a9e819316ad6658863e1822da61961ba5",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 789,
+      "key": [
+        "ops-transformer",
+        "RMSNormFwdOp",
+        "quack-throughput-512-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat full3output RMS mode4",
+      "device_us": 695.9263333333334,
+      "checkpoint": "rollout-ops-transformer-rms-api-sdk-789-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "c8888e2a6324da763355087e358ae116bcd2fd8e2f636ba7a66156a587d580e8",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2ec57cd43eca16cb82c07452a38751e8be1eb9106f7fcb33bb1ffc81551e7f83",
+      "prepare_sha256": "7ffa098603978f93a6ffb724704ad2868507d54515f5103b634ed1c846cd6204",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 790,
+      "key": [
+        "ops-transformer",
+        "RMSNormFwdOp",
+        "quack-throughput-1024-float16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat full3output RMS mode4",
+      "device_us": 1178.7831333333334,
+      "checkpoint": "rollout-ops-transformer-rms-api-sdk-790-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "50cef3c1d479576e787c220f73e945c529acf25be0202224ee906e2642c0d426",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "22c6c18a73cbc94fbe2093b038884ebea9e2812c1551fa9d2217b1a10b49a3ca",
+      "prepare_sha256": "a9346cf7f44439e0941483e92eefe9e592c8e60f301facdf6a0c001b8e90a15e",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 791,
+      "key": [
+        "ops-transformer",
+        "RMSNormFwdOp",
+        "quack-throughput-1024-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat full3output RMS mode4",
+      "device_us": 1180.0174,
+      "checkpoint": "rollout-ops-transformer-rms-api-sdk-791-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "9ea63808b3a9f205108e2c733dd575991db42c012eebf659cde73651d40521e2",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "954151a1a6c379a7c5e8fd1a8db929f101dde5a8d81d71ee0fcf678a0cb8d074",
+      "prepare_sha256": "776fb212cbd61741fd393b0c741d866818d5572de3adddf4a3ba7654fda08312",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 792,
+      "key": [
+        "ops-transformer",
+        "RMSNormFwdOp",
+        "qk-norm-head-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat full3output RMS mode4",
+      "device_us": 103.82580000000002,
+      "checkpoint": "rollout-ops-transformer-rms-api-sdk-792-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "05ac0f6380e76cbdbb40db68e506be8d7829d615c78247aec74f989514964b58",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "1080a05353ea48f085ff246d2ffd221d62f51d84664bf4250cc2116918a90a9c",
+      "prepare_sha256": "8bd0055dd7c8833e27c33e191f879113a4402c0a40605f0b6408afb07f3dccd8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 793,
+      "key": [
+        "ops-transformer",
+        "RMSNormFwdOp",
+        "qwen3-8b-qk-norm-decode-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat full3output RMS mode4",
+      "device_us": 6.7814,
+      "checkpoint": "rollout-ops-transformer-rms-api-sdk-793-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "a67888dbbe59c9b67c9424aae28f994ceff3c03144c0fa83382bbb1c8968b540",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2be9e7373e45d8aeaae2d58d29a2107a8e5f7ad6776eed9f5b9edb030ccf519b",
+      "prepare_sha256": "060dfc3d8e871cf15fe52757d816e7b79efdc548d03f950e6f994f9769571efa",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-11-15T01:47:25.946930+00:00",
+  "paired_cases": 2,
+  "rows": [
+    {
+      "ordinal": 1356,
+      "key": [
+        "torch-eager",
+        "FusedQKNormRoPEFwdOp",
+        "interleaved-ragged-float16-float16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-qk2-original-08f-1356-v3.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-qk2-native-rms-1356-v1.CHECKPOINT.json",
+      "original_device_us": 326.0626,
+      "candidate_device_us": 256.76773333333335,
+      "device_reduction_percent": 21.252013161480843,
+      "selection": "candidate",
+      "original_host_us_diagnostic": 1627.538725733757,
+      "candidate_host_us_diagnostic": 1744.6940143903096,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original complete FP32 QK program versus same complete program with native FP32 RMS, both API outputs computed; clone V and full supplied-table RoPE retained, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 1358,
+      "key": [
+        "torch-eager",
+        "FusedQKNormRoPEFwdOp",
+        "interleaved-ragged-bfloat16-float32"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-qk2-original-08f-1358-v3.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-qk2-native-rms-1358-v1.CHECKPOINT.json",
+      "original_device_us": 319.5632,
+      "candidate_device_us": 261.17013333333335,
+      "device_reduction_percent": 18.272775672125775,
+      "selection": "candidate",
+      "original_host_us_diagnostic": 1790.3766284386318,
+      "candidate_host_us_diagnostic": 1761.3406913975875,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original complete FP32 QK program versus same complete program with native FP32 RMS, both API outputs computed; clone V and full supplied-table RoPE retained, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true
+    }
+  ],
+  "coverage_increment": 0,
+  "no_historical_or_public_ratio_rewrite": true
+}

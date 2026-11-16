@@ -1,0 +1,1 @@
+Both measured variants retained, original selected conservatively. No numeric truth stage removed; originalchecker/precision maintained. ExactfiniteCNNF16 only, no historical/public ratios.

@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-16T05:20:50.449527+00:00",
+  "diagnosis": "184 removed from finite queue scope on old golden numeric hold; earlier routefix process asserted at scope admission before any case load/factory/native calls.",
+  "old_scope_sha256": "12f6bb415877b334703e27df0c94c6416e6f45eecda24adfebb9afcf1c28d9e1",
+  "new_scope_sha256": "571203d2cd8ef6f1ff388321dd44dce9bea5cc600edc91b25266c79e7829d645",
+  "only_added_ordinal": 184,
+  "worker_and_all_baseline_source_unchanged": true,
+  "exact_user_golden_authorization": "GOLDEN42_USER_AUTHORIZATION_20261116.json",
+  "remote_deployed": {
+    "openlibing-DevEnv-661495": "571203d2cd8ef6f1ff388321dd44dce9bea5cc600edc91b25266c79e7829d645",
+    "openlibing-DevEnv-055409": "571203d2cd8ef6f1ff388321dd44dce9bea5cc600edc91b25266c79e7829d645"
+  },
+  "prior_failure_preserved": true
+}

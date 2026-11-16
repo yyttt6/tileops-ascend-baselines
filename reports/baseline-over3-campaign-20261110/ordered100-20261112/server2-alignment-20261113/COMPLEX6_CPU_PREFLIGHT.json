@@ -1,0 +1,353 @@
+{
+  "checked_at_remote": "2026-11-16T06:10:32.431673+00:00",
+  "CPU_only_no_NPU": true,
+  "original_checker_sha256": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+  "rows": [
+    {
+      "ordinal": 1292,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex64"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "bool"
+        ],
+        "dim": [
+          0,
+          2
+        ],
+        "keepdim": false
+      },
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "descriptor_sha256": "f07302a4c1b37d59170e22a3d6810b452bfc109e00c1e3041b50599511d03145",
+      "prepare_sha256": "adc83248092a9f7c3a50eafee9993fe776ead1c16f0cc37a62f5425085c43daf",
+      "verification": null,
+      "timed_callable_is_exact_original_frozen_torch_eager_reference": true,
+      "independent_CPU_builtin_output_passed": true,
+      "original_callable_source": "    def ref_program(self, *inputs):\n        return _reduction_reference(self.call.signature.name, inputs[0], self.call.params)\n",
+      "source_fidelity": {
+        "ordinal": 1292,
+        "key": [
+          "torch-eager",
+          "AllFwdOp",
+          "3d-multidim-complex64"
+        ],
+        "only_source_delta": {
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+            "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+            "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+          ]
+        },
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "adc83248092a9f7c3a50eafee9993fe776ead1c16f0cc37a62f5425085c43daf",
+        "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+        "descriptor_sha256": "f07302a4c1b37d59170e22a3d6810b452bfc109e00c1e3041b50599511d03145",
+        "helper_sha256": "2500d46628f18fa2925f9c1ab2eb1ccc0ff0cc5c8aaff88df6f71dd3aa2418eb",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "CPU_original_full_output_passed": true
+    },
+    {
+      "ordinal": 1293,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex128"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "bool"
+        ],
+        "dim": [
+          0,
+          2
+        ],
+        "keepdim": false
+      },
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "descriptor_sha256": "7848bf0d753516e019a8a8869b3fb7976c7a99deab3881e621480a5328abe8b5",
+      "prepare_sha256": "ad83eeecf215c76373f953ab4837a43f9f95fdd59d686f7324d05245d6fb2524",
+      "verification": null,
+      "timed_callable_is_exact_original_frozen_torch_eager_reference": true,
+      "independent_CPU_builtin_output_passed": true,
+      "original_callable_source": "    def ref_program(self, *inputs):\n        return _reduction_reference(self.call.signature.name, inputs[0], self.call.params)\n",
+      "source_fidelity": {
+        "ordinal": 1293,
+        "key": [
+          "torch-eager",
+          "AllFwdOp",
+          "3d-multidim-complex128"
+        ],
+        "only_source_delta": {
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+            "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+            "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+          ]
+        },
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "ad83eeecf215c76373f953ab4837a43f9f95fdd59d686f7324d05245d6fb2524",
+        "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+        "descriptor_sha256": "7848bf0d753516e019a8a8869b3fb7976c7a99deab3881e621480a5328abe8b5",
+        "helper_sha256": "2500d46628f18fa2925f9c1ab2eb1ccc0ff0cc5c8aaff88df6f71dd3aa2418eb",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "CPU_original_full_output_passed": true
+    },
+    {
+      "ordinal": 1294,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex64"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "bool"
+        ],
+        "dim": [
+          0,
+          2
+        ],
+        "keepdim": false
+      },
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "descriptor_sha256": "fd8010f26c89a89da58fd26531606676251ac2da09d6045f9fc7299747e3ed2a",
+      "prepare_sha256": "4e09c6b133ec1b43afeacaeff240d4bf4c5dd790ef538892d30104efabb2c96c",
+      "verification": null,
+      "timed_callable_is_exact_original_frozen_torch_eager_reference": true,
+      "independent_CPU_builtin_output_passed": true,
+      "original_callable_source": "    def ref_program(self, *inputs):\n        return _reduction_reference(self.call.signature.name, inputs[0], self.call.params)\n",
+      "source_fidelity": {
+        "ordinal": 1294,
+        "key": [
+          "torch-eager",
+          "AnyFwdOp",
+          "3d-multidim-complex64"
+        ],
+        "only_source_delta": {
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+            "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+            "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+          ]
+        },
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "4e09c6b133ec1b43afeacaeff240d4bf4c5dd790ef538892d30104efabb2c96c",
+        "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+        "descriptor_sha256": "fd8010f26c89a89da58fd26531606676251ac2da09d6045f9fc7299747e3ed2a",
+        "helper_sha256": "2500d46628f18fa2925f9c1ab2eb1ccc0ff0cc5c8aaff88df6f71dd3aa2418eb",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "CPU_original_full_output_passed": true
+    },
+    {
+      "ordinal": 1295,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex128"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "bool"
+        ],
+        "dim": [
+          0,
+          2
+        ],
+        "keepdim": false
+      },
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "descriptor_sha256": "877fa2fe36c300a27c1971f1b22a9a5fa94db3770658ac7f3756aed8acadeac5",
+      "prepare_sha256": "72472fa667c017ac6ffaa9f02294ff952792f2b638299228a59fe8dcf2f4e331",
+      "verification": null,
+      "timed_callable_is_exact_original_frozen_torch_eager_reference": true,
+      "independent_CPU_builtin_output_passed": true,
+      "original_callable_source": "    def ref_program(self, *inputs):\n        return _reduction_reference(self.call.signature.name, inputs[0], self.call.params)\n",
+      "source_fidelity": {
+        "ordinal": 1295,
+        "key": [
+          "torch-eager",
+          "AnyFwdOp",
+          "3d-multidim-complex128"
+        ],
+        "only_source_delta": {
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+            "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+            "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+          ]
+        },
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "72472fa667c017ac6ffaa9f02294ff952792f2b638299228a59fe8dcf2f4e331",
+        "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+        "descriptor_sha256": "877fa2fe36c300a27c1971f1b22a9a5fa94db3770658ac7f3756aed8acadeac5",
+        "helper_sha256": "2500d46628f18fa2925f9c1ab2eb1ccc0ff0cc5c8aaff88df6f71dd3aa2418eb",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "CPU_original_full_output_passed": true
+    },
+    {
+      "ordinal": 1298,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex64"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "int64"
+        ],
+        "dim": [
+          0,
+          2
+        ]
+      },
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "descriptor_sha256": "3adaf0735c2e615fa26193cc4f2e08b46d967138438bffd2c3c150e278e6ef34",
+      "prepare_sha256": "0f3ca2cbbd07c7a2152088c1af9073ac6bb77b932e3c8815efc4d0db7ceee8cb",
+      "verification": null,
+      "timed_callable_is_exact_original_frozen_torch_eager_reference": true,
+      "independent_CPU_builtin_output_passed": true,
+      "original_callable_source": "    def ref_program(self, *inputs):\n        return _reduction_reference(self.call.signature.name, inputs[0], self.call.params)\n",
+      "source_fidelity": {
+        "ordinal": 1298,
+        "key": [
+          "torch-eager",
+          "CountNonzeroFwdOp",
+          "3d-multidim-complex64"
+        ],
+        "only_source_delta": {
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+            "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+            "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+          ]
+        },
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "0f3ca2cbbd07c7a2152088c1af9073ac6bb77b932e3c8815efc4d0db7ceee8cb",
+        "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+        "descriptor_sha256": "3adaf0735c2e615fa26193cc4f2e08b46d967138438bffd2c3c150e278e6ef34",
+        "helper_sha256": "2500d46628f18fa2925f9c1ab2eb1ccc0ff0cc5c8aaff88df6f71dd3aa2418eb",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "CPU_original_full_output_passed": true
+    },
+    {
+      "ordinal": 1299,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex128"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "int64"
+        ],
+        "dim": [
+          0,
+          2
+        ]
+      },
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "descriptor_sha256": "d261b96f66f1cf432279567ec8462992fe2481f0fcd322eed75fa7bdac9b7546",
+      "prepare_sha256": "5a54a9a589b3f90833d32d8256de17a51f83bc42a759bb291ce4fa52fcab4fd6",
+      "verification": null,
+      "timed_callable_is_exact_original_frozen_torch_eager_reference": true,
+      "independent_CPU_builtin_output_passed": true,
+      "original_callable_source": "    def ref_program(self, *inputs):\n        return _reduction_reference(self.call.signature.name, inputs[0], self.call.params)\n",
+      "source_fidelity": {
+        "ordinal": 1299,
+        "key": [
+          "torch-eager",
+          "CountNonzeroFwdOp",
+          "3d-multidim-complex128"
+        ],
+        "only_source_delta": {
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+            "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+            "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+          ]
+        },
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "5a54a9a589b3f90833d32d8256de17a51f83bc42a759bb291ce4fa52fcab4fd6",
+        "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+        "descriptor_sha256": "d261b96f66f1cf432279567ec8462992fe2481f0fcd322eed75fa7bdac9b7546",
+        "helper_sha256": "2500d46628f18fa2925f9c1ab2eb1ccc0ff0cc5c8aaff88df6f71dd3aa2418eb",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "CPU_original_full_output_passed": true
+    }
+  ]
+}

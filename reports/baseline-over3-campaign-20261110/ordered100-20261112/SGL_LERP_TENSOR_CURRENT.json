@@ -1,0 +1,275 @@
+{
+  "checked_at": "2026-11-13T11:46:15.820749+00:00",
+  "complete_pairs": 5,
+  "rows": [
+    {
+      "ordinal": 1016,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpTensorFwdOp",
+        "16M-bfloat16"
+      ],
+      "original_us": 1864.073,
+      "candidate_us": 1697.7688,
+      "device_reduction_percent": 8.921549746174106,
+      "host_original_us_diagnostic": 3001.979303856691,
+      "host_candidate_us_diagnostic": 2858.3619433144727,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-lerp-tensor-candidate-1016-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-lerp-tensor-candidate-1016-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "d6694f90533db1d1375d4d20d2c35187648780db08ff68aabb0bb5d09401a871",
+        "e227993c7a090507b9bc1a8f8b86e175de15193f84fb49fc6c1363012b5eccc6"
+      ],
+      "source_sha256": [
+        "1f9b95954129214a54efb6153230ec8a2cfd58c19803ee14d370593922051de7",
+        "93186cf7ed949951ebae9072b34f3a2d3dc53f5924fda5a961b31e09f5e04fa7"
+      ],
+      "common_SOURCE_entries_identical": 710,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_lerp_tensor_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_lerp_tensor_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_lerp_tensor_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/moe/mul_add.py": "4ad25c8fc1383093ae6226daada78e39fe794bed884b18f0067c216b8c4acac8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py": "201f327faedfbcb95325d894a6d79d423999519408a1c3ef5727f33e9c0457e0"
+      }
+    },
+    {
+      "ordinal": 1017,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpTensorFwdOp",
+        "16M-float16"
+      ],
+      "original_us": 1862.8559333333335,
+      "candidate_us": 1697.3886,
+      "device_reduction_percent": 8.882454642493565,
+      "host_original_us_diagnostic": 2979.4514179229736,
+      "host_candidate_us_diagnostic": 3126.1407459775605,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-lerp-tensor-candidate-1017-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-lerp-tensor-candidate-1017-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "fc70ebea16f9b65dd7c06aac67a91ef0b08ee89097cd539e876087232aeb0597",
+        "1dec15ffeece5aaef0b273c3b13d20aa1c927c1ea556f9e732948648b9cdd4bb"
+      ],
+      "source_sha256": [
+        "1f9b95954129214a54efb6153230ec8a2cfd58c19803ee14d370593922051de7",
+        "93186cf7ed949951ebae9072b34f3a2d3dc53f5924fda5a961b31e09f5e04fa7"
+      ],
+      "common_SOURCE_entries_identical": 710,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_lerp_tensor_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_lerp_tensor_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_lerp_tensor_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/moe/mul_add.py": "4ad25c8fc1383093ae6226daada78e39fe794bed884b18f0067c216b8c4acac8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py": "201f327faedfbcb95325d894a6d79d423999519408a1c3ef5727f33e9c0457e0"
+      }
+    },
+    {
+      "ordinal": 1018,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpTensorFwdOp",
+        "256M-float16"
+      ],
+      "original_us": 30724.122333333333,
+      "candidate_us": 28121.610133333335,
+      "device_reduction_percent": 8.47058272898643,
+      "host_original_us_diagnostic": 31354.08799474438,
+      "host_candidate_us_diagnostic": 30139.196664094925,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-lerp-tensor-candidate-1018-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-lerp-tensor-candidate-1018-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "ca7dbb98de06fb5b73dc68a66abbd2cf10bee11008aee038f60fef326c2d2913",
+        "eb2320c8b393cab076affd4e2b628e6ca72362b3c5ce193a51e9e3039044eab5"
+      ],
+      "source_sha256": [
+        "1f9b95954129214a54efb6153230ec8a2cfd58c19803ee14d370593922051de7",
+        "93186cf7ed949951ebae9072b34f3a2d3dc53f5924fda5a961b31e09f5e04fa7"
+      ],
+      "common_SOURCE_entries_identical": 710,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_lerp_tensor_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_lerp_tensor_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_lerp_tensor_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/moe/mul_add.py": "4ad25c8fc1383093ae6226daada78e39fe794bed884b18f0067c216b8c4acac8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py": "201f327faedfbcb95325d894a6d79d423999519408a1c3ef5727f33e9c0457e0"
+      }
+    },
+    {
+      "ordinal": 1019,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpTensorFwdOp",
+        "256M-bfloat16"
+      ],
+      "original_us": 30727.8132,
+      "candidate_us": 28120.274266666667,
+      "device_reduction_percent": 8.485924189793415,
+      "host_original_us_diagnostic": 31292.302596072357,
+      "host_candidate_us_diagnostic": 28526.64940680067,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-lerp-tensor-candidate-1019-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-lerp-tensor-candidate-1019-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "34b94b4a9c04e60472032ec9a7b92eade5ed2004dd3e1e27dbe051513d4cdaf3",
+        "a1cbfbe747adf3c373fc026b03d479e1c3e87809ac85f2c76a3ad159972c69f3"
+      ],
+      "source_sha256": [
+        "1f9b95954129214a54efb6153230ec8a2cfd58c19803ee14d370593922051de7",
+        "93186cf7ed949951ebae9072b34f3a2d3dc53f5924fda5a961b31e09f5e04fa7"
+      ],
+      "common_SOURCE_entries_identical": 710,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_lerp_tensor_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_lerp_tensor_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_lerp_tensor_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/moe/mul_add.py": "4ad25c8fc1383093ae6226daada78e39fe794bed884b18f0067c216b8c4acac8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py": "201f327faedfbcb95325d894a6d79d423999519408a1c3ef5727f33e9c0457e0"
+      }
+    },
+    {
+      "ordinal": 1020,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpTensorFwdOp",
+        "16M-float32"
+      ],
+      "original_us": 1748.7758666666666,
+      "candidate_us": 1592.4640000000002,
+      "device_reduction_percent": 8.938359091414716,
+      "host_original_us_diagnostic": 3146.2093194325766,
+      "host_candidate_us_diagnostic": 2813.844041277965,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-lerp-tensor-candidate-1020-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-lerp-tensor-candidate-1020-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "1d77fe799204298142a60748f2f52f3e07478903be63d5f2130875933b1220e3",
+        "51edcd5d13734098b05b02d03a2abb586e49d8c59ea5d3713095dbbb1e69f5b5"
+      ],
+      "source_sha256": [
+        "1f9b95954129214a54efb6153230ec8a2cfd58c19803ee14d370593922051de7",
+        "93186cf7ed949951ebae9072b34f3a2d3dc53f5924fda5a961b31e09f5e04fa7"
+      ],
+      "common_SOURCE_entries_identical": 710,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_lerp_tensor_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_lerp_tensor_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_lerp_tensor_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/moe/mul_add.py": "4ad25c8fc1383093ae6226daada78e39fe794bed884b18f0067c216b8c4acac8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_lerp_tensor_pad_api.py": "201f327faedfbcb95325d894a6d79d423999519408a1c3ef5727f33e9c0457e0"
+      }
+    }
+  ],
+  "effective_retest_coverage_not_incremented": true,
+  "historical_or_public_ratios_not_updated": true,
+  "runtime_repair": "REFERENCE_RUNTIME_PRIVATE_COPY.json",
+  "not_all_SOURCE_bytes_same_expected_import_API_differences_explicit": true
+}

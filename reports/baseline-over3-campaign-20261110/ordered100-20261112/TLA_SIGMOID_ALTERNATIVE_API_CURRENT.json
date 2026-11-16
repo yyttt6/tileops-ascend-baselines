@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-11-16T00:23:23.206205+00:00",
+  "accepted_complete_APIs": 2,
+  "rows": [
+    {
+      "ordinal": 2059,
+      "key": [
+        "tilelang-ascend",
+        "SigmoidFwdOp",
+        "256M-float16"
+      ],
+      "api": "ops-nn::aclnnSigmoid",
+      "device_us": 306.7721333333334,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-sigmoid-alternative-2059-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c075404e21cc9d32879dd81674cd5e3e849628e3460005228be074ca4de23332",
+      "payload_sha256": "8620ac2ed68c1d9fef74bbd87692cf0c4b9d2deda654cf3d1303f72f70f3b832",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2060,
+      "key": [
+        "tilelang-ascend",
+        "SigmoidFwdOp",
+        "256M-bfloat16"
+      ],
+      "api": "ops-nn::aclnnSigmoid",
+      "device_us": 306.7703333333333,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-sigmoid-alternative-2060-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "789c68ff982e51975fb784a62ac9d0cc7d336b58a18441e38a58f9484c2c0248",
+      "payload_sha256": "5b0ad4415147d9be5ec675812bd26716136139ac1885fce475e41a3b781c4f80",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

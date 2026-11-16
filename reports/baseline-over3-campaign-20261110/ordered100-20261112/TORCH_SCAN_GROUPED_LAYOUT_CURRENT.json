@@ -1,0 +1,98 @@
+{
+  "checked_at": "2026-11-15T02:55:59.251894+00:00",
+  "paired_cases": 5,
+  "rows": [
+    {
+      "ordinal": 1498,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "mamba-2.8b-decode-bfloat16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-selective-scan-original-v2-1498-v4.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-scan-grouped-layout-1498-v1.CHECKPOINT.json",
+      "original_device_us": 66.0302,
+      "candidate_device_us": 51.07893333333333,
+      "device_reduction_percent": 22.643073421959436,
+      "selection": "candidate",
+      "same_frozen_FP64_oracle_and_checker": true,
+      "view_broadcast_only_no_precision_or_kernel_change": true,
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1501,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "mamba-2.8b-prefill-float16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-selective-scan-original-expansion-1501-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-scan-grouped-layout-expansion-1501-v1.CHECKPOINT.json",
+      "original_device_us": 561213.3200666667,
+      "candidate_device_us": 436427.3318666667,
+      "device_reduction_percent": 22.235036792280106,
+      "selection": "candidate",
+      "same_frozen_FP64_oracle_and_checker": true,
+      "view_broadcast_only_no_precision_or_kernel_change": true,
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1500,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "mamba-2.8b-packed-bfloat16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-selective-scan-original-expansion-1500-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-scan-grouped-layout-expansion-1500-v1.CHECKPOINT.json",
+      "original_device_us": 587832.8665333333,
+      "candidate_device_us": 460085.7484666667,
+      "device_reduction_percent": 21.731877433127956,
+      "selection": "candidate",
+      "same_frozen_FP64_oracle_and_checker": true,
+      "view_broadcast_only_no_precision_or_kernel_change": true,
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1497,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "grouped-state-bfloat16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-selective-scan-original-expansion-1497-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-scan-grouped-layout-expansion-1497-v1.CHECKPOINT.json",
+      "original_device_us": 519723.50626666663,
+      "candidate_device_us": 158100.957,
+      "device_reduction_percent": 69.5797948151917,
+      "selection": "candidate",
+      "same_frozen_FP64_oracle_and_checker": true,
+      "view_broadcast_only_no_precision_or_kernel_change": true,
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1502,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "mamba-2.8b-prefill-bfloat16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-selective-scan-original-expansion-1502-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-scan-grouped-layout-expansion-1502-v1.CHECKPOINT.json",
+      "original_device_us": 561493.3765333333,
+      "candidate_device_us": 436353.5733333333,
+      "device_reduction_percent": 22.286959816447816,
+      "selection": "candidate",
+      "same_frozen_FP64_oracle_and_checker": true,
+      "view_broadcast_only_no_precision_or_kernel_change": true,
+      "not_final_ratio_closure": true
+    }
+  ],
+  "coverage_increment": 0,
+  "no_history_or_publication": true
+}

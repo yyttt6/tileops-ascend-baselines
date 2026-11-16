@@ -1,0 +1,71 @@
+{
+    "binFileName": "MemSet_1a6864193b99ef93ef38616f04a712ab_high_performance",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "compileInfo": {
+        "global_variable_link": true,
+        "vars": {
+            "_workspace_index_list": [
+                -1
+            ],
+            "byte_list": [
+                4
+            ],
+            "core_num": 32,
+            "is_dynamic": true,
+            "mask_nums": [
+                64
+            ],
+            "max_repeat_time": 255,
+            "ub_size": 262016,
+            "workspace_num": 1
+        }
+    },
+    "coreType": "AiCore",
+    "deterministic": "ignore",
+    "globalworkspace_spec_workspace": {
+        "size": 32,
+        "type": 0
+    },
+    "kernelName": "MemSet_1a6864193b99ef93ef38616f04a712ab_high_performance__kernel0",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 64,
+    "parameters": [
+        null,
+        null,
+        null
+    ],
+    "sha256": "d4424b03d25418731eacd27213982625ccf9e212cdb5ce19d303c15fd95f5022",
+    "supportInfo": {
+        "int64Mode": false,
+        "staticKey": "06d8830c73cf41b27013d4f0f40f10f0cc907c2157bc274f8b2d854790b24678",
+        "inputs": [],
+        "outputs": [],
+        "attrs": [
+            {
+                "name": "sizes",
+                "dtype": "list_int",
+                "value": [
+                    -1
+                ]
+            },
+            {
+                "name": "dtypes",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "values_int",
+                "dtype": "list_int",
+                "value": []
+            },
+            {
+                "name": "values_float",
+                "dtype": "list_float",
+                "value": []
+            }
+        ],
+        "deterministic": "ignore"
+    }
+}

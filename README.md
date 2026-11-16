@@ -29,7 +29,24 @@ See [baseline adjustment methods (中文)](docs/BASELINE_ADJUSTMENT_METHODS.zh.m
 
 The dedicated server2 campaign covers all 71 fixed workloads with same-campaign eager controls. It adds 89 verified non-control variants, including explicitly separated Torch-expression compilation and compiled native antiquant wrappers. Exact cases, callable factories, source pins, and limitations are in [the campaign directory](reports/quant-baseline-fix-server2-20261110/USAGE.json) and [report](reports/quant-baseline-fix-server2-20261110/REPORT.json). Failed and unmeasured candidates remain separate in the catalog. These are device measurements; no raw data or website update is included. The general baseline retest remains paused.
 
-## Status snapshot
+## Baseline refresh (2026-11-16)
+
+The separately frozen >3x review campaign now has **2119/2119 qualified case
+coverage**, including all last69 pending cases,42 exact golden corrections and6
+explicit complex input-check compatibility cases. Start with the
+[result summary](catalog/baseline-over3-refresh-20261116/summary.json) and
+[code/result snapshot](reports/baseline-over3-campaign-20261110/README.md).
+Coverage is distinct from final ratio closures: the snapshot has14 qualified
+same-environment final conclusions(13 under3,1 retained over3). No CI/nightly or
+website integration is performed by this export.
+
+```sh
+python3 scripts/over3_refresh.py summary
+python3 scripts/over3_refresh.py case --ordinal 1292
+python3 scripts/over3_refresh.py verify
+```
+
+## Earlier status snapshot
 
 At the explicit pause on 2026-11-09:
 

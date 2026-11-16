@@ -1,0 +1,1 @@
+Staged exact representative only; use factory(...,fixed=True,case=case). Original runtime source SHA assertion preserved. No shared registry/web installation. Current environment isolated15 each verified; historical denominator/environment alignment remains pending.

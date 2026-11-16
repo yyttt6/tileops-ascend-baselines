@@ -1,0 +1,47 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "AdaLayerNormFwdOp",
+      "dit-xl-2-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_ADALN_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "AdaLayerNormFwdOp",
+      "dit-xl-2-float32"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_ADALN_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "AdaLayerNormFwdOp",
+      "dit-xl-2-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_ADALN_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "AdaLayerNormFwdOp",
+      "llama-8b-prefill-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_ADALN_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "AdaLayerNormFwdOp",
+      "llama-8b-prefill-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_ADALN_CURRENT.partial.json"
+  }
+]

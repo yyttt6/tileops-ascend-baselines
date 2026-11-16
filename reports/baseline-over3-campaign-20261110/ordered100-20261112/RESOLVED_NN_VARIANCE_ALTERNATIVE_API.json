@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-11-15T19:51:17.806618+00:00",
+  "accepted_complete_APIs": 2,
+  "rows": [
+    {
+      "ordinal": 683,
+      "key": [
+        "ops-nn",
+        "VarFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "api": "ops-math::aclnnVarCorrection",
+      "device_us": 30.216533333333334,
+      "source_attribution": "ops-math alternative completeAPI for originalNNcontract",
+      "checkpoint": "rollout-nn-variance-alternative-683-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "769c3e70ba7afeae92904873d501777da943913791b313873a868857b19aa133",
+      "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 684,
+      "key": [
+        "ops-nn",
+        "VarMeanFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "api": "ops-math::aclnnVarMean",
+      "device_us": 30.384733333333333,
+      "source_attribution": "ops-math alternative completeAPI for originalNNcontract",
+      "checkpoint": "rollout-nn-variance-alternative-684-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "65cc909d03add2fba398f5deaa2c38543a639bb5f2cf87fd79122ed09db599c8",
+      "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

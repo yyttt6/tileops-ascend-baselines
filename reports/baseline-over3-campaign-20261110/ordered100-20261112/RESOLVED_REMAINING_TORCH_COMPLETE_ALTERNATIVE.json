@@ -1,0 +1,152 @@
+{
+  "checked_at": "2026-11-16T02:50:32.856473+00:00",
+  "accepted_complete_APIs": 8,
+  "rows": [
+    {
+      "ordinal": 1736,
+      "key": [
+        "tilelang-ascend",
+        "CumprodFwdOp",
+        "hidden-state-float16"
+      ],
+      "api": "original frozen complete Torch program, executed on NPU",
+      "device_us": 102661.03601555349,
+      "checkpoint": "rollout-remaining-torch-complete-1736-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "9c1ec9a3ddd54ef7f05a8373a7793319d1f9b62910fcea7415e3586761e02a0a",
+      "payload_sha256": "9dfb783494e7d10e918ae3e2595dbe0aa32f1bd483d5ab01bf6787bf2ac08a9e",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "explicit_complete_original_Torch_API_alternative": true,
+      "original_library_native_provider_not_qualified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1737,
+      "key": [
+        "tilelang-ascend",
+        "CumprodFwdOp",
+        "hidden-state-bfloat16"
+      ],
+      "api": "original frozen complete Torch program, executed on NPU",
+      "device_us": 103007.48591735122,
+      "checkpoint": "rollout-remaining-torch-complete-1737-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "62bf0dc6ef2e9751bcb2bd98788146ba5bc2f2db0c9748cc6af032cb7b425ea3",
+      "payload_sha256": "710df1314dc47c67b8844aec9a8591e80e824bca831a90afee088ac0c4a0fe28",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "explicit_complete_original_Torch_API_alternative": true,
+      "original_library_native_provider_not_qualified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2101,
+      "key": [
+        "tilelang-ascend",
+        "VarFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "api": "original frozen complete Torch program, executed on NPU",
+      "device_us": 30.908066666666663,
+      "checkpoint": "rollout-remaining-torch-complete-2101-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "90059e0e85f895b2912a07b30fced7825cc1cc5270858df5d9c8c898df7805e5",
+      "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "explicit_complete_original_Torch_API_alternative": true,
+      "original_library_native_provider_not_qualified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2107,
+      "key": [
+        "tilelang-ascend",
+        "VarMeanFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "api": "original frozen complete Torch program, executed on NPU",
+      "device_us": 30.696266666666666,
+      "checkpoint": "rollout-remaining-torch-complete-2107-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "98e6d3b2153956f9db87d9c300b97db6928af2870c85800b0e52df71ebb640e8",
+      "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "explicit_complete_original_Torch_API_alternative": true,
+      "original_library_native_provider_not_qualified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 370,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-grouped-prefill-float16"
+      ],
+      "api": "original frozen complete Torch program, executed on NPU",
+      "device_us": 343.45306666666664,
+      "checkpoint": "rollout-remaining-torch-complete-370-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "4f665b1196fb78ff657101e01d24f175c86a083e0154b38f0bf49da90c796d1b",
+      "payload_sha256": "2d18cf138c25348afced03c5ad27be20bfdfd0e1937407deddd934e4c993f997",
+      "reference_policy": "original_cpu",
+      "full_checker_15raw_guard_valid": true,
+      "explicit_complete_original_Torch_API_alternative": true,
+      "original_library_native_provider_not_qualified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 371,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-780m-float16"
+      ],
+      "api": "original frozen complete Torch program, executed on NPU",
+      "device_us": 40.62213333333333,
+      "checkpoint": "rollout-remaining-torch-complete-371-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "b3c74c20b119a64e80e500b90b02b36b214818aa361e9821c5f4ffeedee8d031",
+      "payload_sha256": "26552fad14198aac0fae328094354a4f5b6cb522725f7e665fc6950f4ade4171",
+      "reference_policy": "original_cpu",
+      "full_checker_15raw_guard_valid": true,
+      "explicit_complete_original_Torch_API_alternative": true,
+      "original_library_native_provider_not_qualified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 733,
+      "key": [
+        "ops-tensor",
+        "TruncFwdOp",
+        "256M-float16"
+      ],
+      "api": "original frozen complete Torch program, executed on NPU",
+      "device_us": 302.3609333333334,
+      "checkpoint": "rollout-remaining-torch-complete-733-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "5e7a6f9a85c632751cef1b8a01078d28c8a8483eb412a87b21d53a2a016bc2df",
+      "payload_sha256": "8620ac2ed68c1d9fef74bbd87692cf0c4b9d2deda654cf3d1303f72f70f3b832",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "explicit_complete_original_Torch_API_alternative": true,
+      "original_library_native_provider_not_qualified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 734,
+      "key": [
+        "ops-tensor",
+        "TruncFwdOp",
+        "256M-bfloat16"
+      ],
+      "api": "original frozen complete Torch program, executed on NPU",
+      "device_us": 302.17926666666665,
+      "checkpoint": "rollout-remaining-torch-complete-734-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "002e0fd838a44fda4e86acc535efe8521de71b7656b7e9f0e557e0162f39110b",
+      "payload_sha256": "5b0ad4415147d9be5ec675812bd26716136139ac1885fce475e41a3b781c4f80",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "explicit_complete_original_Torch_API_alternative": true,
+      "original_library_native_provider_not_qualified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "new_pairs": 0,
+  "new_final_closures": 0
+}

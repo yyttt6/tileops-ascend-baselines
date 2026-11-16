@@ -1,0 +1,2881 @@
+{
+  "started_at_remote": "2026-11-16T03:43:49.795767+00:00",
+  "status": "all42_certified",
+  "scope": [
+    184,
+    240,
+    241,
+    244,
+    245,
+    270,
+    271,
+    272,
+    273,
+    274,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    284,
+    295,
+    296,
+    297,
+    309,
+    372,
+    486,
+    487,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    498,
+    759,
+    772,
+    773,
+    774,
+    777,
+    804,
+    1082,
+    1255
+  ],
+  "oracle_source_sha256": "445fb1d1284fff4f7b2e0ebe3919f69b1c22b919121adbfd50485ce8f9e47313",
+  "certifier_sha256": "37e29cf1b9d950c0ee0e1e2daade997227766155c67ef71e4696c92098cfc5c2",
+  "torch": "2.13.0+cpu",
+  "CPU_only_NPU_import_forbidden": true,
+  "threads": 4,
+  "rows": [
+    {
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "ordinal": 184,
+      "status": "certified",
+      "original_reference_policy": "original_npu",
+      "prepare_sha256": "5144be12bf2359208835311b2da6d292576fe44ec9b69f295957acf2216540db",
+      "evidence": {
+        "rtol": 0.001,
+        "atol": 0.001,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1,
+      "output_elements": 2097152,
+      "original_golden": "golden42-repair-20261116/184/original_golden.pt",
+      "original_golden_sha256": "db426eb6b825e2c29da159c6c2e4d133a8628a19a5748ad85def83c0a9d09b26",
+      "corrected_golden": "golden42-repair-20261116/184/corrected_golden.pt",
+      "corrected_golden_sha256": "b9c1f85e58a5f70b042f99123f00d93e7162efa39883664fbc582454b6f5a5c8",
+      "seconds": 0.6871330738067627,
+      "certified_at_remote": "2026-11-16T03:43:50.483012+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-2k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            8,
+            2048,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            8,
+            2048,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            8,
+            2048,
+            2048
+          ],
+          "bfloat16"
+        ]
+      },
+      "payload_sha256": "36717beda779193c725a0d1e42dcb3d92064d88a7e73bd218bce6250e0039a14",
+      "descriptor_sha256": "6eb7002b4f66d314250b402cc2cb8b4e883d0c66d8f00396e3d2c553eb16d132",
+      "ordinal": 240,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "2e5abc24800391fb9684054f7c90baeaccde687136086bd1a2e8efd1fb6a7bc3",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1745224,
+      "output_elements": 33554432,
+      "original_golden": "golden42-repair-20261116/240/original_golden.pt",
+      "original_golden_sha256": "118768ef8a97978d53c22912d7206fcab152c5907a2f22383cd18cb8b172d56a",
+      "corrected_golden": "golden42-repair-20261116/240/corrected_golden.pt",
+      "corrected_golden_sha256": "a8e9f35a7ba2a4eddb08243fc5f388d97d55e1713bb2ccb84824e40e4b22ddfa",
+      "seconds": 7.166754722595215,
+      "certified_at_remote": "2026-11-16T03:43:57.765414+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "moe-prefill-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            512,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            128,
+            2048,
+            512
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            512,
+            512
+          ],
+          "bfloat16"
+        ]
+      },
+      "payload_sha256": "2750f07b337a94409cb7c44762289332791abb3c351c60b097fa6fe995c0e9a4",
+      "descriptor_sha256": "bd7b8308e058e48c60d197739c159d56db71a9dac82306a89f6fa06f006f0e90",
+      "ordinal": 241,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "0d251a48174bd768ee3f46efcdaaf4f6cf87dcb66e76429a7454bf6e9f830979",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1745091,
+      "output_elements": 33554432,
+      "original_golden": "golden42-repair-20261116/241/original_golden.pt",
+      "original_golden_sha256": "57cddce3aefcd420022c2e8316e7f355732ea3d475005642fc13184191714648",
+      "corrected_golden": "golden42-repair-20261116/241/corrected_golden.pt",
+      "corrected_golden_sha256": "51fa3c314d9aa629a7cee8297aec85ed4736de828c14bda3dd47c9fd09f1b85d",
+      "seconds": 12.232643604278564,
+      "certified_at_remote": "2026-11-16T03:44:11.465892+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ]
+      },
+      "payload_sha256": "9e7108f7dcd5b4420d3f199494fdc9892ca699d7c27044600fd03dc12dabe786",
+      "descriptor_sha256": "58e4ba61a27458a90f4d251158e37172ce7f2945c9dbbca538158d07060acc6f",
+      "ordinal": 244,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "f71cdd236a0eb12b5bea7ba1c12451becf81f09570d3ddb7e96480ae9b6b7919",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 242279,
+      "output_elements": 8388608,
+      "original_golden": "golden42-repair-20261116/244/original_golden.pt",
+      "original_golden_sha256": "b91791b133632091f951a3e7195baf8e108d9722e02eb214b1cf4e983890b610",
+      "corrected_golden": "golden42-repair-20261116/244/corrected_golden.pt",
+      "corrected_golden_sha256": "546d1a892024d0ed0ebfd6843b58e867b56383ece9038aaa2ab29c836b53ee14",
+      "seconds": 1.2715225219726562,
+      "certified_at_remote": "2026-11-16T03:44:18.164834+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "params": {
+        "a": [
+          [
+            64,
+            128,
+            2048
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            64,
+            2048,
+            128
+          ],
+          "float16"
+        ],
+        "d": [
+          [
+            64,
+            128,
+            128
+          ],
+          "float16"
+        ]
+      },
+      "payload_sha256": "9dd2ef1f93f74e012cb5fff27d8cb703ffb39da866e206221d006d19b49a5705",
+      "descriptor_sha256": "d7b71bbd14470143ce60c81595e4368f68a793e1b710cd6f745dc8c0f6e9732e",
+      "ordinal": 245,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "66655d731d73d5f98d522501707f87ee7281f496c087917397355679069f1617",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 46691,
+      "output_elements": 1048576,
+      "original_golden": "golden42-repair-20261116/245/original_golden.pt",
+      "original_golden_sha256": "58a22c9464a8b06d19f34e982047451cfc83cf08fa3686eb33c5437cde8f3828",
+      "corrected_golden": "golden42-repair-20261116/245/corrected_golden.pt",
+      "corrected_golden_sha256": "0d6e9881329d91f994e76dbf189468dd6c6d63c747d7528558c0ecaad2a45a12",
+      "seconds": 1.2462170124053955,
+      "certified_at_remote": "2026-11-16T03:44:19.829579+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            4096,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "50982165f4e4bfe84beb665c12c6eb1f7633199b4b26002d373587aabea4e10c",
+      "descriptor_sha256": "378d37f1643ea0f0e9dd86e3d9826be2306143d66059af0217648a946fbdc32d",
+      "ordinal": 270,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "b7a23fb8a2a3229c4c39cc4d7f471bf314d82870976431fec53da19b031e4b76",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 2009708,
+      "output_elements": 16777216,
+      "original_golden": "golden42-repair-20261116/270/original_golden.pt",
+      "original_golden_sha256": "34c65c38490e0b60235aa7d1396566833bde4effd879a7824a84e03a7b4e68be",
+      "corrected_golden": "golden42-repair-20261116/270/corrected_golden.pt",
+      "corrected_golden_sha256": "ac4e3c7e07ab1de88cffb6cb8b33ac0d854855d9ffd4a195e0af8ae10419a727",
+      "seconds": 9.770816802978516,
+      "certified_at_remote": "2026-11-16T03:44:30.308404+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-mlp-up-float16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "d": [
+          [
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "84dc4b700e32895e3cabc7ffce7f11bd4b1dc972b24aebf10d45c11af85e656b",
+      "descriptor_sha256": "51383eabbee06a95291cbe0c3161fd11c9d8a352f72f400a30304d28d3c6de10",
+      "ordinal": 271,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "5e1b85fa571d3ab53897ace6d4d01138d768445b07b4ba2b0dd824fa0ac8e8a2",
+      "evidence": {
+        "rtol": 0.001,
+        "atol": 0.001,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 2303479,
+      "output_elements": 16777216,
+      "original_golden": "golden42-repair-20261116/271/original_golden.pt",
+      "original_golden_sha256": "a06f890f1ef93c08a872563def650da7e3ab2bb9aa2506d2abe7fad7501e4c90",
+      "corrected_golden": "golden42-repair-20261116/271/corrected_golden.pt",
+      "corrected_golden_sha256": "ed0d605fb4bada14f184f3824915c5b8299f5d15259c65e3dc3691c75c6bf2bc",
+      "seconds": 9.315172910690308,
+      "certified_at_remote": "2026-11-16T03:44:40.854135+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-o-proj-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            16384
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            16384
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "0fc20631292c7ac75b11d96a2530107225768afa9be70c21ce83ecfb237097c8",
+      "descriptor_sha256": "85fe75375e2eee37cc7e709a06187c6673bedfce1c95c23afa8ca084a306a71c",
+      "ordinal": 272,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "f92f1d2f436e4e17635c3bd7567cb2ab3c2a1e25ea5b6cf468aaaf46a942b683",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 5915099,
+      "output_elements": 29360128,
+      "original_golden": "golden42-repair-20261116/272/original_golden.pt",
+      "original_golden_sha256": "5beceedf3ba1a24b48b8427c2a909e95c4bfa32f327d3125c33d0095c3982c1c",
+      "corrected_golden": "golden42-repair-20261116/272/corrected_golden.pt",
+      "corrected_golden_sha256": "064c2427a8bb20d2657fc281fdb5fca17e281ac85ac5934c68035c765cf56d27",
+      "seconds": 48.37713694572449,
+      "certified_at_remote": "2026-11-16T03:45:30.442761+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-down-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "da9de8df1fd2120b7be63c52bfdb6fb147377cbb60f801693c4ae0c002b8a675",
+      "descriptor_sha256": "332c60d8ac1ad153f0ae1f373eac09f53dc528bd5d3813a62db5e697930f5613",
+      "ordinal": 273,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "db040881f3773590ea7d1cd10c79a2bb0891a03f4b2b2a38962c9f8c4e214583",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1527268,
+      "output_elements": 29360128,
+      "original_golden": "golden42-repair-20261116/273/original_golden.pt",
+      "original_golden_sha256": "8103bda7a657da12c268f4aea4310bf5080710cd4d98cf29d6678ee18daab28a",
+      "corrected_golden": "golden42-repair-20261116/273/corrected_golden.pt",
+      "corrected_golden_sha256": "c38d8b05fd0e47c9b35ea874851aba200d9e038fce7dda05fc7a5b82473a4aa1",
+      "seconds": 5.0707457065582275,
+      "certified_at_remote": "2026-11-16T03:45:40.797040+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-q-b-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            24576,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            4096,
+            24576
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "700eec88dae3f8db5724539221438930ac5badee47472e79570eb29b0b880a3b",
+      "descriptor_sha256": "f9fb239038e567b3fe215b6c576131e3c18572a07e0facbfa3d6e477505c2f72",
+      "ordinal": 274,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "fe642815fac2f03cfa56de0ecc01ea52379ec14ebd0f275f1dfb7975ba1b0bf9",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 3891789,
+      "output_elements": 100663296,
+      "original_golden": "golden42-repair-20261116/274/original_golden.pt",
+      "original_golden_sha256": "1a3d62e2f20453b2bd5a2323d3de7e12dc51467b31b4875b34cbfe3a33366d75",
+      "corrected_golden": "golden42-repair-20261116/274/corrected_golden.pt",
+      "corrected_golden_sha256": "55e4099e73c3ca74c558df6e58729d91af2e1091e9d6d77d140057ad3a37648f",
+      "seconds": 15.582330465316772,
+      "certified_at_remote": "2026-11-16T03:45:57.281786+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            256,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            21843,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            256,
+            21843
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "54cc7a77132b23479634d5ed6c612d1240a16900e963ec97dc58129219718e86",
+      "descriptor_sha256": "ae010bf2b2540c9053cac59d144dab69da110e1dea28ed326299d83c94f6ae00",
+      "ordinal": 276,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "4b2bd2c970655c23f69ff6b74a3871d134b53387aaf1c5f17e7ae4ce3f9f21cd",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 161407,
+      "output_elements": 5591808,
+      "original_golden": "golden42-repair-20261116/276/original_golden.pt",
+      "original_golden_sha256": "d17a6debf82e2d9c28e42fe14c12b084a983723dc16f5902ab52fd1eb49b0074",
+      "corrected_golden": "golden42-repair-20261116/276/corrected_golden.pt",
+      "corrected_golden_sha256": "78f1d01236b10944fa38a779ad1a76a30b2082a890fb1f061a22f0ffcd3501fe",
+      "seconds": 1.3981165885925293,
+      "certified_at_remote": "2026-11-16T03:46:01.893964+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            12288
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            12288
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "2f30e2b7282c5a3d8bf95aaae915ada51e279cc1d74db82fb9239ba1042db984",
+      "descriptor_sha256": "033d786eb51771d6fbc0a8bc52e67d08c1b0abdedcea1a6af64f6faf15e9e90b",
+      "ordinal": 277,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "0f5b305fb08d043395af1bd3b12d800bdbe986ce2e9960ca3258e9df94db941c",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 87810,
+      "output_elements": 524288,
+      "original_golden": "golden42-repair-20261116/277/original_golden.pt",
+      "original_golden_sha256": "1ae2283bce09e3d2b165a0af109043a308b38b2097831f5d9386cde56d6f9000",
+      "corrected_golden": "golden42-repair-20261116/277/corrected_golden.pt",
+      "corrected_golden_sha256": "5c3e0116cdfadbb7d394a3d479df98c2d5066e30dea2591bae121faaa0c974a7",
+      "seconds": 2.4270429611206055,
+      "certified_at_remote": "2026-11-16T03:46:05.171967+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            64,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "790d2aa047aada5f1d36877feb360791f726ec166c3f1c27e737405bcfc9868b",
+      "descriptor_sha256": "da766d996905ab2c1f5ec56f9e47508e1da9d2b8c997244c87f896718595c852",
+      "ordinal": 278,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "fda194fd5036a60e6cb4d5ba60226de918de82e50b5cf0324b7db7a32bda2cc5",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 23730,
+      "output_elements": 458752,
+      "original_golden": "golden42-repair-20261116/278/original_golden.pt",
+      "original_golden_sha256": "1827088d10d918592e1b30eed63c0e612f2c4dbe4dc0a898d1654e98e1eb3ab8",
+      "corrected_golden": "golden42-repair-20261116/278/corrected_golden.pt",
+      "corrected_golden_sha256": "04698f4f73573e052ee1c30c913c73679c5952cdb5cb8719370a10c8202203fe",
+      "seconds": 0.7182862758636475,
+      "certified_at_remote": "2026-11-16T03:46:07.692723+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            96,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            96,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "2cab8d3633caf87263f48c5821438aa4a2a7f3c5a43dcc27be97a0b01d3e3a37",
+      "descriptor_sha256": "dc136f594e393e59f4c848264a954575f795ffcef3cf0ec8654ff4d04d9facf8",
+      "ordinal": 279,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "a63db5bfeac29e2e61857adabe86c92f7440d321c5d980fbc457e1a07a988f45",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 24424,
+      "output_elements": 202752,
+      "original_golden": "golden42-repair-20261116/279/original_golden.pt",
+      "original_golden_sha256": "dac50053c880c6b5866b08315e1858e9a250f4f177b04503c824fc94579033c5",
+      "corrected_golden": "golden42-repair-20261116/279/corrected_golden.pt",
+      "corrected_golden_sha256": "c9c4d74b1e588cfd4390901dff6a5fd61017d72f92ef8a6cb2a2e35e5bf6f90f",
+      "seconds": 0.6843535900115967,
+      "certified_at_remote": "2026-11-16T03:46:08.985933+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            32,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            24576,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            32,
+            24576
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "b2ae93b04eb7e011dd621c2ef9e9dd096b8860a44cdc0a5de0b1236eb6bae29f",
+      "descriptor_sha256": "d1fac9db8921eddf9008e5a277cabca42974e2a7f6aa7553162a988cab687185",
+      "ordinal": 280,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "5a38c12263e76f2b79fb767ed903b4059d9e8a7d8711609d725df6ebb18ffe15",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 66000,
+      "output_elements": 786432,
+      "original_golden": "golden42-repair-20261116/280/original_golden.pt",
+      "original_golden_sha256": "efba8fe4cc8a050541219012c25d277b212db87785991ae68c8cb205d175969e",
+      "corrected_golden": "golden42-repair-20261116/280/corrected_golden.pt",
+      "corrected_golden_sha256": "223006cef72d988abf39fa49054efaee01d9d397817f105cad20fb9b3e0e64a7",
+      "seconds": 7.47245717048645,
+      "certified_at_remote": "2026-11-16T03:46:17.125900+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            32,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "34d5530ddd217037bd6ac298c035bd3ee760c0eb019bf4c50f5a5aa3b058234f",
+      "descriptor_sha256": "cc3868219f02168c2829591602f68b0f1bdc2e7e4be952835daa7591b279a8b5",
+      "ordinal": 281,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "c00f829d0ee91c3cd547663a323faa78856c678a85c3809f268188f5b4b5f036",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 15750,
+      "output_elements": 131072,
+      "original_golden": "golden42-repair-20261116/281/original_golden.pt",
+      "original_golden_sha256": "b73c33ab1bc39a0d1670b25732ee3854fcd2babec2f747d356070367875af9a5",
+      "corrected_golden": "golden42-repair-20261116/281/corrected_golden.pt",
+      "corrected_golden_sha256": "fc03145d9345cb51bdb00e4195c2e72688337c46f5c908dfc35d7254a32e559b",
+      "seconds": 1.2754075527191162,
+      "certified_at_remote": "2026-11-16T03:46:25.488584+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            16,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            16,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "b868848e1f17c7e551178cb02e0b5a5ccc343dedfe2c41e578bb466b933125be",
+      "descriptor_sha256": "534ea16e81b2765780276a9f3382b8571eb151b52475ab47c39283df93337a13",
+      "ordinal": 282,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "2c1f5047adc48bef4547f69222ed8a64d895c80e95da3ca135d40080286bfac8",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 7775,
+      "output_elements": 65536,
+      "original_golden": "golden42-repair-20261116/282/original_golden.pt",
+      "original_golden_sha256": "cffaacf8708fe8a3f3782f72b55d9471d16266721e095d79b51501dae7c1a786",
+      "corrected_golden": "golden42-repair-20261116/282/corrected_golden.pt",
+      "corrected_golden_sha256": "27fa611aff5c424b3bf1b8d49d6a58cf400c849c5a6afed0dd28f7fbe4b488a9",
+      "seconds": 2.1777703762054443,
+      "certified_at_remote": "2026-11-16T03:46:28.849201+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            2,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            2,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "8f0e8442a76cb15b8eb4b72c04255a0c86b1110cb8a51207d46a8b481670e6fc",
+      "descriptor_sha256": "fd8d02d304bbb34f322a9041a41d6460c06a4fe84f241313113e23271f6cc961",
+      "ordinal": 284,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "0751b54cc29aa616e680e19a0d5803e4d05eb247a995778e46918ba2dd26a86a",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 504,
+      "output_elements": 4224,
+      "original_golden": "golden42-repair-20261116/284/original_golden.pt",
+      "original_golden_sha256": "34ca762af6db3e54b4327603c832c4bd3d76e09fff916ee951bc419be42e669a",
+      "corrected_golden": "golden42-repair-20261116/284/corrected_golden.pt",
+      "corrected_golden_sha256": "71f27df825e708d4fdd39456e8c792342e9e11af1df59429e34d72255e59f479",
+      "seconds": 1.2116060256958008,
+      "certified_at_remote": "2026-11-16T03:46:32.210596+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "moe-fwd-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            4096,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            4096,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "payload_sha256": "9c4ea77487e5bb1a9455502f84805a7edee5c43487a9523c367c143e9a88d202",
+      "descriptor_sha256": "34e89bc89f7361c6f6f3bd6df00cb5075cf242567dd8026627abda9643f0fc5e",
+      "ordinal": 295,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "c81639cae7ebfea194d526142d8f5b56d777a491f0f0d3c1236c86733bd0fb4a",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1406564,
+      "output_elements": 16777216,
+      "original_golden": "golden42-repair-20261116/295/original_golden.pt",
+      "original_golden_sha256": "bb49a0f1b1297406e7d2d05ccc7e6647819324864eb2002fd209c7e666cc7422",
+      "corrected_golden": "golden42-repair-20261116/295/corrected_golden.pt",
+      "corrected_golden_sha256": "57ba28664095f201d4bb2b72074404113b2e99f3f6af967a2184a2d2465309d4",
+      "seconds": 26.96217966079712,
+      "certified_at_remote": "2026-11-16T03:47:00.329473+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            1024,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            1536,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            1024,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "payload_sha256": "fb6bd7176a747ed8fbcde1ee831c0d40194dee6d360d0478c131704ae8c661f2",
+      "descriptor_sha256": "37050fe067753f70dfefbb7d049461f55eb0ca189d22a35d085bd2eb7072b602",
+      "ordinal": 296,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "eaab13e1835647d8f1a4f42515c5a918222b09e38f00d61aa8e8e5d324f4308b",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 81939,
+      "output_elements": 1572864,
+      "original_golden": "golden42-repair-20261116/296/original_golden.pt",
+      "original_golden_sha256": "7771a5b206f31284814e64c61e459afb045ea614e007fe2be484fac4fad5f415",
+      "corrected_golden": "golden42-repair-20261116/296/corrected_golden.pt",
+      "corrected_golden_sha256": "a20d5158bfce5a307c2960c8834efc166b02e6996e1d9156e9dc06a57809b2e8",
+      "seconds": 5.7491514682769775,
+      "certified_at_remote": "2026-11-16T03:47:18.603351+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            257,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            1536,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            257,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "payload_sha256": "1c5ce101bc7e0900755147a55ba32cdcf461c4c0bbded56459a53616649cdeb1",
+      "descriptor_sha256": "e5bc7d60634feedbee87020761f4cc612a790d970682105feb368d26ebbf4135",
+      "ordinal": 297,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "78c6187b4a5d20706eec310852fc0754a5c1833c8509001f8a0589d9400cb09c",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 20377,
+      "output_elements": 394752,
+      "original_golden": "golden42-repair-20261116/297/original_golden.pt",
+      "original_golden_sha256": "94422b9ad91c70b7ada22fe2efb9879f227759ce54c18ea13affec4b5fc6a783",
+      "corrected_golden": "golden42-repair-20261116/297/corrected_golden.pt",
+      "corrected_golden_sha256": "c982cd3ba293936e0eee68db49f785e117fa353737e30470cebe96ddca9047b1",
+      "seconds": 3.834850549697876,
+      "certified_at_remote": "2026-11-16T03:47:26.062069+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "params": {
+        "x": [
+          [
+            8,
+            128,
+            32,
+            32
+          ],
+          "float16"
+        ],
+        "weight": [
+          [
+            128
+          ],
+          "float16"
+        ],
+        "bias": [
+          [
+            128
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            8,
+            128,
+            32,
+            32
+          ],
+          "float16"
+        ],
+        "use_input_stats": true,
+        "momentum": 0.1,
+        "eps": 1e-05
+      },
+      "payload_sha256": "77b907cd17159d51f7338e47d0cd30a8309d30911ed3e3a7a5f5bff9a7e27799",
+      "descriptor_sha256": "9b3af06d061347deafc2e9994f147f3350c555f157028fce66e4fecfd6cab96e",
+      "ordinal": 309,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "9b29f5e84775dbcd03e7fcc85f3359a99b06d77fb441efdab8bbd19fe94938ec",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 12,
+      "output_elements": 1048576,
+      "original_golden": "golden42-repair-20261116/309/original_golden.pt",
+      "original_golden_sha256": "9a315454e4f4305e80a5a98cdf82902da95ff3dd152e706834c39f5cf2b6505b",
+      "corrected_golden": "golden42-repair-20261116/309/corrected_golden.pt",
+      "corrected_golden_sha256": "afcb01b22c27783d8e858319373769f5bdb103373750dcf93c001e966cbd4fd9",
+      "seconds": 0.15820837020874023,
+      "certified_at_remote": "2026-11-16T03:47:28.171661+00:00"
+    },
+    {
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "ordinal": 372,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "0688a14ebaf5eb2489fcaf19a0f1a59f393791b77f496bd03fbecd24b56c3626",
+      "evidence": {
+        "rtol": 0.001,
+        "atol": 0.001,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1,
+      "output_elements": 2097152,
+      "original_golden": "golden42-repair-20261116/372/original_golden.pt",
+      "original_golden_sha256": "db426eb6b825e2c29da159c6c2e4d133a8628a19a5748ad85def83c0a9d09b26",
+      "corrected_golden": "golden42-repair-20261116/372/corrected_golden.pt",
+      "corrected_golden_sha256": "b9c1f85e58a5f70b042f99123f00d93e7162efa39883664fbc582454b6f5a5c8",
+      "seconds": 0.3298983573913574,
+      "certified_at_remote": "2026-11-16T03:47:28.714358+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            2,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            2,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "8f0e8442a76cb15b8eb4b72c04255a0c86b1110cb8a51207d46a8b481670e6fc",
+      "descriptor_sha256": "fd8d02d304bbb34f322a9041a41d6460c06a4fe84f241313113e23271f6cc961",
+      "ordinal": 486,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "8b2eda377be73adb0078160aee3cafc6271d480e0a2000deb671303884aec03c",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 504,
+      "output_elements": 4224,
+      "original_golden": "golden42-repair-20261116/486/original_golden.pt",
+      "original_golden_sha256": "34ca762af6db3e54b4327603c832c4bd3d76e09fff916ee951bc419be42e669a",
+      "corrected_golden": "golden42-repair-20261116/486/corrected_golden.pt",
+      "corrected_golden_sha256": "71f27df825e708d4fdd39456e8c792342e9e11af1df59429e34d72255e59f479",
+      "seconds": 1.1703732013702393,
+      "certified_at_remote": "2026-11-16T03:47:30.145262+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            32,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            24576,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            32,
+            24576
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "b2ae93b04eb7e011dd621c2ef9e9dd096b8860a44cdc0a5de0b1236eb6bae29f",
+      "descriptor_sha256": "d1fac9db8921eddf9008e5a277cabca42974e2a7f6aa7553162a988cab687185",
+      "ordinal": 487,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "ad053edb29d64a64e63f110f6519d93051e8db0a713adfe4526e7b213fbf6d64",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 66000,
+      "output_elements": 786432,
+      "original_golden": "golden42-repair-20261116/487/original_golden.pt",
+      "original_golden_sha256": "efba8fe4cc8a050541219012c25d277b212db87785991ae68c8cb205d175969e",
+      "corrected_golden": "golden42-repair-20261116/487/corrected_golden.pt",
+      "corrected_golden_sha256": "223006cef72d988abf39fa49054efaee01d9d397817f105cad20fb9b3e0e64a7",
+      "seconds": 3.975224494934082,
+      "certified_at_remote": "2026-11-16T03:47:35.278650+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            16,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            16,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "b868848e1f17c7e551178cb02e0b5a5ccc343dedfe2c41e578bb466b933125be",
+      "descriptor_sha256": "534ea16e81b2765780276a9f3382b8571eb151b52475ab47c39283df93337a13",
+      "ordinal": 489,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "f7924d4ca2f02bd9323f6644507ca0c803fdc93571f542188858d84acff8a254",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 7775,
+      "output_elements": 65536,
+      "original_golden": "golden42-repair-20261116/489/original_golden.pt",
+      "original_golden_sha256": "cffaacf8708fe8a3f3782f72b55d9471d16266721e095d79b51501dae7c1a786",
+      "corrected_golden": "golden42-repair-20261116/489/corrected_golden.pt",
+      "corrected_golden_sha256": "27fa611aff5c424b3bf1b8d49d6a58cf400c849c5a6afed0dd28f7fbe4b488a9",
+      "seconds": 2.15032696723938,
+      "certified_at_remote": "2026-11-16T03:47:41.022203+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            64,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "790d2aa047aada5f1d36877feb360791f726ec166c3f1c27e737405bcfc9868b",
+      "descriptor_sha256": "da766d996905ab2c1f5ec56f9e47508e1da9d2b8c997244c87f896718595c852",
+      "ordinal": 490,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "a2f375f045ca16da8ecb757df143e0e4e03e8d6a07fd3454b1e993197f82bc67",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 23730,
+      "output_elements": 458752,
+      "original_golden": "golden42-repair-20261116/490/original_golden.pt",
+      "original_golden_sha256": "1827088d10d918592e1b30eed63c0e612f2c4dbe4dc0a898d1654e98e1eb3ab8",
+      "corrected_golden": "golden42-repair-20261116/490/corrected_golden.pt",
+      "corrected_golden_sha256": "04698f4f73573e052ee1c30c913c73679c5952cdb5cb8719370a10c8202203fe",
+      "seconds": 0.7226920127868652,
+      "certified_at_remote": "2026-11-16T03:47:43.963907+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            96,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            96,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "2cab8d3633caf87263f48c5821438aa4a2a7f3c5a43dcc27be97a0b01d3e3a37",
+      "descriptor_sha256": "dc136f594e393e59f4c848264a954575f795ffcef3cf0ec8654ff4d04d9facf8",
+      "ordinal": 491,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "92e8b361b4e43782def72e2828e0585aab9bb563d22a884857a6798d0dce1c1a",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 24424,
+      "output_elements": 202752,
+      "original_golden": "golden42-repair-20261116/491/original_golden.pt",
+      "original_golden_sha256": "dac50053c880c6b5866b08315e1858e9a250f4f177b04503c824fc94579033c5",
+      "corrected_golden": "golden42-repair-20261116/491/corrected_golden.pt",
+      "corrected_golden_sha256": "c9c4d74b1e588cfd4390901dff6a5fd61017d72f92ef8a6cb2a2e35e5bf6f90f",
+      "seconds": 1.2875006198883057,
+      "certified_at_remote": "2026-11-16T03:47:45.888130+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "af91d5d5c8d58be6b52913ae253609d7a2b5e91efa0eed93d482678517c56e8d",
+      "descriptor_sha256": "52f16b234b4b51e5da8d2f0d55f5d7ff695d46caccf5ff60223f672e8b04a85e",
+      "ordinal": 492,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "fd38342d88b087db377cf6f9a17cd45cd62f47bffd9eeb432fcabc8c9b147630",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 32448,
+      "output_elements": 270336,
+      "original_golden": "golden42-repair-20261116/492/original_golden.pt",
+      "original_golden_sha256": "e3d92735f2fe58af367bdb75b7b65fc26dc6d3fdc418dbfd821f0ce51e0e5246",
+      "corrected_golden": "golden42-repair-20261116/492/corrected_golden.pt",
+      "corrected_golden_sha256": "b219a2522cf247c6e5ab60f62ed2b5afe58eb1eb9f9bfc4568d616849c230d9f",
+      "seconds": 0.5552294254302979,
+      "certified_at_remote": "2026-11-16T03:47:47.554867+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            32,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "34d5530ddd217037bd6ac298c035bd3ee760c0eb019bf4c50f5a5aa3b058234f",
+      "descriptor_sha256": "cc3868219f02168c2829591602f68b0f1bdc2e7e4be952835daa7591b279a8b5",
+      "ordinal": 493,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "d5a186568469a39079e7dfbf96bfb642a473aa2bc13b50347b7a03971e4cfb34",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 15750,
+      "output_elements": 131072,
+      "original_golden": "golden42-repair-20261116/493/original_golden.pt",
+      "original_golden_sha256": "b73c33ab1bc39a0d1670b25732ee3854fcd2babec2f747d356070367875af9a5",
+      "corrected_golden": "golden42-repair-20261116/493/corrected_golden.pt",
+      "corrected_golden_sha256": "fc03145d9345cb51bdb00e4195c2e72688337c46f5c908dfc35d7254a32e559b",
+      "seconds": 2.793499231338501,
+      "certified_at_remote": "2026-11-16T03:47:50.742399+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-down-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "69b9845d612780cfe55b9394ef4510a7152089839cc9cc31320584be623e8fe1",
+      "descriptor_sha256": "55f2df8ded85cf556a123afc9ba9dc8ce5e8ec495df634d162b0a2a56d0d174f",
+      "ordinal": 494,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "640f5a41a3f6bc607244e46438eb6fe45e834bb583145ccafac2758b22136a5f",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 47424,
+      "output_elements": 917504,
+      "original_golden": "golden42-repair-20261116/494/original_golden.pt",
+      "original_golden_sha256": "dc46cfa4ed4e7338558f1c516dd0c822904ad8ff91df44426e7896188093c8b7",
+      "corrected_golden": "golden42-repair-20261116/494/corrected_golden.pt",
+      "corrected_golden_sha256": "60f8b44baae8a242693546095e4069141f0f09b5891c1c2b72cd627f01ad8430",
+      "seconds": 1.5389151573181152,
+      "certified_at_remote": "2026-11-16T03:47:55.006147+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            12288
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            12288
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "2f30e2b7282c5a3d8bf95aaae915ada51e279cc1d74db82fb9239ba1042db984",
+      "descriptor_sha256": "033d786eb51771d6fbc0a8bc52e67d08c1b0abdedcea1a6af64f6faf15e9e90b",
+      "ordinal": 495,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "f7d2a7a2169dba8903b886d898542754dba1b98459e59be3f70371360a3d127f",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 87810,
+      "output_elements": 524288,
+      "original_golden": "golden42-repair-20261116/495/original_golden.pt",
+      "original_golden_sha256": "1ae2283bce09e3d2b165a0af109043a308b38b2097831f5d9386cde56d6f9000",
+      "corrected_golden": "golden42-repair-20261116/495/corrected_golden.pt",
+      "corrected_golden_sha256": "5c3e0116cdfadbb7d394a3d479df98c2d5066e30dea2591bae121faaa0c974a7",
+      "seconds": 1.5603079795837402,
+      "certified_at_remote": "2026-11-16T03:47:57.915211+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": false
+      },
+      "payload_sha256": "07fea9a43faa90dfad30aa94b515e6f0f172ed67a455339bfe7afdadc188c0f4",
+      "descriptor_sha256": "8dc38096aca2206aca49fd5fba8b5092066943feb35ce9d4c7c7466f917d7684",
+      "ordinal": 496,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "d2c34f4aaf2a070ad2bee9c4cc706c6e743dde07a1a2a4183f4ce8187cf425b2",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 30305,
+      "output_elements": 1048576,
+      "original_golden": "golden42-repair-20261116/496/original_golden.pt",
+      "original_golden_sha256": "277f016e7be14ec27e55c67b97e3eeee66a0c53b4bc533c24a6a57e66f6f1bde",
+      "corrected_golden": "golden42-repair-20261116/496/corrected_golden.pt",
+      "corrected_golden_sha256": "92f0f0ba4241d74834eb6ab19971b6cced28d01b17c64fbf79736275ab0b3e41",
+      "seconds": 0.38419461250305176,
+      "certified_at_remote": "2026-11-16T03:47:59.355090+00:00"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            256,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            21843,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            256,
+            21843
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "payload_sha256": "54cc7a77132b23479634d5ed6c612d1240a16900e963ec97dc58129219718e86",
+      "descriptor_sha256": "ae010bf2b2540c9053cac59d144dab69da110e1dea28ed326299d83c94f6ae00",
+      "ordinal": 498,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "100cba487754b9b4e72438ff30b7e176677fd6804c2974c49dbbd81f869be729",
+      "evidence": {
+        "rtol": 0.016,
+        "atol": 0.016,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 161407,
+      "output_elements": 5591808,
+      "original_golden": "golden42-repair-20261116/498/original_golden.pt",
+      "original_golden_sha256": "d17a6debf82e2d9c28e42fe14c12b084a983723dc16f5902ab52fd1eb49b0074",
+      "corrected_golden": "golden42-repair-20261116/498/corrected_golden.pt",
+      "corrected_golden_sha256": "78f1d01236b10944fa38a779ad1a76a30b2082a890fb1f061a22f0ffcd3501fe",
+      "seconds": 2.558441400527954,
+      "certified_at_remote": "2026-11-16T03:48:02.279316+00:00"
+    },
+    {
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "params": {
+        "a": [
+          [
+            64,
+            128,
+            2048
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            64,
+            2048,
+            128
+          ],
+          "float16"
+        ],
+        "d": [
+          [
+            64,
+            128,
+            128
+          ],
+          "float16"
+        ]
+      },
+      "payload_sha256": "9dd2ef1f93f74e012cb5fff27d8cb703ffb39da866e206221d006d19b49a5705",
+      "descriptor_sha256": "d7b71bbd14470143ce60c81595e4368f68a793e1b710cd6f745dc8c0f6e9732e",
+      "ordinal": 759,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "12e83f983aabd13631924b507f5df4415d0af4eaa119d78eaacc10092b4a4c8d",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 46691,
+      "output_elements": 1048576,
+      "original_golden": "golden42-repair-20261116/759/original_golden.pt",
+      "original_golden_sha256": "58a22c9464a8b06d19f34e982047451cfc83cf08fa3686eb33c5437cde8f3828",
+      "corrected_golden": "golden42-repair-20261116/759/corrected_golden.pt",
+      "corrected_golden_sha256": "0d6e9881329d91f994e76dbf189468dd6c6d63c747d7528558c0ecaad2a45a12",
+      "seconds": 1.030193567276001,
+      "certified_at_remote": "2026-11-16T03:48:05.394924+00:00"
+    },
+    {
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            257,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            1536,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            257,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "payload_sha256": "1c5ce101bc7e0900755147a55ba32cdcf461c4c0bbded56459a53616649cdeb1",
+      "descriptor_sha256": "e5bc7d60634feedbee87020761f4cc612a790d970682105feb368d26ebbf4135",
+      "ordinal": 772,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "ed0e96af463ce4bc9f1a81346255f3223143ed0cb01e6a2a31591a9f93797fd0",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 20377,
+      "output_elements": 394752,
+      "original_golden": "golden42-repair-20261116/772/original_golden.pt",
+      "original_golden_sha256": "94422b9ad91c70b7ada22fe2efb9879f227759ce54c18ea13affec4b5fc6a783",
+      "corrected_golden": "golden42-repair-20261116/772/corrected_golden.pt",
+      "corrected_golden_sha256": "c982cd3ba293936e0eee68db49f785e117fa353737e30470cebe96ddca9047b1",
+      "seconds": 3.2924435138702393,
+      "certified_at_remote": "2026-11-16T03:48:09.392268+00:00"
+    },
+    {
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            1024,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            1536,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            1024,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "payload_sha256": "fb6bd7176a747ed8fbcde1ee831c0d40194dee6d360d0478c131704ae8c661f2",
+      "descriptor_sha256": "37050fe067753f70dfefbb7d049461f55eb0ca189d22a35d085bd2eb7072b602",
+      "ordinal": 773,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "613651ffdd1b670e112335a073a2f128b20295d2b7461f48b0ab51d281cede63",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 81939,
+      "output_elements": 1572864,
+      "original_golden": "golden42-repair-20261116/773/original_golden.pt",
+      "original_golden_sha256": "7771a5b206f31284814e64c61e459afb045ea614e007fe2be484fac4fad5f415",
+      "corrected_golden": "golden42-repair-20261116/773/corrected_golden.pt",
+      "corrected_golden_sha256": "a20d5158bfce5a307c2960c8834efc166b02e6996e1d9156e9dc06a57809b2e8",
+      "seconds": 6.5412538051605225,
+      "certified_at_remote": "2026-11-16T03:48:16.970812+00:00"
+    },
+    {
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "moe-fwd-float16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            16,
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "payload_sha256": "7c07a5a8b899ff4ba53489448692d6d48b94aac3453aabd8e0a2447aefb269ee",
+      "descriptor_sha256": "b59579ab49c6c5e4239b75e33d6089c780048d9663ff115e032700baa6e6b19c",
+      "ordinal": 774,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "941b50cf68a6f405c77d3cfb85d7ba0bafaa6db6f4d012d1ec39409469695776",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1535345,
+      "output_elements": 16777216,
+      "original_golden": "golden42-repair-20261116/774/original_golden.pt",
+      "original_golden_sha256": "ef1464f8d8d529cd1e0cd2a36ac9be1f9546e5267d68edf043a6c349df00f8b9",
+      "corrected_golden": "golden42-repair-20261116/774/corrected_golden.pt",
+      "corrected_golden_sha256": "8c13246a755c0747843dd6fed13bc2b455b35bd5d69bd6f115518cf3af50338b",
+      "seconds": 31.84645390510559,
+      "certified_at_remote": "2026-11-16T03:48:53.400479+00:00"
+    },
+    {
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "params": {
+        "x": [
+          [
+            8,
+            128,
+            32,
+            32
+          ],
+          "float16"
+        ],
+        "weight": [
+          [
+            128
+          ],
+          "float16"
+        ],
+        "bias": [
+          [
+            128
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            8,
+            128,
+            32,
+            32
+          ],
+          "float16"
+        ],
+        "use_input_stats": true,
+        "momentum": 0.1,
+        "eps": 1e-05
+      },
+      "payload_sha256": "77b907cd17159d51f7338e47d0cd30a8309d30911ed3e3a7a5f5bff9a7e27799",
+      "descriptor_sha256": "9b3af06d061347deafc2e9994f147f3350c555f157028fce66e4fecfd6cab96e",
+      "ordinal": 777,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "024665264096c16afb35b783bdbabc8f67d0707ae7e19de7c6696d5355cfb39c",
+      "evidence": {
+        "rtol": null,
+        "atol": null,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 12,
+      "output_elements": 1048576,
+      "original_golden": "golden42-repair-20261116/777/original_golden.pt",
+      "original_golden_sha256": "9a315454e4f4305e80a5a98cdf82902da95ff3dd152e706834c39f5cf2b6505b",
+      "corrected_golden": "golden42-repair-20261116/777/corrected_golden.pt",
+      "corrected_golden_sha256": "afcb01b22c27783d8e858319373769f5bdb103373750dcf93c001e966cbd4fd9",
+      "seconds": 0.08425545692443848,
+      "certified_at_remote": "2026-11-16T03:49:15.589645+00:00"
+    },
+    {
+      "key": [
+        "ops-transformer",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "ordinal": 804,
+      "status": "certified",
+      "original_reference_policy": "original_cpu",
+      "prepare_sha256": "b4b2534df4f78b2353181e62a6eef53568bf211837d59753b11b2c1be5ac828d",
+      "evidence": {
+        "rtol": 0.001,
+        "atol": 0.001,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1,
+      "output_elements": 2097152,
+      "original_golden": "golden42-repair-20261116/804/original_golden.pt",
+      "original_golden_sha256": "db426eb6b825e2c29da159c6c2e4d133a8628a19a5748ad85def83c0a9d09b26",
+      "corrected_golden": "golden42-repair-20261116/804/corrected_golden.pt",
+      "corrected_golden_sha256": "b9c1f85e58a5f70b042f99123f00d93e7162efa39883664fbc582454b6f5a5c8",
+      "seconds": 0.2372422218322754,
+      "certified_at_remote": "2026-11-16T03:49:15.994324+00:00"
+    },
+    {
+      "key": [
+        "sgl-kernel-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "ordinal": 1082,
+      "status": "certified",
+      "original_reference_policy": "original_npu",
+      "prepare_sha256": "2717eac4c1e0b0556d9dc4268cea3602126e857677ae7116a7f5574e544fdad6",
+      "evidence": {
+        "rtol": 0.001,
+        "atol": 0.001,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1,
+      "output_elements": 2097152,
+      "original_golden": "golden42-repair-20261116/1082/original_golden.pt",
+      "original_golden_sha256": "db426eb6b825e2c29da159c6c2e4d133a8628a19a5748ad85def83c0a9d09b26",
+      "corrected_golden": "golden42-repair-20261116/1082/corrected_golden.pt",
+      "corrected_golden_sha256": "b9c1f85e58a5f70b042f99123f00d93e7162efa39883664fbc582454b6f5a5c8",
+      "seconds": 0.2637913227081299,
+      "certified_at_remote": "2026-11-16T03:49:16.435041+00:00"
+    },
+    {
+      "key": [
+        "vllm-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "ordinal": 1255,
+      "status": "certified",
+      "original_reference_policy": "original_npu",
+      "prepare_sha256": "66395154ebeb80463fe7bfa86d4f96a90dfa9bcf6e857ee1ffbe89944df7c478",
+      "evidence": {
+        "rtol": 0.001,
+        "atol": 0.001,
+        "controls": [],
+        "normalized": null,
+        "kind": "exact"
+      },
+      "resolved_original_tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "full_output_route_comparison": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "independently_rounded_different_elements": 0,
+      "original_vs_corrected_exceeding_original_tolerance": 1,
+      "output_elements": 2097152,
+      "original_golden": "golden42-repair-20261116/1255/original_golden.pt",
+      "original_golden_sha256": "db426eb6b825e2c29da159c6c2e4d133a8628a19a5748ad85def83c0a9d09b26",
+      "corrected_golden": "golden42-repair-20261116/1255/corrected_golden.pt",
+      "corrected_golden_sha256": "b9c1f85e58a5f70b042f99123f00d93e7162efa39883664fbc582454b6f5a5c8",
+      "seconds": 0.25469303131103516,
+      "certified_at_remote": "2026-11-16T03:49:16.918675+00:00"
+    }
+  ],
+  "route1": "full-K FP64 matmul/einsum or centered two-pass variance, original output dtype",
+  "route2": "reverse split-K (127) FP64 or chunk-Welford variance, original output dtype",
+  "baseline_accepted_by_this_report": false,
+  "new_performance_measurements": 0,
+  "updated_at_remote": "2026-11-16T03:49:17.146986+00:00"
+}

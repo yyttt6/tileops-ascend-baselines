@@ -1,0 +1,1034 @@
+{
+  "checked_at": "2026-11-15T00:23:14.405871+00:00",
+  "accepted_complete_APIs": 27,
+  "rows": [
+    {
+      "ordinal": 291,
+      "key": [
+        "ops-math",
+        "GroupNormFwdOp",
+        "wider-channel-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 19.028933333333335,
+      "host_us_diagnostic": 1000.0486547748249,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-291-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "354aa77ccb707ba5a2a642545f2940ec46ec749e6aae1da8447b7ce0856e8bd6",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "6c870f31c3b2dcbe5244fb909b230f025cbc8d004ebc45ab6b43163b17b04040",
+      "payload_sha256": "f137cdcb7bc99b3499193c8ac1260b6189281bcc8009c74eeb730131f595967d",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 317,
+      "key": [
+        "ops-math",
+        "LayerNormFwdOp",
+        "llama-405b-prefill-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 326.0668666666666,
+      "host_us_diagnostic": 894.4146024684111,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-317-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "477a4fe74bc2c5fc4bd0e0b2f2110d37066d9d0ce44e82759d91f147938e1f6a",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "e9e60bdd88044fe6c663824520ebcbc3fecbfbecc2d23c84b4e1815676dc5df6",
+      "payload_sha256": "14320d6cbb518f5d79fa7c9499ee03df48c0aa1a8417ed13cdf2acd629ff1fba",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 196,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "llama-8b-prefill-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 15710.8204,
+      "host_us_diagnostic": 193972.86934157214,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-196-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "eede70d47191699d0e4eaa516eb61460508af233d93b03439d389861c5eab678",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "ef608642d3c5c9edbc7896563e0cbd9fda666e07d0c3b9b466f1d4a05317f566",
+      "payload_sha256": "178862adec0338d6926fafcf33d5454696727a3d21de750a75e04ded3d94601e",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 310,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "image-affine-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 1638.7782666666667,
+      "host_us_diagnostic": 16114.025221516687,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-310-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "14ac7c85ef9709b8d1d651ee5eef973fd64859d6ea5a355c481291128c6315cc",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "06a581ba19568265c3464e8bb58dc4dbf8e4d254a553f0706c1987397ca0fb04",
+      "payload_sha256": "a2232b89238343fd9a5b076ee82082224b046417875d31a02bdd0f8dc6d5e53d",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 318,
+      "key": [
+        "ops-math",
+        "LayerNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 10.001533333333333,
+      "host_us_diagnostic": 933.5633367300034,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-318-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "d544bc8e9f90037368b9c08b255e25cabfb35a79846c8a4f176cf1a9d67cc244",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "28683ed8cb6ad7235d593282ed2340c8e864919b6d698345adaa25effe8ba7c5",
+      "payload_sha256": "05a143994456524e8292bce188afedc6fe4e125f2ca9a2926b528531fde63981",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 292,
+      "key": [
+        "ops-math",
+        "GroupNormFwdOp",
+        "image-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 19.617066666666666,
+      "host_us_diagnostic": 915.5153607328733,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-292-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "7decba42a0f95becf8e366465d5e2f01d44f44dc6ba7de86b9784b818c8cbbad",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "1e61b250708b7ba3f7e6442178a9eed5caad48729fede8b17575027d1b7fe444",
+      "payload_sha256": "08893eb04d43f755fe8a5c8ad21dd65d2178aad3b69ea3fe26eabe90b1c03991",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 293,
+      "key": [
+        "ops-math",
+        "GroupNormFwdOp",
+        "image-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 19.728333333333335,
+      "host_us_diagnostic": 889.9979293346405,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-293-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "79d69e3e6bd23370c4367dc3d6dbfdd6d7a0602495ed9ea83e30deae9c286fb0",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "ca9ab668172263b545b3c7f48e6842c1aeeb8e16cb680bd29c4bec6cb98cf713",
+      "payload_sha256": "409cfbc0f8c4bd173932780aba87355d47d9327419b108c71c339bd9b65b0b10",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 195,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "llama-8b-prefill-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 15724.280133333332,
+      "host_us_diagnostic": 192411.64069001874,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-195-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "acb8c4f0497e53025dfd5af4b54fc4115a96f7c62e10b32da84340fd2fa18ea1",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "cf2a91341708336a48c0b7b7f4fc69181564f6e6a84d7e41d79d02fee641130e",
+      "payload_sha256": "e45741516b884d13a5942a46af5062acf1032eca6edad9c3ffd35fb30de3778b",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 319,
+      "key": [
+        "ops-math",
+        "LayerNormFwdOp",
+        "llama-70b-decode-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 10.357133333333332,
+      "host_us_diagnostic": 888.6886760592461,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-319-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "45e5ec0538b06a1d99045fc6733eae2d1e3a4e1516a2052097fd8a0858cae1f6",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "56ed26bc26700900a556971f0a02fe0ebc119b96eb564e348aac0739c96ed5e0",
+      "payload_sha256": "e57bce8e268f99564c55730a61a1b5e6797ca86259b4395fe22863851f054061",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 197,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 6546.129066666666,
+      "host_us_diagnostic": 116761.1666644613,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-197-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "d4ce2d3478f1f913c7086223fe40fd0c5ed23b5e6d5bd0c68a396fe270538fa8",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "bc89fd1d0e075918b6f3a510a0f4e6725a7f42d8d15c291739f3214054c6e871",
+      "payload_sha256": "4b828c21710817f7056fd07070372bcd5386d65f21eaf072927b0a8e392eb014",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 321,
+      "key": [
+        "ops-math",
+        "LayerNormFwdOp",
+        "dit-xl-2-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 24.4396,
+      "host_us_diagnostic": 870.0860974689325,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-321-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "6c8d53f57b2972c782b6554ef12da5b15a550ccc48524e49d063d11b1e98187b",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "5fa20aae4ff36889b179afda7af670f9d1da1758f38eb479f8c6914c6764bcf0",
+      "payload_sha256": "a4e8c0cd53a5e2946baafd9ff1da39d9e4c5556fd2e1925fed12eeb8ce0b5634",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 288,
+      "key": [
+        "ops-math",
+        "GroupNormFwdOp",
+        "image-affine-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 532.4081333333332,
+      "host_us_diagnostic": 7756.584665427606,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-288-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "fd1bf866c39335ae46fa10124436964527ed82a4e9983dc0c8532eb982dbc3f9",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "00c36056036c898a1e75ac5be66828c48db2c3faa9693fdbbb3e640544340da3",
+      "payload_sha256": "2a586dbf6ac3b36e1b52583c682488cf3df4f2066715a3fe4deb8229e0907da2",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 287,
+      "key": [
+        "ops-math",
+        "GroupNormFwdOp",
+        "image-affine-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 533.5235333333334,
+      "host_us_diagnostic": 8777.178699771563,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-287-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "3cfe9441468f0f3e7f797a88b8cf0eb037ac66909ab93b553ef1a92193e0ef1e",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "0680563710e654dbafdbae9015f55dafe3ac00b5556ec34872410b8170124fec",
+      "payload_sha256": "60b754281c9a95d873b131bce3f7bab61be603161d77cc97f4335bd7bc84c63f",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 316,
+      "key": [
+        "ops-math",
+        "LayerNormFwdOp",
+        "llama-405b-prefill-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 325.5321333333334,
+      "host_us_diagnostic": 1040.2380178372066,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-316-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "3ea5d8f1c8b98da0ea07cc65a1c2ce18b422dfae9656759c3d0438b109b75949",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "a9b7cab06309ed8b83d8024bbff364d8bfa1ea588c2944af458c82bfbf3e1bdd",
+      "payload_sha256": "89da2dd59c31fc0fc0821682d3c1deaa0d54b2a84a020b1c2ec3e13696e52d50",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 286,
+      "key": [
+        "ops-math",
+        "GroupNormFwdOp",
+        "wider-channel-affine-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 599.8184,
+      "host_us_diagnostic": 7430.329329023759,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-286-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "1540d43d62b326c8f18b36071fb41f973b75d881c8ded94250cbe2d691c301ce",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "c895c88afb2c495e61ce06bfa183742df1fda8dcfdf1bf5011a910008e5a1eb4",
+      "payload_sha256": "ef3cb162c6950192743b23ffceb875401694f60b54c0374ff69ed9d9e51c0f76",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 314,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "image-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 23.691,
+      "host_us_diagnostic": 831.0206234455109,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-314-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "94ca6c88d1bb4435686766f23cc89eff894be24a05f460f590cb9662402286e5",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "9d8e6732e2d9ad50cf5dc2a3cb846a5620f625a9e513eea548a8e5d99e00568f",
+      "payload_sha256": "c53c5401562113c0eeea30f70ffa30e5234c381f984536ee0becca17add44e5a",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 290,
+      "key": [
+        "ops-math",
+        "GroupNormFwdOp",
+        "tail-spatial-affine-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 324.486,
+      "host_us_diagnostic": 3882.8319559494653,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-290-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "dd15e83760e7b299bca4ac39e7b0a183b524fc2c8ebb6525be7a9458536a5308",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "089901f4e8c14607f2f3568eb14a309546ef0e53a0ccc9cc2c6e2ab3302c8365",
+      "payload_sha256": "e18f57adc46725d1440dcdf07f7e54c8f5ad1ac1be7cd4540e70dcd147b1fef6",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 315,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "image-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 23.775199999999998,
+      "host_us_diagnostic": 803.7006792922815,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-315-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "62061de63fda713fd99f8e2f07ba2c0ddc74d98a887250bd19206fcbad2120d8",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "53bbbfcf6379cad87d7cac5c205ddb6d33e1ac0b4e8cf2ca16a1cf11212158ca",
+      "payload_sha256": "e6acadffd2809fbe6c42b9cfb9632922b49c98118648f38637fd78ddb6026ecd",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 312,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "tail-spatial-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 17.44226666666667,
+      "host_us_diagnostic": 896.6192913552126,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-312-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "577294764219062ba9fbedb03ddf22d1241a67d3d8302ad3a786dfa989dd899b",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "48ccc23b70eb67ad7ca02f21cd4ade2ec066b00c17382713ab6de583185a5d64",
+      "payload_sha256": "01b3a903d813c39b2f6bcc72f54a82271de98940bf728bde4fad076ac638ed91",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 289,
+      "key": [
+        "ops-math",
+        "GroupNormFwdOp",
+        "wider-channel-affine-float32"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 440.9080666666666,
+      "host_us_diagnostic": 7163.911374906699,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-289-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "fa5c0d69ddd38a9feb6c724e9721e31df6ad681aeb4d6cc240e1cb601569fa8f",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "347559d5d4cf479c30ca9078b26ac2af0b318cd44d6370239c0add3f36d73b63",
+      "payload_sha256": "5aacfa6db09ff81ceb12e308c900e7a9dbf3ddd95ee8e2383c12a327a50b03c9",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 320,
+      "key": [
+        "ops-math",
+        "LayerNormFwdOp",
+        "llama-405b-decode-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 15.522400000000001,
+      "host_us_diagnostic": 902.6287744442621,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-320-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "c1f87432406a95061c958954e58e0bb30794c242689181f96f1dd39c5bca2841",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "4d7811c29f459bf451a3f72ff5e7472419d77a5b83f4b118ba69b5312b6b5955",
+      "payload_sha256": "a667d05b1f95ed3f6e90cba8558fbba7367077bf4308d8305996b4b1e0fbfbda",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 198,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 6528.5462,
+      "host_us_diagnostic": 140858.6466064056,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-198-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "d9f32f47ccb5f1217fe054cd3411b22d995f4f83f250cf9f758972fa8f6c11bb",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "93ae50b85fce46457cafdaae8d5d38c4c678e674507dae4558a833d288680728",
+      "payload_sha256": "182a5934aeeb96472123abc8e06f5b1f22ad24631469dcd075dfefab7e683481",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 200,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 9.671066666666666,
+      "host_us_diagnostic": 1563.3772127330303,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-200-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "5acc450dea6a507867ef9785d29b7a7981c752ee39dfc4203060b39a35daa138",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "3830446e4a1f7cb5c9c44a3803c8d681d4b5140a0ba6587e87bd21b22e07419e",
+      "payload_sha256": "fb28c38cb3c3efbb7b4473bc0f0c2d391a106ad878dd76604923802d5d7e9193",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 308,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "wider-channel-affine-float32"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 2134.6253333333334,
+      "host_us_diagnostic": 33714.54533189535,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-308-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "5912b73914e8ba28fb6c304f7aadea9f048ed97293f5ff58de67a63e85e3080f",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "725df930ebdb04c2c79b58348c13f4b5fd5464fce078f3f8de74e8dd5a2dbddb",
+      "payload_sha256": "9722d99e25231ea4ecf6c1a3d62e0864aa14427f23079b8fbfbe5734f5359ef3",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 199,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-float32"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 2291.8719333333333,
+      "host_us_diagnostic": 48041.569286336504,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-199-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "d4f6f255c4caafe09e0700574733b304e8fd078ba97269881332f75c35b6d919",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "8084cc77cac5899a9ca87dfda9f3d1eb6feeb4e2f9f06c1a69d0a8d04688f03a",
+      "payload_sha256": "1bd10774d4636582964f6c28b54e825fd8406fba02498b177293dfbcbda6a492",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 313,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "wider-channel-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 23.088400000000004,
+      "host_us_diagnostic": 944.7886608541012,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-313-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "ea4dc5b63485a91a82a0d88a4ae6d98c869fd686e4895e3c7288bbb85941c09d",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "6df261c88a9fbd42ca4d766f3a9c5388001a31a8b310827e52c80ca792102825",
+      "payload_sha256": "387f13d74a02013af1785159e8a85dcac739b2237270056143e1d035bbab770c",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    },
+    {
+      "ordinal": 311,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "tail-spatial-affine-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 849.2026000000001,
+      "host_us_diagnostic": 9250.165956715742,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-ops-math-original-norm-311-l1-quiet-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "83d572c3428547243b4c331e1c4acb899bbd319dcb2ce5ae45a996c267df03da",
+      "source_sha256": "b9345b55c29d83fc95f950766c0c9b85f4db490637a8903e1807f5a6f35c5142",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/ORIGINAL_NORM_HOST_QUALIFICATION.json": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/BUILD_RECEIPT.json": "a7e8c0d21a724e3f93c6532ba386e7b01125363024501d20dd5fae101980cb7d",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+        "/opt/baseline-over3-20261110/ordered100-20261112/ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+      },
+      "prepare_sha256": "74713b4f390ce0f8c665742dfae4972784ca641f41bb42c117ab6f2e2bfec4db",
+      "payload_sha256": "c293b6ca43b8141ec9ad1f2ecbdd4b51ec2df161103cb4db489583bcc878187d",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "not_paired_speedup_or_finalratio": true,
+      "selected_complete_native_API": "complete pinned original layer_norm plus unchanged affine/row/run AST"
+    }
+  ],
+  "no_historical_public_ratio_updated": true,
+  "old_dependency_deferrals_retained": true
+}

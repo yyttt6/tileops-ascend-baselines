@@ -1,0 +1,151 @@
+{
+  "checked_at": "2026-11-15T08:33:42.319438+00:00",
+  "accepted_complete_APIs": 8,
+  "rows": [
+    {
+      "ordinal": 736,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "cnn-feat-broadcast-bfloat16"
+      ],
+      "api": "ops-transformer::original MoeFinalizeRoutingV2 accumulatorcopy+expert Add",
+      "device_us": 9879.668066666665,
+      "checkpoint": "rollout-ops-transformer-add-api-sdk-736-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "96587d269a1cb95de3fc7f1e5129dc5a304a523fc88b3a9ef111c328b927b82a",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "ebc1460b8d094b5088c5150ff24d66a1bb36150ef72b0bd24cef1d48bd196df0",
+      "prepare_sha256": "072b5c419ba26d17bb9bd78ecb35cd8eacb0c977e15395f6c380b41e8dc4ef55",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 737,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "llama-7b-ffn-bfloat16"
+      ],
+      "api": "ops-transformer::original MoeFinalizeRoutingV2 accumulatorcopy+expert Add",
+      "device_us": 8661.473066666666,
+      "checkpoint": "rollout-ops-transformer-add-api-sdk-737-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "e8f43140914cdffce1b38b5ffeb972cf38885518710fbd44850bd8a71ad9e5f5",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "b29dcd4661367435f5f72157deb9bca9be5894eb6d42e86312ef7d1b71b24230",
+      "prepare_sha256": "b379953378c7829dc38a4bd4564ec44bbdc425a9d4cd8e9157efa82b5441e791",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 738,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "cnn-feat-broadcast-float32"
+      ],
+      "api": "ops-transformer::original MoeFinalizeRoutingV2 accumulatorcopy+expert Add",
+      "device_us": 9827.460866666668,
+      "checkpoint": "rollout-ops-transformer-add-api-sdk-738-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "9f72512c014cfe958aa597d8740718cd143e94dac11ae3b8de7a7b0d3d03e6db",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "705339767804582354f41573c9c38eef172616fc8a144c5bdf6e567de305eb8c",
+      "prepare_sha256": "044ea0f643a18fb7fff3d0b5c1f552814912f37a648a3e28c641382a2e94fc4a",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 739,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "hidden-state-prefill-bfloat16"
+      ],
+      "api": "ops-transformer::original MoeFinalizeRoutingV2 accumulatorcopy+expert Add",
+      "device_us": 6522.435866666666,
+      "checkpoint": "rollout-ops-transformer-add-api-sdk-739-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "100275363700703477c647349ff8ea47b35a4c17d2878191ed9ff9f2318281cb",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "7a918d14c47c8b9d022b76b4dc0a34e364834758768f2c286e4f692f7eda6ee8",
+      "prepare_sha256": "ef5c1b2f2f2d61a0a680f03de4f463fb40f592eada15cdb51a68a85b20546d02",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 740,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "linear-bias-bfloat16"
+      ],
+      "api": "ops-transformer::original MoeFinalizeRoutingV2 accumulatorcopy+expert Add",
+      "device_us": 3272.2992000000004,
+      "checkpoint": "rollout-ops-transformer-add-api-sdk-740-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "8c5c08a97cc453464317b802d5070043f50d108db9daf180eef0216abfbec279",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "8561d2aaf970642976a9eee6aa2610397245baa5b695e86ffa188578ad4575d9",
+      "prepare_sha256": "865e75ee876d608d37563ecf585ea7997d2c0a6a42dc0022bc2ebb5bc8c39652",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 741,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "linear-bias-float32"
+      ],
+      "api": "ops-transformer::original MoeFinalizeRoutingV2 accumulatorcopy+expert Add",
+      "device_us": 3253.8771333333334,
+      "checkpoint": "rollout-ops-transformer-add-api-sdk-741-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "340010ad5a645b83deb973c9a224e59676f1036638298d6301e59656656b5fc0",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "b8f41f1fc94199daa0683ea04bdcfc3512787733dff171c9652f78770c1ade14",
+      "prepare_sha256": "cb1751f477afe528a6e4c3d3c4f38d6e3830f447436d06cab505aba01c73273a",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 742,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "hidden-state-prefill-float32"
+      ],
+      "api": "ops-transformer::original MoeFinalizeRoutingV2 accumulatorcopy+expert Add",
+      "device_us": 6487.9812,
+      "checkpoint": "rollout-ops-transformer-add-api-sdk-742-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "1fc318704d817076540ce47e74caade56c067dd212c6551a4318c7800c0ce3b8",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "70a7c5a4e008d0989e6c53775924da2ec564c31aeac3f46972e8af8ce947e0aa",
+      "prepare_sha256": "cee7ae146bc1fe1dbc65668abbff11843679882241defcdbb950a0afcf225a6d",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 743,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "llama-7b-ffn-float32"
+      ],
+      "api": "ops-transformer::original MoeFinalizeRoutingV2 accumulatorcopy+expert Add",
+      "device_us": 8613.276466666666,
+      "checkpoint": "rollout-ops-transformer-add-api-sdk-743-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "b35833375c0c77437cfa0c2a109f9e2ad64c32bfe0a9038a614ca0f40c170a8b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "0aae45e2ebb69df6b12bd793fc062e5c1e1e1920162925ae4257b46b27a2e9ab",
+      "prepare_sha256": "0ffde28fdab29747983a9446737b7fabe7799500c774cf9586feceda80476124",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

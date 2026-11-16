@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-11-14T18:28:32.193772+00:00",
+  "reason": "Original control archive is four-case batch with3JITlibraries, candidate single-case loads1. Wholebatch set equality was wrong audit scope, not changedkernel.",
+  "required_unchanged": "Exact key/payload/prepare/API/runtime/protocol/hostboot/device/fullchecker15raw, allcommonSOURCE SHA except scopedunrelatedoldrow_gemvmetadata, allcommon runtime librarySHA, candidate actualJITlibrary byte-identical member of original batch. Originalfactory/source/kernelbuilder unchanged, only reverseAST-proven zero-pad packing branch differs.",
+  "first_candidate_not_reexecuted": "Existing qualified checkpoint reused by controller before NPU submission; oldauditerror preserved in original log/history.",
+  "policy": "Devicegain threshold5percent set beforemeasurement; conservativeoriginal onsmallgain/regression; hostseparate. No newcoverage/publicratios."
+}

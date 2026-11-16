@@ -1,0 +1,10 @@
+{
+  "admitted": false,
+  "gate": {
+    "queue": [
+      "00000000000000000001-dmz1zjf1.ticket"
+    ],
+    "workers": [],
+    "disk": 219786506240
+  }
+}

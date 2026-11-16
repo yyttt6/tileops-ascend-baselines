@@ -1,0 +1,188 @@
+# ----------------------------------------------------------------------------------------------------------
+# Copyright (c) 2025 Huawei Technologies Co., Ltd.
+# This program is free software, you can redistribute it and/or modify it under the terms and conditions of
+# CANN Open Software License Agreement Version 2.0 (the "License").
+# Please refer to the License for details. You may not use this file except in compliance with the License.
+# THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+# INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.
+# See LICENSE in the root of the software repository for the full text of the License.
+# ----------------------------------------------------------------------------------------------------------
+#include <stdio.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdint.h>
+#include <dlfcn.h>
+#include <securec.h>
+
+#ifndef ASCENDC_DUMP_SIZE
+#define ASCENDC_DUMP_SIZE 1 * 1024 * 1024
+#endif
+
+static void *g_kernel_handle;
+
+struct ascend_kernels {
+    uint32_t version;
+    uint32_t type_cnt;
+    uint32_t mix_type;
+    uint32_t mix_len;
+    uint32_t mix_file_len;
+    uint8_t mix_buf[__replaced_mix_len];
+} __replaced_ascend_kernel __attribute__ ((section ("__replaced_ascend_section"))) = {1,1,0,__replaced_mix_len,__replaced_mix_file_len,{0}};
+
+extern "C" {
+uint32_t RegisterAscendBinary(const char *fileBuf, size_t fileSize, uint32_t type, void **handle);
+uint32_t LaunchAscendKernel(void *handle, const uint64_t key, const uint32_t numBlocks, void **args,
+                            uint32_t size, const void *stream);
+uint32_t GetAscendCoreSyncAddr(void **addr);
+int UnregisterAscendBinary(void *hdl);
+void StartAscendProf(const char *name, uint64_t *startTime);
+void ReportAscendProf(const char *name, uint32_t numBlocks, uint32_t taskType, const uint64_t startTime);
+bool GetAscendProfStatus();
+uint32_t AllocAscendMemDevice(void **devMem, uint64_t size);
+uint32_t FreeAscendMemDevice(void *devMem);
+uint32_t PrintAscendKernel(void *stream, void *dumpAddr, uint64_t dumpSizePerCore, uint32_t numBlocks, uint32_t taskType);
+void AscendProfRegister();
+}
+
+
+static void __unregister_kernels(void) __attribute__((destructor));
+void __unregister_kernels(void)
+{
+    if (g_kernel_handle) {
+        UnregisterAscendBinary(g_kernel_handle);
+        g_kernel_handle = NULL;
+    }
+
+}
+
+static void __register_kernels(void) __attribute__((constructor));
+void __register_kernels(void)
+{
+    uint32_t ret;
+
+    ret = RegisterAscendBinary(
+        (const char *)__replaced_ascend_kernel.mix_buf,
+        __replaced_ascend_kernel.mix_file_len,
+        0,
+        &g_kernel_handle);
+    if (ret != 0) {
+        printf("RegisterAscendBinary mix ret %u \n", ret);
+    }
+
+    AscendProfRegister();
+}
+
+struct TailStruct {
+    uint32_t tail[16];
+};
+
+struct TilingStruct {
+    uint32_t a, b, c, d;
+    uint64_t x,y,z;
+    TailStruct tail;
+};
+
+
+extern "C" uint32_t aclrtlaunch_test_kernel_entry_mix_aic(uint32_t numBlocks, void* stream, void* x1, void* x2, void* x3, float x4, void* x5, void* x6, void* y, void* workspace)
+{
+    uint32_t ret;
+    struct {
+    #ifdef  ASCENDC_DUMP
+            void* dump;
+    #endif
+        void* x1;
+        void* x2;
+        void* x3;
+        float x4;
+        void* x5;
+        void* x6;
+        void* y;
+        void* workspace;
+    } args;
+
+#ifdef  ASCENDC_DUMP
+    AllocAscendMemDevice(&(args.dump), ASCENDC_DUMP_SIZE * 75);
+#endif
+    args.x1 = x1;
+    args.x2 = x2;
+    args.x3 = x3;
+    args.x4 = x4;
+    args.x5 = x5;
+    args.x6 = x6;
+    args.y = y;
+    args.workspace = workspace;
+
+    uint64_t startTime;
+    const char *name = "test_kernel_entry_mix_aic";
+    bool profStatus = GetAscendProfStatus();
+    if (profStatus) {
+        StartAscendProf(name, &startTime);
+    }
+    ret = LaunchAscendKernel(g_kernel_handle, 0, numBlocks, (void **)&args, sizeof(args), stream);
+    if (ret != 0) {
+        printf("LaunchAscendKernel ret %u\n", ret);
+    }
+    if (profStatus) {
+        ReportAscendProf(name, numBlocks, 0, startTime);
+    }
+#ifdef  ASCENDC_DUMP
+    PrintAscendKernel(stream, args.dump, ASCENDC_DUMP_SIZE, numBlocks, 0);
+    FreeAscendMemDevice(args.dump);
+#endif
+    return ret;
+}
+
+extern "C" uint32_t aclrtlaunch_test_kernel_entry_mix_aiv(uint32_t numBlocks, void* stream, void* x1, void* x2, void* x3, float x4, void* x5, void* x6, void* y, void* workspace, TilingStruct* tiling)
+{
+    uint32_t ret;
+    struct {
+    #ifdef  ASCENDC_DUMP
+            void* dump;
+    #endif
+        void* x1;
+        void* x2;
+        void* x3;
+        float x4;
+        void* x5;
+        void* x6;
+        void* y;
+        void* workspace;
+        TilingStruct tiling;
+    } args;
+
+#ifdef  ASCENDC_DUMP
+    AllocAscendMemDevice(&(args.dump), ASCENDC_DUMP_SIZE * 75);
+#endif
+    args.x1 = x1;
+    args.x2 = x2;
+    args.x3 = x3;
+    args.x4 = x4;
+    args.x5 = x5;
+    args.x6 = x6;
+    args.y = y;
+    args.workspace = workspace;
+    (void) memcpy_s(&args.tiling, sizeof(args.tiling), tiling, sizeof(args.tiling));
+
+    uint64_t startTime;
+    const char *name = "test_kernel_entry_mix_aiv";
+    bool profStatus = GetAscendProfStatus();
+    if (profStatus) {
+        StartAscendProf(name, &startTime);
+    }
+    ret = LaunchAscendKernel(g_kernel_handle, 1, numBlocks, (void **)&args, sizeof(args), stream);
+    if (ret != 0) {
+        printf("LaunchAscendKernel ret %u\n", ret);
+    }
+    if (profStatus) {
+        ReportAscendProf(name, numBlocks, 0, startTime);
+    }
+#ifdef  ASCENDC_DUMP
+    PrintAscendKernel(stream, args.dump, ASCENDC_DUMP_SIZE, numBlocks, 0);
+    FreeAscendMemDevice(args.dump);
+#endif
+    return ret;
+}

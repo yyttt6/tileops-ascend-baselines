@@ -1,0 +1,512 @@
+{
+  "schema": "ops-nn-continuation-exact-case/v1",
+  "at": "2026-10-21T18:54:48.287816+00:00",
+  "records": [
+    {
+      "op": "AdaLayerNormFwdOp",
+      "case_id": "llama-8b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/006-AdaLayerNormFwdOp.json",
+      "receipt_sha256": "b55d7c52401c7098fe02079c2ab90157fa866e0ed0540b8b24b41d55341a0691",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/006-AdaLayerNormFwdOp.json",
+      "review_sha256": "293d46bf406f6b3fe72b60b13cbc25b7018c660db0f0dbd5f76f6da5a1d00d3b",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AdaLayerNormZeroFwdOp",
+      "case_id": "llama-8b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/009-AdaLayerNormZeroFwdOp.json",
+      "receipt_sha256": "83693f82904ff13a488e5f2b73c7b4b0b95d09245781d5df1283e039a1cf1134",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/009-AdaLayerNormZeroFwdOp.json",
+      "review_sha256": "481eacceff028277469af98541ea3b94d52a80bfd6446bdc3a9822d36d1c2468",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AdaptiveAvgPool2dFwdOp",
+      "case_id": "resnet-gap-unbatched-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/000-AdaptiveAvgPool2dFwdOp.json",
+      "receipt_sha256": "bee8726c1a364361cd3cc3746639998e56253de1f3c8068c8e942b57c11bd43f",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/000-AdaptiveAvgPool2dFwdOp.json",
+      "review_sha256": "cc7909ea3776257567a21168f5e78faf823bcb1ca0d301350aefd418f28a75e5",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AdaptiveMaxPool2dFwdOp",
+      "case_id": "global-1x1-unbatched-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont003_20261021/000-AdaptiveMaxPool2dFwdOp.json",
+      "receipt_sha256": "8ea7cffbe6d3320b24eafcd0069156e393fed50eba15b97e3ffe0687eace4bdd",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont003_20261021-review/000-AdaptiveMaxPool2dFwdOp.json",
+      "review_sha256": "a9916c3376ce692b948b18bbf710fad64bff91c511fb21c550c65177fd593f76",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AdaptiveMaxPool2dIndicesFwdOp",
+      "case_id": "global-1x1-unbatched-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont004_20261021/000-AdaptiveMaxPool2dIndicesFwdOp.json",
+      "receipt_sha256": "b84b4320e5f77bb47caa50b89af25ca39bbeade6cf6af541536fb9ef402c3a39",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont004_20261021-review/000-AdaptiveMaxPool2dIndicesFwdOp.json",
+      "review_sha256": "50d916f9da10979b4a1fb9af0770d5b04a6f1e134ed4d5d74a72eed3a738879b",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AllFwdOp",
+      "case_id": "mask-validation-4k-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/001-AllFwdOp.json",
+      "receipt_sha256": "508bc9707b9ff92327fa1bc09f1b7163f25f21d610df92eff68fa78d9af24d45",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/001-AllFwdOp.json",
+      "review_sha256": "d3bc2a752fafdcf2732ccd60a2eef7c2c5d66dbb77e987fd0e9fb174971b6da5",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AllFwdOp",
+      "case_id": "mask-validation-4k-bool",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/002-AllFwdOp.json",
+      "receipt_sha256": "3961fce0bbf42f5e0b27e584163c93070125ce62dbeaff5ebf8e663f12c2629a",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/002-AllFwdOp.json",
+      "review_sha256": "21b0239a967ff834ce5fafc0c93ac686239ad02733c13e3695f91128997e8606",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AllFwdOp",
+      "case_id": "mask-validation-4k-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/003-AllFwdOp.json",
+      "receipt_sha256": "2abdba2ef5d56b4a03ccc5cdcee4db0f9e856b035ccc176f5e746ee4a2f82ebc",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/003-AllFwdOp.json",
+      "review_sha256": "a433301760756214cfdb9123d37877b9f070ab08abbdceae96f5df9ad27c1c8c",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AllFwdOp",
+      "case_id": "mask-validation-4k-float32",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/004-AllFwdOp.json",
+      "receipt_sha256": "b0aa968410d756762715d0d8c75b0a3f23c0d4017b6f0af72aaec03493db093c",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/004-AllFwdOp.json",
+      "review_sha256": "6929c8cc16c23ef3388d9bb518dc89114e36018c5cf3f933b7da52f7835231a4",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AminFwdOp",
+      "case_id": "long-seq-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont004_20261021/002-AminFwdOp.json",
+      "receipt_sha256": "2115bd4bdce0bf21fdbe1289d6c56c779878fca2a08a1416e2c6bf18cd85b921",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont004_20261021-review/002-AminFwdOp.json",
+      "review_sha256": "fb26ff55776cba00fa26adb8c27ef03aab203d5b00013695903372f1b271139d",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AnyFwdOp",
+      "case_id": "mask-validation-4k-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/005-AnyFwdOp.json",
+      "receipt_sha256": "7336d39401a9e89238e2f6e21b993f501e203fd7056a3e69fd8e4f802285d84b",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/005-AnyFwdOp.json",
+      "review_sha256": "efc4914ab2538e490f4fd785e086013bd8506116c1b0fa11c50bafc13e4be203",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AnyFwdOp",
+      "case_id": "mask-validation-4k-bool",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/006-AnyFwdOp.json",
+      "receipt_sha256": "29305ace9d84426bb6ad29c6fe6cdf92c3700abeb239a320e46ec6d048ec9790",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/006-AnyFwdOp.json",
+      "review_sha256": "a31f2522595880981e0337d8a37a5118cd592cd388ced6e99b4a729ff98dfcc7",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AnyFwdOp",
+      "case_id": "mask-validation-4k-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/007-AnyFwdOp.json",
+      "receipt_sha256": "ca5bb40153bec20e9a7bd3f67a50decda6b01eea5fac8024e4cf99a675aa6afa",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/007-AnyFwdOp.json",
+      "review_sha256": "ef430114ae8787299eb5e081045f870b1bc3b086091dd1f8d6e185065dad1908",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AnyFwdOp",
+      "case_id": "mask-validation-4k-float32",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/008-AnyFwdOp.json",
+      "receipt_sha256": "842651228795778bb20ebc6adc998bc0ca27601e2918de37c7ea6ab83a1c7efb",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/008-AnyFwdOp.json",
+      "review_sha256": "184a220d2e59c3c672fd7c28c6d83d15f97eeb0e6223376bcee65da3d2138da0",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "ArgminFwdOp",
+      "case_id": "lm-head-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont004_20261021/001-ArgminFwdOp.json",
+      "receipt_sha256": "2bf5a39d554351bd9ca37509b643cde9c1ad2a9d01c2379ac5c0d7c495143d23",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont004_20261021-review/001-ArgminFwdOp.json",
+      "review_sha256": "ba08c29210c6768a2f9abeabc58385da2b9f6754541916d794ef065f85279899",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "AvgPool3dFwdOp",
+      "case_id": "divisor-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/012-AvgPool3dFwdOp.json",
+      "receipt_sha256": "04f2edeac45a152f28becd076599a10b494c3d2298612aeb32e0e1b36aeb01e7",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/012-AvgPool3dFwdOp.json",
+      "review_sha256": "00efef17f9b6f185e2415ae420f55ac6ae291ba7d9968c3172602f55d2e5dd87",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "BatchNormBwdOp",
+      "case_id": "resnet-fc-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/002-BatchNormBwdOp.json",
+      "receipt_sha256": "35447a911b1a4d3d90491a2f216e87bbb3fc1754467bbf62c55212efbbe8b997",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/002-BatchNormBwdOp.json",
+      "review_sha256": "521c6c652a97e96a52179e908df6e74bf3e854372dda060e9333c3d459693908",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "BatchNormFwdOp",
+      "case_id": "resnet-fc-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/001-BatchNormFwdOp.json",
+      "receipt_sha256": "11b18e7bb210ec69ab2f6e3fc535a90ec2c9584a8fb8bc84fda4d25437e41b69",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/001-BatchNormFwdOp.json",
+      "review_sha256": "c13ba049c59037fe88a9b5dd62a0e3ca30c26c75d85fb83cd312b95d562fd748",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "BitwiseOrFwdOp",
+      "case_id": "linear-bias-bool",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021/001-BitwiseOrFwdOp.json",
+      "receipt_sha256": "f24e9453f6552cd1f02ef7a99d411ab91b31b42b821b841ecfafbe01927d78f6",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021-review/001-BitwiseOrFwdOp.json",
+      "review_sha256": "d9f0640af3b0c113cac8415c44ea52c7e3776ab26b69832710220864e7329774",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "CausalConv1dUpdateFwdOp",
+      "case_id": "mamba2-2.7b-decode-b1-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021/005-CausalConv1dUpdateFwdOp.json",
+      "receipt_sha256": "413a633a545d3b6e65e111622604f51de9c3453f3acabb3829eb0398609cbbbf",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021-review/005-CausalConv1dUpdateFwdOp.json",
+      "review_sha256": "d1e110e3e613ea659d1d2ca051ca96c64c171cdef28a0fdd6369fe26b9208d51",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "Conv2dFwdOp",
+      "case_id": "resnet-3x3-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021/004-Conv2dFwdOp.json",
+      "receipt_sha256": "1c08c3948ab779e307ec0cb97a1b8e41ad1d77c9484cb30b3c7ad11cec3ea25c",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021-review/004-Conv2dFwdOp.json",
+      "review_sha256": "e9d17a11b8550ad446766098d45b831bfe542c029d3bfed645390ba49328bd80",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "FusedAddLayerNormFwdOp",
+      "case_id": "llama-70b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021/004-FusedAddLayerNormFwdOp.json",
+      "receipt_sha256": "9e92e8debf039b2b848c3b288795bcd30964508bb4e6785f228dc3401680ef7d",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021-review/004-FusedAddLayerNormFwdOp.json",
+      "review_sha256": "b6f53a4c8991380a1d33f65e0c275aa001832d65bbe6e7e10d14ce6521334576",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "FusedAddLayerNormFwdOp",
+      "case_id": "llama-8b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021/000-FusedAddLayerNormFwdOp.json",
+      "receipt_sha256": "96c4a102a61ecd25cad5c9ec6f52187b22de3f2593b8824b21cbfc61fd36894f",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021-review/000-FusedAddLayerNormFwdOp.json",
+      "review_sha256": "cc10313dba9eeb5d68a25a53fff4fea3bed973e916af2ae2bbbfc6f8c0bcbdae",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "FusedAddRMSNormFwdOp",
+      "case_id": "llama-405b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont008_20261021/001-FusedAddRMSNormFwdOp.json",
+      "receipt_sha256": "5ea0eccdc5eb39d74417569d0593e3f7d463aea582a1aaedacce9b435f525d17",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont008_20261021-review/001-FusedAddRMSNormFwdOp.json",
+      "review_sha256": "4a9a812b82933ed54bb25e9671b82bd20f50625dbae7dd70e50602759f546886",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "FusedAddRMSNormFwdOp",
+      "case_id": "llama-70b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont001_20261021/002-FusedAddRMSNormFwdOp.json",
+      "receipt_sha256": "8060c4a8b320a4d63ce6b414777494660459ae078ac8875162b8c104b1b07081",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont001_20261021-review/002-FusedAddRMSNormFwdOp.json",
+      "review_sha256": "b25237e27841259e9d860bab0a19f0147004ab1f39ce17ffd45d3598d684bdfc",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "FusedAddRMSNormFwdOp",
+      "case_id": "llama-8b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/010-FusedAddRMSNormFwdOp.json",
+      "receipt_sha256": "0199bddf37ab3a93525e4385134caecdf933d9aa31b504ef93207312a46b3f13",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/010-FusedAddRMSNormFwdOp.json",
+      "review_sha256": "3d131730975adba63d142c208c49dd436666e8481d429ce216213a71b6fa12bb",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "GeluAndMulFwdOp",
+      "case_id": "llama-8b-ffn-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont002_20261021/000-GeluAndMulFwdOp.json",
+      "receipt_sha256": "02c662d7e4fd8d5237986962a849a591c2c8f831c5a5597df4762647ad531df5",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont002_20261021-review/000-GeluAndMulFwdOp.json",
+      "review_sha256": "35d0c51680e959222e249c69b8a8be8e135f724755ddde83ea57341eb1118f3a",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "GeluFwdOp",
+      "case_id": "llama-8b-ffn-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021/001-GeluFwdOp.json",
+      "receipt_sha256": "0d40edfa86480518aa959b4a48ab3ec187210ee9b5c06dd6e81b11628d904a70",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021-review/001-GeluFwdOp.json",
+      "review_sha256": "8e90c58d150ae94571c80c536a85ff2151308a23d03a518bfd32a085ba86e91c",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "GeluTanhAndMulFwdOp",
+      "case_id": "llama-8b-ffn-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont002_20261021/001-GeluTanhAndMulFwdOp.json",
+      "receipt_sha256": "01f1251f70ae5e566f77c849491b9e189f48747ad8e1e09649f0ff561fe8dbb0",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont002_20261021-review/001-GeluTanhAndMulFwdOp.json",
+      "review_sha256": "b64cadd165d7b026a613d554442a894612804ca205231b3a550b9cdfe4770753",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "GemmW4A16FwdOp",
+      "case_id": "multi-tile-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont008_20261021/002-GemmW4A16FwdOp.json",
+      "receipt_sha256": "db0cf9c3ddfe3534fd6e321c6f951da4791f229101fa3c7ee004285cf2eff52f",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont008_20261021-review/002-GemmW4A16FwdOp.json",
+      "review_sha256": "962f34984e243fa83e45f20c1ea3b3fbff57c64d98b13f3be73d8cf4a6097f7f",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "GemmW4A16FwdOp",
+      "case_id": "single-tile-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/008-GemmW4A16FwdOp.json",
+      "receipt_sha256": "249cceda6287f3f715404fa4885bae4435ed82a7c134b132482b4d2015dfb638",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/008-GemmW4A16FwdOp.json",
+      "review_sha256": "2b662d1158196a998de31370aa5d736e3b3f38956550386ee9b517789be7eb4c",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "HardsigmoidFwdOp",
+      "case_id": "mbv3-se-gate-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/005-HardsigmoidFwdOp.json",
+      "receipt_sha256": "45d8a20e5356f14698efbcfa5e2089eb61aba466c1d3fc05624fe716d5319e06",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/005-HardsigmoidFwdOp.json",
+      "review_sha256": "de78b322bd1defa455b2020094835fbf26af31ceb3b8e834eb36e3ea2f83c500",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "HardsigmoidFwdOp",
+      "case_id": "mbv3-se-gate-deep-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021/006-HardsigmoidFwdOp.json",
+      "receipt_sha256": "e251a2134bf688de161ce816bdf840c9cd0f821df2de7939f71131d4b4534289",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021-review/006-HardsigmoidFwdOp.json",
+      "review_sha256": "de40ce4de9284c5ed5af9944970e25b4965724ceb858331eefe6f65811dd3077",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "HardsigmoidFwdOp",
+      "case_id": "mbv3-se-gate-deep-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021/007-HardsigmoidFwdOp.json",
+      "receipt_sha256": "bd96c4194f89b285913170b426f7277b896288e094c83b1772ebf3d6b635afe5",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021-review/007-HardsigmoidFwdOp.json",
+      "review_sha256": "d90fbdc840bb518a44333fbcd4629e3c339f9602325070d08558f2ad2e5b0a06",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "HardsigmoidFwdOp",
+      "case_id": "mbv3-se-gate-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont001_20261021/000-HardsigmoidFwdOp.json",
+      "receipt_sha256": "64ae6a4509008ecb2ccc98e239a0577393eab6d9fe3f45dbb39f07c7e87ddd08",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont001_20261021-review/000-HardsigmoidFwdOp.json",
+      "review_sha256": "1330e7efb7a025fefff630a8d33d2c3ed7db5b72f1b3b2d42f57072e3ed9d6ec",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "INT8DequantPerBlockFwdOp",
+      "case_id": "ragged-k-few-rows-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/011-INT8DequantPerBlockFwdOp.json",
+      "receipt_sha256": "8940417e56f0e9f17e1a9d3a87a3730ca3e0708825942f05c27e8bca583938bc",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/011-INT8DequantPerBlockFwdOp.json",
+      "review_sha256": "9f6692b88d26528581da05fe843da89f65fad40f20df5aa104be8956b8de76d1",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "INT8DequantPerChannelFwdOp",
+      "case_id": "ragged-k-few-rows-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/010-INT8DequantPerChannelFwdOp.json",
+      "receipt_sha256": "6088445f2e0d9138f8857016ed1534368bf813378b1e4a6017f41d15b98d0a38",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/010-INT8DequantPerChannelFwdOp.json",
+      "review_sha256": "d215b0c1eb002986a64bd7e7b12e134e401c5068d481e0eea61977c4cc6b5dcd",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "INT8DequantPerTensorFwdOp",
+      "case_id": "llama-8b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/013-INT8DequantPerTensorFwdOp.json",
+      "receipt_sha256": "02496003483a580a53b2078a01a35eec9a97dd233f1552bef4f393b5e5364b13",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/013-INT8DequantPerTensorFwdOp.json",
+      "review_sha256": "8b33f42c26a2efc8867a8137a04f81405a42757209edea756d492758f3b74f3e",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "INT8DequantPerTensorFwdOp",
+      "case_id": "ragged-k-few-rows-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021/009-INT8DequantPerTensorFwdOp.json",
+      "receipt_sha256": "66061ee12ae5eb03046cb728be2569371d612f9d45aaef423da76d06c7741a96",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont010_20261021-review/009-INT8DequantPerTensorFwdOp.json",
+      "review_sha256": "fa30296186398c3728587e19a0960453f43ef031580c964da1937dcb38268635",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "LayerNormFwdOp",
+      "case_id": "llama-405b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont008_20261021/000-LayerNormFwdOp.json",
+      "receipt_sha256": "d3f0cc8aa00f3adc2744e379adaa770b94184cc5b40c4889635bb97359ba396f",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont008_20261021-review/000-LayerNormFwdOp.json",
+      "review_sha256": "648749bc6c3993279ac7348267d96fb9b05c61669505aa4fe9d575f224c5706a",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "LayerNormFwdOp",
+      "case_id": "llama-70b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont001_20261021/001-LayerNormFwdOp.json",
+      "receipt_sha256": "cbceef497cfc2f2a0ce30afb8e1a3d55753259861daea7c08c05edb5ee643926",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont001_20261021-review/001-LayerNormFwdOp.json",
+      "review_sha256": "f3f29a3333c3ffcd7b51622acae4a4bc2e4daab548a90032baa95cac300254b7",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "LayerNormFwdOp",
+      "case_id": "llama-8b-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/007-LayerNormFwdOp.json",
+      "receipt_sha256": "c1c4b898e1fc2850863d46e6284229d5f0dc4a1ca0387b2fec530249f1379715",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/007-LayerNormFwdOp.json",
+      "review_sha256": "fdea81f49f650ba40201e0cf47a218e2755276cc70887cbc30a22b9bdbf4f340",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "LerpScalarFwdOp",
+      "case_id": "linear-bias-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021/002-LerpScalarFwdOp.json",
+      "receipt_sha256": "be1c5779241c96c126644ebbdb94607d1120cc4e60b01428dfc478d5146c03ec",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021-review/002-LerpScalarFwdOp.json",
+      "review_sha256": "a602cedf75b608c86c0b51a608524e3072b325be00fd888f84bef1d579c89d10",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "LogicalOrFwdOp",
+      "case_id": "linear-bias-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021/000-LogicalOrFwdOp.json",
+      "receipt_sha256": "53ff39d7c5acba0febb03d7e0c6f821f30c7ab6f39477e943c5dac155bafe3d0",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021-review/000-LogicalOrFwdOp.json",
+      "review_sha256": "e40c428ac831dd721e5efca2546eff379b8f988665d3c683807416e347940bec",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "MaximumFwdOp",
+      "case_id": "linear-bias-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021/003-MaximumFwdOp.json",
+      "receipt_sha256": "82b5797ba03dea93f82f3cc717d20cfa38e90ffc0ba1470f0ba9708cbe566a6b",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont009_20261021-review/003-MaximumFwdOp.json",
+      "review_sha256": "f9a93d0989addf774fcba8a2f4b59ea0eb187d28e0668f9094482c7e213333ef",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "MeanFwdOp",
+      "case_id": "3d-multidim-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021/001-MeanFwdOp.json",
+      "receipt_sha256": "8cc00b74cd07c752119877cec6f826c3e140c36d30a09e5c686fb8d7d0fe088b",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021-review/001-MeanFwdOp.json",
+      "review_sha256": "93daa9565be3c72b281e2f710aed92115a8299773887674cdc621bd289e53a79",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "MeanFwdOp",
+      "case_id": "hidden-state-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021/002-MeanFwdOp.json",
+      "receipt_sha256": "74d65619b27745d120f45ed4abeae6897222b5c80e5d75b09978046dbef23117",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021-review/002-MeanFwdOp.json",
+      "review_sha256": "4f871a27896ec743cbebc5de7f5add178d75dd3f4173b963ac4665a1657798b5",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "MeanFwdOp",
+      "case_id": "hidden-state-bfloat16-float32",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021/003-MeanFwdOp.json",
+      "receipt_sha256": "d71ef42d799525e0b03b5c88b371bb9091acee3cf92039123291c1dd5d3157e3",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021-review/003-MeanFwdOp.json",
+      "review_sha256": "744b7b70ed12a0110ea13be5903da00beaca16b599b37b629888f4706344086f",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "MeanFwdOp",
+      "case_id": "hidden-state-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021/004-MeanFwdOp.json",
+      "receipt_sha256": "08a9b32f20caa40f17e5df9cd6d0595f026cba47b6e22fd476a6cda8634d6278",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021-review/004-MeanFwdOp.json",
+      "review_sha256": "c682f77db25ab918f0851894e1e7ed5186e393a2f8de1cd9a84b114d8ffe38ce",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "MeanFwdOp",
+      "case_id": "long-seq-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021/000-MeanFwdOp.json",
+      "receipt_sha256": "497d32053324de21ca3ebc07d03d0541894dffb27544fdc9630012931133e584",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021-review/000-MeanFwdOp.json",
+      "review_sha256": "f221d07aaa4000c71229b75cbccdffdad68717d7a916b8711c031d6d05636ba0",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "MeanFwdOp",
+      "case_id": "mlp-intermediate-float32",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021/005-MeanFwdOp.json",
+      "receipt_sha256": "d41aff5fd2fb5f963e231fb184d67749323e65037bcdd5427d595ed68d2e148c",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont006_20261021-review/005-MeanFwdOp.json",
+      "review_sha256": "aadd6b9626287cbeeda47b0e89984aa84ba1d771b7a9939ddd6ab804e789e24a",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "PagedKVCacheWriteFwdOp",
+      "case_id": "odd-tokens-and-page-float16-float16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/004-PagedKVCacheWriteFwdOp.json",
+      "receipt_sha256": "bc25a0ea2eba2664f1afe6ef56d106b4c53643b0053b5ef7c5a7e598d258923b",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/004-PagedKVCacheWriteFwdOp.json",
+      "review_sha256": "ef666832e7202e7a6b8e7f00d67064ba936ae69068d369929daee295e7c766c1",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "ReluFwdOp",
+      "case_id": "hidden-state-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/003-ReluFwdOp.json",
+      "receipt_sha256": "ffd217eaf62d06d6b1bc50bfa95a9ca24a5a632e5e56fa6c64358a1ef11279bf",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/003-ReluFwdOp.json",
+      "review_sha256": "5d78742ef5f0813e05f8bc40c790df0f823f11294d51e1c80a0a52efa066bf5b",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "SiluAndMulFwdOp",
+      "case_id": "llama-8b-ffn-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021/003-SiluAndMulFwdOp.json",
+      "receipt_sha256": "9a4db046d91a638a492426e5a3f7c8acc3642fe5ff5e89a67e62ad0aa6edea4a",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021-review/003-SiluAndMulFwdOp.json",
+      "review_sha256": "220e2d7c4c94ef28ac0ad9467785e6ec0287ff47c68070224cf9051770c4989c",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "SiluFwdOp",
+      "case_id": "llama-8b-ffn-decode-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021/002-SiluFwdOp.json",
+      "receipt_sha256": "19ec26587fc37cc7cc31ec45ab253b4bd300fc6e603522a47d25e0e5c6d3d312",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont007_20261021-review/002-SiluFwdOp.json",
+      "review_sha256": "d67fd5f7ae43ee21989c9548e2682653456047458ad7e71af64a10989553f80c",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    },
+    {
+      "op": "SumFwdOp",
+      "case_id": "long-seq-bfloat16",
+      "receipt": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021/000-SumFwdOp.json",
+      "receipt_sha256": "e6d6aaec83367551366fd5442dcc40ce698a94ec32778f08a25ec97a97ecfad0",
+      "review": ".agent_memory/THREADS/tileops-progress-report-20261019/ALL_PAIRS/ops_nn_continuation/cont005_20261021-review/000-SumFwdOp.json",
+      "review_sha256": "cd3da002824475e562aee632cadaf79564529b40a731b6da560bebe7614430b9",
+      "required_vendor": ".cache/all-pairs/ops_nn/install3/vendors/allpairs_nn"
+    }
+  ],
+  "root_acceptance": false,
+  "native_proof_limit": "Own compile source + logged full binary digest and cached bytes + actual named submit. Direct load handle/hardware identity not claimed."
+}

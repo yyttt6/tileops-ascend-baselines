@@ -1,0 +1,63 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "MemSetV2/d=0,p=0/diy,99",
+        "MemSetV2/d=1,p=0/diy,99"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "6d340c6d28cc817a8a91caa63aeed53f9aa7156dba10662b15b8e8ac6ae270d5",
+      "inputs": [
+        [
+          {
+            "name": "x",
+            "index": 0,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic",
+            "dtype_match_mode": "DtypeByte"
+          }
+        ]
+      ],
+      "outputs": [
+        [
+          {
+            "name": "x",
+            "index": 0,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic",
+            "dtype_match_mode": "DtypeByte"
+          }
+        ]
+      ],
+      "attrs": [
+        {
+          "name": "values_int",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "values_float",
+          "dtype": "list_float",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend950/mem_set_v2_apt/MemSetV2_simplifiedKey_matchAll_high_performance.json"
+      }
+    }
+  ]
+}

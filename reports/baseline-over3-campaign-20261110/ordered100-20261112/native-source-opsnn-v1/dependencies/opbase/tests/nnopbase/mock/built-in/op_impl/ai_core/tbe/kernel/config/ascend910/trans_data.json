@@ -1,0 +1,5215 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "9e707fe0018c5eaf4e3f6361774a9ad52cdfdd8308ef9fa8ecc13eeec9a323d2",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_bdffbc0e3c487267fa44654652c07d54_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "7da1d48f4295b6a0a5a15c76e89e6b1cde14a1cccc567a3315b9878ef6f0923a",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_294a26c4cc8c3a288626ae1da0a70951c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "458b37727950781245129b524b8c9d04c5ce11fca1f16854c935193aeab293cc",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_c26ea265ede184f4042e734b3de29e12c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "aa93ff3626de14fc96bf5e367b88057993d97b9d7cd5644aff4d0bccded2e319",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_d4f771fde410ccac8c544bad91a38e91c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "f481acf337bbe6b494d31d0a04fac4505c21c5e3d8939917aa6877a7e6482953",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_7251902a9905761d60ebb9db94b5d827_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "a58d808b163e7c39bbf078d713f14e731948b2615eb315ec55291acd96f56bee",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_f7497953d11d5abc9ab5cbf288a67faa_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "e370c9c7768b27622f2ca056760cc6a940c195dfb729d4dc4c210f3917c05cfb",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_f294950797f564b698e7187c06c71394c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ab1d4934d7ef73ba7122a4a94a5eb316339d78f6dcd45b588dcc5dcc78a7b162",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_88029d9b926ee3e9a5ce5a6d1528db14_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "a018b11a4cb036b6ccb0dd58d19a22b15b3cbf95eecc1b7d4cae9fe802497da3",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_5d7204366c2b3d4caf8abb797ee26976_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "cadb3933761561614dce40ee078ee569b247f9c36c08333e6b47e6f9e1c43260",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_7f79ad4446a36d3d3131657b1d839acf_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ddb068a327d3ac595a1eec5c2e13a5012f5290690e1af582399436d112439b1c",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_739be543d399b00434b6f682143e60c7_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "adc4015f83d08947cbd0e9527971e80109853f485221dd8631fbaf14328ac4a2",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_7b402173cd29f3f6826aa731c2958601c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "e0eb7f6e0117d9eabba58d1fe059a2c12a7e631d6c11fc32e3ef9ec46e1b7f11",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_7b402173cd29f3f6826aa731c2958601c8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "97561d8a321aa305818725a5cae9f730710e91d2aafa2d15c8a9c12a7ed16d43",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_45b1a39520df8e73d1b2f300a24777cac16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "5df077a2272b33601301ebc61c0df0a15969679aec5cf785f582ec6ea88dbcdb",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_45b1a39520df8e73d1b2f300a24777cac8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "1282ab26fe5519103a4abb233c2c61588c03879488969301e82813106a2475df",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_bdb7c59a524cbe564249dda7625ef166c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "3106c2cb6f7a6900a4935e4539132937a715e64bb5ca1f19a26d5f2c47b4e0f5",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_bdb7c59a524cbe564249dda7625ef166c8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "7a8d63b96d408a246bd4c496063b8c509e156a101faace0b0ecaef1bc5f14dbe",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_76ae9b382d5311eebe7ad615b3f47263_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "8b53de66f3b5cb5b8eb3d2c194ad45679035e1c3d2262ea22354766e8e86f1f2",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_488477effddec986643bbb6d4a04b047_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "6bd3e4aee6c41ff8a933702d7219594064a7c94cce4f21d5c194236cb143a547",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_cb5507159092f6eebe98693b30542645c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "a2f238807289211e9fef40196e4cd1787ab561af65930b848411f99acdbc0ecd",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_cb5507159092f6eebe98693b30542645c8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "9d14276f8f5ccc1e0c1f4404c9d38c3dfdcf61e853cb369995442f39eb2b3a55",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_8853381d7cfe72b1eab1b434f0aa9ba6_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "c6234ca0a749925649f44709f46b09edc8204a82c9ab90ece668842666291837",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_67d7c40d127f4f68ac78cefc64cc7bd9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2a705bdbf1eb34e473edcbe6066cc85a0512236eab2ddab13c55e1442a2225e0",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_2ad19a80a10c2e957ad2077cfe87720f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "5fb83246e75949321a6bb65b4272f25932e5d1331a20df17536dd28a22715b8c",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_50e57bae3f591c19b72de3a2056199f2_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "83cfdc87d2f009629ffb09028da48574bb87fc5e53cff87efa91854d6b1135bc",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_a37d5adda0f096ee0d5976e4f2baffb0c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "d6d8a4a3e5a2671f76623f0a9ef30a78c7812d5f046cb5c1a9169d68afd3a284",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_a37d5adda0f096ee0d5976e4f2baffb0c8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "45f1e705037c1a47ec67e90d3aa9bd1e2b2cf26d7f04b163916cd375d6f301a3",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_1b49b14e103ac2b5bb4434396dedca61c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "6cdb798d35fef1d20a6f685970f7b8d615573a8339640d21bbba15c4a6a554b9",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_1b49b14e103ac2b5bb4434396dedca61c8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "cf7bb64158f0b18a09b634d71297a29333eac7fb3cf9d21682f807cc1546eef2",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_a1532926856b5d4ea5bc081dfbe4dff3c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "cfc81a9956454ec15f672aabff726534261e670b0dae3939ba661cbd0dc23f96",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_a1532926856b5d4ea5bc081dfbe4dff3c8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "a3f10372fed97d408e9a9fbfa2c935077d687713f9baed36ff10feef72259c6c",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_05f8557db568e40f63b8829985356af5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2e13bc282b225b55fc941064b0346cf2290031e69053dca06b1f5b2f88fff14b",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_75b16ccf4bccacaaf79ae2890529ff43_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "77223e1bb1b5ce3b858a8bcf76979dcf9e33fc9647bd50d7ad08576a3aa59566",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_9d79444575d50cda5471d978b574a58fc16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ebbda213a52b2fa1b642c3201d1adb107184e4871ad0803320270e6eb2982eee",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_9d79444575d50cda5471d978b574a58fc8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2c621cf72f7495ad6163f8c3f1e7f23110fc20396824d62b5c43bf28649a0843",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_fd40a22c08caa32e0f923ad7e655f4c2_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "df171b3e76de1933148abc6434a08b31981348555ef3d78b7516989956fb634a",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_581e11bb0ed88238432a90effd292aed_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "b80cd5f0f33cdea9bcf16bd2d01cd13663f4e2061f56028976bceb203fb74056",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_d1204c1ffb9d7b53522a59a4779d0103_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "0536f959773fb569c0d6af7bdb314917d8b0ee2b98f8c1e81637f5858df40939",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_25c8de881c89df9b5a5c8008f3faa51c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "5003b25b7cca2387a12f7229e314d6c0a0508eee7e52a1f10ae2089162204b3a",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            32
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              32,
+              32
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_a670e2d585fef91da69583fbb8a28d06c32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "6a16233dfe86b3ef6c16c6c8fdf0e6fecff5c23ad5f8b850bfa20dca33f7b0ff",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            32
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              32,
+              32
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_d826cfe4777ee0ea0fe05f15efca23ccc32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "42208081cb35b862ca1ffe3bd32a51c3c6e2f25cafa045c373cdda23259b8065",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            32
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              32,
+              32
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_7dc3694ac20817642b666043dcf9d748c32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "82786944280c8c525854d82fdcd82dad1ddc90c7d3bbd6b368935c334030c3ae",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_7dbf25505d182750b12eb7c9748654bb_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ef5d6415fd5b07a5381e04054e7a1796a44f8d68b3a492566140da79869b8cd8",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_0d93c6a5e27bbe58496711150501eed0_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "61bc9a1ff2a6a1efa0d152c9982c8301e005928692b850aaaaf25e54107fdbb0",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            32
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              32,
+              32
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_bf5f3735fb216678af8c8f035e8a3be5c32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2c7a0016710dc2ff557126c91d4e3d173186142c5b7a84861e6279ded0a481de",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_cbb9e925e2108a7d14cc57bae978eb66_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "755b6973ec242103e5a7bd6e4689f67e0f23e1c00a75b71cb352770f6a49dae6",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_593230decabaedf68cc7d7c4b977f677_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "e49d1b7a94ef7d2350e31f19f77da75e61f25591dcd0bd86e31964916a83c65c",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_f97823d1bdd5bbd50cd6954b829967e1_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "1802d7940c39d9488289c6702ea55cde019c807d6ed8735a88e67301df1de150",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_fd4c2b5ea84a04847689f5057adc5134_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "80451f83db439f563cb46122d1388506f3f178e32f58305cd09457ff689f0d15",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_53a63e20d1ad04eb6f0882cc5e3ac3c9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "545b9b81b3fdc35b283249ccc29d336fe9b6eabb457df256b39725fb3a19ac82",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_0728708c69496c73ad5913e3a62c7616c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "a2c72c90c26b888ad025b26ef248d9380e0636f889fc5b3d13c97cf2f9c637ae",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_0728708c69496c73ad5913e3a62c7616c8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "67dd015e7750da3692368974644a77256a40beb5a2b54e39e32997183c6f0de4",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_3a79f329cb6d6c263ded8feb8455c167c16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "1dbcbb3f1bcc7ea31e242cbbabcfbdda08176836fcee2a7f1eae3ad738c94d73",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_3a79f329cb6d6c263ded8feb8455c167c8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "0736174337bbd9bc608e1ee6c210a04f3588980f08824f8b79701e085ed2d34f",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_0c63936654c84a308f51ed03c8e0cbbac16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "7566f90c5a06647a4691a3c4a7326419123f862f427f7423d0cbc8a20a833def",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_0c63936654c84a308f51ed03c8e0cbbac8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "802a2bf3de8d9747fd5181fdaa6d7478912c8a30437b7aac5141625fe6cb6833",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_e03e5bcfdf9db1c7765601e0f4fc2ec7_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ce32137acbbf578bd33b13240b9de5380ab13daa6a00dc8c7a8fd39d8f4e7977",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_cee63439b44af9931710cf632a7bc1a5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "c8356ce2eee7797cdbef25a19aa981871b4bc3c88345507c9a777b3cb3587efb",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            16
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_70b0a60ea154b14167507ba38817355dc16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "84971e235c1472754f10222f4272f4f3c388bd8e68194be7762960d29551589c",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            8
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_70b0a60ea154b14167507ba38817355dc8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "743704723e953b7da8b9d2ed1deb1e75aa2986d209b28d9c99142aecea2a20bf",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_344f72eec8c407ce7fc81c44908d8c1a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "5c9d518ed4364b531a04a4ec63770581f79036d292be854e62018762c5bb8fc3",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_287acb209d67c0dd6e973cd777177ef8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "fd4540c1f84394ce02df6d4be3b8f01131b05d98383ac764ba054b702e6054e0",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_b841a8f0c62286b7289d1196805a8b45_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ae7dc70a606a985066482341012c990545a54fd179321dbc7557d5f873f537f0",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_1629d98b82c4cd2edbd2ab331ec0eb56_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "b77f2a10d8be2bb15055061d73bd43c27cb40818a0206a5b17f89a85edd3be36",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            32
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              32,
+              32
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_e014418f459c5eafcfc360182fdcad50c32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ee697c47f038bd146a41107122fe200e6be318ddae56739d9a1bf3e7ec2b9540",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            32
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              32,
+              32
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_cfc0626cbf8677d79768dc6e0c96fad1c32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "62b91b95af9528494ebbd995ce4f6004e25cf54cd912f58ee37b05a14db4690f",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "HWCN",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            32
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              32,
+              32
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_5ca9788fbb7cc3d68aa798e541d1f3c4c32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "414dbe4a278af4276e8f5939f517398e92afa3d6599824418f1cbfab35f1864f",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_f745ef5eab61a4355117f3c928151347_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "0494afd67309d4997190606ec2ec73d398307918fb66ff9aea479a933882cc57",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_990252db2dbfacce285cb20d6994a66a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "d1495f44597ec1d55c4ea0ed642b15043be8a470820e4aaaceb089de658711a2",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            16,
+            32
+          ],
+          "format_match_mode": "FormatFixed",
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              32,
+              32
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_bf4b2fbdd8c73a05de981ea5b62a0ab3c32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "9ded2070caf58e50eb86c267ace15069e2513de0b850ef7b2cfb3d31ea9ac6e4",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_e4cf4b2305b8a7c629769c7c0f6f7af9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "3a7ab77dd9df5701a687202ac5b8ee3e45a449420ef64969fc6b5620fa304b41",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_e85382dbdc33513f1299cb13d4d7cd36_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "8c99790b3ec7d3571f64b98ab8fe2de395483858bd5a545cf2912a3a1321ef12",
+      "inputs": [
+        {
+          "name": "src",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dst",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/trans_data/TransData_90ae6e4d167ad95195c56018c11f5c4d_high_performance.json"
+      }
+    }
+  ]
+}

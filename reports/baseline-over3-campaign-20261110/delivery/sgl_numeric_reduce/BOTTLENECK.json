@@ -1,0 +1,51 @@
+{
+  "windows": 15,
+  "result_sha256": "b94854f7f138e933f6d37000f5de731b892907257221dd550dbb141b11249bc2",
+  "predicate_two_selectors_us": 3597.9610000000002,
+  "final_reduction_us": 7.5634,
+  "device_sum_us": 3650.157533333333,
+  "predicate_fraction": 0.9857001970855578,
+  "top_tasks": [
+    [
+      "_argmax_prob_kernel",
+      3605.5243999999993
+    ],
+    [
+      "Pack_ddafbeaeee4ee3a848734c13e000266d2_high_performance_12312",
+      8.619599999999998
+    ],
+    [
+      "Cast_5d7a6db974148d68ac34e2b880c60222_high_performance_0",
+      7.638133333333333
+    ],
+    [
+      "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11003",
+      7.554333333333334
+    ],
+    [
+      "TensorMove_5c5e58e043224cccf51a06108010ae13_high_performance_4",
+      6.492733333333334
+    ],
+    [
+      "Cast_1ae7d0da2cb3d6d5f03a7ee4e75165b8_high_performance_0",
+      4.017866666666667
+    ],
+    [
+      "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+      3.353333333333333
+    ],
+    [
+      "mul_add_kernel",
+      2.687266666666667
+    ],
+    [
+      "GatherElements_b0b54dddeb312b53dfb50c229b8ffea90d_high_performance_201",
+      2.4095333333333335
+    ],
+    [
+      "ZerosLike_2_BYTES_high_performance_1",
+      1.8603333333333334
+    ]
+  ],
+  "interpretation": "First two nativeargmax launches implement mandatory finite Ne; last is final Any reduction. Costs from original15raw-audited task records. No changing nativekernel or removing predicates to chase ratio."
+}

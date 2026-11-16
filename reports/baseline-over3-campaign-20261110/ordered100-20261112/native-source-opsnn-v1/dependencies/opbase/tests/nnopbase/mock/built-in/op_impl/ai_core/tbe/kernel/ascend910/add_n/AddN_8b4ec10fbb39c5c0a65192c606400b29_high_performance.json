@@ -1,0 +1,152 @@
+{
+    "binFileName": "AddN_8b4ec10fbb39c5c0a65192c606400b29_high_performance",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "compileInfo": {
+        "_base_info": {
+            "100": [
+                32,
+                4,
+                16376,
+                8184
+            ]
+        },
+        "_custom_vars": {
+            "210000000": [],
+            "210010000": [],
+            "2147483647": []
+        },
+        "_elewise_disable_fuse": false,
+        "_elewise_vars": {
+            "210000000": [
+                10000,
+                20000,
+                30000
+            ],
+            "210010000": [
+                10000,
+                20000,
+                30000
+            ]
+        },
+        "_enable_fractal_format": false,
+        "_inputs_ele_in_block": [
+            16,
+            16
+        ],
+        "_is_const_shapes": false,
+        "_is_pure_elewise": true,
+        "_max_out_dtype_num": 8,
+        "_normal_vars": {
+            "210000000": [
+                "_dim_0_0",
+                "_block_factor_0",
+                "_ub_factor_0"
+            ],
+            "210010000": [
+                "_dim_0_0",
+                "_block_factor_0",
+                "_ub_factor_0"
+            ],
+            "2147483647": []
+        },
+        "_pattern": "ElemWise",
+        "_ub_block_size": 32,
+        "_ub_factor_align": 128,
+        "_vars": {
+            "210000000": [
+                "_dim_0_0",
+                "_block_factor_0",
+                "_ub_factor_0"
+            ],
+            "210010000": [
+                "_dim_0_0",
+                "_block_factor_0",
+                "_ub_factor_0"
+            ],
+            "2147483647": []
+        }
+    },
+    "coreType": "AiCore",
+    "deterministic": "ignore",
+    "globalworkspace_spec_workspace": {
+        "size": 32,
+        "type": 0
+    },
+    "kernelList": [
+        {
+            "deterministic": "ignore",
+            "kernelName": "AddN_8b4ec10fbb39c5c0a65192c606400b29_high_performance_2147483647"
+        },
+        {
+            "deterministic": "ignore",
+            "kernelName": "AddN_8b4ec10fbb39c5c0a65192c606400b29_high_performance_210000000"
+        },
+        {
+            "deterministic": "ignore",
+            "kernelName": "AddN_8b4ec10fbb39c5c0a65192c606400b29_high_performance_210010000"
+        }
+    ],
+    "kernelName": "AddN_8b4ec10fbb39c5c0a65192c606400b29_high_performance",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 12,
+    "parameters": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "sha256": "7fc4965d4accda105e2223c72ef11444e67b5b607b160d420fdc5514d921b2fd",
+    "supportInfo": {
+        "int64Mode": false,
+        "staticKey": "bd03dbfd9ad869aec8828521a286a849f262b1e1486bb7d007eb65c4a8a3bffb",
+        "inputs": [
+            [
+                {
+                    "name": "x",
+                    "index": 0,
+                    "dtype": "int32",
+                    "format": "ND",
+                    "paramType": "dynamic",
+                    "shape": [
+                        -2
+                    ],
+                    "format_match_mode": "FormatAgnostic"
+                },
+                {
+                    "name": "x",
+                    "index": 0,
+                    "dtype": "int32",
+                    "format": "ND",
+                    "paramType": "dynamic",
+                    "shape": [
+                        -2
+                    ],
+                    "format_match_mode": "FormatAgnostic"
+                }
+            ]
+        ],
+        "outputs": [
+            {
+                "name": "y",
+                "index": 0,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ],
+                "format_match_mode": "FormatAgnostic"
+            }
+        ],
+        "attrs": [
+            {
+                "name": "N",
+                "dtype": "int",
+                "value": null
+            }
+        ],
+        "deterministic": "ignore"
+    }
+}

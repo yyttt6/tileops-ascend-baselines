@@ -1,0 +1,8 @@
+{
+  "ordinal": 132,
+  "original_registry_route": "integration700_fla_native standard BTD complete causal_conv1d API",
+  "candidate_route": "generic flattened pointwise complete causal_conv1d API + nozero padding",
+  "status": "both fullcheck/rawvalid, but not zero-pad-only controlledcomparison; original retained, candidate not adopted",
+  "kernel_math_tolerance_changed": false,
+  "source_proof": "delivery/ordered_fla_zero_pad/ROUTES.json entry132 explicitly notonechangequalified"
+}

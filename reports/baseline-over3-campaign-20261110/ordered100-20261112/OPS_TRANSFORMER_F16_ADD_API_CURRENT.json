@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-11-15T12:04:05.751124+00:00",
+  "accepted_complete_APIs": 4,
+  "rows": [
+    {
+      "ordinal": 744,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "cnn-feat-broadcast-float16"
+      ],
+      "api": "ops-transformer::layernorm_add_add_quant.residual_output",
+      "device_us": 375.5754,
+      "checkpoint": "rollout-ops-transformer-f16_add-api-sdk-744-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "042e14bc3af5bbf90af27504e7c5573d04fdd38fc0b8b686f86287466861c665",
+      "payload_sha256": "0f18809620b80138ee1cb73b3ea53ab5a1723328626e66af8f469f6bac8d3f97",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_CPP_object_loadedso_deviceELF_all15_binding": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 745,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "linear-bias-float16"
+      ],
+      "api": "ops-transformer::layernorm_add_add_quant.residual_output",
+      "device_us": 132.62879999999998,
+      "checkpoint": "rollout-ops-transformer-f16_add-api-sdk-745-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "7dc8a2cd72302a0b5937ba9d945a1ecc44857cdcd5cb9181d4d7e0d13b18ba5f",
+      "payload_sha256": "4c8fd2982d0797ce18e6bc62f9a5f5108bb3e03843a26a05889446605ecd56ff",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_CPP_object_loadedso_deviceELF_all15_binding": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 746,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "llama-7b-ffn-float16"
+      ],
+      "api": "ops-transformer::layernorm_add_add_quant.residual_output",
+      "device_us": 328.3790666666667,
+      "checkpoint": "rollout-ops-transformer-f16_add-api-sdk-746-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "fa959b24196ab2407e411fbcc1f5d985b1d812628e63c382e2e1f9d467e09aab",
+      "payload_sha256": "13fefa8ce0eae766291a1cec58e9512fd6bdd841eba92c9d3b04beee1bff5a31",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_CPP_object_loadedso_deviceELF_all15_binding": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 747,
+      "key": [
+        "ops-transformer",
+        "AddFwdOp",
+        "hidden-state-prefill-float16"
+      ],
+      "api": "ops-transformer::layernorm_add_add_quant.residual_output",
+      "device_us": 246.0108,
+      "checkpoint": "rollout-ops-transformer-f16_add-api-sdk-747-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "b3da4b22a3d42200a54334cc8c65aac5a8f84e5d31567abf8fa8571b68cc9869",
+      "payload_sha256": "e2c483da3f3171f6b8f3526fb1bd9e9bde54d89673383994261c620d1a377f12",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_CPP_object_loadedso_deviceELF_all15_binding": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

@@ -1,0 +1,23 @@
+{
+  "scope_ordinals": [
+    986,
+    987,
+    988,
+    989,
+    979,
+    980,
+    981,
+    982,
+    983,
+    984,
+    985
+  ],
+  "only_changed_file": "sgl/row_gemv.py",
+  "old_sha256": "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+  "current_sha256": "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e",
+  "reverse_path_check_change_restores_entire_original_file_SHA": true,
+  "dequant_and_mul_input_workload_source_hashes_unchanged": true,
+  "payload_and_descriptor_all_11_unchanged": "DEQUANT_PREPARE_SOURCE_DIFF.json",
+  "new_condition": "explicit percase cached-input fidelity verification; generic prepare/source gate remains unchanged",
+  "no_input_or_old_prepare_metadata_rewritten": true
+}

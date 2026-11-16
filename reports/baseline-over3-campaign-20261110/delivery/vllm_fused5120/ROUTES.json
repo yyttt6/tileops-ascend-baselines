@@ -1,0 +1,16 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedAddRMSNormFwdOp",
+      "llama-13b-prefill-bfloat16"
+    ],
+    "index": 0,
+    "selected_variant": "native",
+    "selected_us": 145.07773333333336,
+    "ratio": 5.183470373581563,
+    "result_sha256": "48123bcf591abe1e5937c9f2e3ad2e9984d8ca8ddedb7a0cc3f9a1112233bafa",
+    "decision": "retain_original_api_over3",
+    "reason": "Retain original singleton addition plus original RMSNorm API, including input-dtype-rounded residual second output. Direct natural width5120 selects unsupported block2560; no kernel/compiler/block edits or relaxed precision. Current original full API15 raw windows audited, no optimization benefit claimed."
+  }
+]

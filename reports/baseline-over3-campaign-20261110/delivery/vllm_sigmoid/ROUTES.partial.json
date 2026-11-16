@@ -1,0 +1,29 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "SigmoidFwdOp",
+      "16M-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SIGMOID_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SigmoidFwdOp",
+      "16M-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SIGMOID_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SigmoidFwdOp",
+      "16M-float32"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SIGMOID_CURRENT.partial.json"
+  }
+]

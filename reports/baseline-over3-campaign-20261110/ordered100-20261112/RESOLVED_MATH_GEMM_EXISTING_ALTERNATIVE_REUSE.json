@@ -1,0 +1,168 @@
+{
+  "checked_at": "2026-11-16T00:37:57.033045+00:00",
+  "accepted_reused_complete_API_contracts": 5,
+  "rows": [
+    {
+      "ordinal": 234,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-qk-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 1092.8013333333333,
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "same original input/descriptor/params/checker/reference-policy; complete originalNNorTransformerAPI alternative for Math contract",
+      "original_math_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 760,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-760-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "229ab946e69d531c5a03e7c1c3b5e765bb6e6a7e7eb2f44ceb974ddd3b90b81d",
+      "payload_sha256": "bf662e237523c72cf68ba5ec1c1fa789de304f3454efaa1727b7442fa7ded869",
+      "descriptor_sha256": "f7c36251c73eabee0a8fb6c6f758117d9c110d29834c27d976c99edd5a146e79",
+      "source_actual_old_device_node": "/dev/davinci6",
+      "source_actual_old_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/MATH_GEMM_ALTERNATIVE_REUSE_FULL_AUDIT.json",
+      "audit_sha256": "318383a23907d165b195b2837d1a16ef4683e1b8c19f05ecef691e282fbcb47d",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 235,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-qk-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 1094.335,
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "same original input/descriptor/params/checker/reference-policy; complete originalNNorTransformerAPI alternative for Math contract",
+      "original_math_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 761,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-761-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a1c4b6608a84adbccb9425779cd50240c7a79a45ca4ae506b51645c1b8eb1693",
+      "payload_sha256": "4a46e4ebf412db5657aa1a63103d2a02eb4f4e47aaf1f6367972e765b1c1fc48",
+      "descriptor_sha256": "962aa153f59a85a54b7c639bd631094e38b7182dbe0c066685d9a69dd62e92f1",
+      "source_actual_old_device_node": "/dev/davinci6",
+      "source_actual_old_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/MATH_GEMM_ALTERNATIVE_REUSE_FULL_AUDIT.json",
+      "audit_sha256": "318383a23907d165b195b2837d1a16ef4683e1b8c19f05ecef691e282fbcb47d",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 236,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-512-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 338.69086666666664,
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "same original input/descriptor/params/checker/reference-policy; complete originalNNorTransformerAPI alternative for Math contract",
+      "original_math_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 764,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-764-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "e38d1b49fe621f6825ffd767f0a886955b258e61b4322861933f83cb10cb3c3b",
+      "payload_sha256": "7cfe9a6b306eacd8eedde4aa79f29d45f73092fc5a18323db3b76c1386d09d73",
+      "descriptor_sha256": "c08abd7b5bc001b88fb3a1674344a23b4f1a4e4dad62ca6a22d88861181a6503",
+      "source_actual_old_device_node": "/dev/davinci0",
+      "source_actual_old_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "897b29c557a5"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/MATH_GEMM_ALTERNATIVE_REUSE_FULL_AUDIT.json",
+      "audit_sha256": "318383a23907d165b195b2837d1a16ef4683e1b8c19f05ecef691e282fbcb47d",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 238,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-256-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 531.7674666666667,
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "same original input/descriptor/params/checker/reference-policy; complete originalNNorTransformerAPI alternative for Math contract",
+      "original_math_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 758,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-758-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "de8623e7ed39a01becb1f9fcc91d3b2381a0eb8da69ca4a4dcfca535a267bea3",
+      "payload_sha256": "44a0470dc697a3d433649cf71b8e84ed9b14a1e73d9c6d1baccf8ee544455778",
+      "descriptor_sha256": "b43b0a5c75ee2988d178b95304a6861f61c49a7ae7d6a43893a93d5055c29a42",
+      "source_actual_old_device_node": "/dev/davinci6",
+      "source_actual_old_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/MATH_GEMM_ALTERNATIVE_REUSE_FULL_AUDIT.json",
+      "audit_sha256": "318383a23907d165b195b2837d1a16ef4683e1b8c19f05ecef691e282fbcb47d",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 275,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "square-1k-float16"
+      ],
+      "api": "ops-nn complete original aclnnMatmul, original alignedpacking and timedrun AST",
+      "device_us": 35.30446666666666,
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "same original input/descriptor/params/checker/reference-policy; complete originalNNorTransformerAPI alternative for Math contract",
+      "original_math_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 497,
+      "checkpoint": "rollout-ops-nn-gemm-pad4-497-l1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "dd77a634fc9b713cbd3a2ca1db97b8d4952d95787ba06bb15c1a7be1a6ef97dd",
+      "payload_sha256": "bd46e788d231daace3219d98af9f38b948a60e19906a6e8c864d56d94f17e4c3",
+      "descriptor_sha256": "828fb8b1b9db7bc06e9ff11d9ace4b64a89a65552c25d14b98c095ee8a942106",
+      "source_actual_old_device_node": "/dev/davinci6",
+      "source_actual_old_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/MATH_GEMM_ALTERNATIVE_REUSE_FULL_AUDIT.json",
+      "audit_sha256": "318383a23907d165b195b2837d1a16ef4683e1b8c19f05ecef691e282fbcb47d",
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "new_native_measurements": 0,
+  "no_publication_or_old_checkpoint_changes": true
+}

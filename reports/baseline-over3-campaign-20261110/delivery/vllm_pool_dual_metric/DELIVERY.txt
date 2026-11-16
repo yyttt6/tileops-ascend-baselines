@@ -1,0 +1,1 @@
+Three exact uniform cases have paired original/fixed correctness,15device raw and host timing audits. Candidate improves host and regresses device; do not auto-install as fastest-device route. Both versions staged, selection of published metric unresolved. No final public speedup assigned. Original API/checker/precision unchanged; source matches each formal receipt.

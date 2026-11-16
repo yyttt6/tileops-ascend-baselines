@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-11-15T11:22:53.205972+00:00",
+  "accepted_complete_APIs": 2,
+  "rows": [
+    {
+      "ordinal": 784,
+      "key": [
+        "ops-transformer",
+        "MoEPrePermuteFwdOp",
+        "decode-t32-float16"
+      ],
+      "api": "ops-transformer::original MoeInitRoutingV2",
+      "device_us": 7.865733333333333,
+      "checkpoint": "rollout-ops-transformer-prepermute-api-sdk-784-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c9bc024f94f6cd994f98f2d3d2a3ba139e1409d1b26bd40161c42c29fe9a8d2a",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "bb20803ef3d4b9782b41a06f6761213f09be30581ddf98bf1a72b8fb7d49ac19",
+      "prepare_sha256": "329a28a288e583868b51d5dcba61a958be7f79c24bdd0eb3adca14fd98617842",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 785,
+      "key": [
+        "ops-transformer",
+        "MoEPrePermuteFwdOp",
+        "decode-t32-bfloat16"
+      ],
+      "api": "ops-transformer::original MoeInitRoutingV2",
+      "device_us": 7.978066666666667,
+      "checkpoint": "rollout-ops-transformer-prepermute-api-sdk-785-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "5162562fa6780cd5c188d2ad5d676d4baabda3539bb7588d4bde54b5dba90de4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "246c964f5040da758199579951d256193da8edf958807a8a7f3c22b5b95df49f",
+      "prepare_sha256": "4b3bdda4ceb1b3f787882957fb46015d49236c4bc60ceb85a66f65baf5e46f3b",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

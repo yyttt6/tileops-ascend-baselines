@@ -1,0 +1,428 @@
+{
+  "status": "active",
+  "scope": "exact2208 pairs in frozen ALL_OVER3; no missing-ratio or <=3 expansion",
+  "order": [
+    "existing-library APIs including template libraries; no new kernels",
+    "torch",
+    "tilelang and tilelang-ascend"
+  ],
+  "hosts": [
+    "openlibing-DevEnv-661495",
+    "openlibing-DevEnv-055409"
+  ],
+  "acceptance": "Original full API/math/checker/precision; full output and input checks,15raw samples, complete device work and valid guard; protocol/parser explicitly recorded. Effective coverage != optimization closure or <3 acceptance. Retained>=3 conclusions require specific library-capability/contract/regression evidence, not fabricated speedups.",
+  "old244": "do not resume outside >3 scope; preserve outputs and CPU archive maintenance",
+  "disk_policy": {
+    "minimum_free_bytes": 20000000000,
+    "scope": "Only this campaign per explicit user override; legacy50GiB/60GiB policies not generalized",
+    "migration": "User assigned another agent; no cold-data migration by this task"
+  },
+  "queue_policy": "Before every submission fresh empty queue+physical idle+no active PR/nightly gap; original host guard includes imports/device work/sync/exit; no lock or visibility bypass.",
+  "memory_policy": "Predictive payload16x+16GiB admission disabled by user; historical rejections retained. Actual OOM recorded; device guard/disk floor remain.",
+  "reference_policy": "Historical2 Bmm corrections preserved. Additional user-authorized exact42 ordinal+key+params+payload+descriptor corrections use audited CPU FP64 mathematical golden rounded to original output dtype; immutable original metadata policy remains historical, per-run GOLDEN_CORRECTION.json declares new policy. Other cases unchanged.",
+  "reference_repairs": {
+    "status": "both resolved",
+    "scope": "2 exact Bmm BF16 CPU gold corrections, case-level shared across implementations",
+    "registry": "REFERENCE_CORRECTIONS.json",
+    "report": "reference-repair-20261112/README.txt",
+    "summary": "reference-repair-20261112/SUMMARY.json",
+    "validated_outputs": 5242880,
+    "full_FP64_failures": 0,
+    "kernel_or_tolerance_changed": false,
+    "new_formal_windows": 0,
+    "archive_receipt": "reference-repair-20261112/ARCHIVE_RECEIPT.json",
+    "Gemm8_proposal": "ordered100-20261112/gemm-bf16-reference-review/PROPOSAL.json",
+    "Gemm8_status": "not_applied_waiting_user_case_authorization",
+    "golden42": {
+      "status": "corrected_certified_and_all42_qualified",
+      "report": "ordered100-20261112/server2-alignment-20261113/GOLDEN42_REPAIR_RESULT_20261116.json",
+      "certified": 42,
+      "original_NPU_output_rechecks_passed": 8,
+      "new_qualified_coverage": 42,
+      "native_qualified_after_repair": [
+        184,
+        240,
+        241,
+        244,
+        245,
+        270,
+        271,
+        272,
+        273,
+        274,
+        284,
+        295,
+        296,
+        297,
+        487,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        498,
+        774,
+        777
+      ],
+      "qualified_exact_API_reuse": [
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        309,
+        372,
+        486,
+        759,
+        772,
+        773,
+        804,
+        1082,
+        1255
+      ],
+      "pending_full_native_acceptance": 0,
+      "final_result": "ordered100-20261112/server2-alignment-20261113/GOLDEN42_ALL42_QUALIFIED_RESULT_20261116.json"
+    }
+  },
+  "vendor_runtime_repair": {
+    "report": "vendor-runtime-repair/REPORT.txt",
+    "principle": "Original vendor matching Torch2.10 environment is distinct from CI Torch2.13; difference alone is not a mismatch",
+    "current_private_runtime_acceptance": "ordered100-20261112/REFERENCE_RUNTIME_REPAIR_ACCEPTANCE.json",
+    "boundary": "Qualified matched Torch2.10 API paths and core toolchain checks are scoped evidence, not full native provider source->build->load->run acceptance. Current ops-nn build qualifications: ordered100-20261112/NATIVE_BUILD_SCOPE_CLARIFICATION.json."
+  },
+  "full_audit": {
+    "status": "11-12 inventory is historical; use corrected 11-13 investigation, not old open-issue counts",
+    "historical_report": "full-audit-20261112/REPORT.txt",
+    "historical_scope_correction": "full-audit-20261112/AUDIT_SCOPE_CORRECTION.json",
+    "current_investigation": "../baseline-comprehensive-review-20261113/REPORT.txt",
+    "protocol_correction": "../baseline-comprehensive-review-20261113/PROTOCOL_CORRECTION.json",
+    "withdrawn_not_open_issues": [
+      "1933 legacy host-field declarations are not formal metric conflicts",
+      "3115 weak associations superseded by5039 exact v2 ID/device checks",
+      "1854 source-unlocated count reflected limited old index, not proved absence",
+      "518 independent host/device observations alone do not require retest"
+    ],
+    "remaining_qualification": "Actual source/build/runtime/guard/raw and denominator linkage still require evidence; ID linkage alone is not full acceptance. Issues may overlap. SharedExpert follow-up has a separate owner/state.",
+    "current_findings_source": "../baseline-comprehensive-review-20261113/FINDINGS.json"
+  },
+  "storage": {
+    "historical_details": "history/memory-cleanup-20261113T082153Z/STATE.json",
+    "current_action": "No cold-data migration; existing raw/archive/receipts retained in place"
+  },
+  "latest_migration": {
+    "historical_only": true,
+    "details": "history/memory-cleanup-20261113T082153Z/STATE.json"
+  },
+  "updated_at": "2026-11-16T06:20:46.643021+00:00",
+  "authorization": "User explicitly resumed current baseline adjustment and requests maintaining updated memory instead of immutable pause snapshot",
+  "ordered100": {
+    "status": "100closed",
+    "fresh_valid": 59,
+    "historical_valid_source_reuse": 41,
+    "adapter_improvements_selected": 13,
+    "same5_execution_speedup": 6.8984992578,
+    "initial_operating_guard_throughput_ratio": 2.186667324,
+    "report": "ordered100-20261112/RESULT.json",
+    "subset_of_current_2119": true
+  },
+  "continuation": {
+    "status": "all2119_coverage_qualified_remaining69_complete",
+    "ledger": "ordered100-20261112/ROLLOUT_LEDGER.json",
+    "progress": "ordered100-20261112/CONTINUATION.json",
+    "scope_total_remaining_after_first100": 2019,
+    "ordered_scope_prior89_excluded": 2119,
+    "remaining_unvisited": 0,
+    "ledger_original_valid": 1010,
+    "current_effective_coverage": 2119,
+    "current_unresolved_recorded": 0,
+    "coverage_snapshot": "ordered100-20261112/CURRENT_VALID_COVERAGE.json",
+    "coverage_rule": "effective_coverage.py deduplicates originals+explicit audited repair overlays; CURRENT_VALID_COVERAGE.json is latestcount authority, STATE count is lastinspection snapshot.",
+    "current_process_receipt": "ordered100-20261112/CURRENT_PROCESS.json",
+    "latest_batch": "ordered100-20261112/COMPLEX6_ORIGINAL_CURRENT.json",
+    "RMS_scope": "32exact:24completepairs(22alternate selected/2original retained)+2candidatecompile failures(original valid)+6staticfeature limits(original retained); no newcoverage",
+    "RMS_expansion": "ordered100-20261112/VLLM_RMS_COMPLETE_API_EXPANSION.json",
+    "RMS_compile_rejections": "ordered100-20261112/VLLM_RMS_CANDIDATE_COMPILE_REJECTIONS.json",
+    "RMS_delivery": "delivery/ordered_vllm_rms_complete_api/ROUTES.json",
+    "repair_history_snapshot": "history/memory-cleanup-20261113T082153Z/STATE.json",
+    "repair_history_is_not_live_process_status": true,
+    "state": "All2119 frozen current-scope cases have qualified coverage; original remaining69 fully resolved. 42golden repairs and6authorized input-preservation CPU backend cases qualified. No active native controller. Coverage is distinct from original/new paired improvement, final under3 ratio or publication.",
+    "SGL_dequant_current": "ordered100-20261112/SGL_DEQUANT_API_CURRENT.json",
+    "SGL_dequant_scope": "ordered100-20261112/SGL_DEQUANT_API_EXPANSION.json",
+    "SGL_dequant_source_CPU_proof": "ordered100-20261112/SGL_DEQUANT_API_CPU_PROOF.json:72surrogate bitwise cases+reverseAST, not native acceptance",
+    "SGL_dequant_delivery": "delivery/ordered_sgl_dequant_natural_api/ROUTES.json",
+    "SGL_dequant_source_gate_repair": "ordered100-20261112/DEQUANT_SCOPED_RUNTIME_DEVICE_ACCEPTANCE.json; finite path-only exception, original generic workers unchanged, old metadata/payload/checker/timing assertions preserved",
+    "SGL_dequant_source_gate_failures": "ordered100-20261112/DEQUANT_SHARED_LOAD_GATE_FAILURE.json:3old v1load rejections, not operator numerical failures; archives preserved, v2newcondition afterqualification",
+    "next_group_queue": "ordered100-20261112/OPS_TRANSFORMER_FUSEDQK_API_QUEUE.json",
+    "SGL_dequant_channel_current": "ordered100-20261112/SGL_DEQUANT_CHANNEL_CURRENT.json",
+    "SGL_dequant_channel_scope": "ordered100-20261112/SGL_DEQUANT_CHANNEL_EXPANSION.json",
+    "SGL_dequant_block_current": "ordered100-20261112/SGL_DEQUANT_BLOCK_CURRENT.json",
+    "SGL_dequant_block_scope": "ordered100-20261112/SGL_DEQUANT_BLOCK_EXPANSION.json",
+    "SGL_dequant_block_protocol": "Botharms explicitly use ascend950-isolated-ffts-v3; session=False only in independentBlockworkers to prevent topology-dependent mixedprotocolcomparison; kernel/checker/precision unchanged",
+    "SGL_heterogeneous_CPU_proofs": [
+      "ordered100-20261112/SGL_DEQUANT_CHANNEL_HETEROGENEOUS_CPU_PROOF.json",
+      "ordered100-20261112/SGL_DEQUANT_BLOCK_HETEROGENEOUS_CPU_PROOF.json"
+    ],
+    "SGL_lerp_tensor_current": "ordered100-20261112/SGL_LERP_TENSOR_CURRENT.json",
+    "SGL_lerp_tensor_scope": "ordered100-20261112/SGL_LERP_TENSOR_EXPANSION.json",
+    "VLLM_gemm_linear_current": "ordered100-20261112/VLLM_GEMM_LINEAR_CURRENT.json",
+    "VLLM_gemm_linear_scope": "ordered100-20261112/VLLM_GEMM_LINEAR_EXPANSION.json",
+    "pipeline_handoff": {
+      "activeH1": "ordered100-20261112/OPS_MATH_POOLINDICES_EXPANSION.json",
+      "pid": 2337005,
+      "scope": [
+        208,
+        209,
+        210,
+        211,
+        337,
+        338,
+        339,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        354,
+        355,
+        356,
+        357
+      ],
+      "status": "Original ArgMaxWithValue normalregistry gate passed;6 wholeoriginalcommands compiled, package and4groups completeMaxDim bothoutputs/indices/firstties/negativeinputs/originalflush/privatekernel/dualarchive qualified. Formal20 active, first208 guardacquired; acceptance only per originalchecker15raw+source+validfinalguard.",
+      "qualification": "ordered100-20261112/server2-alignment-20261113/MATH_POOL_INDICES_H1_HOST_QUALIFICATION.json",
+      "archive": "ordered100-20261112/server2-alignment-20261113/MATH_POOL_INDICES_H1_QUALIFICATION_ARCHIVE.json",
+      "build": "ordered100-20261112/server2-alignment-20261113/MATH_POOL_INDICES_COMPILE_AFTER_HOST_V3.json",
+      "CPU_proof": "ordered100-20261112/MATH_POOL_INDICES_CPU_PROOF_V2.json",
+      "entry_repair_evidence": "ordered100-20261112/server2-alignment-20261113/POOL_INDICES_TILING_REGISTRY_DIAGNOSIS.json",
+      "prior_compile_failures": "Original unknown ArgMaxWithValueTilingData caused missingprivate hostregistry load; no kernel change. Failedconditions preserved doublearchive, new standard ASCEND_CUSTOM_OPP_PATH normalregistry gate passes beforenewcondition originalcompile.",
+      "next": "Poll actual20 fullchecker15raw/source/guard checkpoints. Do not repeat acceptedcases or samecondition numericalfailures. Anyfailure preserve exactoutputs/checker/logs and diagnose; localholds do not resume otherSTOPs. Onterminal handoff nextunfinished group.",
+      "after_pool20": "Cumprod4 full original CAPI exists but no sourcekernel/hosttarget; qualify actual declared lockedSDKdependency. Other norm/weighted groups require original completeAPI/source capability review, no kernel edits or uncheckedcomposition.",
+      "H2": "SSH recovered; oldGemm guardaborted/performanceinvalid, not accepted or blindlyrerun."
+    },
+    "VLLM_bmm_linear_scope": "ordered100-20261112/VLLM_BMM_LINEAR_EXPANSION.json",
+    "VLLM_bmm_linear_current": "ordered100-20261112/VLLM_BMM_LINEAR_CURRENT.json",
+    "registry_metadata_recheck": "ordered100-20261112/REGISTRY_METADATA_RECHECK.json",
+    "VLLM_grouped_linear_scope": "ordered100-20261112/VLLM_GROUPED_LINEAR_EXPANSION.json",
+    "native_pinned_source": "ordered100-20261112/OPS_NN_PINNED_SOURCE_DEPLOYMENT.json",
+    "native_source_next": "weightedAvg220/226 completeMul+Div+Sum3 source review; no newkernels/oraclechange",
+    "native_build": {
+      "status": "PoolIndices20_fullAPIqualified_formal_active",
+      "record": "ordered100-20261112/server2-alignment-20261113/MATH_POOL_INDICES_H1_HOST_QUALIFICATION.json",
+      "build_and_probe_not_coverage": true
+    },
+    "GEMM_pad4_results": {
+      "qualified_original_ordinals": [
+        497
+      ],
+      "original_device_us": 35.30446666666666,
+      "qualified_pairs": 1,
+      "selected_zero_pad_candidate_device_us": 27.77166666666667,
+      "observed_device_reduction_percent": 21.336676945504518,
+      "summary": "ordered100-20261112/OPS_NN_GEMM_PAD4_ZERO_PAD_CURRENT.json",
+      "no_finalratio_or_public_update": true,
+      "reference_approval_pending": [
+        490,
+        494,
+        496
+      ],
+      "diagnosis": "ordered100-20261112/server2-alignment-20261113/PAD4_BF16_CPU_DIAGNOSIS.json",
+      "proposal": "ordered100-20261112/server2-alignment-20261113/PAD4_BF16_REFERENCE_PROPOSAL.py",
+      "misroute_v1": "Preserved duplicateoriginal, excluded from candidate/gain/coverage; v2 actualworker selfexec/sourcegate fixed"
+    },
+    "MathL2_completed": {
+      "scope": [
+        373,
+        374,
+        375,
+        379
+      ],
+      "accepted_complete_APIs": 4,
+      "summary": "ordered100-20261112/OPS_MATH_MATHL2_CURRENT.json",
+      "no_optimization_or_finalratio_claim": true,
+      "no_rerun": true
+    },
+    "MathMaxPool_completed": {
+      "scope": [
+        205,
+        206,
+        207,
+        336,
+        340,
+        341,
+        342,
+        352,
+        353
+      ],
+      "accepted_complete_APIs": 9,
+      "summary": "ordered100-20261112/OPS_MATH_MAXPOOL_CURRENT.json",
+      "no_optimization_or_finalratio_claim": true,
+      "no_rerun": true
+    },
+    "MathMeanPool_completed": {
+      "scope": [
+        201,
+        202,
+        203,
+        204,
+        216,
+        217,
+        218,
+        219,
+        221,
+        222,
+        223,
+        224,
+        225,
+        227
+      ],
+      "accepted_complete_APIs": 14,
+      "summary": "ordered100-20261112/OPS_MATH_POOLMEAN_CURRENT.json",
+      "no_rerun": true,
+      "no_finalratio_claim": true
+    },
+    "MathChunkMean_completed": {
+      "scope": [
+        358,
+        359,
+        360,
+        361
+      ],
+      "accepted_complete_APIs": 4,
+      "summary": "ordered100-20261112/OPS_MATH_CHUNKMEAN_CURRENT.json",
+      "no_rerun": true,
+      "no_finalratio_claim": true
+    },
+    "MathWeightedPool_completed": {
+      "scope": [
+        220,
+        226
+      ],
+      "accepted_complete_APIs": 2,
+      "summary": "ordered100-20261112/OPS_MATH_WEIGHTEDPOOL_CURRENT.json",
+      "no_rerun": true,
+      "no_finalratio_claim": true
+    },
+    "MathCumsum_completed": {
+      "scope": [
+        256,
+        257,
+        258
+      ],
+      "accepted_complete_APIs": 3,
+      "summary": "ordered100-20261112/OPS_MATH_CUMSUM_CURRENT.json",
+      "no_rerun": true,
+      "no_finalratio_claim": true
+    }
+  },
+  "scheduling": "H1independent. H2actualdaily43478103510 completedsuccess, newwholePR/nightly/queue/worker/physicalguard perbuild. 02AsiaShanghai=18UTC,750sec cutoff; no sharedstatechanges.",
+  "progress": {
+    "historical_concluded": 89,
+    "historical_under3": 22,
+    "historical_retained_over3": 67,
+    "new_cycle_first100_closed": 100,
+    "first100_new_measurement_cases": 59,
+    "first100_reused_cases": 41,
+    "not_a_public_ratio_update": true,
+    "prior_snapshot": "reports/baseline-over3-campaign-20261110/ordered100-20261112/STATE.before-progress-20261112T114031Z.json",
+    "current_staged_same_env_final_under3": 13,
+    "current_staged_same_env_final_retained_over3": 1,
+    "current_staged_final_record": "ordered100-20261112/FINAL_SAME_ENV_CLOSURES_CURRENT.json",
+    "current_qualified_coverage": 2119,
+    "current_unresolved_coverage": 0
+  },
+  "protocol": "Formal comparison=device only; host_completed/host_roundtrip describe execution/diagnostic collection, never host admission. Original isolated for reset or unsupported topology; qualified stateless single-stream full32 session has explicit experimental protocol ID. Preserve3warm+1cold+15raw and original1GiBflush; oldv2 transition policy not silently rewritten.",
+  "next": [
+    "All remaining69 and full2119 coverage are qualified. Preserve immutable failures/raw/source/guard and completion evidence; no duplicate measurement or stale PID restart.",
+    "Coverage completion does not mean every original/new complete API pair, final under3 ratio closure or publication is complete. Those remain separately scoped and counted; no public update made."
+  ],
+  "task_readings": {
+    "matched": [
+      "DE01-05",
+      "ED01-07",
+      "VR01-06",
+      "ME01-05",
+      "HS01"
+    ],
+    "development_doc_sha256": "29ccbc87a1294be473dd5e638c9474b50fe1c81bd8ac3685ee537d83ccf8a9e9",
+    "ci_notes_sha256": "910e97faecc1ff6e727a3541d5f8696d843bcadab6f427073c50b738bb417593",
+    "worker_delegation": "not invoked/currentlynotauthorized",
+    "ci_notes_reread_at": "2026-11-12T19:20:22.489269+00:00",
+    "benchmark_protocols_sha256": "756496b8b97da100cae5f2aa1807834bef1912cc6cb68f5b6132ee8bad7435d0",
+    "last_verified_at": "2026-11-16T05:24:50.253937+00:00",
+    "current_applications": [
+      "BR01-04 exact task/coverage/pair/closure separation",
+      "VR01-06 exact frozen input/checker/corrected-golden identity and all15 raw/source/ELF audit",
+      "HS01 per-host fresh admission and full H2 task release",
+      "DE01-05/ED01-07/ME01-05 unchanged original API/precision/checker/guard; no subagent delegation"
+    ],
+    "latest_applicable": "BR01-04/HS01/ME01-05/ED01,03-07/DE01-05/benchmark protocols/ACCELERATION A1-A6; pinned original API and canonical perhost stack; no new kernels or compilerflags; CPU build/probe not formal coverage"
+  },
+  "preserved_stops": "frozen66/overnight120/old244/other taskSTOPs untouched; no websitepublication",
+  "storage_owner": "Other agent handles322GB perlatestuser; do not restart own migration scripts.",
+  "paused_at": "2026-11-14T09:55:45.412670+00:00",
+  "pause_snapshot": "reports/baseline-over3-campaign-20261110/pause-snapshots/20261114T095545412670Z",
+  "human_recovery_entry": "CURRENT.md",
+  "memory_maintenance_report": "../baseline-memory-maintenance-20261113/DECISIONS.md",
+  "resumed_at": "2026-11-14T13:47:07.843152+00:00",
+  "pause_snapshot_policy": "Read-only historical checkpoint, never maintained; current state is STATE.json/CURRENT.md and branch MEMORY/BENCHMARK_PROTOCOLS/ACCELERATION",
+  "sustained_throughput_policy": {
+    "objective": "Maintain high effective throughput of baseline adjustment until task2 completes; user pause/stop always wins.",
+    "inspection_interval_seconds": 1800,
+    "throughput_window_seconds": 3600,
+    "counting": "Separately report deduplicated new qualified coverage, complete qualified original/candidate API pairs, and evidence-backed closure. Traversal/resource rejection/failed attempts are not valid throughput; do not double-count existing acceptance.",
+    "required_checks": [
+      "actual local/remote process and fresh result timestamps",
+      "past60min valid throughput and past30min comparison",
+      "queue/guard/task-level occupancy/disk floor",
+      "errors, blockers, missing next-batch dispatch, alarm delivery and inspection acknowledgement"
+    ],
+    "trigger": "Any problem/blocker or zero past-hour valid throughput requires diagnosis and a concrete corrective action or evidenced external blocker; no passive zero-throughput acknowledgement.",
+    "boundaries": "Preserve checker/precision/kernel/15raw and guard; no blind numerical retry, migration, publication or other-task takeover.",
+    "watchdog_receipt": "ordered100-20261112/THROUGHPUT_WATCHDOG.json",
+    "minute_watchdog": "CPU-only realprocess+rollinghour. Host2 support waiting cannot mask host1 completion/missing successor;4hostrole tests passed THROUGHPUT_HOST_ROLE_TEST.json. Immediate event arming tested real; end-to-end delivery can wait behind active turn.",
+    "cadence_repair": {
+      "clock": "single fixed originalstart1800sec cadence, taskopt-in fixed_start_boundary",
+      "urgent_events": "watchdog one-shots remain immediate but do notcreate another recurringclock",
+      "evidence": "ordered100-20261112/ALARM_CADENCE_REPAIR_RESULT.json",
+      "tests_passed": 13
+    }
+  },
+  "last_inspection": "ordered100-20261112/INSPECTION_20261116T062046643021Z.json",
+  "build_environment_policy": "Align all build/compiler entrypoints to server2 actualcanonical perprofile. CI/nativeTorch2.13 and originalvendorTorch2.10 stay separate. Use server2-aligned-stack/environment.sh for new nativebuilds; legacyH1-only experiments held; missingserver2 successful native reference remains pending, not mismatched or accepted.",
+  "alignment_report": "ordered100-20261112/server2-alignment-20261113/ALIGNMENT_MANIFEST.json",
+  "current_dispatch_status": "all2119_coverage_qualified_remaining69_complete_no_active_native_controller",
+  "resume_requires_explicit_user_instruction": false,
+  "remaining69_current_work": {
+    "status": "all69_qualified",
+    "report": "ordered100-20261112/server2-alignment-20261113/REMAINING69_PROCESSING_RESULT_20261116.json",
+    "qualified_coverage": 2119,
+    "newly_qualified": 69,
+    "remaining": 0,
+    "reference_golden_held": 0,
+    "complex_input_checker_held": 0,
+    "actual_device_controller": null,
+    "not_all69_complete": false,
+    "reference_golden_authorized": 42,
+    "authorization": "ordered100-20261112/server2-alignment-20261113/GOLDEN42_USER_AUTHORIZATION_20261116.json",
+    "reference_golden_corrected": 42,
+    "retained_native_outputs_rechecked": 8,
+    "reference_repair_report": "ordered100-20261112/server2-alignment-20261113/GOLDEN42_REPAIR_RESULT_20261116.json",
+    "golden_corrected_native_qualified": 26,
+    "golden_corrected_pending_native": 0,
+    "latest_recovery": "ordered100-20261112/server2-alignment-20261113/GOLDEN42_ALARM_RECOVERY_20261116.json",
+    "golden_corrected_api_reuse_qualified": 16,
+    "golden_corrected_total_qualified": 42,
+    "latest_result": "ordered100-20261112/server2-alignment-20261113/COMPLEX6_ALL_RESOLVED_RESULT_20261116.json",
+    "complex_input_checker_authorized": 6,
+    "complex_authorization": "ordered100-20261112/server2-alignment-20261113/COMPLEX6_USER_AUTHORIZATION_20261116.json",
+    "complex_input_checker_resolved": 6
+  }
+}

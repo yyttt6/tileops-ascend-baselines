@@ -1,0 +1,373 @@
+{
+  "checked_at": "2026-11-13T09:34:05.378659+00:00",
+  "complete_pairs": 7,
+  "rows": [
+    {
+      "ordinal": 979,
+      "key": [
+        "sgl-kernel-npu",
+        "INT8DequantPerChannelFwdOp",
+        "llama-70b-mlp-down-bfloat16"
+      ],
+      "original_us": 22495.411333333333,
+      "candidate_us": 4171.171133333333,
+      "device_reduction_percent": 81.45768009517319,
+      "host_original_us_diagnostic": 22883.623962601025,
+      "host_candidate_us_diagnostic": 4563.155925522248,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-dequant-channel-candidate-979-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-dequant-channel-candidate-979-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "79ae40718f5ac0f2581fa1f40cacadc8940263a157c1aa3b41eee675fc12ae88",
+        "3cd46647feecadf5638bc39c4d01815386c13a64168b07cfde681342c4f9c6df"
+      ],
+      "source_sha256": [
+        "d07a0ffcbb402b263ef22d94c2ab3adde54116a4277bedc272df028c848ed0f2",
+        "37a2da18386bc0f4714bd63ff8c4930426255f8e60686a97576b0d5547746204"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_dequant_original_scoped.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_dequant_channel_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_dequant_channel_v2.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py": "bfa88dc62f6d0c2134628761aaca6a12b4865524c3030c32c59356c475625037"
+      }
+    },
+    {
+      "ordinal": 980,
+      "key": [
+        "sgl-kernel-npu",
+        "INT8DequantPerChannelFwdOp",
+        "llama-8b-mlp-down-float32"
+      ],
+      "original_us": 5417.976733333333,
+      "candidate_us": 914.7166,
+      "device_reduction_percent": 83.11700760225979,
+      "host_original_us_diagnostic": 6012.602616101503,
+      "host_candidate_us_diagnostic": 1214.9800546467304,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-dequant-channel-candidate-980-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-dequant-channel-candidate-980-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "1a4142fbda95a26d7259b279caa6a155efdd7b099b1d2d0a9426986160399564",
+        "047f7b2786c0235a90fae11564776f9540d93aecb84f855cad51056fda701710"
+      ],
+      "source_sha256": [
+        "d07a0ffcbb402b263ef22d94c2ab3adde54116a4277bedc272df028c848ed0f2",
+        "37a2da18386bc0f4714bd63ff8c4930426255f8e60686a97576b0d5547746204"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_dequant_original_scoped.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_dequant_channel_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_dequant_channel_v2.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py": "bfa88dc62f6d0c2134628761aaca6a12b4865524c3030c32c59356c475625037"
+      }
+    },
+    {
+      "ordinal": 981,
+      "key": [
+        "sgl-kernel-npu",
+        "INT8DequantPerChannelFwdOp",
+        "llama-8b-mlp-up-float16"
+      ],
+      "original_us": 5524.224733333333,
+      "candidate_us": 1138.548,
+      "device_reduction_percent": 79.38990437644637,
+      "host_original_us_diagnostic": 5920.27601475517,
+      "host_candidate_us_diagnostic": 1585.9087308247883,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-dequant-channel-candidate-981-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-dequant-channel-candidate-981-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "09222c26a2ccd2a18c61e387a0b762df65cb2fccf7f7b5c805bd775c61c47fb5",
+        "d7947560a15d2f3f2a20d528588954e8c54ac18972e4c228709cc60becd5a702"
+      ],
+      "source_sha256": [
+        "d07a0ffcbb402b263ef22d94c2ab3adde54116a4277bedc272df028c848ed0f2",
+        "37a2da18386bc0f4714bd63ff8c4930426255f8e60686a97576b0d5547746204"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_dequant_original_scoped.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_dequant_channel_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_dequant_channel_v2.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py": "bfa88dc62f6d0c2134628761aaca6a12b4865524c3030c32c59356c475625037"
+      }
+    },
+    {
+      "ordinal": 982,
+      "key": [
+        "sgl-kernel-npu",
+        "INT8DequantPerChannelFwdOp",
+        "llama-8b-mlp-up-bfloat16"
+      ],
+      "original_us": 5524.8767333333335,
+      "candidate_us": 1139.2318,
+      "device_reduction_percent": 79.37995986178925,
+      "host_original_us_diagnostic": 6056.8153237303095,
+      "host_candidate_us_diagnostic": 1453.7993508080642,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-dequant-channel-candidate-982-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-dequant-channel-candidate-982-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "271d4ad3efc40c92f56f7fe40560dbf6e784bbaacf0bc44b0bc77649ca4b75be",
+        "5ec90a539bd8058df9c351e273fb3133168f4c214321646ce7a37d70198d9366"
+      ],
+      "source_sha256": [
+        "d07a0ffcbb402b263ef22d94c2ab3adde54116a4277bedc272df028c848ed0f2",
+        "37a2da18386bc0f4714bd63ff8c4930426255f8e60686a97576b0d5547746204"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_dequant_original_scoped.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_dequant_channel_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_dequant_channel_v2.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py": "bfa88dc62f6d0c2134628761aaca6a12b4865524c3030c32c59356c475625037"
+      }
+    },
+    {
+      "ordinal": 983,
+      "key": [
+        "sgl-kernel-npu",
+        "INT8DequantPerChannelFwdOp",
+        "ragged-k-float16"
+      ],
+      "original_us": 1132.3188666666665,
+      "candidate_us": 230.8654,
+      "device_reduction_percent": 79.61127322027016,
+      "host_original_us_diagnostic": 1811.5159745017688,
+      "host_candidate_us_diagnostic": 812.768004834652,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-dequant-channel-candidate-983-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-dequant-channel-candidate-983-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "01dc35ba05e9a4fa0b22a6efd7f2a8f5567351ca86ce92147962a5aa2894324a",
+        "837b6c96c5e7252065b79805d565f7386416305ae678888f79bf63d758f9657f"
+      ],
+      "source_sha256": [
+        "d07a0ffcbb402b263ef22d94c2ab3adde54116a4277bedc272df028c848ed0f2",
+        "37a2da18386bc0f4714bd63ff8c4930426255f8e60686a97576b0d5547746204"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_dequant_original_scoped.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_dequant_channel_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_dequant_channel_v2.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py": "bfa88dc62f6d0c2134628761aaca6a12b4865524c3030c32c59356c475625037"
+      }
+    },
+    {
+      "ordinal": 984,
+      "key": [
+        "sgl-kernel-npu",
+        "INT8DequantPerChannelFwdOp",
+        "gpt-oss-20b-mlp-up-bfloat16"
+      ],
+      "original_us": 1566.9955333333335,
+      "candidate_us": 412.11193333333335,
+      "device_reduction_percent": 73.7005036347051,
+      "host_original_us_diagnostic": 2182.112696270148,
+      "host_candidate_us_diagnostic": 993.6993631223837,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-dequant-channel-candidate-984-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-dequant-channel-candidate-984-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "4694289ed80b84550ac6db831912e0e54633cc3a01e1be45c8a55772e099b389",
+        "d71000f7947e06230508cd231cfaf641f30509b19161c6e30c189ed56651ba4a"
+      ],
+      "source_sha256": [
+        "d07a0ffcbb402b263ef22d94c2ab3adde54116a4277bedc272df028c848ed0f2",
+        "37a2da18386bc0f4714bd63ff8c4930426255f8e60686a97576b0d5547746204"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_dequant_original_scoped.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_dequant_channel_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_dequant_channel_v2.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py": "bfa88dc62f6d0c2134628761aaca6a12b4865524c3030c32c59356c475625037"
+      }
+    },
+    {
+      "ordinal": 985,
+      "key": [
+        "sgl-kernel-npu",
+        "INT8DequantPerChannelFwdOp",
+        "ragged-k-few-rows-bfloat16"
+      ],
+      "original_us": 20.8494,
+      "candidate_us": 23.010733333333334,
+      "device_reduction_percent": -10.36640542813383,
+      "host_original_us_diagnostic": 693.9240420858065,
+      "host_candidate_us_diagnostic": 984.837394207716,
+      "selection": "original",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-dequant-channel-candidate-985-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-dequant-channel-candidate-985-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "a92d49d5e588e8ce9c5125fc95c76f11a5652ffd077f706319d10870994d7e45",
+        "745dbc09813099ead9786983a5c046ae36f2d89cecf1b5604a6cc48ff583d430"
+      ],
+      "source_sha256": [
+        "d07a0ffcbb402b263ef22d94c2ab3adde54116a4277bedc272df028c848ed0f2",
+        "37a2da18386bc0f4714bd63ff8c4930426255f8e60686a97576b0d5547746204"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_dequant_original_scoped.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_dequant_channel_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_dequant_channel_v2.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_dequant_channel_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/additional.py": "aab097f709da3cb91bce37e73ef6a482ed78a0b891ba0c8ef645d71f337508d8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/extra_arithmetic.py": "d80a220feed7a8cc59a8ade0890ad6cac6a23a597edd19e1d74f181d955f2380"
+      }
+    }
+  ],
+  "effective_retest_coverage_not_incremented": true,
+  "historical_or_public_ratios_not_updated": true,
+  "runtime_repair": "REFERENCE_RUNTIME_PRIVATE_COPY.json",
+  "not_all_SOURCE_bytes_same_expected_import_API_differences_explicit": true
+}

@@ -1,0 +1,109 @@
+{
+  "checked_at": "2026-11-16T05:04:32.672630+00:00",
+  "accepted_complete_APIs": 6,
+  "rows": [
+    {
+      "ordinal": 294,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "moe-wgrad-float16"
+      ],
+      "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+      "device_us": 1409.2971333333332,
+      "source_attribution": "originalNNcompleteGroupedAPI alternativeforfrozenoriginalcontract",
+      "checkpoint": "rollout-math-grouped-nn-alternative-294-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "0c92b51a042d5c8eb1fd75427ac7046206e34b8b2c39b9b64fd108f4550a56b4",
+      "payload_sha256": "73168bd72359b797e1f55bd103085c41d78e71caf89fb7360fc7f48bee3a2a39",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 295,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "moe-fwd-bfloat16"
+      ],
+      "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+      "device_us": 1716.9918666666665,
+      "source_attribution": "originalNNcompleteGroupedAPI alternativeforfrozenoriginalcontract",
+      "checkpoint": "rollout-math-grouped-nn-alternative-295-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "6d764f16ffc7c2626e86ca8067e5f0ceb7cc93bdb38b6ac55ef8395ce7b27f58",
+      "payload_sha256": "9c4ea77487e5bb1a9455502f84805a7edee5c43487a9523c367c143e9a88d202",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 296,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+      "device_us": 526.5926666666666,
+      "source_attribution": "originalNNcompleteGroupedAPI alternativeforfrozenoriginalcontract",
+      "checkpoint": "rollout-math-grouped-nn-alternative-296-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c82bb4bc8c1b55e4709667295daab4475004e1ef5fa313847318dc226e3b5866",
+      "payload_sha256": "fb6bd7176a747ed8fbcde1ee831c0d40194dee6d360d0478c131704ae8c661f2",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 297,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+      "device_us": 522.0182666666666,
+      "source_attribution": "originalNNcompleteGroupedAPI alternativeforfrozenoriginalcontract",
+      "checkpoint": "rollout-math-grouped-nn-alternative-297-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "54ae6788ac8520afd396d48a54b13e6e764d0f7351c0b5398d1e916f6a934a19",
+      "payload_sha256": "1c5ce101bc7e0900755147a55ba32cdcf461c4c0bbded56459a53616649cdeb1",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 298,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-empty-bfloat16"
+      ],
+      "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+      "device_us": 305.97406666666666,
+      "source_attribution": "originalNNcompleteGroupedAPI alternativeforfrozenoriginalcontract",
+      "checkpoint": "rollout-math-grouped-nn-alternative-298-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a1fed90cafeb225da5ce7fa38f40f5803648cfbdbd9b0edc70d4dd0227cda946",
+      "payload_sha256": "2bd3698d9d2d3d1745e7362e44367d75014159c4a2b666c72d1878d236732984",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 774,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "moe-fwd-float16"
+      ],
+      "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+      "device_us": 1716.7905333333335,
+      "source_attribution": "originalNNcompleteGroupedAPI alternativeforfrozenoriginalcontract",
+      "checkpoint": "rollout-math-grouped-nn-alternative-774-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "6e03dfc31bb5e28c5d8831603fbf6c19ff9b1fcf83cd0c39a17e01fbb9c8066f",
+      "payload_sha256": "7c07a5a8b899ff4ba53489448692d6d48b94aac3453aabd8e0a2447aefb269ee",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

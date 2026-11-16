@@ -1,0 +1,132 @@
+{
+  "record_type": "user_requested_complex6_task_completion_actual_inspection",
+  "checked_at": "2026-11-16T06:19:19.519229+00:00",
+  "effective_coverage": 2119,
+  "scope_total": 2119,
+  "new_qualified_coverage_last60min": 13,
+  "new_qualified_coverage_last30min": 6,
+  "new_complete_original_candidate_pairs_last60min": 0,
+  "new_complete_original_candidate_pairs_last30min": 0,
+  "new_final_closures_last60min": 0,
+  "actual_controllers": [],
+  "actual_primary_dispatch": [],
+  "actual_current_process": {
+    "status": "group_finished_next_dispatch_required",
+    "pid": null,
+    "prior_pid": 3129576,
+    "entry": "queue_complex6_original.py",
+    "checked_at": "2026-11-16T06:18:29.957201+00:00",
+    "outcome": "all6_original_Torch_baselines_full15raw_CPU_input_compat_qualified"
+  },
+  "resources": {
+    "openlibing-DevEnv-661495": {
+      "observed_at": "2026-11-16T06:17:52.885491+00:00",
+      "free_bytes": 208303620096,
+      "queue": [],
+      "workers": [],
+      "guard_metadata": {
+        "pid": 3402061,
+        "start_ticks": 379934963,
+        "uid": 0,
+        "pgid": 3402061,
+        "boot_id": "301915ec-b974-48cf-a38e-0627f81babb1",
+        "owner": "root/baseline-ordered100/rollout-complex6-original-1299-h1-v1-061730174303",
+        "device": 0,
+        "coordination_scope": "container",
+        "device_node": "/dev/davinci6",
+        "command": "bash",
+        "phase": "finished",
+        "requested_at": "2026-11-16T06:16:05.182152+00:00",
+        "queue_ticket": "00000000000000000001-drdgo236.ticket",
+        "acquired_at": "2026-11-16T06:16:05.182572+00:00",
+        "updated_at": "2026-11-16T06:16:57.546293+00:00",
+        "child": {
+          "pid": 3402139,
+          "start_ticks": 379935446,
+          "uid": 0,
+          "pgid": 3402139
+        },
+        "conflict_policy": "record",
+        "conflict_detected": false,
+        "visibility_lost": false,
+        "performance_valid": true,
+        "tracking": "linux-subreaper-pidfd",
+        "postflight_checked_at": "2026-11-16T06:16:57.544840+00:00",
+        "workload_exit_code": 0,
+        "workload_completed": true,
+        "exit_code": 0
+      },
+      "guard_boot_matches": true,
+      "guard_process": {
+        "pid": 3402061,
+        "exists": false
+      },
+      "child_process": {
+        "pid": 3402139,
+        "exists": false
+      },
+      "visible_kernel_flocks": [],
+      "errors": [],
+      "observation": "Read-only /proc, kernel flock table and guard-owned observations. No second driver probe; fresh submission physical checks unchanged."
+    },
+    "openlibing-DevEnv-055409": {
+      "observed_at": "2026-11-16T06:17:52.814879+00:00",
+      "free_bytes": 942752620544,
+      "queue": [],
+      "workers": [],
+      "guard_metadata": {
+        "pid": 2881245,
+        "start_ticks": 379863763,
+        "uid": 0,
+        "pgid": 2881245,
+        "boot_id": "301915ec-b974-48cf-a38e-0627f81babb1",
+        "owner": "baseline-master/aicpu-ablation/pow-ablate-container2-task-only-r2",
+        "device": 0,
+        "coordination_scope": "container",
+        "device_node": "/dev/davinci0",
+        "command": "bash",
+        "phase": "finished",
+        "requested_at": "2026-11-16T06:04:13.189707+00:00",
+        "queue_ticket": "00000000000000000001-efir0p5b.ticket",
+        "acquired_at": "2026-11-16T06:04:13.190173+00:00",
+        "updated_at": "2026-11-16T06:04:46.222655+00:00",
+        "child": {
+          "pid": 2881329,
+          "start_ticks": 379864195,
+          "uid": 0,
+          "pgid": 2881329
+        },
+        "conflict_policy": "record",
+        "conflict_detected": false,
+        "visibility_lost": false,
+        "performance_valid": true,
+        "tracking": "linux-subreaper-pidfd",
+        "postflight_checked_at": "2026-11-16T06:04:46.221454+00:00",
+        "workload_exit_code": 0,
+        "workload_completed": true,
+        "exit_code": 0
+      },
+      "guard_boot_matches": true,
+      "guard_process": {
+        "pid": 2881245,
+        "exists": false
+      },
+      "child_process": {
+        "pid": 2881329,
+        "exists": false
+      },
+      "visible_kernel_flocks": [],
+      "errors": [],
+      "observation": "Read-only /proc, kernel flock table and guard-owned observations. No second driver probe; fresh submission physical checks unchanged."
+    }
+  },
+  "actions": [
+    "New explicit user authorization superseded prior exact6 input checker hold.",
+    "Completed6 original NPU Torch baselines, each19 real calls and15 full raw windows with source/SDK/guard, original NPU golden and full output checks.",
+    "Applied exact proposal only to process-local complex input preservation; unchanged original CPU zero-tolerance/equal-NaN comparator, actual guarded corruption negative controls, original restored afterward.",
+    "Coverage2119/2119; remaining69 now69 qualified. No incomplete coverage group remains, no old PID restart.",
+    "All qualifying results staged; original/new pairs, final under3 closures, and publication remain distinct."
+  ],
+  "snapshot_read_only": true,
+  "no_device_work_submitted_by_inspection": true
+}

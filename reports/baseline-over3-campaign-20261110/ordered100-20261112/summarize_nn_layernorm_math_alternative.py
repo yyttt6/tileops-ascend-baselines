@@ -1,0 +1,19 @@
+from pathlib import Path
+import json,hashlib,datetime,importlib.util
+D=Path(__file__).resolve().parent;M=D/'remote';R=Path('/opt/baseline-over3-20261110/ordered100-20261112');sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();sp=importlib.util.spec_from_file_location('full32nnln',D.parents[1]/'torch-all2208-20261105/tools/kernel_task_profile_full32.py');parser=importlib.util.module_from_spec(sp);sp.loader.exec_module(parser)
+def summarize():
+ rows=[];proofs=[]
+ for cp in sorted(D.glob('rollout-nn-layernorm-math-alternative-*-h1-v1.CHECKPOINT.json')):
+  e=json.loads(cp.read_text());assert e['exit_code']==0 and e['guard']['performance_valid'] and e['guard']['workload_exit_code']==0;assert sha(D/(e['tag']+'.tar.gz'))==e['archive_sha256'];base=M/'runs'/e['tag'];source=json.loads((base/'SOURCE.json').read_text());assert sha(base/'SOURCE.json')==e['batch']['source_sha256']
+  for r in e['batch']['results']:
+   i=r['ordinal'];assert i in range(519,524) and r['status']=='raw_checked_pending_guard' and r['reference_policy']=='original_cpu';assert r['check']['checked_outputs']==r['check']['total_outputs']==1 and not r['check']['unchecked_reason'];cap=base/str(i)/'JIT_CAPTURE';ret=json.loads((cap/'RETENTION.json').read_text());q=json.loads((cap/'ORIGINAL_NORM_HOST_QUALIFICATION.json').read_text());assert q['full_API_embedded_kernel_source_build_guard_and_dual_archive_verified']
+   for name,h in ret['files'].items():assert sha(cap/name)==h
+   assert ret['loaded_host_path'] in (cap/'loaded-maps.txt').read_text();assert ret['loaded_host_sha256']==q['build_record']['binary_sha256']==sha(cap/'libops_math_layernorm.so');assert sha(cap/'layer_norm.asc')==q['original_source_sha256'];assert any(ret['qualified_original_kernel_name'] in x['text'] for x in q['kernel_launch_evidence'])
+   assert any(k.endswith('/libops_math_layernorm.so') and h==ret['loaded_host_sha256'] for k,h in r['sources'].items());timing=r['timing'];assert len(timing['retained_profiles'])==len(timing['latency_samples_ms'])==15;windows=[]
+   for p,value in zip(timing['retained_profiles'],timing['latency_samples_ms']):
+    raw=M/Path(p['profile_path']).relative_to(R);assert parser.trace_digest(raw)==p['profile_trace_sha256'];v=parser.parse_profile(raw,1);assert v['profile_named_task_coverage_complete'] and abs(v['latency_ms']-value)<1e-9;bound=[t for t in v['profile_kernel_tasks'] if t['name']==ret['qualified_original_kernel_name']];assert bound,'Actual originalnative LayerNorm kernel must match qualification';windows.append({'trace_sha256':p['profile_trace_sha256'],'original_native_tasks':bound})
+   proof={'ordinal':i,'checkpoint_sha256':sha(cp),'original_complete_API_qualification_sha256':sha(cap/'ORIGINAL_NORM_HOST_QUALIFICATION.json'),'loaded_host_sha256':ret['loaded_host_sha256'],'original_source_sha256':sha(cap/'layer_norm.asc'),'all15_native_kernel_windows':windows,'guard_valid':True,'archive_sha256':e['archive_sha256']};proofs.append(proof);rows.append({'ordinal':i,'key':r['key'],'api':r['api'],'device_us':r['device_us'],'checkpoint':cp.name,'checkpoint_sha256':sha(cp),'payload_sha256':r['payload_sha256'],'full_checker_15raw_guard_valid':True,'source_attribution':'complete original Math LayerNorm API alternative for originalNNcontract; originalFP32row/affine/runAST unchanged','not_paired_or_finalratio':True})
+ out={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'accepted_complete_APIs':len(rows),'rows':rows,'staged_not_published':True}
+ for name in ['NN_LAYERNORM_MATH_ALTERNATIVE_CURRENT.json','RESOLVED_NN_LAYERNORM_MATH_ALTERNATIVE.json']:
+  p=D/name;t=p.with_suffix('.tmp');t.write_text(json.dumps(out,indent=2));t.replace(p)
+ (D/'server2-alignment-20261113/NN_LAYERNORM_MATH_ALTERNATIVE_ATTRIBUTION.json').write_text(json.dumps({'checked_at':out['checked_at'],'proofs':proofs},indent=2));return out

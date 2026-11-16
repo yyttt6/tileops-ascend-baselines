@@ -1,0 +1,95 @@
+{
+  "checked_at": "2026-11-13T19:00:29.312747+00:00",
+  "accepted_original_APIs": 3,
+  "rows": [
+    {
+      "ordinal": 1357,
+      "key": [
+        "torch-eager",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-235b-t4096-bfloat16-bfloat16"
+      ],
+      "device_us": 1185.4810666666667,
+      "host_us_diagnostic": 1879.4686533510685,
+      "api": "complete original Torch FusedQK math on inputdevice; unchanged CPUoracle separately",
+      "source_sha256": "a559af3a769f1f306fd63630ebfbdeff9228d8bd8184258294776dfbdd1b9ccb",
+      "checkpoint": "rollout-torch-fusedqk-remaining-1357-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "3662d19f956f9ebff07350325782287754915d69e9a228d0613d3dc34a5c157a",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "prepare_sha256": "2b4e6bcc6395e468961a772ed1a1db58a829874ecad76019de445be0b3628f46",
+      "payload_sha256": "c13dea7a657184b9fd77fd5d8456b68a65a779915afb3b3ec83a09b81e373825",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "no_alternate_or_speedup_claim": true
+    },
+    {
+      "ordinal": 1359,
+      "key": [
+        "torch-eager",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-8b-t8192-bfloat16-bfloat16"
+      ],
+      "device_us": 1305.4353999999998,
+      "host_us_diagnostic": 2066.768674800793,
+      "api": "complete original Torch FusedQK math on inputdevice; unchanged CPUoracle separately",
+      "source_sha256": "a559af3a769f1f306fd63630ebfbdeff9228d8bd8184258294776dfbdd1b9ccb",
+      "checkpoint": "rollout-torch-fusedqk-remaining-1359-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "152a5ec96de1e5dca71b56376cdf1171cf6394577d3b2ff119e70c988ff3a907",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "prepare_sha256": "382206b9f9b91a13dc9437bde2f96a09011c49093d1ecaae696e9a92e9f34386",
+      "payload_sha256": "5117b15b54acd9aa31e6ae0b6148370a07fc384c0864890d3775262a594833b5",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "no_alternate_or_speedup_claim": true
+    },
+    {
+      "ordinal": 1360,
+      "key": [
+        "torch-eager",
+        "FusedQKNormRoPEFwdOp",
+        "glm-4.5-partial-rope-bfloat16-float32"
+      ],
+      "device_us": 1410.0503999999999,
+      "host_us_diagnostic": 2031.3020485142865,
+      "api": "complete original Torch FusedQK math on inputdevice; unchanged CPUoracle separately",
+      "source_sha256": "a559af3a769f1f306fd63630ebfbdeff9228d8bd8184258294776dfbdd1b9ccb",
+      "checkpoint": "rollout-torch-fusedqk-remaining-1360-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "7c5aadd1c0bad6c649f4973caf379fca480a4be1f470cd1baba1e5800271e1a1",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "prepare_sha256": "05091421656a950193f4955d10cd63434b2568efd77c6b4675587e88bb4a0322",
+      "payload_sha256": "55c16fc952531e509847d66bf70a5d7bbd04a95ba470146c2c4c3ceb884dc4ee",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "no_alternate_or_speedup_claim": true
+    }
+  ],
+  "no_historical_public_ratio_updated": true,
+  "original_CPU_oracle_unchanged": true
+}

@@ -1,0 +1,76 @@
+{
+  "two_host_functional_and_private_kernel_verified": true,
+  "scope": "Only12 fulloutput/input small calls perhost, 4same-library original native APIs and originalINT32marker; frozen26 originalchecker/formal15 still required",
+  "qualified_ops": [
+    "Reciprocal",
+    "Rsqrt",
+    "Expm1",
+    "LogicalAnd"
+  ],
+  "hosts": [
+    {
+      "host": "openlibing-DevEnv-661495",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER1_LEAF4_QUALIFICATION.json",
+      "guard_record_sha256": "18666a8d98da40fb2044ee858cb6f781f70fc3fcc154e36eeb1d7aaf2a7eb952",
+      "result": "server1-leaf4-qualification-144959991591.json",
+      "result_sha256": "e67c45cec7b32c450625c3f4b3eba98ad48bf805f51d3e744330ac8d8379a4ca",
+      "log_sha256": "4b866a422f6f12f8eeb613c1fbf15a83343f8004dbdb66015aeb6cd3c8cfdf07",
+      "checked_12_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.047.894 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnReciprocal_0_ReciprocalAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab06db4858, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/reciprocal_apt/Reciprocal_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.057.126 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnReciprocal_1_ReciprocalAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab06dcc1d8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/reciprocal_apt/Reciprocal_1c4543fdfe7149b6b0717bd88f061562_high_performance.o",
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.079.466 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnReciprocal_2_ReciprocalAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab06de4488, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/reciprocal_apt/Reciprocal_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.098.316 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnRsqrt_3_RsqrtAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab06e01178, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/rsqrt_apt/Rsqrt_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.105.702 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnRsqrt_4_RsqrtAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab06e0d448, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/rsqrt_apt/Rsqrt_1c4543fdfe7149b6b0717bd88f061562_high_performance.o",
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.113.285 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnRsqrt_5_RsqrtAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab06e19e68, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/rsqrt_apt/Rsqrt_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.151.969 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnExpm1_6_Expm1AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab06e37af8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/expm1_apt/Expm1_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.159.700 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnExpm1_7_Expm1AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab06e4f2f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/expm1_apt/Expm1_5c5e58e043224cccf51a06108010ae17_high_performance.o",
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.164.244 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnExpm1_8_Expm1AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab06e66d98, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/expm1_apt/Expm1_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(919470,python):2026-11-14-14:48:48.255.768 [op_kernel.cpp:397][NNOP][BinLoadImpl][919470] OpName:[aclnnLogicalAnd_9_LogicalAndAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab0716d4b8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/logical_and_apt/LogicalAnd_BOOL_high_performance.o"
+      ],
+      "qualified_ops": [
+        "Expm1",
+        "LogicalAnd",
+        "Reciprocal",
+        "Rsqrt"
+      ],
+      "package_sha256": "99db592b80ab87436869ece3e755a202fc3e861c86902775a6818be2d3d89496",
+      "not_formal_baseline_acceptance": true
+    },
+    {
+      "host": "openlibing-DevEnv-055409",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER2_OPSMATH_LEAF4_QUALIFICATION.json",
+      "guard_record_sha256": "fa31514418137fed91d130247116eaab02c4f0af507c1af8a33d5ea4e359497d",
+      "result": "server2-opsmath-leaf4-qualification-144654060969.json",
+      "result_sha256": "73ef714b428dac0186b428c33e497e33c2bce1aaeaf9db682661c55dc9b34f42",
+      "log_sha256": "fdc1afb68c8afa6b45a83248913f50e62c6ff666369e2ae0b070434fec8c7250",
+      "checked_12_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.450.149 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnReciprocal_0_ReciprocalAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f4f6608, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/reciprocal_apt/Reciprocal_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.482.811 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnReciprocal_1_ReciprocalAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f50df88, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/reciprocal_apt/Reciprocal_1c4543fdfe7149b6b0717bd88f061562_high_performance.o",
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.488.726 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnReciprocal_2_ReciprocalAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f526238, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/reciprocal_apt/Reciprocal_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.504.355 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnRsqrt_3_RsqrtAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f541df8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/rsqrt_apt/Rsqrt_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.510.135 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnRsqrt_4_RsqrtAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f54ea98, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/rsqrt_apt/Rsqrt_1c4543fdfe7149b6b0717bd88f061562_high_performance.o",
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.521.445 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnRsqrt_5_RsqrtAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f55b3a8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/rsqrt_apt/Rsqrt_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.544.593 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnExpm1_6_Expm1AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f578b28, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/expm1_apt/Expm1_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.552.446 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnExpm1_7_Expm1AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f58ff28, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/expm1_apt/Expm1_5c5e58e043224cccf51a06108010ae17_high_performance.o",
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.557.452 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnExpm1_8_Expm1AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f5a7918, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/expm1_apt/Expm1_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(243187,python):2026-11-14-14:45:40.661.350 [op_kernel.cpp:397][NNOP][BinLoadImpl][243187] OpName:[aclnnLogicalAnd_9_LogicalAndAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab3f8ae4a8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-leaf4-v1/private-v1/vendors/allpairs_math_leaf4_math/op_impl/ai_core/tbe/kernel/ascend950/logical_and_apt/LogicalAnd_BOOL_high_performance.o"
+      ],
+      "qualified_ops": [
+        "Expm1",
+        "LogicalAnd",
+        "Reciprocal",
+        "Rsqrt"
+      ],
+      "package_sha256": "99db592b80ab87436869ece3e755a202fc3e861c86902775a6818be2d3d89496",
+      "not_formal_baseline_acceptance": true
+    }
+  ],
+  "package_sha256": "99db592b80ab87436869ece3e755a202fc3e861c86902775a6818be2d3d89496",
+  "qualified_at": "2026-11-14T14:50:39.878612+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "30a83c17b90286e8b2b00d0db38ee88e725f97e56695ec34a56fdc36c430d6a5",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axes",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "keep_dims",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/reduce_all/ReduceAll_a9b7af94359fc7c19da07ad0790f065c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "c04ab1782b2e88d86bcf561617e1fbc4770a9d503b3d225f49e04908bc06fe17",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axes",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "keep_dims",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/reduce_all/ReduceAll_bbb33f17aca2fbbf645166c6cba610fc_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "checked_at_remote": "2026-11-16T01:11:35.090404+00:00",
+  "all2_target_original_inputs_verified": true,
+  "scope": [
+    294,
+    298
+  ],
+  "input_proofs": [
+    {
+      "ordinal": 294,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "moe-wgrad-float16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "cbd8ef5eca2fb015256ce81abc3416e072ba3e19f5954fc8f8102a53e5140e59",
+      "payload_sha256": "73168bd72359b797e1f55bd103085c41d78e71caf89fb7360fc7f48bee3a2a39",
+      "descriptor_sha256": "035d2467faafe63f02168c18016e92b3956e671bac23dcc7091a0ac10855e5df",
+      "helper_sha256": "cbb5509ced6d35fcc4dd3daf511979bd9f916e6e16cb08766076ac87d8b9d72a",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "reference_policy": "original_cpu",
+      "params": {
+        "a": [
+          [
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            16,
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "transpose_a": true,
+        "transpose_b": false
+      }
+    },
+    {
+      "ordinal": 298,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-empty-bfloat16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "ff9ab458288b89f1bc6a1aac34604c1092f74e5628c888499ba6396acf1e9e0b",
+      "payload_sha256": "2bd3698d9d2d3d1745e7362e44367d75014159c4a2b666c72d1878d236732984",
+      "descriptor_sha256": "7b2d79168d50f3b972bc1d22ff96d0963fed6366e016af2394e4347bfbcc23d9",
+      "helper_sha256": "cbb5509ced6d35fcc4dd3daf511979bd9f916e6e16cb08766076ac87d8b9d72a",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "reference_policy": "original_cpu",
+      "params": {
+        "a": [
+          [
+            8,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            1536,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            8,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      }
+    }
+  ],
+  "original_NN_grouped_source_sha256": "e493c17e167fa50472fe1848a16f75fd882f4c20375f35cea6ce5aa43a87601b",
+  "original_matmul_package_sha256": "1d8ac5de679cb10705dea4e4c129dcad653cdf1721ec3e4abfd427f834e64b15",
+  "original_matmul_host_qualification_sha256": "428eaf0ab848887c80fe45451ba29c46318531b51425fed2172ce81cde90b194",
+  "CPU_diagnostic_only_no_gold_repair": true,
+  "no_NPU_work": true
+}

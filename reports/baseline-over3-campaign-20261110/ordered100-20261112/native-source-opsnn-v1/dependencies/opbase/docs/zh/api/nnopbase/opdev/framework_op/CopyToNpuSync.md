@@ -1,0 +1,37 @@
+# CopyToNpuSync
+
+## 功能说明
+
+同步完成host侧到device侧的数据拷贝，会阻塞等待拷贝动作完成，不会再放入executor任务队列。该接口中申请的device内存，需要调用方释放。
+
+## 函数原型
+
+```cpp
+const aclTensor *CopyToNpuSync(const aclTensor *src, aclOpExecutor *executor)
+```
+
+## 参数说明
+
+| 参数 | 输入/输出 | 说明 |
+| --- | --- | --- |
+| src | 输入 | 需要拷贝到device侧的host数据。 |
+| executor | 输入 | L2接口中一阶段接口声明的算子执行器对象。 |
+
+## 返回值说明
+
+拷贝到device侧后，指向device侧数据的aclTensor。任务创建失败则返回nullptr。
+
+## 约束说明
+
+入参指针不能为空。
+
+## 调用示例
+
+```cpp
+// 初始化一个host侧tensor，并拷贝到dst，dst为一个device侧tensor
+void Func(aclOpExecutor *executor) {
+    int64_t myArray[10];
+    auto src = executor->ConvertToTensor(myArray, 10, DT_INT64);
+    auto dst = CopyToNpuSync(src, executor);
+}
+```

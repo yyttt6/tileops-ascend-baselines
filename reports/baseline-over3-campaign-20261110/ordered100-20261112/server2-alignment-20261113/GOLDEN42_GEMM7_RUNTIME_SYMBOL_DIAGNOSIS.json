@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-16T04:21:07.586701+00:00",
+  "cause": "Actual runtime log: custom libcust_opsproto_rt2.0.so undefined symbol EsGatherShapes",
+  "action": "Interrupt only own controller after exclusive controller.lock proves foreground guard/archive finished; do not interrupt native device call or repeat existing qualified cases",
+  "prior_controller": {
+    "pid": 3057912,
+    "entry": "queue_golden42_gemm7_remaining.py",
+    "started_at": "2026-11-16T04:18:15.764637+00:00",
+    "scope": [
+      487,
+      489,
+      491,
+      492,
+      493,
+      495,
+      498
+    ],
+    "host": "openlibing-DevEnv-055409",
+    "status": "guarded_full_native_API_15raw_new_golden",
+    "checked_at": "2026-11-16T04:20:25.390581+00:00",
+    "ordinal": 492,
+    "label": "rollout-golden42-nn-gemm7-492-golden42-routefix-h2-v1",
+    "last_qualified": 491
+  },
+  "accepted_at_observation": 2077,
+  "pending": "Audit saved current checkpoint if needed; statically identify exact runtime symbol provider and use canonical matching private profile."
+}

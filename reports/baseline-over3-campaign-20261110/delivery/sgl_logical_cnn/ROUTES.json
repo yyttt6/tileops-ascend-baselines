@@ -1,0 +1,10 @@
+[
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "LogicalAndFwdOp",
+      "cnn-feat-broadcast-bool"
+    ],
+    "fixed": true
+  }
+]

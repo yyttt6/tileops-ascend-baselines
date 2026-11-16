@@ -1,0 +1,74 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "RMSNormFwdOp",
+      "quack-throughput-2048-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_RMS_LARGE_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "RMSNormFwdOp",
+      "quack-throughput-2048-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_RMS_LARGE_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "RMSNormFwdOp",
+      "quack-throughput-4096-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_RMS_LARGE_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "RMSNormFwdOp",
+      "quack-throughput-4096-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_RMS_LARGE_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "RMSNormFwdOp",
+      "quack-throughput-8192-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_RMS_LARGE_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "RMSNormFwdOp",
+      "quack-throughput-8192-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_RMS_LARGE_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "RMSNormFwdOp",
+      "quack-throughput-16384-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_RMS_LARGE_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "RMSNormFwdOp",
+      "quack-throughput-16384-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_RMS_LARGE_CURRENT.partial.json"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "checked_at": "2026-11-15T21:51:42.997210+00:00",
+  "accepted_complete_APIs": 4,
+  "rows": [
+    {
+      "ordinal": 1754,
+      "key": [
+        "tilelang-ascend",
+        "EluFwdOp",
+        "mlp-hidden-wide-float16"
+      ],
+      "api": "ops-nn::aclnnElu",
+      "device_us": 37.227533333333334,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-elu-alternative-1754-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "daf05cfad82a0de21726e411a34d2e3fc37fd5c7bb3aa9f4fdc49b155592b22a",
+      "payload_sha256": "47bc8c4370974e774ce447160963a9bf32e69ffec1fa9f3bd011687eeb327958",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1755,
+      "key": [
+        "tilelang-ascend",
+        "EluFwdOp",
+        "mlp-hidden-wide-bfloat16"
+      ],
+      "api": "ops-nn::aclnnElu",
+      "device_us": 37.1854,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-elu-alternative-1755-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "1f56fc672a60a1704720afaa8fc967efbd9f5f9e7126d46abe63c9e33f402df0",
+      "payload_sha256": "741b362155b773b9404778901c80e7e2dd45829b0124ce47f97efdf05caebbb1",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1756,
+      "key": [
+        "tilelang-ascend",
+        "EluFwdOp",
+        "mlp-hidden-float16"
+      ],
+      "api": "ops-nn::aclnnElu",
+      "device_us": 20.88446666666667,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-elu-alternative-1756-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "8e88434d0f0d9ff025ba6c21d806cc2b7a9a46592b257e846a40be6ad9d685ff",
+      "payload_sha256": "e4f5cf4fc4186303ae19d825c8f64faaf3b2571e8dbb574da19b13b7a491bfdd",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1757,
+      "key": [
+        "tilelang-ascend",
+        "EluFwdOp",
+        "mlp-hidden-bfloat16"
+      ],
+      "api": "ops-nn::aclnnElu",
+      "device_us": 20.88253333333333,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-elu-alternative-1757-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "d74b1105d2c42d1d287e4a533bc795cb50400145059d890fa7c86c51e795b07a",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

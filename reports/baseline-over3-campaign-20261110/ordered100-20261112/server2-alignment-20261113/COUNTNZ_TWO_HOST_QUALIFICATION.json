@@ -1,0 +1,64 @@
+{
+  "two_host_functional_and_private_kernel_verified": true,
+  "scope": "Only4 fulloutput/input small calls perhost, 2same-library original native APIs and originalINT32marker; frozen4 originalchecker/formal15 still required",
+  "qualified_ops": [
+    "ReduceSum",
+    "NotEqual"
+  ],
+  "hosts": [
+    {
+      "host": "openlibing-DevEnv-661495",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER1_COUNTNZ_QUALIFICATION.json",
+      "guard_record_sha256": "c7ac61f8996c0cd3acdb48206bc040dcf07e47f6467ca21b7e580cdafb10a8bd",
+      "result": "server1-countnz-qualification-160450995266.json",
+      "result_sha256": "f1aab04e974adbb058c20853362843e1ff21fff2298bdd030830213d362b7abc",
+      "log_sha256": "79b39eff25399a33735b430630b9c0fa9de71ef69d23e22987b93b4c18004961",
+      "checked_4_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(1153473,python):2026-11-14-16:03:38.334.560 [op_kernel.cpp:397][NNOP][BinLoadImpl][1153473] OpName:[aclnnNeTensor_2_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab216ad9d8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_BOOL_high_performance.o",
+        "[DEBUG] OP(1153473,python):2026-11-14-16:03:38.544.956 [op_kernel.cpp:397][NNOP][BinLoadImpl][1153473] OpName:[aclnnReduceSum_3_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222c15a8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+        "[DEBUG] OP(1153473,python):2026-11-14-16:03:38.560.727 [op_kernel.cpp:397][NNOP][BinLoadImpl][1153473] OpName:[aclnnNeTensor_6_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab22c6bca8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_FLOAT16_high_performance.o",
+        "[DEBUG] OP(1153473,python):2026-11-14-16:03:38.579.542 [op_kernel.cpp:397][NNOP][BinLoadImpl][1153473] OpName:[aclnnNeTensor_10_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab22ce74e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_BFLOAT16_high_performance.o",
+        "[DEBUG] OP(1153473,python):2026-11-14-16:03:38.609.802 [op_kernel.cpp:397][NNOP][BinLoadImpl][1153473] OpName:[aclnnNeTensor_14_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab22d6f858, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_FLOAT32_high_performance.o",
+        "[DEBUG] OP(1153473,python):2026-11-14-16:03:38.660.361 [op_kernel.cpp:397][NNOP][BinLoadImpl][1153744] OpName:[aclnnNeScalar_21_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xfffd703bd2b8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_INT32_high_performance.o",
+        "[DEBUG] OP(1153473,python):2026-11-14-16:03:38.834.856 [op_kernel.cpp:397][NNOP][BinLoadImpl][1153744] OpName:[aclnnReduceSum_29_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xfffd70c82ce8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_int64_int64_high_performance.o"
+      ],
+      "qualified_ops": [
+        "NotEqual",
+        "ReduceSum"
+      ],
+      "package_sha256": "6b4dc6a8e101d3d8aacf27808c36ca9e2d4395be6415d6aef3dc4d49b8d6a87a",
+      "not_formal_baseline_acceptance": true
+    },
+    {
+      "host": "openlibing-DevEnv-055409",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER2_OPSMATH_COUNTNZ_QUALIFICATION.json",
+      "guard_record_sha256": "cbcf319b3acdb917fd2912dc76f215328f20e1eef6547c4f5de053a53e7d8709",
+      "result": "server2-opsmath-countnz-qualification-160420166205.json",
+      "result_sha256": "f07130a6250dbb3e5dff11653521268c0926a894983051dfc39f1f30027a11a6",
+      "log_sha256": "98d8d5eab50c7ff1cfda56ee9366b7bd8a969256596f6a324070a5932bc64e67",
+      "checked_4_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(344017,python):2026-11-14-16:03:05.855.609 [op_kernel.cpp:397][NNOP][BinLoadImpl][344017] OpName:[aclnnNeTensor_2_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab26c778a8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_BOOL_high_performance.o",
+        "[DEBUG] OP(344017,python):2026-11-14-16:03:06.052.025 [op_kernel.cpp:397][NNOP][BinLoadImpl][344017] OpName:[aclnnReduceSum_3_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab2788b308, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+        "[DEBUG] OP(344017,python):2026-11-14-16:03:06.092.127 [op_kernel.cpp:397][NNOP][BinLoadImpl][344017] OpName:[aclnnNeTensor_6_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab28235a08, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_FLOAT16_high_performance.o",
+        "[DEBUG] OP(344017,python):2026-11-14-16:03:06.100.176 [op_kernel.cpp:397][NNOP][BinLoadImpl][344017] OpName:[aclnnNeTensor_10_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab282b1308, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_BFLOAT16_high_performance.o",
+        "[DEBUG] OP(344017,python):2026-11-14-16:03:06.127.546 [op_kernel.cpp:397][NNOP][BinLoadImpl][344017] OpName:[aclnnNeTensor_14_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab28339678, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_FLOAT32_high_performance.o",
+        "[DEBUG] OP(344017,python):2026-11-14-16:03:06.233.706 [op_kernel.cpp:397][NNOP][BinLoadImpl][344292] OpName:[aclnnNeScalar_21_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xfffd683bd1f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_INT32_high_performance.o",
+        "[DEBUG] OP(344017,python):2026-11-14-16:03:06.375.355 [op_kernel.cpp:397][NNOP][BinLoadImpl][344292] OpName:[aclnnReduceSum_29_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xfffd68c82c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-v1/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_int64_int64_high_performance.o"
+      ],
+      "qualified_ops": [
+        "NotEqual",
+        "ReduceSum"
+      ],
+      "package_sha256": "6b4dc6a8e101d3d8aacf27808c36ca9e2d4395be6415d6aef3dc4d49b8d6a87a",
+      "not_formal_baseline_acceptance": true
+    }
+  ],
+  "package_sha256": "6b4dc6a8e101d3d8aacf27808c36ca9e2d4395be6415d6aef3dc4d49b8d6a87a",
+  "qualified_at": "2026-11-14T16:05:29.123902+00:00"
+}

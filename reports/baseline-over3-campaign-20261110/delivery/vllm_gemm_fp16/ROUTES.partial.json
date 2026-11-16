@@ -1,0 +1,11 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "GemmFwdOp",
+      "square-1k-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_GEMM_FP16_CURRENT.partial.json"
+  }
+]

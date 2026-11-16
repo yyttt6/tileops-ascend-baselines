@@ -1,0 +1,592 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "f2d6c148c41a80010140558bd6c6c0aac445443bda747bb900891c280aa131ea",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              0,
+              null
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/non_zero/NonZero_edb06daebcc6f079a6dee9a7ed831ea9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "02dfa2179b984e198894834e1cc11db4ef4557086ea73d4fa2d27924e0886eb8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              0,
+              null
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/non_zero/NonZero_6e5a6cd9de928cb056e28cda78fe447e_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "88e4a2543bbf3fdbe5ef8a58729593283a0ed240b9799792a2782dbb606bf868",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              0,
+              null
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/non_zero/NonZero_1267d067bf644ff538330671fcfcfd9f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "a73eebad6f2284166c3c134f9e58fd9690440c23b7a8b7004fe27570b3effa65",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              0,
+              null
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/non_zero/NonZero_27a478f4fafa16a7537521a403837911_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "74bd21db619533324e241d32d2b20b26b6bf13fc9a5687d0460f4565dfb5f540",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              0,
+              null
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/non_zero/NonZero_91d091fdf3121283326bbfe670fa793b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "e1b8118bc45b3170819cb57dad057c7dc09c222552687a24cbd1c555bf94479a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              0,
+              null
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/non_zero/NonZero_811ba726116e13ff3bd4608c72e11076_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "94013e806d4654e1570cbc210e08b146dcde6254b6599b276364feaaa488ae9e",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              0,
+              null
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/non_zero/NonZero_d399326088830ff05042304adc992e13_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2eae47d53871572a68e7223fd7a5dad76dc0dbd5dd9432a1ed697e4ba1c7772c",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ],
+            [
+              1,
+              null
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1
+          ],
+          "shape_range": [
+            [
+              1,
+              null
+            ],
+            [
+              0,
+              null
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/non_zero/NonZero_e06011186220d191c725cbb04059b324_high_performance.json"
+      }
+    }
+  ]
+}

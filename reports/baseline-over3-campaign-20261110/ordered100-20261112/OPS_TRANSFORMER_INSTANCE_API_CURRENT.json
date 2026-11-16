@@ -1,0 +1,169 @@
+{
+  "checked_at": "2026-11-16T05:22:30.500421+00:00",
+  "accepted_complete_APIs": 9,
+  "rows": [
+    {
+      "ordinal": 775,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "wider-channel-float16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 2596.1752666666666,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-775-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "7dc517c325d54d2c8046236c80614dac926e6310f041f3f854920d67179e7605",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "387f13d74a02013af1785159e8a85dcac739b2237270056143e1d035bbab770c",
+      "prepare_sha256": "1db7a2a28dabd5c7a97c18ae4f2341344ddcc795094d79943b947120c1ca7f4e",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 776,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "wider-channel-affine-float32"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 3016.5326,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-776-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "71f0d8e684adb5973266f94a3238bd1ae044819b2acd8e1241f834e41438d9e4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "9722d99e25231ea4ecf6c1a3d62e0864aa14427f23079b8fbfbe5734f5359ef3",
+      "prepare_sha256": "056bb7f8cd86bff5a0a617b73404a25067f7ba7ec1e9635c874a9ec26ad20da4",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 779,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "tail-spatial-affine-float16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 1046.9332666666667,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-779-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "4558dc3edcd82691ab4b73d602a885caf65bc95c0ba5995f379651b55c3d3eda",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "c293b6ca43b8141ec9ad1f2ecbdd4b51ec2df161103cb4db489583bcc878187d",
+      "prepare_sha256": "30b444ea4af21d0b611acc59a37bd30001efcbef11b17f2fd5893273298986e5",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 780,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "wider-channel-float32"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 2593.0166,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-780-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "78afb0926b82070b4d130e09f95b12e9da4aca02d467f0a1192543b24c6ac9fc",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "c544a75a9af31f21fe134c58ef1689f6b5f3b5cb8a9f5776a228b7db8218eacd",
+      "prepare_sha256": "ad25f973405d13fc4cc64a64f527ae4008bcd7b465b2205237385c2cd28024d7",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 781,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "image-float16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 1468.2813333333334,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-781-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c4d88a6486d1010f13d586049b75f7f5dda1ad57048a01d7480782a132e36c77",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "c53c5401562113c0eeea30f70ffa30e5234c381f984536ee0becca17add44e5a",
+      "prepare_sha256": "c7c2a138c87f0f6efbc955f9f008b68375227f1c616dd4d8372c310ee6b215eb",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 783,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "tail-spatial-float16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 662.6064666666666,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-783-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "86e05be706cbcbf523ed11989565a0d3bff6e4060d7f2c75040413f67a82f423",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "01b3a903d813c39b2f6bcc72f54a82271de98940bf728bde4fad076ac638ed91",
+      "prepare_sha256": "ace36f34426f13510705e5a52ad30f8feec396e35711a0b2f4c9eb463371f448",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 778,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "image-affine-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 2210.972133333333,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-778-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "90ee2dc686adb5e7e360fe54222d2aebe6f96ff376e0e741d1e0db684048cd68",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "a2232b89238343fd9a5b076ee82082224b046417875d31a02bdd0f8dc6d5e53d",
+      "prepare_sha256": "28990c8c677edf44589305951fef4d2ee7fb4bb6e8f6eb391055d25d2a465ae0",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 782,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "image-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 1386.0702,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-782-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "0d3ffbe18a6847b856bf4687fda5b97fc2bbf4ef58a2773de8118301bc3f2221",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "e6acadffd2809fbe6c42b9cfb9632922b49c98118648f38637fd78ddb6026ecd",
+      "prepare_sha256": "48dd73944e49d6fabb87c00505b38003a627f3dc0a740722a0e3cafcd02c3650",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 777,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 2209.5026666666663,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-777-golden42-selectorfix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c27c1585ba4fcb4c0bd7bb2b881581b8ca518be7b7168c0e5951119414a24402",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "77b907cd17159d51f7338e47d0cd30a8309d30911ed3e3a7a5f5bff9a7e27799",
+      "prepare_sha256": "024665264096c16afb35b783bdbabc8f67d0707ae7e19de7c6696d5355cfb39c",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

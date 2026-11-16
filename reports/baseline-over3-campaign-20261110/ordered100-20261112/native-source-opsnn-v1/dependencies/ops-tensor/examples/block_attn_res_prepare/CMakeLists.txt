@@ -1,0 +1,1 @@
+ops_example_add_executable(block_attn_res_prepare block_attn_res_prepare/block_attn_res_prepare.cpp)

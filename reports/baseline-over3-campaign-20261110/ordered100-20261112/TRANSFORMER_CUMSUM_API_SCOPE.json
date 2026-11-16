@@ -1,0 +1,8 @@
+{
+  "ordinals": [
+    767
+  ],
+  "original_run_AST_exact": true,
+  "source_sha256": "63b893b9e348a958a3f6bc040c87341afea5172c887a1708de8379000486320b",
+  "original_FP32carry_triangular_nativeGMM_allcopies_sync_retained": true
+}

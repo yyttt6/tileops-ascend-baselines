@@ -1,0 +1,1048 @@
+{
+  "checked_at": "2026-11-16T02:55:42.123684+00:00",
+  "status": "all_currently_permitted_remaining69_work_processed_48_explicit_user_holds",
+  "initial_qualified_coverage": 2050,
+  "current_qualified_coverage": 2071,
+  "scope_total": 2119,
+  "initial_remaining_scope": [
+    147,
+    148,
+    184,
+    240,
+    241,
+    244,
+    245,
+    270,
+    271,
+    272,
+    273,
+    274,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    284,
+    295,
+    296,
+    297,
+    309,
+    370,
+    371,
+    372,
+    486,
+    487,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    498,
+    733,
+    734,
+    759,
+    772,
+    773,
+    774,
+    777,
+    804,
+    1082,
+    1253,
+    1254,
+    1255,
+    1292,
+    1293,
+    1294,
+    1295,
+    1298,
+    1299,
+    1617,
+    1618,
+    1619,
+    1620,
+    1621,
+    1622,
+    1623,
+    1735,
+    1736,
+    1737,
+    2052,
+    2101,
+    2107
+  ],
+  "newly_qualified": [
+    147,
+    148,
+    370,
+    371,
+    733,
+    734,
+    1253,
+    1254,
+    1617,
+    1618,
+    1619,
+    1620,
+    1621,
+    1622,
+    1623,
+    1735,
+    1736,
+    1737,
+    2052,
+    2101,
+    2107
+  ],
+  "newly_qualified_count": 21,
+  "new_native_full_measurement_cases": 15,
+  "new_native_formal_windows": 225,
+  "offline_audited_coverage_reuse_cases": 6,
+  "original_NPU_checker_supplements": 3,
+  "new_complete_original_candidate_pairs": 0,
+  "new_final_ratio_closures": 0,
+  "remaining_user_held": [
+    184,
+    240,
+    241,
+    244,
+    245,
+    270,
+    271,
+    272,
+    273,
+    274,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    284,
+    295,
+    296,
+    297,
+    309,
+    372,
+    486,
+    487,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    498,
+    759,
+    772,
+    773,
+    774,
+    777,
+    804,
+    1082,
+    1255,
+    1292,
+    1293,
+    1294,
+    1295,
+    1298,
+    1299
+  ],
+  "remaining_user_held_count": 48,
+  "golden_reference_held": [
+    184,
+    240,
+    241,
+    244,
+    245,
+    270,
+    271,
+    272,
+    273,
+    274,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    284,
+    295,
+    296,
+    297,
+    309,
+    372,
+    486,
+    487,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    498,
+    759,
+    772,
+    773,
+    774,
+    777,
+    804,
+    1082,
+    1255
+  ],
+  "complex_input_checker_held": [
+    1292,
+    1293,
+    1294,
+    1295,
+    1298,
+    1299
+  ],
+  "no_remaining_eligible_case_in_this69_scope": true,
+  "not_all69_qualified_or_complete": true,
+  "rows": [
+    {
+      "ordinal": 147,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "mha-decode-qk-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_FLA_BMM2_PTO_COMPLETE_API_REUSE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 148,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-128-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_FLA_BMM2_PTO_COMPLETE_API_REUSE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 184,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 240,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-2k-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 241,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "moe-prefill-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 244,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 245,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 270,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-mlp-up-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 271,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-mlp-up-float16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 272,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-o-proj-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 273,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-down-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 274,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-q-b-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 276,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 277,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 278,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 279,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 280,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 281,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 282,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 284,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 295,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "moe-fwd-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 296,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 297,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 309,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 370,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-grouped-prefill-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_REMAINING_TORCH_COMPLETE_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 371,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-780m-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_REMAINING_TORCH_COMPLETE_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 372,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 486,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 487,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 489,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 490,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 491,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 492,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-qkv-a-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 493,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 494,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-down-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 495,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 496,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 498,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 733,
+      "key": [
+        "ops-tensor",
+        "TruncFwdOp",
+        "256M-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_REMAINING_TORCH_COMPLETE_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 734,
+      "key": [
+        "ops-tensor",
+        "TruncFwdOp",
+        "256M-bfloat16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_REMAINING_TORCH_COMPLETE_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 759,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 772,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 773,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 774,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "moe-fwd-float16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 777,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 804,
+      "key": [
+        "ops-transformer",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 1082,
+      "key": [
+        "sgl-kernel-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 1253,
+      "key": [
+        "vllm-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-grouped-prefill-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_COUPLING3_TORCH_NPU_CHECKER_SUPPLEMENT_REUSE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1254,
+      "key": [
+        "vllm-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-780m-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_COUPLING3_TORCH_NPU_CHECKER_SUPPLEMENT_REUSE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1255,
+      "key": [
+        "vllm-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "status": "user_keeps_original_golden_reference_review_held",
+      "decision": "server2-alignment-20261113/REMAINING42_USER_DECISION_KEEP_ORIGINAL_GOLDEN_20261116.json",
+      "qualified": false,
+      "no_same_condition_numerical_retry": true
+    },
+    {
+      "ordinal": 1292,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "status": "user_keeps_original_input_checker_six_deferred",
+      "decision": "server2-alignment-20261113/COMPLEX6_USER_DECISION_KEEP_ORIGINAL_INPUT_CHECK_20261116.json",
+      "qualified": false,
+      "actual_cause": "NPU IsClose lacks complex dtype in input preservation; not proven unsupported All/Any/CountNonzero computation."
+    },
+    {
+      "ordinal": 1293,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "status": "user_keeps_original_input_checker_six_deferred",
+      "decision": "server2-alignment-20261113/COMPLEX6_USER_DECISION_KEEP_ORIGINAL_INPUT_CHECK_20261116.json",
+      "qualified": false,
+      "actual_cause": "NPU IsClose lacks complex dtype in input preservation; not proven unsupported All/Any/CountNonzero computation."
+    },
+    {
+      "ordinal": 1294,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "status": "user_keeps_original_input_checker_six_deferred",
+      "decision": "server2-alignment-20261113/COMPLEX6_USER_DECISION_KEEP_ORIGINAL_INPUT_CHECK_20261116.json",
+      "qualified": false,
+      "actual_cause": "NPU IsClose lacks complex dtype in input preservation; not proven unsupported All/Any/CountNonzero computation."
+    },
+    {
+      "ordinal": 1295,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "status": "user_keeps_original_input_checker_six_deferred",
+      "decision": "server2-alignment-20261113/COMPLEX6_USER_DECISION_KEEP_ORIGINAL_INPUT_CHECK_20261116.json",
+      "qualified": false,
+      "actual_cause": "NPU IsClose lacks complex dtype in input preservation; not proven unsupported All/Any/CountNonzero computation."
+    },
+    {
+      "ordinal": 1298,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "status": "user_keeps_original_input_checker_six_deferred",
+      "decision": "server2-alignment-20261113/COMPLEX6_USER_DECISION_KEEP_ORIGINAL_INPUT_CHECK_20261116.json",
+      "qualified": false,
+      "actual_cause": "NPU IsClose lacks complex dtype in input preservation; not proven unsupported All/Any/CountNonzero computation."
+    },
+    {
+      "ordinal": 1299,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "status": "user_keeps_original_input_checker_six_deferred",
+      "decision": "server2-alignment-20261113/COMPLEX6_USER_DECISION_KEEP_ORIGINAL_INPUT_CHECK_20261116.json",
+      "qualified": false,
+      "actual_cause": "NPU IsClose lacks complex dtype in input preservation; not proven unsupported All/Any/CountNonzero computation."
+    },
+    {
+      "ordinal": 1617,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_TLA_ADALN7_MATH_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1618,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "llama-8b-prefill-bfloat16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_TLA_ADALN7_MATH_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1619,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "llama-8b-prefill-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_TLA_ADALN7_MATH_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1620,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "dit-xl-2-float32"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_TLA_ADALN7_MATH_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1621,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "dit-xl-2-bfloat16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_TLA_ADALN7_MATH_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1622,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "dit-xl-2-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_TLA_ADALN7_MATH_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1623,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_TLA_ADALN7_MATH_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1735,
+      "key": [
+        "tilelang-ascend",
+        "CumprodFwdOp",
+        "long-seq-bfloat16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_TLA_CUMPROD1735_EXISTING_TORCH_REUSE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1736,
+      "key": [
+        "tilelang-ascend",
+        "CumprodFwdOp",
+        "hidden-state-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_REMAINING_TORCH_COMPLETE_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 1737,
+      "key": [
+        "tilelang-ascend",
+        "CumprodFwdOp",
+        "hidden-state-bfloat16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_REMAINING_TORCH_COMPLETE_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 2052,
+      "key": [
+        "tilelang-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-grouped-prefill-float16"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_COUPLING3_TORCH_NPU_CHECKER_SUPPLEMENT_REUSE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 2101,
+      "key": [
+        "tilelang-ascend",
+        "VarFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_REMAINING_TORCH_COMPLETE_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    },
+    {
+      "ordinal": 2107,
+      "key": [
+        "tilelang-ascend",
+        "VarMeanFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "status": "qualified_complete_API_coverage",
+      "evidence": "RESOLVED_REMAINING_TORCH_COMPLETE_ALTERNATIVE.json",
+      "original_or_alternative_implementation_scope": "See explicit overlay: alternative API does not qualify original missing/failed native provider.",
+      "not_final_ratio_closure": true
+    }
+  ],
+  "preserved": "Original golden/checker/math/input/storage dtype/kernel/compiler flags; paused snapshots; old failures/checkpoints; H2task-release/no-gap policy; no migration/publication.",
+  "diagnosed_and_fixed": "Shared TLA TVM -> Math TBE environment contamination before first measured call; original v1 factory failure retained, fresh isolated v2 complete7 passed.",
+  "new_API_precision_proof": "CPU negative controls detect early dtype cast before Zero gate; FP32 gate preserved until final cast.",
+  "Trunc_supplement": "server2-alignment-20261113/TORCH_TRUNC_SIGNED_ZERO_SDK_PROBE_20261116.json",
+  "next": "No blind retry or golden/input-checker changes for48. User decisions retained; do not treat finished controllers or zero eligible scope as missing successor. Other campaign scopes not started by this remaining69 request."
+}

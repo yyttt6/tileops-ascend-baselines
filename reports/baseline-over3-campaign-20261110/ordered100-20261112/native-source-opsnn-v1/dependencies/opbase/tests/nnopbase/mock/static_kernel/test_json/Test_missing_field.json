@@ -1,0 +1,10 @@
+{
+    "binFileName": "Test_missing_field",
+    "binFileSuffix": ".o",
+    "blockDim": 8,
+    "workspace": {
+        "size": [
+            1024
+        ]
+    }
+}

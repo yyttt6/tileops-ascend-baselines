@@ -1,0 +1,73 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "LayerNormFwdOp",
+      "dit-xl-2-bfloat16"
+    ],
+    "batch": "vllm-layernorm-current-server2",
+    "index": 0,
+    "isolated_us": 27.323266666666665,
+    "evidence": {
+      "index": 0,
+      "op": "LayerNormFwdOp",
+      "case": "dit-xl-2-bfloat16",
+      "variant": "native",
+      "attempt": "final1",
+      "status": "formal_raw_verified",
+      "result_sha256": "25a51b1e83943fc0e12476cdec058e376f0c869a770d020a64aa7bb879629c55",
+      "host_us": 1207.2853123148282,
+      "comparison_metric": "end_to_end_mean_ms",
+      "host_timing_sha256": "d8b7a5e87fe640d7b4f2dea4d572bc0bf8b8411d9c37853564896e39bcd9e163",
+      "us": 27.323266666666665,
+      "windows": 15,
+      "task_counts": [
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "aicpu_counts": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "old_web_torch_us": "27.409266666666667",
+      "guard_sha256": "3add38163d2b8684baf3dab9caf96f28d067a3fd5837fea0e999c0bec8d03b4e"
+    },
+    "hardware": {
+      "torch": "2.13.0+cpu",
+      "torch_npu": "2.13.0.rc1",
+      "cube": 32,
+      "vector": 64,
+      "hostname": "897b29c557a5",
+      "backend": "vllm-layer-norm-complete-api"
+    },
+    "source_verified": true,
+    "status": "current_environment_original_API_verified_no_improvement_claim",
+    "historical_ratio_update": false
+  }
+]

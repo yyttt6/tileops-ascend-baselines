@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-11-13T14:27:08.188694+00:00",
+  "reason": "User asks why environment issues appear after earlier version repair",
+  "qualified_before": "Matched vendor Torch2.10 runtime with valid guarded original/candidate API groups; toolchain identity checker on selected locked components. These are not full ops-nn source build acceptance.",
+  "new_path": "New task-private ops-nn pin84bf+publishedpatch source -> current SDK9.2 native package build, previously304pairs left dependency-pending without measurements",
+  "failures": [
+    {
+      "kind": "CMakepackage selection",
+      "evidence": "OPS_NN_ASC_PACKAGE_DIAGNOSIS.json",
+      "status": "explicit SDK9.2 ASCpackage/module binding passed configure2/3",
+      "responsibility": "launcher/setup omission"
+    },
+    {
+      "kind": "packaging module",
+      "evidence": "OPS_NN_PRIVATE_PACKAGING_REPAIR.json",
+      "status": "private offlinepip25 installed, build2 advanced beyond wheel packaging",
+      "responsibility": "build preflight omission"
+    },
+    {
+      "kind": "SDK header layout",
+      "evidence": "OPS_NN_SDK_HEADER_LAYOUT_DIAGNOSIS.json",
+      "status": "sameSDK header namespace aliases queued in guarded build3; not yet compiled or runtime accepted"
+    },
+    {
+      "kind": "control script syntax",
+      "evidence": "OPS_NN_PRIVATE_BUILD3.precompile-cancelled.json",
+      "status": "own verified childless CPUwaiter cancelled before deployment, invalidgenerator retained and corrected; new helper py_compilepassed",
+      "responsibility": "agent script generation error, not environment or numerical failure"
+    }
+  ],
+  "boundary": "Do not infer global version mismatch or invalidate already qualified results from these private build integration failures. Do not claim all libraries ready from core toolchain/runtime checks. No kernel/checker/precision relaxation."
+}

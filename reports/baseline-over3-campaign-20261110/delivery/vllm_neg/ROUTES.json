@@ -1,0 +1,50 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "NegFwdOp",
+      "16M-bfloat16"
+    ],
+    "index": 0,
+    "selected_us": 50.99086666666667,
+    "selected_variant": "fixed",
+    "control_us": 77.78013333333334,
+    "candidate_us": 50.99086666666667,
+    "ratio": 4.029688051547098,
+    "result_sha256": "37b053e7c2154d1fe7edcf1029519271ed378c2fc88689c7e20e3cd8ba513dfc",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Preserve original manifest4096feature shape through unchanged muls_add_triton API instead of flattening every feature to singleton. Native host selects its existing block size; no kernel/config edits. Full zeros_like allocation and all required materialization/copies remain timed; output is original scale*x+y negation; original checker and15window raw audit unchanged."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "NegFwdOp",
+      "16M-float16"
+    ],
+    "index": 1,
+    "selected_us": 51.0834,
+    "selected_variant": "fixed",
+    "control_us": 77.45626666666666,
+    "candidate_us": 51.0834,
+    "ratio": 3.932174252182257,
+    "result_sha256": "e15aaa47df2ae413bcc7a3dd3925ef907cbbae4b2d56a815dcc941ead0948271",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Preserve original manifest4096feature shape through unchanged muls_add_triton API instead of flattening every feature to singleton. Native host selects its existing block size; no kernel/config edits. Full zeros_like allocation and all required materialization/copies remain timed; output is original scale*x+y negation; original checker and15window raw audit unchanged."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "NegFwdOp",
+      "16M-float32"
+    ],
+    "index": 2,
+    "selected_us": 88.94606666666667,
+    "selected_variant": "fixed",
+    "control_us": 113.82833333333332,
+    "candidate_us": 88.94606666666667,
+    "ratio": 3.927394808574272,
+    "result_sha256": "6581a1f879f27f736291db0df6a2f93c4207315a307642e4830b3c5dc2ede5c3",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Preserve original manifest4096feature shape through unchanged muls_add_triton API instead of flattening every feature to singleton. Native host selects its existing block size; no kernel/config edits. Full zeros_like allocation and all required materialization/copies remain timed; output is original scale*x+y negation; original checker and15window raw audit unchanged."
+  }
+]

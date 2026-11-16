@@ -1,0 +1,1 @@
+Staged original and candidate complete wrappers. Exact cases only in EVIDENCE.json; source SHA verified against both formal legs. Original checker, fifteen isolated windows and host-completed wall audited. Host/device metrics must remain separate; no automatic installation or historical ratio publication.

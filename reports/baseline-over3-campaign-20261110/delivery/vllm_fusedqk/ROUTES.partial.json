@@ -1,0 +1,47 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedQKNormRoPEFwdOp",
+      "qwen3-8b-t64-bfloat16-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_FUSEDQK_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedQKNormRoPEFwdOp",
+      "qwen3-8b-t64-float16-float32"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_FUSEDQK_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedQKNormRoPEFwdOp",
+      "qwen3-235b-t4096-bfloat16-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_FUSEDQK_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedQKNormRoPEFwdOp",
+      "qwen3-8b-t8192-bfloat16-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_FUSEDQK_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedQKNormRoPEFwdOp",
+      "glm-4.5-partial-rope-bfloat16-float32"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_FUSEDQK_CURRENT.partial.json"
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-11-13T09:13:27.937943+00:00",
+  "files": [
+    {
+      "path": "rollout_bootstrap.py",
+      "sha256": "26694a437673990eccf092847b504da45f05c3fab76258fb4b83ed83a26e5175"
+    },
+    {
+      "path": "dequant_cached_fidelity.py",
+      "sha256": "6909292ca6da138400828a0ce9e041c62fb85bfb292b3af8098804fbd1f76bc8"
+    },
+    {
+      "path": "verify_dequant_cached_prepare.py",
+      "sha256": "31560079506347ebdbfd7d39254ed0c61f5d00fcfc9db3144af651ec1d6ba7aa"
+    },
+    {
+      "path": "worker_dequant_original_scoped.py",
+      "sha256": "5cbd1d40231dd62dbfe8a85be72043f344e8b9cf2c0ca61ed52944e55b9123c5"
+    },
+    {
+      "path": "worker_sgl_dequant_api_v2.py",
+      "sha256": "6c1d5258b0e7c3dc4ed1eeb918835d4ee066439b22f4288fd438c47bb0d82e62"
+    },
+    {
+      "path": "worker_sgl_dequant_channel_v2.py",
+      "sha256": "a78a1108c1e28da60a71fc27e7295f5309f2009b8225c56de628e18bd8ba42d8"
+    },
+    {
+      "path": "sgl_dequant_channel_support.py",
+      "sha256": "cf4aaeb4bd8800316217ef01e25de82ca59eb70e94ab8dc37c66e27713280102"
+    },
+    {
+      "path": "workspace/isolated_wrappers/sgl_dequant_channel_api.py",
+      "sha256": "bfa88dc62f6d0c2134628761aaca6a12b4865524c3030c32c59356c475625037"
+    }
+  ],
+  "CPU_cached_validation": "FROZEN_DEQUANT_CACHED_INPUT_VERIFIED 988 3bc373e1a8f0a689532d5a3dc2634ce9a496cdf3f28f05650e2533c7c58834df\n",
+  "runtime_counterpart_CPU_only_validation": "RUNTIME_COUNTERPART_CPU_VALIDATED; no torch/NPU imports\n",
+  "worker_reverse_byte_proof": "DEQUANT_SCOPED_LOADER_PROOF.json",
+  "new_attempt_required_for_failed_v1_loads": true,
+  "generic_original_worker_and_prepare_unchanged": true,
+  "proof_archived_per_run": true
+}

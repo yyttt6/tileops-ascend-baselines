@@ -1,0 +1,64 @@
+{
+  "two_host_functional_and_private_kernel_verified": true,
+  "scope": "Only5 fulloutput/input small calls perhost, 2same-library original native APIs and originalINT32marker; frozen4 originalchecker/formal15 still required",
+  "qualified_ops": [
+    "Abs",
+    "ReduceSum"
+  ],
+  "hosts": [
+    {
+      "host": "openlibing-DevEnv-661495",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER1_MATHL1_QUALIFICATION.json",
+      "guard_record_sha256": "bd24c50c0dc02b001049f9c11f2654a202da7f6890cd668e14bc085161d339b4",
+      "result": "server1-mathl1-qualification-172411669861.json",
+      "result_sha256": "3aa149f8c0bbd5b220b3a43545e24950838bc708913d126cb8843a62345975f1",
+      "log_sha256": "da370a2eaccbb353aa7776dc5667fe26f5dd27cd32a8158e3ea3999592239799",
+      "checked_5_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(1565573,python):2026-11-14-17:22:59.076.660 [op_kernel.cpp:397][NNOP][BinLoadImpl][1565573] OpName:[aclnnAbs_0_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab2132d598, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(1565573,python):2026-11-14-17:22:59.252.558 [op_kernel.cpp:397][NNOP][BinLoadImpl][1565573] OpName:[aclnnReduceSum_1_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab213519f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float16_int64_high_performance.o",
+        "[DEBUG] OP(1565573,python):2026-11-14-17:22:59.349.276 [op_kernel.cpp:397][NNOP][BinLoadImpl][1565573] OpName:[aclnnAbs_2_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab225ef3e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_1c4543fdfe7149b6b0717bd88f061562_high_performance.o",
+        "[DEBUG] OP(1565573,python):2026-11-14-17:22:59.457.621 [op_kernel.cpp:397][NNOP][BinLoadImpl][1565573] OpName:[aclnnReduceSum_3_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab22f41e98, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_bfloat16_int64_high_performance.o",
+        "[DEBUG] OP(1565573,python):2026-11-14-17:22:59.730.667 [op_kernel.cpp:397][NNOP][BinLoadImpl][1565573] OpName:[aclnnReduceSum_5_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab24520f58, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+        "[DEBUG] OP(1565573,python):2026-11-14-17:22:59.918.723 [op_kernel.cpp:397][NNOP][BinLoadImpl][1565573] OpName:[aclnnAbs_8_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab24e822e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(1565573,python):2026-11-14-17:23:00.147.186 [op_kernel.cpp:397][NNOP][BinLoadImpl][1565845] OpName:[aclnnReduceSum_23_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xfffd4cc7c568, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_int64_int64_high_performance.o"
+      ],
+      "qualified_ops": [
+        "Abs",
+        "ReduceSum"
+      ],
+      "package_sha256": "740f1058f49d3346699e479ded58f1ba59a65ae44e68329efc4fd02bb0d3f5b3",
+      "not_formal_baseline_acceptance": true
+    },
+    {
+      "host": "openlibing-DevEnv-055409",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER2_OPSMATH_MATHL1_QUALIFICATION.json",
+      "guard_record_sha256": "2fc239545ee289d13f80225ac180399b668322443119aa139219b7a254bfc5b0",
+      "result": "server2-opsmath-mathl1-qualification-164935548871.json",
+      "result_sha256": "bfe4411aeab6ab3d30ebdf988d14fc126f78f767b034bbdb61458413e850d5f0",
+      "log_sha256": "cd5b65b47503adba64f5961b5abdc330bb69b215ec59b71e95af6b929bc3149d",
+      "checked_5_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(380489,python):2026-11-14-16:48:21.733.340 [op_kernel.cpp:397][NNOP][BinLoadImpl][380489] OpName:[aclnnAbs_0_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab1afb83a8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(380489,python):2026-11-14-16:48:21.970.130 [op_kernel.cpp:397][NNOP][BinLoadImpl][380489] OpName:[aclnnReduceSum_1_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab1afdc808, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float16_int64_high_performance.o",
+        "[DEBUG] OP(380489,python):2026-11-14-16:48:22.057.719 [op_kernel.cpp:397][NNOP][BinLoadImpl][380489] OpName:[aclnnAbs_2_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab1c279ed8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_1c4543fdfe7149b6b0717bd88f061562_high_performance.o",
+        "[DEBUG] OP(380489,python):2026-11-14-16:48:22.226.568 [op_kernel.cpp:397][NNOP][BinLoadImpl][380489] OpName:[aclnnReduceSum_3_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab1cbcc848, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_bfloat16_int64_high_performance.o",
+        "[DEBUG] OP(380489,python):2026-11-14-16:48:22.553.641 [op_kernel.cpp:397][NNOP][BinLoadImpl][380489] OpName:[aclnnReduceSum_5_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab1e1aba28, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+        "[DEBUG] OP(380489,python):2026-11-14-16:48:22.714.725 [op_kernel.cpp:397][NNOP][BinLoadImpl][380489] OpName:[aclnnAbs_8_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab1eb0ce78, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(380489,python):2026-11-14-16:48:23.031.955 [op_kernel.cpp:397][NNOP][BinLoadImpl][380778] OpName:[aclnnReduceSum_23_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xfffd40c7c568, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_int64_int64_high_performance.o"
+      ],
+      "qualified_ops": [
+        "Abs",
+        "ReduceSum"
+      ],
+      "package_sha256": "740f1058f49d3346699e479ded58f1ba59a65ae44e68329efc4fd02bb0d3f5b3",
+      "not_formal_baseline_acceptance": true
+    }
+  ],
+  "package_sha256": "740f1058f49d3346699e479ded58f1ba59a65ae44e68329efc4fd02bb0d3f5b3",
+  "qualified_at": "2026-11-14T17:24:55.081741+00:00"
+}

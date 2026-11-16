@@ -1,0 +1,48 @@
+{
+  "snapshot_at": "2026-11-16T06:18:29.939968+00:00",
+  "scope_total": 2119,
+  "qualified_coverage": 2119,
+  "qualified_route_records": 2136,
+  "contract_metadata_ordinals": 2066,
+  "routes_without_inline_device_us": [],
+  "first100": {
+    "qualified": 100,
+    "fresh": 59,
+    "reused": 41
+  },
+  "last_remaining69": {
+    "qualified": 69,
+    "remaining": 0
+  },
+  "golden42": {
+    "qualified": 42,
+    "new_native_cases": 26,
+    "exact_API_measurement_reuse": 16,
+    "certificates": "reports/baseline-over3-campaign-20261110/ordered100-20261112/GOLDEN42_CERTIFICATES.json"
+  },
+  "complex6": {
+    "qualified": 6,
+    "formal_windows": 90,
+    "baseline_calls": 114,
+    "input_check_backend_change_explicitly_authorized": true,
+    "original_output_checker_golden_dtype_timing_preserved": true
+  },
+  "final_same_env_ratio_closures": {
+    "total": 21,
+    "under3": 13,
+    "retained_over3": 1,
+    "report": "reports/baseline-over3-campaign-20261110/ordered100-20261112/FINAL_SAME_ENV_CLOSURES_CURRENT.json"
+  },
+  "publication_status": "staged, no CI/nightly/website integration performed",
+  "source_and_raw_policy": "Portable text code/results exported; compiled ELF, tensors, full profiler traces and archives remain at recorded original paths/hashes. Source snapshots alone do not rebuild qualified native packages.",
+  "original_evidence_local_root": "/root/dyq/workspace/reports/baseline-over3-campaign-20261110/ordered100-20261112",
+  "original_evidence_hosts": {
+    "server1": "openlibing-DevEnv-661495",
+    "server2": "openlibing-DevEnv-055409",
+    "remote_root": "/opt/baseline-over3-20261110/ordered100-20261112"
+  },
+  "retained_checkpoint_headers": 1150,
+  "original_checkpoint_locators_not_in_export": [],
+  "routes_without_inline_runtime": 100,
+  "routes_without_inline_protocol": 48
+}

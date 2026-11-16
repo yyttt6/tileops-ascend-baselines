@@ -1,0 +1,65 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "SiluAndMulFwdOp",
+      "qwen3-8b-swiglu-b32-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SILU_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SiluAndMulFwdOp",
+      "llama-8b-ffn-decode-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SILU_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SiluFwdOp",
+      "llama-8b-ffn-decode-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SILU_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SiluAndMulFwdOp",
+      "llama-8b-ffn-prefill-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SILU_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SiluAndMulFwdOp",
+      "llama-8b-ffn-prefill-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SILU_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SiluFwdOp",
+      "llama-8b-ffn-prefill-bfloat16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SILU_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SiluFwdOp",
+      "llama-8b-ffn-prefill-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_SILU_CURRENT.partial.json"
+  }
+]

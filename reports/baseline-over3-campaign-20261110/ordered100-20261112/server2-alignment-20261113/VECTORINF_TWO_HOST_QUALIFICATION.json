@@ -1,0 +1,62 @@
+{
+  "two_host_functional_and_private_kernel_verified": true,
+  "scope": "Only5 fulloutput/input small calls perhost, 2same-library original native APIs and originalINT32marker; frozen4 originalchecker/formal15 still required",
+  "qualified_ops": [
+    "Abs",
+    "ReduceMax"
+  ],
+  "hosts": [
+    {
+      "host": "openlibing-DevEnv-661495",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER1_VECTORINF_QUALIFICATION.json",
+      "guard_record_sha256": "cacad0d5042538272096c00291263f5ebdf99fce5cb9de3f5b74d84917bbb220",
+      "result": "server1-vectorinf-qualification-163111384743.json",
+      "result_sha256": "3c1fd8a49cbfd3b5c6f41bd007a1e72fff7809ecc6045bdd60829f322bbb40f3",
+      "log_sha256": "2d1e6fb7faf911382501ceb93e952240a80d9377e5bc1bcf64ee106c01f03b36",
+      "checked_5_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(1191396,python):2026-11-14-16:29:58.867.407 [op_kernel.cpp:397][NNOP][BinLoadImpl][1191396] OpName:[aclnnAbs_0_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaaaf4f2e3f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(1191396,python):2026-11-14-16:29:58.935.069 [op_kernel.cpp:397][NNOP][BinLoadImpl][1191396] OpName:[aclnnAmax_1_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaaaf515a2b8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_float16_int64_high_performance.o",
+        "[DEBUG] OP(1191396,python):2026-11-14-16:29:58.962.993 [op_kernel.cpp:397][NNOP][BinLoadImpl][1191396] OpName:[aclnnAbs_2_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaaaf539af08, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_1c4543fdfe7149b6b0717bd88f061562_high_performance.o",
+        "[DEBUG] OP(1191396,python):2026-11-14-16:29:58.973.431 [op_kernel.cpp:397][NNOP][BinLoadImpl][1191396] OpName:[aclnnAmax_3_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaaaf55c4758, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_bfloat16_int64_high_performance.o",
+        "[DEBUG] OP(1191396,python):2026-11-14-16:29:59.097.939 [op_kernel.cpp:397][NNOP][BinLoadImpl][1191396] OpName:[aclnnAbs_10_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaaaf5b03f18, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(1191396,python):2026-11-14-16:29:59.110.834 [op_kernel.cpp:397][NNOP][BinLoadImpl][1191396] OpName:[aclnnAmax_11_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaaaf5d328f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_float32_int64_high_performance.o"
+      ],
+      "qualified_ops": [
+        "Abs",
+        "ReduceMax"
+      ],
+      "package_sha256": "cc831840db4ed5d54fd405afc140ccd04174c61756dd320149287a5cbcd9dd46",
+      "not_formal_baseline_acceptance": true
+    },
+    {
+      "host": "openlibing-DevEnv-055409",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER2_OPSMATH_VECTORINF_QUALIFICATION.json",
+      "guard_record_sha256": "0c862a91297b11146a9b79cd032d04c0c81a27fe7b0b5aec67f9d82892d19cb8",
+      "result": "server2-opsmath-vectorinf-qualification-163038757680.json",
+      "result_sha256": "74bf4ef0f4459086a0a499aae6f19b73152b0b2a89f4a9785b0b051e3a2310f2",
+      "log_sha256": "ed11bb05e49d7014d6b572b556f42982d2efa2fc36a82a8299fef5ffa5dc033b",
+      "checked_5_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(365865,python):2026-11-14-16:29:24.653.168 [op_kernel.cpp:397][NNOP][BinLoadImpl][365865] OpName:[aclnnAbs_0_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab28534b18, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_d2db1a80c523e7e59a032c95969880af_high_performance.o",
+        "[DEBUG] OP(365865,python):2026-11-14-16:29:24.711.308 [op_kernel.cpp:397][NNOP][BinLoadImpl][365865] OpName:[aclnnAmax_1_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab287609d8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_float16_int64_high_performance.o",
+        "[DEBUG] OP(365865,python):2026-11-14-16:29:24.736.367 [op_kernel.cpp:397][NNOP][BinLoadImpl][365865] OpName:[aclnnAbs_2_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab289a1628, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_1c4543fdfe7149b6b0717bd88f061562_high_performance.o",
+        "[DEBUG] OP(365865,python):2026-11-14-16:29:24.748.893 [op_kernel.cpp:397][NNOP][BinLoadImpl][365865] OpName:[aclnnAmax_3_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab28bcae78, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_bfloat16_int64_high_performance.o",
+        "[DEBUG] OP(365865,python):2026-11-14-16:29:24.881.344 [op_kernel.cpp:397][NNOP][BinLoadImpl][365865] OpName:[aclnnAbs_10_AbsAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab2910a248, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/abs_apt/Abs_5c5e58e043224cccf51a06108010ae13_high_performance.o",
+        "[DEBUG] OP(365865,python):2026-11-14-16:29:24.899.953 [op_kernel.cpp:397][NNOP][BinLoadImpl][365865] OpName:[aclnnAmax_11_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab29338c88, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_float32_int64_high_performance.o"
+      ],
+      "qualified_ops": [
+        "Abs",
+        "ReduceMax"
+      ],
+      "package_sha256": "cc831840db4ed5d54fd405afc140ccd04174c61756dd320149287a5cbcd9dd46",
+      "not_formal_baseline_acceptance": true
+    }
+  ],
+  "package_sha256": "cc831840db4ed5d54fd405afc140ccd04174c61756dd320149287a5cbcd9dd46",
+  "qualified_at": "2026-11-14T16:31:51.807988+00:00"
+}

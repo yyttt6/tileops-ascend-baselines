@@ -1,0 +1,162 @@
+[
+  {
+    "target": 147,
+    "key": [
+      "flash-linear-attention-npu",
+      "BmmFwdOp",
+      "mha-decode-qk-float16"
+    ],
+    "params": {
+      "a": [
+        [
+          64,
+          128,
+          128
+        ],
+        "float16"
+      ],
+      "b": [
+        [
+          64,
+          128,
+          2048
+        ],
+        "float16"
+      ],
+      "d": [
+        [
+          64,
+          128,
+          2048
+        ],
+        "float16"
+      ]
+    },
+    "payload_sha256": "bf662e237523c72cf68ba5ec1c1fa789de304f3454efaa1727b7442fa7ded869",
+    "descriptor_sha256": "f7c36251c73eabee0a8fb6c6f758117d9c110d29834c27d976c99edd5a146e79",
+    "reference_policy": "original_npu",
+    "matches": [
+      709,
+      1558,
+      1704
+    ]
+  },
+  {
+    "target": 148,
+    "key": [
+      "flash-linear-attention-npu",
+      "BmmFwdOp",
+      "square-128-float16"
+    ],
+    "params": {
+      "a": [
+        [
+          8,
+          128,
+          128
+        ],
+        "float16"
+      ],
+      "b": [
+        [
+          8,
+          128,
+          128
+        ],
+        "float16"
+      ],
+      "d": [
+        [
+          8,
+          128,
+          128
+        ],
+        "float16"
+      ]
+    },
+    "payload_sha256": "8f5b1d9fde77b348efd7268c9db3dbdfac987d56eb140811d2aec5475242c1fb",
+    "descriptor_sha256": "0294aedec8bd906af64cc5b5effc35873149054cac7a007263b799a019b16189",
+    "reference_policy": "original_npu",
+    "matches": [
+      102,
+      704,
+      1557,
+      1712
+    ]
+  },
+  {
+    "target": 734,
+    "key": [
+      "ops-tensor",
+      "TruncFwdOp",
+      "256M-bfloat16"
+    ],
+    "params": {
+      "input": [
+        [
+          16384,
+          16384
+        ],
+        "bfloat16"
+      ],
+      "output": [
+        [
+          16384,
+          16384
+        ],
+        "bfloat16"
+      ]
+    },
+    "payload_sha256": "5b0ad4415147d9be5ec675812bd26716136139ac1885fce475e41a3b781c4f80",
+    "descriptor_sha256": "8c04949bb9f32da36d3732432869f5ed65bad4fc8a1ccc72ac9509bb9bdf504f",
+    "reference_policy": "original_npu",
+    "matches": []
+  },
+  {
+    "target": 2052,
+    "key": [
+      "tilelang-ascend",
+      "SSDChunkCouplingFwdOp",
+      "mamba2-grouped-prefill-float16"
+    ],
+    "params": {
+      "C_mat": [
+        [
+          3,
+          3072,
+          8,
+          128
+        ],
+        "float16"
+      ],
+      "B_mat": [
+        [
+          3,
+          3072,
+          8,
+          128
+        ],
+        "float16"
+      ],
+      "cb": [
+        [
+          3,
+          12,
+          8,
+          256,
+          256
+        ],
+        "float16"
+      ],
+      "chunk_len": 256
+    },
+    "payload_sha256": "2d18cf138c25348afced03c5ad27be20bfdfd0e1937407deddd934e4c993f997",
+    "descriptor_sha256": "d000a710c55ea0b45d795e220126cf4958a6a1ffa7a82608cfa89036553158d4",
+    "reference_policy": "original_npu",
+    "matches": [
+      182,
+      1080,
+      1490
+    ]
+  }
+]

@@ -1,0 +1,325 @@
+{
+  "checked_at": "2026-11-13T16:13:43.326327+00:00",
+  "accepted_original_APIs": 7,
+  "rows": [
+    {
+      "ordinal": 1349,
+      "key": [
+        "torch-eager",
+        "FusedAddRMSNormPerTokenQuantFwdOp",
+        "llama-8b-decode-b64-bfloat16-float8_e4m3fn"
+      ],
+      "api": "complete original Torch extended math on inputdevice; unchanged CPUoracle separately",
+      "device_us": 77.433,
+      "host_us_diagnostic": 1212.2032853464286,
+      "checkpoint": "rollout-vllm-torch-extended-device-1349-1350-1351-1352-1353-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "30f4597959146941c0cb041b2992352ba8a3d1066d68d1c051fb420d03c17036",
+      "source_sha256": "c64a5677db7714d5136e49d1f4daa51d60edc13470e92fabbe80cb6d525cd56a",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/torch_extended_device_reference.py": "669f44fa8ccfccbe39d9a6e30b1ca0c73c35637d3ecd380737be6ed5ce9b97a1",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/ascend_extended.py": "cd20de054e2684d2e6dba098e9f66cfa80a6721e3c2be8f72074ce89b5d5f6ed"
+      },
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "e7e65d031a27e4bb650bad29f0ffddeaa9e6b84437bb9bf48f638a59524e8fe6",
+      "prepare_sha256": "42fe92596a293365e36e2bbaca6aacc5db6d8bf8f32738e50629377a03d0fd26",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Original CPUoracle neverused as devicetiming control; no speedupclaim",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "full_reverse_AST_identical": true,
+        "only_removed_CPU_oracle_placement": [
+          "x.cpu()",
+          "residual.cpu()",
+          "weight.cpu()"
+        ],
+        "complete_original_arithmetic_roundings_outputs_state_semantics_retained": true,
+        "original_CPU_oracle_unchanged": true
+      },
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 1350,
+      "key": [
+        "torch-eager",
+        "FusedAddRMSNormPerTokenQuantFwdOp",
+        "llama-70b-decode-b64-bfloat16-float8_e4m3fn"
+      ],
+      "api": "complete original Torch extended math on inputdevice; unchanged CPUoracle separately",
+      "device_us": 91.51713333333333,
+      "host_us_diagnostic": 1147.367370625337,
+      "checkpoint": "rollout-vllm-torch-extended-device-1349-1350-1351-1352-1353-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "30f4597959146941c0cb041b2992352ba8a3d1066d68d1c051fb420d03c17036",
+      "source_sha256": "c64a5677db7714d5136e49d1f4daa51d60edc13470e92fabbe80cb6d525cd56a",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/torch_extended_device_reference.py": "669f44fa8ccfccbe39d9a6e30b1ca0c73c35637d3ecd380737be6ed5ce9b97a1",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/ascend_extended.py": "cd20de054e2684d2e6dba098e9f66cfa80a6721e3c2be8f72074ce89b5d5f6ed"
+      },
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "451c56e77cd37b597c108fedc18c9fa9aa0b77c8a2d12ee43dd9ff4037133ec8",
+      "prepare_sha256": "3ef9ba4027285502b62a8c5dff3ad8cdc86c1c269f2fbdbba4b1dc784d743ce9",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Original CPUoracle neverused as devicetiming control; no speedupclaim",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "full_reverse_AST_identical": true,
+        "only_removed_CPU_oracle_placement": [
+          "x.cpu()",
+          "residual.cpu()",
+          "weight.cpu()"
+        ],
+        "complete_original_arithmetic_roundings_outputs_state_semantics_retained": true,
+        "original_CPU_oracle_unchanged": true
+      },
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 1351,
+      "key": [
+        "torch-eager",
+        "FusedAddRMSNormPerTokenQuantFwdOp",
+        "llama-70b-decode-b1-bfloat16-float8_e4m3fn"
+      ],
+      "api": "complete original Torch extended math on inputdevice; unchanged CPUoracle separately",
+      "device_us": 48.742599999999996,
+      "host_us_diagnostic": 1251.2007107337315,
+      "checkpoint": "rollout-vllm-torch-extended-device-1349-1350-1351-1352-1353-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "30f4597959146941c0cb041b2992352ba8a3d1066d68d1c051fb420d03c17036",
+      "source_sha256": "c64a5677db7714d5136e49d1f4daa51d60edc13470e92fabbe80cb6d525cd56a",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/torch_extended_device_reference.py": "669f44fa8ccfccbe39d9a6e30b1ca0c73c35637d3ecd380737be6ed5ce9b97a1",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/ascend_extended.py": "cd20de054e2684d2e6dba098e9f66cfa80a6721e3c2be8f72074ce89b5d5f6ed"
+      },
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "6918a869be18236aae9ffea76bd4393ed80f81f98e4dbd8f14c31dd04fcc5e02",
+      "prepare_sha256": "ec4cc171d2c01b186a6a7c7345b38e304b93aa400b8140ea960e49215f230b38",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Original CPUoracle neverused as devicetiming control; no speedupclaim",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "full_reverse_AST_identical": true,
+        "only_removed_CPU_oracle_placement": [
+          "x.cpu()",
+          "residual.cpu()",
+          "weight.cpu()"
+        ],
+        "complete_original_arithmetic_roundings_outputs_state_semantics_retained": true,
+        "original_CPU_oracle_unchanged": true
+      },
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 1352,
+      "key": [
+        "torch-eager",
+        "FusedAddRMSNormPerTokenQuantFwdOp",
+        "llama-8b-decode-b256-bfloat16-float8_e4m3fn"
+      ],
+      "api": "complete original Torch extended math on inputdevice; unchanged CPUoracle separately",
+      "device_us": 96.42660000000001,
+      "host_us_diagnostic": 1158.3800427615643,
+      "checkpoint": "rollout-vllm-torch-extended-device-1349-1350-1351-1352-1353-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "30f4597959146941c0cb041b2992352ba8a3d1066d68d1c051fb420d03c17036",
+      "source_sha256": "c64a5677db7714d5136e49d1f4daa51d60edc13470e92fabbe80cb6d525cd56a",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/torch_extended_device_reference.py": "669f44fa8ccfccbe39d9a6e30b1ca0c73c35637d3ecd380737be6ed5ce9b97a1",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/ascend_extended.py": "cd20de054e2684d2e6dba098e9f66cfa80a6721e3c2be8f72074ce89b5d5f6ed"
+      },
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "23b0e90b7616d46305b13ef7bb06c2c0606a718f1a88726d5a5072531b5822e7",
+      "prepare_sha256": "b1e5dbfeb036c3531c2b8c504883b0b59cd7fca4083f6974351bc9e372c0e3b1",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Original CPUoracle neverused as devicetiming control; no speedupclaim",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "full_reverse_AST_identical": true,
+        "only_removed_CPU_oracle_placement": [
+          "x.cpu()",
+          "residual.cpu()",
+          "weight.cpu()"
+        ],
+        "complete_original_arithmetic_roundings_outputs_state_semantics_retained": true,
+        "original_CPU_oracle_unchanged": true
+      },
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 1353,
+      "key": [
+        "torch-eager",
+        "FusedAddRMSNormPerTokenQuantFwdOp",
+        "llama-70b-decode-b256-bfloat16-float8_e4m3fn"
+      ],
+      "api": "complete original Torch extended math on inputdevice; unchanged CPUoracle separately",
+      "device_us": 122.8574,
+      "host_us_diagnostic": 1265.6566376487415,
+      "checkpoint": "rollout-vllm-torch-extended-device-1349-1350-1351-1352-1353-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "30f4597959146941c0cb041b2992352ba8a3d1066d68d1c051fb420d03c17036",
+      "source_sha256": "c64a5677db7714d5136e49d1f4daa51d60edc13470e92fabbe80cb6d525cd56a",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/torch_extended_device_reference.py": "669f44fa8ccfccbe39d9a6e30b1ca0c73c35637d3ecd380737be6ed5ce9b97a1",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/ascend_extended.py": "cd20de054e2684d2e6dba098e9f66cfa80a6721e3c2be8f72074ce89b5d5f6ed"
+      },
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "ab16723bc40fa090a14703b8508cf407e0abbb026c032c155c0ccd13ff969561",
+      "prepare_sha256": "aac1bb7323bc5d6ba482c3dd261c87999e20a16399a05286c60403010e3ff449",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Original CPUoracle neverused as devicetiming control; no speedupclaim",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "full_reverse_AST_identical": true,
+        "only_removed_CPU_oracle_placement": [
+          "x.cpu()",
+          "residual.cpu()",
+          "weight.cpu()"
+        ],
+        "complete_original_arithmetic_roundings_outputs_state_semantics_retained": true,
+        "original_CPU_oracle_unchanged": true
+      },
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 1348,
+      "key": [
+        "torch-eager",
+        "FusedAddRMSNormPerTokenQuantFwdOp",
+        "llama-8b-decode-b1-bfloat16-float8_e4m3fn"
+      ],
+      "api": "complete original Torch extended math on inputdevice; unchanged CPUoracle separately",
+      "device_us": 47.72580000000001,
+      "host_us_diagnostic": 932.0353468259176,
+      "checkpoint": "rollout-vllm-torch-extended-device-1348-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "1dfd1fc98ce6fa4f15d886a06be5ac31f98cb431d29fffd05fd94fd8d17c2312",
+      "source_sha256": "c64a5677db7714d5136e49d1f4daa51d60edc13470e92fabbe80cb6d525cd56a",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/torch_extended_device_reference.py": "669f44fa8ccfccbe39d9a6e30b1ca0c73c35637d3ecd380737be6ed5ce9b97a1",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/ascend_extended.py": "cd20de054e2684d2e6dba098e9f66cfa80a6721e3c2be8f72074ce89b5d5f6ed"
+      },
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "b9245ec3ebf4086918bf9fe329eb96dd5b0f0f04241829ae3451b46ef2dc35aa",
+      "prepare_sha256": "b4bf7d96c933af932e262a2c738d0d4adf53c2b8b07ab0d743d7da0caadb7aeb",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Original CPUoracle neverused as devicetiming control; no speedupclaim",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "full_reverse_AST_identical": true,
+        "only_removed_CPU_oracle_placement": [
+          "x.cpu()",
+          "residual.cpu()",
+          "weight.cpu()"
+        ],
+        "complete_original_arithmetic_roundings_outputs_state_semantics_retained": true,
+        "original_CPU_oracle_unchanged": true
+      },
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 1296,
+      "key": [
+        "torch-eager",
+        "CausalConv1dUpdateFwdOp",
+        "mamba2-2.7b-decode-b1-bfloat16"
+      ],
+      "api": "complete original Torch extended math on inputdevice; unchanged CPUoracle separately",
+      "device_us": 39.67646666666667,
+      "host_us_diagnostic": 898.3766349653403,
+      "checkpoint": "rollout-vllm-torch-extended-device-1296-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "e4d9fc29a65bc10e50255d9527d613e2e64e6c7087f82744f8333417c79f131a",
+      "source_sha256": "c64a5677db7714d5136e49d1f4daa51d60edc13470e92fabbe80cb6d525cd56a",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/torch_extended_device_reference.py": "669f44fa8ccfccbe39d9a6e30b1ca0c73c35637d3ecd380737be6ed5ce9b97a1",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/ascend_extended.py": "cd20de054e2684d2e6dba098e9f66cfa80a6721e3c2be8f72074ce89b5d5f6ed"
+      },
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "03c298cb5084df7f0b3e3b48fe0dc587594d66bc26204369334ad9013c514383",
+      "prepare_sha256": "2dd75ad5f1a39ae3fffc96c4077a5a458e38402ee4fb6112caaa01228a8b8cc2",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Original CPUoracle neverused as devicetiming control; no speedupclaim",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "full_reverse_AST_identical": true,
+        "only_removed_CPU_oracle_placement": [
+          "conv_state.cpu()",
+          "x.cpu()",
+          "weight.cpu()",
+          "bias.cpu()"
+        ],
+        "complete_original_arithmetic_roundings_outputs_state_semantics_retained": true,
+        "original_CPU_oracle_unchanged": true
+      },
+      "not_final_under3_ratio_closure": true
+    }
+  ],
+  "candidate_only_not_paired_performance": true,
+  "old_guard_and_failures_retained": true,
+  "historical_or_public_ratios_not_updated": true
+}

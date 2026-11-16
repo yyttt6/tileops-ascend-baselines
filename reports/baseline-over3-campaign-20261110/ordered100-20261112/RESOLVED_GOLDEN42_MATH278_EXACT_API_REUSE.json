@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-11-16T05:02:58.624751+00:00",
+  "rows": [
+    {
+      "ordinal": 278,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "source_ordinal": 490,
+      "source_key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "api": "ops-nn complete original aclnnMatmul, original alignedpacking and timedrun AST",
+      "device_us": 93.06766666666667,
+      "checkpoint": "rollout-golden42-pad4-2-490-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "55974cbeacf1387d548c110a9511333eca8719191bb9324838ff2362313736d8",
+      "payload_sha256": "790d2aa047aada5f1d36877feb360791f726ec166c3f1c27e737405bcfc9868b",
+      "descriptor_sha256": "da766d996905ab2c1f5ec56f9e47508e1da9d2b8c997244c87f896718595c852",
+      "corrected_golden_sha256": "04698f4f73573e052ee1c30c913c73679c5952cdb5cb8719370a10c8202203fe",
+      "source_qualified_row": {
+        "ordinal": 490,
+        "key": [
+          "ops-nn",
+          "GemmFwdOp",
+          "ds-v3-m64-down-bfloat16"
+        ],
+        "api": "ops-nn complete original aclnnMatmul, original alignedpacking and timedrun AST",
+        "device_us": 93.06766666666667,
+        "source_attribution": "originalNNcompletePad4GemmAPI",
+        "checkpoint": "rollout-golden42-pad4-2-490-golden42-routefix-h1-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "55974cbeacf1387d548c110a9511333eca8719191bb9324838ff2362313736d8",
+        "payload_sha256": "790d2aa047aada5f1d36877feb360791f726ec166c3f1c27e737405bcfc9868b",
+        "full_checker_15raw_guard_valid": true,
+        "actual_original_AoT_source_device_profile_identity_verified": true,
+        "not_paired_or_finalratio": true
+      },
+      "same_frozen_params_inputs_descriptor_Exact_checker_and_corrected_golden": true,
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "Audited complete original NN Pad4 API alternative; exact qualified measurement reuse",
+      "new_native_runs": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    }
+  ],
+  "not_published": true
+}

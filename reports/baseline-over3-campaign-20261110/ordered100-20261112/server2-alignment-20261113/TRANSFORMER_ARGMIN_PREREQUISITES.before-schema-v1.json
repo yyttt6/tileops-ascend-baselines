@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-15T05:10:50.784834+00:00",
+  "complete3output_fixture_and_private_source_launch_verified_bothhosts": true,
+  "proofs": [
+    {
+      "host": 1,
+      "probe": "server1-transformer-selection-probe-v1-045500788971.json",
+      "guard_sha256": "0114a9a4294cec7316e4008c96f5e3d10cc388ae257df342a74c769fc3b96593",
+      "log_sha256": "1a75faa5dba038acbeaaebdaf91a073a1aacfcebd61400591d85fe97211dc7cc",
+      "private_compile_and_actual_launch_count": 2,
+      "ELF_not_retained_in_probe": true
+    },
+    {
+      "host": 2,
+      "probe": "server2-transformer-selection-probe-v1-045414014335.json",
+      "guard_sha256": "32067b70345afc550b157ece1acaf78af65d936859ab926508d741bd7a027c07",
+      "log_sha256": "68268ef2fcd280d1edc4696816ac974f0598c2f6fc3d8f6553607d34b5efdf46",
+      "private_compile_and_actual_launch_count": 2,
+      "ELF_not_retained_in_probe": true
+    }
+  ],
+  "formal_acceptance_requires_per_process_ELF_capture": true,
+  "first_scope": [
+    806
+  ],
+  "no_kernel_or_precision_or_tolerance_changes": true
+}

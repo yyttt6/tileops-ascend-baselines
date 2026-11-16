@@ -1,0 +1,11 @@
+{
+    "binFileName": "Test_null_value",
+    "binFileSuffix": ".o",
+    "blockDim": 8,
+    "localMemorySize": null,
+    "workspace": {
+        "size": [
+            1024
+        ]
+    }
+}

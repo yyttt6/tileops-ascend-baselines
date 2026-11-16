@@ -1,0 +1,138 @@
+[
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "LogicalAndFwdOp",
+      "hidden-state-prefill-bool"
+    ],
+    "fixed": false,
+    "evidence": {
+      "index": 1,
+      "op": "LogicalAndFwdOp",
+      "case": "hidden-state-prefill-bool",
+      "variant": "native",
+      "attempt": "final1",
+      "status": "formal_raw_verified",
+      "result_sha256": "43ed5c1ee66f865c1b5d3ec459cd792d2ed289eeb690f7c7fe2f4ff98d42223a",
+      "host_us": 1918.4293535848458,
+      "comparison_metric": "end_to_end_mean_ms",
+      "host_timing_sha256": "73ad09a898d36fafb0f8d9368db8de35d2dbaf83984e6a0cc783137d82e9d63d",
+      "us": 747.4174,
+      "windows": 15,
+      "task_counts": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "aicpu_counts": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "old_web_torch_us": "707.8984",
+      "guard_sha256": "f6cae9e3fc7ccdb2ece2ab80a0f016f5fccb7b1a83e636fe59d896b4432951a3"
+    },
+    "hardware": {
+      "torch": "2.13.0+cpu",
+      "torch_npu": "2.13.0.rc1",
+      "cube": 32,
+      "vector": 64,
+      "hostname": "a5d0b50dc68f",
+      "backend": "sgl-logical-complete-mul"
+    },
+    "status": "originalAPIverified_noimprovementclaim",
+    "historical_ratio_update": false
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "LogicalAndFwdOp",
+      "llama-7b-ffn-bool"
+    ],
+    "fixed": false,
+    "evidence": {
+      "index": 2,
+      "op": "LogicalAndFwdOp",
+      "case": "llama-7b-ffn-bool",
+      "variant": "native",
+      "attempt": "final1",
+      "status": "formal_raw_verified",
+      "result_sha256": "f075f301c19d6a348dd7ae2bff2ca7e39126b208b373d41ee14b9e36bfe15ca5",
+      "host_us": 2207.6839270691075,
+      "comparison_metric": "end_to_end_mean_ms",
+      "host_timing_sha256": "c03276d8452313205332c1edca45696e4416355fea3cc7b8a4fff23bc88e7212",
+      "us": 1021.4855333333333,
+      "windows": 15,
+      "task_counts": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "aicpu_counts": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "old_web_torch_us": "1026.9884666666667",
+      "guard_sha256": "625c24199b61de12c83a8b1e448f82a563657edda2b4dfc2c4ed2938c9d3f33c"
+    },
+    "hardware": {
+      "torch": "2.13.0+cpu",
+      "torch_npu": "2.13.0.rc1",
+      "cube": 32,
+      "vector": 64,
+      "hostname": "a5d0b50dc68f",
+      "backend": "sgl-logical-complete-mul"
+    },
+    "status": "originalAPIverified_noimprovementclaim",
+    "historical_ratio_update": false
+  }
+]

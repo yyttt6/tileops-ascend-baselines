@@ -1,0 +1,11 @@
+{
+  "ordinals": [
+    760,
+    762,
+    764,
+    765
+  ],
+  "CPU_preflight_receipt_sha256": "1faac64c02cb80d0c01efb6884b6976b5f9f91e3e338c89d165a23d51cbb2c68",
+  "proof": "server2-alignment-20261113/BMM_REMAINING_CPU_REFERENCE_PREFLIGHT.json",
+  "no_native_acceptance_or_oracle_change": true
+}

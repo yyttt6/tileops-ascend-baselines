@@ -1,0 +1,133 @@
+{
+  "checked_at": "2026-11-15T11:12:57.498699+00:00",
+  "accepted_complete_APIs": 7,
+  "rows": [
+    {
+      "ordinal": 758,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "square-256-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 531.7674666666667,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-758-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "de8623e7ed39a01becb1f9fcc91d3b2381a0eb8da69ca4a4dcfca535a267bea3",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "44a0470dc697a3d433649cf71b8e84ed9b14a1e73d9c6d1baccf8ee544455778",
+      "prepare_sha256": "30405bde1e3833cc2ebd1a88bbc5cb4fa2b421cbced85ce2b510d9aa76de7f49",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 760,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "mha-decode-qk-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 1092.8013333333333,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-760-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "229ab946e69d531c5a03e7c1c3b5e765bb6e6a7e7eb2f44ceb974ddd3b90b81d",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "bf662e237523c72cf68ba5ec1c1fa789de304f3454efaa1727b7442fa7ded869",
+      "prepare_sha256": "338e873e8ef6a325fe956a326111773d24bb8314cf571643fa3392cfd30b71de",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 762,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "square-128-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 107.38066666666667,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-762-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "5497e87ffc2b343146ddfeb6e002c059b22142da87d42f8c5301078bb93c7ac7",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "8f5b1d9fde77b348efd7268c9db3dbdfac987d56eb140811d2aec5475242c1fb",
+      "prepare_sha256": "e921bbff2aeffc89f7ae62d2bb6a751639214b472e02d43ad2ba509b91e53dd1",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 764,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "square-512-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 338.69086666666664,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-764-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "e38d1b49fe621f6825ffd767f0a886955b258e61b4322861933f83cb10cb3c3b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "7cfe9a6b306eacd8eedde4aa79f29d45f73092fc5a18323db3b76c1386d09d73",
+      "prepare_sha256": "993e8fa2659a0d363f1a8105bd2a3298a9fa5a5ae1221d246a7597befbb87af4",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 765,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "square-1k-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 323.6895333333333,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-765-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c6060c4b2f203f60e648d0ef3f02ac93edaec6508c17bb0acd2dd0839c5015ec",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "5f6236dba7ad0ce0f6821e2b37666bb242e2dc4183431e860bb4eae575c07bd0",
+      "prepare_sha256": "8e056196a5432afe3a724bf9a0a7b1d4d41caa501f25cbf854446f89b739c3ac",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 761,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "mha-decode-qk-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 1094.335,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-761-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a1c4b6608a84adbccb9425779cd50240c7a79a45ca4ae506b51645c1b8eb1693",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "4a46e4ebf412db5657aa1a63103d2a02eb4f4e47aaf1f6367972e765b1c1fc48",
+      "prepare_sha256": "8cd6a569c905accefac6955dec6a9ac8ed4f86c60048dbd83e053421f129e60b",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 763,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "square-128-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 106.63866666666668,
+      "checkpoint": "rollout-ops-transformer-bmm-api-sdk-763-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "47f35f6121a0bd3b8f0cce7d61a3a46d559bb5876fb2abdae8e687a771cae687",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "1856d97f25ac84e5830fc46ce9bbb449c798ef5b1372d243811c34386c4375c8",
+      "prepare_sha256": "f969ed35680a91ba91f2e1c43eb56a59e295d93fffda9ba4227a1e155f591189",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

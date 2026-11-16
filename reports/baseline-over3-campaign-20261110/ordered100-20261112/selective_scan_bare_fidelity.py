@@ -1,0 +1,5 @@
+from pathlib import Path
+import json,hashlib,sys,datetime
+sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def verify_runtime_source_identity(P,i,meta):
+ P=Path(P);assert i==1499 and meta['key']==['torch-eager','SelectiveScanFwdOp','bare-scan-bfloat16'];assert meta['source_commit']=='08f66b153c44b47330e7fe4311470152f287a112' and meta['no_NPU_imported'] and meta['CPU_published_FP32_program_vs_original_frozen_FP64_oracle_and_checker_passed'];assert all(sha(p)==s for p,s in meta['sources'].items());d=P/'prepared-selective-scan-bare-08f'/str(i);assert sha(d/'payload.pt')==meta['payload_sha256'] and sha(d/'case.pkl')==meta['descriptor_sha256'];out=P/'runs'/sys.argv[1]/str(i);out.mkdir(parents=True,exist_ok=True);(out/'cached_input_source_proof.json').write_text(json.dumps({'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'ordinal':i,'no_source_delta':True,'old_input_namespaces_unchanged':True,'original_frozen_checker_and_FP64_oracle_retained':True,'payload_sha256':meta['payload_sha256']},indent=2));return True

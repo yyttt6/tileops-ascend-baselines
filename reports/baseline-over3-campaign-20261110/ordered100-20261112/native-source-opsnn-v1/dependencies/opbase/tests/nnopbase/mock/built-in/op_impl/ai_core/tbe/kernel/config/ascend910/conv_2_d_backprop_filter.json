@@ -1,0 +1,382 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "c5b5e15be984ceef7452036545c2c3fc85caac1ea4df2c033934eafe9aae85df,111cf90c76b34235305f5ec77cfa5a48e3f563b85bdd99d03a7d883966ed27cd,2262cc7f0923d1b0982229f5e31784b0fd1bc0c36d071317b1f16c4cc5a1e3cc,e17dc885b122e875a0a633192e458cd7a34f077dee5efce5d15315ea3bf1a06c,5954de5f1990e5fbdf6e166ae09e84e1e47f5c982f5691672772d0c17efcb867",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_format": "NCHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "filter_size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "NCHW",
+          "ori_format": "NCHW",
+          "shape": [
+            4
+          ],
+          "ori_shape": [
+            4
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_format": "NCHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "ori_format": "NCHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/conv2d_backprop_filter/Conv2DBackpropFilter_NC1HWC0_FRACTALZ_FP16_FP32_NCHW_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "c5b5e15be984ceef7452036545c2c3fc85caac1ea4df2c033934eafe9aae85df,111cf90c76b34235305f5ec77cfa5a48e3f563b85bdd99d03a7d883966ed27cd,2262cc7f0923d1b0982229f5e31784b0fd1bc0c36d071317b1f16c4cc5a1e3cc,e17dc885b122e875a0a633192e458cd7a34f077dee5efce5d15315ea3bf1a06c,5954de5f1990e5fbdf6e166ae09e84e1e47f5c982f5691672772d0c17efcb867",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_format": "NCHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "filter_size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "NCHW",
+          "ori_format": "NCHW",
+          "shape": [
+            4
+          ],
+          "ori_shape": [
+            4
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_format": "NCHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "ori_format": "NCHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/conv2d_backprop_filter/Conv2DBackpropFilter_NC1HWC0_FRACTALZ_FP16_FP32_NCHW_all_deterministic.json"
+      }
+    }
+  ]
+}

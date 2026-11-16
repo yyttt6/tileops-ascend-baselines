@@ -1,0 +1,185 @@
+{
+  "checked_at": "2026-11-16T05:23:29.772581+00:00",
+  "rows": [
+    {
+      "ordinal": 372,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "source_ordinal": 184,
+      "source_key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "api": "FLA native matrix product + original constant causal tap mask",
+      "device_us": 2450.6252,
+      "checkpoint": "rollout-fla-tap-api-sdk-184-golden42-scopefix-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "d93718517ea2e1c507463972e3c0197eca54f0716316aaf08d59787ecf4584d4",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "corrected_golden_sha256": "b9c1f85e58a5f70b042f99123f00d93e7162efa39883664fbc582454b6f5a5c8",
+      "source_qualified_row": {
+        "ordinal": 184,
+        "key": [
+          "flash-linear-attention-npu",
+          "SSDChunkCouplingFwdOp",
+          "mamba2-2p7b-bfloat16"
+        ],
+        "api": "FLA native matrix product + original constant causal tap mask",
+        "device_us": 2450.6252,
+        "checkpoint": "rollout-fla-tap-api-sdk-184-golden42-scopefix-h1-v8.CHECKPOINT.json",
+        "checkpoint_sha256": "d93718517ea2e1c507463972e3c0197eca54f0716316aaf08d59787ecf4584d4",
+        "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+        "protocol": "ascend950-isolated-ffts-v3",
+        "full_checker_15raw_guard_valid": true,
+        "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+        "not_paired_or_final_ratio": true
+      },
+      "same_frozen_params_inputs_descriptor_Exact_checker_and_corrected_golden": true,
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "Audited complete original flash-linear-attention-npu API alternative; exact qualified measurement reuse",
+      "new_native_runs": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 804,
+      "key": [
+        "ops-transformer",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "source_ordinal": 184,
+      "source_key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "api": "FLA native matrix product + original constant causal tap mask",
+      "device_us": 2450.6252,
+      "checkpoint": "rollout-fla-tap-api-sdk-184-golden42-scopefix-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "d93718517ea2e1c507463972e3c0197eca54f0716316aaf08d59787ecf4584d4",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "corrected_golden_sha256": "b9c1f85e58a5f70b042f99123f00d93e7162efa39883664fbc582454b6f5a5c8",
+      "source_qualified_row": {
+        "ordinal": 184,
+        "key": [
+          "flash-linear-attention-npu",
+          "SSDChunkCouplingFwdOp",
+          "mamba2-2p7b-bfloat16"
+        ],
+        "api": "FLA native matrix product + original constant causal tap mask",
+        "device_us": 2450.6252,
+        "checkpoint": "rollout-fla-tap-api-sdk-184-golden42-scopefix-h1-v8.CHECKPOINT.json",
+        "checkpoint_sha256": "d93718517ea2e1c507463972e3c0197eca54f0716316aaf08d59787ecf4584d4",
+        "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+        "protocol": "ascend950-isolated-ffts-v3",
+        "full_checker_15raw_guard_valid": true,
+        "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+        "not_paired_or_final_ratio": true
+      },
+      "same_frozen_params_inputs_descriptor_Exact_checker_and_corrected_golden": true,
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "Audited complete original flash-linear-attention-npu API alternative; exact qualified measurement reuse",
+      "new_native_runs": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 1082,
+      "key": [
+        "sgl-kernel-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "source_ordinal": 184,
+      "source_key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "api": "FLA native matrix product + original constant causal tap mask",
+      "device_us": 2450.6252,
+      "checkpoint": "rollout-fla-tap-api-sdk-184-golden42-scopefix-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "d93718517ea2e1c507463972e3c0197eca54f0716316aaf08d59787ecf4584d4",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "corrected_golden_sha256": "b9c1f85e58a5f70b042f99123f00d93e7162efa39883664fbc582454b6f5a5c8",
+      "source_qualified_row": {
+        "ordinal": 184,
+        "key": [
+          "flash-linear-attention-npu",
+          "SSDChunkCouplingFwdOp",
+          "mamba2-2p7b-bfloat16"
+        ],
+        "api": "FLA native matrix product + original constant causal tap mask",
+        "device_us": 2450.6252,
+        "checkpoint": "rollout-fla-tap-api-sdk-184-golden42-scopefix-h1-v8.CHECKPOINT.json",
+        "checkpoint_sha256": "d93718517ea2e1c507463972e3c0197eca54f0716316aaf08d59787ecf4584d4",
+        "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+        "protocol": "ascend950-isolated-ffts-v3",
+        "full_checker_15raw_guard_valid": true,
+        "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+        "not_paired_or_final_ratio": true
+      },
+      "same_frozen_params_inputs_descriptor_Exact_checker_and_corrected_golden": true,
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "Audited complete original flash-linear-attention-npu API alternative; exact qualified measurement reuse",
+      "new_native_runs": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 1255,
+      "key": [
+        "vllm-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "source_ordinal": 184,
+      "source_key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "api": "FLA native matrix product + original constant causal tap mask",
+      "device_us": 2450.6252,
+      "checkpoint": "rollout-fla-tap-api-sdk-184-golden42-scopefix-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "d93718517ea2e1c507463972e3c0197eca54f0716316aaf08d59787ecf4584d4",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "corrected_golden_sha256": "b9c1f85e58a5f70b042f99123f00d93e7162efa39883664fbc582454b6f5a5c8",
+      "source_qualified_row": {
+        "ordinal": 184,
+        "key": [
+          "flash-linear-attention-npu",
+          "SSDChunkCouplingFwdOp",
+          "mamba2-2p7b-bfloat16"
+        ],
+        "api": "FLA native matrix product + original constant causal tap mask",
+        "device_us": 2450.6252,
+        "checkpoint": "rollout-fla-tap-api-sdk-184-golden42-scopefix-h1-v8.CHECKPOINT.json",
+        "checkpoint_sha256": "d93718517ea2e1c507463972e3c0197eca54f0716316aaf08d59787ecf4584d4",
+        "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+        "protocol": "ascend950-isolated-ffts-v3",
+        "full_checker_15raw_guard_valid": true,
+        "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+        "not_paired_or_final_ratio": true
+      },
+      "same_frozen_params_inputs_descriptor_Exact_checker_and_corrected_golden": true,
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "Audited complete original flash-linear-attention-npu API alternative; exact qualified measurement reuse",
+      "new_native_runs": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    }
+  ],
+  "not_published": true,
+  "new_device_samples": 0,
+  "source_qualification_sha256": "2d72eb2c0bae80c0e249f8ff5aecd9356a9f0cbe76ae9911fa41b78c55db2f1e",
+  "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c"
+}

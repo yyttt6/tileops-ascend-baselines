@@ -1,0 +1,1 @@
+Exact boolean CNN route only. Lossless FP32 truth storage conversion retained; complete original SGL API with validated broadcast layout. Both originalisolated15/checker/source proofs retained, no historical ratio publication.

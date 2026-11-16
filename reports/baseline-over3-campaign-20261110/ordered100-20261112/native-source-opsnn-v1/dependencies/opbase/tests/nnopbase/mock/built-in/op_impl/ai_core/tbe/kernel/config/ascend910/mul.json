@@ -1,0 +1,718 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/27,2/27,2/27,2",
+        "Mul/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "staticKey": "6e574c20a066b3f7d982ef281c86da7d13b377e29fbd1bc09f34b574cf29a16b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_ce3d1ff8ba23a0bcb292da3577c1625d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/27,2/0,2/0,2",
+        "Mul/d=1,p=0/27,2/0,2/0,2"
+      ],
+      "staticKey": "8146eb5da5e306b6ba67e77c20a24dbbee2045cca7166e5a3513ca5351eab052",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_ad3dc477f9ba29b24364d3afafe803d3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/12,2/12,2/12,2",
+        "Mul/d=1,p=0/12,2/12,2/12,2"
+      ],
+      "staticKey": "03e83636f4a9f250456e57339c52a818b17d58cc239a30f5e2be56833de250ae",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_91d2a3cdd75d915a368582ec5f440af1_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/33,2/33,2/33,2",
+        "Mul/d=1,p=0/33,2/33,2/33,2"
+      ],
+      "staticKey": "d1fa4b84a0b5121f3c1e1335670cfd7b55376bf47587c20baccd95e9aa98cbbb",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "complex32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "complex32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "complex32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_e155540d1180855a8ac767a0a68a64cc_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/16,2/16,2/16,2",
+        "Mul/d=1,p=0/16,2/16,2/16,2"
+      ],
+      "staticKey": "28dbf5198b2a58e43803c34516fb056da73ec65de3d5eafad060d22f2c992132",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "complex64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "complex64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "complex64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_4d4a93baeedc8365d825f81e8e2808a6_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/1,2/1,2/1,2",
+        "Mul/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "24db4d78a3a31c0287aa11345320c199348443901fef8fe630f68f86fd5dc348",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_93b3f8e9594b4018902b635fff3a83c5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/1,2/0,2/0,2",
+        "Mul/d=1,p=0/1,2/0,2/0,2"
+      ],
+      "staticKey": "6b2d024dcf0a621801547fa08313ffbdf66d81bfbaed9af3cde8633d1992ef24",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_9c2c7dc3eb85146f4f35ed0f4a8d3e85_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/0,2/27,2/0,2",
+        "Mul/d=1,p=0/0,2/27,2/0,2"
+      ],
+      "staticKey": "939a9785864be7e241f30ec0e667ad69ca110694c448b489f05835704a46b589",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_28b8f2963b2205f1d66cfc7a1da60151_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/0,2/1,2/0,2",
+        "Mul/d=1,p=0/0,2/1,2/0,2"
+      ],
+      "staticKey": "2cfcbfa393c7f455ffc06d0349dc321a7a5e07a4047bce03dc168ee23b1310d8",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_79e66c1294019a7d2cd0617ea696923a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/0,2/0,2/0,2",
+        "Mul/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "295935613b943d6a71aa3e5b596ee7da1f284cfde70cbf59960f8c546b5d4d30",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_ee98c6628030785f610b924ab1557b31_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/3,2/3,2/3,2",
+        "Mul/d=1,p=0/3,2/3,2/3,2"
+      ],
+      "staticKey": "75047c2edb77e42c0c726fa5413a1b9940aca6072fa87126160fc09d3d307b1a",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_9342884c99c006e21fc9d5d9260b8bef_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/9,2/9,2/9,2",
+        "Mul/d=1,p=0/9,2/9,2/9,2"
+      ],
+      "staticKey": "404d0b7a58ef287687a3d011e31ac4a11b1dabab81260be2655418ec1f2a7430",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_41dadce325b0f810d03359af2a38990b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/2,2/2,2/2,2",
+        "Mul/d=1,p=0/2,2/2,2/2,2"
+      ],
+      "staticKey": "c5adedad86a36c471e50645c88bd4a341fbacc27b6d00160b8572e59da3494f8",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_ee91e1da47a6324737df0865c55d5b5f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Mul/d=0,p=0/4,2/4,2/4,2",
+        "Mul/d=1,p=0/4,2/4,2/4,2"
+      ],
+      "staticKey": "6c247a7bffb132f6e074e49f53edb6a347b263e0d27abf81b42e1204b913297b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/mul/Mul_dbb43ab56c1dcaffa05616abcf1124fe_high_performance.json"
+      }
+    }
+  ]
+}

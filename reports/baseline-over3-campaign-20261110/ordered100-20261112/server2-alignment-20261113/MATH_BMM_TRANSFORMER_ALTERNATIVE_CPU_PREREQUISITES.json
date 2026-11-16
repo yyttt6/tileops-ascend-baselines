@@ -1,0 +1,432 @@
+{
+  "checked_at_remote": "2026-11-16T00:40:13.679750+00:00",
+  "scope": [
+    237,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    246,
+    247
+  ],
+  "all9_target_original_inputs_verified": true,
+  "proofs": [
+    {
+      "ordinal": 237,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-512-bfloat16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "d3c069f6df99b12b61436bfe6fa729f107eae212750d6fa3a0e8a32867669bbd",
+      "payload_sha256": "bd36bd8f406a639c1cbe861ecf2667c86d23bd3375488f4e344be3041389c5f6",
+      "descriptor_sha256": "4c44ff778690db944f0245554ad9f6c4f16afc2d9e039dc04509d0432cb493a6",
+      "helper_sha256": "0ca036f463049faaaad3b0c0e82a0dbd50cf4444cbef0a37957807d47141826d",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "params": {
+        "a": [
+          [
+            16,
+            512,
+            512
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            512,
+            512
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            16,
+            512,
+            512
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "audited_cpu_fp64"
+    },
+    {
+      "ordinal": 239,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-256-bfloat16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "287f25ec571029b3d6d9a78a5286497cd2e82b127abab2d5eac9a70021720865",
+      "payload_sha256": "cf38c99ba7f239629e190534d8a0a26781df59064048a688a2a070ce41b1c7d3",
+      "descriptor_sha256": "60b92efb2ea81cc9efd190e7056ca04cedf432afe97c8964066f15e4b1c4cae6",
+      "helper_sha256": "0ca036f463049faaaad3b0c0e82a0dbd50cf4444cbef0a37957807d47141826d",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "params": {
+        "a": [
+          [
+            32,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            32,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            32,
+            256,
+            256
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "original_cpu"
+    },
+    {
+      "ordinal": 240,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-2k-bfloat16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "2e5abc24800391fb9684054f7c90baeaccde687136086bd1a2e8efd1fb6a7bc3",
+      "payload_sha256": "36717beda779193c725a0d1e42dcb3d92064d88a7e73bd218bce6250e0039a14",
+      "descriptor_sha256": "6eb7002b4f66d314250b402cc2cb8b4e883d0c66d8f00396e3d2c553eb16d132",
+      "helper_sha256": "0ca036f463049faaaad3b0c0e82a0dbd50cf4444cbef0a37957807d47141826d",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "params": {
+        "a": [
+          [
+            8,
+            2048,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            8,
+            2048,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            8,
+            2048,
+            2048
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "original_cpu"
+    },
+    {
+      "ordinal": 241,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "moe-prefill-bfloat16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "0d251a48174bd768ee3f46efcdaaf4f6cf87dcb66e76429a7454bf6e9f830979",
+      "payload_sha256": "2750f07b337a94409cb7c44762289332791abb3c351c60b097fa6fe995c0e9a4",
+      "descriptor_sha256": "bd7b8308e058e48c60d197739c159d56db71a9dac82306a89f6fa06f006f0e90",
+      "helper_sha256": "0ca036f463049faaaad3b0c0e82a0dbd50cf4444cbef0a37957807d47141826d",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "params": {
+        "a": [
+          [
+            128,
+            512,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            128,
+            2048,
+            512
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            512,
+            512
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "original_cpu"
+    },
+    {
+      "ordinal": 242,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-pv-bfloat16"
+      ],
+      "only_source_delta": {},
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "e1ab45faeb00652f2e6d6767fa87e5cdfeb313fa606671afa7cf6835f819b4ad",
+      "payload_sha256": "8884f55601e845d787cd2e5db44a28eabcc2f0203884bf37dc91e268ccda0d36",
+      "descriptor_sha256": "655c3cfd473798439404881cb52d94449262669f34f23503de5352872d56661a",
+      "helper_sha256": "0ca036f463049faaaad3b0c0e82a0dbd50cf4444cbef0a37957807d47141826d",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "params": {
+        "a": [
+          [
+            64,
+            128,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            64,
+            2048,
+            128
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            64,
+            128,
+            128
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "audited_cpu_fp64"
+    },
+    {
+      "ordinal": 243,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-1k-float16"
+      ],
+      "only_source_delta": {},
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "e243819e7be82a4823e691b8abade7372a36ab58af3c754d847d86b3174f03aa",
+      "payload_sha256": "5f6236dba7ad0ce0f6821e2b37666bb242e2dc4183431e860bb4eae575c07bd0",
+      "descriptor_sha256": "fa1beeff7daae7096b4534539ea1f00b9f5dc32693ea57ae76901fd06986753e",
+      "helper_sha256": "0ca036f463049faaaad3b0c0e82a0dbd50cf4444cbef0a37957807d47141826d",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "params": {
+        "a": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "float16"
+        ],
+        "d": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "float16"
+        ]
+      },
+      "reference_policy": "original_cpu"
+    },
+    {
+      "ordinal": 244,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "only_source_delta": {},
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "f71cdd236a0eb12b5bea7ba1c12451becf81f09570d3ddb7e96480ae9b6b7919",
+      "payload_sha256": "9e7108f7dcd5b4420d3f199494fdc9892ca699d7c27044600fd03dc12dabe786",
+      "descriptor_sha256": "58e4ba61a27458a90f4d251158e37172ce7f2945c9dbbca538158d07060acc6f",
+      "helper_sha256": "0ca036f463049faaaad3b0c0e82a0dbd50cf4444cbef0a37957807d47141826d",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "params": {
+        "a": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "original_cpu"
+    },
+    {
+      "ordinal": 246,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-128-float16"
+      ],
+      "only_source_delta": {},
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "7f234192835db1667751d3a298443e57fac9cb5fb5f69f5e1c638c30550b5128",
+      "payload_sha256": "8f5b1d9fde77b348efd7268c9db3dbdfac987d56eb140811d2aec5475242c1fb",
+      "descriptor_sha256": "0294aedec8bd906af64cc5b5effc35873149054cac7a007263b799a019b16189",
+      "helper_sha256": "0ca036f463049faaaad3b0c0e82a0dbd50cf4444cbef0a37957807d47141826d",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "params": {
+        "a": [
+          [
+            8,
+            128,
+            128
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            8,
+            128,
+            128
+          ],
+          "float16"
+        ],
+        "d": [
+          [
+            8,
+            128,
+            128
+          ],
+          "float16"
+        ]
+      },
+      "reference_policy": "original_cpu"
+    },
+    {
+      "ordinal": 247,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-128-bfloat16"
+      ],
+      "only_source_delta": {},
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "0ab5a8cd4c62c6c9068c09d3ee0c9a68df603fc630ca2482373d4eb6e50408d2",
+      "payload_sha256": "1856d97f25ac84e5830fc46ce9bbb449c798ef5b1372d243811c34386c4375c8",
+      "descriptor_sha256": "b629d1e34a0d5f9b60e1c97b96dce5ea74681c622e7a16556fcab6eb5732afac",
+      "helper_sha256": "0ca036f463049faaaad3b0c0e82a0dbd50cf4444cbef0a37957807d47141826d",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true,
+      "params": {
+        "a": [
+          [
+            8,
+            128,
+            128
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            8,
+            128,
+            128
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            8,
+            128,
+            128
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "original_cpu"
+    }
+  ],
+  "package_manifest_sha256": "d3a395cd5e61ffbb7e485853783cb6a6de5dd6713cdd61388b4d6757598bf3d6",
+  "original_complete_BmmAPI_unchanged": true,
+  "held_duplicate_known_numerical_failure": {
+    "target": 245,
+    "source_failed": 759,
+    "payload_sha256": "9dd2ef1f93f74e012cb5fff27d8cb703ffb39da866e206221d006d19b49a5705"
+  },
+  "no_NPU_work": true
+}

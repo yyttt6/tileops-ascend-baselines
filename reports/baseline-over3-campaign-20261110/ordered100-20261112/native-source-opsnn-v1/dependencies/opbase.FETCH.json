@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-11-13T14:01:46.537675+00:00",
+  "name": "opbase",
+  "declared_commit": "0c5e25790f67e2c6f60c1df36d74d28f0e08ecfc",
+  "actual_commit": "0c5e25790f67e2c6f60c1df36d74d28f0e08ecfc",
+  "origin": "https://gitcode.com/cann/opbase.git",
+  "source_only_no_build_or_device": true
+}

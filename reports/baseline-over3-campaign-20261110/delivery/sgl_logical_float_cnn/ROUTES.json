@@ -1,0 +1,11 @@
+[
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "LogicalAndFwdOp",
+      "cnn-feat-broadcast-float16"
+    ],
+    "fixed": false,
+    "reason": "0.3% completewrapper difference not significant; native selectors dominate99.63%device"
+  }
+]

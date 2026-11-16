@@ -1,0 +1,1366 @@
+{
+  "checked_at": "2026-11-15T04:35:04.821202+00:00",
+  "proofs": [
+    {
+      "ordinal": 252,
+      "checkpoint": "rollout-ops-math-cumprod-sdk-252-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "2ad9cae6c953f09b7f165edf2933a5c927324e5392f2a0ce5ed2ad3576fbeefe",
+      "api_loaded_sha256": "c4e65bd0de342e1b5dfabe893732cb374e3b629e7a54eda2c44561697d2c1334",
+      "windows": [
+        {
+          "trace_sha256": "ad43177f7fa66408fabb22a49bd2eb568f51109719b0f92045c4c6bf0890aec0",
+          "tasks": [
+            {
+              "task_id": 25,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706865158435563.0,
+              "end_ns": 3706865187938584.0,
+              "duration_us": 29503.02090615517
+            }
+          ],
+          "total_device_us": 29503.02090615517
+        },
+        {
+          "trace_sha256": "3fc0d90daefa2b6dd2c2408706c8f8cb274ec70b464b1f84cc158255ec7c8244",
+          "tasks": [
+            {
+              "task_id": 29,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706866902479254.5,
+              "end_ns": 3706866931984723.5,
+              "duration_us": 29505.468925729532
+            }
+          ],
+          "total_device_us": 29505.468925729532
+        },
+        {
+          "trace_sha256": "845f9654e604608f14647f4bae71582e1bf6d99e024b7de43a70c3f0fa111bd8",
+          "tasks": [
+            {
+              "task_id": 33,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706868401174226.0,
+              "end_ns": 3706868430669147.5,
+              "duration_us": 29494.921841395044
+            }
+          ],
+          "total_device_us": 29494.921841395044
+        },
+        {
+          "trace_sha256": "5c6e7353894bba896b0d0984a9a4fc0b1c402d16af7d31a919e7cab76b3174fc",
+          "tasks": [
+            {
+              "task_id": 37,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706869900284128.0,
+              "end_ns": 3706869929828330.5,
+              "duration_us": 29544.202235441076
+            }
+          ],
+          "total_device_us": 29544.202235441076
+        },
+        {
+          "trace_sha256": "a7eb8a6be6bcf5cbba441c0dcf30de7a741d628ef95a4741d69a57db60ea4959",
+          "tasks": [
+            {
+              "task_id": 41,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706871523411636.0,
+              "end_ns": 3706871552899205.5,
+              "duration_us": 29487.56878259999
+            }
+          ],
+          "total_device_us": 29487.56878259999
+        },
+        {
+          "trace_sha256": "efea7a26e1d090e872cfc8378cce287f38a0e2dede67bd20b3f5447e12ee01b1",
+          "tasks": [
+            {
+              "task_id": 45,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706873083707196.5,
+              "end_ns": 3706873113182973.5,
+              "duration_us": 29475.7766883104
+            }
+          ],
+          "total_device_us": 29475.7766883104
+        },
+        {
+          "trace_sha256": "479f2beffc69f97215b7443803d3dc4316a721cbe54722a864635b4e8b7438a5",
+          "tasks": [
+            {
+              "task_id": 49,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706874758955662.0,
+              "end_ns": 3706874788434835.5,
+              "duration_us": 29479.17371547303
+            }
+          ],
+          "total_device_us": 29479.173715473033
+        },
+        {
+          "trace_sha256": "2ea4f71e3bd6d384debcd102b79afbeb97d1080f1ab0c4422d63e6d2e2fd31ac",
+          "tasks": [
+            {
+              "task_id": 53,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706876261725572.0,
+              "end_ns": 3706876291210550.5,
+              "duration_us": 29484.978761890183
+            }
+          ],
+          "total_device_us": 29484.978761890183
+        },
+        {
+          "trace_sha256": "7ce6467ea296a7532996f79851d38e6d77d36efb146caabdd5006bad4733df51",
+          "tasks": [
+            {
+              "task_id": 57,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706877821163885.0,
+              "end_ns": 3706877850651131.0,
+              "duration_us": 29487.24578001726
+            }
+          ],
+          "total_device_us": 29487.24578001726
+        },
+        {
+          "trace_sha256": "9b07f7f2aa003884314256866580408aef650caa37a90b1439ee8e16f39d5a7c",
+          "tasks": [
+            {
+              "task_id": 61,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706879319960110.5,
+              "end_ns": 3706879349537069.0,
+              "duration_us": 29576.958497360145
+            }
+          ],
+          "total_device_us": 29576.958497360145
+        },
+        {
+          "trace_sha256": "a1f5a061ba62f4b1b06bd2f39b4de00c335f27db3dedb99f157b4862096a57ef",
+          "tasks": [
+            {
+              "task_id": 65,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706880822257685.0,
+              "end_ns": 3706880851751711.0,
+              "duration_us": 29494.02583423057
+            }
+          ],
+          "total_device_us": 29494.02583423057
+        },
+        {
+          "trace_sha256": "ac21b88f773860b498fbb2a5c6c42211ed354180e59ce2b590e94c5f7a2908b6",
+          "tasks": [
+            {
+              "task_id": 69,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706882684737597.0,
+              "end_ns": 3706882714215485.0,
+              "duration_us": 29477.887705190093
+            }
+          ],
+          "total_device_us": 29477.887705190093
+        },
+        {
+          "trace_sha256": "aed86e312f4ad8e2f42b2904973cac09b9b7b494683df1b662f3c05fe698896c",
+          "tasks": [
+            {
+              "task_id": 73,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706884305280460.0,
+              "end_ns": 3706884334766647.0,
+              "duration_us": 29486.186771549426
+            }
+          ],
+          "total_device_us": 29486.186771549426
+        },
+        {
+          "trace_sha256": "ca989926e3c89bd267c607572f86aa520874a1128d05d81008d3546dfec455fa",
+          "tasks": [
+            {
+              "task_id": 77,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706885927134807.5,
+              "end_ns": 3706885956623136.5,
+              "duration_us": 29488.328788676994
+            }
+          ],
+          "total_device_us": 29488.328788676994
+        },
+        {
+          "trace_sha256": "dc2ec3da3061828d5e6a7b106bfe028f0ed075eb8e09006d938caa21304daa04",
+          "tasks": [
+            {
+              "task_id": 81,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706887842363070.0,
+              "end_ns": 3706887871850423.5,
+              "duration_us": 29487.353780880832
+            }
+          ],
+          "total_device_us": 29487.353780880832
+        }
+      ],
+      "complete_all_named_work_counted_once": true,
+      "declared_SDK_AICPU_not_private_AIcore": true
+    },
+    {
+      "ordinal": 253,
+      "checkpoint": "rollout-ops-math-cumprod-sdk-253-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "4b19d3094d26213f4a4b9546c17733c541d73fa96da989eca2a3d6edca9d1590",
+      "api_loaded_sha256": "c4e65bd0de342e1b5dfabe893732cb374e3b629e7a54eda2c44561697d2c1334",
+      "windows": [
+        {
+          "trace_sha256": "fd809df95a2c1f133ceaee7c90e98746ab7ffebefb53e850857227f3f51a8049",
+          "tasks": [
+            {
+              "task_id": 25,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706935546532787.0,
+              "end_ns": 3706935802556419.0,
+              "duration_us": 256023.6321649628
+            }
+          ],
+          "total_device_us": 256023.6321649628
+        },
+        {
+          "trace_sha256": "17ffa5ab80c79189ea00c8b4800001d63e020a86956f6b3b64e68b7454aa1e37",
+          "tasks": [
+            {
+              "task_id": 29,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706937399080278.5,
+              "end_ns": 3706937654936488.0,
+              "duration_us": 255856.2098262538
+            }
+          ],
+          "total_device_us": 255856.2098262538
+        },
+        {
+          "trace_sha256": "2db3e40562aef712504458740150601ac752a2647fc43b2d78d69410a0d8e644",
+          "tasks": [
+            {
+              "task_id": 33,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706939509343963.0,
+              "end_ns": 3706939765204612.0,
+              "duration_us": 255860.6488617483
+            }
+          ],
+          "total_device_us": 255860.6488617483
+        },
+        {
+          "trace_sha256": "91a0ebb793311e7101043ad44c9f9d6037f594e9bf7bfb4fb32386118a9b33f9",
+          "tasks": [
+            {
+              "task_id": 37,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706941601392365.0,
+              "end_ns": 3706941857546906.0,
+              "duration_us": 256154.54121171153
+            }
+          ],
+          "total_device_us": 256154.54121171153
+        },
+        {
+          "trace_sha256": "971d9206617b71caa860a94619fa894a6111490569fb8358b2ab32973f4e665d",
+          "tasks": [
+            {
+              "task_id": 41,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706943404310319.5,
+              "end_ns": 3706943659923703.0,
+              "duration_us": 255613.38388461756
+            }
+          ],
+          "total_device_us": 255613.38388461756
+        },
+        {
+          "trace_sha256": "2e834683b3e4e00a6556d76ce0487f0868466b7a0a102687621a6c9d39de9bbe",
+          "tasks": [
+            {
+              "task_id": 45,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706945207158955.5,
+              "end_ns": 3706945463625195.5,
+              "duration_us": 256466.23970405268
+            }
+          ],
+          "total_device_us": 256466.23970405266
+        },
+        {
+          "trace_sha256": "310c6043cf7d03faa49e8f2a6041059de5cc3f2d08351efaf3cccd261a2844a4",
+          "tasks": [
+            {
+              "task_id": 49,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706947175590095.5,
+              "end_ns": 3706947431480597.0,
+              "duration_us": 255890.50210045482
+            }
+          ],
+          "total_device_us": 255890.5021004548
+        },
+        {
+          "trace_sha256": "36a19665adb9699f1a05811bf1002c131efd7dbc08a7aa69e3e7edffa3abcd27",
+          "tasks": [
+            {
+              "task_id": 53,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706948988100311.5,
+              "end_ns": 3706949244345197.5,
+              "duration_us": 256244.88693411593
+            }
+          ],
+          "total_device_us": 256244.88693411593
+        },
+        {
+          "trace_sha256": "29f43ce8594346dd9b5ceb18dbb085306c033ea7203b2b6e2711ca2bbb88710b",
+          "tasks": [
+            {
+              "task_id": 57,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706950789257919.0,
+              "end_ns": 3706951045236462.5,
+              "duration_us": 255978.54380443628
+            }
+          ],
+          "total_device_us": 255978.5438044363
+        },
+        {
+          "trace_sha256": "9e2eb9f95cb1d7945ccc113cd74a56048d11e611adaedac7c604279b0d63158b",
+          "tasks": [
+            {
+              "task_id": 61,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706952525911432.0,
+              "end_ns": 3706952781900164.0,
+              "duration_us": 255988.73188590017
+            }
+          ],
+          "total_device_us": 255988.73188590017
+        },
+        {
+          "trace_sha256": "ee38150f2ab5566af92ede31404740089f0f44d53418b41a1a01513697ef986c",
+          "tasks": [
+            {
+              "task_id": 65,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706954619963279.5,
+              "end_ns": 3706954875782054.0,
+              "duration_us": 255818.77452692113
+            }
+          ],
+          "total_device_us": 255818.77452692113
+        },
+        {
+          "trace_sha256": "96ed9332d89c6cbe3d21148411c09ca554ae766c6eb6a544f95ddc9813240f5e",
+          "tasks": [
+            {
+              "task_id": 69,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706956421133126.5,
+              "end_ns": 3706956677470711.0,
+              "duration_us": 256337.5846753271
+            }
+          ],
+          "total_device_us": 256337.5846753271
+        },
+        {
+          "trace_sha256": "9e91e082795f11e5f43c233141d9756e5e07421744158e928471b82914444bee",
+          "tasks": [
+            {
+              "task_id": 73,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706958165428927.5,
+              "end_ns": 3706958421050570.0,
+              "duration_us": 255621.64195064906
+            }
+          ],
+          "total_device_us": 255621.64195064906
+        },
+        {
+          "trace_sha256": "667195e15e73f589353e86051eef9d1ac1cb58987c7c2507cdac2d6055d2e805",
+          "tasks": [
+            {
+              "task_id": 77,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706960021382412.0,
+              "end_ns": 3706960277211236.5,
+              "duration_us": 255828.82460728157
+            }
+          ],
+          "total_device_us": 255828.82460728157
+        },
+        {
+          "trace_sha256": "e092896884b3a83d888f2c70c0f93491901f85fab01b818aa29675fcd7f56ad7",
+          "tasks": [
+            {
+              "task_id": 81,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3706961831072139.5,
+              "end_ns": 3706962087132626.5,
+              "duration_us": 256060.48745965774
+            }
+          ],
+          "total_device_us": 256060.48745965774
+        }
+      ],
+      "complete_all_named_work_counted_once": true,
+      "declared_SDK_AICPU_not_private_AIcore": true
+    },
+    {
+      "ordinal": 254,
+      "checkpoint": "rollout-ops-math-cumprod-sdk-254-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "939b25ce737026019beaf5a55fc91eaa6aa6c90222f4e4d8742243b58428eacd",
+      "api_loaded_sha256": "c4e65bd0de342e1b5dfabe893732cb374e3b629e7a54eda2c44561697d2c1334",
+      "windows": [
+        {
+          "trace_sha256": "3d797f29b775411fd484a7fc7f6d1bc11bcf4edc0119c6309ca23ccf869db123",
+          "tasks": [
+            {
+              "task_id": 25,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707007541844073.5,
+              "end_ns": 3707007659408401.0,
+              "duration_us": 117564.32704435906
+            }
+          ],
+          "total_device_us": 117564.32704435906
+        },
+        {
+          "trace_sha256": "764efdef190f9b0b70b4fe895cbc9f2f3be5db668b300d4f5fbaf8e1afccc839",
+          "tasks": [
+            {
+              "task_id": 29,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707009640053611.0,
+              "end_ns": 3707009757665518.5,
+              "duration_us": 117611.90742481177
+            }
+          ],
+          "total_device_us": 117611.90742481177
+        },
+        {
+          "trace_sha256": "78e1b3cd601e8c6978023f2eaf673055a4e9e7879808faf29ae077033ef75a6c",
+          "tasks": [
+            {
+              "task_id": 33,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707011331326826.5,
+              "end_ns": 3707011448903800.5,
+              "duration_us": 117576.97414548528
+            }
+          ],
+          "total_device_us": 117576.97414548528
+        },
+        {
+          "trace_sha256": "82681af4176e8aa5987b379320a6e612a48a26e14ea1c0bf49cd83e4676f4bad",
+          "tasks": [
+            {
+              "task_id": 37,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707013134377095.5,
+              "end_ns": 3707013252007088.0,
+              "duration_us": 117629.99256942059
+            }
+          ],
+          "total_device_us": 117629.99256942059
+        },
+        {
+          "trace_sha256": "0f08793216863a4a24f4db3a2287ed17d02d3e7592c0a10289c6a3f9ccdf78ba",
+          "tasks": [
+            {
+              "task_id": 41,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707014985747312.0,
+              "end_ns": 3707015103714704.5,
+              "duration_us": 117967.39226726857
+            }
+          ],
+          "total_device_us": 117967.39226726856
+        },
+        {
+          "trace_sha256": "a8f72f18464cc3c515ab0efeb994dc2a912b83a2dfd70fda424d5106fce3e778",
+          "tasks": [
+            {
+              "task_id": 45,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707016728710515.0,
+              "end_ns": 3707016846292819.0,
+              "duration_us": 117582.30418810429
+            }
+          ],
+          "total_device_us": 117582.30418810429
+        },
+        {
+          "trace_sha256": "79b037f2e3d2a3e52a788f957ecd27074b400a3a3075c7663f827796acef68ac",
+          "tasks": [
+            {
+              "task_id": 49,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707018463347057.0,
+              "end_ns": 3707018580942903.5,
+              "duration_us": 117595.846296387
+            }
+          ],
+          "total_device_us": 117595.846296387
+        },
+        {
+          "trace_sha256": "ceb228b69488db433097930a360ac7a5aaadc31bcdfe38a7a7dfc2762016ea53",
+          "tasks": [
+            {
+              "task_id": 53,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707020208433806.5,
+              "end_ns": 3707020326005727.5,
+              "duration_us": 117571.92110508116
+            }
+          ],
+          "total_device_us": 117571.92110508116
+        },
+        {
+          "trace_sha256": "4a6af262f4f069908e8024d2815faf669a3e112416f8fea22db6610124f66a04",
+          "tasks": [
+            {
+              "task_id": 57,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707021827842774.5,
+              "end_ns": 3707021946550719.5,
+              "duration_us": 118707.94518872973
+            }
+          ],
+          "total_device_us": 118707.94518872973
+        },
+        {
+          "trace_sha256": "79f6fd4a4fc33c451c0244f776dedbcdc22c23e688a9576d3121eeef3fc47d13",
+          "tasks": [
+            {
+              "task_id": 61,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707023442543781.5,
+              "end_ns": 3707023560149597.0,
+              "duration_us": 117605.81537609975
+            }
+          ],
+          "total_device_us": 117605.81537609975
+        },
+        {
+          "trace_sha256": "180ea2de80adc1ff662571fb5442e032b1578dc30e8622fdf681032e9888a8e4",
+          "tasks": [
+            {
+              "task_id": 65,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707025484246197.5,
+              "end_ns": 3707025601823093.5,
+              "duration_us": 117576.89614486157
+            }
+          ],
+          "total_device_us": 117576.89614486157
+        },
+        {
+          "trace_sha256": "cfd52f1ee75b9743f7a52efcd162b800a70a563809d5ca36d1b8fd60a541719e",
+          "tasks": [
+            {
+              "task_id": 69,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707027166226516.5,
+              "end_ns": 3707027283830998.0,
+              "duration_us": 117604.481365433
+            }
+          ],
+          "total_device_us": 117604.481365433
+        },
+        {
+          "trace_sha256": "edf4c5ed8b398c19cfbddf4cb72ebece552bc9568878b5e9a185f897204b7342",
+          "tasks": [
+            {
+              "task_id": 73,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707028782359617.5,
+              "end_ns": 3707028900837190.5,
+              "duration_us": 118477.57234666849
+            }
+          ],
+          "total_device_us": 118477.57234666849
+        },
+        {
+          "trace_sha256": "138152024466125982a3858e2ea47a89961f901d9619725d1e3872989c8061f7",
+          "tasks": [
+            {
+              "task_id": 77,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707030767663979.5,
+              "end_ns": 3707030885573993.5,
+              "duration_us": 117910.01380847042
+            }
+          ],
+          "total_device_us": 117910.01380847042
+        },
+        {
+          "trace_sha256": "e2324ff4eb830d2b375680fd0aeac449f1876d56b98e9c4af8a205828b13751d",
+          "tasks": [
+            {
+              "task_id": 81,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707032441270409.5,
+              "end_ns": 3707032559126281.0,
+              "duration_us": 117855.87137554752
+            }
+          ],
+          "total_device_us": 117855.8713755475
+        }
+      ],
+      "complete_all_named_work_counted_once": true,
+      "declared_SDK_AICPU_not_private_AIcore": true
+    },
+    {
+      "ordinal": 255,
+      "checkpoint": "rollout-ops-math-cumprod-sdk-255-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "2819724e99cec44290dcc3b9ae1432848133b790afbe6caca4cc7ecd7d2fbfc3",
+      "api_loaded_sha256": "c4e65bd0de342e1b5dfabe893732cb374e3b629e7a54eda2c44561697d2c1334",
+      "windows": [
+        {
+          "trace_sha256": "22d7eb3e89056668e489e05488aee7008b10b458c8dac28abc5969cad80a0c52",
+          "tasks": [
+            {
+              "task_id": 25,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707110568273879.0,
+              "end_ns": 3707110764169871.5,
+              "duration_us": 195895.9923843551
+            }
+          ],
+          "total_device_us": 195895.9923843551
+        },
+        {
+          "trace_sha256": "0013eedb7a7dd0ffcc5af3eace1b7823c00c34dc1cede31d4d58ca7255ec5ed0",
+          "tasks": [
+            {
+              "task_id": 29,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707112298993014.0,
+              "end_ns": 3707112494316247.0,
+              "duration_us": 195323.2328045695
+            }
+          ],
+          "total_device_us": 195323.2328045695
+        },
+        {
+          "trace_sha256": "994dde855fccc5f59f8f63dc02202df2e84b1308a4d649f2afeedd75310a2f24",
+          "tasks": [
+            {
+              "task_id": 33,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707114231150037.5,
+              "end_ns": 3707114427388374.5,
+              "duration_us": 196238.33712174362
+            }
+          ],
+          "total_device_us": 196238.33712174362
+        },
+        {
+          "trace_sha256": "aca3591494351fd22d6c6f30957f5c34fc4c145233288f8dc6981666d7d16c87",
+          "tasks": [
+            {
+              "task_id": 37,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707115964273823.5,
+              "end_ns": 3707116160429336.0,
+              "duration_us": 196155.51245947764
+            }
+          ],
+          "total_device_us": 196155.5124594776
+        },
+        {
+          "trace_sha256": "9ae8cc3b229dafa2251c633115c28551f9844bfeb4d4d622756194b80062678e",
+          "tasks": [
+            {
+              "task_id": 41,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707117708669264.5,
+              "end_ns": 3707117904782977.0,
+              "duration_us": 196113.71212524216
+            }
+          ],
+          "total_device_us": 196113.7121252422
+        },
+        {
+          "trace_sha256": "c0aa4959e647421511088ffbc2657efd5a396db57cb156cef7ad394ee5590f5f",
+          "tasks": [
+            {
+              "task_id": 45,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707119744084520.0,
+              "end_ns": 3707119940258319.5,
+              "duration_us": 196173.79960570164
+            }
+          ],
+          "total_device_us": 196173.79960570164
+        },
+        {
+          "trace_sha256": "d67b0ad743187263cc2dc7346448af92a87c186822518483e1f1f26709cac550",
+          "tasks": [
+            {
+              "task_id": 49,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707121485816575.0,
+              "end_ns": 3707121682237301.5,
+              "duration_us": 196420.72658012973
+            }
+          ],
+          "total_device_us": 196420.72658012976
+        },
+        {
+          "trace_sha256": "8e0250091dce76f1cfa4619f43ca8adcb03b7aec5ad49dd96a205558c8487fef",
+          "tasks": [
+            {
+              "task_id": 53,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707123220482383.0,
+              "end_ns": 3707123416728117.5,
+              "duration_us": 196245.73418089052
+            }
+          ],
+          "total_device_us": 196245.73418089055
+        },
+        {
+          "trace_sha256": "361218a8066cee916d3c56ba1bcc926ed85f281b3221aa57fad5739686ae0279",
+          "tasks": [
+            {
+              "task_id": 57,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707125136879147.5,
+              "end_ns": 3707125333569801.5,
+              "duration_us": 196690.6537384673
+            }
+          ],
+          "total_device_us": 196690.6537384673
+        },
+        {
+          "trace_sha256": "8a2fe9a221bc018a246bc7eda1c2b391f2be05d35fef9f3b043a4f0ad69fcef8",
+          "tasks": [
+            {
+              "task_id": 61,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707126880730145.5,
+              "end_ns": 3707127077037150.0,
+              "duration_us": 196307.00467080934
+            }
+          ],
+          "total_device_us": 196307.00467080934
+        },
+        {
+          "trace_sha256": "367a7004ec9ec437faf6db3b17a0265e6cf996265fb533286955add5cbe333aa",
+          "tasks": [
+            {
+              "task_id": 65,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707128683917154.5,
+              "end_ns": 3707128880138904.5,
+              "duration_us": 196221.74998911293
+            }
+          ],
+          "total_device_us": 196221.7499891129
+        },
+        {
+          "trace_sha256": "8e9377ae233903300f220f506c169dfdc3e156e68b79b5da99240694ab730084",
+          "tasks": [
+            {
+              "task_id": 69,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707130546681396.5,
+              "end_ns": 3707130743163478.5,
+              "duration_us": 196482.08207072824
+            }
+          ],
+          "total_device_us": 196482.08207072824
+        },
+        {
+          "trace_sha256": "7470657c95a02d3956fab33d97e1addbd2ecd6ba50659ce76a540bc1f5e970ac",
+          "tasks": [
+            {
+              "task_id": 73,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707132340680903.0,
+              "end_ns": 3707132537222898.0,
+              "duration_us": 196541.99454978842
+            }
+          ],
+          "total_device_us": 196541.99454978842
+        },
+        {
+          "trace_sha256": "a43e526b42d088629e81c50f8c88d56a612c0f0e9ee11f7893c2392ff76eb8a1",
+          "tasks": [
+            {
+              "task_id": 77,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707134031790663.5,
+              "end_ns": 3707134227992990.0,
+              "duration_us": 196202.32683380536
+            }
+          ],
+          "total_device_us": 196202.32683380536
+        },
+        {
+          "trace_sha256": "d89bcee965d5b03b9352896e4cddc64d80c6efeae253a7ad4c7c1b07b74903ed",
+          "tasks": [
+            {
+              "task_id": 81,
+              "context_id": null,
+              "stream_ids": [
+                61
+              ],
+              "name": "Cumprod",
+              "core_roles": [
+                "AICPU"
+              ],
+              "source": "STAR",
+              "task_type": 5,
+              "start_ns": 3707135819860517.0,
+              "end_ns": 3707136016390937.5,
+              "duration_us": 196530.420457242
+            }
+          ],
+          "total_device_us": 196530.420457242
+        }
+      ],
+      "complete_all_named_work_counted_once": true,
+      "declared_SDK_AICPU_not_private_AIcore": true
+    }
+  ],
+  "exact_original_parser": "v3-task-coverage-full32-20261103"
+}

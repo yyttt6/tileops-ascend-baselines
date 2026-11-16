@@ -1,0 +1,57 @@
+# Epilogue Tile 层组件概述
+
+## API 清单
+
+| 组件名 | 描述 |
+| :----------------------------------------------------------- | :------: |
+| [compute](./compute.md) | Tile 计算组件的架构派发入口，Block 层唯一的 include 路径 |
+| [arch35/gelu](./arch35/gelu.md) | Tile 级 GELU 激活，支持 Tanh 近似与 Erf 精确两种算法 |
+| [arch35/dequant](./arch35/dequant.md) | Tile 级权重反量化 `Dequant<Params>::Run`，per-group W4×scale → FP8 |
+| [arch35/mx_quant](./arch35/mx_quant.md) | Tile 级 MX 动态量化链（eMax → scale → FP8/FP4 量化 → 布局转置） |
+| `arch35/initialize_empty_softmax.h` | BlockAttnResPrepare 空输入场景的 softmax 统计量初始化 |
+| `arch35/reduce_square.h` | Tile 级 V 平方和归约，BlockAttnResPrepare 依赖 |
+| `arch35/rms_softmax.h` | Tile 级 RMS-softmax 计算，BlockAttnResPrepare 依赖 |
+
+## 核心组件关系
+
+```
+BlockEpilogue（Block 层）
+    └── #include "blaze/epilogue/tile/compute.h"（架构派发入口）
+            └── arch35/（dav-3510 实现）
+                    ├── Gelu                     → BlockEpilogueGeluMxQuant / BlockEpilogueGeluTanhMxQuant
+                    ├── Dequant                  → Gemm Kernel Wqmm Mix Pergroup 的 AIV prologue
+                    ├── MxQuant                  → BlockEpilogueGeluMxQuant / BlockEpilogueGeluTanhMxQuant
+                    │                              / BlockEpilogueSwigluMxQuant / BlockEpilogueFlatQuant
+                    ├── InitializeEmptySoftmax   ┐
+                    ├── ReduceSquare             ├→ BlockEpilogueBlockAttnResPrepare
+                    └── RmsSoftmax              ┘
+```
+
+## 使用流程
+
+1. **选择 Tile**：在 `blaze/epilogue/tile/arch35/` 下找到所需的计算组件（如 `Gelu`）
+2. **经由 compute.h 引入**：Block 层只 `#include "blaze/epilogue/tile/compute.h"`，禁止直接
+   include arch35 头文件
+3. **构造 Tensor**：使用 `asc::te::make_tensor` + `Gemm::MakeNDExtLayout` 构造 UB 侧
+   NDExt 张量
+4. **调用 Tile**：实例化 Tile 类并调用公共方法（`__aicore__` 入口自带 static_assert
+   类型/排布门禁与 AIC 早退）
+
+## 与 Block 层的关系
+
+Tile 层是 Block 层的可复用计算组件，职责边界：
+- **Tile 层**：纯粹的逐元素/逐行向量计算，不持有 UB 生命周期，不负责 AIC/AIV 跨核同步，
+  也不感知 slot/ping-pong 等流水线状态
+- **Block 层**：管理 UB 布局与字节偏移、跨核同步、GM 输出，将构造好的 Tensor 传给 Tile
+
+同一 Tile 可被多个 Block 复用（如 `Gelu` 同时服务
+[BlockEpilogueGeluMxQuant](../block/block_epilogue_gelu_mx_quant.md) 与
+[BlockEpilogueGeluTanhMxQuant](../block/block_epilogue_gelu_tanh_mx_quant.md)）。
+
+## 扩展规范
+
+新增 Tile 时：
+1. 实现放在 `include/blaze/epilogue/tile/arch35/<name>.h`
+2. 在 `include/blaze/epilogue/tile/compute.h` 的 `__NPU_ARCH__ == 3510` 守卫内注册
+   （include 列表保持字母序）
+3. 对外函数开头增加 static_assert 基础校验（数据类型、UB 位置、NDExt 排布）

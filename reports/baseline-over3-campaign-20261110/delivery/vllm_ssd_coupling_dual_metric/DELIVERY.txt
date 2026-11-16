@@ -1,0 +1,1 @@
+Three exact SSD pairs, dual host/device evidence; representative original reused with explicit identity proof, other two same-source original/new paired. All original checker and15isolated raw windows passed. Host reductions88.9-92.7%,device increases34.1-46.7%; do not mix metrics or publish cross-environment ratios. V1 regression kept.

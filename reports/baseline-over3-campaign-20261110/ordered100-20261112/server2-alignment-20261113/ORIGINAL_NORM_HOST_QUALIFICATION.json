@@ -1,0 +1,188 @@
+{
+  "checked_at": "2026-11-14T23:46:57.932656+00:00",
+  "host": "H1",
+  "tag": "server1-original-math-norm-qualification-234614179510",
+  "full_API_embedded_kernel_source_build_guard_and_dual_archive_verified": true,
+  "zero_formal_coverage": true,
+  "build_record": {
+    "started_at": "2026-11-14T23:12:12.056624+00:00",
+    "pid": 2547130,
+    "hostname": "a5d0b50dc68f",
+    "status": "CPU_build_complete_runtime_qualification_required",
+    "CPU_compiler_linker_only": true,
+    "no_NPU_import_or_initialization_or_execution": true,
+    "source_kernel_modified": false,
+    "original_flags_preserved": true,
+    "not_runtime_or_formal_acceptance": true,
+    "pin": "64322f6487162c0934ec0364af57ed2f51175a03",
+    "source_sha256": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+    "source_git_blob": "82e9e64782d8bc0ff29ad2e4affb8b259ef26e88",
+    "original_build_script": "frozen ops_math/build_layernorm.py: -xasc/dav3510/stdc++17/fPIC/ferror-limit8/module/O3 unchanged; only verified canonical paths relocated",
+    "torch": "2.13.0+cpu",
+    "torch_npu_metadata": "2.13.0rc1",
+    "torch_CXX11_ABI": true,
+    "compiler": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/bin/bisheng",
+    "compiler_sha256": "fb635ef2090ff89f81c7962399b561d617c5a86417260c662d9bc6f84016f3c9",
+    "CXX": "/opt/baseline-over3-20261110/unified-stack-v1/compiler/usr/bin/g++-12",
+    "CXX_sha256": "cfc5c472d6ec4132cf368e3ed9e045ea9c27f29b3207e0e4e755e2abfe0ccb1b",
+    "SDK": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+    "command": [
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/bin/bisheng",
+      "-x",
+      "asc",
+      "--npu-arch=dav-3510",
+      "-std=c++17",
+      "-fPIC",
+      "-ferror-limit=8",
+      "-DEXTENSION_MODULE_NAME=allpairs_math_example",
+      "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layer_norm.asc",
+      "-I",
+      "/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch/include",
+      "-I",
+      "/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch/include/torch/csrc/api/include",
+      "-I",
+      "/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch_npu/include",
+      "-I",
+      "/opt/tileops-ci/python/cpython-3.12.15-linux-aarch64-gnu/include/python3.12",
+      "-I",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/include",
+      "-I",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/asc/include",
+      "-I",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/asc/impl/c_api",
+      "-I",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/asc/impl/utils",
+      "-I",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/tikcpp/tikcfw",
+      "-c",
+      "-O3",
+      "-o",
+      "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layernorm.o"
+    ],
+    "header_roots": [
+      "/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch/include",
+      "/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch/include/torch/csrc/api/include",
+      "/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch_npu/include",
+      "/opt/tileops-ci/python/cpython-3.12.15-linux-aarch64-gnu/include/python3.12",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/include",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/asc/include",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/asc/impl/c_api",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/asc/impl/utils",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/tikcpp/tikcfw"
+    ],
+    "compile_exit_code": 0,
+    "link_command": [
+      "/opt/baseline-over3-20261110/unified-stack-v1/compiler/usr/bin/g++-12",
+      "-shared",
+      "-o",
+      "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/libops_math_layernorm.so",
+      "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/layernorm.o",
+      "-Wl,-z,defs",
+      "-L",
+      "/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch/lib",
+      "-Wl,-rpath,/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch/lib",
+      "-L",
+      "/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch_npu/lib",
+      "-Wl,-rpath,/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch_npu/lib",
+      "-L",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/lib64",
+      "-Wl,-rpath,/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/aarch64-linux/lib64",
+      "-L",
+      "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/lib64",
+      "-Wl,-rpath,/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0/lib64",
+      "-L",
+      "/usr/local/Ascend/cann-9.1.0/aarch64-linux/lib64",
+      "-Wl,-rpath,/usr/local/Ascend/cann-9.1.0/aarch64-linux/lib64",
+      "-L",
+      "/usr/local/lib",
+      "-Wl,-rpath,/usr/local/lib",
+      "-ltorch",
+      "-ltorch_cpu",
+      "-lc10",
+      "-ltorch_npu",
+      "-lascendcl",
+      "-lplatform",
+      "-lregister",
+      "-ltiling_api",
+      "-lruntime",
+      "-lascendc_runtime",
+      "-ldl",
+      "-lmmpa",
+      "-lc_sec",
+      "-lprofapi",
+      "-lascendalog",
+      "-lunified_dlog"
+    ],
+    "link_exit_code": 0,
+    "object_sha256": "f3ab5754b84d44ac802db295c6d6ff4996a09a1ea44b471a4e57181bc98a0f01",
+    "binary_sha256": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+    "no_NPU_modules_loaded": true,
+    "checked_at": "2026-11-14T23:13:19.237861+00:00"
+  },
+  "kernel_launch_evidence": [
+    {
+      "line": 90816,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:01.875.341 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 92346,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:01.913.672 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 92683,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:01.914.419 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 92985,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:01.915.058 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 96592,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:01.962.519 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 97047,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:01.992.291 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 97501,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:01.993.150 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 98068,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:01.994.404 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 101645,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:02.064.585 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 102355,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:02.065.996 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    },
+    {
+      "line": 102838,
+      "text": "[INFO] RUNTIME(2879646,python):2026-11-14-23:45:02.103.967 [aix_starsv2.cc:666] 2879928 StreamLaunchKernelV2: stream_id=61, kernel_name=_ZN10ascend_ops9LayerNorm15layer_norm_fp32EPhS1_S1_S1_llllf, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=72, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040801000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+    }
+  ],
+  "files_sha256": {
+    "server1-original-math-norm-qualification-234614179510.log": "f21b02d28e112acdaf8d540fdad8250a4f8448c95a57a2043849eea94e4b9200",
+    "server1-original-math-norm-qualification-234614179510-guard.json": "77a1cbb35000873c575eed2b402d7bbca65b6041750c9064987768bc0f6e076d",
+    "server1-original-math-norm-qualification-234614179510.json": "d2b71e0c58857a49243cae50621781731dd3c9f721242735b9bb4d04e0cf50ec",
+    "server1-original-math-norm-qualification-234614179510.json.maps.txt": "cb224d74985b0d6f0547100cb2ea5d07f89cfcc33b62470c247dea7687b79a53",
+    "server1-original-math-norm-qualification-234614179510.json.pt": "392554b71995259e403760ed8c5a365a64b4fa1b8fe63c8ee9915741de052a6d"
+  },
+  "archive": "server1-original-math-norm-qualification-234614179510.qualification.tar.gz",
+  "archive_sha256": "700bb7b97c2cd0cc6a69ef0dc5fa3c66a4c33cb4e9217a7cce045623680bbc0a",
+  "remote_archive": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-layernorm-original-v1/server1-original-math-norm-qualification-234614179510.qualification.tar.gz",
+  "no_binary_crosshost_byte_equality_claim": true,
+  "execution_hostname": "a5d0b50dc68f",
+  "original_source_sha256": "945f89d805811dcdad2be8938ebbcc48f4965b0e1b5f76b6e4a29f12eb9a57ba",
+  "formal_source_sha256": {
+    "ops_math_original_norm_support.py": "7e8c368597d03288c3f24dc7a46abc4236f167896b0baf0bbac31bae4f556e31",
+    "ops_math_original_norm_layout.py": "3f054dec89bde9b0fbb1a2f3258800e588e7b1367c3ea16cf4a45d3664d8a235",
+    "ops_math_original_norm_cached_fidelity.py": "09d59f33211049961b727b228a032ee883f9f86f76791e9c9423a350ad3d52a3",
+    "worker_ops_math_original_norm.py": "072f7167aed13e3e3cff44340bbe38e25d2716dc6209adca46a15bc74c88a71e",
+    "workspace/TileOPs/benchmarks/ascend_all_pairs/ops_math/layernorm.py": "a3ff8384dd18224ef6f89b15706f1107ba3b26615e58534241f9fe17a1b1d48b"
+  }
+}

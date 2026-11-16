@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-11-16T05:19:21.002531+00:00",
+  "diagnosis": "New-label777 attempt still selected old golden; no GOLDEN_CORRECTION or golden42 source in actual archive. Exact selected worker omitted by prior deployment list.",
+  "old_worker_sha256": "b1522d77fa453104976ecf2b941d087cc4d7f535354a40685fc4c414f29dd8ae",
+  "new_worker_sha256": "f18054358a5d34e8f43c3d8c6f356398b90b8932d0f158d22e17f6a238c6159a",
+  "all_FunctionDef_AST_unchanged": true,
+  "exact_untimed_insertion_only": true,
+  "remote_deployed": {
+    "openlibing-DevEnv-661495": "f18054358a5d34e8f43c3d8c6f356398b90b8932d0f158d22e17f6a238c6159a",
+    "openlibing-DevEnv-055409": "f18054358a5d34e8f43c3d8c6f356398b90b8932d0f158d22e17f6a238c6159a"
+  },
+  "old_failed_checkpoint_preserved": "rollout-ops-transformer-instance-api-sdk-777-golden42-routefix-h1-v1.CHECKPOINT.json",
+  "authorization": "GOLDEN42_USER_AUTHORIZATION_20261116.json",
+  "no_kernel_checker_precision_tolerance_changes": true
+}

@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-11-16T04:01:34.848220+00:00",
+  "cause": "H2 missing immutable Sum registration dependency during CPU original-case preparation",
+  "action": "Restore only3 exact pinned original registry files; no kernel/checker/precision edits or NPU import",
+  "files": [
+    {
+      "file": "/opt/baseline-over3-20261110/ordered100-20261112/workspace/reports/baseline-single-agent-local-20261027/sum_registration.py",
+      "source_and_target_sha256": "7e734589c4161fba2a2bae8bf9b9e724c8f3bf5db617a41a9408718dc9342953",
+      "bytes": 4539
+    },
+    {
+      "file": "/opt/baseline-over3-20261110/ordered100-20261112/workspace/reports/baseline-single-agent-local-20261027/SUM_VERIFIED_CASE.json",
+      "source_and_target_sha256": "47e8dd800d0c9dbccbaaf1a9a284b969c4d9c7382efd727eafd6aa75a38aa5ec",
+      "bytes": 1413
+    },
+    {
+      "file": "/opt/baseline-over3-20261110/ordered100-20261112/workspace/reports/baseline-single-agent-local-20261027/SUM_ISOLATED_PREFLIGHT03.json",
+      "source_and_target_sha256": "18cd9071243300ebe277964c9bbe78497bcebbf3d6ad894364eaf2f7e91c952e",
+      "bytes": 16255
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-11-16T06:14:57.051534+00:00",
+  "original_worker_sha256": "7b88432bfe5345a2406f5aa154cc386b67d5024f2f9116269a79794313bd94e5",
+  "exact6_worker_sha256": "94857123af0a07af6a6c736d77446a6b0c00d75bf5dbff97a17854ac9ca18a13",
+  "all_original_FunctionDef_AST_unchanged": true,
+  "approved_proposal_helper_sha256": "546ccf88cd492ac6da4862435716855fbf9c43cd3d9c5fd122094a3cfa6e2255",
+  "approved_helper_unchanged": true,
+  "shared_measured_correctness_sha256_unchanged": "c704825349c8dfed0508a5b1fd85feb81a037610985d9b3ec67bbcfbc3cc5add",
+  "original_numerics_SHA_enforced_at_runtime": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+  "changes_only": [
+    "Finite exact6 admission",
+    "CPU-only original source/payload fidelity helper",
+    "Explicit process-local input comparison adapter installation and restoration outside timing",
+    "Actual guarded negative controls and evidence collection outside timing"
+  ],
+  "CPU_native_performance_or_output_golden_not_substituted": true
+}

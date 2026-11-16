@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-11-16T04:29:00.500067+00:00",
+  "status": "scoped_CAPI_path_qualified_Graph_frontend_not_qualified",
+  "old_actual_evidence": [
+    {
+      "file": "rollout-ops-nn-gemm10-485-486-v2-014022480185.log",
+      "sha256": "cf62b4b628f431430b61b09345b896466a8033ff94a85a377e170f28709b57b1",
+      "old_EsGatherShapes_count": 2,
+      "private_CAPI_qualification_or_original_accepted_cases": true
+    },
+    {
+      "file": "rollout-ops-nn-gemm10-488-v2-015947295229.log",
+      "sha256": "11bebc23365fd4138c91d79455b7fd8f0c105b1822a601eaadc2de5b4c42882d",
+      "old_EsGatherShapes_count": 2,
+      "private_CAPI_qualification_or_original_accepted_cases": true
+    },
+    {
+      "file": "server2-alignment-20261113/server1-gemm10-attribution-013455120121.log",
+      "sha256": "180d40349bcb04a4804b19ae1756368f35239d4ffd0fd814a3ab8660cd5b7b0b",
+      "old_EsGatherShapes_count": 2,
+      "private_CAPI_qualification_or_original_accepted_cases": true
+    }
+  ],
+  "conclusion": "Original exact037f902 CAPI uses aclnnMatmulGetWorkspaceSize/aclnnMatmul and private MatMulV3, not Graph builder entrypoints. Original H1 device-ELF load/launch proof and accepted485/488 already had same extra Graph-proto loader error. New cases retain actual loaded private host library, source/deviceELF identity/profile kernel names, full original checks and15raw/validguard. Do not infer whole Graph frontend availability.",
+  "ES_directory_attempt": "Resolves EsGatherShapes but collides with official builtin Graph NN EsDynamicQuantUpdateScatterV2. Reverted only added ES search directory; no original library or device kernel changed. Original qualified CAPI configuration restored.",
+  "remaining_Graph_frontend_issue": "Two NN ES/Graph schemas have incompatible symbol sets; full Graph frontend excluded from this CAPI qualification and remains unresolved. Do not patch symbols, relax checker or rebuild kernels to mask it.",
+  "qualified_cases": [
+    487,
+    489,
+    491,
+    492,
+    493,
+    495,
+    498
+  ],
+  "same_case_native_remeasurements_due_to_this_diagnosis": 0,
+  "timed_FunctionDef_unchanged": true
+}

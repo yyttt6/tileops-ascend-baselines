@@ -1,0 +1,140 @@
+{
+  "checked_at": "2026-11-15T00:34:18.673667+00:00",
+  "paired_cases": 6,
+  "rows": [
+    {
+      "ordinal": 195,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "llama-8b-prefill-float16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-ops-math-original-norm-195-l1-quiet-v2.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-ops-math-adaln3-195-l1-quiet-v2.CHECKPOINT.json",
+      "original_device_us": 15724.280133333332,
+      "candidate_device_us": 124.83073333333333,
+      "device_reduction_percent": 99.20612751569651,
+      "selection": "candidate",
+      "original_host_us_diagnostic": 192411.64069001874,
+      "candidate_host_us_diagnostic": 1851.3972560564678,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "same_original_LayerNorm_binary_SHA": true,
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original LayerNorm kernel unchanged; complete same-library Mul+Add added, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 196,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "llama-8b-prefill-bfloat16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-ops-math-original-norm-196-l1-quiet-v2.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-ops-math-adaln3-196-l1-quiet-v2.CHECKPOINT.json",
+      "original_device_us": 15710.8204,
+      "candidate_device_us": 124.74086666666668,
+      "device_reduction_percent": 99.20601939624575,
+      "selection": "candidate",
+      "original_host_us_diagnostic": 193972.86934157214,
+      "candidate_host_us_diagnostic": 1796.951424330473,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "same_original_LayerNorm_binary_SHA": true,
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original LayerNorm kernel unchanged; complete same-library Mul+Add added, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 197,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-bfloat16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-ops-math-original-norm-197-l1-quiet-v2.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-ops-math-adaln3-197-l1-quiet-v2.CHECKPOINT.json",
+      "original_device_us": 6546.129066666666,
+      "candidate_device_us": 44.9546,
+      "device_reduction_percent": 99.31326438048843,
+      "selection": "candidate",
+      "original_host_us_diagnostic": 116761.1666644613,
+      "candidate_host_us_diagnostic": 1949.2246521015961,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "same_original_LayerNorm_binary_SHA": true,
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original LayerNorm kernel unchanged; complete same-library Mul+Add added, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 198,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-float16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-ops-math-original-norm-198-l1-quiet-v2.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-ops-math-adaln3-198-l1-quiet-v2.CHECKPOINT.json",
+      "original_device_us": 6528.5462,
+      "candidate_device_us": 45.601933333333335,
+      "device_reduction_percent": 99.30149941600577,
+      "selection": "candidate",
+      "original_host_us_diagnostic": 140858.6466064056,
+      "candidate_host_us_diagnostic": 2339.1639813780785,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "same_original_LayerNorm_binary_SHA": true,
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original LayerNorm kernel unchanged; complete same-library Mul+Add added, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 199,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-float32"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-ops-math-original-norm-199-l1-quiet-v2.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-ops-math-adaln3-199-l1-quiet-v2.CHECKPOINT.json",
+      "original_device_us": 2291.8719333333333,
+      "candidate_device_us": 25.909066666666664,
+      "device_reduction_percent": 98.8695238032352,
+      "selection": "candidate",
+      "original_host_us_diagnostic": 48041.569286336504,
+      "candidate_host_us_diagnostic": 1054.494734853506,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "same_original_LayerNorm_binary_SHA": true,
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original LayerNorm kernel unchanged; complete same-library Mul+Add added, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 200,
+      "key": [
+        "ops-math",
+        "AdaLayerNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-ops-math-original-norm-200-l1-quiet-v2.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-ops-math-adaln3-200-l1-quiet-v2.CHECKPOINT.json",
+      "original_device_us": 9.671066666666666,
+      "candidate_device_us": 19.3244,
+      "device_reduction_percent": -99.8166351867426,
+      "selection": "original_conservative_small_gain_or_regression",
+      "original_host_us_diagnostic": 1563.3772127330303,
+      "candidate_host_us_diagnostic": 1689.2485941449802,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "same_original_LayerNorm_binary_SHA": true,
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original LayerNorm kernel unchanged; complete same-library Mul+Add added, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true
+    }
+  ],
+  "coverage_increment": 0,
+  "no_historical_or_public_ratio_rewrite": true
+}

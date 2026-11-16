@@ -1,0 +1,15 @@
+SGL partial delivery, exact 33 reviewed keys only.
+
+Import over3_sgl.factory(library, op, case, params) within the caller's host npu-guard reservation, in a fresh process. The returned callable performs all measured layout, broadcast, padding and allocation work on every call. The package never supplies a fallback for unreviewed keys.
+
+routes.json combines SGL_MUL_SELECTION, SGL_ADDSUB_SELECTION and the newer SGL_CNN_SELECTION in that order. CNN results replace the older transpose routes. Original reports remain unchanged.
+
+The three factory AST bodies are identical to the measured helpers. Only Python module imports and vendor ROOT paths were relocated. RELOCATION.json records the source and packaged hashes. Original vendor modules are bundled without kernel changes and checked before loading. Namespace-only loading follows the measured setup and does not load unrelated C++ bindings.
+
+Validation so far: all three factory bodies structurally identical; 33 unique exact keys; original source/result evidence retained. Five representative dispatch branches passed original-checker device smoke and raw replay; see DEVICE_SMOKE.json. Registration into the exported benchmark provider remains pending. Do not label this package as already published or integrated into the webpage baseline cache.
+
+The8 current nonbroadcast Mul routes retain sgl_original; no optimization is claimed for these routes. They use the same measured factory with fixed=False.
+
+Three uniform MeanPooling routes now select the existing alternate complete API. Four packaged factory bodies preserve the measured source AST.
+
+registry.py supplies install(PROVIDERS, WORKSPACE), returning a new mapping with exact33-case overrides and original-provider fallback for every other case. CPU verification confirms no torch import on installation, original mapping untouched and unknown cases delegated. This hook is staged; the exported SGL registry and webpage cache have not been mutated. Device smoke verifies the underlying dispatch, not a new performance measurement.

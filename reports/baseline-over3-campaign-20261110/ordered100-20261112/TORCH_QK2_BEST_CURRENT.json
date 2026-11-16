@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-11-15T01:56:02.136881+00:00",
+  "rows": [
+    {
+      "ordinal": 1356,
+      "key": [
+        "torch-eager",
+        "FusedQKNormRoPEFwdOp",
+        "interleaved-ragged-float16-float16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-qk2-original-08f-1356-v3.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-qk2-native-rms-rope-1356-v1.CHECKPOINT.json",
+      "original_device_us": 326.0626,
+      "candidate_device_us": 169.02486666666667,
+      "device_reduction_percent": 48.1618355902619,
+      "selection": "candidate",
+      "original_host_us_diagnostic": 1627.538725733757,
+      "candidate_host_us_diagnostic": 1527.3860034843285,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original complete FP32 QK program versus same complete program with native FP32 RMS and interleaved rotary_mul; both RMS outputs, timed coefficient expansion, clone V and supplied table retained, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true,
+      "selected_pair_summary": "TORCH_QK2_NATIVE_RMS_ROPE_CURRENT.json",
+      "selected_device_us": 169.02486666666667
+    },
+    {
+      "ordinal": 1358,
+      "key": [
+        "torch-eager",
+        "FusedQKNormRoPEFwdOp",
+        "interleaved-ragged-bfloat16-float32"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-qk2-original-08f-1358-v3.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-qk2-native-rms-rope-1358-v1.CHECKPOINT.json",
+      "original_device_us": 319.5632,
+      "candidate_device_us": 169.55886666666666,
+      "device_reduction_percent": 46.94042785068285,
+      "selection": "candidate",
+      "original_host_us_diagnostic": 1790.3766284386318,
+      "candidate_host_us_diagnostic": 1532.0999237398307,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "comparison": "Samehost/currentruntime original then candidate; matched complete inputs/protocol/boot/source; original complete FP32 QK program versus same complete program with native FP32 RMS and interleaved rotary_mul; both RMS outputs, timed coefficient expansion, clone V and supplied table retained, no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true,
+      "selected_pair_summary": "TORCH_QK2_NATIVE_RMS_ROPE_CURRENT.json",
+      "selected_device_us": 169.55886666666666
+    }
+  ],
+  "paired_cases": 2,
+  "conservative_selection_requires_additional5percent_device_reduction": true,
+  "complete_current_contract_only": true,
+  "source_summaries": {
+    "TORCH_QK2_NATIVE_RMS_CURRENT.json": "b67cc6550dc26dd802bad7aec032c4adfa26c2887275090024935b5131f65b0a",
+    "TORCH_QK2_NATIVE_RMS_ROPE_CURRENT.json": "73880e742c604900504a8bc710d870f9c20eb42a98cf73285f0bdda1f59ac705"
+  },
+  "not_final_closure_until_denominator_identity_and_ratio_valid": true
+}

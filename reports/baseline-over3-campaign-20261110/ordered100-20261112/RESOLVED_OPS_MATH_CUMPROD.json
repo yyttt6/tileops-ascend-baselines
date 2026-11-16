@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-11-15T04:35:04.821202+00:00",
+  "accepted_complete_APIs": 4,
+  "rows": [
+    {
+      "ordinal": 252,
+      "key": [
+        "ops-math",
+        "CumprodFwdOp",
+        "long-seq-bfloat16"
+      ],
+      "api": "ops-math::original complete aclnnCumprod declared SDK TFKernel/AICPU",
+      "device_us": 29498.206600993315,
+      "checkpoint": "rollout-ops-math-cumprod-sdk-252-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "2ad9cae6c953f09b7f165edf2933a5c927324e5392f2a0ce5ed2ad3576fbeefe",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "source_sha256": "162b24cd25ce3f61685c8f846e5ec6da8169ac80de5741708ee149a3e65f8040",
+      "prepare_sha256": "7347215c6cdc438bf70124824e3cd2ad11b332dfa43b9db3adc2f2515e3c06ea",
+      "payload_sha256": "06a8e153204d83d5d997cfd8398ed4a0f6e5f2848adecbdc38d64203c6784589",
+      "full_checker_15raw_guard_valid": true,
+      "actual_Cumprod_AICPU_all15_windows_verified": true,
+      "not_final_ratio_or_paired_speedup": true
+    },
+    {
+      "ordinal": 253,
+      "key": [
+        "ops-math",
+        "CumprodFwdOp",
+        "llama-13b-hidden-float32"
+      ],
+      "api": "ops-math::original complete aclnnCumprod declared SDK TFKernel/AICPU",
+      "device_us": 255982.97557320606,
+      "checkpoint": "rollout-ops-math-cumprod-sdk-253-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "4b19d3094d26213f4a4b9546c17733c541d73fa96da989eca2a3d6edca9d1590",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "source_sha256": "162b24cd25ce3f61685c8f846e5ec6da8169ac80de5741708ee149a3e65f8040",
+      "prepare_sha256": "38a14af3b5c8af25fd33f7e5955b6ef6abe80219d4f6b0ce634d9fcab6226054",
+      "payload_sha256": "802ea5b15669f32d25f044bc2a88e02ec3a8c143846f207a14a161fced785a02",
+      "full_checker_15raw_guard_valid": true,
+      "actual_Cumprod_AICPU_all15_windows_verified": true,
+      "not_final_ratio_or_paired_speedup": true
+    },
+    {
+      "ordinal": 254,
+      "key": [
+        "ops-math",
+        "CumprodFwdOp",
+        "hidden-state-bfloat16"
+      ],
+      "api": "ops-math::original complete aclnnCumprod declared SDK TFKernel/AICPU",
+      "device_us": 117789.28404311521,
+      "checkpoint": "rollout-ops-math-cumprod-sdk-254-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "939b25ce737026019beaf5a55fc91eaa6aa6c90222f4e4d8742243b58428eacd",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "source_sha256": "162b24cd25ce3f61685c8f846e5ec6da8169ac80de5741708ee149a3e65f8040",
+      "prepare_sha256": "a2f5af8ac7d4c4bbd679685e7575ae9f7a2840cb603b7ef5557050b65d3f9d2e",
+      "payload_sha256": "710df1314dc47c67b8844aec9a8591e80e824bca831a90afee088ac0c4a0fe28",
+      "full_checker_15raw_guard_valid": true,
+      "actual_Cumprod_AICPU_all15_windows_verified": true,
+      "not_final_ratio_or_paired_speedup": true
+    },
+    {
+      "ordinal": 255,
+      "key": [
+        "ops-math",
+        "CumprodFwdOp",
+        "hidden-state-float16"
+      ],
+      "api": "ops-math::original complete aclnnCumprod declared SDK TFKernel/AICPU",
+      "device_us": 196236.21863813762,
+      "checkpoint": "rollout-ops-math-cumprod-sdk-255-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "2819724e99cec44290dcc3b9ae1432848133b790afbe6caca4cc7ecd7d2fbfc3",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "source_sha256": "162b24cd25ce3f61685c8f846e5ec6da8169ac80de5741708ee149a3e65f8040",
+      "prepare_sha256": "27ffa1577c35b95600fa3f18f517ddb72a5c27b9f0a7e49745d93175df809a8d",
+      "payload_sha256": "9dfb783494e7d10e918ae3e2595dbe0aa32f1bd483d5ab01bf6787bf2ac08a9e",
+      "full_checker_15raw_guard_valid": true,
+      "actual_Cumprod_AICPU_all15_windows_verified": true,
+      "not_final_ratio_or_paired_speedup": true
+    }
+  ],
+  "not_published_or_final_ratio": true
+}

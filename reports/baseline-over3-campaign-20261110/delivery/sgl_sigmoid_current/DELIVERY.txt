@@ -1,0 +1,1 @@
+Original complete SGL Sigmoid API, independent original Triton files only; no kernel edits, no optimization claim. Exact evidence keys only, not installed globally. Private package path must be rebound on integration.

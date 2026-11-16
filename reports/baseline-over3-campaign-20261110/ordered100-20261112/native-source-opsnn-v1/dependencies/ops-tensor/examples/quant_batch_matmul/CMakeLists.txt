@@ -1,0 +1,3 @@
+ops_example_add_executable(quant_batch_matmul_cube quant_batch_matmul_cube/quant_batch_matmul_cube.cpp)
+ops_example_add_executable(quant_batch_matmul_mix quant_batch_matmul_mix/quant_batch_matmul_mix.cpp)
+ops_example_add_executable(quant_batch_matmul_mx quant_batch_matmul_mx/quant_batch_matmul_mx.cpp)

@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-11-13T03:21:30.134468+00:00",
+  "status": "CPU_registries_restored_native_profiles_not_ready",
+  "CPU_preflight": "NN_TRANSFORMER_CPU_PREFLIGHT.json",
+  "source_receipts": [
+    "NN_TRANSFORMER_REGISTRY_ASSET_REPAIR.json",
+    "NN_TRANSFORMER_REGISTRY_CLOSURE.phase1.json",
+    "NN_TRANSFORMER_REGISTRY_CLOSURE.json",
+    "NN_TRANSFORMER_REGISTRY_CLOSURE.phase3.json",
+    "NN_TRANSFORMER_REGISTRY_CLOSURE.phase4.json"
+  ],
+  "route_catalog": "NN_MATH_TRANSFORMER_CPU_ROUTE_CATALOG.json",
+  "factory_pilots": "MATH_TRANSFORMER_REGISTRY_PILOT_RESULTS.json",
+  "nn_pilot": "NN_REGISTRY_PILOT_RESULT.json",
+  "local_opsmath_native_architecture": "x86_64; cannot deploy to aarch64",
+  "native_evidence": "opsmath expected private .tools OPP absent onserver1; transformer expected install/vendors/allpairs_transformer +libtransformer_infer_shim absent. Alternative math fusion package doesnot prove selected original equivalent; not substituted.",
+  "next": "Identify complete pinned sources/buildrecipe and private aarch64 nativeOPP, configure correct perlibrary launcher before Torch, then guarded originals; preserve missingroutes as gaps, not API absence or accepted results.",
+  "main_controller": "COMMON_RUNTIME_TOOL.json",
+  "no_kernel_checker_precision_or_timing_edits": true,
+  "no_cold_data_migration": true,
+  "preserved_candidate_native": "TRANSFORMER_PRESERVED_NATIVE_ORIGIN.json:server2 quarantined preservedpackage found; source/buildidentity underreview, notdeployed orloaded"
+}

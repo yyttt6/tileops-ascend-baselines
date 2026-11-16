@@ -1,0 +1,403 @@
+{
+  "checked_at": "2026-11-16T04:29:55.143911+00:00",
+  "scope": [
+    [
+      280,
+      487
+    ],
+    [
+      282,
+      489
+    ],
+    [
+      279,
+      491
+    ],
+    [
+      281,
+      493
+    ],
+    [
+      277,
+      495
+    ],
+    [
+      276,
+      498
+    ],
+    [
+      759,
+      245
+    ]
+  ],
+  "rows": [
+    {
+      "ordinal": 280,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "source_ordinal": 487,
+      "source_key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "device_us": 421.32973333333337,
+      "checkpoint": "rollout-golden42-nn-gemm7-487-golden42-routefix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "bbb7a55889ac1de9349271f0746da67e5d8a1d60ddb98c576397a0a42b1cb27b",
+      "payload_sha256": "b2ae93b04eb7e011dd621c2ef9e9dd096b8860a44cdc0a5de0b1236eb6bae29f",
+      "descriptor_sha256": "d1fac9db8921eddf9008e5a277cabca42974e2a7f6aa7553162a988cab687185",
+      "same_params_input_descriptor_declared_and_resolved_checker_and_corrected_golden": true,
+      "target_corrected_golden_sha256": "223006cef72d988abf39fa49054efaee01d9d397817f105cad20fb9b3e0e64a7",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "source_golden_selection_receipt_sha256": "ecfb9ed7433f79224e95e6418e07b22c87331ee86ffb702e818823aa67942398",
+      "source_qualified_overlay": "RESOLVED_GOLDEN42_GEMM7.json",
+      "source_qualified_row": {
+        "ordinal": 487,
+        "key": [
+          "ops-nn",
+          "GemmFwdOp",
+          "qwen3-8b-gate-up-b32-bfloat16"
+        ],
+        "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+        "device_us": 421.32973333333337,
+        "checkpoint": "rollout-golden42-nn-gemm7-487-golden42-routefix-h2-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "bbb7a55889ac1de9349271f0746da67e5d8a1d60ddb98c576397a0a42b1cb27b",
+        "payload_sha256": "b2ae93b04eb7e011dd621c2ef9e9dd096b8860a44cdc0a5de0b1236eb6bae29f",
+        "prepare_sha256": "5688c7b88d3193b1986b88bdf137197eaf8f89c5652d8e404327d9b3ef9afcc0",
+        "full_checker_15raw_guard_valid": true,
+        "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+        "golden_correction_receipt_sha256": "ecfb9ed7433f79224e95e6418e07b22c87331ee86ffb702e818823aa67942398",
+        "loaded_private_host_library_bound": true,
+        "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+        "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+        "new_pairs": 0,
+        "new_final_closures": 0
+      },
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "audited existing complete API alternative reuse; not new target measurement",
+      "new_performance_measurements": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 282,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "source_ordinal": 489,
+      "source_key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "device_us": 76.9866,
+      "checkpoint": "rollout-golden42-nn-gemm7-489-golden42-routefix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "2655b26fecf750ae77a504b3d6d7079dd1a7bf82a93e18a372ca70a9cf667ec2",
+      "payload_sha256": "b868848e1f17c7e551178cb02e0b5a5ccc343dedfe2c41e578bb466b933125be",
+      "descriptor_sha256": "534ea16e81b2765780276a9f3382b8571eb151b52475ab47c39283df93337a13",
+      "same_params_input_descriptor_declared_and_resolved_checker_and_corrected_golden": true,
+      "target_corrected_golden_sha256": "27fa611aff5c424b3bf1b8d49d6a58cf400c849c5a6afed0dd28f7fbe4b488a9",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "source_golden_selection_receipt_sha256": "383cb7f3b4dfc97f4065e70072dd7e4f91b78f2ed328bbd0f71f13388442c549",
+      "source_qualified_overlay": "RESOLVED_GOLDEN42_GEMM7.json",
+      "source_qualified_row": {
+        "ordinal": 489,
+        "key": [
+          "ops-nn",
+          "GemmFwdOp",
+          "ds-v3-m16-mlp-up-bfloat16"
+        ],
+        "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+        "device_us": 76.9866,
+        "checkpoint": "rollout-golden42-nn-gemm7-489-golden42-routefix-h2-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "2655b26fecf750ae77a504b3d6d7079dd1a7bf82a93e18a372ca70a9cf667ec2",
+        "payload_sha256": "b868848e1f17c7e551178cb02e0b5a5ccc343dedfe2c41e578bb466b933125be",
+        "prepare_sha256": "0a2ce7b5abde427254cdfec6fcd6de4940855c6b766c6032dc53155647aafe07",
+        "full_checker_15raw_guard_valid": true,
+        "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+        "golden_correction_receipt_sha256": "383cb7f3b4dfc97f4065e70072dd7e4f91b78f2ed328bbd0f71f13388442c549",
+        "loaded_private_host_library_bound": true,
+        "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+        "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+        "new_pairs": 0,
+        "new_final_closures": 0
+      },
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "audited existing complete API alternative reuse; not new target measurement",
+      "new_performance_measurements": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 279,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "source_ordinal": 491,
+      "source_key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "device_us": 159.03466666666665,
+      "checkpoint": "rollout-golden42-nn-gemm7-491-golden42-routefix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "de0578941428642ab62e24ed2989b0dca1d12a5f60c0b1c35f79bbe126b377f4",
+      "payload_sha256": "2cab8d3633caf87263f48c5821438aa4a2a7f3c5a43dcc27be97a0b01d3e3a37",
+      "descriptor_sha256": "dc136f594e393e59f4c848264a954575f795ffcef3cf0ec8654ff4d04d9facf8",
+      "same_params_input_descriptor_declared_and_resolved_checker_and_corrected_golden": true,
+      "target_corrected_golden_sha256": "c9c4d74b1e588cfd4390901dff6a5fd61017d72f92ef8a6cb2a2e35e5bf6f90f",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "source_golden_selection_receipt_sha256": "f0db966f05ad483149c347e5a0f8e74c5c95b30ae0bb7790349768ff21fb5e25",
+      "source_qualified_overlay": "RESOLVED_GOLDEN42_GEMM7.json",
+      "source_qualified_row": {
+        "ordinal": 491,
+        "key": [
+          "ops-nn",
+          "GemmFwdOp",
+          "ds-v3-m96-qkv-a-bfloat16"
+        ],
+        "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+        "device_us": 159.03466666666665,
+        "checkpoint": "rollout-golden42-nn-gemm7-491-golden42-routefix-h2-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "de0578941428642ab62e24ed2989b0dca1d12a5f60c0b1c35f79bbe126b377f4",
+        "payload_sha256": "2cab8d3633caf87263f48c5821438aa4a2a7f3c5a43dcc27be97a0b01d3e3a37",
+        "prepare_sha256": "c1510825da744f0c4914e45d82669b1f8a7d6a333a680892a4e136b3725b3356",
+        "full_checker_15raw_guard_valid": true,
+        "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+        "golden_correction_receipt_sha256": "f0db966f05ad483149c347e5a0f8e74c5c95b30ae0bb7790349768ff21fb5e25",
+        "loaded_private_host_library_bound": true,
+        "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+        "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+        "new_pairs": 0,
+        "new_final_closures": 0
+      },
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "audited existing complete API alternative reuse; not new target measurement",
+      "new_performance_measurements": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 281,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "source_ordinal": 493,
+      "source_key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "device_us": 111.04666666666667,
+      "checkpoint": "rollout-golden42-nn-gemm7-493-golden42-ownes-runtime-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c7ec523c001e858429e57e1a39b785c914b5825b657a8d2ad1cbf1b7e24d57bf",
+      "payload_sha256": "34d5530ddd217037bd6ac298c035bd3ee760c0eb019bf4c50f5a5aa3b058234f",
+      "descriptor_sha256": "cc3868219f02168c2829591602f68b0f1bdc2e7e4be952835daa7591b279a8b5",
+      "same_params_input_descriptor_declared_and_resolved_checker_and_corrected_golden": true,
+      "target_corrected_golden_sha256": "fc03145d9345cb51bdb00e4195c2e72688337c46f5c908dfc35d7254a32e559b",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "source_golden_selection_receipt_sha256": "006712f6f54cd98d5cafadda54b9f83df49a299fd942c8f60c9d9a46769edab0",
+      "source_qualified_overlay": "RESOLVED_GOLDEN42_GEMM7.json",
+      "source_qualified_row": {
+        "ordinal": 493,
+        "key": [
+          "ops-nn",
+          "GemmFwdOp",
+          "ds-v3-m32-mlp-up-bfloat16"
+        ],
+        "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+        "device_us": 111.04666666666667,
+        "checkpoint": "rollout-golden42-nn-gemm7-493-golden42-ownes-runtime-h2-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "c7ec523c001e858429e57e1a39b785c914b5825b657a8d2ad1cbf1b7e24d57bf",
+        "payload_sha256": "34d5530ddd217037bd6ac298c035bd3ee760c0eb019bf4c50f5a5aa3b058234f",
+        "prepare_sha256": "d5a186568469a39079e7dfbf96bfb642a473aa2bc13b50347b7a03971e4cfb34",
+        "full_checker_15raw_guard_valid": true,
+        "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+        "golden_correction_receipt_sha256": "006712f6f54cd98d5cafadda54b9f83df49a299fd942c8f60c9d9a46769edab0",
+        "loaded_private_host_library_bound": true,
+        "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+        "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+        "new_pairs": 0,
+        "new_final_closures": 0
+      },
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "audited existing complete API alternative reuse; not new target measurement",
+      "new_performance_measurements": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 277,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "source_ordinal": 495,
+      "source_key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "device_us": 564.1836,
+      "checkpoint": "rollout-golden42-nn-gemm7-495-golden42-ownes-runtime-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a6d3a38048974348904f0cdc99935a72314ecb5689e0e691b734c8ba8ab9b4ca",
+      "payload_sha256": "2f30e2b7282c5a3d8bf95aaae915ada51e279cc1d74db82fb9239ba1042db984",
+      "descriptor_sha256": "033d786eb51771d6fbc0a8bc52e67d08c1b0abdedcea1a6af64f6faf15e9e90b",
+      "same_params_input_descriptor_declared_and_resolved_checker_and_corrected_golden": true,
+      "target_corrected_golden_sha256": "5c3e0116cdfadbb7d394a3d479df98c2d5066e30dea2591bae121faaa0c974a7",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "source_golden_selection_receipt_sha256": "55bcbf4284a7fba887cd0dcf4d82d2a1061fa5b55360bc52171b4ea93872d080",
+      "source_qualified_overlay": "RESOLVED_GOLDEN42_GEMM7.json",
+      "source_qualified_row": {
+        "ordinal": 495,
+        "key": [
+          "ops-nn",
+          "GemmFwdOp",
+          "qwen3-8b-down-prefill-bfloat16"
+        ],
+        "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+        "device_us": 564.1836,
+        "checkpoint": "rollout-golden42-nn-gemm7-495-golden42-ownes-runtime-h1-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "a6d3a38048974348904f0cdc99935a72314ecb5689e0e691b734c8ba8ab9b4ca",
+        "payload_sha256": "2f30e2b7282c5a3d8bf95aaae915ada51e279cc1d74db82fb9239ba1042db984",
+        "prepare_sha256": "f7d2a7a2169dba8903b886d898542754dba1b98459e59be3f70371360a3d127f",
+        "full_checker_15raw_guard_valid": true,
+        "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+        "golden_correction_receipt_sha256": "55bcbf4284a7fba887cd0dcf4d82d2a1061fa5b55360bc52171b4ea93872d080",
+        "loaded_private_host_library_bound": true,
+        "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+        "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+        "new_pairs": 0,
+        "new_final_closures": 0
+      },
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "audited existing complete API alternative reuse; not new target measurement",
+      "new_performance_measurements": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 276,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "source_ordinal": 498,
+      "source_key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "device_us": 492.1642,
+      "checkpoint": "rollout-golden42-nn-gemm7-498-golden42-ownes-runtime-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "1b05d14b19686b997b247a0c2fa28763927a2a10a47c305f740f546670ec4cf0",
+      "payload_sha256": "54cc7a77132b23479634d5ed6c612d1240a16900e963ec97dc58129219718e86",
+      "descriptor_sha256": "ae010bf2b2540c9053cac59d144dab69da110e1dea28ed326299d83c94f6ae00",
+      "same_params_input_descriptor_declared_and_resolved_checker_and_corrected_golden": true,
+      "target_corrected_golden_sha256": "78f1d01236b10944fa38a779ad1a76a30b2082a890fb1f061a22f0ffcd3501fe",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "source_golden_selection_receipt_sha256": "da382596a684f1cf1689c1b2d0a525b0d23902a80c002559bd2ba2a73a16c081",
+      "source_qualified_overlay": "RESOLVED_GOLDEN42_GEMM7.json",
+      "source_qualified_row": {
+        "ordinal": 498,
+        "key": [
+          "ops-nn",
+          "GemmFwdOp",
+          "vit-l16-in21k-head-bfloat16"
+        ],
+        "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+        "device_us": 492.1642,
+        "checkpoint": "rollout-golden42-nn-gemm7-498-golden42-ownes-runtime-h2-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "1b05d14b19686b997b247a0c2fa28763927a2a10a47c305f740f546670ec4cf0",
+        "payload_sha256": "54cc7a77132b23479634d5ed6c612d1240a16900e963ec97dc58129219718e86",
+        "prepare_sha256": "100cba487754b9b4e72438ff30b7e176677fd6804c2974c49dbbd81f869be729",
+        "full_checker_15raw_guard_valid": true,
+        "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+        "golden_correction_receipt_sha256": "da382596a684f1cf1689c1b2d0a525b0d23902a80c002559bd2ba2a73a16c081",
+        "loaded_private_host_library_bound": true,
+        "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+        "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+        "new_pairs": 0,
+        "new_final_closures": 0
+      },
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "audited existing complete API alternative reuse; not new target measurement",
+      "new_performance_measurements": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 759,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "source_ordinal": 245,
+      "source_key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "device_us": 1554.1445333333334,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-245-golden42-routefix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "15c05b4664b573316202879838a379daf2b6cfda62337c571072ee84e606fc83",
+      "payload_sha256": "9dd2ef1f93f74e012cb5fff27d8cb703ffb39da866e206221d006d19b49a5705",
+      "descriptor_sha256": "d7b71bbd14470143ce60c81595e4368f68a793e1b710cd6f745dc8c0f6e9732e",
+      "same_params_input_descriptor_declared_and_resolved_checker_and_corrected_golden": true,
+      "target_corrected_golden_sha256": "0d6e9881329d91f994e76dbf189468dd6c6d63c747d7528558c0ecaad2a45a12",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "source_golden_selection_receipt_sha256": "e9b36c73d514ae35d14ca7d3475644e5e193133f7232f1cf7dd4956b9fad25e5",
+      "source_qualified_overlay": "RESOLVED_MATH_BMM_TRANSFORMER_ALTERNATIVE.json",
+      "source_qualified_row": {
+        "ordinal": 245,
+        "key": [
+          "ops-math",
+          "BmmFwdOp",
+          "mha-decode-pv-float16"
+        ],
+        "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+        "device_us": 1554.1445333333334,
+        "checkpoint": "rollout-math-bmm-transformer-alternative-245-golden42-routefix-h2-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "15c05b4664b573316202879838a379daf2b6cfda62337c571072ee84e606fc83",
+        "protocol": "ascend950-isolated-ffts-v3",
+        "payload_sha256": "9dd2ef1f93f74e012cb5fff27d8cb703ffb39da866e206221d006d19b49a5705",
+        "prepare_sha256": "b5e5a4ffb37eaea24d45f45e698357e381def249dad10bc537b4218d257a4935",
+        "full_checker_15raw_guard_valid": true,
+        "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+        "not_paired_or_final_ratio": true
+      },
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "audited existing complete API alternative reuse; not new target measurement",
+      "new_performance_measurements": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    }
+  ],
+  "new_qualified_coverage": 7,
+  "actual_new_device_runs": 0,
+  "full_existing_API_contract": true,
+  "qualification_boundary": "Only exact frozen descriptor/input/params and same Exact checker/newgolden. Source retains original library/provider/runtime/device/raw identity. Cross-library alternative is declared, not relabeled as target original native API or paired ratio.",
+  "same_Bmm_factory_proof": "math_bmm_transformer_alternative_api.candidate_factory returns original_factory(case,'ops-transformer') without changing timed run",
+  "same_Bmm_wrapper_sha256": "6dfccfd23a4f0e512507a4b7f8629ca42adcd2b09f8b691f449d091eb0056873",
+  "original_Bmm_factory_sha256": "b292c9b9e8236ed65c47698fdaa5dc7008d8414c27a1ac4db1c23f163e8c0d98",
+  "not_published": true
+}

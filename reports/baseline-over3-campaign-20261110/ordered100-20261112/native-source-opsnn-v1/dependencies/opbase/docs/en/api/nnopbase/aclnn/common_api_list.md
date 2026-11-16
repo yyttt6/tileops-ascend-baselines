@@ -1,0 +1,83 @@
+# Common API List
+
+- **[Common APIs](common_apis.md)** 
+
+- **[aclCreateBoolArray](aclCreateBoolArray.md)**  
+
+- **[aclCreateFloatArray](aclCreateFloatArray.md)**  
+
+- **[aclCreateIntArray](aclCreateIntArray.md)**  
+
+- **[aclCreateScalar](aclCreateScalar.md)**  
+
+- **[aclCreateScalarList](aclCreateScalarList.md)**  
+
+- **[aclCreateTensor](aclCreateTensor.md)**  
+
+- **[aclCreateTensorList](aclCreateTensorList.md)**  
+
+- **[aclDestroyAclOpExecutor](aclDestroyAclOpExecutor.md)**  
+
+- **[aclDestroyBoolArray](aclDestroyBoolArray.md)**  
+
+- **[aclDestroyFloatArray](aclDestroyFloatArray.md)**  
+
+- **[aclDestroyIntArray](aclDestroyIntArray.md)**  
+
+- **[aclDestroyScalar](aclDestroyScalar.md)**  
+
+- **[aclDestroyScalarList](aclDestroyScalarList.md)**  
+
+- **[aclDestroyTensor](aclDestroyTensor.md)**  
+
+- **[aclDestroyTensorList](aclDestroyTensorList.md)**  
+
+- **[aclGetBoolArraySize](aclGetBoolArraySize.md)**  
+
+- **[aclGetDataType](aclGetDataType.md)**  
+
+- **[aclGetFloatArraySize](aclGetFloatArraySize.md)**  
+
+- **[aclGetFormat](aclGetFormat.md)**  
+
+- **[aclGetIntArraySize](aclGetIntArraySize.md)**  
+
+- **[aclGetRawTensorAddr](aclGetRawTensorAddr.md)**  
+
+- **[aclGetScalarListSize](aclGetScalarListSize.md)**  
+
+- **[aclGetStorageShape](aclGetStorageShape.md)**  
+
+- **[aclGetTensorListSize](aclGetTensorListSize.md)**  
+
+- **[aclGetViewOffset](aclGetViewOffset.md)**  
+
+- **[aclGetViewShape](aclGetViewShape.md)**  
+
+- **[aclGetViewStrides](aclGetViewStrides.md)**  
+
+- **[aclInitTensor](aclInitTensor.md)**  
+
+- **[aclSetAclOpExecutorRepeatable](aclSetAclOpExecutorRepeatable.md)**  
+
+- **[aclSetDynamicInputTensorAddr](aclSetDynamicInputTensorAddr.md)**  
+
+- **[aclSetDynamicOutputTensorAddr](aclSetDynamicOutputTensorAddr.md)**  
+
+- **[aclSetDynamicTensorAddr](aclSetDynamicTensorAddr.md)**  
+
+- **[aclSetInputTensorAddr](aclSetInputTensorAddr.md)**  
+
+- **[aclSetOutputTensorAddr](aclSetOutputTensorAddr.md)**  
+
+- **[aclSetRawTensorAddr](aclSetRawTensorAddr.md)**  
+
+- **[aclSetTensorAddr](aclSetTensorAddr.md)**  
+
+- **[aclnnInit](aclnnInit.md)**  
+
+- **[aclnnFinalize](aclnnFinalize.md)**  
+
+- **[Reserved APIs](reserved_apis.md)** 
+
+- **[Common API Return Codes](common_api_return_codes.md)** 

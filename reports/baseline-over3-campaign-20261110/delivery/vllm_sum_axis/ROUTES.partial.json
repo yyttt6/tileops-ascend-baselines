@@ -1,0 +1,11 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "SumFwdOp",
+      "hidden-state-dim0-bfloat16"
+    ],
+    "fixed": false,
+    "evidence": "VLLM_SUM_AXIS_CURRENT.partial.json"
+  }
+]

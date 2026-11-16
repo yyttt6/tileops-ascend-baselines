@@ -1,0 +1,724 @@
+{
+  "checked_at": "2026-11-13T15:36:00.288143+00:00",
+  "complete_pairs": 14,
+  "rows": [
+    {
+      "ordinal": 1002,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "cnn-feat-broadcast-bfloat16"
+      ],
+      "original_us": 153005.78106666665,
+      "candidate_us": 7431.801133333333,
+      "device_reduction_percent": 95.14279716653634,
+      "host_original_us_diagnostic": 154177.02058330178,
+      "host_candidate_us_diagnostic": 8563.435357064009,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1002-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1002-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "cfc7af87db457393f38d44974000d85be2b34d66c0b67886b560b091264023a4",
+        "a5929b0b457b5a57b1275fdb9094d70e8c366b26497cdda9dd14ba41ebd131ab"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1003,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "cnn-feat-broadcast-float16"
+      ],
+      "original_us": 153137.14206666665,
+      "candidate_us": 7431.628333333333,
+      "device_reduction_percent": 95.14707651387535,
+      "host_original_us_diagnostic": 154342.76529898247,
+      "host_candidate_us_diagnostic": 8441.711341341337,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1003-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1003-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "bb8d1e6c8716e881653b9ab488d1cc67733bff6ce5d7918849b7f99bafcb5432",
+        "6ef7be202c4ee21a68d34641659720e500b7b17ab8a6e05940f0e5526370af07"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1004,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "llama-7b-ffn-bfloat16"
+      ],
+      "original_us": 134740.52486666667,
+      "candidate_us": 6515.364333333333,
+      "device_reduction_percent": 95.16451020227163,
+      "host_original_us_diagnostic": 135732.381294171,
+      "host_candidate_us_diagnostic": 7802.9499389231205,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1004-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1004-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "6d14d0de1e18e6e55773077db65c0daa942c28faa45b4071935c09e0c3e6ef5e",
+        "e2086caa72d1765da348d71c6978dd19c44b0c71878355e416be656af51792aa"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1005,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "llama-7b-ffn-float16"
+      ],
+      "original_us": 134561.40380000003,
+      "candidate_us": 6517.1123333333335,
+      "device_reduction_percent": 95.15677441726173,
+      "host_original_us_diagnostic": 135746.57458811998,
+      "host_candidate_us_diagnostic": 7513.997331261635,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1005-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1005-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "ce00d5c8c6ec96d7d4c67ebd79cdeb0db678e6f97a227be2cc1a11df39cb7057",
+        "b019eac3fc7867d847e6cbff6cf7b8fd153642e8006954e51911040864e7cb9a"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1006,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "hidden-state-prefill-bfloat16"
+      ],
+      "original_us": 100291.4762,
+      "candidate_us": 4848.8396,
+      "device_reduction_percent": 95.1652525381813,
+      "host_original_us_diagnostic": 101517.36329620083,
+      "host_candidate_us_diagnostic": 6012.546736747026,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1006-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1006-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "1e0c87f76f438e9d2a8da0e252db3b43fd3a79125662914eda355d5485b867fd",
+        "72e233bffe1e18ccadf74a72cc2eafd6875047cc7f2576c85b63cdc88b77701c"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1007,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "cnn-feat-broadcast-float32"
+      ],
+      "original_us": 155959.2254,
+      "candidate_us": 6315.633866666666,
+      "device_reduction_percent": 95.95045830057921,
+      "host_original_us_diagnostic": 157111.59066607556,
+      "host_candidate_us_diagnostic": 7393.0807411670685,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1007-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1007-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "67491b025d8944b5a906154db0ef4e5d0b601bf713c870c60d2c9c0bfe360421",
+        "ff10c5e1e8b71d086a6c63f8f8c1c03e1b21f7391d0384af190f32931c99d438"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1008,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "hidden-state-prefill-float16"
+      ],
+      "original_us": 100156.48813333335,
+      "candidate_us": 4847.281266666666,
+      "device_reduction_percent": 95.1602923015694,
+      "host_original_us_diagnostic": 101181.67797724406,
+      "host_candidate_us_diagnostic": 6029.334695388873,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1008-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1008-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "3fc30dfceb7b4ef701e7425a14cb992004a642f79861b7848901061f40a54c9a",
+        "8a3c0ff271b8239ff357936aa5fd6dbd28b160460beb1315e14817a6efebb7b2"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1009,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "phi-2-ffn-float16"
+      ],
+      "original_us": 125166.90226666667,
+      "candidate_us": 6059.047933333334,
+      "device_reduction_percent": 95.15922514370084,
+      "host_original_us_diagnostic": 126462.51671637098,
+      "host_candidate_us_diagnostic": 7065.086035678784,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1009-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1009-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "44042e1ee6f8f6f546ada93f8929629067d5ff3b211e65639b3ebf714ec49e6e",
+        "b6ad3a5875adbd11bc12adeaa2adaa137901f178772f8db4bded6de4850aacd9"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1010,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "linear-bias-bfloat16"
+      ],
+      "original_us": 50300.88033333334,
+      "candidate_us": 2434.9880000000003,
+      "device_reduction_percent": 95.15915430532458,
+      "host_original_us_diagnostic": 51546.16801689068,
+      "host_candidate_us_diagnostic": 3601.977943132321,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1010-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1010-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "f56a6b62477e4fc6b136a76ad80c242a76aea85ddfcd83152c1fa9cd5cb2dc27",
+        "502f7c9255ba932fe2c2412f4726fbacf7f76321472b00dde104d6528ff93102"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1011,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "linear-bias-float16"
+      ],
+      "original_us": 50216.56993333333,
+      "candidate_us": 2434.417133333333,
+      "device_reduction_percent": 95.1521636452565,
+      "host_original_us_diagnostic": 51469.175424426794,
+      "host_candidate_us_diagnostic": 3610.9966846803823,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1011-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1011-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "1fbb7f3913d48892d15664711e8b00c87847868c41847a39981f7706ab2b3232",
+        "8f80f99465bd4fcc18e3f8d703c0a99946a4d8ff881ae62db4d2204a444009a4"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1012,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "linear-bias-float32"
+      ],
+      "original_us": 54469.918399999995,
+      "candidate_us": 2065.8832666666663,
+      "device_reduction_percent": 96.20729509543993,
+      "host_original_us_diagnostic": 55440.85927928487,
+      "host_candidate_us_diagnostic": 3043.3200299739838,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1012-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1012-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "abaaaa0c803c639704c3700ca554187d213ddda02887f48111a131e53a189503",
+        "8d7ea149912f1eb88a6ac04537924331735a1658774dc9a5d62686323254a5a2"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1013,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "llama-7b-hidden-float16"
+      ],
+      "original_us": 50204.465533333336,
+      "candidate_us": 2429.8756666666663,
+      "device_reduction_percent": 95.16004076359832,
+      "host_original_us_diagnostic": 51341.33665512005,
+      "host_candidate_us_diagnostic": 3689.1107757886252,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1013-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1013-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "df5be087dc9cc27ed81745c0fd1496e7af5b65bd8a76e96159393d130d99370f",
+        "18b7f09bd099778326f57501be99e367b080366e222517af12534b20446c74b9"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1014,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "hidden-state-prefill-float32"
+      ],
+      "original_us": 100428.86306666666,
+      "candidate_us": 4106.886466666667,
+      "device_reduction_percent": 95.91065123983287,
+      "host_original_us_diagnostic": 101680.68471054237,
+      "host_candidate_us_diagnostic": 5349.642659227054,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1014-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1014-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "546aac74f91d911102cd75a381abe59f4f8344b2c843f34f34fb3fcb1f0762a2",
+        "b04be37e146c1140de32c9dd6d9ef79250a797c1fc16226f8d68d6ebffd455ca"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    },
+    {
+      "ordinal": 1015,
+      "key": [
+        "sgl-kernel-npu",
+        "LerpScalarFwdOp",
+        "llama-7b-ffn-float32"
+      ],
+      "original_us": 134869.2707333333,
+      "candidate_us": 5522.2702,
+      "device_reduction_percent": 95.90546447684235,
+      "host_original_us_diagnostic": 136050.74131240448,
+      "host_candidate_us_diagnostic": 6753.66735085845,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-sgl-midpoint-api-candidate-1015-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-sgl-midpoint-api-candidate-1015-api-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "28a7afbe13c293ce3bc17951954102f37bbd9ff152e29ecb4221c849afe73ac5",
+        "48d5cd1cb9260954eeea2a63bfe0f6bcb17c6739b06c97f547ebd7db9824ae7a"
+      ],
+      "source_sha256": [
+        "720d4466a856cb53fa3ea3575633123be62d69abc67bfc1e5cb560a90fca0319",
+        "2660a6d6d4bd585a624c12b0afaf0907142c2b08240aad1012ef049bca3d68f1"
+      ],
+      "common_SOURCE_entries_identical": 709,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_midpoint_api_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/sgl_midpoint_api_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sgl_midpoint_api_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/scalar.py": "72a9301febd48024dbe4f51423fd018eb6b50b8781a38a963f030f714e6510f6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/sgl-kernel-npu/python/sgl_kernel_npu/sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+      }
+    }
+  ],
+  "effective_retest_coverage_not_incremented": true,
+  "historical_or_public_ratios_not_updated": true,
+  "runtime_repair": "REFERENCE_RUNTIME_PRIVATE_COPY.json",
+  "not_all_SOURCE_bytes_same_expected_import_API_differences_explicit": true
+}

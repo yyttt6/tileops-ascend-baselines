@@ -1,0 +1,1 @@
+Staged original and grouped-width candidate for exact cases listed in EVIDENCE.json. Bytes match every listed formal SOURCE. All metadata, FP32 packing, casts and order restoration are timed. Host/device results kept separately. No automatic fastest-device installation or public speedup selection; original published metric policy requires resolution. Not registered or published.

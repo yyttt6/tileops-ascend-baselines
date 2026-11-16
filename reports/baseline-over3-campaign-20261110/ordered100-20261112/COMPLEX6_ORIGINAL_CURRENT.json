@@ -1,0 +1,116 @@
+{
+  "checked_at": "2026-11-16T06:19:17.654673+00:00",
+  "accepted_complete_APIs": 6,
+  "rows": [
+    {
+      "ordinal": 1292,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "api": "original manifest torch eager ref_program",
+      "device_us": 2151.317524325216,
+      "checkpoint": "rollout-complex6-original-1292-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "d513229bd368025230eeb64bdc68a3b4ce32c492278ba5fccc4eefe495f234e2",
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_Torch_eager_baseline": true,
+      "user_authorized_complex_input_check_CPU_only": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1293,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "api": "original manifest torch eager ref_program",
+      "device_us": 3198.1289655676305,
+      "checkpoint": "rollout-complex6-original-1293-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "1f4ee14dd5cc1dc101f43fa780b816e82c76c6c985adf7ba7e5bef45ddcf7d61",
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_Torch_eager_baseline": true,
+      "user_authorized_complex_input_check_CPU_only": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1294,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "api": "original manifest torch eager ref_program",
+      "device_us": 2149.424175015747,
+      "checkpoint": "rollout-complex6-original-1294-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "86fb9f00c505c3db01a37f9fb95b9c6225186af9b8e5ee776fe67b0da5674523",
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_Torch_eager_baseline": true,
+      "user_authorized_complex_input_check_CPU_only": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1295,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "api": "original manifest torch eager ref_program",
+      "device_us": 3202.522530175169,
+      "checkpoint": "rollout-complex6-original-1295-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "b4b6fad26bcfb2fb6976c0a903f4b5bd7c17082fed3d4f32ab599782e8667872",
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_Torch_eager_baseline": true,
+      "user_authorized_complex_input_check_CPU_only": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1298,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "api": "original manifest torch eager ref_program",
+      "device_us": 2947.528585214209,
+      "checkpoint": "rollout-complex6-original-1298-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "8ee4e3532be41c49c4f5224960e70e82a49f8d0cb76e7fd8ff3ffaf47dc36b83",
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_Torch_eager_baseline": true,
+      "user_authorized_complex_input_check_CPU_only": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1299,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "api": "original manifest torch eager ref_program",
+      "device_us": 3315.0749217868142,
+      "checkpoint": "rollout-complex6-original-1299-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "864517f3963f6ca6577eefede7764175b1532dbb7c4e007bffd251b44fddb873",
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_Torch_eager_baseline": true,
+      "user_authorized_complex_input_check_CPU_only": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "new_pairs": 0,
+  "new_final_closures": 0
+}

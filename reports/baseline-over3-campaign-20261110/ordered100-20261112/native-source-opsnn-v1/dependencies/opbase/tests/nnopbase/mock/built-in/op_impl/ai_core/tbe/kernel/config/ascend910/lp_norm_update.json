@@ -1,0 +1,708 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "4895ae00f9c206caa7f8411ea97ffaa54ca425ecf72049877125614a240553c1",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_4bc149469199fd703472b6a2cb38990f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "4895ae00f9c206caa7f8411ea97ffaa54ca425ecf72049877125614a240553c1",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-12
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_705633a5b925d9dc794153a5ad1cd9aa_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "8c3a0aef38e61b6945db46b101932317318bf8f5988d05df39fb911f92e63c87",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_cd0a70560290dc13fb396565ee1fe865_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "8c3a0aef38e61b6945db46b101932317318bf8f5988d05df39fb911f92e63c87",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-12
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_86294bf7532a7c62e76fac6bb8c75e83_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "0c9c79f9d82d78b5f054a1277025a474f0d80a4c71874a9966fab8bbdf59274f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_72f6c82cb6ac7646e82a3bcc13c974ee_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "0c9c79f9d82d78b5f054a1277025a474f0d80a4c71874a9966fab8bbdf59274f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-12
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_d4e40d3646f68059543c6be0878e64e3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "f3d15052e94355c6a2cce8bbe862c514aeaea4ac7bb6017fe79c039792ed637e",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_41d5fbbc974207b1231f18f2302c65ce_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "f3d15052e94355c6a2cce8bbe862c514aeaea4ac7bb6017fe79c039792ed637e",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-12
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_2ea5c00b1ee4b0ea0c472d5e4a2c1d12_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "8912eca79fb97d8b4fce65a07e3aaa3a9f39be144aafee547c95231342c18017",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_8e56095e46d7eb72c220743f32c6de6c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "8912eca79fb97d8b4fce65a07e3aaa3a9f39be144aafee547c95231342c18017",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-12
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_0f8e56e6ec4f4f861ce1e4d6e60f6c4a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "3e21fab423b4ab29df5903e94d339cf272103fe7479fd0c15b119d7340bc6f91",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_f8f0235adb3e44f45b8b1afb2156065c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "3e21fab423b4ab29df5903e94d339cf272103fe7479fd0c15b119d7340bc6f91",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-12
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_0ca032f34079da49621515df40d4b745_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "5d7e6000732fe6e8cb8f7b7dbc30f1b7348c92a4520caa1a70773bbdeeac4cf2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_58160e781def2432fb313dcdd00da34d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "5d7e6000732fe6e8cb8f7b7dbc30f1b7348c92a4520caa1a70773bbdeeac4cf2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-12
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_8fccb0447dd547bf08c66d9ddcac5b22_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2d20271a11ddb23861c41573b9ce354d57afb608951c2f47dff089d4bd84689a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_b718a1eaea6b8a3f44c2f37bd05db2d5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2d20271a11ddb23861c41573b9ce354d57afb608951c2f47dff089d4bd84689a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-12
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/lp_norm_update/LpNormUpdate_c5d98b8f8f477ab1fb76c20d5216363c_high_performance.json"
+      }
+    }
+  ]
+}

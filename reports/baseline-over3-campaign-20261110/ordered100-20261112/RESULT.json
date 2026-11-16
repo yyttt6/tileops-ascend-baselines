@@ -1,0 +1,1721 @@
+{
+  "status": "first100_closed_with_canonical_reference_placement",
+  "total": 100,
+  "fresh_valid_baselines": 59,
+  "reused_valid_baselines": 41,
+  "valid_total": 100,
+  "failed_pending": 0,
+  "new_candidates_selected": 13,
+  "candidate_reduction_range_percent": [
+    19.69313497439331,
+    34.54843394300966
+  ],
+  "matched_same5_fp8_cases": {
+    "old_processes": 5,
+    "new_processes": 1,
+    "old_guarded_seconds": 195.65076224599034,
+    "new_guarded_seconds": 28.36135149607435,
+    "speedup": 6.898499257804109,
+    "reduction_percent": 85.50409353355045,
+    "15windows_each_case_both_paths": true,
+    "case_device_comparison": [
+      {
+        "ordinal": 5,
+        "old_us": 82.37793333333333,
+        "new_us": 83.18073333333334,
+        "device_change_percent": 0.9745328239196827,
+        "source_input_topology_equal": true
+      },
+      {
+        "ordinal": 6,
+        "old_us": 82.453,
+        "new_us": 83.168,
+        "device_change_percent": 0.8671606854814273,
+        "source_input_topology_equal": true
+      },
+      {
+        "ordinal": 7,
+        "old_us": 49.092866666666666,
+        "new_us": 50.491266666666675,
+        "device_change_percent": 2.8484790050964826,
+        "source_input_topology_equal": true
+      },
+      {
+        "ordinal": 8,
+        "old_us": 49.20366666666666,
+        "new_us": 50.214133333333336,
+        "device_change_percent": 2.0536409888152196,
+        "source_input_topology_equal": true
+      },
+      {
+        "ordinal": 9,
+        "old_us": 49.09146666666667,
+        "new_us": 48.828,
+        "device_change_percent": -0.5366852623402307,
+        "source_input_topology_equal": true
+      }
+    ],
+    "cold_compile_not_removed": "old control5 contains first compile, controls6..9 and shared treatment use persistent cache; do not attribute whole reduction solely to profiler"
+  },
+  "operating_throughput": {
+    "historical_formal_valid_legs": 194,
+    "historical_guard_seconds": 7150.765921115875,
+    "historical_valid_legs_per_hour": 97.66785931807077,
+    "current_fresh_valid_legs_including_candidates": 66,
+    "current_all_production_guard_seconds_including_failed_attempts": 1112.530823155772,
+    "current_valid_legs_per_hour": 213.567116573032,
+    "ratio": 2.186667323971103,
+    "not_a_matched_causal_comparison": "different workload mix; source reuse and comparison controls excluded; CPU prep, engineering and external idle reported separately",
+    "scope": "initial cohort, before separate canonical placement closure; matched exact5 result unaffected"
+  },
+  "gate": {
+    "required_speedup": 1.5,
+    "passed": true,
+    "basis": "matched exact5cases + all valid rows full output/15raw/validguard",
+    "all100_succeeded": true
+  },
+  "continuation_authorized": true,
+  "continue_remaining": true,
+  "failed_cases_remain_pending_no_same_condition_retry": [],
+  "selections": [
+    {
+      "ordinal": 0,
+      "key": [
+        "DeepGEMM-Ascend",
+        "BmmFwdOp",
+        "square-128-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 10.009200000000002,
+      "original_device_us": 10.009200000000002,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 498.51657822728157,
+      "metric": "device_async",
+      "evidence": "new-deepgemm-0.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 1,
+      "key": [
+        "DeepGEMM-Ascend",
+        "BmmFwdOp",
+        "mha-decode-pv-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 75.97953333333334,
+      "original_device_us": 75.97953333333334,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 497.3839968442917,
+      "metric": "device_async",
+      "evidence": "new-deepgemm-1-1.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 2,
+      "key": [
+        "DeepGEMM-Ascend",
+        "BmmFwdOp",
+        "square-256-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 22.852866666666667,
+      "original_device_us": 22.852866666666667,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 384.2492898305257,
+      "metric": "device_async",
+      "evidence": "new-deepgemm-2-2.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 3,
+      "key": [
+        "DeepGEMM-Ascend",
+        "BmmFwdOp",
+        "mha-decode-qk-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 81.88053333333333,
+      "original_device_us": 81.88053333333333,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 656.4506640036901,
+      "metric": "device_async",
+      "evidence": "new-deepgemm-3-3.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 4,
+      "key": [
+        "DeepGEMM-Ascend",
+        "BmmFwdOp",
+        "square-512-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 42.451866666666675,
+      "original_device_us": 42.451866666666675,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 516.5600217878819,
+      "metric": "device_async",
+      "evidence": "new-deepgemm-4-4.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 5,
+      "key": [
+        "TileKernels",
+        "FP8QuantFwdOp",
+        "kv-index-8k-float16"
+      ],
+      "selection": "original",
+      "device_us": 83.18073333333334,
+      "original_device_us": 83.18073333333334,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1010.7387167712052,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-5-9.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 6,
+      "key": [
+        "TileKernels",
+        "FP8QuantFwdOp",
+        "kv-index-8k-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 83.168,
+      "original_device_us": 83.168,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1014.698576182127,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-5-9.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 7,
+      "key": [
+        "TileKernels",
+        "FP8QuantFwdOp",
+        "kv-index-context-chunk-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 50.491266666666675,
+      "original_device_us": 50.491266666666675,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 943.6127108832201,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-5-9.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 8,
+      "key": [
+        "TileKernels",
+        "FP8QuantFwdOp",
+        "kv-index-context-chunk-float16"
+      ],
+      "selection": "original",
+      "device_us": 50.214133333333336,
+      "original_device_us": 50.214133333333336,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 530.2973091602325,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-5-9.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 9,
+      "key": [
+        "TileKernels",
+        "FP8QuantFwdOp",
+        "kv-index-4k-float32"
+      ],
+      "selection": "original",
+      "device_us": 48.828,
+      "original_device_us": 48.828,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 705.0313986837864,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-5-9.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 10,
+      "key": [
+        "TileKernels",
+        "FusedAddRMSNormFwdOp",
+        "llama-405b-prefill-float16"
+      ],
+      "selection": "original",
+      "device_us": 550.005,
+      "original_device_us": 550.005,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1095.4059660434723,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-10-12.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 11,
+      "key": [
+        "TileKernels",
+        "FusedAddRMSNormFwdOp",
+        "llama-70b-prefill-float16"
+      ],
+      "selection": "original",
+      "device_us": 266.63593333333336,
+      "original_device_us": 266.63593333333336,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1340.366651614507,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-10-12.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 12,
+      "key": [
+        "TileKernels",
+        "FusedAddRMSNormFwdOp",
+        "llama-8b-prefill-float16"
+      ],
+      "selection": "original",
+      "device_us": 130.29713333333333,
+      "original_device_us": 130.29713333333333,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1595.3466606636841,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-10-12.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 13,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerBlockFwdOp",
+        "ds-v3-decode-bfloat16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 17.761799999999997,
+      "original_device_us": 25.4596,
+      "device_reduction_percent": 30.235353265565845,
+      "host_us_diagnostic": 822.6546769340833,
+      "metric": "device_async",
+      "evidence": "candidate-pad-13-16.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 14,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerBlockFwdOp",
+        "ds-v3-prefill-bfloat16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 447.7250666666667,
+      "original_device_us": 600.3826,
+      "device_reduction_percent": 25.426708457795634,
+      "host_us_diagnostic": 1129.341373840968,
+      "metric": "device_async",
+      "evidence": "candidate-pad-13-16.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 15,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerBlockFwdOp",
+        "ragged-k-few-rows-float16"
+      ],
+      "selection": "original",
+      "device_us": 23.913866666666664,
+      "original_device_us": 23.913866666666664,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 699.928713341554,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-13-16.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 16,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerBlockFwdOp",
+        "qwen3-235b-prefill-float16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 238.99173333333334,
+      "original_device_us": 321.9178,
+      "device_reduction_percent": 25.76001285628401,
+      "host_us_diagnostic": 1165.3059783081214,
+      "metric": "device_async",
+      "evidence": "candidate-pad-13-16.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 17,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerChannelFwdOp",
+        "llama-70b-mlp-down-bfloat16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 3571.789466666667,
+      "original_device_us": 4802.668666666667,
+      "device_reduction_percent": 25.629067616990163,
+      "host_us_diagnostic": 3946.74992809693,
+      "metric": "device_async",
+      "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 18,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerChannelFwdOp",
+        "llama-8b-mlp-down-float32"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 788.1351999999999,
+      "original_device_us": 1107.6442666666667,
+      "device_reduction_percent": 28.845819572397012,
+      "host_us_diagnostic": 1256.8086075286071,
+      "metric": "device_async",
+      "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 19,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerChannelFwdOp",
+        "llama-8b-mlp-up-float16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 890.7327333333333,
+      "original_device_us": 1201.7941999999998,
+      "device_reduction_percent": 25.88308935645276,
+      "host_us_diagnostic": 1339.59266046683,
+      "metric": "device_async",
+      "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 20,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerChannelFwdOp",
+        "llama-8b-mlp-up-bfloat16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 891.0716666666666,
+      "original_device_us": 1207.0158,
+      "device_reduction_percent": 26.175641887482616,
+      "host_us_diagnostic": 1339.6393818159897,
+      "metric": "device_async",
+      "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 21,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerChannelFwdOp",
+        "ragged-k-few-rows-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 18.799133333333337,
+      "original_device_us": 18.799133333333337,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 904.4366578261057,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-17-23.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 22,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerChannelFwdOp",
+        "ragged-k-float16"
+      ],
+      "selection": "original",
+      "device_us": 214.18286666666665,
+      "original_device_us": 214.18286666666665,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 986.5959795812765,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-17-23.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 23,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerChannelFwdOp",
+        "gpt-oss-20b-mlp-up-bfloat16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 232.13920000000002,
+      "original_device_us": 289.0652,
+      "device_reduction_percent": 19.69313497439331,
+      "host_us_diagnostic": 1128.1220242381096,
+      "metric": "device_async",
+      "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 24,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerTensorFwdOp",
+        "qwen3-32b-prefill-float16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 620.1163333333334,
+      "original_device_us": 846.0333333333334,
+      "device_reduction_percent": 26.70308498483117,
+      "host_us_diagnostic": 1064.0140001972516,
+      "metric": "device_async",
+      "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 25,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerTensorFwdOp",
+        "llama-8b-prefill-bfloat16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 234.53626666666665,
+      "original_device_us": 294.6893333333333,
+      "device_reduction_percent": 20.412366469547592,
+      "host_us_diagnostic": 632.0806841055552,
+      "metric": "device_async",
+      "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 26,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerTensorFwdOp",
+        "gpt-oss-prefill-bfloat16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 102.01653333333334,
+      "original_device_us": 140.19313333333332,
+      "device_reduction_percent": 27.231433588996502,
+      "host_us_diagnostic": 621.0466225941976,
+      "metric": "device_async",
+      "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 27,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerTensorFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 13.3406,
+      "original_device_us": 20.3824,
+      "device_reduction_percent": 34.54843394300966,
+      "host_us_diagnostic": 730.6333941717943,
+      "metric": "device_async",
+      "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 28,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerTensorFwdOp",
+        "qwen3-32b-prefill-float32"
+      ],
+      "selection": "zero_pad_adapter",
+      "device_us": 540.7620666666666,
+      "original_device_us": 774.3998666666668,
+      "device_reduction_percent": 30.170175649134944,
+      "host_us_diagnostic": 1039.1900315880775,
+      "metric": "device_async",
+      "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 29,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerTensorFwdOp",
+        "ragged-k-few-rows-float16"
+      ],
+      "selection": "original",
+      "device_us": 19.353066666666663,
+      "original_device_us": 19.353066666666663,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 873.3393624424934,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-24-30.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 30,
+      "key": [
+        "TileKernels",
+        "INT8DequantPerTensorFwdOp",
+        "ragged-k-float32"
+      ],
+      "selection": "original",
+      "device_us": 57.256933333333336,
+      "original_device_us": 57.256933333333336,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 467.4893493453662,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-24-30.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 31,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "llama-405b-prefill-float16"
+      ],
+      "selection": "original",
+      "device_us": 197.80573333333334,
+      "original_device_us": 197.80573333333334,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1130.9539899230003,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-31-38.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 32,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "quack-throughput-16384-float16"
+      ],
+      "selection": "original",
+      "device_us": 3187.525133333333,
+      "original_device_us": 3187.525133333333,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 3584.406121323506,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-31-38.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 33,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "quack-throughput-1024-float16"
+      ],
+      "selection": "original",
+      "device_us": 194.74446666666668,
+      "original_device_us": 194.74446666666668,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 875.9313573439916,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-31-38.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 34,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "quack-throughput-8192-float16"
+      ],
+      "selection": "original",
+      "device_us": 1566.3786000000002,
+      "original_device_us": 1566.3786000000002,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1953.4466788172722,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-31-38.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 35,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "llama-70b-prefill-float16"
+      ],
+      "selection": "original",
+      "device_us": 92.22619999999999,
+      "original_device_us": 92.22619999999999,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1295.1526790857315,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-31-38.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 36,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "quack-throughput-512-float16"
+      ],
+      "selection": "original",
+      "device_us": 93.61166666666668,
+      "original_device_us": 93.61166666666668,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1245.8700686693192,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-31-38.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 37,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "quack-throughput-4096-float16"
+      ],
+      "selection": "original",
+      "device_us": 771.0054666666667,
+      "original_device_us": 771.0054666666667,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1386.4113328357537,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-31-38.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 38,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "llama-8b-prefill-float16"
+      ],
+      "selection": "original",
+      "device_us": 47.36366666666667,
+      "original_device_us": 47.36366666666667,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 922.8593669831753,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-31-38.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 39,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "quack-throughput-2048-float16"
+      ],
+      "selection": "original",
+      "device_us": 367.8145333333333,
+      "original_device_us": 367.8145333333333,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1029.529298345248,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-39-40.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 40,
+      "key": [
+        "TileKernels",
+        "RMSNormFwdOp",
+        "quack-throughput-256-float16"
+      ],
+      "selection": "original",
+      "device_us": 48.26733333333333,
+      "original_device_us": 48.26733333333333,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 739.3045971790949,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-39-40.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 41,
+      "key": [
+        "TileKernels",
+        "RoPEFwdOp",
+        "neox-1d-2k-float16"
+      ],
+      "selection": "original",
+      "device_us": 64.35233333333333,
+      "evidence": "FIRST100_CANONICAL_CLOSURE.json",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 42,
+      "key": [
+        "TileKernels",
+        "RoPEFwdOp",
+        "interleaved-1d-2k-float16"
+      ],
+      "selection": "original",
+      "device_us": 64.99546666666667,
+      "evidence": "FIRST100_CANONICAL_CLOSURE.json",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 43,
+      "key": [
+        "TileKernels",
+        "RoPEFwdOp",
+        "neox-1d-4k-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 67.99426666666666,
+      "original_device_us": 67.99426666666666,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1041.912039120992,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-43-47.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 44,
+      "key": [
+        "TileKernels",
+        "RoPEFwdOp",
+        "neox-1d-2k-float32"
+      ],
+      "selection": "original",
+      "device_us": 44.059733333333334,
+      "evidence": "FIRST100_CANONICAL_CLOSURE.json",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 45,
+      "key": [
+        "TileKernels",
+        "RoPEFwdOp",
+        "interleaved-1d-5k-float32"
+      ],
+      "selection": "original",
+      "device_us": 50.33906666666667,
+      "evidence": "FIRST100_CANONICAL_CLOSURE.json",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 46,
+      "key": [
+        "TileKernels",
+        "RoPEFwdOp",
+        "neox-2d-2k-float16"
+      ],
+      "selection": "original",
+      "device_us": 164.20266666666666,
+      "evidence": "FIRST100_CANONICAL_CLOSURE.json",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 47,
+      "key": [
+        "TileKernels",
+        "RoPEFwdOp",
+        "interleaved-2d-2k-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 164.1636,
+      "original_device_us": 164.1636,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1078.3254479368527,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-47-47.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 48,
+      "key": [
+        "TileKernels",
+        "SiluAndMulFwdOp",
+        "llama-8b-ffn-prefill-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 538.5088666666668,
+      "original_device_us": 538.5088666666668,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1328.5900466144085,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-48-51.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 49,
+      "key": [
+        "TileKernels",
+        "SiluAndMulFwdOp",
+        "llama-8b-ffn-prefill-float16"
+      ],
+      "selection": "original",
+      "device_us": 536.1012666666667,
+      "original_device_us": 536.1012666666667,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1230.5106967687607,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-48-51.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 50,
+      "key": [
+        "TileKernels",
+        "SiluAndMulFwdOp",
+        "qwen3-8b-swiglu-b32-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 28.79066666666667,
+      "original_device_us": 28.79066666666667,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1309.6147527297337,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-48-51.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 51,
+      "key": [
+        "TileKernels",
+        "SiluAndMulFwdOp",
+        "llama-8b-ffn-decode-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 11.962533333333333,
+      "original_device_us": 11.962533333333333,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 1220.5246835947037,
+      "metric": "device_async",
+      "evidence": "new-tilekernels-48-51.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 52,
+      "key": [
+        "atvc",
+        "LogicalAndFwdOp",
+        "llama-7b-ffn-bool"
+      ],
+      "selection": "original_reused",
+      "device_us": 404.01026666666667,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 53,
+      "key": [
+        "atvc",
+        "LogicalAndFwdOp",
+        "hidden-state-prefill-bool"
+      ],
+      "selection": "original_reused",
+      "device_us": 290.4214666666667,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 54,
+      "key": [
+        "atvc",
+        "LogicalAndFwdOp",
+        "linear-bias-bool"
+      ],
+      "selection": "original_reused",
+      "device_us": 153.4469333333333,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 55,
+      "key": [
+        "atvc",
+        "LogicalAndFwdOp",
+        "cnn-feat-broadcast-bool"
+      ],
+      "selection": "original_reused",
+      "device_us": 456.85446666666667,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 56,
+      "key": [
+        "atvc",
+        "LogicalNotFwdOp",
+        "256M-bool"
+      ],
+      "selection": "original_reused",
+      "device_us": 9316.388666666666,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 57,
+      "key": [
+        "atvc",
+        "LogicalNotFwdOp",
+        "16M-bool"
+      ],
+      "selection": "original_reused",
+      "device_us": 557.9553333333333,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 58,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "cnn-feat-broadcast-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 459.88873333333333,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 59,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "cnn-feat-broadcast-bfloat16"
+      ],
+      "selection": "original_reused",
+      "device_us": 460.24326666666667,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 60,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "llama-7b-ffn-bias-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 408.54879999999997,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 61,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "phi-2-ffn-bias-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 371.71533333333326,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 62,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "llama-7b-ffn-bfloat16"
+      ],
+      "selection": "original_reused",
+      "device_us": 405.49153333333334,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 63,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "llama-7b-ffn-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 405.32193333333333,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 64,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "linear-bias-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 153.85379999999998,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 65,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "phi-2-ffn-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 368.54226666666665,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 66,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "hidden-state-prefill-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 293.2076666666667,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 67,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "linear-bias-bfloat16"
+      ],
+      "selection": "original_reused",
+      "device_us": 153.71273333333332,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 68,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "cnn-feat-broadcast-float32"
+      ],
+      "selection": "original_reused",
+      "device_us": 410.82793333333336,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 69,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "hidden-state-prefill-bfloat16"
+      ],
+      "selection": "original_reused",
+      "device_us": 292.62859999999995,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 70,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "llama-7b-hidden-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 149.88813333333334,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 71,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "linear-bias-float32"
+      ],
+      "selection": "original_reused",
+      "device_us": 134.18206666666669,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 72,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "hidden-state-prefill-float32"
+      ],
+      "selection": "original_reused",
+      "device_us": 240.20839999999998,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 73,
+      "key": [
+        "atvc",
+        "MulFwdOp",
+        "llama-7b-ffn-float32"
+      ],
+      "selection": "original_reused",
+      "device_us": 338.35993333333334,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 74,
+      "key": [
+        "atvc",
+        "NegFwdOp",
+        "16M-bfloat16"
+      ],
+      "selection": "original_reused",
+      "device_us": 562.7520000000001,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 75,
+      "key": [
+        "atvc",
+        "NegFwdOp",
+        "16M-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 561.5945999999999,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 76,
+      "key": [
+        "atvc",
+        "NegFwdOp",
+        "256M-float16"
+      ],
+      "selection": "original",
+      "device_us": 9648.968933333334,
+      "original_device_us": 9648.968933333334,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 9981.427962581316,
+      "metric": "device_async",
+      "evidence": "new-atvc-76-77.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 77,
+      "key": [
+        "atvc",
+        "NegFwdOp",
+        "256M-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 9601.205133333333,
+      "original_device_us": 9601.205133333333,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 9959.875947485367,
+      "metric": "device_async",
+      "evidence": "new-atvc-76-77.CHECKPOINT.json",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 78,
+      "key": [
+        "atvc",
+        "NegFwdOp",
+        "16M-float32"
+      ],
+      "selection": "original_reused",
+      "device_us": 494.3484,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 79,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "cnn-feat-broadcast-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 604.8784666666667,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 80,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "cnn-feat-broadcast-bfloat16"
+      ],
+      "selection": "original_reused",
+      "device_us": 607.2395333333334,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 81,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "llama-7b-ffn-bias-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 537.2001999999999,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 82,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "phi-2-ffn-bias-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 490.0866,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 83,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "llama-7b-ffn-bfloat16"
+      ],
+      "selection": "original_reused",
+      "device_us": 536.2832,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 84,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "phi-2-ffn-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 486.7948666666667,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 85,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "llama-7b-ffn-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 535.723,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 86,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "hidden-state-prefill-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 391.9225333333333,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 87,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "linear-bias-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 200.1456,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 88,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "cnn-feat-broadcast-float32"
+      ],
+      "selection": "original_reused",
+      "device_us": 555.5462666666667,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 89,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "hidden-state-prefill-bfloat16"
+      ],
+      "selection": "original_reused",
+      "device_us": 391.1299333333333,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 90,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "linear-bias-bfloat16"
+      ],
+      "selection": "original_reused",
+      "device_us": 200.59453333333332,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 91,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "llama-7b-hidden-float16"
+      ],
+      "selection": "original_reused",
+      "device_us": 198.31113333333334,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 92,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "linear-bias-float32"
+      ],
+      "selection": "original_reused",
+      "device_us": 181.241,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 93,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "hidden-state-prefill-float32"
+      ],
+      "selection": "original_reused",
+      "device_us": 340.28513333333336,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 94,
+      "key": [
+        "atvc",
+        "SubFwdOp",
+        "llama-7b-ffn-float32"
+      ],
+      "selection": "original_reused",
+      "device_us": 470.1521333333333,
+      "evidence": "ATVC_REUSE_REVIEW.json"
+    },
+    {
+      "ordinal": 95,
+      "key": [
+        "catlass",
+        "BmmFwdOp",
+        "mha-decode-pv-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 705.1894666666667,
+      "original_device_us": 705.1894666666667,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 8807.56862461567,
+      "metric": "host_roundtrip",
+      "evidence": "new-catlass-sdk91-95-99.CHECKPOINT.json",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 96,
+      "key": [
+        "catlass",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "selection": "original",
+      "device_us": 705.5765333333334,
+      "host_us_diagnostic": 7895.161956548691,
+      "metric": "host_roundtrip",
+      "evidence": "rollout-canonical96.CHECKPOINT.json",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 97,
+      "key": [
+        "catlass",
+        "BmmFwdOp",
+        "square-256-float16"
+      ],
+      "selection": "original",
+      "device_us": 192.9324,
+      "original_device_us": 192.9324,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 4468.17468230923,
+      "metric": "host_roundtrip",
+      "evidence": "new-catlass-sdk91-97-99.CHECKPOINT.json",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 98,
+      "key": [
+        "catlass",
+        "BmmFwdOp",
+        "square-256-bfloat16"
+      ],
+      "selection": "original",
+      "device_us": 193.26286666666667,
+      "original_device_us": 193.26286666666667,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 4730.823325614135,
+      "metric": "host_roundtrip",
+      "evidence": "new-catlass-sdk91-97-99.CHECKPOINT.json",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "historical_ratio_update": false
+    },
+    {
+      "ordinal": 99,
+      "key": [
+        "catlass",
+        "BmmFwdOp",
+        "mha-decode-qk-float16"
+      ],
+      "selection": "original",
+      "device_us": 271.4478,
+      "original_device_us": 271.4478,
+      "device_reduction_percent": null,
+      "host_us_diagnostic": 7450.375892221928,
+      "metric": "host_roundtrip",
+      "evidence": "new-catlass-sdk91-97-99.CHECKPOINT.json",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "historical_ratio_update": false
+    }
+  ],
+  "public_history_or_ratios_modified": false,
+  "reference_checker_tolerance_unchanged": true,
+  "result_at": "2026-11-12T11:54:00.011576+00:00",
+  "reference_placement_closure": {
+    "previous_six_failures_not_genuine_baseline_failures": true,
+    "recovered_rope": [
+      {
+        "ordinal": 41,
+        "key": [
+          "TileKernels",
+          "RoPEFwdOp",
+          "neox-1d-2k-float16"
+        ],
+        "status": "original15raw_recovered_after_canonical_placement_check",
+        "device_us": 64.35233333333333,
+        "latency_samples_ms": [
+          0.064579,
+          0.064486,
+          0.06811199999999999,
+          0.062866,
+          0.065069,
+          0.062549,
+          0.064081,
+          0.060638,
+          0.061209000000000006,
+          0.063994,
+          0.064589,
+          0.065062,
+          0.066903,
+          0.06544,
+          0.065708
+        ],
+        "protocol": "experimental-baseline-full32-marker-session-v1",
+        "original_run": "new-tilekernels-41-47-102842914263",
+        "original_archive_sha256": "3b1edd2d20189f47343f6c2206bd159dbc8c25c3099b2409b5c4fee2e4c68f7c",
+        "raw_sha256": "1377e110173b49dd62ca30df18642b1060a3da9aa8d8b2d4e39861365f6d6331",
+        "canonical_run": "canonical-rope-first-110833400093",
+        "canonical_receipt_sha256": "16736835f1698e6aa4598ba1367ca297a5bf1ba0005e50909f45c2cc907f97e5",
+        "payload_sha256": "c81308290ddfb7d7bac8db63c7b7c50d4c8b4ece9c578ffe88f7b36be3ae2d87",
+        "source_all_provider_hashes_equal": true,
+        "matching_loaded_libraries": 164,
+        "loaded_library_identity_check_run": "canonical-rope-rest-112832148806",
+        "host_samples_not_reconstructed": true,
+        "performance_windows_added": 0
+      },
+      {
+        "ordinal": 42,
+        "key": [
+          "TileKernels",
+          "RoPEFwdOp",
+          "interleaved-1d-2k-float16"
+        ],
+        "status": "original15raw_recovered_after_canonical_placement_check",
+        "device_us": 64.99546666666667,
+        "latency_samples_ms": [
+          0.065191,
+          0.06413200000000001,
+          0.065696,
+          0.06328399999999999,
+          0.065014,
+          0.065243,
+          0.06446600000000001,
+          0.062935,
+          0.06229,
+          0.06324199999999999,
+          0.064681,
+          0.066039,
+          0.06829099999999999,
+          0.06865099999999999,
+          0.065777
+        ],
+        "protocol": "experimental-baseline-full32-marker-session-v1",
+        "original_run": "new-tilekernels-42-47-102918904277",
+        "original_archive_sha256": "e6c2d6474b91ddf3963aa2d01f962da7eb0349a17eb4d26e72b6e3713a462365",
+        "raw_sha256": "b31cb8178f50e1467685b9f13d158aa7fb4432fa96c36588d71ce23c4f8c1bd1",
+        "canonical_run": "canonical-rope-rest-112832148806",
+        "canonical_receipt_sha256": "841b78b0e8627cce05d676f5ab51cbecc900a46183591b219dd09e7d2f8f1726",
+        "payload_sha256": "145e0d4567fd2433c0a82c51e5e6b32a6c59ac859114dfb41722834809fcdf9a",
+        "source_all_provider_hashes_equal": true,
+        "matching_loaded_libraries": 164,
+        "loaded_library_identity_check_run": "canonical-rope-rest-112832148806",
+        "host_samples_not_reconstructed": true,
+        "performance_windows_added": 0
+      },
+      {
+        "ordinal": 44,
+        "key": [
+          "TileKernels",
+          "RoPEFwdOp",
+          "neox-1d-2k-float32"
+        ],
+        "status": "original15raw_recovered_after_canonical_placement_check",
+        "device_us": 44.059733333333334,
+        "latency_samples_ms": [
+          0.044186,
+          0.043249,
+          0.044171,
+          0.045062,
+          0.045801,
+          0.043711,
+          0.043354,
+          0.043528,
+          0.044817,
+          0.044582000000000004,
+          0.045037999999999995,
+          0.045548000000000005,
+          0.044186,
+          0.041884,
+          0.041779
+        ],
+        "protocol": "experimental-baseline-full32-marker-session-v1",
+        "original_run": "new-tilekernels-43-47-102957881729",
+        "original_archive_sha256": "2e1d03addbb70a1f0755072b34b72dfa218a25c9e667922cda0cd42cfcceebb0",
+        "raw_sha256": "8dd709ee59e0d1df39bd4c6379c23973a5af1c8256d17dc5e29aeac9ad25a5fe",
+        "canonical_run": "canonical-rope-rest-112832148806",
+        "canonical_receipt_sha256": "cef65d345f0fe5a76b9e7c995900dba8241bf353a935aed980bd71aa7449292a",
+        "payload_sha256": "6519a0bf382a7b0db7ed464b0f83b9a206d1795783bbdcb4cb0afe42b0710b9a",
+        "source_all_provider_hashes_equal": true,
+        "matching_loaded_libraries": 165,
+        "loaded_library_identity_check_run": "canonical-rope-rest-112832148806",
+        "host_samples_not_reconstructed": true,
+        "performance_windows_added": 0
+      },
+      {
+        "ordinal": 45,
+        "key": [
+          "TileKernels",
+          "RoPEFwdOp",
+          "interleaved-1d-5k-float32"
+        ],
+        "status": "original15raw_recovered_after_canonical_placement_check",
+        "device_us": 50.33906666666667,
+        "latency_samples_ms": [
+          0.048184,
+          0.049735999999999995,
+          0.049680999999999996,
+          0.050561999999999996,
+          0.052539999999999996,
+          0.052112,
+          0.050042,
+          0.048218000000000004,
+          0.049574,
+          0.049008,
+          0.050012,
+          0.050249,
+          0.053218,
+          0.051202,
+          0.050747999999999995
+        ],
+        "protocol": "experimental-baseline-full32-marker-session-v1",
+        "original_run": "new-tilekernels-45-47-103033860314",
+        "original_archive_sha256": "4f21d1c980d0748dff7e7560f051c33030ff5b264cd517821eebcf7bf74920b5",
+        "raw_sha256": "251c945bebf13688b3a0c855ea18157ceecb510101e522f5acc2c2e7666cd0ee",
+        "canonical_run": "canonical-rope-rest-112832148806",
+        "canonical_receipt_sha256": "51adf0d5ffc63d8eb7a480ebba5b9faa88973e3a140b8947aa047d112e7d820a",
+        "payload_sha256": "f3ca38394090034db220f2e2f84a1ac3ab0a25cb4f14679f7cf0562e962559a7",
+        "source_all_provider_hashes_equal": true,
+        "matching_loaded_libraries": 164,
+        "loaded_library_identity_check_run": "canonical-rope-rest-112832148806",
+        "host_samples_not_reconstructed": true,
+        "performance_windows_added": 0
+      },
+      {
+        "ordinal": 46,
+        "key": [
+          "TileKernels",
+          "RoPEFwdOp",
+          "neox-2d-2k-float16"
+        ],
+        "status": "original15raw_recovered_after_canonical_placement_check",
+        "device_us": 164.20266666666666,
+        "latency_samples_ms": [
+          0.162481,
+          0.162853,
+          0.164893,
+          0.16667500000000002,
+          0.16483,
+          0.163685,
+          0.16396100000000002,
+          0.163863,
+          0.16383799999999998,
+          0.161982,
+          0.164715,
+          0.16492600000000002,
+          0.165343,
+          0.165061,
+          0.163934
+        ],
+        "protocol": "experimental-baseline-full32-marker-session-v1",
+        "original_run": "new-tilekernels-46-47-103110281661",
+        "original_archive_sha256": "687a9966061cfd22da8695c84685bd81444a4f8352b337cd9c62120ba18b65e5",
+        "raw_sha256": "11a6e87090ff4e502c8c9212dcdfb8d254623c9e083cdaffb2a8ab0969cafb6c",
+        "canonical_run": "canonical-rope-rest-112832148806",
+        "canonical_receipt_sha256": "5c4d8e5b084b3300a08960810b7bff300b5ec0bb7474c630b43e8e858d42ae12",
+        "payload_sha256": "55ced37e17179c5ffee7b85741c374e597fd9d016d8bf528dcd81f349348c75a",
+        "source_all_provider_hashes_equal": true,
+        "matching_loaded_libraries": 164,
+        "loaded_library_identity_check_run": "canonical-rope-rest-112832148806",
+        "host_samples_not_reconstructed": true,
+        "performance_windows_added": 0
+      }
+    ],
+    "catlass96_new_original_isolated15": {
+      "checkpoint": "rollout-canonical96.CHECKPOINT.json",
+      "result_sha256": "f8bedeed102238114bded05aced01acc888c1eae1efbd32b7ed2c0d524b47ae9",
+      "device_us": 705.5765333333334,
+      "host_us_diagnostic": 7895.161956548691
+    },
+    "additional_original_mandatory_probes": "canonical-fp8-edges.CANONICAL.json",
+    "kernel_precision_tolerance_inputs_changed": false,
+    "historical_failed_attempts_preserved": true
+  },
+  "canonical_followup_guarded_seconds": 142.85245076473802
+}

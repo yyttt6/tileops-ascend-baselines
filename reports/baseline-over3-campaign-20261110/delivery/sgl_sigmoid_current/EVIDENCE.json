@@ -1,0 +1,140 @@
+{
+  "pairs": [
+    {
+      "key": [
+        "sgl-kernel-npu",
+        "SigmoidFwdOp",
+        "16M-float16"
+      ],
+      "evidence": {
+        "index": 0,
+        "op": "SigmoidFwdOp",
+        "case": "16M-float16",
+        "variant": "native",
+        "attempt": "final1",
+        "status": "formal_raw_verified",
+        "result_sha256": "a7ee6df7275540741a79d3c44bbb19ab7050c98579593caf09b01570ab7d1579",
+        "host_us": 804.8513904213905,
+        "comparison_metric": "end_to_end_mean_ms",
+        "host_timing_sha256": "e198cd4a01559a82211a981b0a068ecbcdf3ece13d83d786a5ae9588d9d24468",
+        "us": 53.959133333333334,
+        "windows": 15,
+        "task_counts": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "aicpu_counts": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "old_web_torch_us": "54.38626666666667",
+        "guard_sha256": "433f5521e7062d53d26a87d15d2e463469a82a67e57afec66b0c6dbd5518bc86"
+      },
+      "hardware": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "hostname": "a5d0b50dc68f",
+        "backend": "sgl-complete-fused-sigmoid-mul"
+      },
+      "status": "original_complete_API_verified_current_environment_no_optimization_claim",
+      "historical_ratio_update": false
+    },
+    {
+      "key": [
+        "sgl-kernel-npu",
+        "SigmoidFwdOp",
+        "16M-bfloat16"
+      ],
+      "evidence": {
+        "index": 1,
+        "op": "SigmoidFwdOp",
+        "case": "16M-bfloat16",
+        "variant": "native",
+        "attempt": "final1",
+        "status": "formal_raw_verified",
+        "result_sha256": "224f3822c957e54f2f77553fd7f55f38f5a780efe76651d6c709678131a36b99",
+        "host_us": 999.7994018097719,
+        "comparison_metric": "end_to_end_mean_ms",
+        "host_timing_sha256": "3e747cb1452b0d98d620194d8615d684c24750ef559ca29523e66e5a502a3775",
+        "us": 54.321133333333336,
+        "windows": 15,
+        "task_counts": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "aicpu_counts": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "old_web_torch_us": "54.793933333333335",
+        "guard_sha256": "bf669254279a28a9cb9ab2b79bd498896d3173bf49b94607ba28fde752503903"
+      },
+      "hardware": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "hostname": "a5d0b50dc68f",
+        "backend": "sgl-complete-fused-sigmoid-mul"
+      },
+      "status": "original_complete_API_verified_current_environment_no_optimization_claim",
+      "historical_ratio_update": false
+    }
+  ],
+  "original_isolated_windows": 30,
+  "historical_ratio_update": false
+}

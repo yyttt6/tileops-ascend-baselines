@@ -1,0 +1,44 @@
+"""Whole-foreground H1 independent qualification of the exact H2 Graph capsule."""
+from pathlib import Path
+import json,subprocess,fcntl,os,sys,datetime,time,shlex,hashlib
+P=Path(__file__).resolve().parent;A=P/'server2-alignment-20261113';sys.path.insert(0,str(P));import rollout_controller as c
+N='/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-unary-segmentmin-api-v1';ROOT='/opt/baseline-over3-20261110/server2-aligned-stack';JOB=ROOT+'/job-python-v1/bin/python';now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat()
+def put(f,v):
+ t=f.with_suffix('.graph.tmp');t.write_text(json.dumps(v,indent=2)+'\n');t.replace(f)
+def stop():return (P/'STOP').exists() or (P.parent/'STOP').exists()
+lock=(P/'server1-graph92-min-qualification.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+s={'entry':Path(__file__).name,'pid':os.getpid(),'host':c.H,'queued_at':now(),'status':'CPU_wait_for_capsule_and_predecessor','no_formal_baseline_acceptance':True};file=A/'SERVER1_GRAPH92_MIN_QUALIFICATION.json';put(file,s)
+try:
+ while True:
+  assert not stop()
+  if not (A/'GRAPH92_CAPSULE_DEPLOYMENT_H1.json').exists():time.sleep(10);continue
+  prior=json.loads((P/'TLA_LOGICAL3_EXPANSION.json').read_text());pid=prior.get('pid');live=False
+  if pid:
+   try:live=b'queue_tla_logical3_dtype.py' in Path('/proc/'+str(pid)+'/cmdline').read_bytes()
+   except FileNotFoundError:pass
+  if live:time.sleep(10);continue
+  break
+ assert json.loads((A/'GRAPH92_CAPSULE_DEPLOYMENT_H1.json').read_text())['status']=='all_actual_files_SHA_equal_H1_H2'
+ assert json.loads((A/'SERVER2_GRAPH92_MATCHED_HEADERS_MIN_DIAGNOSTIC.json').read_text())['exit_code']==0
+ while True:
+  assert not stop()
+  with (P/'controller.lock').open('a') as slot:
+   fcntl.flock(slot,fcntl.LOCK_EX);okay,gate=c.admit()
+   if okay:
+    tag='server1-graph92-min-qualification-'+datetime.datetime.now(datetime.timezone.utc).strftime('%H%M%S%f');owner='root/baseline-native-probe/'+tag;receipt=N+'/'+tag+'-guard.json';result=tag+'.json';put(A/(tag+'.GATE.json'),gate);s.update(status='guarded_native_load',tag=tag,checked_at=now());put(file,s)
+    command='source '+ROOT+'/environment.sh; exec '+JOB+' '+c.R+'/opportunistic_guard.py run --owner '+owner+' --wait 10 --timeout 120 --receipt '+receipt+' -- bash '+N+'/graph92-server1-min-entry.sh '+owner+' '+result
+    with (A/(tag+'.log')).open('w') as out:rc=c.remote(command,stdout=out,stderr=subprocess.STDOUT).returncode
+    raw=c.remote('cat '+receipt,stdout=subprocess.PIPE,check=True).stdout;guard=json.loads(raw);(A/(tag+'-guard.json')).write_bytes(raw)
+   else:s.update(status='resource_deferred',checked_at=now());put(file,s)
+  if not okay:time.sleep(30);continue
+  if rc==75 and guard.get('phase')=='released_without_launch':time.sleep(30);continue
+  raw=c.remote('cat '+N+'/'+result,stdout=subprocess.PIPE,check=True).stdout;(A/result).write_bytes(raw);data=json.loads(raw);passed=rc==0 and guard.get('performance_valid') is True and data.get('full_output_and_inputs_verified') is True;s.update(status='loaded_pending_numeric_qualification' if passed else 'load_failed_requires_diagnosis',exit_code=rc,guard=guard,result=result,diagnostic_result={k:data.get(k) for k in ['status','error','full_output_and_inputs_verified','runtime']})
+  for suffix in ['.maps.txt','.pt']:
+   path=N+'/'+result+suffix
+   if c.remote('test -f '+path).returncode==0:
+    raw=c.remote('cat '+path,stdout=subprocess.PIPE,check=True).stdout;(A/(result+suffix)).write_bytes(raw);assert c.remote('sha256sum '+path,stdout=subprocess.PIPE,text=True,check=True).stdout.split()[0]==hashlib.sha256(raw).hexdigest()
+  for f in [A/(tag+'.log'),A/(tag+'-guard.json'),A/result]:
+   dest=N+'/'+f.name;code='from pathlib import Path;import sys;p=Path('+repr(dest)+');raw=sys.stdin.buffer.read();assert not p.exists() or p.read_bytes()==raw;p.write_bytes(raw)';c.remote('/opt/tileops-ci/runtime/bin/python -I -S -c '+shlex.quote(code),input=f.read_bytes(),check=True);assert c.remote('sha256sum '+dest,stdout=subprocess.PIPE,text=True,check=True).stdout.split()[0]==hashlib.sha256(f.read_bytes()).hexdigest()
+  break
+except BaseException as e:s.update(status='stopped_requires_diagnosis',error=repr(e));raise
+finally:s['checked_at']=now();put(file,s)

@@ -1,0 +1,22 @@
+[
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MeanFwdOp",
+      "long-seq-bfloat16"
+    ],
+    "selected": "public-rank8-noop-pad",
+    "historical_ratio_update": false,
+    "device_us": 49.627066666666664,
+    "control_reuse_proof": {
+      "full_prepare_payload_identical": true,
+      "original_provider_and_binding_identical": true,
+      "external_SOURCE_identical": 84,
+      "runtime_hardware_identical_except_expected_backend_label": true,
+      "common_loaded_libraries_same_SHA": 169,
+      "worker_AST_identical_except_metadata_label": true,
+      "original_control_explicitly_reused": "/root/dyq/workspace/reports/baseline-over3-campaign-20261110/sgl-longmean-matched-server1/remote/runs/0/native/final1/result.json",
+      "comparison_not_full_SOURCE_equal": "New rank8 candidate is a revision;3 public shape/rank constants16->8 plus metadata, controller scheduling and paths differ. No claim of interleaved old-new-old controls."
+    }
+  }
+]

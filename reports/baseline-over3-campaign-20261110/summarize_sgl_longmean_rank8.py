@@ -1,0 +1,21 @@
+from pathlib import Path
+import json,hashlib,ast,shutil
+P=Path(__file__).parent;A=P/'sgl-longmean-matched-server1';B=P/'sgl-longmean-rank8-server1';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+oldrows=json.loads((A/'RESULTS.json').read_text());old=next(r for r in oldrows if r['variant']=='native' and r['status']=='formal_raw_verified');nopad=next(r for r in oldrows if r['variant']=='fixed' and r['status']=='formal_raw_verified');new=next(r for r in json.loads((B/'RESULTS.json').read_text()) if r['status']=='formal_raw_verified')
+files=[A/'remote/runs/0/native/final1/result.json',A/'remote/runs/0/fixed/final1/result.json',B/'remote/runs/0/fixed/final1/result.json'];records=[json.loads(f.read_text()) for f in files];source=[json.loads((f.parent/'SOURCE.json').read_text()) for f in files]
+for r,f,m in zip([old,nopad,new],files,records):assert sha(f)==r['result_sha256'] and sha(f.parent/'SOURCE.json')==m['source_sha256']
+assert json.loads((A/'remote/runs/0/prepare.json').read_text())==json.loads((B/'remote/runs/0/prepare.json').read_text())
+for m in records[1:]:assert {k:v for k,v in m['hardware'].items() if k!='backend'}=={k:v for k,v in records[0]['hardware'].items() if k!='backend'}
+external=lambda src,prefix:{k:v for k,v in src.items() if not k.startswith(prefix)}
+assert external(source[0],'/opt/baseline-over3-20261110/'+A.name+'/')==external(source[2],'/opt/baseline-over3-20261110/'+B.name+'/')
+assert (A/'row_gemv.py').read_bytes()==(B/'row_gemv.py').read_bytes();assert (A/'native_adapters_v2.py').read_bytes()==(B/'native_adapters_v2.py').read_bytes()
+body=(B/'runner_v13_body.py').read_text().replace('sgl-complete-sgemmv-public-rank8-noop-pad','sgl-complete-sgemmv-noop-pad');assert ast.dump(ast.parse(body),include_attributes=False)==ast.dump(ast.parse((A/'runner_v13_body.py').read_text()),include_attributes=False)
+libs=[json.loads((f.parent/'LOADED_LIBRARIES.json').read_text()) for f in files];common=set(libs[0])&set(libs[2]);assert all(libs[0][k]==libs[2][k] for k in common)
+for token in ['libtorch_cpu.so','libtorch_npu.so','libsgl_kernel_npu.so','libstdc++.so.6']:assert any(k.endswith(token) for k in common)
+proof={'full_prepare_payload_identical':True,'original_provider_and_binding_identical':True,'external_SOURCE_identical':len(external(source[0],'/opt/baseline-over3-20261110/'+A.name+'/')),'runtime_hardware_identical_except_expected_backend_label':True,'common_loaded_libraries_same_SHA':len(common),'worker_AST_identical_except_metadata_label':True,'original_control_explicitly_reused':str(files[0]),'comparison_not_full_SOURCE_equal':'New rank8 candidate is a revision;3 public shape/rank constants16->8 plus metadata, controller scheduling and paths differ. No claim of interleaved old-new-old controls.'}
+(B/'CONTROL_REUSE_PROOF.json').write_text(json.dumps(proof,indent=2))
+summary={'status':'original15 raw/checker/guard passed; current locked vendor-profile control explicitly reused','key':['sgl-kernel-npu','MeanFwdOp','long-seq-bfloat16'],'original_device_us':old['us'],'zero_pad_candidate_device_us':nopad['us'],'rank8_device_us':new['us'],'device_reduction_vs_original':1-new['us']/old['us'],'device_reduction_vs_zero_pad':1-new['us']/nopad['us'],'original_host_us':old['host_us'],'rank8_host_us':new['host_us'],'host_reduction_vs_original':1-new['host_us']/old['host_us'],'reused_control_proof':proof,'original':old,'previous_candidate':nopad,'candidate':new,'additional_formal_windows':15,'historical_ratio_update':False}
+(P/'SGL_LONGMEAN_RANK8_CURRENT.json').write_text(json.dumps(summary,indent=2));T=P/'delivery/sgl_longmean_rank8';T.mkdir(exist_ok=True)
+for name in ['native_adapters_v2.py','row_gemv.py','row_gemv_noop_pad_candidate.py','reduction.py']:
+ f=B/name;key='/opt/baseline-over3-20261110/'+B.name+'/'+name;assert source[2][key]==sha(f);shutil.copyfile(f,T/name)
+(T/'EVIDENCE.json').write_text(json.dumps(summary,indent=2));(T/'ROUTES.json').write_text(json.dumps([{'key':summary['key'],'selected':'public-rank8-noop-pad','historical_ratio_update':False,'device_us':new['us'],'control_reuse_proof':proof}],indent=2));print('rank8 staged: device',old['us'],'->',new['us'],'reduction',round(100*summary['device_reduction_vs_original'],2),'%; post-control reuse proof passed')

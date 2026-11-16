@@ -1,0 +1,10 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "LayerNormFwdOp",
+      "dit-xl-2-bfloat16"
+    ],
+    "fixed": false
+  }
+]

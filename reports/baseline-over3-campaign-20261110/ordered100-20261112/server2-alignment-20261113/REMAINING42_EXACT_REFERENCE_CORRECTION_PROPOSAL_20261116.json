@@ -1,0 +1,1175 @@
+{
+  "checked_at": "2026-11-16T02:39:12.341713+00:00",
+  "status": "concrete_proposal_not_applied_pending_explicit_user_authorization",
+  "scope": [
+    184,
+    240,
+    241,
+    244,
+    245,
+    270,
+    271,
+    272,
+    273,
+    274,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    284,
+    295,
+    296,
+    297,
+    309,
+    372,
+    486,
+    487,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    498,
+    759,
+    772,
+    773,
+    774,
+    777,
+    804,
+    1082,
+    1255
+  ],
+  "rows": [
+    {
+      "ordinal": 240,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-2k-bfloat16"
+      ],
+      "group": "Bmm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_BMM_REFERENCE_CPU_DIAGNOSIS_20261116.json",
+          "sha256": "531d1f4896e224f9028daf149c81050c6082f708d25fae3d1fe0f36337ea6a60"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/BMM759_REFERENCE_CORRECTION_PROPOSAL.json",
+          "sha256": "8973f471de401e7d3157b9517d8ebce526d044886349adde130444184382b7ec"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 241,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "moe-prefill-bfloat16"
+      ],
+      "group": "Bmm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_BMM_REFERENCE_CPU_DIAGNOSIS_20261116.json",
+          "sha256": "531d1f4896e224f9028daf149c81050c6082f708d25fae3d1fe0f36337ea6a60"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/BMM759_REFERENCE_CORRECTION_PROPOSAL.json",
+          "sha256": "8973f471de401e7d3157b9517d8ebce526d044886349adde130444184382b7ec"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 244,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "group": "Bmm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_BMM_REFERENCE_CPU_DIAGNOSIS_20261116.json",
+          "sha256": "531d1f4896e224f9028daf149c81050c6082f708d25fae3d1fe0f36337ea6a60"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/BMM759_REFERENCE_CORRECTION_PROPOSAL.json",
+          "sha256": "8973f471de401e7d3157b9517d8ebce526d044886349adde130444184382b7ec"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 245,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "group": "Bmm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_BMM_REFERENCE_CPU_DIAGNOSIS_20261116.json",
+          "sha256": "531d1f4896e224f9028daf149c81050c6082f708d25fae3d1fe0f36337ea6a60"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/BMM759_REFERENCE_CORRECTION_PROPOSAL.json",
+          "sha256": "8973f471de401e7d3157b9517d8ebce526d044886349adde130444184382b7ec"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 759,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "group": "Bmm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_BMM_REFERENCE_CPU_DIAGNOSIS_20261116.json",
+          "sha256": "531d1f4896e224f9028daf149c81050c6082f708d25fae3d1fe0f36337ea6a60"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/BMM759_REFERENCE_CORRECTION_PROPOSAL.json",
+          "sha256": "8973f471de401e7d3157b9517d8ebce526d044886349adde130444184382b7ec"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 270,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-mlp-up-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 271,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-mlp-up-float16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 272,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-o-proj-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 273,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-down-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 274,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-q-b-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 276,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 277,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 278,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 279,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 280,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 281,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 282,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 284,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 486,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 487,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 489,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 490,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 491,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 492,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-qkv-a-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 493,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 494,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-down-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 495,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 496,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 498,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "group": "Gemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/MATH_GEMM271_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "19cd7e0216d3b014adfd39c35b44b9ff8b088a45cc343a039dd5113d0a5da606"
+        },
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REMAINING_REFERENCE_PREFLIGHT_THREADS4.json",
+          "sha256": "6a0812682848734d705a0802d859e7091dbac4fbcd626f21ac38509229fe5986"
+        },
+        {
+          "file": "server2-alignment-20261113/GEMM10_REFERENCE_TRIAGE.json",
+          "sha256": "8c534b13d3322170c6066a1b77d805f72e29ef01784a1138930d6b6a4cc0deb4"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 295,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "moe-fwd-bfloat16"
+      ],
+      "group": "GroupedGemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/GMMV5_774_REFERENCE_REVIEW_PROPOSAL.json",
+          "sha256": "36b7e38fe8e99cd0dee302875aa90f6029cbbaf0882547d7122fc5aef3fb4c73"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 296,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "group": "GroupedGemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/GMMV5_774_REFERENCE_REVIEW_PROPOSAL.json",
+          "sha256": "36b7e38fe8e99cd0dee302875aa90f6029cbbaf0882547d7122fc5aef3fb4c73"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 297,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "group": "GroupedGemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/GMMV5_774_REFERENCE_REVIEW_PROPOSAL.json",
+          "sha256": "36b7e38fe8e99cd0dee302875aa90f6029cbbaf0882547d7122fc5aef3fb4c73"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 772,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "group": "GroupedGemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/GMMV5_774_REFERENCE_REVIEW_PROPOSAL.json",
+          "sha256": "36b7e38fe8e99cd0dee302875aa90f6029cbbaf0882547d7122fc5aef3fb4c73"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 773,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "group": "GroupedGemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/GMMV5_774_REFERENCE_REVIEW_PROPOSAL.json",
+          "sha256": "36b7e38fe8e99cd0dee302875aa90f6029cbbaf0882547d7122fc5aef3fb4c73"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 774,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "moe-fwd-float16"
+      ],
+      "group": "GroupedGemm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/REMAINING_MATH_MATRIX_REFERENCE_CPU_DIAGNOSIS.json",
+          "sha256": "18c94904b56eaf16bd14d16e6cf9b455feef39ecb58edd581ef4f17524bc8f53"
+        },
+        {
+          "file": "server2-alignment-20261113/MATH_REFERENCE_CPU_THREAD_STABILITY.json",
+          "sha256": "2e93d976fcc8df3c414b72cf4afaa526c83b4a76ac00533946e1564784e8762b"
+        },
+        {
+          "file": "server2-alignment-20261113/GMMV5_774_REFERENCE_REVIEW_PROPOSAL.json",
+          "sha256": "36b7e38fe8e99cd0dee302875aa90f6029cbbaf0882547d7122fc5aef3fb4c73"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 309,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "group": "InstanceNorm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/ORIGINAL_NORM_309_CPU_DIAGNOSIS.json",
+          "sha256": "1150866dc2cb885c53e5ce00b0606e2b9e5764f3076ee1e0a965900db78c059f"
+        },
+        {
+          "file": "server2-alignment-20261113/INSTANCE_ORIGINAL_CPU_REFERENCE_AUDIT.json",
+          "sha256": "11e3e26467bf8e991eeb80b42f3d263cb11d8bc49027b9b4742f631b25bfa2d6"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 777,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "group": "InstanceNorm",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/ORIGINAL_NORM_309_CPU_DIAGNOSIS.json",
+          "sha256": "1150866dc2cb885c53e5ce00b0606e2b9e5764f3076ee1e0a965900db78c059f"
+        },
+        {
+          "file": "server2-alignment-20261113/INSTANCE_ORIGINAL_CPU_REFERENCE_AUDIT.json",
+          "sha256": "11e3e26467bf8e991eeb80b42f3d263cb11d8bc49027b9b4742f631b25bfa2d6"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 184,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "group": "SSDChunkCoupling",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/FLA184_COUPLING_FP64_CPU_DIAGNOSIS.json",
+          "sha256": "968ff2161768604c05955f7db4d7a635da1009b8e5a2c224bdc7e68e39696ff2"
+        },
+        {
+          "file": "server2-alignment-20261113/SSD_COUPLING184_804_REFERENCE_REPAIR_PROPOSAL.json",
+          "sha256": "1f37de09b09bbb11bfbf53ce96fbeed41f67679ef9dc73a60704a406f3043776"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 372,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "group": "SSDChunkCoupling",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/FLA184_COUPLING_FP64_CPU_DIAGNOSIS.json",
+          "sha256": "968ff2161768604c05955f7db4d7a635da1009b8e5a2c224bdc7e68e39696ff2"
+        },
+        {
+          "file": "server2-alignment-20261113/SSD_COUPLING184_804_REFERENCE_REPAIR_PROPOSAL.json",
+          "sha256": "1f37de09b09bbb11bfbf53ce96fbeed41f67679ef9dc73a60704a406f3043776"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 804,
+      "key": [
+        "ops-transformer",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "group": "SSDChunkCoupling",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/FLA184_COUPLING_FP64_CPU_DIAGNOSIS.json",
+          "sha256": "968ff2161768604c05955f7db4d7a635da1009b8e5a2c224bdc7e68e39696ff2"
+        },
+        {
+          "file": "server2-alignment-20261113/SSD_COUPLING184_804_REFERENCE_REPAIR_PROPOSAL.json",
+          "sha256": "1f37de09b09bbb11bfbf53ce96fbeed41f67679ef9dc73a60704a406f3043776"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 1082,
+      "key": [
+        "sgl-kernel-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "group": "SSDChunkCoupling",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/FLA184_COUPLING_FP64_CPU_DIAGNOSIS.json",
+          "sha256": "968ff2161768604c05955f7db4d7a635da1009b8e5a2c224bdc7e68e39696ff2"
+        },
+        {
+          "file": "server2-alignment-20261113/SSD_COUPLING184_804_REFERENCE_REPAIR_PROPOSAL.json",
+          "sha256": "1f37de09b09bbb11bfbf53ce96fbeed41f67679ef9dc73a60704a406f3043776"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    },
+    {
+      "ordinal": 1255,
+      "key": [
+        "vllm-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "group": "SSDChunkCoupling",
+      "existing_evidence": [
+        {
+          "file": "server2-alignment-20261113/FLA184_COUPLING_FP64_CPU_DIAGNOSIS.json",
+          "sha256": "968ff2161768604c05955f7db4d7a635da1009b8e5a2c224bdc7e68e39696ff2"
+        },
+        {
+          "file": "server2-alignment-20261113/SSD_COUPLING184_804_REFERENCE_REPAIR_PROPOSAL.json",
+          "sha256": "1f37de09b09bbb11bfbf53ce96fbeed41f67679ef9dc73a60704a406f3043776"
+        }
+      ],
+      "required_before_any_new_reference": "Recheck exact payload and original tolerance, two independent full FP64/stable mathematical diagnoses; bind only this ordinal and input SHA. Retained native-vs-math proof where available; never infer unmeasured native correctness.",
+      "requested_change": "Only checker golden reference in separate authorized sidecar, preserve original source/metadata/failures and timed native dtype/API/kernel/compiler/tolerance. Old valid measurements remain immutable."
+    }
+  ],
+  "excludes_already_approved_Bmm_keys_and_all_other_cases": true,
+  "new_reference_applied": false,
+  "protocol_requirement": {
+    "file": ".agent_memory/THREADS/baseline-inspector-20261023/BENCHMARK_PROTOCOLS.md",
+    "text": "允许的参考修正必须逐case有授权与证据，不能由少量诊断泛化到全部reference。"
+  },
+  "independent_authorized_work_continues": "Native7 AdaLN/Zero; original full Torch API/SDK recovery for8; no reference edit pending response."
+}

@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-16T06:10:13.398671+00:00",
+  "host": "openlibing-DevEnv-661495",
+  "files": {
+    "complex6_input_preservation.py": "736366a5237465be2f7a950185ee166701c12f08a85032b9375da50ed6a43376",
+    "complex6_cached_fidelity.py": "2500d46628f18fa2925f9c1ab2eb1ccc0ff0cc5c8aaff88df6f71dd3aa2418eb",
+    "worker_complex6_original.py": "94857123af0a07af6a6c736d77446a6b0c00d75bf5dbff97a17854ac9ca18a13",
+    "complex_input_preservation_compat_proposal.py": "546ccf88cd492ac6da4862435716855fbf9c43cd3d9c5fd122094a3cfa6e2255",
+    "server2-alignment-20261113/COMPLEX6_USER_AUTHORIZATION_20261116.json": "d057e71c598aaa69a7134777f8b3d37ccc5fd62e3fe88fd3ce29b4bce8ee19cd",
+    "remote_bootstrap_sha256": "42f36c0697eca61fc96d18528afdb3794f6a332c8d5af15288aa7ffac9d83b7f"
+  },
+  "baseline_FunctionDef_AST_unchanged": true,
+  "shared_measured_correctness_and_original_numerics_unchanged": true
+}

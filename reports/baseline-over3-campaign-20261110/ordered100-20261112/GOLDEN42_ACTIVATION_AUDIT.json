@@ -1,0 +1,416 @@
+{
+  "checked_at_remote": "2026-11-16T03:49:50.144341+00:00",
+  "status": "passed",
+  "manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+  "oracle_sha256": "445fb1d1284fff4f7b2e0ebe3919f69b1c22b919121adbfd50485ce8f9e47313",
+  "bindings_sha256": "2e5ad03cc2e655ab6b20a4870d49ae318be9606059b637631a532fc4e449a026",
+  "audit_sha256": "588f68024104e19199516e6f35866c203c457ac29f217fee71650988de735e81",
+  "scope": [
+    184,
+    240,
+    241,
+    244,
+    245,
+    270,
+    271,
+    272,
+    273,
+    274,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    284,
+    295,
+    296,
+    297,
+    309,
+    372,
+    486,
+    487,
+    489,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    498,
+    759,
+    772,
+    773,
+    774,
+    777,
+    804,
+    1082,
+    1255
+  ],
+  "rows": [
+    {
+      "ordinal": 184,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 240,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 241,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 244,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 245,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 270,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 271,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 272,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 273,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 274,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 276,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 277,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 278,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 279,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 280,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 281,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 282,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 284,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 295,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 296,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 297,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 309,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 372,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 486,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 487,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 489,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 490,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 491,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 492,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 493,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 494,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 495,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 496,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 498,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 759,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 772,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 773,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 774,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 777,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 804,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 1082,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    },
+    {
+      "ordinal": 1255,
+      "identity_and_golden_hashes_checked": true,
+      "selector_accepts_exact_identity": true,
+      "selector_rejects_wrong_payload": true
+    }
+  ],
+  "negative_wrong_payload_checks_passed": 42,
+  "out_of_scope_rejected": true,
+  "live_canonical_CPU_selector_bitwise_checks": [
+    309,
+    486
+  ],
+  "retained_native_output_rechecks": [
+    {
+      "ordinal": 184,
+      "status": "retained_native_output_passes_corrected_golden",
+      "diagnostic": "runs/rollout-fla-tap-api-sdk-184-h1-v7-160206222127/184/CHECKER_DIAGNOSTIC.pt",
+      "diagnostic_sha256": "513344e051433fb365d17248df1c3b96e032900301e430324f5144e39bac2e76",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0009765625,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "ordinal": 240,
+      "status": "retained_native_output_passes_corrected_golden",
+      "diagnostic": "runs/rollout-math-bmm-transformer-alternative-240-h1-v1-004532025004/240/CHECKER_DIAGNOSTIC.pt",
+      "diagnostic_sha256": "949b44246445e640f9890865aea909c7e2fae9b5ef21b62a7e4177c7c7a4a243",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 1.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "ordinal": 309,
+      "status": "retained_native_output_passes_corrected_golden",
+      "diagnostic": "runs/rollout-ops-math-original-norm-309-l1-quiet-v2-000608080595/309/CHECKER_DIAGNOSTIC.pt",
+      "diagnostic_sha256": "4479aac970d4f4fbcc3536cfc93299e0a062070828df270277fe908116fb6985",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.00390625,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "ordinal": 486,
+      "status": "retained_native_output_passes_corrected_golden",
+      "diagnostic": "runs/rollout-ops-nn-gemm10-485-486-v2-014022480185/486/CHECKER_DIAGNOSTIC.pt",
+      "diagnostic_sha256": "b620cd096df139a621e976245242906f161ee5863ba4e111f4596fddc231d64c",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0625,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "ordinal": 496,
+      "status": "retained_native_output_passes_corrected_golden",
+      "diagnostic": "runs/rollout-ops-nn-gemm-pad4-496-l1-v1-200213557964/496/CHECKER_DIAGNOSTIC.pt",
+      "diagnostic_sha256": "8dfac207c9c5ebc0f11b17d34d24328d6699e0656af94a7e9fe2e816c0ea8faf",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.25,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "ordinal": 759,
+      "status": "retained_native_output_passes_corrected_golden",
+      "diagnostic": "runs/rollout-ops-transformer-bmm-api-sdk-759-h1-v1-083921979505/759/CHECKER_DIAGNOSTIC.pt",
+      "diagnostic_sha256": "e57541f8fd49dbca73a734b2248728a6bc25c40eeb007b61501bc7cc0a8fdd1e",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0625,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "ordinal": 777,
+      "status": "retained_native_output_passes_corrected_golden",
+      "diagnostic": "runs/rollout-ops-transformer-instance-api-sdk-777-h1-v1-102111965100/777/CHECKER_DIAGNOSTIC.pt",
+      "diagnostic_sha256": "f50629b74e16fce42331d6316842b9b66bf2fe3895e7a41ed57aeb8bc6a72e20",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.00390625,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "ordinal": 1082,
+      "status": "retained_native_output_passes_corrected_golden",
+      "diagnostic": "runs/rollout-1080-1082-layoutasset2-204553583983/1082/CHECKER_DIAGNOSTIC.pt",
+      "diagnostic_sha256": "b613c624a0f1068e99dd4baf290bab2fb4139852751b80903eadfc555ad89e1a",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0009765625,
+        "unchecked_reason": null
+      }
+    }
+  ],
+  "new_qualified_coverage": 0,
+  "new_pairs": 0,
+  "new_final_closures": 0,
+  "new_performance_measurements": 0,
+  "original_NPU_golden_not_recomputed_by_CPU_audit": true,
+  "original_golden_files_in_certificates_are_original_reference_recomputed_on_CPU": true
+}

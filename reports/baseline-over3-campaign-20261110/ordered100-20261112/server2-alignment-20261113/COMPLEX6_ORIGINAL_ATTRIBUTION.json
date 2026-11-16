@@ -1,0 +1,905 @@
+{
+  "checked_at": "2026-11-16T06:19:17.654673+00:00",
+  "proofs": [
+    {
+      "ordinal": 1292,
+      "checkpoint_sha256": "d513229bd368025230eeb64bdc68a3b4ce32c492278ba5fccc4eefe495f234e2",
+      "actual_SDK_OPP": "/usr/local/Ascend/cann-9.1.0/opp",
+      "SDK_retention_sha256": "8c2a03fa799d875d213b92b1cdf1827523857d911e4be1672f3c0e0eca0fcfaa",
+      "all15_full32_windows": [
+        {
+          "trace_sha256": "2c9ce75b6300b032febc98a801d3ff2220d8a16f70cad3c56abf716825d680bd",
+          "complete_device_ms": 2.1552251612803577,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "ce0aabba26f2488accb82ea99615bd25697082cba22d3abc893c90cba06c743c",
+          "complete_device_ms": 2.1627622130628676,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "8d61ceed7db9e13db6181ef78a12508cf1ec0d2102ecd4656f115af39b1215cf",
+          "complete_device_ms": 2.152577123962727,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "726d0879e2f89f56f3ae39a5118161da6f83bceaace09cc0e6f9cbc30b147e52",
+          "complete_device_ms": 2.1382200258190385,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "38185dde5a0e79ea5d648ff31b1867a6bd232b633b654f902276a01f669a92e5",
+          "complete_device_ms": 2.140303043146509,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "e7e4b159f3bb62fabd1bed577ff0e5368972d20fb58865b0b4415cb18b0a248b",
+          "complete_device_ms": 2.1502331081305206,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "9f12d4aa4f1a0c976fd1717416151f3af1a43483d7e33330d8fc77adc89c0fd0",
+          "complete_device_ms": 2.159336185996191,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "911fd8d976fd424325a44acc16ba6a7957a4be4831cc3e7d2695f4e74e4b80ea",
+          "complete_device_ms": 2.1516061347494175,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "62bf354368ad3b8c26bb8a2c4efe776f350f7af937f5bc6c3ac266b193f0af40",
+          "complete_device_ms": 2.1605871975345114,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "e60839de1bd073de1db57db303fddfd28e95d10af1bf4e0e02d317ecfac3b8f7",
+          "complete_device_ms": 2.1513091321267086,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "0242a427b6d96b3c98c36b3d70fcaf5a296c374e65ec71d3b33a93437f699526",
+          "complete_device_ms": 2.138318024179845,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "2178ca2c5a50c3f88594e3c7b8789560ab233c0ac37279f31d9ccbbbb056370a",
+          "complete_device_ms": 2.1690052562735973,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "369ff2c3223e8a9ff12931d50bbf4e12d96fe89ec14d27c91efa503fc6449bdd",
+          "complete_device_ms": 2.1505371163504745,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "d85c89d41659ad43d09d9731fbb7b3a096a21ade86e7a41304d5d313dbccb21b",
+          "complete_device_ms": 2.145340077241726,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "089378492ceb7a8a389b17cb0bd181e33a03ec11fed8a2508d6c5e5f0c2f25e4",
+          "complete_device_ms": 2.14440306502374,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        }
+      ],
+      "SDK_AICORE_ELF_and_AICPU_declaration_separate": true,
+      "archive_sha256": "8b53ad107d9248a3470d9e4328f6b5eefcfffcec40ec2baa2433148e7a4a5a0a"
+    },
+    {
+      "ordinal": 1293,
+      "checkpoint_sha256": "1f4ee14dd5cc1dc101f43fa780b816e82c76c6c985adf7ba7e5bef45ddcf7d61",
+      "actual_SDK_OPP": "/usr/local/Ascend/cann-9.1.0/opp",
+      "SDK_retention_sha256": "73fe0ed11efa7cce9d4f5fe3e9c83aae9b7e7e03f893f44ec7ea43d269a6f035",
+      "all15_full32_windows": [
+        {
+          "trace_sha256": "60b90de4e012355c7fb5a841b521b2f3aac9d1e6ae487a7645a00a7145c8fb0a",
+          "complete_device_ms": 3.1998905157998445,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "941785927f96b698538c55ab9674d5b5691e103e18b7ae0d1434684f816ccd4d",
+          "complete_device_ms": 3.218219664582606,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "f39932ad0812840ede9536dd46c570ec0aaf193ea1dd2060a62ce7ed957f5d5a",
+          "complete_device_ms": 3.205826555388357,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "a19b7ef329a7ee696efeeda6007a088492e7fa05aeeaba002c3254f898a2c532",
+          "complete_device_ms": 3.200756519605971,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "f32b6675255fb5ee6fefc1606e6d65986fe1adf75b791e35da6fe7fb2d590796",
+          "complete_device_ms": 3.1976225007832366,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "7c7cfea1ba5152276b00e9053542e8b94b7365b5f30d1e9e2e59bfc59d929940",
+          "complete_device_ms": 3.206301557203463,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "c87c2ff78d4546a9df34180bcbff26ee8a66ad77b5f0a909ca55a1592dea66ae",
+          "complete_device_ms": 3.185812400904402,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "91d51ac0fcf0ed7380513affa26d0b7bb949e3ab07c7637cd130cd7c6930cad6",
+          "complete_device_ms": 3.1865324030073663,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "494b68b20c735082d1627d8cfb51f08c6b8c4a59bdddff28f3888917fb6149e0",
+          "complete_device_ms": 3.1855873942196924,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "a0f91e2c6547ddece9496b207d3a1f04a6d7b593fe4c588889083c64c5f34ef6",
+          "complete_device_ms": 3.2080915840622426,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "a335a31dfbf4e311bb9ccfe18e5a6129e239657386a4227469d0fe2c48d66f1f",
+          "complete_device_ms": 3.188678426491806,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "e42b6074061b96554cf47dc26382f4585683b1b1dbbb5e9407ed4068f4d0e672",
+          "complete_device_ms": 3.1901904288666376,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "fd94eaeaa47e08e3abaf287d98cace033f940f042c428c08474a578f4ae81c64",
+          "complete_device_ms": 3.1993835134969784,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "c798a96bb651e88ec57d2fe89d0670b1f4745b5d747189c08e513598f328f330",
+          "complete_device_ms": 3.2005915187503917,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "221d4d6979026228b5d9c0e6ebd92752aef3bafd2ffa029848fdf2fb34c62da4",
+          "complete_device_ms": 3.198449500351449,
+          "all_named_tasks": [
+            "ReduceAll_bool_int64_high_performance_10281",
+            "ReduceAll_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        }
+      ],
+      "SDK_AICORE_ELF_and_AICPU_declaration_separate": true,
+      "archive_sha256": "35fb5dedb2302ccfd5b84cf325c6352e26ba6b42ad11c9d7418fb1d4a14c111e"
+    },
+    {
+      "ordinal": 1294,
+      "checkpoint_sha256": "86fb9f00c505c3db01a37f9fb95b9c6225186af9b8e5ee776fe67b0da5674523",
+      "actual_SDK_OPP": "/usr/local/Ascend/cann-9.1.0/opp",
+      "SDK_retention_sha256": "a898edd50189aabd9d954cbd46c923562a1e38d7edb7baa9490b61f93d9bc0e9",
+      "all15_full32_windows": [
+        {
+          "trace_sha256": "ba234ed831103586b254194e36bd33465fa1a1bca08e952d18fe3989039d8bcb",
+          "complete_device_ms": 2.1395660325917047,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "16e278743dc2c1aa0d08ce42fe59db1943a4705191069a1f68dbe3ac6bfb1ce0",
+          "complete_device_ms": 2.152483132518516,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "134df9ed57b61bd39376cf8496830d3301f56b9d21ae4ca3964b59f88e302718",
+          "complete_device_ms": 2.143827064871815,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "acf96602fb7e3ee04d546a931aa59b0daaf889375c8c24de531b19b741e4db24",
+          "complete_device_ms": 2.160904204882894,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "bf1a65208dc8ba91f8cb905d72de11d9e1b8d35460901568e34ab9230eef8b4b",
+          "complete_device_ms": 2.1573421675412763,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "44ff1220ca6c19b57c0966acce7f03a2a98dc53baf035caf4ab93651db1c0a24",
+          "complete_device_ms": 2.148575100694181,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "937377a26ff2b3161d453800e57f6e9d1b0be26b1f90e04f502567c3fdad6b53",
+          "complete_device_ms": 2.1412560406677295,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "2b8e736fcee78f9067ad03b2d262eb181db93c5520acc394b5f4a0c7e81450c9",
+          "complete_device_ms": 2.15703817403408,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "4c86393c0bec636530b0d397a272d3ecee4f593f947616f81d6f121821b6c85e",
+          "complete_device_ms": 2.1426320536693293,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "3780aaf182dacc89638d88a1b0833319d61cd5276fa80c2b612c52b4b24ad55b",
+          "complete_device_ms": 2.141109045937135,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "8feb908d26a299e924d4764d89cf26d7da52340e7e0c73b19f647c0e56407f2f",
+          "complete_device_ms": 2.172236285851038,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "bce6ed52c5447d519a510af9a1c3ac4cf612abbc432d4e4a56b54f9e024b921e",
+          "complete_device_ms": 2.151997130279618,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "a04f87639eefb686c014fe187474fe3d296c8d23e4f5cb22b43197b60bdd887b",
+          "complete_device_ms": 2.1373850188224823,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "785d3235b7101896605ef35010b9b31add7031240d91272feba094b1979e3f33",
+          "complete_device_ms": 2.139883032223886,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "847682ce4e4047a1c0281e04364eae39e15d14b5471cdd468b410b4ff495a6b7",
+          "complete_device_ms": 2.1551281406505125,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        }
+      ],
+      "SDK_AICORE_ELF_and_AICPU_declaration_separate": true,
+      "archive_sha256": "f83f949ef1f55f6101e6366aa66a3e924481458e126943c04a4933fe7fa5a03d"
+    },
+    {
+      "ordinal": 1295,
+      "checkpoint_sha256": "b4b6fad26bcfb2fb6976c0a903f4b5bd7c17082fed3d4f32ab599782e8667872",
+      "actual_SDK_OPP": "/usr/local/Ascend/cann-9.1.0/opp",
+      "SDK_retention_sha256": "41a3223ccd1091193659399b1b6c705300433b6cf24a50eef1a4459fd0705496",
+      "all15_full32_windows": [
+        {
+          "trace_sha256": "cbac76f8803fd6dc19e8c3ab642c5192aa90e1bc0b4f9ab6914cfc49b729bc05",
+          "complete_device_ms": 3.2016615219808022,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "5fa340caec0b167d29d26633a54841094fc953aa3ba8df05f721aa6bd5824d04",
+          "complete_device_ms": 3.227944738914016,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "02b2aa71c1d7976406bc0c0757b726e66417e8743117ef2df57f369392f79e19",
+          "complete_device_ms": 3.2055995491514273,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "eeb59851d286fab72e15ca8699f01ac556fe4ea8e149167c619e1dbe500dc1c7",
+          "complete_device_ms": 3.208665574914745,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "180ad93d305df58561d73e7f0ae87f076363d45b8b8ab0ccd62f2bccd3880b81",
+          "complete_device_ms": 3.1937404649048973,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "9b55cb1cac0cadc5cacf986eae2b385efed34059dca1ab172cc92e39be6e4a56",
+          "complete_device_ms": 3.20523854650473,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "7391718194d2877ff3e314f2b35f206123089880d7fd53ea90306e893e4eb2cd",
+          "complete_device_ms": 3.200991513728864,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "cfdee678ec23a60e7ad8d32e3ad7e63ae817042658ee5bf27b6ab543a9f33a49",
+          "complete_device_ms": 3.200268511386017,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "a1215deb2bc6fd61c543e2602c146e46437420fc16c00c7948d9b1e1e9946149",
+          "complete_device_ms": 3.207246568981666,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "0b9947a0799dee76e2bb40322af230d3bb6958be72eb4a67f1bdfc82bd9f82a9",
+          "complete_device_ms": 3.209720592442117,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "b4a9f8dab186b6680a68c798de686765c1737cdf6227535638977fb3acb80570",
+          "complete_device_ms": 3.2070995677422753,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "a81bb9465b9a7a80f61e4fbe32516a92e5c15062c554ca08f91c61736797bcf9",
+          "complete_device_ms": 3.2021955190542424,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "07a5afbb653b2210030198fff1c058ced11afc979d0bb4dd7af1223352e22f4d",
+          "complete_device_ms": 3.194746475843513,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "c5e002c3aac1d049b45e7e7d3262331eb364084d50a349b920f9059d80be7276",
+          "complete_device_ms": 3.200323515647919,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        },
+        {
+          "trace_sha256": "1f857dc93145eb7247117e5b1ae3f0cf92a75c318cb2efd6aa42789b6edf9f48",
+          "complete_device_ms": 3.172395291430291,
+          "all_named_tasks": [
+            "ReduceAny_bool_int64_high_performance_10281",
+            "ReduceAny_bool_int64_high_performance_5143",
+            "Cast"
+          ]
+        }
+      ],
+      "SDK_AICORE_ELF_and_AICPU_declaration_separate": true,
+      "archive_sha256": "344cb931fa5ca60e6c9581dd8f67890163002b32978a504d8443a60158e962bd"
+    },
+    {
+      "ordinal": 1298,
+      "checkpoint_sha256": "8ee4e3532be41c49c4f5224960e70e82a49f8d0cb76e7fd8ff3ffaf47dc36b83",
+      "actual_SDK_OPP": "/usr/local/Ascend/cann-9.1.0/opp",
+      "SDK_retention_sha256": "adef5ac9c8bb6bca362a518032432db159e0fb645d444de26c2c26810af69421",
+      "all15_full32_windows": [
+        {
+          "trace_sha256": "4c1b6d03417177326eb12678aa028def6b1c703d4b66dbde64e362cd109d0987",
+          "complete_device_ms": 2.952974499968138,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "c587b6082c165fd3e308cf19f6b058f5edf14836d0016c18d5537e9f6a2b0fe2",
+          "complete_device_ms": 2.957475536534138,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "f283f391ff0e2b0d3c8afcd71d699f0a9a9832a6cf0917ebeb01de45d7c4add0",
+          "complete_device_ms": 2.936412364842653,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "68fffd898f12c8d746bb7e5a1ba5a141ccdb277669d5918c125a8559d89b9d50",
+          "complete_device_ms": 2.941550403823465,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "41a6cb171e9f93b163682fab6ecd055369a55031a2fe3bbc5180d2f1dc625162",
+          "complete_device_ms": 2.945954436615323,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "0a468cbd826fd15123fe4f8d03aba373313e2d54313b97378c299d8e4b707296",
+          "complete_device_ms": 2.9525244896852,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "6a1a430d98dabac0872aec99ad6522a114b876b8448950e8bc721225c355e9cd",
+          "complete_device_ms": 2.9462664481776315,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "8b6c5791ab730d4a5425bf31473b76470ae25ded793de4669ca46aa390b202c7",
+          "complete_device_ms": 2.9489994636979917,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "e1422f815bd05699dd602c565d86aa86a380b51a3eb8b5bd5ba9057081a52d4f",
+          "complete_device_ms": 2.951582484247876,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "913ba75306e8894b6fb2ee3dd6ee479928c8468f595ca3c99b5bd6051cc1aa1e",
+          "complete_device_ms": 2.949882467232252,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "235204ae8a8c9238a81a34bc0f149dd41ef2a31c43a567b053f6ff5683061365",
+          "complete_device_ms": 2.9385333819942105,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "98c9e894db926d8a4d841147ab8152ea30736a1afa4ad0fcf63a500676a3bff9",
+          "complete_device_ms": 2.9534414960420703,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "b72804ca9d6413b5fc6f07cf7afbc80cdd0c83347ddce16a7048a91a61722e7a",
+          "complete_device_ms": 2.953764498960634,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "4bd929b7762a74bde8c14e83b5637257853a7bea944c4d8fde2c90b53e774e42",
+          "complete_device_ms": 2.930735313116116,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "100a5cb7d7760e961ce91e361a6b030dc80cbcb28233dca372ec9ab98af2d82d",
+          "complete_device_ms": 2.9528314932754323,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        }
+      ],
+      "SDK_AICORE_ELF_and_AICPU_declaration_separate": true,
+      "archive_sha256": "ff75ee8cac0de656f8a8f693f6d8e1111679aa2fdafba1263173ff7ecbdf75b0"
+    },
+    {
+      "ordinal": 1299,
+      "checkpoint_sha256": "864517f3963f6ca6577eefede7764175b1532dbb7c4e007bffd251b44fddb873",
+      "actual_SDK_OPP": "/usr/local/Ascend/cann-9.1.0/opp",
+      "SDK_retention_sha256": "d0eb7ad267f6233a795232835cf87885234fcd7fb793f42c85701174936bce55",
+      "all15_full32_windows": [
+        {
+          "trace_sha256": "26c146b1bc022235e308a3cf561fd57bf482ca0d8b3104d7dd90a4e8432dda96",
+          "complete_device_ms": 3.319516423688936,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "f99668bbf0d5910df77eec062144129e273af446ad878c6e3d17677a5c4c1359",
+          "complete_device_ms": 3.3319905269421097,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "eb60ad60c7dc2ec91cec6dfc18d3639c5fcc4bd4e2a934c0d47ec8acd3e6e8f6",
+          "complete_device_ms": 3.3253684733444926,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "53b123174cd35701dca68912bb48a64a69f52eefd73ac0a3971fe433f03d61af",
+          "complete_device_ms": 3.3116093546029433,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "6240fea90fe371c4364ef4535534993fe2ee2f85c1e442b998444aa9e7597b70",
+          "complete_device_ms": 3.305595315558163,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "82dd3f7828dc8f632aa7bedbd8b246524058ecf070679d436800a8d61f0ce823",
+          "complete_device_ms": 3.3234974542738804,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "9ccfacf3ca5f5248cdbc2b6f4147048bde5cb986ab1e977892a00ba34edb8b91",
+          "complete_device_ms": 3.3267584842671165,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "480250044acd71cfc758ff155a43e8e77b8a22df24ee6ec8e6a840d420cc540b",
+          "complete_device_ms": 3.313768380766065,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "d5dbc09db36497da181373ef55932549b54d590e72c576a8bb6be91ea78bc59b",
+          "complete_device_ms": 3.3183174204825145,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "17beae6db67563eeb8e66494fe809874567a07227ff821b9521d148c68d9b99b",
+          "complete_device_ms": 3.311087358025259,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "4dca0e0951538b7d63193fdf69e6f3fce7bac51dd48d00f5d46d46930592e6a9",
+          "complete_device_ms": 3.3070413123197575,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "876d84581fbeff83ce99c9c62f698ef64740c28c4f336f9eb66235d6651fe533",
+          "complete_device_ms": 3.3101403518043213,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "7f40df5dfb138f52a09d76522ec340fc119e0f7963daa0cbc901c81650c2fb70",
+          "complete_device_ms": 3.319490414957234,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "863a453852cfecd43fd4a918794842ac50ce3b522d31636699f8d07e48a05379",
+          "complete_device_ms": 3.308244339682288,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        },
+        {
+          "trace_sha256": "cd1ef38d204b1aa4140300e7293185c3fc794ab3adb39f8a7185d82a36558484",
+          "complete_device_ms": 3.2936982160871278,
+          "all_named_tasks": [
+            "Cast_df2b778f1b80e749bd4242386ec57ab9_high_performance_0",
+            "ReduceSum_float32_int64_high_performance_141375",
+            "Cast_c6738f795430c3c6f09cdc8d52a1b43d_high_performance_0",
+            "NotEqual"
+          ]
+        }
+      ],
+      "SDK_AICORE_ELF_and_AICPU_declaration_separate": true,
+      "archive_sha256": "bcc8bde3463a84e187f0875c76198a639594d45b5dd940d1d2a1ed849fe98d33"
+    }
+  ]
+}

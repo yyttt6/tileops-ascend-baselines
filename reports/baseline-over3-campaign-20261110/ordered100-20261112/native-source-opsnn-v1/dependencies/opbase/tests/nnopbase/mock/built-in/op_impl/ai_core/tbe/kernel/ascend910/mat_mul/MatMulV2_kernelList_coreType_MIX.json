@@ -1,0 +1,157 @@
+{
+    "binFileName": "MatMulV2_ND_ND_FP16_FP16_true_true_all",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "compileInfo": {
+        "_pattern": "Matmul",
+        "binary_attrs": {
+            "bias_flag": false,
+            "nd_flag": true,
+            "split_k_flag": false,
+            "weight_nz": false,
+            "zero_flag": false
+        },
+        "binary_mode_flag": true,
+        "block_dim": {},
+        "correct_range_flag": false,
+        "dynamic_mode": "dynamic_mkn",
+        "format_a": "ND",
+        "format_b": "ND",
+        "fused_double_operand_num": 0,
+        "hardware_info": {
+            "BT_SIZE": 1024,
+            "CORE_NUM": 24,
+            "Intrinsic_data_move_l0c2ub": false,
+            "Intrinsic_data_move_l12ub": false,
+            "Intrinsic_data_move_out2l1_nd2nz": true,
+            "Intrinsic_fix_pipe_l0c2out": true,
+            "L0A_SIZE": 65536,
+            "L0B_SIZE": 65536,
+            "L0C_SIZE": 131072,
+            "L1_SIZE": 524288,
+            "L2_SIZE": 201326592,
+            "UB_SIZE": 196608,
+            "load3d_constraints": "unknown"
+        },
+        "sparse_4to2_flag": false
+    },
+    "coreType": "AiCore",
+    "deterministic": "ignore",
+    "intercoreSync": 0,
+    "kernelList": [
+        {
+            "deterministic": "ignore",
+            "kernelName": "MatMulV2_ND_ND_FP16_FP16_true_true_all_98816"
+        },
+        {
+            "coreType": "MIX",
+            "deterministic": "ignore",
+            "kernelName": "MatMulV2_ND_ND_FP16_FP16_true_true_all_1147392",
+            "magic": "RT_DEV_BINARY_MAGIC_ELF",
+            "parameters": [
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "taskRation": "1:2"
+        },
+        {
+            "coreType": "MIX",
+            "deterministic": "ignore",
+            "kernelName": "MatMulV2_ND_ND_FP16_FP16_true_true_all_3244245",
+            "magic": "RT_DEV_BINARY_MAGIC_ELF",
+            "parameters": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            "taskRation": "1:2"
+        }
+    ],
+    "kernelName": "MatMulV2_ND_ND_FP16_FP16_true_true_all",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AICUBE",
+    "memoryStamping": [],
+    "opParaSize": 160,
+    "parameters": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "sha256": "3800a619e59db29320e744bf995680924b2530d138bb4880f722055d05b7a5c9",
+    "supportInfo": {
+        "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+        "int64Mode": false,
+        "staticKey": "5d41b66a21e229816c90beb42535c7d3facbc6aa3556a465ab39d8a7321fe642,edc19697d84209c7e24a85b32fe3745e5cb647a6eff5712fae351d96c42f05a1,c85649bf3d3a7e58c09408026e3f9bf3eadbe7e355b97a8c1b23cb9ec40b0bd2,a16a2630d6dda02e48c111e61f5f16fcd44349865c52733ed9b78858e294ddb6,014d63d67d9a85f665637cab869f953c80acbcb01d7296ad0e39e8c0e17a84ab",
+        "inputs": [
+            {
+                "name": "x1",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "ori_format": "ND",
+                "shape": [
+                    -2
+                ],
+                "ori_shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "x2",
+                "index": 1,
+                "dtype": "float16",
+                "format": "ND",
+                "ori_format": "ND",
+                "shape": [
+                    -2
+                ],
+                "ori_shape": [
+                    -2
+                ]
+            },
+            null,
+            null
+        ],
+        "outputs": [
+            {
+                "name": "y",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "ori_format": "ND",
+                "shape": [
+                    -2
+                ],
+                "ori_shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "transpose_x1",
+                "dtype": "bool",
+                "value": true
+            },
+            {
+                "name": "transpose_x2",
+                "dtype": "bool",
+                "value": true
+            },
+            {
+                "name": "offset_x",
+                "dtype": "int",
+                "value": null
+            }
+        ],
+        "opMode": "dynamic",
+        "deterministic": "ignore"
+    },
+    "filePath": "ascend910b/mat_mul/MatMulV2_ND_ND_FP16_FP16_true_true_all.json"
+}

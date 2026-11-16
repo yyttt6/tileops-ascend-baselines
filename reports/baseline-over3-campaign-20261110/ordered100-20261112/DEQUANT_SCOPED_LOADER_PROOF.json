@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-13T09:11:47.207562+00:00",
+  "workers": [
+    {
+      "original": "worker_rollout_compact_v3.py",
+      "scoped_clone": "worker_dequant_original_scoped.py",
+      "original_sha256": "468f5effeb3ffbe54e522a7d7892e6933732118ffd4a16ada20d20e20ef747fc",
+      "scoped_sha256": "5cbd1d40231dd62dbfe8a85be72043f344e8b9cf2c0ca61ed52944e55b9123c5",
+      "reverse_byte_identical": true
+    },
+    {
+      "original": "worker_sgl_dequant_api.py",
+      "scoped_clone": "worker_sgl_dequant_api_v2.py",
+      "original_sha256": "0d2fcf18a73038d097cbdea224c2903cf9b113f46ada3745c785f2cb4ebf08b0",
+      "scoped_sha256": "6c1d5258b0e7c3dc4ed1eeb918835d4ee066439b22f4288fd438c47bb0d82e62",
+      "reverse_byte_identical": true
+    },
+    {
+      "original": "worker_sgl_dequant_channel.py",
+      "scoped_clone": "worker_sgl_dequant_channel_v2.py",
+      "original_sha256": "51e6df78b248cb71cb35a4fd24b2fd2aa84bf949b1616bac50e9afeeb3464c13",
+      "scoped_sha256": "a78a1108c1e28da60a71fc27e7295f5309f2009b8225c56de628e18bd8ba42d8",
+      "reverse_byte_identical": true
+    }
+  ],
+  "only_changes": "one bounded metadata source assertion, its import and source hash capture; input payload/descriptor checks, math, timing, checker, probes untouched"
+}

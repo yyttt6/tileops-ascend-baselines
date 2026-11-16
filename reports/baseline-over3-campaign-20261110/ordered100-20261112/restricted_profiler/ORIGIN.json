@@ -1,0 +1,10 @@
+{
+  "capture_ast_equal_after_import_relocation": true,
+  "partition_byte_equal": true,
+  "source_dir": "reports/baseline-over3-campaign-20261110/profiler-short-server1",
+  "source_hashes": {
+    "single_session_full32.py": "d46ab54cd519d9ef2679b3d3c4f64654572f6aa02848ff0c6a47af083350292c",
+    "session_partition.py": "d866d1ebf43430566af05fb287aa4a2dec2d0a1d1894eeb7c57ae8035e834c94"
+  },
+  "scope": "no change to measured capture or partition algorithm; new policy wrapper CPU tests separate"
+}

@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-11-15T02:58:07.344938+00:00",
+  "paired_cases": 1,
+  "rows": [
+    {
+      "ordinal": 1499,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "bare-scan-bfloat16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-torch-selective-scan-bare-1499-v3.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-torch-scan-grouped-bare-1499-v2.CHECKPOINT.json",
+      "original_device_us": 152240.7092,
+      "candidate_device_us": 104009.27879999999,
+      "device_reduction_percent": 31.681033708689544,
+      "selection": "candidate",
+      "same_frozen_FP64_oracle_and_checker": true,
+      "view_broadcast_only_no_precision_or_kernel_change": true,
+      "not_final_ratio_closure": true
+    }
+  ],
+  "coverage_increment": 0,
+  "no_history_or_publication": true
+}

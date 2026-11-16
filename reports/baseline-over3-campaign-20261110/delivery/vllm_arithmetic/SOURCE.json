@@ -1,0 +1,5 @@
+{
+  "source": "reports/baseline-over3-campaign-20261110/vllm-arithmetic-server2/native_adapters_v2.py",
+  "sha256": "49999e62d2d4bf9693b87222ba1a735ce7c34a9b0bd5ac6e0de9ffd3c40af6bc",
+  "identity": "byte-identical measured adapter"
+}

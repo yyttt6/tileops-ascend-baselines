@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-11-15T02:19:23.547873+00:00",
+  "accepted_original_Torch_programs": 5,
+  "rows": [
+    {
+      "ordinal": 1498,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "mamba-2.8b-decode-bfloat16"
+      ],
+      "checkpoint": "rollout-torch-selective-scan-original-v2-1498-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "742bdb6a3bdd003238ac20ef7bcf4308a7597934c494b0b119a4c558717037cc",
+      "source_sha256": "fb3caaa96770a7b7f01504a35009902f0018845ff8dea7ac803e61733f6ceaab",
+      "device_us": 66.0302,
+      "host_us_diagnostic": 1322.5107143322628,
+      "api": "complete unchanged published08f Torch FP32 S6 selective scan on inputdevice; existing frozen CPUFP64 oracle/checker/inputs unchanged",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "6e4888cadbb377af351ebc53bfc29ceceb861bea30ab3efb92eb8707d42e6bc6",
+      "prepare_sha256": "25d4b14321cf7bcd8891c8934aa64174df008ab713142e47dcfb5fea3aff7bf6",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_oracle_checker_payload_unchanged": true,
+      "published_program_AST_unchanged": true,
+      "no_invalid_CPUtiming_used_as_device_control": true,
+      "not_final_ratio_or_paired_speedup": true
+    },
+    {
+      "ordinal": 1501,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "mamba-2.8b-prefill-float16"
+      ],
+      "checkpoint": "rollout-torch-selective-scan-original-expansion-1501-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a3fdcaae66aeb90a086bf46e69f083b7411f1304a7e5d9b77f02a67eee698443",
+      "source_sha256": "21520cfc0e79584a12a81dec1bcf7d28894285ed2b91104ce40902ce2f12a7b0",
+      "device_us": 561213.3200666667,
+      "host_us_diagnostic": 1221102.7793275814,
+      "api": "complete unchanged published08f Torch FP32 S6 selective scan on inputdevice; existing frozen CPUFP64 oracle/checker/inputs unchanged",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "56461fb6dcd023679734c52d93ab9e10a5224e8f50c604a05df07a681b31f94f",
+      "prepare_sha256": "7c5a64a43e29538ed810bef55f2f0fc32e35b767050f543bfa6da56b5ac508da",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_oracle_checker_payload_unchanged": true,
+      "published_program_AST_unchanged": true,
+      "no_invalid_CPUtiming_used_as_device_control": true,
+      "not_final_ratio_or_paired_speedup": true
+    },
+    {
+      "ordinal": 1497,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "grouped-state-bfloat16"
+      ],
+      "checkpoint": "rollout-torch-selective-scan-original-expansion-1497-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "07c65b5fead140be3837705b97e99de13c1485793c96278ee242dc496b0f1ec1",
+      "source_sha256": "21520cfc0e79584a12a81dec1bcf7d28894285ed2b91104ce40902ce2f12a7b0",
+      "device_us": 519723.50626666663,
+      "host_us_diagnostic": 525111.3900604347,
+      "api": "complete unchanged published08f Torch FP32 S6 selective scan on inputdevice; existing frozen CPUFP64 oracle/checker/inputs unchanged",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "a40eb74ea2fa40860359be1f04a5b6d01b26b69723463eee7d30c90a2f6c967b",
+      "prepare_sha256": "8de11f4309be8f65a5c51ebc83dd7f5ab0fe594b7c350536cd3a79164d44ee61",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_oracle_checker_payload_unchanged": true,
+      "published_program_AST_unchanged": true,
+      "no_invalid_CPUtiming_used_as_device_control": true,
+      "not_final_ratio_or_paired_speedup": true
+    },
+    {
+      "ordinal": 1502,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "mamba-2.8b-prefill-bfloat16"
+      ],
+      "checkpoint": "rollout-torch-selective-scan-original-expansion-1502-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "7fb902770f494dbb00dfe4e2c6074df4c76ab3fd9dd19b6a9a2581730a419de0",
+      "source_sha256": "21520cfc0e79584a12a81dec1bcf7d28894285ed2b91104ce40902ce2f12a7b0",
+      "device_us": 561493.3765333333,
+      "host_us_diagnostic": 1235901.3359372814,
+      "api": "complete unchanged published08f Torch FP32 S6 selective scan on inputdevice; existing frozen CPUFP64 oracle/checker/inputs unchanged",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "e77dc17e6a4e05b8dd7b70615b4563ee6aa4a929c054589e446e382a019bf69d",
+      "prepare_sha256": "197d0952fd602b4a1038dcb126fec1f4bdac9fce3470f71ee8c0fd786e7615ca",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_oracle_checker_payload_unchanged": true,
+      "published_program_AST_unchanged": true,
+      "no_invalid_CPUtiming_used_as_device_control": true,
+      "not_final_ratio_or_paired_speedup": true
+    },
+    {
+      "ordinal": 1500,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "mamba-2.8b-packed-bfloat16"
+      ],
+      "checkpoint": "rollout-torch-selective-scan-original-expansion-1500-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "05fdcef907f5a93282c4f95dbd68f7d0dc1eb90ebabdcd4d3cbb8b85642e50a5",
+      "source_sha256": "21520cfc0e79584a12a81dec1bcf7d28894285ed2b91104ce40902ce2f12a7b0",
+      "device_us": 587832.8665333333,
+      "host_us_diagnostic": 1988292.209400485,
+      "api": "complete unchanged published08f Torch FP32 S6 selective scan on inputdevice; existing frozen CPUFP64 oracle/checker/inputs unchanged",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "47b8d8833357399af7a3567d06d758af266b35d4b33d50c735db8aeb68c48e96",
+      "prepare_sha256": "77a36733ca347e868f9168c355e0bcfd133550f5270f454b4770c0b435451a38",
+      "full_checker_15raw_guard_valid": true,
+      "original_frozen_oracle_checker_payload_unchanged": true,
+      "published_program_AST_unchanged": true,
+      "no_invalid_CPUtiming_used_as_device_control": true,
+      "not_final_ratio_or_paired_speedup": true
+    }
+  ],
+  "staged_not_published": true
+}

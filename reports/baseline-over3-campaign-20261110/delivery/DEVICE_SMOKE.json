@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "tested_branches": [
+    "broadcast_mul",
+    "add_sub",
+    "cnn_mul",
+    "uniform_mean_pool",
+    "original_nonbroadcast_mul"
+  ],
+  "checks": "original checker, no input mutation, valid host guard, pilot raw replay and double archive SHA",
+  "not_formal_remeasurement": true,
+  "results": [
+    {
+      "index": 155,
+      "op": "MeanPoolingFwdOp",
+      "case": "uniform-batched-float16-float32",
+      "status": "pilot_raw_verified",
+      "result_sha256": "a833959656b762d6bcc6e86312989493be7065bec1fb31bd9ec8928291a45a95",
+      "guard_sha256": "614556b1ca45b06879141530859e4030214bddc78e544afff39e714abe7eb25f"
+    },
+    {
+      "index": 218,
+      "op": "AddFwdOp",
+      "case": "linear-bias-bfloat16",
+      "status": "pilot_raw_verified",
+      "result_sha256": "039efa4cbbffd429899fa533c820e9aa71274f43fb24a82695f71956bc3bc177",
+      "guard_sha256": "0a414a35e33cfec809641605c9a0c7ad11a35089da6c201c7369af56409fbcd0"
+    },
+    {
+      "index": 219,
+      "op": "MulFwdOp",
+      "case": "linear-bias-bfloat16",
+      "status": "pilot_raw_verified",
+      "result_sha256": "b83b2c0b2cf5e591b3bdd4427ce1d8201925b44acfbd5a1e645e28633a435b5f",
+      "guard_sha256": "36692be66fae73ad5b657b59e165fff40217c1a023662ddce658a51e71b4cec4"
+    },
+    {
+      "index": 220,
+      "op": "MulFwdOp",
+      "case": "llama-7b-hidden-float16",
+      "status": "pilot_raw_verified",
+      "result_sha256": "fdc73517be3e4b2db2e79158334998d51710a0073572d016e90845e4ffbf4cc1",
+      "guard_sha256": "fce0851bb25e3dd38c11063f4f3409155ff3f345bb4c2618571224ad8de8b017"
+    },
+    {
+      "index": 225,
+      "op": "MulFwdOp",
+      "case": "cnn-feat-broadcast-float16",
+      "status": "pilot_raw_verified",
+      "result_sha256": "d5ac9211aaf0e3a95befa8aa9ee8d5b36562ed850c9e2922b68beca2fab2052f",
+      "guard_sha256": "9856e8e7f9ac040f901a5ed5b99e25a047c2a10b1f5f76793b6b2180a122a1b9"
+    }
+  ]
+}

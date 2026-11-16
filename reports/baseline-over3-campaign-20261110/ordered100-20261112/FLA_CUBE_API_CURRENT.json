@@ -1,0 +1,517 @@
+{
+  "checked_at": "2026-11-15T14:17:29.136627+00:00",
+  "accepted_complete_APIs": 30,
+  "rows": [
+    {
+      "ordinal": 138,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "mha-decode-pv-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 8067.001133333333,
+      "checkpoint": "rollout-fla-cube-api-sdk-138-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "3b887f91883fec21f8d9b8e07ce0621769f2400f4908239490c8624c9158508a",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "8884f55601e845d787cd2e5db44a28eabcc2f0203884bf37dc91e268ccda0d36",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 139,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "mha-decode-qk-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 12692.584133333332,
+      "checkpoint": "rollout-fla-cube-api-sdk-139-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "fb412d8fdcc966a83b59e25bd0025551f1648fe577d760be3d4733408ffd0314",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "4a46e4ebf412db5657aa1a63103d2a02eb4f4e47aaf1f6367972e765b1c1fc48",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 140,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-256-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 2386.8795999999998,
+      "checkpoint": "rollout-fla-cube-api-sdk-140-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "5aed706bfdcd8949171cc4786598204f8b45b7ce3a335e8ac9da68556062093b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "cf38c99ba7f239629e190534d8a0a26781df59064048a688a2a070ce41b1c7d3",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 141,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-512-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 3809.0584,
+      "checkpoint": "rollout-fla-cube-api-sdk-141-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "9072d0d84a80e1ce1ee64882a59d5e645ccf18455197e7e4f9346132b19d825b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "bd36bd8f406a639c1cbe861ecf2667c86d23bd3375488f4e344be3041389c5f6",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 142,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 8857.392133333333,
+      "checkpoint": "rollout-fla-cube-api-sdk-142-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "6f3e060aaab295357289c0805dada8a3a99c0968feaf45887d68c3ef54c4435f",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "9e7108f7dcd5b4420d3f199494fdc9892ca699d7c27044600fd03dc12dabe786",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 143,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-2k-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 59287.71426666667,
+      "checkpoint": "rollout-fla-cube-api-sdk-143-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "fb212dd886c3aae7da4a47cc8c9bd6b77d10ec52748e21167688d5be6463311b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "36717beda779193c725a0d1e42dcb3d92064d88a7e73bd218bce6250e0039a14",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 144,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "moe-prefill-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 59158.311133333336,
+      "checkpoint": "rollout-fla-cube-api-sdk-144-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "273a28410424b306c75974385e3c42fa174f4d32eb6d3b1b78284c12717b87b1",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2750f07b337a94409cb7c44762289332791abb3c351c60b097fa6fe995c0e9a4",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 145,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-4k-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 163492.65426666668,
+      "checkpoint": "rollout-fla-cube-api-sdk-145-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "d1a4401631be680b9445ed41815f8af1ac23e66b4ca2ba459d9debb4430a1361",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "a37a88b0566902a9cc9d008a5569e4a780fc23c48f35df67ca21429321e909d9",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 146,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-128-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 174.68473333333336,
+      "checkpoint": "rollout-fla-cube-api-sdk-146-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "8d5611e0dd540c9576a6a2efac16b6139ab4b2f0d185fbb418a563b7a9f833a0",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "1856d97f25ac84e5830fc46ce9bbb449c798ef5b1372d243811c34386c4375c8",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 151,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-prefill-down-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 58496.88653333333,
+      "checkpoint": "rollout-fla-cube-api-sdk-151-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "abe040eaa4b951944b59e86cc09b760f20ee38b143af7d61c9780aef85b63774",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "da9de8df1fd2120b7be63c52bfdb6fb147377cbb60f801693c4ae0c002b8a675",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 152,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-prefill-q-b-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 140626.80626666668,
+      "checkpoint": "rollout-fla-cube-api-sdk-152-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "43e2644ad7f77460dc00d713c3b2a28d888e4382b64ff082ea1cb84fb7cbd67a",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "700eec88dae3f8db5724539221438930ac5badee47472e79570eb29b0b880a3b",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 153,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 6758.1501333333335,
+      "checkpoint": "rollout-fla-cube-api-sdk-153-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "581317059b5e814cdec383ce920a25fb32dbcec4712ffb16bf1eedf88d35c9db",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "54cc7a77132b23479634d5ed6c612d1240a16900e963ec97dc58129219718e86",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 154,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-prefill-mlp-up-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 68133.59866666667,
+      "checkpoint": "rollout-fla-cube-api-sdk-154-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "8adabee13e9fe7d5d9d231e00f912b9128c56e6840f49879adf9e921198e9bf4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "50982165f4e4bfe84beb665c12c6eb1f7633199b4b26002d373587aabea4e10c",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 155,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 7808.248466666667,
+      "checkpoint": "rollout-fla-cube-api-sdk-155-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "95c107d33e28de1de23d391852fbe33d07e22240349ae6337e19fb0ecd7965ec",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "b2ae93b04eb7e011dd621c2ef9e9dd096b8860a44cdc0a5de0b1236eb6bae29f",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 156,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 1757.3441333333333,
+      "checkpoint": "rollout-fla-cube-api-sdk-156-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "457f73972f32f681a4f1743c84a8c7a7b24576654be50e9388fd4ee4defd80e3",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "790d2aa047aada5f1d36877feb360791f726ec166c3f1c27e737405bcfc9868b",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 157,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-prefill-qkv-a-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 36050.239266666664,
+      "checkpoint": "rollout-fla-cube-api-sdk-157-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "c3f29b622da5a2e2a88086347982886a79a6ca1d9dac23eca46fe00b5238034e",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "5d93f7f9440257ed090d591ea2918c8d04b740b253260f46666a2f836b6828ad",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 158,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 1259.3738666666668,
+      "checkpoint": "rollout-fla-cube-api-sdk-158-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "dc354e19f5ab64fede5da08a9c42ac50b8d46a02a78388f6a661f0c7229376f6",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "8f0e8442a76cb15b8eb4b72c04255a0c86b1110cb8a51207d46a8b481670e6fc",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 159,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-decode-down-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 1871.2986,
+      "checkpoint": "rollout-fla-cube-api-sdk-159-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "d4177a728d60babc413faab8d3d0aefe4288696b6b5510ec39f17b5fa2bb72f2",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "69b9845d612780cfe55b9394ef4510a7152089839cc9cc31320584be623e8fe1",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 160,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-m1-qkv-a-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 1172.3247333333334,
+      "checkpoint": "rollout-fla-cube-api-sdk-160-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "3ec0369cde463d0d8d77703493874259cfb32e908b0ecfe45ea3cc14f201a709",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "f71be5b253d00658136e68fd89acad1d40bad34b219f2e108a4ee34708010e76",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 161,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-decode-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 6512.2564,
+      "checkpoint": "rollout-fla-cube-api-sdk-161-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "b45dc90c9c172e57f755e50c68cf1d1150ce8861d708e77cfec07cf63cae51e3",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "54a6f784be8b675c238b57be8f39c40d844f3bca86aebcd7ec5cecc56a0caf40",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 162,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 1110.0441999999998,
+      "checkpoint": "rollout-fla-cube-api-sdk-162-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "0a0bd5f5939cc87b96ba6caea77b442037f9a2982671e6dc5c58e99308a8380b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "07fea9a43faa90dfad30aa94b515e6f0f172ed67a455339bfe7afdadc188c0f4",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 163,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-prefill-o-proj-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 166175.05306666667,
+      "checkpoint": "rollout-fla-cube-api-sdk-163-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "a96262a1ee7b6d0777252d3ce653301058ef91ac93a1bf0f11b026c051abbabe",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "0fc20631292c7ac75b11d96a2530107225768afa9be70c21ce83ecfb237097c8",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 164,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 1758.3883333333333,
+      "checkpoint": "rollout-fla-cube-api-sdk-164-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "4580f0270243049094075946ae41867f8f88dbfc7d7fa4f01aeba61dc49f56cd",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "b868848e1f17c7e551178cb02e0b5a5ccc343dedfe2c41e578bb466b933125be",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 165,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 1824.0118,
+      "checkpoint": "rollout-fla-cube-api-sdk-165-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "e25f80d42cf08aae37d255d6c251d35253100ee6bed848412726ac6b53ca3278",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "34d5530ddd217037bd6ac298c035bd3ee760c0eb019bf4c50f5a5aa3b058234f",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 166,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 1407.7608666666667,
+      "checkpoint": "rollout-fla-cube-api-sdk-166-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "44a3fce2df295f6da594e5979e0926f551a7f66714a3bcb33e095635b8cb027e",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2cab8d3633caf87263f48c5821438aa4a2a7f3c5a43dcc27be97a0b01d3e3a37",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 167,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "ds-v3-decode-qkv-a-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 1461.4893333333332,
+      "checkpoint": "rollout-fla-cube-api-sdk-167-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "dc85c39b6270b76a9ca3ea2e695b2a7227aea7cb5d917a304c8737f983545927",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "af91d5d5c8d58be6b52913ae253609d7a2b5e91efa0eed93d482678517c56e8d",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 168,
+      "key": [
+        "flash-linear-attention-npu",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "api": "FLA npu_chunk_fwd_h(W=0,g=0, final FP32 state)",
+      "device_us": 3170.7737999999995,
+      "checkpoint": "rollout-fla-cube-api-sdk-168-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "1e4adf2b7a90afcedbf83f5591fcd648d4cfda34d49d0984fadba9ef9ce2b726",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2f30e2b7282c5a3d8bf95aaae915ada51e279cc1d74db82fb9239ba1042db984",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 172,
+      "key": [
+        "flash-linear-attention-npu",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "api": "FLA ChunkFwdH final-state matrix products",
+      "device_us": 5343.848533333334,
+      "checkpoint": "rollout-fla-cube-api-sdk-172-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "1a59bb9c84d770983d4b7a1f9b2e6419ec011860d12903b897c969f0f9875bb7",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "1c5ce101bc7e0900755147a55ba32cdcf461c4c0bbded56459a53616649cdeb1",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 173,
+      "key": [
+        "flash-linear-attention-npu",
+        "GroupedGemmFwdOp",
+        "moe-fwd-bfloat16"
+      ],
+      "api": "npu_chunk_fwd_h(W=0,g=0,full final state)",
+      "device_us": 41866.0516,
+      "checkpoint": "rollout-fla-cube-api-sdk-173-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "2e081a35ba94a33c900128d55ca204b3d4a5ab392f24e9030993112695706327",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "9c4ea77487e5bb1a9455502f84805a7edee5c43487a9523c367c143e9a88d202",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 174,
+      "key": [
+        "flash-linear-attention-npu",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-empty-bfloat16"
+      ],
+      "api": "npu_chunk_fwd_h(W=0,g=0,full final state)",
+      "device_us": 2225.0281333333332,
+      "checkpoint": "rollout-fla-cube-api-sdk-174-h1-v4.CHECKPOINT.json",
+      "checkpoint_sha256": "d4c4de3b06d652ef2b9ae1e464d121670e3419dea08bd042518d8330ca8eb72d",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2bd3698d9d2d3d1745e7362e44367d75014159c4a2b666c72d1878d236732984",
+      "full_checker_15raw_guard_valid": true,
+      "original_AoT_source_build_package_profile_all15_identity": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

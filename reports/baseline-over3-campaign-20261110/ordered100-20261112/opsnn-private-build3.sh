@@ -1,0 +1,10 @@
+#!/bin/bash
+set -eo pipefail
+source /opt/baseline-over3-20261110/unified-stack-v1/environment.sh
+export PYTHONPATH=/opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/python-build-deps/opt/tileops-ci/runtime/lib/python3.12/site-packages:${PYTHONPATH:-}
+python3 /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/sdk-header-layout.py
+cmake -S /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/source -B /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/source/build-config3 -UTILINGAPI_INC_DIR -DENABLE_CUSTOM=ON -DENABLE_GEN_ACLNN=ON -DPREPROCESS_ONLY=OFF
+cmake -S /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/source -B /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/source/build-config3 -DENABLE_CUSTOM=ON -DENABLE_GEN_ACLNN=OFF -DPREPROCESS_ONLY=OFF
+cmake --build /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/source/build-config3 --target ascendc_impl_gen --parallel 4
+cmake --build /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/source/build-config3 --target build_es_nn --parallel 4
+cmake --build /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/source/build-config3 --target package --parallel 4

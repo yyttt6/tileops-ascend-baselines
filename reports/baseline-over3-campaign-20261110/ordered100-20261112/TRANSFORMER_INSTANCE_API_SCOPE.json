@@ -1,0 +1,16 @@
+{
+  "ordinals": [
+    775,
+    776,
+    777,
+    778,
+    779,
+    780,
+    781,
+    782,
+    783
+  ],
+  "original_channel_norm_run_AST_exact": true,
+  "original_complete_width_even_le1024_no_runningstats_modification": true,
+  "original_affine_F32_widening_nonaffine_storage_dtype_preserved": true
+}

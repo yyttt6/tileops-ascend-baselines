@@ -1,0 +1,54 @@
+{
+  "two_host_functional_and_private_kernel_verified": true,
+  "scope": "Only2 fulloutput/input small calls perhost, 2same-library original native APIs and originalINT32marker; frozen4 originalchecker/formal15 still required",
+  "qualified_ops": [
+    "LogicalOr",
+    "NotEqual"
+  ],
+  "hosts": [
+    {
+      "host": "openlibing-DevEnv-661495",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER1_SCANBOOL_QUALIFICATION.json",
+      "guard_record_sha256": "f71ddee539e5825300c0d67587d38d5c44fb7a5f325fdc8a0fedccf7cc0f4c0d",
+      "result": "server1-scanbool-qualification-154339679636.json",
+      "result_sha256": "564924069f4688d4645131c37089d6316eb5e3ac33004ff923878a5d832d42b8",
+      "log_sha256": "7aecce80e829df0e64cf83b92b72bac189356e62568e9e7ebc3e70e6d704dca1",
+      "checked_2_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(1096855,python):2026-11-14-15:42:26.790.981 [op_kernel.cpp:397][NNOP][BinLoadImpl][1096855] OpName:[aclnnLogicalOr_0_LogicalOrAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab197bbc58, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v1/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/logical_or_apt/LogicalOr_BOOL_high_performance.o",
+        "[DEBUG] OP(1096855,python):2026-11-14-15:42:26.811.055 [op_kernel.cpp:397][NNOP][BinLoadImpl][1096855] OpName:[aclnnNeTensor_1_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab1982e988, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v1/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_BOOL_high_performance.o"
+      ],
+      "qualified_ops": [
+        "LogicalOr",
+        "NotEqual"
+      ],
+      "package_sha256": "357299a48c544a17c061fc3a5382e5015dd927fb32ecabeefce86ce261599727",
+      "not_formal_baseline_acceptance": true
+    },
+    {
+      "host": "openlibing-DevEnv-055409",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER2_OPSMATH_SCANBOOL_QUALIFICATION.json",
+      "guard_record_sha256": "e58b90a62ca927e6f82cd29b02de8bd598c406a5b58302ebb7a60e8d17496797",
+      "result": "server2-opsmath-scanbool-qualification-154237778310.json",
+      "result_sha256": "0a8eb59ef90c58a5464379c10b878392aa881dc4550d053ba9bef7c3f378875c",
+      "log_sha256": "f8d0004ae3ad5bff5fb45e77817b72ca82db3461e546b5205e48af65c378cbb5",
+      "checked_2_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(322837,python):2026-11-14-15:41:23.543.861 [op_kernel.cpp:397][NNOP][BinLoadImpl][322837] OpName:[aclnnLogicalOr_0_LogicalOrAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab4d4ffbc8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v1/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/logical_or_apt/LogicalOr_BOOL_high_performance.o",
+        "[DEBUG] OP(322837,python):2026-11-14-15:41:23.562.719 [op_kernel.cpp:397][NNOP][BinLoadImpl][322837] OpName:[aclnnNeTensor_1_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab4d5728f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v1/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_BOOL_high_performance.o"
+      ],
+      "qualified_ops": [
+        "LogicalOr",
+        "NotEqual"
+      ],
+      "package_sha256": "357299a48c544a17c061fc3a5382e5015dd927fb32ecabeefce86ce261599727",
+      "not_formal_baseline_acceptance": true
+    }
+  ],
+  "package_sha256": "357299a48c544a17c061fc3a5382e5015dd927fb32ecabeefce86ce261599727",
+  "qualified_at": "2026-11-14T15:44:15.581614+00:00"
+}

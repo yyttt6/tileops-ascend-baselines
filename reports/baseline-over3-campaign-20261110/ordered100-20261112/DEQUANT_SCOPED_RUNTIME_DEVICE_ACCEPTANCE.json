@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-11-13T09:15:31.424998+00:00",
+  "checkpoint": "rollout-sgl-dequant-api-candidate-988-original-v2-source-qualified.CHECKPOINT.json",
+  "full_checker_15raw_guard_accepted": true,
+  "input_source_proof_in_dual_archive": true,
+  "old_generic_worker_unchanged": true,
+  "new_condition": "both CPU and runtime apply explicit samepath-only qualification; original payload assertions remain"
+}

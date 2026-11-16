@@ -1,0 +1,11 @@
+{
+  "ordinals": [
+    779,
+    780,
+    781,
+    783
+  ],
+  "CPU_audit_sha256": "11e3e26467bf8e991eeb80b42f3d263cb11d8bc49027b9b4742f631b25bfa2d6",
+  "proof": "server2-alignment-20261113/INSTANCE_ORIGINAL_CPU_REFERENCE_AUDIT.json",
+  "no_oracle_or_native_acceptance_change": true
+}

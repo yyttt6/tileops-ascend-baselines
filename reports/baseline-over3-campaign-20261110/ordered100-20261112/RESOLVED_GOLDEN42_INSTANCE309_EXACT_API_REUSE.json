@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-11-16T05:22:44.018751+00:00",
+  "rows": [
+    {
+      "ordinal": 309,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "source_ordinal": 777,
+      "source_key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat",
+      "device_us": 2209.5026666666663,
+      "checkpoint": "rollout-ops-transformer-instance-api-sdk-777-golden42-selectorfix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c27c1585ba4fcb4c0bd7bb2b881581b8ca518be7b7168c0e5951119414a24402",
+      "payload_sha256": "77b907cd17159d51f7338e47d0cd30a8309d30911ed3e3a7a5f5bff9a7e27799",
+      "descriptor_sha256": "9b3af06d061347deafc2e9994f147f3350c555f157028fce66e4fecfd6cab96e",
+      "corrected_golden_sha256": "afcb01b22c27783d8e858319373769f5bdb103373750dcf93c001e966cbd4fd9",
+      "source_qualified_row": {
+        "ordinal": 777,
+        "key": [
+          "ops-transformer",
+          "InstanceNormFwdOp",
+          "image-affine-float16"
+        ],
+        "api": "ops-transformer::original NormRopeConcat",
+        "device_us": 2209.5026666666663,
+        "checkpoint": "rollout-ops-transformer-instance-api-sdk-777-golden42-selectorfix-h1-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "c27c1585ba4fcb4c0bd7bb2b881581b8ca518be7b7168c0e5951119414a24402",
+        "protocol": "ascend950-isolated-ffts-v3",
+        "payload_sha256": "77b907cd17159d51f7338e47d0cd30a8309d30911ed3e3a7a5f5bff9a7e27799",
+        "prepare_sha256": "024665264096c16afb35b783bdbabc8f67d0707ae7e19de7c6696d5355cfb39c",
+        "full_checker_15raw_guard_valid": true,
+        "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+        "not_paired_or_final_ratio": true
+      },
+      "same_frozen_params_inputs_descriptor_Exact_checker_and_corrected_golden": true,
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "Audited complete original ops-transformer API alternative; exact qualified measurement reuse",
+      "new_native_runs": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    }
+  ],
+  "not_published": true,
+  "new_device_samples": 0,
+  "source_qualification_sha256": "6e3330f93e575610dd760ad20d2d756891ca4c8fa00be05e170fc3882adbcd23",
+  "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c"
+}

@@ -1,0 +1,45 @@
+{
+    "binFileName": "TestStatic_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance",
+    "binFileSuffix": ".o",
+    "blockDim": 24,
+    "coreType": "AiCore",
+    "deterministic": "ignore",
+    "globalworkspace_spec_workspace": {
+        "size": 32,
+        "type": 0
+    },
+    "kernelName": "TestStatic_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 20,
+    "parameters": [
+        {
+            "dtype": "float32",
+            "init_value": 0.0
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "dtype": "float32",
+            "init_value": 0.0
+        },
+        null
+    ],
+    "sha256": "147857d0bc67318f4293f5197b9e8777a9c2e8ffd3ab3ce359aaa7108c5924ab",
+    "workspace": {
+        "num": 3,
+        "size": [
+            31,
+            32,
+            33
+        ],
+        "type": [
+            0,
+            0,
+            0
+        ]
+    }
+}

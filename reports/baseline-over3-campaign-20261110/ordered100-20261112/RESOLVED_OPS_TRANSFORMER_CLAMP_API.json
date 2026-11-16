@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-15T10:10:15.498343+00:00",
+  "accepted_complete_APIs": 1,
+  "rows": [
+    {
+      "ordinal": 766,
+      "key": [
+        "ops-transformer",
+        "ClampScalarFwdOp",
+        "16M-bfloat16"
+      ],
+      "api": "ops-transformer::original FlashAttentionScore+GroupedMatmulAdd",
+      "device_us": 675025.8080666667,
+      "checkpoint": "rollout-ops-transformer-clamp-api-sdk-766-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "6b3802d1c718bce8f213297b17b265d227921d209b368bd75ede17ff65db61aa",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "182d543054765dd58b68c24d64842343b1111d39d58dde752f208110425a6d40",
+      "prepare_sha256": "290163c5a91d2bc4f68fa47d8a41b9092e5506dc5d5a03598ea5e29e12f39764",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

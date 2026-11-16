@@ -1,0 +1,109 @@
+{
+  "checked_at": "2026-11-15T20:55:09.014479+00:00",
+  "accepted_complete_APIs": 6,
+  "rows": [
+    {
+      "ordinal": 2072,
+      "key": [
+        "tilelang-ascend",
+        "StdFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "api": "ops-math::aclnnStd",
+      "device_us": 30.483733333333333,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-std-alternative-2072-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "8ea64af0d6148950d95cc3db11c18ce1ab1cbf5e5c870db6c0b8d31f86c2582e",
+      "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2073,
+      "key": [
+        "tilelang-ascend",
+        "StdFwdOp",
+        "hidden-state-float16"
+      ],
+      "api": "ops-math::aclnnStd",
+      "device_us": 13.139133333333334,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-std-alternative-2073-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "d0d41a18a2aab2c6aa29e423173a1833ce1f8f7fbf83f3b483938938ed9e09d8",
+      "payload_sha256": "e4f5cf4fc4186303ae19d825c8f64faaf3b2571e8dbb574da19b13b7a491bfdd",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2074,
+      "key": [
+        "tilelang-ascend",
+        "StdFwdOp",
+        "hidden-state-biased-bfloat16"
+      ],
+      "api": "ops-math::aclnnStd",
+      "device_us": 13.192333333333334,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-std-alternative-2074-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "5a3fe01dda5b22aa953515f61b8ad2059274ff22e13b09e447f50b00039e002c",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2075,
+      "key": [
+        "tilelang-ascend",
+        "StdFwdOp",
+        "hidden-state-bfloat16"
+      ],
+      "api": "ops-math::aclnnStd",
+      "device_us": 13.206466666666666,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-std-alternative-2075-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "85cc34a7b34528792693ea8a4c71f8552b2192773590d154464650c91ef57d58",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2076,
+      "key": [
+        "tilelang-ascend",
+        "StdFwdOp",
+        "3d-multidim-float16"
+      ],
+      "api": "ops-math::aclnnStd",
+      "device_us": 12.775933333333333,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-std-alternative-2076-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "4deea233795c298e610ae8d341f62a34930652ff81b87b1a8ed585555f6e0d3b",
+      "payload_sha256": "26ad535ff2e0e12ac28a14f646c25d1269b9c705bb783fca418016ed95b19978",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2077,
+      "key": [
+        "tilelang-ascend",
+        "StdFwdOp",
+        "long-seq-bfloat16"
+      ],
+      "api": "ops-math::aclnnStd",
+      "device_us": 10.914066666666669,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-std-alternative-2077-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "1defb19ab4d2150c03a092f51a52a36be0ae4622764c7357889ee01d358bb9aa",
+      "payload_sha256": "4194b648eb67f64b744a202a31b267bd9f735f2cddec9fc6ac2f27aeb00a37d6",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

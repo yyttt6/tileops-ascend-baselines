@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-11-15T18:52:27.774194+00:00",
+  "accepted_complete_APIs": 1,
+  "rows": [
+    {
+      "ordinal": 810,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-2048-bfloat16"
+      ],
+      "api": "original complete Softmax API recovered from original retained raw",
+      "device_us": 3489.6305333333335,
+      "checkpoint": "rollout-ops-transformer-softmax-sdk-810-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "7fa22bc39c10d4691ede507e0134949baac24ee2e09e0317a49467f301085694",
+      "payload_sha256": "6349b627ce2cded4bd308acd20814ba9d5df35fdbe5fdacf5ea1cab19ba5f1f0",
+      "prepare_sha256": "219e3b6d63c8c05946f7bdc84f9f1df2bf16b02262e1857ed891538778dafaa7",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "offline_recovery_audit": "reports/baseline-over3-campaign-20261110/ordered100-20261112/server2-alignment-20261113/SOFTMAX810_FULL_OFFLINE_RECOVERY_AUDIT.json",
+      "offline_recovery_audit_sha256": "658c45435f8413c2757ff7a76336db6d11d501f558135a063ef42585632f38a5",
+      "original_checker_replay": "reports/baseline-over3-campaign-20261110/ordered100-20261112/server2-alignment-20261113/SOFTMAX810_ORIGINAL_CHECKER_CPU_REPLAY.json",
+      "original_checker_replay_sha256": "33f65a86974a007eb19d873bb15c13d27f2d19e4e5ef16f82c9c4332539f495c",
+      "failed_checkpoint_preserved": true,
+      "not_paired_or_final_ratio": true,
+      "qualified_at": "2026-11-15T18:52:27.774194+00:00",
+      "no_device_rerun": true
+    }
+  ],
+  "status": "offline_full_original_checker15raw_sourceELF_guard_dualSHA_recovered_no_rerun",
+  "staged_not_published": true
+}

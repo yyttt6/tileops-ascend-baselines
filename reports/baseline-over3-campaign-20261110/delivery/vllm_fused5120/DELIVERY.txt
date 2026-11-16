@@ -1,0 +1,1 @@
+Staged exact1 original API only fixed=False. Source bytes match formal SOURCE; full original case required. Candidate natural width5120 excluded. Original checker/15raw verified; no export or website integration.

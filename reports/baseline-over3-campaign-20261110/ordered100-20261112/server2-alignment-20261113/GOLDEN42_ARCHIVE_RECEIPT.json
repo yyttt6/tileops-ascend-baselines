@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-11-16T03:56:29.112552+00:00",
+  "archive": "GOLDEN42_REFERENCE_REPAIR_20261116.tar.gz",
+  "archive_sha256": "1beb640375f9f972e6a347146cea1747b27e5d6433fba8171361396f69e589e7",
+  "archive_bytes": 1090014568,
+  "local_remote_SHA_equal": true,
+  "contents": "Original CPU recomputed golden and corrected golden tensors for42, immutable certificates, correction and binding sources, certification and selection/native-output audit. Historical NPU failures/raw remain in original run archives.",
+  "cold_data_migration": false
+}

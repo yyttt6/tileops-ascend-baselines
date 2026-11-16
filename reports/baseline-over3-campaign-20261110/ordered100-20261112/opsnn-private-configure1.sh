@@ -1,0 +1,4 @@
+#!/bin/bash
+set -eo pipefail
+source /opt/baseline-over3-20261110/unified-stack-v1/environment.sh
+exec cmake -S /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/source -B /opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/build-config1 -DBUILD_PATH=/opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/build-config1 -DCANN_3RD_LIB_PATH=/opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/dependencies -DASCEND_OP_NAME=foreach_mul_list -DVENDOR_NAME=allpairs_nn -DASCEND_COMPUTE_UNIT=ascend950 -DCMAKE_BUILD_TYPE=Release -DENABLE_TEST=OFF -DENABLE_BINARY=OFF -DENABLE_PACKAGE=OFF -DENABLE_OP_KERNEL=OFF -DPREPROCESS_ONLY=ON -DCMAKE_INSTALL_PREFIX=/opt/baseline-over3-20261110/ordered100-20261112/native-rebuild/ops-nn-v1/install -DCMAKE_C_COMPILER="$CC" -DCMAKE_CXX_COMPILER="$CXX"

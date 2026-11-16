@@ -1,0 +1,155 @@
+{
+  "checked_at": "2026-11-14T22:52:27.789282+00:00",
+  "full_API_and_original_flush_and_private_kernel_verified": true,
+  "execution_hostname": "a5d0b50dc68f",
+  "native_package_manifest_sha256": "49527c5836f1de15baab28f7bea86fc3b292e804b218ec9656205856a43d7432",
+  "qualified_API_source_sha256": {
+    "ops_math_cumsum_api.py": "2e09dee20b4ce02e2fae050803717348c5d1c5d0009faf16c770184e9d56ff4d",
+    "ops_math_l1_api.py": "cbe5aadece2353fa3cb7e3940f27c76d8bbbaa0c708b1739629610d1d578a302"
+  },
+  "private_load_and_launch_per_complete_group": [
+    {
+      "marker": {
+        "shape": [
+          3,
+          257
+        ],
+        "dim": -1,
+        "dtype": "torch.float16"
+      },
+      "launches": [
+        {
+          "kernel": "Cumsum_36b48674810ed1dbe89774a7fc4e4776_high_performance_1002",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-cumscan-v1/private-v1/vendors/allpairs_math_cumscan_math/op_impl/ai_core/tbe/kernel/ascend950/cumsum_apt/Cumsum_36b48674810ed1dbe89774a7fc4e4776_high_performance.o",
+          "sha256": "554e14a89f49cc561131738b9426ae24ac6304c1c86fa35c69f6435872d14401",
+          "load_line": "[DEBUG] OP(2393622,python):2026-11-14-22:50:32.118.650 [op_kernel.cpp:397][NNOP][BinLoadImpl][2393622] OpName:[aclnnCumsum_0_CumsumAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab03345338, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-cumscan-v1/private-v1/vendors/allpairs_math_cumscan_math/op_impl/ai_core/tbe/kernel/ascend950/cumsum_apt/Cumsum_36b48674810ed1dbe89774a7fc4e4776_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2393622,python):2026-11-14-22:50:32.120.928 [aix_starsv2.cc:666] 2393622 StreamLaunchKernelV2: stream_id=61, kernel_name=Cumsum_36b48674810ed1dbe89774a7fc4e4776_high_performance_1002, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=1552, mixType=0, coreDim=3, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040800000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "shape": [
+          3,
+          257
+        ],
+        "dim": -1,
+        "dtype": "torch.bfloat16"
+      },
+      "launches": [
+        {
+          "kernel": "Cumsum_2b930b92ff72947f037f531104cf9984_high_performance_1002",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-cumscan-v1/private-v1/vendors/allpairs_math_cumscan_math/op_impl/ai_core/tbe/kernel/ascend950/cumsum_apt/Cumsum_2b930b92ff72947f037f531104cf9984_high_performance.o",
+          "sha256": "4a487e74213820781a15d9fcc682be73d9529c2d82355b002a060ef234c9705d",
+          "load_line": "[DEBUG] OP(2393622,python):2026-11-14-22:50:32.141.074 [op_kernel.cpp:397][NNOP][BinLoadImpl][2393622] OpName:[aclnnCumsum_1_CumsumAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab0338f7f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-cumscan-v1/private-v1/vendors/allpairs_math_cumscan_math/op_impl/ai_core/tbe/kernel/ascend950/cumsum_apt/Cumsum_2b930b92ff72947f037f531104cf9984_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2393622,python):2026-11-14-22:50:32.143.176 [aix_starsv2.cc:666] 2393622 StreamLaunchKernelV2: stream_id=61, kernel_name=Cumsum_2b930b92ff72947f037f531104cf9984_high_performance_1002, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=1552, mixType=0, coreDim=3, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040834000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "shape": [
+          2,
+          3,
+          17
+        ],
+        "dim": 1,
+        "dtype": "torch.float32"
+      },
+      "launches": [
+        {
+          "kernel": "Cumsum_edcec1d2bf3479abaf5563facb844326_high_performance_1001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-cumscan-v1/private-v1/vendors/allpairs_math_cumscan_math/op_impl/ai_core/tbe/kernel/ascend950/cumsum_apt/Cumsum_edcec1d2bf3479abaf5563facb844326_high_performance.o",
+          "sha256": "5854a5c1e5aa821398ea026e8009478bad00bbec04302228a274df6633e40077",
+          "load_line": "[DEBUG] OP(2393622,python):2026-11-14-22:50:32.160.216 [op_kernel.cpp:397][NNOP][BinLoadImpl][2393622] OpName:[aclnnCumsum_2_CumsumAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab03413248, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-cumscan-v1/private-v1/vendors/allpairs_math_cumscan_math/op_impl/ai_core/tbe/kernel/ascend950/cumsum_apt/Cumsum_edcec1d2bf3479abaf5563facb844326_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2393622,python):2026-11-14-22:50:32.161.395 [aix_starsv2.cc:666] 2393622 StreamLaunchKernelV2: stream_id=61, kernel_name=Cumsum_edcec1d2bf3479abaf5563facb844326_high_performance_1001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=1552, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004087d600, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "shape": [
+          2,
+          3,
+          17
+        ],
+        "dim": -2,
+        "dtype": "torch.float16"
+      },
+      "launches": [
+        {
+          "kernel": "Cumsum_36b48674810ed1dbe89774a7fc4e4776_high_performance_1001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-cumscan-v1/private-v1/vendors/allpairs_math_cumscan_math/op_impl/ai_core/tbe/kernel/ascend950/cumsum_apt/Cumsum_36b48674810ed1dbe89774a7fc4e4776_high_performance.o",
+          "sha256": "554e14a89f49cc561131738b9426ae24ac6304c1c86fa35c69f6435872d14401",
+          "load_line": "[DEBUG] OP(2393622,python):2026-11-14-22:50:32.118.650 [op_kernel.cpp:397][NNOP][BinLoadImpl][2393622] OpName:[aclnnCumsum_0_CumsumAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab03345338, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-cumscan-v1/private-v1/vendors/allpairs_math_cumscan_math/op_impl/ai_core/tbe/kernel/ascend950/cumsum_apt/Cumsum_36b48674810ed1dbe89774a7fc4e4776_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2393622,python):2026-11-14-22:50:32.176.443 [aix_starsv2.cc:666] 2393622 StreamLaunchKernelV2: stream_id=61, kernel_name=Cumsum_36b48674810ed1dbe89774a7fc4e4776_high_performance_1001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=1552, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x120040819100, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    }
+  ],
+  "original_reference_and_full_inputs_verified": [
+    {
+      "shape": [
+        3,
+        257
+      ],
+      "dim": -1,
+      "dtype": "torch.float16",
+      "full_output_original_tolerance_passed": true,
+      "inputbits_preserved": true,
+      "tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      }
+    },
+    {
+      "shape": [
+        3,
+        257
+      ],
+      "dim": -1,
+      "dtype": "torch.bfloat16",
+      "full_output_original_tolerance_passed": true,
+      "inputbits_preserved": true,
+      "tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      }
+    },
+    {
+      "shape": [
+        2,
+        3,
+        17
+      ],
+      "dim": 1,
+      "dtype": "torch.float32",
+      "full_output_original_tolerance_passed": true,
+      "inputbits_preserved": true,
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 1e-05
+      }
+    },
+    {
+      "shape": [
+        2,
+        3,
+        17
+      ],
+      "dim": -2,
+      "dtype": "torch.float16",
+      "full_output_original_tolerance_passed": true,
+      "inputbits_preserved": true,
+      "tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      }
+    }
+  ],
+  "guard_sha256": "b154e9b80ed49fd93d5b9d7aeb57e4565a20084647f20a08991401531cd5924c",
+  "result_sha256": "acc951a0ea18575277191d1a1fce78823c13281ae681f6361424fef3ea7bfac5",
+  "log_sha256": "d30f077142a5247b78b02b786ba2b6bd85ecd3e5301573a10a7f3656935860d9",
+  "no_formal_15raw_or_baseline_coverage": true,
+  "scope": "Cumsum256..258 complete original aclnnCumsum, original input/output dtype and axis, all contiguous/descriptor/nativeworkspace/output timed. No kernel/checker/tolerance changes."
+}

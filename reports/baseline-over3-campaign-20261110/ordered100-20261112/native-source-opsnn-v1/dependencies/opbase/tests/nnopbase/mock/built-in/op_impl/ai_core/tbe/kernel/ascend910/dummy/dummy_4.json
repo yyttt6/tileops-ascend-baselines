@@ -1,0 +1,28 @@
+{
+    "coreType": "VectorCore",
+    "deterministic": "ignore",
+    "intercoreSync": 0,
+    "kernelList": [
+        {
+            "deterministic": "ignore",
+            "kernelName": "UnsortedSegmentMin_0688305988170d986879a4909c7cb4e6_high_precision_770000000"
+        }
+    ],
+    "kernelName": "UnsortedSegmentMin_0688305988170d986879a4909c7cb4e6_high_precision",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF_AIVEC",
+    "memoryStamping": [],
+    "opParaSize": 48,
+    "parameters": [
+        null,
+        null,
+        null,
+        {
+            "dtype": "uint32",
+            "init_value": 655
+        },
+        {
+            "dtype": "float32",
+            "init_value": 65504.0
+        }
+    ]
+}

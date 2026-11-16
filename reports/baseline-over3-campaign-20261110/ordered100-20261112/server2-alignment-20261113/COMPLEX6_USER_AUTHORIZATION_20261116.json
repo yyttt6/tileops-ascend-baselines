@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-16T06:09:40.886889+00:00",
+  "user_instruction": "好的，就按你说的做，解决这6个case",
+  "scope": [
+    1292,
+    1293,
+    1294,
+    1295,
+    1298,
+    1299
+  ],
+  "supersedes_prior_hold_for_exact6": true,
+  "approved_proposal": "COMPLEX6_INPUT_CHECK_BACKEND_COMPAT_PROPOSAL_20261116.json",
+  "proposal_sha256": "28d5b5558bd5396fe7fbb5c714bb32ad8429cede4f2190573163fa26e5fb5eb5",
+  "changes": "Only complex input-preservation comparison transfers byte-preserving values to CPU outside timed windows and calls same original zero-tolerance/equal-NaN comparator. Original NPU baseline, storage dtype, output checker/golden/tolerance and original full15 timing unchanged."
+}

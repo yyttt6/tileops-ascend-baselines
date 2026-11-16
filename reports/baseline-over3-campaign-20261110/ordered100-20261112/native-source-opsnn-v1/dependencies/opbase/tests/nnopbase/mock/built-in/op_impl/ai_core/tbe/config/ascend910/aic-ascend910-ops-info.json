@@ -1,0 +1,1094 @@
+{
+    "AddN": {
+        "attr": {
+            "list": "N"
+        },
+        "attr_N": {
+            "paramType": "required",
+            "type": "int",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float16,float,int32",
+            "name": "x",
+            "paramType": "dynamic"
+        },
+        "needCheckSupport": {
+            "flag": "true"
+        },
+        "op": {
+            "pattern": "broadcast"
+        },
+        "output0": {
+            "dtype": "float16,float,int32",
+            "name": "y",
+            "needCompile": "false",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "slicePattern": {
+            "value": "elemwise"
+        }
+    },
+    "Axpy": {
+        "attr": {
+            "list": "alpha"
+        },
+        "attr_alpha": {
+            "paramType": "required",
+            "type": "float",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicFormat": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "name": "x1",
+            "paramType": "required"
+        },
+        "input1": {
+            "name": "x2",
+            "paramType": "required"
+        },
+        "opFile": {
+            "value": "axpy"
+        },
+        "opInterface": {
+            "value": "axpy"
+        },
+        "output0": {
+            "name": "y",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "slicePattern": {
+            "value": "elemwiseBroadcast"
+        }
+    },
+    "ConcatD": {
+        "attr": {
+            "list": "concat_dim"
+        },
+        "attr_concat_dim": {
+            "paramType": "required",
+            "type": "int",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicFormat": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "name": "input_values",
+            "paramType": "dynamic"
+        },
+        "needCheckSupport": {
+            "flag": "true"
+        },
+        "output0": {
+            "name": "output_data",
+            "paramType": "required",
+            "shape": "all"
+        }
+    },
+    "Conv2DBackpropInput": {
+        "async": {
+            "flag": "false"
+        },
+        "attr": {
+            "list": "strides,pads,dilations,groups,data_format"
+        },
+        "attr_data_format": {
+            "defaultValue": "NHWC",
+            "paramType": "optional",
+            "type": "str",
+            "value": "all"
+        },
+        "attr_dilations": {
+            "defaultValue": "[1,1,1,1]",
+            "paramType": "optional",
+            "type": "listInt",
+            "value": "all"
+        },
+        "attr_groups": {
+            "defaultValue": "1",
+            "paramType": "optional",
+            "type": "int",
+            "value": "all"
+        },
+        "attr_pads": {
+            "paramType": "required",
+            "type": "listInt",
+            "value": "all"
+        },
+        "attr_strides": {
+            "paramType": "required",
+            "type": "listInt",
+            "value": "all"
+        },
+        "compute": {
+            "cost": "10"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "heavyOp": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "int32,int32",
+            "format": "ND,ND",
+            "name": "input_size",
+            "needCompile": "false",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "ND,ND",
+            "valueDepend": "optional"
+        },
+        "input1": {
+            "dtype": "float16,float16",
+            "format": "FRACTAL_Z,FRACTAL_Z",
+            "name": "filter",
+            "needCompile": "false",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "FRACTAL_Z,FRACTAL_Z"
+        },
+        "input2": {
+            "dtype": "float16,float16",
+            "format": "NC1HWC0,NC1HWC0",
+            "name": "out_backprop",
+            "needCompile": "false",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "NC1HWC0,NC1HWC0"
+        },
+        "jitCompile": {
+            "flag": "false"
+        },
+        "output0": {
+            "dtype": "float16,float32",
+            "format": "NC1HWC0,NC1HWC0",
+            "name": "y",
+            "needCompile": "true",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "NC1HWC0,NC1HWC0"
+        },
+        "partial": {
+            "flag": "true"
+        },
+        "prebuildPattern": {
+            "value": "Conv2d_backprop_input"
+        },
+        "precision_reduce": {
+            "flag": "true"
+        },
+        "rangeLimit": {
+            "value": "limited"
+        },
+        "sgatKeyAttr": {
+            "list": "strides,dilations,groups"
+        },
+        "slicePattern": {
+            "value": "slidingWindowDeconv"
+        }
+    },
+    "Conv2D": {
+        "async": {
+            "flag": "false"
+        },
+        "attr": {
+            "list": "strides,pads,dilations,groups,data_format,offset_x"
+        },
+        "attr_data_format": {
+            "defaultValue": "NHWC",
+            "paramType": "optional",
+            "type": "str",
+            "value": "all"
+        },
+        "attr_dilations": {
+            "paramType": "optional",
+            "type": "listInt",
+            "value": "all"
+        },
+        "attr_groups": {
+            "defaultValue": "1",
+            "paramType": "optional",
+            "type": "int",
+            "value": "all"
+        },
+        "attr_offset_x": {
+            "defaultValue": "0",
+            "paramType": "optional",
+            "type": "int",
+            "value": "all"
+        },
+        "attr_pads": {
+            "paramType": "required",
+            "type": "listInt",
+            "value": "all"
+        },
+        "attr_strides": {
+            "paramType": "required",
+            "type": "listInt",
+            "value": "all"
+        },
+        "compute": {
+            "cost": "10"
+        },
+        "dynamicFormat": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "heavyOp": {
+            "flag": "true"
+        },
+        "input0": {
+            "name": "x",
+            "needCompile": "false",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "input1": {
+            "name": "filter",
+            "needCompile": "false",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "input2": {
+            "name": "bias",
+            "needCompile": "false",
+            "paramType": "optional",
+            "shape": "all"
+        },
+        "input3": {
+            "name": "offset_w",
+            "needCompile": "false",
+            "paramType": "optional",
+            "shape": "all"
+        },
+        "jitCompile": {
+            "flag": "false"
+        },
+        "output0": {
+            "name": "y",
+            "needCompile": "true",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "partial": {
+            "flag": "true"
+        },
+        "prebuildPattern": {
+            "value": "Convolution"
+        },
+        "precision_reduce": {
+            "flag": "true"
+        },
+        "rangeLimit": {
+            "value": "limited"
+        },
+        "sgatKeyAttr": {
+            "list": "strides,pads,dilations,groups,offset_x"
+        }
+    },
+    "Gelu": {
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float16,float",
+            "name": "x",
+            "paramType": "required"
+        },
+        "op": {
+            "pattern": "formatAgnostic"
+        },
+        "output0": {
+            "dtype": "float16,float",
+            "name": "y",
+            "needCompile": "true",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "slicePattern": {
+            "value": "elemwise"
+        }
+    },
+    "LayerNormBetaGammaBackpropV2": {
+        "attr": {
+            "list": "shape_gamma"
+        },
+        "attr_shape_gamma": {
+            "paramType": "required",
+            "type": "listInt",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicFormat": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "name": "dy",
+            "paramType": "required"
+        },
+        "input1": {
+            "name": "res_for_gamma",
+            "paramType": "required"
+        },
+        "output0": {
+            "name": "pd_gamma",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "output1": {
+            "name": "pd_beta",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "rangeLimit": {
+            "value": "limited"
+        }
+    },
+    "Log": {
+        "attr": {
+            "list": "base,scale,shift"
+        },
+        "attr_base": {
+            "paramType": "optional",
+            "type": "float",
+            "value": "all"
+        },
+        "attr_scale": {
+            "paramType": "optional",
+            "type": "float",
+            "value": "all"
+        },
+        "attr_shift": {
+            "paramType": "optional",
+            "type": "float",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float16,float",
+            "name": "x",
+            "paramType": "required"
+        },
+        "op": {
+            "pattern": "formatAgnostic"
+        },
+        "output0": {
+            "dtype": "float16,float",
+            "name": "y",
+            "paramType": "required"
+        },
+        "precision_reduce": {
+            "flag": "false"
+        },
+        "slicePattern": {
+            "value": "elemwise"
+        }
+    },
+    "LpNormUpdate": {
+        "attr": {
+            "list": "p,epsilon"
+        },
+        "attr_epsilon": {
+            "defaultValue": "1e-12",
+            "paramType": "optional",
+            "type": "float",
+            "value": "1e-12,0.0"
+        },
+        "attr_p": {
+            "defaultValue": "2",
+            "paramType": "optional",
+            "type": "int",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float16,float",
+            "format": "ND,ND",
+            "name": "x",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "ND,ND"
+        },
+        "opFile": {
+            "value": "lp_norm_update"
+        },
+        "opInterface": {
+            "value": "lp_norm_update"
+        },
+        "output0": {
+            "dtype": "float16,float",
+            "format": "ND,ND",
+            "name": "y",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "ND,ND"
+        }
+    },
+    "MatMul": {
+        "async": {
+            "flag": "false"
+        },
+        "attr": {
+            "list": "transpose_x1,transpose_x2,offset_x"
+        },
+        "attr_offset_x": {
+            "defaultValue": "0",
+            "paramType": "optional",
+            "type": "int",
+            "value": "all"
+        },
+        "attr_transpose_x1": {
+            "paramType": "required",
+            "type": "bool",
+            "value": "all"
+        },
+        "attr_transpose_x2": {
+            "paramType": "required",
+            "type": "bool",
+            "value": "all"
+        },
+        "compute": {
+            "cost": "10"
+        },
+        "dynamicFormat": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "heavyOp": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float16,float16,float,float,int32,int32",
+            "name": "x1",
+            "needCompile": "false",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "input1": {
+            "dtype": "float16,float16,float,float,int32,int32",
+            "name": "x2",
+            "needCompile": "false",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "input2": {
+            "dtype": "float16,float,float,float,int32,int32",
+            "name": "bias",
+            "needCompile": "false",
+            "paramType": "optional",
+            "shape": "all"
+        },
+        "input3": {
+            "dtype": "int8,int8,int8,int8,int8,int8",
+            "name": "offset_w",
+            "needCompile": "false",
+            "paramType": "optional",
+            "shape": "all"
+        },
+        "jitCompile": {
+            "flag": "false"
+        },
+        "needCheckSupport": {
+            "flag": "true"
+        },
+        "opFile": {
+            "value": "mat_mul"
+        },
+        "opInterface": {
+            "value": "mat_mul"
+        },
+        "output0": {
+            "dtype": "float16,float,float,float,int32,int32",
+            "name": "y",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "partial": {
+            "flag": "true"
+        },
+        "prebuildPattern": {
+            "value": "dynamic"
+        },
+        "precision_reduce": {
+            "flag": "true"
+        },
+        "sgatKeyAttr": {
+            "list": "transpose_x1,transpose_x2"
+        },
+        "slicePattern": {
+            "value": "cubeMatmul"
+        }
+    },
+    "MemSet": {
+        "attr": {
+            "list": "sizes,dtypes,values_int,values_float"
+        },
+        "attr_dtypes": {
+            "defaultValue": "[]",
+            "paramType": "optional",
+            "type": "listInt",
+            "value": "all"
+        },
+        "attr_sizes": {
+            "paramType": "required",
+            "type": "listInt",
+            "value": "all"
+        },
+        "attr_values_float": {
+            "defaultValue": "[]",
+            "paramType": "optional",
+            "type": "listFloat",
+            "value": "all"
+        },
+        "attr_values_int": {
+            "defaultValue": "[]",
+            "paramType": "optional",
+            "type": "listInt",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        }
+    },
+    "MemSetV2": {
+        "attr": {
+            "list": "values_int,values_float"
+        },
+        "attr_values_float": {
+            "defaultValue": "[]",
+            "paramType": "optional",
+            "type": "listFloat",
+            "value": "all"
+        },
+        "attr_values_int": {
+            "defaultValue": "[]",
+            "paramType": "optional",
+            "type": "listInt",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicFormat": {
+            "flag": "false"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float32,float16,bfloat16,bool,int8,int16,int32,int64,uint8,uint16,uint32,uint64",
+            "format": "ND,ND,ND,ND,ND,ND,ND,ND,ND,ND,ND,ND",
+            "name": "x",
+            "paramType": "dynamic",
+            "shape": "all",
+            "unknownshape_format": "ND,ND,ND,ND,ND,ND,ND,ND,ND,ND,ND,ND"
+        },
+        "needCheckSupport": {
+            "flag": "false"
+        },
+        "opFile": {
+            "value": "mem_set_v2_apt"
+        },
+        "opInterface": {
+            "value": "mem_set_v2"
+        },
+        "output0": {
+            "dtype": "float32,float16,bfloat16,bool,int8,int16,int32,int64,uint8,uint16,uint32,uint64",
+            "format": "ND,ND,ND,ND,ND,ND,ND,ND,ND,ND,ND,ND",
+            "name": "x",
+            "paramType": "dynamic",
+            "shape": "all",
+            "unknownshape_format": "ND,ND,ND,ND,ND,ND,ND,ND,ND,ND,ND,ND"
+        }
+    },
+    "Mul": {
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicFormat": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "name": "x1",
+            "paramType": "required"
+        },
+        "input1": {
+            "name": "x2",
+            "paramType": "required"
+        },
+        "output0": {
+            "name": "y",
+            "paramType": "required"
+        },
+        "slicePattern": {
+            "value": "elemwiseBroadcast"
+        }
+    },
+    "NLLLoss": {
+        "attr": {
+            "list": "reduction,ignore_index"
+        },
+        "attr_ignore_index": {
+            "defaultValue": "-100",
+            "paramType": "optional",
+            "type": "int",
+            "value": "all"
+        },
+        "attr_reduction": {
+            "defaultValue": "mean",
+            "paramType": "optional",
+            "type": "str",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float32",
+            "format": "ND",
+            "name": "x",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "ND"
+        },
+        "input1": {
+            "dtype": "int32",
+            "format": "ND",
+            "name": "target",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "ND"
+        },
+        "input2": {
+            "dtype": "float32",
+            "format": "ND",
+            "name": "weight",
+            "paramType": "optional",
+            "shape": "all",
+            "unknownshape_format": "ND"
+        },
+        "needCheckSupport": {
+            "flag": "true"
+        },
+        "opFile": {
+            "value": "nll_loss"
+        },
+        "opInterface": {
+            "value": "nll_loss"
+        },
+        "output0": {
+            "dtype": "float32",
+            "format": "ND",
+            "name": "y",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "ND"
+        },
+        "output1": {
+            "dtype": "float32",
+            "format": "ND",
+            "name": "total_weight",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "ND"
+        },
+        "precision_reduce": {
+            "flag": "false"
+        }
+    },
+    "NonZero": {
+        "attr": {
+            "list": "transpose"
+        },
+        "attr_transpose": {
+            "defaultValue": "false",
+            "paramType": "optional",
+            "type": "bool",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float",
+            "format": "ND",
+            "name": "x",
+            "paramType": "required",
+            "unknownshape_format": "ND"
+        },
+        "needCheckSupport": {
+            "flag": "true"
+        },
+        "output0": {
+            "dtype": "int32",
+            "format": "ND",
+            "name": "y",
+            "paramType": "required",
+            "unknownshape_format": "ND"
+        }
+    },
+    "ReduceAll": {
+        "attr": {
+            "list": "keep_dims"
+        },
+        "attr_keep_dims": {
+            "defaultValue": "false",
+            "paramType": "optional",
+            "type": "bool",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "bool,bool",
+            "format": "ND,ND",
+            "name": "x",
+            "paramType": "required",
+            "unknownshape_format": "ND,ND"
+        },
+        "input1": {
+            "dtype": "int32,int64",
+            "format": "ND,ND",
+            "name": "axes",
+            "paramType": "required",
+            "unknownshape_format": "ND,ND",
+            "valueDepend": "optional"
+        },
+        "output0": {
+            "dtype": "bool,bool",
+            "format": "ND,ND",
+            "name": "y",
+            "paramType": "required",
+            "unknownshape_format": "ND,ND"
+        },
+        "softsync": {
+            "flag": "true"
+        }
+    },
+    "Renorm": {
+        "attr": {
+            "list": "p,dim,maxnorm"
+        },
+        "attr_dim": {
+            "paramType": "required",
+            "type": "int",
+            "value": "all"
+        },
+        "attr_maxnorm": {
+            "paramType": "required",
+            "type": "float",
+            "value": "all"
+        },
+        "attr_p": {
+            "paramType": "required",
+            "type": "float",
+            "value": "0.0,1.0,2.0,3.0"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float16,float",
+            "format": "ND,ND",
+            "name": "x",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "ND, ND"
+        },
+        "opFile": {
+            "value": "renorm"
+        },
+        "opInterface": {
+            "value": "renorm"
+        },
+        "output0": {
+            "dtype": "float16,float",
+            "format": "ND,ND",
+            "name": "y",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "ND, ND"
+        }
+    },
+    "Sort": {
+        "attr": {
+            "list": "axis,descending"
+        },
+        "attr_axis": {
+            "defaultValue": "-1",
+            "paramType": "optional",
+            "type": "int",
+            "value": "all"
+        },
+        "attr_descending": {
+            "defaultValue": "false",
+            "paramType": "optional",
+            "type": "bool",
+            "value": "all"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicFormat": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "name": "x",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "needCheckSupport": {
+            "flag": "true"
+        },
+        "output0": {
+            "name": "y1",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "output1": {
+            "name": "y2",
+            "paramType": "required",
+            "shape": "all"
+        },
+        "softsync": {
+            "flag": "true"
+        }
+    },
+    "TopKV2": {
+        "attr": {
+            "list": "sorted,dim,largest"
+        },
+        "attr_dim": {
+            "defaultValue": "-1",
+            "paramType": "optional",
+            "type": "int",
+            "value": "all"
+        },
+        "attr_largest": {
+            "defaultValue": "true",
+            "paramType": "optional",
+            "type": "bool",
+            "value": "all"
+        },
+        "attr_sorted": {
+            "defaultValue": "true",
+            "paramType": "optional",
+            "type": "bool",
+            "value": "all"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "float16",
+            "format": "ND",
+            "name": "x",
+            "paramType": "required",
+            "unknownshape_format": "ND"
+        },
+        "input1": {
+            "dtype": "int32",
+            "format": "ND",
+            "name": "k",
+            "paramType": "required",
+            "unknownshape_format": "ND"
+        },
+        "opFile": {
+            "value": "top_k_v2"
+        },
+        "opInterface": {
+            "value": "top_k_v2"
+        },
+        "output0": {
+            "dtype": "float16",
+            "format": "ND",
+            "name": "values",
+            "paramType": "required",
+            "unknownshape_format": "ND"
+        },
+        "output1": {
+            "dtype": "int32",
+            "format": "ND",
+            "name": "indices",
+            "paramType": "required",
+            "unknownshape_format": "ND"
+        },
+        "softsync": {
+            "flag": "true"
+        }
+    },
+    "TransData": {
+        "attr": {
+            "list": "src_format,dst_format,groups"
+        },
+        "attr_dst_format": {
+            "paramType": "required",
+            "type": "str",
+            "value": "NHWC,NCHW,NC1HWC0,FRACTAL_Z,HWCN,C1HWNCoC0,FRACTAL_NZ,ND,CHWN,FRACTAL_Z_C04,NC1HWC0_C04,NDHWC,NDC1HWC0,FRACTAL_Z_3D,DHWCN,FRACTAL_ZN_LSTM,NCDHW"
+        },
+        "attr_groups": {
+            "defaultValue": "1",
+            "paramType": "optional",
+            "type": "int",
+            "value": "all"
+        },
+        "attr_src_format": {
+            "paramType": "required",
+            "type": "str",
+            "value": "NHWC,NCHW,NC1HWC0,FRACTAL_Z,HWCN,C1HWNCoC0,FRACTAL_NZ,ND,CHWN,NDHWC,NDC1HWC0,DHWCN,FRACTAL_Z_3D,FRACTAL_ZN_LSTM,NCDHW"
+        },
+        "dynamicCompileStatic": {
+            "flag": "true"
+        },
+        "dynamicRankSupport": {
+            "flag": "true"
+        },
+        "dynamicShapeSupport": {
+            "flag": "true"
+        },
+        "input0": {
+            "dtype": "bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,int16,int16,int16,int16,int16,int16,int16,int16,int16,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int64,int64,int64,int64,int64,int64,int64,int64,int64,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint16",
+            "format": "DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,C1HWNCoC0,CHWN,CHWN,CHWN,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_ZN_LSTM,HWCN,HWCN,HWCN,HWCN,HWCN,HWCN,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,NCHW,NCHW,NCHW,NCHW,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,NHWC,NHWC,NHWC,NHWC,C1HWNCoC0,CHWN,CHWN,CHWN,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_ZN_LSTM,HWCN,HWCN,HWCN,HWCN,HWCN,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,NCHW,NCHW,NCHW,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,NHWC,NHWC,NHWC,CHWN,CHWN,CHWN,HWCN,HWCN,NCHW,NCHW,NHWC,NHWC,C1HWNCoC0,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,CHWN,CHWN,CHWN,HWCN,HWCN,NCHW,NCHW,NHWC,NHWC,CHWN,CHWN,CHWN,HWCN,HWCN,NCHW,NCHW,NHWC,NHWC,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,CHWN,CHWN,CHWN,HWCN,HWCN,NCHW,NCHW,NHWC,NHWC,C1HWNCoC0,HWCN,CHWN,CHWN,CHWN,HWCN,HWCN,NCHW,NCHW,NHWC,NHWC,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,CHWN,CHWN,CHWN,HWCN,HWCN,NCHW,NCHW,NHWC,NHWC,CHWN,CHWN,CHWN,HWCN,HWCN,NCHW,NCHW,NHWC,NHWC,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,CHWN,CHWN,CHWN,HWCN,HWCN,NCHW,NCHW,NHWC,NHWC,NHWC",
+            "name": "src",
+            "paramType": "required",
+            "unknownshape_format": "DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,NULL,NULL,NULL,NULL,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,NULL,HWCN,NULL,NULL,NULL,NULL,NULL,NULL,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,NULL,NULL,NULL,NULL,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,NULL,HWCN,NULL,NULL,NULL,NULL,NULL,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,NULL,NULL,NULL,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,NULL,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,DHWCN,FRACTAL_NZ,FRACTAL_NZ,FRACTAL_Z,FRACTAL_Z,FRACTAL_Z_3D,FRACTAL_Z_3D,FRACTAL_Z_3D,HWCN,NC1HWC0,NC1HWC0,NC1HWC0,NCDHW,NCDHW,NCHW,NCHW,ND,ND,NDC1HWC0,NDC1HWC0,NDHWC,NDHWC,NHWC,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NHWC"
+        },
+        "needCheckSupport": {
+            "flag": "true"
+        },
+        "op": {
+            "pattern": "rangeAgnostic"
+        },
+        "output0": {
+            "dtype": "bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,bfloat16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float16,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,float32,int16,int16,int16,int16,int16,int16,int16,int16,int16,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int32,int64,int64,int64,int64,int64,int64,int64,int64,int64,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,int8,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint16,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint32,uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint64,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint8,uint16",
+            "format": "FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,HWCN,HWCN,NCHW,NHWC,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,HWCN,FRACTAL_Z,C1HWNCoC0,FRACTAL_Z_C04,FRACTAL_ZN_LSTM,NC1HWC0_C04,NCHW,NHWC,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_Z_C04,HWCN,NC1HWC0_C04,NHWC,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,FRACTAL_Z_C04,HWCN,NC1HWC0_C04,NCHW,HWCN,HWCN,NCHW,NHWC,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,HWCN,FRACTAL_Z,C1HWNCoC0,FRACTAL_ZN_LSTM,NC1HWC0_C04,NCHW,NHWC,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,HWCN,NC1HWC0_C04,NHWC,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,HWCN,NC1HWC0_C04,NCHW,HWCN,NCHW,NHWC,NCHW,NHWC,HWCN,NHWC,HWCN,NCHW,HWCN,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,C1HWNCoC0,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,HWCN,NCHW,NHWC,NCHW,NHWC,HWCN,NHWC,HWCN,NCHW,HWCN,NCHW,NHWC,NCHW,NHWC,HWCN,NHWC,HWCN,NCHW,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,FRACTAL_Z,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,HWCN,NCHW,NHWC,NCHW,NHWC,HWCN,NHWC,HWCN,NCHW,HWCN,C1HWNCoC0,HWCN,NCHW,NHWC,NCHW,NHWC,HWCN,NHWC,HWCN,NCHW,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,HWCN,NCHW,NHWC,NCHW,NHWC,HWCN,NHWC,HWCN,NCHW,HWCN,NCHW,NHWC,NCHW,NHWC,HWCN,NHWC,HWCN,NCHW,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,FRACTAL_Z,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,HWCN,NCHW,NHWC,NCHW,NHWC,HWCN,NHWC,HWCN,NCHW,NC1HWC0",
+            "name": "dst",
+            "needCompile": "false",
+            "paramType": "required",
+            "shape": "all",
+            "unknownshape_format": "FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,NULL,NULL,NULL,NULL,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,NULL,FRACTAL_Z,NULL,NULL,NULL,NULL,NULL,NULL,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,NULL,NULL,NULL,NULL,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,NULL,FRACTAL_Z,NULL,NULL,NULL,NULL,NULL,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,NULL,NULL,NULL,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,NULL,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,FRACTAL_Z,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,FRACTAL_Z_3D,NC1HWC0,ND,HWCN,NCHW,DHWCN,NCDHW,NDHWC,FRACTAL_Z,FRACTAL_Z,NCHW,NHWC,FRACTAL_Z_3D,NDC1HWC0,FRACTAL_Z,NC1HWC0,FRACTAL_NZ,FRACTAL_Z,NCDHW,NDHWC,FRACTAL_Z_3D,NDC1HWC0,NC1HWC0,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NC1HWC0"
+        },
+        "prebuildPattern": {
+            "value": "Transdata"
+        }
+    }
+}

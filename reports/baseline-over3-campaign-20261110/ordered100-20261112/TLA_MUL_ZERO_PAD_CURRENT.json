@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-11-14T18:29:35.375652+00:00",
+  "paired_cases": 2,
+  "rows": [
+    {
+      "ordinal": 2002,
+      "key": [
+        "tilelang-ascend",
+        "MulFwdOp",
+        "hidden-state-prefill-float32"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-2000-2003-cache-evidence2.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-tla-mul-zero-pad-2002-v1.CHECKPOINT.json",
+      "original_device_us": 747.6481333333334,
+      "candidate_device_us": 720.286,
+      "device_reduction_percent": 3.659760803700718,
+      "original_host_us_diagnostic": 5161.438696086407,
+      "candidate_host_us_diagnostic": 6192.374043166637,
+      "selection": "original_conservative_small_gain_or_regression",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "comparison": "Noncontemporaneous samehost/currentruntime qualifiedcontrol reuse, no randomizedcausal or publicratio claim",
+      "candidate_JIT_library_SHAs_in_original_batch": true,
+      "original_batch_other_JIT_libraries": [
+        "/opt/tileops-all-pairs/workspace/.cache/all-pairs/tla/kernel/122f4ee83fd363ea3900a9033d9cf34436c4984de4bfc62fe5053d8e85d97029/kernel_lib.so",
+        "/opt/tileops-all-pairs/workspace/.cache/all-pairs/tla/kernel/e08b78fadd5a6a66ae76ff4b3390b523f4ab47383d282f8b177b849d703da052/kernel_lib.so"
+      ],
+      "SOURCE_common_differences": {},
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 2003,
+      "key": [
+        "tilelang-ascend",
+        "MulFwdOp",
+        "llama-7b-ffn-float32"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-2000-2003-cache-evidence2.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-tla-mul-zero-pad-2003-v1.CHECKPOINT.json",
+      "original_device_us": 1006.6995333333333,
+      "candidate_device_us": 967.5267333333333,
+      "device_reduction_percent": 3.8912107041803257,
+      "original_host_us_diagnostic": 5343.209269146125,
+      "candidate_host_us_diagnostic": 6015.979312360287,
+      "selection": "original_conservative_small_gain_or_regression",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "comparison": "Noncontemporaneous samehost/currentruntime qualifiedcontrol reuse, no randomizedcausal or publicratio claim",
+      "candidate_JIT_library_SHAs_in_original_batch": true,
+      "original_batch_other_JIT_libraries": [
+        "/opt/tileops-all-pairs/workspace/.cache/all-pairs/tla/kernel/7650ba4ead5ff85385cc035a260f54e8b02a1a44e45a7765695eb80ce7784a13/kernel_lib.so",
+        "/opt/tileops-all-pairs/workspace/.cache/all-pairs/tla/kernel/e08b78fadd5a6a66ae76ff4b3390b523f4ab47383d282f8b177b849d703da052/kernel_lib.so"
+      ],
+      "SOURCE_common_differences": {},
+      "not_final_under3_ratio_closure": true
+    }
+  ],
+  "coverage_increment": 0,
+  "no_historical_or_public_ratio_rewrite": true
+}

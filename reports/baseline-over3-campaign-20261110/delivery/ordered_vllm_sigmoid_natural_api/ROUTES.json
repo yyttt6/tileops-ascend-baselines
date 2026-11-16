@@ -1,0 +1,310 @@
+{
+  "checked_at": "2026-11-13T14:04:17.123338+00:00",
+  "complete_pairs": 5,
+  "rows": [
+    {
+      "ordinal": 1256,
+      "key": [
+        "vllm-ascend",
+        "SigmoidFwdOp",
+        "16M-bfloat16"
+      ],
+      "original_us": 6365.031400000001,
+      "candidate_us": 357.6545333333333,
+      "device_reduction_percent": 94.38094628514585,
+      "host_original_us_diagnostic": 7726.030082752307,
+      "host_candidate_us_diagnostic": 3939.4299810131392,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1256-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1256-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "31ca7cee72807213625196897a22d715db75dcbe62644a8ed6a51bf04cd4c0d6",
+        "7e84735810410279935702c840a36e5c4c6d67f35714417c36b90163d83f1790"
+      ],
+      "source_sha256": [
+        "03c6255ebda7e587094b39da70e3dec2c970c083c0a804f59fe9c53cfc6496b9",
+        "c439f8db3f55a0804126a50155962a732a5468bfffc956faf1bc424d6a1197b7"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sigmoid_natural_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_sigmoid_natural_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_sigmoid_natural.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fused_gdn_gating.py": "5587bf3440e64eda125899f5de2d1ab609061e2b5336f847af101ada51d81058",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fused_gdn_gating_py5587bf3440e64eda1258/fused_gdn_gating.py": "6f1d4054555e1d2e705c0757be7193175192e85e9c750be968941ac81bdbb7b6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py": "6a68c565cf4e86d9b0b7f1a4ffc3982d426e1588efd62ddc2c7db9209e80681a"
+      }
+    },
+    {
+      "ordinal": 1257,
+      "key": [
+        "vllm-ascend",
+        "SigmoidFwdOp",
+        "16M-float16"
+      ],
+      "original_us": 6363.670066666667,
+      "candidate_us": 357.2926666666667,
+      "device_reduction_percent": 94.38543068820947,
+      "host_original_us_diagnostic": 8300.932652006546,
+      "host_candidate_us_diagnostic": 4378.8753760357695,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1257-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1257-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "2e5ec4b2680633ef59c81eed7ad0f5c3d6f8eeaef4a0f56a98c384990560a851",
+        "593b832d48cc356dd2ee78994dc2ac0e21aad5a0ec1ee91975fdc2e2f1aef5dd"
+      ],
+      "source_sha256": [
+        "03c6255ebda7e587094b39da70e3dec2c970c083c0a804f59fe9c53cfc6496b9",
+        "c439f8db3f55a0804126a50155962a732a5468bfffc956faf1bc424d6a1197b7"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sigmoid_natural_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_sigmoid_natural_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_sigmoid_natural.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fused_gdn_gating.py": "5587bf3440e64eda125899f5de2d1ab609061e2b5336f847af101ada51d81058",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fused_gdn_gating_py5587bf3440e64eda1258/fused_gdn_gating.py": "6f1d4054555e1d2e705c0757be7193175192e85e9c750be968941ac81bdbb7b6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py": "6a68c565cf4e86d9b0b7f1a4ffc3982d426e1588efd62ddc2c7db9209e80681a"
+      }
+    },
+    {
+      "ordinal": 1258,
+      "key": [
+        "vllm-ascend",
+        "SigmoidFwdOp",
+        "256M-bfloat16"
+      ],
+      "original_us": 101870.24893333334,
+      "candidate_us": 5805.343133333334,
+      "device_reduction_percent": 94.30123790398068,
+      "host_original_us_diagnostic": 103256.49331013362,
+      "host_candidate_us_diagnostic": 6858.376724024613,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1258-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1258-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "383a4686f78d18055eb263374a287a400fb44a66def1cc0d7831e4c7ec3f12f6",
+        "2b02a182cd9fcecb78015085dbe66f3d41e78f5d724815dfbed6f9dcb8d126a9"
+      ],
+      "source_sha256": [
+        "03c6255ebda7e587094b39da70e3dec2c970c083c0a804f59fe9c53cfc6496b9",
+        "c439f8db3f55a0804126a50155962a732a5468bfffc956faf1bc424d6a1197b7"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sigmoid_natural_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_sigmoid_natural_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_sigmoid_natural.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fused_gdn_gating.py": "5587bf3440e64eda125899f5de2d1ab609061e2b5336f847af101ada51d81058",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fused_gdn_gating_py5587bf3440e64eda1258/fused_gdn_gating.py": "6f1d4054555e1d2e705c0757be7193175192e85e9c750be968941ac81bdbb7b6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py": "6a68c565cf4e86d9b0b7f1a4ffc3982d426e1588efd62ddc2c7db9209e80681a"
+      }
+    },
+    {
+      "ordinal": 1259,
+      "key": [
+        "vllm-ascend",
+        "SigmoidFwdOp",
+        "256M-float16"
+      ],
+      "original_us": 101881.09673333334,
+      "candidate_us": 5805.093,
+      "device_reduction_percent": 94.30209019520626,
+      "host_original_us_diagnostic": 103041.0286039114,
+      "host_candidate_us_diagnostic": 6879.361967245738,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1259-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1259-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "2cdf5631cba4581876d968e76be63b5b10d6121516ab8cfef8bfd7bbcffbab55",
+        "7ce041d8d66badb027cdc2fbb1eff4323531146a539c71646ca8519aec297c03"
+      ],
+      "source_sha256": [
+        "03c6255ebda7e587094b39da70e3dec2c970c083c0a804f59fe9c53cfc6496b9",
+        "c439f8db3f55a0804126a50155962a732a5468bfffc956faf1bc424d6a1197b7"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sigmoid_natural_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_sigmoid_natural_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_sigmoid_natural.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fused_gdn_gating.py": "5587bf3440e64eda125899f5de2d1ab609061e2b5336f847af101ada51d81058",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fused_gdn_gating_py5587bf3440e64eda1258/fused_gdn_gating.py": "6f1d4054555e1d2e705c0757be7193175192e85e9c750be968941ac81bdbb7b6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py": "6a68c565cf4e86d9b0b7f1a4ffc3982d426e1588efd62ddc2c7db9209e80681a"
+      }
+    },
+    {
+      "ordinal": 1260,
+      "key": [
+        "vllm-ascend",
+        "SigmoidFwdOp",
+        "16M-float32"
+      ],
+      "original_us": 6310.773866666666,
+      "candidate_us": 305.83959999999996,
+      "device_reduction_percent": 95.15369102963052,
+      "host_original_us_diagnostic": 7514.55541079243,
+      "host_candidate_us_diagnostic": 4108.928050845861,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1260-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-sigmoid-natural-candidate-1260-natural-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "c6a8ed20aeb7ac7700655975b29420963fd2386581023febf20122ac7f7e623f",
+        "aa567374c8b4496793f5323ca51d2720bc825b9db8c053efa117b41c1f15ca14"
+      ],
+      "source_sha256": [
+        "03c6255ebda7e587094b39da70e3dec2c970c083c0a804f59fe9c53cfc6496b9",
+        "c439f8db3f55a0804126a50155962a732a5468bfffc956faf1bc424d6a1197b7"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_sigmoid_natural_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_sigmoid_natural_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_sigmoid_natural.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fused_gdn_gating.py": "5587bf3440e64eda125899f5de2d1ab609061e2b5336f847af101ada51d81058",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fused_gdn_gating_py5587bf3440e64eda1258/fused_gdn_gating.py": "6f1d4054555e1d2e705c0757be7193175192e85e9c750be968941ac81bdbb7b6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_sigmoid_natural_api.py": "6a68c565cf4e86d9b0b7f1a4ffc3982d426e1588efd62ddc2c7db9209e80681a"
+      }
+    }
+  ],
+  "effective_retest_coverage_not_incremented": true,
+  "historical_or_public_ratios_not_updated": true,
+  "runtime_repair": "REFERENCE_RUNTIME_PRIVATE_COPY.json",
+  "not_all_SOURCE_bytes_same_expected_import_API_differences_explicit": true
+}

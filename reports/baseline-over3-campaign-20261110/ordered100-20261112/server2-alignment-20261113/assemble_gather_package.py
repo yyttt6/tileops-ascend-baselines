@@ -1,0 +1,22 @@
+from pathlib import Path
+import json,subprocess,shlex
+D=Path('reports/baseline-over3-campaign-20261110/ordered100-20261112');A=D/'server2-alignment-20261113';s=json.loads((A/'SERVER2_GATHER_FLOAT3_COMPILE.json').read_text());assert s['exit_code']==0 and s['guard']['performance_valid'] and s['guard']['workload_exit_code']==0
+code=r'''from pathlib import Path
+import json,hashlib,shutil,subprocess,datetime
+n=Path('/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-unary-gather-v1');r=n/'source';dst=n/'complete-private-device-v1';assert not dst.exists();manifest=json.loads((n/'SOURCE_MANIFEST.json').read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+for name,rec in manifest['files'].items():assert sha(r/name)==rec['sha256'],name
+old=n.parent/'ops-nn-unary-poolmean-v1';hm=json.loads((old/'POOLMEAN_NATIVE_PACKAGE.json').read_text());assert hm['source_manifest_sha256']==sha(n/'SOURCE_MANIFEST.json');host=Path(hm['staging_root'])
+for k,v in hm['all_files'].items():assert sha(host/k)==v['sha256'],k
+shutil.copytree(host,dst,symlinks=True);build=r/'build-server2-v1';replaced={}
+for rel,name in [('op_api/lib/libcust_opapi.so','libcust_opapi.so'),('op_impl/ai_core/tbe/op_tiling/lib/linux/aarch64/libcust_opmaster_rt2.0.so','libcust_opmaster_rt2.0.so'),('op_impl/ai_core/tbe/op_tiling/liboptiling.so','libcust_opmaster_rt2.0.so'),('op_proto/lib/linux/aarch64/libcust_opsproto_rt2.0.so','libcust_opsproto_rt2.0.so'),('op_proto/es/lib/linux/aarch64/libes_nn.so','libes_nn.so')]:
+ src=build/name;assert src.is_file(),src;out=dst/rel;out.unlink();shutil.copy2(src,out);replaced[rel]=sha(out)
+header=r/'index/gather_elements_v2/op_host/op_api/aclnn_gather.h';assert header.is_file();shutil.copy2(header,dst/'op_api/include'/header.name)
+b=r/'build-device-v1/binary/ascend950/bin';target=dst/'op_impl/ai_core/tbe/kernel';assert not target.exists();target.mkdir(parents=True);shutil.copytree(b/'ascend950',target/'ascend950');shutil.copytree(b/'config',target/'config');cfg=json.loads((target/'config/ascend950/binary_info_config.json').read_text());assert set(cfg)=={'GatherElements'}
+for item in cfg['GatherElements']['binaryList']:
+ for key in ['binPath','jsonPath']:assert (target/item[key]).is_file(),item
+objects={str(p.relative_to(target)):sha(p) for p in target.rglob('*.o')};assert len(objects)==3
+so=dst/'op_api/lib/libcust_opapi.so';exports=subprocess.check_output(['nm','-D','--defined-only',str(so)],text=True);wanted=['aclnnGather','aclnnGatherGetWorkspaceSize'];assert all(any(l.split()[-1]==x for l in exports.splitlines()) for x in wanted)
+files={str(p.relative_to(dst)):{'sha256':sha(p),'bytes':p.stat().st_size} for p in dst.rglob('*') if p.is_file()};src=r/'index/gather_elements_v2/op_host/op_api/aclnn_gather.cpp';text=src.read_text();assert 'l0op::GatherElements(' in text and 'static bool IfUseGatherElementsV2' in text
+m={'captured_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'source_pin':manifest['pin'],'published_patch_sha256':manifest['patch_sha256'],'source_manifest_sha256':sha(n/'SOURCE_MANIFEST.json'),'source_tracked_files_verified':len(manifest['files']),'source_changes':[],'staging_root':str(dst),'libraries':{'op_api/lib/libcust_opapi.so':files['op_api/lib/libcust_opapi.so']},'selected_API_exports':wanted,'API_headers':{header.name:header.read_text()},'all_files':files,'device_objects':objects,'original_whole_command_proof_sha256':sha(n/'GATHER_FLOAT3_I32_COMPILE_SELECTION.json'),'host_libraries_built_original':replaced,'public_API_branch_source':{'path':str(src),'sha256':sha(src),'only_accepted_scope':'contiguousNx2 floating3 choices / INT32Nx1index,dim1 on950; originalGatherElements privatekernel path stilltoqualify'},'private_original_device_kernels_verified':False};(n/'GATHER_NATIVE_PACKAGE.json').write_text(json.dumps(m,indent=2)+'\n');print(json.dumps({'files':len(files),'device_objects':len(objects),'new_original_host_libraries':len(replaced)}))
+'''
+r=subprocess.run(['ssh','openlibing-DevEnv-055409','python3 -c '+shlex.quote(code)],stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True);(A/'GATHER_PACKAGE_ASSEMBLY_CPU.log').write_text(r.stderr);assert r.returncode==0,r.stderr[-2000:];print(r.stdout);(A/'GATHER_NATIVE_PACKAGE.server2.json').write_bytes(subprocess.check_output(['ssh','openlibing-DevEnv-055409','cat /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-unary-gather-v1/GATHER_NATIVE_PACKAGE.json']))

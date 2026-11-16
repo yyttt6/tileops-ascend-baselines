@@ -1,0 +1,58 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "SumFwdOp",
+      "hidden-state-bfloat16"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SumFwdOp",
+      "hidden-state-bfloat16-float32"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SumFwdOp",
+      "hidden-state-float16"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SumFwdOp",
+      "hidden-state-keepdim-bfloat16"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SumFwdOp",
+      "mlp-intermediate-float32"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SumFwdOp",
+      "3d-multidim-float16"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SumFwdOp",
+      "long-seq-bfloat16"
+    ],
+    "fixed": false
+  }
+]

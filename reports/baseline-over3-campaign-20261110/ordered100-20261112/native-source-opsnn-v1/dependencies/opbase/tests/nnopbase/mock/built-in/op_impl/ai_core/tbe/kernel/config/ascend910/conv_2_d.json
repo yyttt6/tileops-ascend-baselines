@@ -1,0 +1,319 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "8ab84362c565d2f255ab80b7331f506bda9abb2603b7534f3dc3747767301f41,0046b774d3ffefcd5793695ac29b388d9460973caab12c1dfef8d694dc7211e1,45d032b32e53eb396c8b1f7db09338e712a8ccc39756952aaf4e1635ca4f78be,db320b47d2ee13ef49aa45d9f0ceaa8335c341b09a9e66a34625ca4ed8d27ef0,105cde1697f052f2ddc58a729410c178f2f719ed1561f6af210e6cc9fb804945",
+      "inputs": [
+        {
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            16
+          ]
+        },
+        {
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "index": 2,
+          "type": "null"
+        },
+        {
+          "index": 3,
+          "type": "null"
+        }
+      ],
+      "outputs": [
+        {
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -2
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            16
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/conv2d/Conv2D_NZ_NZ_FP16_FP16_NO_BIAS_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "staticKey": "28d923c5ab3b0ecf9ebd21693666dc5e27e8147cf1ebe1b84c7e568b6b7e7ffd,40e9db9ca9a0860cb09c69b839aefb699728b1055535e023994366984a3a06bf,53e67cd8224ae81f56c788fb89b57758dd4d5a6a5810722d80354d2bbdbaf401,952bbaf63c412b75450255fd11839611cc7ec978318cd8415b71cca035ac3e53,bdd19c71ef90d3054e9e055a37a0673fe4f0345066a481555ca75e29352dcb24",
+      "inputs": [
+        {
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            16
+          ]
+        },
+        {
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "index": 2,
+          "ori_shape": [
+            -1
+          ],
+          "dtype": "float16",
+          "format": "ALL",
+          "shape": [
+            -1
+          ]
+        },
+        {
+          "index": 3,
+          "type": "null"
+        }
+      ],
+      "outputs": [
+        {
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -2
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            16
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/conv2d/Conv2D_NZ_NZ_FP16_FP16_WITH_BIAS_all.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "checked_at": "2026-11-15T20:14:32.967448+00:00",
+  "accepted_complete_APIs": 10,
+  "rows": [
+    {
+      "ordinal": 2102,
+      "key": [
+        "tilelang-ascend",
+        "VarFwdOp",
+        "hidden-state-float16"
+      ],
+      "api": "ops-math::aclnnVarCorrection",
+      "device_us": 13.191266666666666,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2102-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "85ea86cd8b8c48b14d6d847fa6faf875034c588d64e53d786dfd7b2d50d78666",
+      "payload_sha256": "e4f5cf4fc4186303ae19d825c8f64faaf3b2571e8dbb574da19b13b7a491bfdd",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2103,
+      "key": [
+        "tilelang-ascend",
+        "VarFwdOp",
+        "hidden-state-biased-bfloat16"
+      ],
+      "api": "ops-math::aclnnVarCorrection",
+      "device_us": 12.900266666666667,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2103-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "89ef72d86fab1acc7bafd23616794f1de0f8458adc6a681d0860eb8c60a1a390",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2104,
+      "key": [
+        "tilelang-ascend",
+        "VarFwdOp",
+        "hidden-state-bfloat16"
+      ],
+      "api": "ops-math::aclnnVarCorrection",
+      "device_us": 13.090466666666666,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2104-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "d06ea0b824103f8a1df9d00c180ddd75bb4055edd9613c33830462b3b26aaa76",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2105,
+      "key": [
+        "tilelang-ascend",
+        "VarFwdOp",
+        "3d-multidim-float16"
+      ],
+      "api": "ops-math::aclnnVarCorrection",
+      "device_us": 11.843066666666667,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2105-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "eae0196326586dd02f12f5be0cf184a3f7dc89ce3b0124df29f8910216418e58",
+      "payload_sha256": "26ad535ff2e0e12ac28a14f646c25d1269b9c705bb783fca418016ed95b19978",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2106,
+      "key": [
+        "tilelang-ascend",
+        "VarFwdOp",
+        "long-seq-bfloat16"
+      ],
+      "api": "ops-math::aclnnVarCorrection",
+      "device_us": 10.829133333333333,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2106-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "7657e728d61edc5028aa34fe14095d39676c8d9869ad5b89bcbdaa3fc0d8de6a",
+      "payload_sha256": "4194b648eb67f64b744a202a31b267bd9f735f2cddec9fc6ac2f27aeb00a37d6",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2108,
+      "key": [
+        "tilelang-ascend",
+        "VarMeanFwdOp",
+        "hidden-state-float16"
+      ],
+      "api": "ops-math::aclnnVarMean",
+      "device_us": 13.223266666666667,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2108-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "ffba4e756e7432642c78926cd17a899eec676340cd4adac98016162b4c20a00b",
+      "payload_sha256": "e4f5cf4fc4186303ae19d825c8f64faaf3b2571e8dbb574da19b13b7a491bfdd",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2109,
+      "key": [
+        "tilelang-ascend",
+        "VarMeanFwdOp",
+        "hidden-state-bfloat16"
+      ],
+      "api": "ops-math::aclnnVarMean",
+      "device_us": 13.145466666666668,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2109-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "258850acd5151b94febbb5cf51a516f392534145365dce5138efa6f8890d6d45",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2110,
+      "key": [
+        "tilelang-ascend",
+        "VarMeanFwdOp",
+        "hidden-state-biased-bfloat16"
+      ],
+      "api": "ops-math::aclnnVarMean",
+      "device_us": 13.203466666666667,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2110-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "5e43ea6c010f2683c2fe47c5867073413afa2a409bf0965c9ded66b2d6fc669e",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2111,
+      "key": [
+        "tilelang-ascend",
+        "VarMeanFwdOp",
+        "3d-multidim-float16"
+      ],
+      "api": "ops-math::aclnnVarMean",
+      "device_us": 11.353,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2111-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "bc22ac08cb353729cead8eb7e409377430fed234bd218cb16d0d4ddb3a7acc2f",
+      "payload_sha256": "26ad535ff2e0e12ac28a14f646c25d1269b9c705bb783fca418016ed95b19978",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2112,
+      "key": [
+        "tilelang-ascend",
+        "VarMeanFwdOp",
+        "long-seq-bfloat16"
+      ],
+      "api": "ops-math::aclnnVarMean",
+      "device_us": 11.009599999999999,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-variance-alternative-2112-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "e628988e28bea8f6184758a70718548d4787f186fbaeb94c11a96cfa7fe4fdab",
+      "payload_sha256": "4194b648eb67f64b744a202a31b267bd9f735f2cddec9fc6ac2f27aeb00a37d6",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

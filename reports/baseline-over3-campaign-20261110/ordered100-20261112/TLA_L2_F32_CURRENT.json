@@ -1,0 +1,60 @@
+{
+  "checked_at": "2026-11-14T17:40:33.963055+00:00",
+  "accepted_original_APIs": 1,
+  "rows": [
+    {
+      "ordinal": 2113,
+      "key": [
+        "tilelang-ascend",
+        "VectorNormFwdOp",
+        "l2-mlp-intermediate-float32"
+      ],
+      "api": "TLA complete original Mul + whole-axis Sum + Sqrt",
+      "device_us": 6006.678933333334,
+      "host_us_diagnostic": 11445619.397268942,
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-tla-l2-f32-2113-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "819b2495a9a62ed13983f05ce84c0be9b175da52c05bdacabf67a7ce1a639e92",
+      "source_sha256": "fe69b49ab66fda9378b6393fe54a03d36ec8dbf9b3c5e8f20f955fae41c209ac",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/tla/__init__.py": "ea13b6f1dd1c7634bed394313f19c65e505bc2350e9f3bfc687f159b16c94c61",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/tla/native.py": "8b70cf883d496e595ee3c67e20ec98554aeaf949cd52904c4c146535e110fd83",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/tla/adapters.py": "6a6764312dacfd5d3b1aa0cd05c08355965ce1727c137f4aeace7353d67a6ead",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/tla/plans.py": "cd1a8e24f0b25359b0e20cc101f4f419246e7be2855bca650e1dc713e0a3cee7",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/tla/deployment.py": "3907f1e9c364cad2f0f699d69ce81d410c87afc17a0476dcdbfed13414ff1fb1",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/tilelang-ascend/tilelang/language/ascend_tile.py": "06213936c5b8d3bfd4394f73eb7bd5da8d46be6081183a6df2bbab91d21b39a6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/tilelang-ascend/testing/python/language/test_tilelang_ascend_language_elementwise.py": "303b90f72b7b73b800f252e46cebf2dca682bea6b9362dd051f53d80044afb84",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/tilelang-ascend/tilelang/__init__.py": "ce7ba57bb9916e3de9cd2c2fe75bcf17662b7a33f08ee3269205194cddfffb4d",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/tilelang-ascend/tilelang/jit/__init__.py": "4ebd0fde37c3af8a0612ce003c3b0391292a76c932f3c37f69f559cac61b7341",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/tilelang-ascend/tilelang/jit/adapter/cython/adapter.py": "762cf19b607e2e81337cc4626a4e9dabbf916bed0e7da1bd5eaad10084c0c09f",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/tilelang-ascend/tilelang/libinfo.py": "f7740e9a33c7e3982f067f18f4a30775dc29ba0fc12fe18ccf38f41b56376ad1",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/tilelang-ascend/tilelang/env.py": "f264f2bb395f045d1dcf33706d1b311d6d3acaab6541fe475b2d73f9fc3e8fe3",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/tilelang-ascend/3rdparty/tvm/python/tvm/_ffi/libinfo.py": "4057102e28df421112a9eb9341b1d6d4f8436b86b4172d3b2a2dc6f1794e0262",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/tilelang-ascend/tilelang/jit/adapter/cython/cython_wrapper.pyx": "651444c6ebe0ac2c7f8f6ca0e07d3e92af12915a12df0a635f01fd141d143de7",
+        "/opt/baseline-over3-20261110/ordered100-20261112/native/tla-original-v1/lib/libtilelang.so": "45f3bdeae1fa19072baf2972bda0e6adb1eeeb02c5e0b4c57b43877706c13b9c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/native/tla-original-v1/lib/libtilelang_module.so": "b7d785a2e6d1f29ed8667b4b12e453b1d415d0901d14e5cf6171b2f7fb7e03b8",
+        "/opt/baseline-over3-20261110/ordered100-20261112/native/tla-original-v1/lib/libtvm.so": "b2fa0323327d98f45eaedaed77a3c153993559c519868cfebff21a37e7075c9d",
+        "/opt/baseline-over3-20261110/ordered100-20261112/native/tla-original-v1/lib/libtvm_runtime.so": "df3e60661ede29eed053ee341dc8d3ffb7b4da460501d90bbe4e849406d072d6",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/tla_cache_artifact_identity.py": "c0dec8c79f8e61a2fd5772c3acce246f0ee7f223122aab7ce5b0ba24f920ffb5",
+        "/opt/baseline-over3-20261110/ordered100-20261112/tla_l2_f32_support.py": "c0886b5628fbd6689df0af762fb95a1ce325afe54f1b346ec178d07a3ebae7bd"
+      },
+      "prepare_sha256": "7d56944e947b25d18ee19276177dbb6b11eb795af6866fb1b512d3e2725bb437",
+      "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "selection": "three_complete_original_Mul_Sum_Sqrt_FP32_APIs",
+      "no_paired_speedup_claim": true
+    }
+  ],
+  "no_historical_public_ratio_updated": true,
+  "old_dependency_deferrals_retained": true
+}

@@ -1,0 +1,230 @@
+{
+  "checked_at_remote": "2026-11-16T02:37:17.112416+00:00",
+  "CPU_only_no_NPU": true,
+  "rows": [
+    {
+      "ordinal": 2101,
+      "input_source_proof": {
+        "ordinal": 2101,
+        "key": [
+          "tilelang-ascend",
+          "VarFwdOp",
+          "mlp-intermediate-float32"
+        ],
+        "only_source_delta": {},
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "687ae61b881891cfa5cf5536f2e4647927cd248d4a72e9b95b8b644110c776c3",
+        "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+        "descriptor_sha256": "4420b6bfed71e565157fbc4ec2b661f6ea327f0f42e4e2ee7c436bbb87e7bc24",
+        "helper_sha256": "137eff48f5ac31741543c085aaaa5c75146d768062f3db612a429c2bfff9bc4f",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "timed_callable_is_exact_frozen_reference": true,
+      "original_dtype_precision_checker_and_inputs_unchanged": true,
+      "explicit_alternative_Torch_API": true,
+      "source": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/remaining_torch_complete_alternative_api.py": "8fa36f8adfc10ab4ae43bd88445a0d2f5545736b6eb32fa47f44e39242d5320a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/reduction.py": "b0b4dbc73b94ed137bfba3d523d9172b79817ddfeccea6021ca1ef99ce3908cb"
+      }
+    },
+    {
+      "ordinal": 2107,
+      "input_source_proof": {
+        "ordinal": 2107,
+        "key": [
+          "tilelang-ascend",
+          "VarMeanFwdOp",
+          "mlp-intermediate-float32"
+        ],
+        "only_source_delta": {},
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "4bd648294d626b6ad1718cd24197e39321414ca4a623972ff1a1a24ed25908d2",
+        "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+        "descriptor_sha256": "68240dec5ef1b4fb3bf983d33582f6f3aa75550a0f9f0416c50a6fe2aba8141b",
+        "helper_sha256": "137eff48f5ac31741543c085aaaa5c75146d768062f3db612a429c2bfff9bc4f",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "timed_callable_is_exact_frozen_reference": true,
+      "original_dtype_precision_checker_and_inputs_unchanged": true,
+      "explicit_alternative_Torch_API": true,
+      "source": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/remaining_torch_complete_alternative_api.py": "8fa36f8adfc10ab4ae43bd88445a0d2f5545736b6eb32fa47f44e39242d5320a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/reduction.py": "b0b4dbc73b94ed137bfba3d523d9172b79817ddfeccea6021ca1ef99ce3908cb"
+      }
+    },
+    {
+      "ordinal": 1736,
+      "input_source_proof": {
+        "ordinal": 1736,
+        "key": [
+          "tilelang-ascend",
+          "CumprodFwdOp",
+          "hidden-state-float16"
+        ],
+        "only_source_delta": {},
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "4efa4dc8b4ff07148e0cddf5e47845e5bcafaba71cdbee8978bd09aedd9e496c",
+        "payload_sha256": "9dfb783494e7d10e918ae3e2595dbe0aa32f1bd483d5ab01bf6787bf2ac08a9e",
+        "descriptor_sha256": "5c87cfb2d93a88772595b1a039a66e394e0247ed5c949176abdb3e6e9166d143",
+        "helper_sha256": "137eff48f5ac31741543c085aaaa5c75146d768062f3db612a429c2bfff9bc4f",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "timed_callable_is_exact_frozen_reference": true,
+      "original_dtype_precision_checker_and_inputs_unchanged": true,
+      "explicit_alternative_Torch_API": true,
+      "source": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/remaining_torch_complete_alternative_api.py": "8fa36f8adfc10ab4ae43bd88445a0d2f5545736b6eb32fa47f44e39242d5320a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/reduction.py": "b0b4dbc73b94ed137bfba3d523d9172b79817ddfeccea6021ca1ef99ce3908cb"
+      }
+    },
+    {
+      "ordinal": 1737,
+      "input_source_proof": {
+        "ordinal": 1737,
+        "key": [
+          "tilelang-ascend",
+          "CumprodFwdOp",
+          "hidden-state-bfloat16"
+        ],
+        "only_source_delta": {},
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "44fda092d9fbe36cc4f1ea8f5db1d3a84a8ea72d618ccc77dc830ff97fad9a0b",
+        "payload_sha256": "710df1314dc47c67b8844aec9a8591e80e824bca831a90afee088ac0c4a0fe28",
+        "descriptor_sha256": "9bcc63421e9a2f147e552cbca49346748e5e226192a0ba7d3e8befcb95797f24",
+        "helper_sha256": "137eff48f5ac31741543c085aaaa5c75146d768062f3db612a429c2bfff9bc4f",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "timed_callable_is_exact_frozen_reference": true,
+      "original_dtype_precision_checker_and_inputs_unchanged": true,
+      "explicit_alternative_Torch_API": true,
+      "source": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/remaining_torch_complete_alternative_api.py": "8fa36f8adfc10ab4ae43bd88445a0d2f5545736b6eb32fa47f44e39242d5320a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/reduction.py": "b0b4dbc73b94ed137bfba3d523d9172b79817ddfeccea6021ca1ef99ce3908cb"
+      }
+    },
+    {
+      "ordinal": 733,
+      "input_source_proof": {
+        "ordinal": 733,
+        "key": [
+          "ops-tensor",
+          "TruncFwdOp",
+          "256M-float16"
+        ],
+        "only_source_delta": {
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+            "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+            "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+          ]
+        },
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "039ed0de81af7d1ac2fe2795ecb6bcebb4ec68792adc1af4df2cd42ee68ebaaa",
+        "payload_sha256": "8620ac2ed68c1d9fef74bbd87692cf0c4b9d2deda654cf3d1303f72f70f3b832",
+        "descriptor_sha256": "68a778ab72f70e731e8c3fb3343f65f1accf0a506b143c22cf8a5ad7bd63553e",
+        "helper_sha256": "137eff48f5ac31741543c085aaaa5c75146d768062f3db612a429c2bfff9bc4f",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "timed_callable_is_exact_frozen_reference": true,
+      "original_dtype_precision_checker_and_inputs_unchanged": true,
+      "explicit_alternative_Torch_API": true,
+      "source": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/remaining_torch_complete_alternative_api.py": "8fa36f8adfc10ab4ae43bd88445a0d2f5545736b6eb32fa47f44e39242d5320a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/elementwise.py": "d63468dd833d235ea55daaf5f02cb7acf52c1fbbea5a1313c94c8ea259af2528"
+      }
+    },
+    {
+      "ordinal": 734,
+      "input_source_proof": {
+        "ordinal": 734,
+        "key": [
+          "ops-tensor",
+          "TruncFwdOp",
+          "256M-bfloat16"
+        ],
+        "only_source_delta": {},
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "46e17fa59554500ca2e68da21b8fdf521007804d9b390b96c9b1cfd392a5c0e6",
+        "payload_sha256": "5b0ad4415147d9be5ec675812bd26716136139ac1885fce475e41a3b781c4f80",
+        "descriptor_sha256": "8c04949bb9f32da36d3732432869f5ed65bad4fc8a1ccc72ac9509bb9bdf504f",
+        "helper_sha256": "137eff48f5ac31741543c085aaaa5c75146d768062f3db612a429c2bfff9bc4f",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "timed_callable_is_exact_frozen_reference": true,
+      "original_dtype_precision_checker_and_inputs_unchanged": true,
+      "explicit_alternative_Torch_API": true,
+      "source": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/remaining_torch_complete_alternative_api.py": "8fa36f8adfc10ab4ae43bd88445a0d2f5545736b6eb32fa47f44e39242d5320a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/elementwise.py": "d63468dd833d235ea55daaf5f02cb7acf52c1fbbea5a1313c94c8ea259af2528"
+      }
+    },
+    {
+      "ordinal": 370,
+      "input_source_proof": {
+        "ordinal": 370,
+        "key": [
+          "ops-math",
+          "SSDChunkCouplingFwdOp",
+          "mamba2-grouped-prefill-float16"
+        ],
+        "only_source_delta": {
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+            "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+            "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+          ]
+        },
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "e8b4e80871c2e50ffcb1e6cd200eb53088d54f8390a5cc0b2cd3efe17409b5d6",
+        "payload_sha256": "2d18cf138c25348afced03c5ad27be20bfdfd0e1937407deddd934e4c993f997",
+        "descriptor_sha256": "d000a710c55ea0b45d795e220126cf4958a6a1ffa7a82608cfa89036553158d4",
+        "helper_sha256": "137eff48f5ac31741543c085aaaa5c75146d768062f3db612a429c2bfff9bc4f",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "timed_callable_is_exact_frozen_reference": true,
+      "original_dtype_precision_checker_and_inputs_unchanged": true,
+      "explicit_alternative_Torch_API": true,
+      "source": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/remaining_torch_complete_alternative_api.py": "8fa36f8adfc10ab4ae43bd88445a0d2f5545736b6eb32fa47f44e39242d5320a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/mamba.py": "adc2f16879e3e76799ec21f179f29845d713be3d334250b8f45f2f6be611426a"
+      }
+    },
+    {
+      "ordinal": 371,
+      "input_source_proof": {
+        "ordinal": 371,
+        "key": [
+          "ops-math",
+          "SSDChunkCouplingFwdOp",
+          "mamba2-780m-float16"
+        ],
+        "only_source_delta": {
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+            "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+            "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+          ]
+        },
+        "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+        "prepare_sha256": "31f0c15f3668617f2871107b0dbec9cf99e66fe207e0fd1bb83d5c30309ac8bc",
+        "payload_sha256": "26552fad14198aac0fae328094354a4f5b6cb522725f7e665fc6950f4ade4171",
+        "descriptor_sha256": "b0a864f9418d5f598432380551e1fb9d211950be41a6ebbd21ba0c4856447db0",
+        "helper_sha256": "137eff48f5ac31741543c085aaaa5c75146d768062f3db612a429c2bfff9bc4f",
+        "old_metadata_untouched": true,
+        "timed_function_and_checker_unchanged": true
+      },
+      "timed_callable_is_exact_frozen_reference": true,
+      "original_dtype_precision_checker_and_inputs_unchanged": true,
+      "explicit_alternative_Torch_API": true,
+      "source": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/remaining_torch_complete_alternative_api.py": "8fa36f8adfc10ab4ae43bd88445a0d2f5545736b6eb32fa47f44e39242d5320a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/mamba.py": "adc2f16879e3e76799ec21f179f29845d713be3d334250b8f45f2f6be611426a"
+      }
+    }
+  ],
+  "no_performance_qualification_claim": true
+}

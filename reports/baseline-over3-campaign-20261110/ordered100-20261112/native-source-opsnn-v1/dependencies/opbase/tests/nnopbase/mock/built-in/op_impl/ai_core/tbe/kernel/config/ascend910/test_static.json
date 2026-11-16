@@ -1,0 +1,38 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "0000000000000000000000000000000000000000000000000000000000000000",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/test_static/TestStatic_00000000000000000000000000000000_high_performance.json"
+      }
+    }
+  ]
+}

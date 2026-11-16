@@ -1,0 +1,66 @@
+{
+  "checked_at": "2026-11-15T01:42:35.796851+00:00",
+  "accepted_original_Torch_programs": 2,
+  "rows": [
+    {
+      "ordinal": 1356,
+      "key": [
+        "torch-eager",
+        "FusedQKNormRoPEFwdOp",
+        "interleaved-ragged-float16-float16"
+      ],
+      "device_us": 326.0626,
+      "host_us_diagnostic": 1627.538725733757,
+      "api": "original08f case.reference complete original F32 QKNorm and table RoPE math, clone including V and final original dtype",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-torch-qk2-original-08f-1356-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "9bf8dfcd2d34f26aabd23335cb5d06c39d270dc6eeca653c35d9de4b53b1f169",
+      "source_sha256": "e4f459c5863227299acdf889c359f89356e1a65f1a9ef7005a962173aa675d13",
+      "payload_sha256": "30768b490af768fe385290c1601ae4bac0aee6ab1cadaa11469c740c31b1c1fa",
+      "prepare_sha256": "42be650d017c3d4538e8d8378f8983c8f8872c5f34cc79ed475f3bc1e81cd763",
+      "prepare_metadata_path": "/opt/baseline-over3-20261110/ordered100-20261112/prepared-torch-qk2-08f-v2/1356/prepare.json",
+      "full_checker_15raw_guard_valid": true,
+      "not_paired_speedup_or_finalratio": true,
+      "exact_original_catalog_recovered_not_alias": true
+    },
+    {
+      "ordinal": 1358,
+      "key": [
+        "torch-eager",
+        "FusedQKNormRoPEFwdOp",
+        "interleaved-ragged-bfloat16-float32"
+      ],
+      "device_us": 319.5632,
+      "host_us_diagnostic": 1790.3766284386318,
+      "api": "original08f case.reference complete original F32 QKNorm and table RoPE math, clone including V and final original dtype",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-torch-qk2-original-08f-1358-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "92206dc79e6c7c9a241b35aa47a7bd266a4a24f2416eb67bda317806bf8e3f48",
+      "source_sha256": "e4f459c5863227299acdf889c359f89356e1a65f1a9ef7005a962173aa675d13",
+      "payload_sha256": "a7ef97541e814cff47cfdd21c804ca1dda85e150e205222c5e31773a2ca2490f",
+      "prepare_sha256": "9747d32e4640ba6ebc2a7679a3add8c57322c9433291826fcfeb8221f113011a",
+      "prepare_metadata_path": "/opt/baseline-over3-20261110/ordered100-20261112/prepared-torch-qk2-08f-v2/1358/prepare.json",
+      "full_checker_15raw_guard_valid": true,
+      "not_paired_speedup_or_finalratio": true,
+      "exact_original_catalog_recovered_not_alias": true
+    }
+  ],
+  "source_commit": "08f66b153c44b47330e7fe4311470152f287a112",
+  "no_historical_or_public_ratio_update": true
+}

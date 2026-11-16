@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-11-15T10:04:28.691950+00:00",
+  "accepted_complete_APIs": 3,
+  "rows": [
+    {
+      "ordinal": 794,
+      "key": [
+        "ops-transformer",
+        "ReluFwdOp",
+        "hidden-state-prefill-bfloat16"
+      ],
+      "api": "ops-transformer::original FlashAttentionScore",
+      "device_us": 168829.81586666667,
+      "checkpoint": "rollout-ops-transformer-relu-api-sdk-794-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "e9b907d73631e0bba8ea96ab5774c8f5ee8f58c70c9f41dd9b87eebff551dd20",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "prepare_sha256": "520b53447c8c175384c89df84efe503f1f7d7ebc8581525c86fccf24b0f6c8d2",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 795,
+      "key": [
+        "ops-transformer",
+        "ReluFwdOp",
+        "hidden-state-prefill-float16"
+      ],
+      "api": "ops-transformer::original FlashAttentionScore",
+      "device_us": 168566.30240000002,
+      "checkpoint": "rollout-ops-transformer-relu-api-sdk-795-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "f14be169f2ed15d44f25653e3caf4295514488100d6e581f54ab09ffb4f3c80b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "e4f5cf4fc4186303ae19d825c8f64faaf3b2571e8dbb574da19b13b7a491bfdd",
+      "prepare_sha256": "6d43388689395bff31a0834df75cd52a2f14a72876c5b788be7142f4f6b8de20",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 796,
+      "key": [
+        "ops-transformer",
+        "ReluFwdOp",
+        "hidden-state-decode-bfloat16"
+      ],
+      "api": "ops-transformer::original FlashAttentionScore",
+      "device_us": 115.34926666666667,
+      "checkpoint": "rollout-ops-transformer-relu-api-sdk-796-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "0d32ac418e5ca476454dd4248ef0243e18b626f3beceae26288c3a7753dbae3e",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "5f98f68b6e677a47fb41f66d9674995bcb972373acc682c1566d1ec92e2fafee",
+      "prepare_sha256": "0717d28e155bf40db2b3a2fb09cdbc4af3df510fa2f79c3e91829ed3c96b280e",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

@@ -1,0 +1,27 @@
+"""Accept fresh complete alternate API only; no invented old performance control."""
+import pathlib,json,hashlib,datetime,shutil
+P=pathlib.Path(__file__).resolve().parent
+def sha(f):return hashlib.sha256(f.read_bytes()).hexdigest()
+def summarize():
+ audit=json.loads((P/'ROLLOUT_AUDIT.json').read_text());proof=json.loads((P/'VLLM_ADALN_FLA_DEFINED_CPU_PROOF.json').read_text());rows=[];ledger=json.loads((P/'ROLLOUT_LEDGER.json').read_text())
+ for i in [1117,1118,1119]:
+  label=f'rollout-vllm-adaln-fla-defined-{i}-v1';path=P/(label+'.CHECKPOINT.json')
+  if not path.exists():continue
+  event=json.loads(path.read_text());r=event['batch']['results'][0]
+  if r.get('status')!='raw_checked_pending_guard':continue
+  a=audit[label];assert a['checkpoint_sha256']==sha(path) and a['guard_valid'];assert a['rows'][0]['status']=='formal_raw_and_full_output_verified'
+  # Frozen source contract, preparation/payload, runtime, and new native entry are source-bound.
+  source=json.loads((P/'remote/runs'/event['tag']/'SOURCE.json').read_text());assert sha(P/'remote/runs'/event['tag']/'SOURCE.json')==event['batch']['source_sha256']
+  selected=r['sources'];native=[v for k,v in selected.items() if k.endswith('/vllm_ascend/ops/triton/fla/layernorm_guard.py')];assert native==[proof['alternate_native_sha256']]
+  contract=[v for k,v in selected.items() if k.endswith('/vllm/contracts.py')];assert contract==[proof['global_contract_sha256_unchanged']]
+  helper=[v for k,v in selected.items() if k.endswith('/isolated_wrappers/vllm_adaln_fla_defined_api.py')];assert helper==[sha(P/'workspace/isolated_wrappers/vllm_adaln_fla_defined_api.py')]
+  review=json.loads((P/'remote/runs'/event['tag']/'ALTERNATE_API_CONTRACT_REVIEW.json').read_text());assert review['original_decision']=='adapter_blocked';assert ledger[str(i)]['result']['status']=='unsupported'
+  rows.append({'ordinal':i,'key':r['key'],'api':r['api'],'device_us':r['device_us'],'host_us_diagnostic':r['host_us_diagnostic'],'checkpoint':path.name,'checkpoint_sha256':sha(path),'source_sha256':event['batch']['source_sha256'],'selected_sources':selected,'runtime':event['batch']['runtime'],'protocol':r['timing']['measurement_protocol'],'payload_sha256':r['payload_sha256'],'prepare_sha256':r['prepare_sha256'],'reference_policy':r['reference_policy'],'full_checker_15raw_guard_valid':True,'guard_checker_15raw_valid':True,'original_control':'Old route is contract-blocked before kernel; no old timing measured/reused','original_to_new_speedup':None,'alternate_contract':review,'not_final_under3_ratio_closure':True})
+ report={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'accepted_alternate_APIs':len(rows),'rows':rows,'candidate_only_not_paired_performance':True,'old_guard_and_failures_retained':True,'historical_or_public_ratios_not_updated':True}
+ for f in [P/'VLLM_ADALN_FLA_DEFINED_CURRENT.json',P/'RESOLVED_ADALN_FLA_DEFINED_API.json',P.parent/'delivery/ordered_vllm_adaln_fla_defined/ROUTES.json']:
+  f.parent.mkdir(parents=True,exist_ok=True);tmp=f.with_suffix('.tmp');tmp.write_text(json.dumps(report,indent=2));tmp.replace(f)
+ helper=P/'workspace/isolated_wrappers/vllm_adaln_fla_defined_api.py';dest=P.parent/'delivery/ordered_vllm_adaln_fla_defined'/helper.name
+ if dest.exists():assert dest.read_bytes()==helper.read_bytes()
+ else:shutil.copyfile(helper,dest)
+ return report
+if __name__=='__main__':print('ACCEPTED_COMPLETE_ALTERNATE_APIS',summarize()['accepted_alternate_APIs'])

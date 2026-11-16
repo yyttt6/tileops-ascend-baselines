@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-11-16T03:48:07.524818+00:00",
+  "host": "openlibing-DevEnv-661495",
+  "CPU_only": true,
+  "process_and_root_free_actual": "2436584 Mon Nov 16 03:43:48 2026 /opt/tileops-ci/runtime/bin/python /opt/baseline-over3-20261110/ordered100-20261112/certify_golden42_cpu.py\noverlay        549755813888 328513990656 221241823232  60% /\n",
+  "NPU_controller_not_running": true,
+  "not_qualified_coverage": true
+}

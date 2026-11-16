@@ -1,0 +1,169 @@
+{
+  "checked_at": "2026-11-15T08:06:10.110963+00:00",
+  "accepted_complete_APIs": 9,
+  "rows": [
+    {
+      "ordinal": 807,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-1024-float16"
+      ],
+      "api": "ops-transformer::original MoeGatingTopKSoftmax full3output k=width permutation",
+      "device_us": 2214.816,
+      "checkpoint": "rollout-ops-transformer-softmax-narrow-sdk-807-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "9262f5c06dbc3afd31380beed02e86594ebb80238d6c38467dcd196dac31ba62",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "4e7b475915eaaf6d961a0262f56a4f689efd8f5f79816ee6821e6c17505eccaa",
+      "prepare_sha256": "aa88dca0be45c4511b4f0b137eb3ed7d9d38c9763b061cc6a928766eb759aeb5",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 808,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-1024-bfloat16"
+      ],
+      "api": "ops-transformer::original MoeGatingTopKSoftmax full3output k=width permutation",
+      "device_us": 2215.0925333333334,
+      "checkpoint": "rollout-ops-transformer-softmax-narrow-sdk-808-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "8873df4a35f5117b59057862c5f5e15fb966b0143beca931085ed50666fbf6c4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "f3e0d51b15096902a6aeddced83a8730c433c451ec6d27d7c82c07a3e6b6c8f3",
+      "prepare_sha256": "828c596fa4fa850a2f6c71d44c3aea64b7b035da807b0d72e6e57d4b73351c86",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 821,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-512-float16"
+      ],
+      "api": "ops-transformer::original MoeGatingTopKSoftmax full3output k=width permutation",
+      "device_us": 786.8731999999999,
+      "checkpoint": "rollout-ops-transformer-softmax-narrow-sdk-821-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "69c2a2b9d924847db6e8c7327543f2362c13799d2fcd4f11a8afe50fa9ef6023",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "5864f8a220f1c6c65e5eca285b756ff5fc234189b95e48b6ada79f9898a35c47",
+      "prepare_sha256": "006dbbe90e6da9cf279d3dc337ba49c2f37b7e546af08b356833468049feb22b",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 822,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-1024-float32"
+      ],
+      "api": "ops-transformer::original MoeGatingTopKSoftmax full3output k=width permutation",
+      "device_us": 1664.6167333333335,
+      "checkpoint": "rollout-ops-transformer-softmax-narrow-sdk-822-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "95ac873e95a8cc066c9afacc7014080548de3232255c417ca461d6a15fda25d4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "1f491d5f391f45af14849937e2abbca5c79e2f3d9f6854f04b099dab1ea2b28a",
+      "prepare_sha256": "5dd2c2a90c096fca5efa30f992ce14d0c9b8e15a8b92a55e355d1b2865c6f950",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 823,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-512-bfloat16"
+      ],
+      "api": "ops-transformer::original MoeGatingTopKSoftmax full3output k=width permutation",
+      "device_us": 787.2662666666668,
+      "checkpoint": "rollout-ops-transformer-softmax-narrow-sdk-823-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "2831d6d70b6c3ec95caadb3571cc21c53c0b490267a92413c87433af6970fcaa",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "dce9e83c8ccc09d619bfb3771cad5cc75783ebf031199ddb5c81a75c70c1d9f3",
+      "prepare_sha256": "9c30dd69c600b96d606393a85d25bd90cd741e1d3df612e3af973d5b890aa125",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 826,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-512-float32"
+      ],
+      "api": "ops-transformer::original MoeGatingTopKSoftmax full3output k=width permutation",
+      "device_us": 700.0701333333334,
+      "checkpoint": "rollout-ops-transformer-softmax-narrow-sdk-826-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "8319ec1e5e44e48a92db14f4ada17c33abc1fab03cad9202bfd9f6bc995d652a",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "7c45fb8d8dfda493612f2eb724aed05b9b5f271867efcac3c2a7ddd3cf874eca",
+      "prepare_sha256": "282881fd32a6021f650fefe3059a5402e536c85567d4e02b242760b7a0da6de1",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 835,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-256-float16"
+      ],
+      "api": "ops-transformer::original MoeGatingTopKSoftmax full3output k=width permutation",
+      "device_us": 337.0772666666667,
+      "checkpoint": "rollout-ops-transformer-softmax-narrow-sdk-835-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "cf2bab3ceaedcbc3d17374ff2dff13a35d6b74179f5baf4e59c9994f274d0407",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2ceac570d604eeba1d558edfb2f00408ed98254d2ba350ab552f97138a45e878",
+      "prepare_sha256": "183ba9f3ab4a0e844618be3c2c392811c812ec06daeb11cfc2775675a692da2a",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 838,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-256-float32"
+      ],
+      "api": "ops-transformer::original MoeGatingTopKSoftmax full3output k=width permutation",
+      "device_us": 349.69406666666663,
+      "checkpoint": "rollout-ops-transformer-softmax-narrow-sdk-838-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "b1ab3b04e60e3df6300af9b960aec9aca323900862b95bb6f742a5445755fa23",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "e8ed28be5221d5b0cc0bb4859eac1f4c7ad96403ba6890618c1727cc5e5f023a",
+      "prepare_sha256": "7fece57ba7d4bfb88c90e8aa3ea0340d0488c5296bd516fc83fd6e0418641b7b",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 841,
+      "key": [
+        "ops-transformer",
+        "SoftmaxFwdOp",
+        "quack-throughput-256-bfloat16"
+      ],
+      "api": "ops-transformer::original MoeGatingTopKSoftmax full3output k=width permutation",
+      "device_us": 337.5502,
+      "checkpoint": "rollout-ops-transformer-softmax-narrow-sdk-841-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "43a8c0ea905ebc17c1568867ad89db247078a7ca2c80ae4d2f4e4b1229abfc5e",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "cbcd709a937819e31c2bf10348b00112a73fbbc586b138f610b906b12236483b",
+      "prepare_sha256": "38c2946ca4065a93168131eb183e4fad1f23cf60a22d918a3ea1bd34fa091471",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

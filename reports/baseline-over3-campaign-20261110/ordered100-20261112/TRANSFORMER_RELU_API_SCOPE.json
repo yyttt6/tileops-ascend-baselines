@@ -1,0 +1,10 @@
+{
+  "ordinals": [
+    794,
+    795,
+    796
+  ],
+  "original_run_pair_negate_AST_exact": true,
+  "original_source_sha256": "e49dd803749561dca0fffa0629182119c94c16ba0c937399717d7b73ccd93e1f",
+  "original_math_input_precision_checker_unchanged": true
+}

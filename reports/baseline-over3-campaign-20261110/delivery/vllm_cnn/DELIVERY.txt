@@ -1,0 +1,1 @@
+Only exact audited keys in ROUTES.partial. Original native API, fixed=False. Params must include full original case output description (from original prepare); required broadcast expansion/copies counted. Factory SHA checked against every selected formal SOURCE. Staged only; no export/web integration or extra device smoke.

@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-11-16T05:22:33.831463+00:00",
+  "reason": "New run reused JIT cached kernel from original failed777; generic catalog only listed accepted other shapes and missed exact original777 binary.",
+  "source_old_checkpoint": "rollout-ops-transformer-instance-api-sdk-777-h1-v1.CHECKPOINT.json",
+  "source_old_checkpoint_sha256": "f9f7662c4b509d9885f2525261e122ec7c988d0875b9d0bb04ede278ebcc8765",
+  "artifact_only_reuse_numeric_failure_preserved": true,
+  "same_device_runtime_private_source_map": true,
+  "all_retained_files_metadata_device_ELF_preprocessed_original_source_and_all15_actual_new_windows_verified": true,
+  "new_guard_and_full_corrected_output_input_checker_verified": true,
+  "no_device_remeasurement": true
+}

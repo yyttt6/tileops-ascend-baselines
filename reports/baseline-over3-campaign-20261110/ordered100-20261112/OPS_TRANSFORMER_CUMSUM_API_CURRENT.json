@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-15T10:14:44.688975+00:00",
+  "accepted_complete_APIs": 1,
+  "rows": [
+    {
+      "ordinal": 767,
+      "key": [
+        "ops-transformer",
+        "CumsumFwdOp",
+        "hidden-state-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd",
+      "device_us": 1172.3895333333335,
+      "checkpoint": "rollout-ops-transformer-cumsum-api-sdk-767-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ce1fa65bb186519bcc2093fc7dc8a17ae8ab400ef45ead855065ec4299061c85",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "prepare_sha256": "f8b83d6c6f4dc09fd6c722bcc434a0c704bb4bc5958c510aed4e2457bd603422",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

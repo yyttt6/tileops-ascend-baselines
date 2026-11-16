@@ -1,0 +1,508 @@
+[
+  {
+    "ordinal": 1002,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "cnn-feat-broadcast-bfloat16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 153002.1318,
+    "candidate_us": 7431.366,
+    "device_reduction_percent": 95.1429657138934,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1002-1005.CHECKPOINT.json",
+    "original_checkpoint_sha256": "982f3e83172df6cc7603e2721dd1f2f252ee8c14994a4c8f3628f4908fae198f",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1002.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "6da86d8a37c770407e755487196a2d6b09c969ba917c8b15c86c8a8d94ac48bf",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1003,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "cnn-feat-broadcast-float16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 165305.4866,
+    "candidate_us": 7431.572266666667,
+    "device_reduction_percent": 95.50434022516791,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1002-1005.CHECKPOINT.json",
+    "original_checkpoint_sha256": "982f3e83172df6cc7603e2721dd1f2f252ee8c14994a4c8f3628f4908fae198f",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1003.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "e8f034231bf3394bc32ce38595f60fcf8a5af823d81f1ae11dc081353c9b2598",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1004,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "llama-7b-ffn-bfloat16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 144774.9742666667,
+    "candidate_us": 6515.1794,
+    "device_reduction_percent": 95.49978894280483,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1002-1005.CHECKPOINT.json",
+    "original_checkpoint_sha256": "982f3e83172df6cc7603e2721dd1f2f252ee8c14994a4c8f3628f4908fae198f",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1004.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "28d9e6292adda3ee505198aba50e6099b441979631b8890b0924ca94eb993a40",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1005,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "llama-7b-ffn-float16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 144712.25993333335,
+    "candidate_us": 6515.0560000000005,
+    "device_reduction_percent": 95.49792394714768,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1002-1005.CHECKPOINT.json",
+    "original_checkpoint_sha256": "982f3e83172df6cc7603e2721dd1f2f252ee8c14994a4c8f3628f4908fae198f",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1005.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "6c76062f90904c7df73220d7b2311d6eb10e972dacb61400eb3ee58ed81770e6",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1006,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "hidden-state-prefill-bfloat16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 100387.42259999999,
+    "candidate_us": 4847.276466666667,
+    "device_reduction_percent": 95.1714305028221,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1006-1009.CHECKPOINT.json",
+    "original_checkpoint_sha256": "e5018b7327e91bf251a93c1564621e9d2ca0a67963b22e33e48a4f77629ecce4",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1006.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "465be0e3294e45ac20b32b5ec120dacb2aae490f152205e22f2dbd5f4b08fb48",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1007,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "cnn-feat-broadcast-float32"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 153871.13506666664,
+    "candidate_us": 6315.5494,
+    "device_reduction_percent": 95.8955593605885,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1006-1009.CHECKPOINT.json",
+    "original_checkpoint_sha256": "e5018b7327e91bf251a93c1564621e9d2ca0a67963b22e33e48a4f77629ecce4",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1007.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "0842a5765938d05a0edf8eac0787845f423bc43d5e7e3cb940428f42e471123c",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1008,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "hidden-state-prefill-float16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 107594.92913333334,
+    "candidate_us": 4847.353733333333,
+    "device_reduction_percent": 95.49481209534846,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1006-1009.CHECKPOINT.json",
+    "original_checkpoint_sha256": "e5018b7327e91bf251a93c1564621e9d2ca0a67963b22e33e48a4f77629ecce4",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1008.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "0d02a02f38e7d974991309ebe89a07f155b4d0c4c8a7ebc0bc1d297bcfc85fb1",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1009,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "phi-2-ffn-float16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 124785.57913333335,
+    "candidate_us": 6059.9816666666675,
+    "device_reduction_percent": 95.14368430330272,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1006-1009.CHECKPOINT.json",
+    "original_checkpoint_sha256": "e5018b7327e91bf251a93c1564621e9d2ca0a67963b22e33e48a4f77629ecce4",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1009.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "469c33b805a785b13dcf3c046be04ac78ab7a0646225cd10a7364e3f4017e8d0",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1010,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "linear-bias-bfloat16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 50327.91406666667,
+    "candidate_us": 2434.9436666666666,
+    "device_reduction_percent": 95.16184266361361,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1010-1013.CHECKPOINT.json",
+    "original_checkpoint_sha256": "5d547580fbfd11f50f340cb5d1fdebe5ee8126b9d3e50d927c8f945711017550",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1010.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "2822e20b3901708c4df6f047d0b814247663d81198b9aa0868556da3393256d5",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1011,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "linear-bias-float16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 53913.024333333335,
+    "candidate_us": 2434.307333333333,
+    "device_reduction_percent": 95.48475092348279,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1010-1013.CHECKPOINT.json",
+    "original_checkpoint_sha256": "5d547580fbfd11f50f340cb5d1fdebe5ee8126b9d3e50d927c8f945711017550",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1011.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "aa75e7483a3b99664b4bb862a9fa193653fb55e7cda9ccff3b8d9d98abb5b6b8",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1012,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "linear-bias-float32"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 51308.6282,
+    "candidate_us": 2066.3192,
+    "device_reduction_percent": 95.97276467430483,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1010-1013.CHECKPOINT.json",
+    "original_checkpoint_sha256": "5d547580fbfd11f50f340cb5d1fdebe5ee8126b9d3e50d927c8f945711017550",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1012.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "b1df160871d005f49c677c50291dcaca5a4cc25aad71ad348c08a2a216cbf891",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1013,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "llama-7b-hidden-float16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 53897.4044,
+    "candidate_us": 2429.5704666666666,
+    "device_reduction_percent": 95.49223103837137,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1010-1013.CHECKPOINT.json",
+    "original_checkpoint_sha256": "5d547580fbfd11f50f340cb5d1fdebe5ee8126b9d3e50d927c8f945711017550",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1013.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "466d61f242a521c00d1360ff835a3f7336a51d9f53a1c4e18d4eac7e1d02ab10",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1014,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "hidden-state-prefill-float32"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 100399.18266666667,
+    "candidate_us": 4107.7302,
+    "device_reduction_percent": 95.90860195183262,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1014-1015.CHECKPOINT.json",
+    "original_checkpoint_sha256": "7c9551131f941838f0121131ffe07a372897448ce70a18bc8f71d9c57765602e",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1014.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "a142721b90b20f27445aee74956064e268d9d6d8cc1b19c91c265607d13766a3",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1015,
+    "key": [
+      "sgl-kernel-npu",
+      "LerpScalarFwdOp",
+      "llama-7b-ffn-float32"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 136941.53893333333,
+    "candidate_us": 5523.5092,
+    "device_reduction_percent": 95.96652028082656,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1014-1015.CHECKPOINT.json",
+    "original_checkpoint_sha256": "7c9551131f941838f0121131ffe07a372897448ce70a18bc8f71d9c57765602e",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1015.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "5fa8d39b7faae6b1631dcceefdf7f62096c77642499993e6db589cc13ced1486",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_midpoint_api.py": "d01b9487cffbc4896cdc2be1c545ab06b2c05a7f940fe8c501e2a76bcd629610"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1053,
+    "key": [
+      "sgl-kernel-npu",
+      "NegFwdOp",
+      "16M-float32"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 165.63933333333333,
+    "candidate_us": 75.0078,
+    "device_reduction_percent": 54.71619059885131,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1053-1056.CHECKPOINT.json",
+    "original_checkpoint_sha256": "a3e18bf2528a0955cb477dd9878917cf0cde0817c660257aa14a5334b6e5fdd9",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1053.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "492f3d2c785f7974c9c31c623b337e6620ec8a786abe6bf9bef771ffaf7c87d0",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_noop_pad.py": "2af39e43dc878e9eeca35d46d3168de428f6286cfedb5a21a19bb1605ba012bc"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1054,
+    "key": [
+      "sgl-kernel-npu",
+      "NegFwdOp",
+      "16M-bfloat16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 72.55366666666667,
+    "candidate_us": 40.1012,
+    "device_reduction_percent": 44.72891331014743,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1053-1056.CHECKPOINT.json",
+    "original_checkpoint_sha256": "a3e18bf2528a0955cb477dd9878917cf0cde0817c660257aa14a5334b6e5fdd9",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1054.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "4dac9a19483f3469fedf3de6abb09059428a7357c2abb1beb0e8a43895bc8ca1",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_noop_pad.py": "2af39e43dc878e9eeca35d46d3168de428f6286cfedb5a21a19bb1605ba012bc"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1055,
+    "key": [
+      "sgl-kernel-npu",
+      "NegFwdOp",
+      "16M-float16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 71.67326666666666,
+    "candidate_us": 38.199933333333334,
+    "device_reduction_percent": 46.70267575358176,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1053-1056.CHECKPOINT.json",
+    "original_checkpoint_sha256": "a3e18bf2528a0955cb477dd9878917cf0cde0817c660257aa14a5334b6e5fdd9",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1055.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "6f2aa2cd4bea3978ff266dc73176dbb8ff790d8fc61a134e36eb752f0f602b68",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_noop_pad.py": "2af39e43dc878e9eeca35d46d3168de428f6286cfedb5a21a19bb1605ba012bc"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1056,
+    "key": [
+      "sgl-kernel-npu",
+      "NegFwdOp",
+      "256M-bfloat16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 1428.5630666666666,
+    "candidate_us": 790.9754666666666,
+    "device_reduction_percent": 44.63139324242178,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1053-1056.CHECKPOINT.json",
+    "original_checkpoint_sha256": "a3e18bf2528a0955cb477dd9878917cf0cde0817c660257aa14a5334b6e5fdd9",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1056.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "83ce905f1330c2e187fe03b7b53025ecc0684e62eb7de80270d0b45a0dddb620",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_noop_pad.py": "2af39e43dc878e9eeca35d46d3168de428f6286cfedb5a21a19bb1605ba012bc"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1057,
+    "key": [
+      "sgl-kernel-npu",
+      "NegFwdOp",
+      "256M-float16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 1403.0221999999999,
+    "candidate_us": 769.7894000000001,
+    "device_reduction_percent": 45.13348398906303,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1057-1057.CHECKPOINT.json",
+    "original_checkpoint_sha256": "c83654f50f269805c1075579e7ac35ca033a491faf84eea3c51d27ed339dd360",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1057.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "992696882469bd029ba6607ba1015ee5ade4baf840f178f5269f78b41887440d",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_noop_pad.py": "2af39e43dc878e9eeca35d46d3168de428f6286cfedb5a21a19bb1605ba012bc"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1089,
+    "key": [
+      "sgl-kernel-npu",
+      "SiluAndMulFwdOp",
+      "qwen3-8b-swiglu-b32-bfloat16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 23.49666666666667,
+    "candidate_us": 16.293,
+    "device_reduction_percent": 30.658249397077608,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1089-1091.CHECKPOINT.json",
+    "original_checkpoint_sha256": "10d03b54d11aa6ec4042954451c7f04f05f5e9bae5665e4395fe3f5c3ffd0295",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1089.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "4e6feb5c90d261acac461e9e53018aed23c9a99919b415200a75bd40d7acc9af",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_noop_pad.py": "2af39e43dc878e9eeca35d46d3168de428f6286cfedb5a21a19bb1605ba012bc"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1090,
+    "key": [
+      "sgl-kernel-npu",
+      "SiluAndMulFwdOp",
+      "llama-8b-ffn-prefill-bfloat16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 332.36886666666663,
+    "candidate_us": 273.2331333333334,
+    "device_reduction_percent": 17.79219995133917,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1089-1091.CHECKPOINT.json",
+    "original_checkpoint_sha256": "10d03b54d11aa6ec4042954451c7f04f05f5e9bae5665e4395fe3f5c3ffd0295",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1090.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "0d36016e99a9dfd2d73cf23370d5132e0cbb90e04b5d20d4b84b02095710f28e",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_noop_pad.py": "2af39e43dc878e9eeca35d46d3168de428f6286cfedb5a21a19bb1605ba012bc"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  },
+  {
+    "ordinal": 1091,
+    "key": [
+      "sgl-kernel-npu",
+      "SiluAndMulFwdOp",
+      "llama-8b-ffn-prefill-float16"
+    ],
+    "selection": "reviewed_wrapper_candidate",
+    "original_us": 332.9742,
+    "candidate_us": 273.7141333333334,
+    "device_reduction_percent": 17.797194697567143,
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "original_checkpoint": "rollout-1089-1091.CHECKPOINT.json",
+    "original_checkpoint_sha256": "10d03b54d11aa6ec4042954451c7f04f05f5e9bae5665e4395fe3f5c3ffd0295",
+    "candidate_checkpoint": "rollout-sgl-wrapper-candidate-1091.CHECKPOINT.json",
+    "candidate_checkpoint_sha256": "8753b00a5435a54b2bbcc4b2603a5eaea0df33fe2b279f4f101458745e2efe11",
+    "input_prepare_runtime_provider_source_equal": true,
+    "candidate_helper_sources": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/sgl_noop_pad.py": "2af39e43dc878e9eeca35d46d3168de428f6286cfedb5a21a19bb1605ba012bc"
+    },
+    "both_guards_valid": true,
+    "full_checker_and_15raw_each_leg": true
+  }
+]

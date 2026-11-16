@@ -1,0 +1,30 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "SubFwdOp",
+      "llama-7b-ffn-bias-float16"
+    ],
+    "index": 0,
+    "selected_variant": "native",
+    "selected_us": 52.82773333333333,
+    "ratio": 5.281646582062493,
+    "result_sha256": "5aee0374c3db264518e35d9ce28f86744a044a68a48ac3b5983022e1729802e4",
+    "decision": "retain_original_api_over3",
+    "reason": "Retain original singleton-feature arithmetic API with complete broadcast expansion/copies timed. Direct natural FFN width selects a non-power-of-two native block; do not change kernel/compiler/block to force another path. Original checker and15 raw windows audited. Current engineering API verification, not an optimization gain claim."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SubFwdOp",
+      "phi-2-ffn-bias-float16"
+    ],
+    "index": 1,
+    "selected_variant": "native",
+    "selected_us": 49.83213333333333,
+    "ratio": 5.115990335849753,
+    "result_sha256": "a94367307b46d40e354fbc8951bb0223cbbb50541dd14130464e9613a9430895",
+    "decision": "retain_original_api_over3",
+    "reason": "Retain original singleton-feature arithmetic API with complete broadcast expansion/copies timed. Direct natural FFN width selects a non-power-of-two native block; do not change kernel/compiler/block to force another path. Original checker and15 raw windows audited. Current engineering API verification, not an optimization gain claim."
+  }
+]

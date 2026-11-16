@@ -1,0 +1,34 @@
+[
+  {
+    "key": [
+      "DeepSelect",
+      "AdaptiveMaxPool2dFwdOp",
+      "spp-6x6-float16"
+    ],
+    "index": 1,
+    "selected_us": 412.9483333333333,
+    "selected_variant": "fixed",
+    "control_us": 730.4348,
+    "candidate_us": 412.9483333333333,
+    "ratio": 40.11180256954878,
+    "result_sha256": "dbfb18557a041f0c82d1c90ace101eca50512e18302912bfd7fad56229b11503",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Group equal-width windows into original TopK batches, cap32768rows unchanged. Every input-dependent slice/pack/copy and output reorder timed. Full original TopK work remains, not a pooling kernel; further kernel/schedule optimization excluded. Original checker/dtype unchanged, both15window raw audits passed."
+  },
+  {
+    "key": [
+      "DeepSelect",
+      "AdaptiveMaxPool2dFwdOp",
+      "nondiv-7x7-bfloat16"
+    ],
+    "index": 2,
+    "selected_us": 359.566,
+    "selected_variant": "fixed",
+    "control_us": 701.8508,
+    "candidate_us": 359.566,
+    "ratio": 52.126123514062044,
+    "result_sha256": "fc2bf244913d9d43bf8206cf3a452e0d5aae0533e2325f2c16dc47f430240252",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Group equal-width windows into original TopK batches, cap32768rows unchanged. Every input-dependent slice/pack/copy and output reorder timed. Full original TopK work remains, not a pooling kernel; further kernel/schedule optimization excluded. Original checker/dtype unchanged, both15window raw audits passed."
+  }
+]

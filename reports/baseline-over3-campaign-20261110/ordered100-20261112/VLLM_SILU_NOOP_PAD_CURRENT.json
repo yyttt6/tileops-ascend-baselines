@@ -1,0 +1,429 @@
+{
+  "checked_at": "2026-11-13T14:30:38.288259+00:00",
+  "complete_pairs": 7,
+  "rows": [
+    {
+      "ordinal": 1261,
+      "key": [
+        "vllm-ascend",
+        "SiluAndMulFwdOp",
+        "llama-8b-ffn-prefill-bfloat16"
+      ],
+      "original_us": 5219.634666666667,
+      "candidate_us": 5136.888533333333,
+      "device_reduction_percent": 1.585285917839474,
+      "host_original_us_diagnostic": 6656.26535192132,
+      "host_candidate_us_diagnostic": 6631.310532490413,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1261-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1261-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "36726af662c98145182ae04ed065c2ece63226143a67eb35d292ebe6b44f4e06",
+        "5a26ce07eaf5f7c136adfe9de372114f3b76588d59616951940f1705650d7b79"
+      ],
+      "source_sha256": [
+        "b8d67c224e7550599e8188fb1ab4233b21cb8144e049f4f21826146d06289789",
+        "d44c35090e33a06cbf92590e92182bba5ea4d06305b5ec0a95277270cd81c737"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_silu_noop_pad_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_silu_noop_pad_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_silu_noop_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/activation/swiglustep.py": "fb269bed4cc1d14775b243b05ca835800cf0d95617607bb968bd77f96392af2b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_activation_swiglustep_pyfb269bed4cc1d14775b2/swiglustep.py": "c5f1053594ed3f205f0b36c39730c21f5b7ed0de04ffd97f2631d39d1d57ac1d",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py": "c3f1daa49b13376420211369ea80b37c4af7f1481a59ad48235c8e5964bfa310"
+      }
+    },
+    {
+      "ordinal": 1262,
+      "key": [
+        "vllm-ascend",
+        "SiluAndMulFwdOp",
+        "llama-8b-ffn-prefill-float16"
+      ],
+      "original_us": 5219.386133333333,
+      "candidate_us": 5138.3767333333335,
+      "device_reduction_percent": 1.5520867383740367,
+      "host_original_us_diagnostic": 6554.07402664423,
+      "host_candidate_us_diagnostic": 6365.797389298677,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1262-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1262-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "188fdf86b9cd4725fb8ff5dd566b40ab13aac47a7cb8fefb5d9462f534570108",
+        "a5c91ade05b4eed062b9fb971642adc56d2c26d59bfd075debbad219c4d901cb"
+      ],
+      "source_sha256": [
+        "b8d67c224e7550599e8188fb1ab4233b21cb8144e049f4f21826146d06289789",
+        "d44c35090e33a06cbf92590e92182bba5ea4d06305b5ec0a95277270cd81c737"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_silu_noop_pad_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_silu_noop_pad_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_silu_noop_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/activation/swiglustep.py": "fb269bed4cc1d14775b243b05ca835800cf0d95617607bb968bd77f96392af2b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_activation_swiglustep_pyfb269bed4cc1d14775b2/swiglustep.py": "c5f1053594ed3f205f0b36c39730c21f5b7ed0de04ffd97f2631d39d1d57ac1d",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py": "c3f1daa49b13376420211369ea80b37c4af7f1481a59ad48235c8e5964bfa310"
+      }
+    },
+    {
+      "ordinal": 1263,
+      "key": [
+        "vllm-ascend",
+        "SiluAndMulFwdOp",
+        "qwen3-8b-swiglu-b32-bfloat16"
+      ],
+      "original_us": 75.07273333333333,
+      "candidate_us": 71.4902,
+      "device_reduction_percent": 4.772083250820758,
+      "host_original_us_diagnostic": 4389.55407589674,
+      "host_candidate_us_diagnostic": 4064.3940679728985,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1263-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1263-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "3b8496e5026e45b712c323a045350780994f8e8a14de931b60210a0119900c50",
+        "2eeff033da79dad5f7c4104c89bb66f9d9c763437a2749fea5768a83a7b31fab"
+      ],
+      "source_sha256": [
+        "b8d67c224e7550599e8188fb1ab4233b21cb8144e049f4f21826146d06289789",
+        "d44c35090e33a06cbf92590e92182bba5ea4d06305b5ec0a95277270cd81c737"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_silu_noop_pad_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_silu_noop_pad_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_silu_noop_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/activation/swiglustep.py": "fb269bed4cc1d14775b243b05ca835800cf0d95617607bb968bd77f96392af2b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_activation_swiglustep_pyfb269bed4cc1d14775b2/swiglustep.py": "c5f1053594ed3f205f0b36c39730c21f5b7ed0de04ffd97f2631d39d1d57ac1d",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py": "c3f1daa49b13376420211369ea80b37c4af7f1481a59ad48235c8e5964bfa310"
+      }
+    },
+    {
+      "ordinal": 1264,
+      "key": [
+        "vllm-ascend",
+        "SiluAndMulFwdOp",
+        "llama-8b-ffn-decode-bfloat16"
+      ],
+      "original_us": 8.361600000000001,
+      "candidate_us": 8.263933333333332,
+      "device_reduction_percent": 1.1680380150529635,
+      "host_original_us_diagnostic": 4432.630073279142,
+      "host_candidate_us_diagnostic": 3939.1420781612396,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1264-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1264-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "aeb2ebf78185c54a8e12e700b4b627f7d85f0e49cbc107424a1eee6514f788bb",
+        "2976bb05a48eabb59c02053d94b26d5a565bc1d083ea20605b41761e1da26db4"
+      ],
+      "source_sha256": [
+        "b8d67c224e7550599e8188fb1ab4233b21cb8144e049f4f21826146d06289789",
+        "d44c35090e33a06cbf92590e92182bba5ea4d06305b5ec0a95277270cd81c737"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_silu_noop_pad_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_silu_noop_pad_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_silu_noop_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/activation/swiglustep.py": "fb269bed4cc1d14775b243b05ca835800cf0d95617607bb968bd77f96392af2b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_activation_swiglustep_pyfb269bed4cc1d14775b2/swiglustep.py": "c5f1053594ed3f205f0b36c39730c21f5b7ed0de04ffd97f2631d39d1d57ac1d",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py": "c3f1daa49b13376420211369ea80b37c4af7f1481a59ad48235c8e5964bfa310"
+      }
+    },
+    {
+      "ordinal": 1265,
+      "key": [
+        "vllm-ascend",
+        "SiluFwdOp",
+        "llama-8b-ffn-prefill-bfloat16"
+      ],
+      "original_us": 5133.952266666666,
+      "candidate_us": 5025.738066666667,
+      "device_reduction_percent": 2.1078146889406124,
+      "host_original_us_diagnostic": 6664.200592786074,
+      "host_candidate_us_diagnostic": 6512.83801222841,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1265-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1265-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "403b34c1d75a7f9e23f540c89ae949c72ff17e3824e502e2d1c083490377db5f",
+        "f5ca53fe5d75986ca5f648d6b7474abb927f4ba0aa79be28dbbd2e7d49014f83"
+      ],
+      "source_sha256": [
+        "b8d67c224e7550599e8188fb1ab4233b21cb8144e049f4f21826146d06289789",
+        "d44c35090e33a06cbf92590e92182bba5ea4d06305b5ec0a95277270cd81c737"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_silu_noop_pad_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_silu_noop_pad_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_silu_noop_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/activation/swiglustep.py": "fb269bed4cc1d14775b243b05ca835800cf0d95617607bb968bd77f96392af2b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_activation_swiglustep_pyfb269bed4cc1d14775b2/swiglustep.py": "c5f1053594ed3f205f0b36c39730c21f5b7ed0de04ffd97f2631d39d1d57ac1d",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py": "c3f1daa49b13376420211369ea80b37c4af7f1481a59ad48235c8e5964bfa310"
+      }
+    },
+    {
+      "ordinal": 1266,
+      "key": [
+        "vllm-ascend",
+        "SiluFwdOp",
+        "llama-8b-ffn-prefill-float16"
+      ],
+      "original_us": 5133.7838,
+      "candidate_us": 5027.0624,
+      "device_reduction_percent": 2.078805889722124,
+      "host_original_us_diagnostic": 7229.652069509029,
+      "host_candidate_us_diagnostic": 6419.64537401994,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1266-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1266-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "ac03e0e2f4873e6bc9f59fd4a0d3fd0095ecb3c8d231db20845cdfa24dc58007",
+        "b78a616aa4772e30e5a2c4a4f40ac423cac9e10ebea2d4b7d5bc95445a159011"
+      ],
+      "source_sha256": [
+        "b8d67c224e7550599e8188fb1ab4233b21cb8144e049f4f21826146d06289789",
+        "d44c35090e33a06cbf92590e92182bba5ea4d06305b5ec0a95277270cd81c737"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_silu_noop_pad_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_silu_noop_pad_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_silu_noop_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/activation/swiglustep.py": "fb269bed4cc1d14775b243b05ca835800cf0d95617607bb968bd77f96392af2b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_activation_swiglustep_pyfb269bed4cc1d14775b2/swiglustep.py": "c5f1053594ed3f205f0b36c39730c21f5b7ed0de04ffd97f2631d39d1d57ac1d",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py": "c3f1daa49b13376420211369ea80b37c4af7f1481a59ad48235c8e5964bfa310"
+      }
+    },
+    {
+      "ordinal": 1267,
+      "key": [
+        "vllm-ascend",
+        "SiluFwdOp",
+        "llama-8b-ffn-decode-bfloat16"
+      ],
+      "original_us": 8.925133333333333,
+      "candidate_us": 9.239133333333333,
+      "device_reduction_percent": -3.5181547241124322,
+      "host_original_us_diagnostic": 4496.152667949597,
+      "host_candidate_us_diagnostic": 4144.017957150936,
+      "selection": "original",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1267-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-silu-noop-pad-candidate-1267-pad-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "96af69b27abb6ce1371fa5c785e8b933a29b867ca60c23913fa08d60fe4e03e1",
+        "ca4578d17d2632d2ec326e8354b471561fe9232683a82be53b358392be8eb9b6"
+      ],
+      "source_sha256": [
+        "b8d67c224e7550599e8188fb1ab4233b21cb8144e049f4f21826146d06289789",
+        "d44c35090e33a06cbf92590e92182bba5ea4d06305b5ec0a95277270cd81c737"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_silu_noop_pad_original.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_silu_noop_pad_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_silu_noop_pad.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_silu_noop_pad_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/activation.py": "cf9045a5183e6e3d3a5aebfd20155e4d48f9852f38e80d943bfa0920f15c1201",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/activation/swiglustep.py": "fb269bed4cc1d14775b243b05ca835800cf0d95617607bb968bd77f96392af2b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_activation_swiglustep_pyfb269bed4cc1d14775b2/swiglustep.py": "c5f1053594ed3f205f0b36c39730c21f5b7ed0de04ffd97f2631d39d1d57ac1d",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b"
+      }
+    }
+  ],
+  "effective_retest_coverage_not_incremented": true,
+  "historical_or_public_ratios_not_updated": true,
+  "runtime_repair": "REFERENCE_RUNTIME_PRIVATE_COPY.json",
+  "not_all_SOURCE_bytes_same_expected_import_API_differences_explicit": true
+}

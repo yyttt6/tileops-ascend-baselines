@@ -1,0 +1,10 @@
+{
+  "supersedes": "run_all_canonical.py overbroad sweep",
+  "do_not_repeat_valid_measurements": true,
+  "only_affected_extra_checks": [
+    "RoPE target-device tables plus same-coefficient CPU rotation",
+    "FP8 original mandatory edge probes",
+    "CatlassFP16 target-device oracle comparison"
+  ],
+  "extra_DeepGEMM_checker_deployment_failure": "new checker shell had environment overwritten by allpairs launcher; old5 valid performance/checker artifacts untouched; wrapper now reuses proven vendor_python.sh, no measurement repeated"
+}

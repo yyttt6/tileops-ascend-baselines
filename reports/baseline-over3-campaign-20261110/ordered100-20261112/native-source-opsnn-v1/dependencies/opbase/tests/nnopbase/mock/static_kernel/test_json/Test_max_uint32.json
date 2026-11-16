@@ -1,0 +1,11 @@
+{
+    "binFileName": "Test_max_uint32",
+    "binFileSuffix": ".o",
+    "blockDim": 8,
+    "localMemorySize": 4294967295,
+    "workspace": {
+        "size": [
+            1024
+        ]
+    }
+}

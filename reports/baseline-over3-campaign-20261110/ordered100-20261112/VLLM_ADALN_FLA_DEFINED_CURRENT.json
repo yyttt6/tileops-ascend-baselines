@@ -1,0 +1,180 @@
+{
+  "checked_at": "2026-11-13T15:41:29.910434+00:00",
+  "accepted_alternate_APIs": 3,
+  "rows": [
+    {
+      "ordinal": 1117,
+      "key": [
+        "vllm-ascend",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-float32"
+      ],
+      "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups",
+      "device_us": 30.008066666666664,
+      "host_us_diagnostic": 3968.886658549309,
+      "checkpoint": "rollout-vllm-adaln-fla-defined-1119-1117-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "659cd96948a500a032b216b454b6181ae3154c6f3d1ea5cb50ec3680250b1fe5",
+      "source_sha256": "2f871b06968cacef7c51dc3e35fffc6c513e74d2877ecaf67559c6e38b52871c",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/basic.py": "f453534dfd7d05c7c2435912e4b12cf6d376902d2704efc794392e99c0fd70e5",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py": "3aeeb4d137437bcd07745c76b2e58ef9b18a4b05bea4707e3b917633476f7d2e",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py": "6f68ca00ed74c2805dc84f960aa172bf33b0a6618b7d699293910dcbd657e540",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_adaln_fla_defined_api.py": "538464a7f13436de46c66fd16450358eb1c99f2bc5a8201ca0c426b4a3f049cc"
+      },
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "1bd10774d4636582964f6c28b54e825fd8406fba02498b177293dfbcbda6a492",
+      "prepare_sha256": "66cb110dbb8fa3bf9063e7de0e825ce84e0bec3151fa287185c532ae48acbd45",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Old route is contract-blocked before kernel; no old timing measured/reused",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "original_decision": "adapter_blocked",
+        "original_reason": "Original LayerNorm sums masked-load lanes without an explicit zero value for non-power-of-two domains; equivalence is unresolved until the original source/backend defines those lanes. No kernel rewrite or statistics-domain padding is credited.",
+        "why_this_API_is_different": "Original complete fla._layer_norm_fwd source uses tl.load(mask=cols<N,other=0.0) and masks centered variance before summing; no external padding/domain enlargement",
+        "old_global_contract_untouched": true,
+        "case_id": "dit-xl-2-float32",
+        "op": "AdaLayerNormFwdOp",
+        "input_shape": [
+          1024,
+          1152
+        ],
+        "input_dtype": "torch.float32",
+        "group_size": 1152,
+        "no_generic_guard_or_checker_change": true,
+        "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups"
+      },
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 1118,
+      "key": [
+        "vllm-ascend",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-bfloat16"
+      ],
+      "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups",
+      "device_us": 29.869799999999998,
+      "host_us_diagnostic": 3825.4293302694955,
+      "checkpoint": "rollout-vllm-adaln-fla-defined-1118-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "42780048042311209dbf8bcd1cfa79faf3cb1979266865e98ba508995447673d",
+      "source_sha256": "2f871b06968cacef7c51dc3e35fffc6c513e74d2877ecaf67559c6e38b52871c",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/basic.py": "f453534dfd7d05c7c2435912e4b12cf6d376902d2704efc794392e99c0fd70e5",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py": "3aeeb4d137437bcd07745c76b2e58ef9b18a4b05bea4707e3b917633476f7d2e",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py": "6f68ca00ed74c2805dc84f960aa172bf33b0a6618b7d699293910dcbd657e540",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_adaln_fla_defined_api.py": "538464a7f13436de46c66fd16450358eb1c99f2bc5a8201ca0c426b4a3f049cc"
+      },
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "4b828c21710817f7056fd07070372bcd5386d65f21eaf072927b0a8e392eb014",
+      "prepare_sha256": "c71b1e387ca936da2198d51e4e88efef24d198e593a0be39c4e7ec8c0c92fb9f",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Old route is contract-blocked before kernel; no old timing measured/reused",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "original_decision": "adapter_blocked",
+        "original_reason": "Original LayerNorm sums masked-load lanes without an explicit zero value for non-power-of-two domains; equivalence is unresolved until the original source/backend defines those lanes. No kernel rewrite or statistics-domain padding is credited.",
+        "why_this_API_is_different": "Original complete fla._layer_norm_fwd source uses tl.load(mask=cols<N,other=0.0) and masks centered variance before summing; no external padding/domain enlargement",
+        "old_global_contract_untouched": true,
+        "case_id": "dit-xl-2-bfloat16",
+        "op": "AdaLayerNormFwdOp",
+        "input_shape": [
+          1024,
+          1152
+        ],
+        "input_dtype": "torch.bfloat16",
+        "group_size": 1152,
+        "no_generic_guard_or_checker_change": true,
+        "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups"
+      },
+      "not_final_under3_ratio_closure": true
+    },
+    {
+      "ordinal": 1119,
+      "key": [
+        "vllm-ascend",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-float16"
+      ],
+      "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups",
+      "device_us": 29.8056,
+      "host_us_diagnostic": 3909.5627143979073,
+      "checkpoint": "rollout-vllm-adaln-fla-defined-1119-1117-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "659cd96948a500a032b216b454b6181ae3154c6f3d1ea5cb50ec3680250b1fe5",
+      "source_sha256": "2f871b06968cacef7c51dc3e35fffc6c513e74d2877ecaf67559c6e38b52871c",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/basic.py": "f453534dfd7d05c7c2435912e4b12cf6d376902d2704efc794392e99c0fd70e5",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py": "3aeeb4d137437bcd07745c76b2e58ef9b18a4b05bea4707e3b917633476f7d2e",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py": "6f68ca00ed74c2805dc84f960aa172bf33b0a6618b7d699293910dcbd657e540",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_adaln_fla_defined_api.py": "538464a7f13436de46c66fd16450358eb1c99f2bc5a8201ca0c426b4a3f049cc"
+      },
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "182a5934aeeb96472123abc8e06f5b1f22ad24631469dcd075dfefab7e683481",
+      "prepare_sha256": "37e94350ce461600899b6b55a0f10044c02dd3301174db6822879cc6790809c5",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "guard_checker_15raw_valid": true,
+      "original_control": "Old route is contract-blocked before kernel; no old timing measured/reused",
+      "original_to_new_speedup": null,
+      "alternate_contract": {
+        "original_decision": "adapter_blocked",
+        "original_reason": "Original LayerNorm sums masked-load lanes without an explicit zero value for non-power-of-two domains; equivalence is unresolved until the original source/backend defines those lanes. No kernel rewrite or statistics-domain padding is credited.",
+        "why_this_API_is_different": "Original complete fla._layer_norm_fwd source uses tl.load(mask=cols<N,other=0.0) and masks centered variance before summing; no external padding/domain enlargement",
+        "old_global_contract_untouched": true,
+        "case_id": "dit-xl-2-float16",
+        "op": "AdaLayerNormFwdOp",
+        "input_shape": [
+          1024,
+          1152
+        ],
+        "input_dtype": "torch.float16",
+        "group_size": 1152,
+        "no_generic_guard_or_checker_change": true,
+        "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups"
+      },
+      "not_final_under3_ratio_closure": true
+    }
+  ],
+  "candidate_only_not_paired_performance": true,
+  "old_guard_and_failures_retained": true,
+  "historical_or_public_ratios_not_updated": true
+}

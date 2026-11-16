@@ -1,0 +1,95 @@
+{
+  "checked_at": "2026-11-15T01:23:24.051435+00:00",
+  "accepted_original_Torch_programs": 3,
+  "rows": [
+    {
+      "ordinal": 1361,
+      "key": [
+        "torch-eager",
+        "GELUAndMulFwdOp",
+        "llama-8b-prefill-tanh-float16"
+      ],
+      "device_us": 229.36100000000002,
+      "host_us_diagnostic": 813.12187636892,
+      "api": "original f037 case.torch storage-dtype GELU(tanh) and Mul torch_program",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-torch-gelu3-original-f037-1361-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "f9bb3b47b377fa695fd00e9e1038f35bfc1f781e9730709bae1c7164211ce777",
+      "source_sha256": "ba60ba5a25fce00c440e23319692d94cf5bad06254e8808c6394523f3db62d56",
+      "payload_sha256": "96090a2c8bd49acbb1ba1f904f935e71ce5d4c8223d2474fe07588a5d04b35ea",
+      "prepare_sha256": "2e4c70d69a4e62c24a96265c35a05dfbcb3b1633995a87d51d81e3fc082898f0",
+      "prepare_metadata_path": "/opt/baseline-over3-20261110/ordered100-20261112/prepared-torch-gelu3-f037/1361/prepare.json",
+      "full_checker_15raw_guard_valid": true,
+      "not_paired_speedup_or_finalratio": true,
+      "exact_original_catalog_recovered_not_alias": true
+    },
+    {
+      "ordinal": 1362,
+      "key": [
+        "torch-eager",
+        "GELUAndMulFwdOp",
+        "llama-8b-prefill-tanh-bfloat16"
+      ],
+      "device_us": 229.5468666666667,
+      "host_us_diagnostic": 975.8493552605311,
+      "api": "original f037 case.torch storage-dtype GELU(tanh) and Mul torch_program",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-torch-gelu3-original-f037-1362-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "17b50291e19e47d5c4ad5393d24d4e92442fc3f6e471daec95f38df7d33da103",
+      "source_sha256": "ba60ba5a25fce00c440e23319692d94cf5bad06254e8808c6394523f3db62d56",
+      "payload_sha256": "096209f018d44216abdd3208996c75a952ddcfd79ba4b34caf5a130ba2cd86b1",
+      "prepare_sha256": "565b24c17028f6abd659f3e1dc98cd0e1d5b389b36bcdc926549c445f76e975a",
+      "prepare_metadata_path": "/opt/baseline-over3-20261110/ordered100-20261112/prepared-torch-gelu3-f037/1362/prepare.json",
+      "full_checker_15raw_guard_valid": true,
+      "not_paired_speedup_or_finalratio": true,
+      "exact_original_catalog_recovered_not_alias": true
+    },
+    {
+      "ordinal": 1363,
+      "key": [
+        "torch-eager",
+        "GELUAndMulFwdOp",
+        "llama-8b-decode-tanh-bfloat16"
+      ],
+      "device_us": 3.7583333333333337,
+      "host_us_diagnostic": 936.7873892188072,
+      "api": "original f037 case.torch storage-dtype GELU(tanh) and Mul torch_program",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/server2-aligned-stack/native/graph92-complete-profile-v2/sdk",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "checkpoint": "rollout-torch-gelu3-original-f037-1363-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "921bb0e5898cf008c80b4e942881ac701c432eee67f225b843bc6cb2d8021641",
+      "source_sha256": "ba60ba5a25fce00c440e23319692d94cf5bad06254e8808c6394523f3db62d56",
+      "payload_sha256": "f0ce32fb845e109fa29e938596c907b8071532a6d3c80bfdcb4b580d90e3a118",
+      "prepare_sha256": "3b124bce4133843d16075e763c3d4e9fd9caf49a50a9688ad5847719bf73782e",
+      "prepare_metadata_path": "/opt/baseline-over3-20261110/ordered100-20261112/prepared-torch-gelu3-f037/1363/prepare.json",
+      "full_checker_15raw_guard_valid": true,
+      "not_paired_speedup_or_finalratio": true,
+      "exact_original_catalog_recovered_not_alias": true
+    }
+  ],
+  "source_commit": "f037318f1483a8e4b17c30989e86debf0751a489",
+  "no_historical_or_public_ratio_update": true
+}

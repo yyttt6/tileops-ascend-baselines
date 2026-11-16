@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-15T16:52:47.792010+00:00",
+  "accepted_complete_APIs": 1,
+  "rows": [
+    {
+      "ordinal": 805,
+      "key": [
+        "ops-transformer",
+        "SSDStatePassingFwdOp",
+        "mamba2-1p3b-bfloat16"
+      ],
+      "api": "ops-transformer::mambav2_chunk_state_passing",
+      "device_us": 401.62953333333337,
+      "checkpoint": "rollout-ops-transformer-state-api-sdk-805-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ec69a7683ec169961eb6c07ee53e9a828067eaf56243ee0f8b8acf4f57c3180c",
+      "payload_sha256": "df1a9fdf2a1ae70b4318c6f25519e59f3e662b289eaf42dd8963dde85cd77dc4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_CPP_object_loadedso_deviceELF_all15_binding": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

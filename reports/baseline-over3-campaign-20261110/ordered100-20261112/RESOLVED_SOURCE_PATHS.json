@@ -1,0 +1,295 @@
+{
+  "updated_at": "2026-11-12T23:03:38.784186+00:00",
+  "rows": {
+    "1268": {
+      "ordinal": 1268,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-2048-float16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1268.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "cab114f746c7b003f92089263705806c2f252b01cf0cb01d40c747ff96804ff9",
+      "device_us": 1884.9672,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1269": {
+      "ordinal": 1269,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-2048-bfloat16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1269.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "d30b61becdc94bfe790fd63b846dee611047e68e68f39adf784f8e0b1c1ad850",
+      "device_us": 1884.9406666666669,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1270": {
+      "ordinal": 1270,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-1024-float16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1270.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "47edf791e8936b3871dc3779a0f36d6af36d4ba67c0c175b517a4c45116e9bc6",
+      "device_us": 1020.6627333333333,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1271": {
+      "ordinal": 1271,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-256-float16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1271.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "6509edd2587ccd9a1f6d93a9ebab7ab83c4c2fe143026fa92179f935fd3ffa6b",
+      "device_us": 318.7087333333333,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1272": {
+      "ordinal": 1272,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-1024-bfloat16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1272.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "610835ad346870babf5d521d01a1f976530fb0cc03832d4ae282e1c9b68da9cf",
+      "device_us": 1020.4652666666667,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1273": {
+      "ordinal": 1273,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-256-bfloat16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1273.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "0ccd1000d4c9ef21a720bde62949ca6424ef5d9034c5d4368df20b7407682c0e",
+      "device_us": 319.0604,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1274": {
+      "ordinal": 1274,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-512-float16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1274.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "44a0877099f817d0dfd4aa73d65931e3a6ad548b453e48bcaa7d845672dd2a07",
+      "device_us": 473.06413333333336,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1275": {
+      "ordinal": 1275,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-256-float32"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1275.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "2a752c2d594c9be9c24ad9018bc3b38c6764fc65dc84c60d706f77d5b02b4cf4",
+      "device_us": 296.69173333333333,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1276": {
+      "ordinal": 1276,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-512-bfloat16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1276.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "bf958df97c695446d9eb74c4b31007057730d08e3cf9890c13c3c689ec3f4b43",
+      "device_us": 473.0534,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1277": {
+      "ordinal": 1277,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-512-float32"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1277.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "8d4f0e8a39fda1aadb27817527c243d9ef7219705319e13ca6830da6fe27270d",
+      "device_us": 437.1718,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1278": {
+      "ordinal": 1278,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-1024-float32"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1278.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "ef5ac84bd8f7c20c5b3d1211ba863fc8a04df9b693855af469d91bae223a3198",
+      "device_us": 920.6876666666667,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1279": {
+      "ordinal": 1279,
+      "key": [
+        "vllm-ascend",
+        "SoftmaxFwdOp",
+        "quack-throughput-2048-float32"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-vllm-softmax-sourcepathfix-1279.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "4d15ba0c386ac646f169bf18e548e49a2ff4b76ade8a93c7b9bcad7e9d136475",
+      "device_us": 1657.6416666666667,
+      "api": "vllm-ascend::moe_gating_top_k(out_flag=True).out",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "external source path SHA metadata",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1326": {
+      "ordinal": 1326,
+      "key": [
+        "torch-eager",
+        "FP8QuantFwdOp",
+        "kv-index-8k-bfloat16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-torch-fp8-sourcecache-1326.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "e146fd63ce451402c239f0e5b57f1bfdee66d10588c7038b265e6f0933eb4bb4",
+      "device_us": 32.31853333333333,
+      "api": "original manifest torch eager ref_program",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "CPU prepare source-version revision only",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1327": {
+      "ordinal": 1327,
+      "key": [
+        "torch-eager",
+        "FP8QuantFwdOp",
+        "kv-index-8k-float16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-torch-fp8-sourcecache-1327.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "98d78cd240199ea380d81a345dfb77de63c5905b3a96d9da2cb3ecfb65596ba8",
+      "device_us": 32.6638,
+      "api": "original manifest torch eager ref_program",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "CPU prepare source-version revision only",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1328": {
+      "ordinal": 1328,
+      "key": [
+        "torch-eager",
+        "FP8QuantFwdOp",
+        "kv-index-context-chunk-bfloat16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-torch-fp8-sourcecache-1328.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "598d59dd36a29131269afa945a5256b7079ba6751d18d846414376db8228f01d",
+      "device_us": 30.1008,
+      "api": "original manifest torch eager ref_program",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "CPU prepare source-version revision only",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1329": {
+      "ordinal": 1329,
+      "key": [
+        "torch-eager",
+        "FP8QuantFwdOp",
+        "kv-index-context-chunk-float16"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-torch-fp8-sourcecache-1329.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "fb1fe6dfb6bf974d275c855de55df97ef0851168f91c99fcbddf7ae2bc6ab7b4",
+      "device_us": 30.22853333333333,
+      "api": "original manifest torch eager ref_program",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "CPU prepare source-version revision only",
+      "full_checker_15raw_guard_valid": true
+    },
+    "1330": {
+      "ordinal": 1330,
+      "key": [
+        "torch-eager",
+        "FP8QuantFwdOp",
+        "kv-index-4k-float32"
+      ],
+      "selection": "original_complete_API_deployment_repaired",
+      "accepted_checkpoint": "rollout-torch-fp8-sourcecache-1330.CHECKPOINT.json",
+      "accepted_checkpoint_sha256": "4c344fb2f1d1f42b98afa78f7c2e39381d39425aa3e281fded9e6fada6465329",
+      "device_us": 28.564866666666664,
+      "api": "original manifest torch eager ref_program",
+      "protocol": "experimental-baseline-full32-marker-session-v1",
+      "same_original_API_no_speedup_claim": true,
+      "fix": "CPU prepare source-version revision only",
+      "full_checker_15raw_guard_valid": true
+    }
+  },
+  "coverage_rule": "union with original valid and alternative API resolutions; never doublecount cases; original failures retained"
+}

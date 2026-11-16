@@ -1,0 +1,57 @@
+{
+  "checked_at": "2026-11-16T04:56:06.720854+00:00",
+  "rows": [
+    {
+      "ordinal": 486,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "source_ordinal": 284,
+      "source_key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 46.114000000000004,
+      "checkpoint": "rollout-golden42-math-gemm6-284-golden42-ownes-runtime-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "0db06053fde17d19dae2f61e8c49f00bb5f1889b436948fd18da48ba32cc1141",
+      "payload_sha256": "8f0e8442a76cb15b8eb4b72c04255a0c86b1110cb8a51207d46a8b481670e6fc",
+      "descriptor_sha256": "fd8d02d304bbb34f322a9041a41d6460c06a4fe84f241313113e23271f6cc961",
+      "corrected_golden_sha256": "71f27df825e708d4fdd39456e8c792342e9e11af1df59429e34d72255e59f479",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "same_frozen_input_params_descriptor_Exact_checker_and_corrected_golden": true,
+      "same_original037f902_API_mm_run_AST_and_CubeMathType0": true,
+      "source_qualified_row": {
+        "ordinal": 284,
+        "key": [
+          "ops-math",
+          "GemmFwdOp",
+          "ds-v3-m2-qkv-a-bfloat16"
+        ],
+        "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+        "device_us": 46.114000000000004,
+        "checkpoint": "rollout-golden42-math-gemm6-284-golden42-ownes-runtime-h2-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "0db06053fde17d19dae2f61e8c49f00bb5f1889b436948fd18da48ba32cc1141",
+        "payload_sha256": "8f0e8442a76cb15b8eb4b72c04255a0c86b1110cb8a51207d46a8b481670e6fc",
+        "prepare_sha256": "0751b54cc29aa616e680e19a0d5803e4d05eb247a995778e46918ba2dd26a86a",
+        "full_checker_15raw_guard_valid": true,
+        "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+        "golden_correction_receipt_sha256": "78e14958a31184c0945ebbbdaf8005fe9851c21da5851ac099364969c46508c0",
+        "loaded_private_host_library_bound": true,
+        "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+        "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+        "new_pairs": 0,
+        "new_final_closures": 0
+      },
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "Exact qualified original NN CAPI measurement reuse from Math alternative route",
+      "new_native_runs": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    }
+  ],
+  "not_published": true
+}

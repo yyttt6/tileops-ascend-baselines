@@ -1,0 +1,11 @@
+{
+    "binFileName": "Test_overflow_value",
+    "binFileSuffix": ".o",
+    "blockDim": 8,
+    "localMemorySize": 8589934592,
+    "workspace": {
+        "size": [
+            1024
+        ]
+    }
+}

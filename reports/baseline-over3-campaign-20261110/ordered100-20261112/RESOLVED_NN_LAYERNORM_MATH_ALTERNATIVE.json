@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-11-16T00:33:16.361275+00:00",
+  "accepted_complete_APIs": 5,
+  "rows": [
+    {
+      "ordinal": 519,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 9.895733333333334,
+      "checkpoint": "rollout-nn-layernorm-math-alternative-519-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "f436b5f1654a45b78f0a7be3f1c24f209714674452c5d3480ded8d74bc8213d8",
+      "payload_sha256": "05a143994456524e8292bce188afedc6fe4e125f2ca9a2926b528531fde63981",
+      "full_checker_15raw_guard_valid": true,
+      "source_attribution": "complete original Math LayerNorm API alternative for originalNNcontract; originalFP32row/affine/runAST unchanged",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 520,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-405b-prefill-float16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 326.10726666666665,
+      "checkpoint": "rollout-nn-layernorm-math-alternative-520-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "94f706a90c019acd460cb3d12a37e7cba32d3ee6afcea03f6c267f986cc74f59",
+      "payload_sha256": "89da2dd59c31fc0fc0821682d3c1deaa0d54b2a84a020b1c2ec3e13696e52d50",
+      "full_checker_15raw_guard_valid": true,
+      "source_attribution": "complete original Math LayerNorm API alternative for originalNNcontract; originalFP32row/affine/runAST unchanged",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 521,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-405b-prefill-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 326.21313333333336,
+      "checkpoint": "rollout-nn-layernorm-math-alternative-521-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ed48f008c2f393f3110470c45bb6d13595eec07894bcb182604c283d341d924b",
+      "payload_sha256": "14320d6cbb518f5d79fa7c9499ee03df48c0aa1a8417ed13cdf2acd629ff1fba",
+      "full_checker_15raw_guard_valid": true,
+      "source_attribution": "complete original Math LayerNorm API alternative for originalNNcontract; originalFP32row/affine/runAST unchanged",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 522,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-70b-decode-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 10.491466666666668,
+      "checkpoint": "rollout-nn-layernorm-math-alternative-522-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "efa6e3143b8606a9c7e58c20b163e509ad0d6edb3b07957dc2ea5eeb10f06d91",
+      "payload_sha256": "e57bce8e268f99564c55730a61a1b5e6797ca86259b4395fe22863851f054061",
+      "full_checker_15raw_guard_valid": true,
+      "source_attribution": "complete original Math LayerNorm API alternative for originalNNcontract; originalFP32row/affine/runAST unchanged",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 523,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-405b-decode-bfloat16"
+      ],
+      "api": "ops-math pinned complete native layer_norm plus original affine/row/run AST",
+      "device_us": 15.4708,
+      "checkpoint": "rollout-nn-layernorm-math-alternative-523-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "f10d1c576a08046ab4c94fae230bf5bc5f791caf57ec5a99e53f38db365a276d",
+      "payload_sha256": "a667d05b1f95ed3f6e90cba8558fbba7367077bf4308d8305996b4b1e0fbfbda",
+      "full_checker_15raw_guard_valid": true,
+      "source_attribution": "complete original Math LayerNorm API alternative for originalNNcontract; originalFP32row/affine/runAST unchanged",
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-11-16T04:47:51.243430+00:00",
+  "alarm_id": "a4739f0a-3fe1-4bdd-9038-c0c84ca2b036",
+  "finished_group": [
+    295,
+    296,
+    297
+  ],
+  "cross_library_exact_contract_grouped_reuse": [
+    [
+      773,
+      296
+    ],
+    [
+      772,
+      297
+    ]
+  ],
+  "reuse_conditions": [
+    "Exact input/descriptor/params SHA",
+    "Same original Exact evidence and resolved tolerance",
+    "Same mathematical corrected golden SHA",
+    "Original full API/source/ELF/all15raw/valid guard source qualification",
+    "Alternative provider and old source library/runtime identity declared; no relabel or new measurement"
+  ],
+  "continued_group": [
+    270,
+    271,
+    272,
+    273,
+    274,
+    284
+  ],
+  "continuation": "queue_golden42_math_gemm6_remaining.py",
+  "actual_state": {
+    "pid": 3069105,
+    "entry": "queue_golden42_math_gemm6_remaining.py",
+    "started_at": "2026-11-16T04:44:03.711586+00:00",
+    "scope": [
+      270,
+      271,
+      272,
+      273,
+      274,
+      284
+    ],
+    "host": "openlibing-DevEnv-055409",
+    "status": "guarded_full_native_API_15raw_new_golden",
+    "checked_at": "2026-11-16T04:47:29.993864+00:00",
+    "ordinal": 273,
+    "label": "rollout-golden42-math-gemm6-273-golden42-ownes-runtime-h2-v1",
+    "last_qualified": 272
+  },
+  "six_frozen_inputs_regenerated_on_H2": true,
+  "native_provider": "original037f902 complete NN MatmulCAPI alternative; original mm/run FunctionDef AST identical, full original FP32 conversion/packing/transpose/outputcast included, CubeMathType0 unchanged",
+  "new_kernel_or_checker_or_input_or_precision_flags_changed": false,
+  "reference_correction_only": "Authorized exact42 CPUFP64 mathematical golden, original output dtype/tolerance",
+  "scope_live_qualification_counts": {
+    "total": 25,
+    "native_measured": 16,
+    "exact_API_reuse": 9,
+    "remaining_gold": 17,
+    "remaining_complex_userheld": 6
+  },
+  "coverage": 2096,
+  "new_pairs": 0,
+  "new_final_closures": 0,
+  "host_independence": "H1 kept progressing through its actual qualified grouped path, even while H2 grouped host qualification absent. H2 input preparation for independent MathGemm path completed and actual qualified CAPI runtime available; next native controller may choose either host after fresh gate and H2 whole task release.",
+  "no_stale_PID_restart_no_cold_data_migration_no_publication": true
+}

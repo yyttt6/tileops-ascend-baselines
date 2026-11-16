@@ -1,0 +1,135 @@
+{
+  "checked_at": "2026-11-16T02:35:59.333882+00:00",
+  "accepted_complete_APIs": 7,
+  "rows": [
+    {
+      "ordinal": 1617,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "api": "ops-math original complete LayerNorm + Mul + Add",
+      "device_us": 19.243866666666666,
+      "checkpoint": "rollout-tla-adaln7-math-alternative-1617-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "9cde7b9db223413633fbbc33d80aa7b07c9be31d7eea0a2bb72cafd36305016d",
+      "payload_sha256": "fb28c38cb3c3efbb7b4473bc0f0c2d391a106ad878dd76604923802d5d7e9193",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_TLA_implementation_not_qualified": true,
+      "explicit_complete_Math_API_alternative": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1618,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "llama-8b-prefill-bfloat16"
+      ],
+      "api": "ops-math original complete LayerNorm + Mul + Add + final Mul",
+      "device_us": 159.45820000000003,
+      "checkpoint": "rollout-tla-adaln7-math-alternative-1618-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "883b08c385c1891fd18fd0a77f9024b177d5a6311cfdcf4fd474a35dbbc94b6e",
+      "payload_sha256": "6b2a67f46f28352812d04158388c6eea1164b5e0281479a767fa06cb9c0cf399",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_TLA_implementation_not_qualified": true,
+      "explicit_complete_Math_API_alternative": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1619,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "llama-8b-prefill-float16"
+      ],
+      "api": "ops-math original complete LayerNorm + Mul + Add + final Mul",
+      "device_us": 160.09233333333333,
+      "checkpoint": "rollout-tla-adaln7-math-alternative-1619-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "6364ba87a2c0d8f20ba943c229c3b891e64cd2abbda7291e6dec6b1e92056ed9",
+      "payload_sha256": "e1a2cfea70e0c43c6067d4d576e3bccad9c0819310c7a005c3ddf7e87a99f132",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_TLA_implementation_not_qualified": true,
+      "explicit_complete_Math_API_alternative": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1620,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "dit-xl-2-float32"
+      ],
+      "api": "ops-math original complete LayerNorm + Mul + Add + final Mul",
+      "device_us": 30.6782,
+      "checkpoint": "rollout-tla-adaln7-math-alternative-1620-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "69fde808722bc17dca6bfea3d7bfe1f4a5aaffbdb6f0e036e1a8b5dd44d22bef",
+      "payload_sha256": "47cf85f555dac3e1c04ebc645cad40e284bde9eae00a4f92d2a7590c1b5f613e",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_TLA_implementation_not_qualified": true,
+      "explicit_complete_Math_API_alternative": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1621,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "dit-xl-2-bfloat16"
+      ],
+      "api": "ops-math original complete LayerNorm + Mul + Add + final Mul",
+      "device_us": 54.650666666666666,
+      "checkpoint": "rollout-tla-adaln7-math-alternative-1621-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "8cf7b2e3fa414b94efd4cc7b92fd7ea4dd93a53a99cb66e2436311d8f437f222",
+      "payload_sha256": "79657b60dd25cafad26e7385693ff2c634891bd932184f873cdaa24db479a1ff",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_TLA_implementation_not_qualified": true,
+      "explicit_complete_Math_API_alternative": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1622,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "dit-xl-2-float16"
+      ],
+      "api": "ops-math original complete LayerNorm + Mul + Add + final Mul",
+      "device_us": 54.330333333333336,
+      "checkpoint": "rollout-tla-adaln7-math-alternative-1622-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "27962625292494f6c1fc3f6b09233206e749c4909b143e5963c445898bc64cf4",
+      "payload_sha256": "93e0e69607da529ae6389fb4257f87429950a4cab031606763ea0017f39ed440",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_TLA_implementation_not_qualified": true,
+      "explicit_complete_Math_API_alternative": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1623,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "api": "ops-math original complete LayerNorm + Mul + Add + final Mul",
+      "device_us": 22.301066666666664,
+      "checkpoint": "rollout-tla-adaln7-math-alternative-1623-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "ac4cb93cf7db09ef9d320ec520da2c9fd023aafdadf1ea9cd41082cfe754adad",
+      "payload_sha256": "d4b4a54daba27a041c05491759f807c78d034ca26cba17722a3dec7c20c2cc21",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "original_TLA_implementation_not_qualified": true,
+      "explicit_complete_Math_API_alternative": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "new_pairs": 0,
+  "new_final_closures": 0,
+  "staged_not_published": true
+}

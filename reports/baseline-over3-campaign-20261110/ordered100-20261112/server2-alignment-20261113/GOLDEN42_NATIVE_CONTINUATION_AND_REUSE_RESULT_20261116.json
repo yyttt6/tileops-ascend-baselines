@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-11-16T04:36:44.119889+00:00",
+  "alarm_id": "e93ff737-4265-40f5-bcf7-bba76ed1ef09",
+  "native_qualified_after_golden": [
+    241,
+    244,
+    245,
+    295,
+    296,
+    487,
+    489,
+    491,
+    492,
+    493,
+    495,
+    498
+  ],
+  "exact_API_reuse_qualified": [
+    280,
+    282,
+    279,
+    281,
+    277,
+    276,
+    759
+  ],
+  "qualified_golden42_total": 19,
+  "new_native_runs_not_same_condition_retries": true,
+  "controller_ended_action": "Finished Bmm245 and finiteGemm7; recovered saved valid492/498 checkpoint audits after own outside-device controller interrupt; no remeasurement. Dispatched next grouped295/296/297 on actual-host-qualified H1.",
+  "common_dependency_diagnosis": "Original H1 qualification and accepted485/488 logs already contain unsupported Graph-proto EsGatherShapes. DirectMatmulCAPI has separately verified complete API/source/privateELF/input/output/15raw/guard evidence. Adding packageESpath fixes that symbol but introduces official Graph frontend EsDynamicQuantUpdateScatterV2 collision; directory attempt reverted, original qualified CAPI config preserved; Graph frontend remains explicitly unqualified.",
+  "diagnosis_receipt": "GOLDEN42_GEMM7_SCOPED_CAPI_RUNTIME_DIAGNOSIS_RESULT.json",
+  "kernel_checker_precision_unchanged": true,
+  "golden_case_identity": "Exact frozen descriptor/input/params/Exact checker/tolerance and mathematical corrected golden hashes all bound",
+  "effective_coverage": 2090,
+  "remaining": 29,
+  "complex6_userhold_preserved": true,
+  "new_pairs": 0,
+  "new_final_closures": 0,
+  "actual_grouped_continuation": {
+    "pid": 3063982,
+    "entry": "queue_golden42_grouped3_remaining.py",
+    "started_at": "2026-11-16T04:32:10.930071+00:00",
+    "scope": [
+      295,
+      296,
+      297
+    ],
+    "host": "openlibing-DevEnv-661495",
+    "status": "await_fresh_H1_queue_and_physical_release",
+    "checked_at": "2026-11-16T04:36:14.585908+00:00",
+    "ordinal": 297,
+    "gate": {
+      "openlibing-DevEnv-661495": {
+        "queue": [
+          "00000000000000000002-vs99bjr9.ticket"
+        ],
+        "workers": [],
+        "disk": 217861484544
+      }
+    },
+    "label": "rollout-math-grouped-nn-alternative-296-golden42-routefix-h1-v1",
+    "last_qualified": 296
+  }
+}

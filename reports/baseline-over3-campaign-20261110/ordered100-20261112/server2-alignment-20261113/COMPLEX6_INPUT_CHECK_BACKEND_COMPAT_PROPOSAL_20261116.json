@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-11-16T02:43:18.328432+00:00",
+  "status": "proposal_not_applied_pending_explicit_permission",
+  "scope": [
+    1292,
+    1293,
+    1294,
+    1295,
+    1298,
+    1299
+  ],
+  "actual_failure": "Original NPU IsClose in input preservation rejects DT_COMPLEX64/128. Error occurs in _require_unchanged; not evidence that All/Any/CountNonzero device computation is unsupported.",
+  "existing_proof": "Original checkpoints record aclnnIsClose error161002 / EZ1001 dtype support list. Original first session raw contained named AICPU before fallback.",
+  "proposed_compatibility": "Complex input preservation only: copy identical uint8 bytes outside timed windows, restore original complex dtype on CPU, invoke SAME unmodified original _unchanged at rtol0/atol0/equal_nanTrue. Original device/dtype/shape/layout checks explicit before transfer; noncomplex unchanged.",
+  "original_output_checker_golden_tolerance_kernel_and_input_storage_dtype_unchanged": true,
+  "proposal_helper": "complex_input_preservation_compat_proposal.py",
+  "proposal_helper_sha256": "546ccf88cd492ac6da4862435716855fbf9c43cd3d9c5fd122094a3cfa6e2255",
+  "CPU_proof": {
+    "checked_at_remote": "2026-11-16T02:41:51.126802+00:00",
+    "CPU_negative_controls": [
+      {
+        "dtype": "torch.complex64",
+        "unmodified_input_and_equal_NaN_agree_with_original": true,
+        "imaginary_value_corruption_rejected": true,
+        "shape_change_rejected": true
+      },
+      {
+        "dtype": "torch.complex128",
+        "unmodified_input_and_equal_NaN_agree_with_original": true,
+        "imaginary_value_corruption_rejected": true,
+        "shape_change_rejected": true
+      }
+    ],
+    "CPU_only_no_NPU": true,
+    "original_checker_source_sha256": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173"
+  },
+  "NPU_work_or_monkeypatch_applied": false
+}

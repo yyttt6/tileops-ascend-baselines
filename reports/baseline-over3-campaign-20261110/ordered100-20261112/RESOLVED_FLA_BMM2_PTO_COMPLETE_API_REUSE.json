@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-11-16T02:19:15.781080+00:00",
+  "rows": [
+    {
+      "ordinal": 147,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "mha-decode-qk-float16"
+      ],
+      "api": "tilelang-ascend::examples/batch_gemm/batch_gemm.py:batch_matmul",
+      "device_us": 200.28326666666666,
+      "full_checker_15raw_guard_valid": true,
+      "original_FLA_implementation_not_qualified": true,
+      "explicit_complete_PTO_alternative_for_FLA_contract": true,
+      "source_ordinal": 1704,
+      "checkpoint": "rollout-pto-current-1704-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "df53ff2a059bce682375cfef72012ce03f25dbbaea899bf8653cb6dc1129e018",
+      "source_actual_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "payload_sha256": "bf662e237523c72cf68ba5ec1c1fa789de304f3454efaa1727b7442fa7ded869",
+      "descriptor_sha256": "f7c36251c73eabee0a8fb6c6f758117d9c110d29834c27d976c99edd5a146e79",
+      "audit": "server2-alignment-20261113/FLA_BMM2_PTO_COMPLETE_API_REUSE_AUDIT_20261116.json",
+      "audit_sha256": "6ce6c7fd891ece768b18139f5730ccbac837de913955c68896738f57f6245151",
+      "new_device_measurements": 0,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 148,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-128-float16"
+      ],
+      "api": "tilelang-ascend::examples/batch_gemm/batch_gemm.py:batch_matmul",
+      "device_us": 11.901266666666666,
+      "full_checker_15raw_guard_valid": true,
+      "original_FLA_implementation_not_qualified": true,
+      "explicit_complete_PTO_alternative_for_FLA_contract": true,
+      "source_ordinal": 1712,
+      "checkpoint": "rollout-pto-current-1712-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "0b615adc386bb8484c87535fda4d752c760485c78ad7619f1888caeca38e89ec",
+      "source_actual_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "payload_sha256": "8f5b1d9fde77b348efd7268c9db3dbdfac987d56eb140811d2aec5475242c1fb",
+      "descriptor_sha256": "0294aedec8bd906af64cc5b5effc35873149054cac7a007263b799a019b16189",
+      "audit": "server2-alignment-20261113/FLA_BMM2_PTO_COMPLETE_API_REUSE_AUDIT_20261116.json",
+      "audit_sha256": "6ce6c7fd891ece768b18139f5730ccbac837de913955c68896738f57f6245151",
+      "new_device_measurements": 0,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "new_device_measurements": 0,
+  "new_pairs": 0,
+  "new_final_closures": 0
+}

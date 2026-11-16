@@ -1,0 +1,88 @@
+{
+  "windows": 15,
+  "evidence": [
+    {
+      "variant": "native",
+      "result_sha256": "8624df4172805beb2d5eb561e52c471b0387fabc6223d1fdcc21df9633941e2d",
+      "mean_sum_device_us": 398739.2026666667,
+      "argmax_us": 397264.2012666667,
+      "argmax_fraction": 0.9963008367621353,
+      "top_tasks": [
+        [
+          "_argmax_prob_kernel",
+          397264.2012666667
+        ],
+        [
+          "fused_scale_shift_kernel_2",
+          1106.1785333333332
+        ],
+        [
+          "Cast_5d7a6db974148d68ac34e2b880c60222_high_performance_0",
+          87.72513333333333
+        ],
+        [
+          "TensorMove_5c5e58e043224cccf51a06108010ae13_high_performance_4",
+          60.30166666666666
+        ],
+        [
+          "Pack_ddafbeaeee4ee3a848734c13e000266d2_high_performance_12312",
+          49.82706666666666
+        ],
+        [
+          "mul_add_kernel",
+          47.15073333333333
+        ],
+        [
+          "Cast_1ae7d0da2cb3d6d5f03a7ee4e75165b8_high_performance_0",
+          38.016466666666666
+        ],
+        [
+          "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11003",
+          21.9682
+        ]
+      ]
+    },
+    {
+      "variant": "fixed",
+      "result_sha256": "3947902c9a7556823dfa45f6a38c5bd324b1727b4c4e7132e366bbcced4dc246",
+      "mean_sum_device_us": 397694.87686666666,
+      "argmax_us": 397240.265,
+      "argmax_fraction": 0.9988568827683967,
+      "top_tasks": [
+        [
+          "_argmax_prob_kernel",
+          397240.265
+        ],
+        [
+          "fused_scale_shift_kernel_2",
+          96.82626666666667
+        ],
+        [
+          "Cast_5d7a6db974148d68ac34e2b880c60222_high_performance_0",
+          87.7118
+        ],
+        [
+          "TensorMove_5c5e58e043224cccf51a06108010ae13_high_performance_4",
+          60.45813333333333
+        ],
+        [
+          "Pack_ddafbeaeee4ee3a848734c13e000266d2_high_performance_12312",
+          49.93553333333333
+        ],
+        [
+          "mul_add_kernel",
+          47.05526666666666
+        ],
+        [
+          "Cast_1ae7d0da2cb3d6d5f03a7ee4e75165b8_high_performance_0",
+          38.92386666666666
+        ],
+        [
+          "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11003",
+          22.211666666666666
+        ]
+      ]
+    }
+  ],
+  "decision": "0.3% wholewrapper gain not adopted as significant; retainnative pending stronger evidence. Native selector dominates, no kernel/block modifications."
+}

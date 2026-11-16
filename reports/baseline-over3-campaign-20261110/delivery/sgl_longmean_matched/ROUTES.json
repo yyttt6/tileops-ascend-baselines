@@ -1,0 +1,15 @@
+[
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MeanFwdOp",
+      "long-seq-bfloat16"
+    ],
+    "fixed": true,
+    "device_us": 85.69260000000001,
+    "original_device_us": 90.54486666666666,
+    "runtime_profile": "original Torch2.10.0+cpu/npu2.10.0.post4",
+    "historical_ratio_update": false,
+    "reason": "same complete SGEMMV, only bypass zero-pad copy; no kernel or compiler change"
+  }
+]

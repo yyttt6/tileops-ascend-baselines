@@ -1,0 +1,62 @@
+{
+  "checked_at": "2026-11-16T04:07:31.230023+00:00",
+  "alarm_id": "7a54c84b-7a61-410e-a313-087d5a175fe4",
+  "cause_of_zero_recent_qualified_growth": "Golden repair was CPU-only; previous native controller finished with no successor. H1 then occupied by other task. H2 CPU registry files and launch mode were missing.",
+  "corrective_actions": [
+    "Retained historical zero-growth inspection; newly authorized golden42 not counted as qualified coverage.",
+    "Restore3 exact pinned H2 registry files; regenerate241/244 using original frozen input generator and verify full input/descriptor identity against42 certificate.",
+    "Verify entirePR43797308717 completed successfully and current GitHub in_progress/queued workflow lists empty before H2 admission.",
+    "Deploy exact existing API helpers and add only missing H2 launcher allowlist mode; preserve original failed prelaunch exit64 receipt.",
+    "Run existing native complete Bmm API241 against corrected golden with original checker/precision; independently replay all15raw and source/ELF/guard evidence.",
+    "Continue unqualified244 with per-host fresh queue/worker/physical/resource gate; no same-condition numerical retry."
+  ],
+  "actual_effect": {
+    "new_qualified_coverage": 1,
+    "ordinal": 241,
+    "checkpoint": "rollout-math-bmm-transformer-alternative-241-golden42-h2-v1.CHECKPOINT.json",
+    "checkpoint_sha256": "dac65e240080c6b4a97aeaa099ab37b92893923c4f1b593ca840158dcd2ba059",
+    "device_us": 4533.868533333333,
+    "new_complete_original_candidate_pairs": 0,
+    "new_final_closures": 0
+  },
+  "coverage": 2072,
+  "scope_total": 2119,
+  "pending": 47,
+  "controller": {
+    "pid": 3045715,
+    "entry": "queue_golden42_bmm_remaining.py",
+    "started_at": "2026-11-16T04:04:54.390989+00:00",
+    "scope": [
+      241,
+      244
+    ],
+    "host": "openlibing-DevEnv-055409",
+    "status": "audit_full_raw_source_ELF_and_golden_identity",
+    "checked_at": "2026-11-16T04:07:31.188834+00:00",
+    "ordinal": 244,
+    "label": "rollout-math-bmm-transformer-alternative-244-golden42-h2-v1",
+    "last_qualified": 241,
+    "gate": {
+      "openlibing-DevEnv-661495": {
+        "meta": {
+          "queue": [],
+          "workers": [],
+          "disk": 219633680384
+        },
+        "status_error": "",
+        "status": "{\"time\": \"2026-11-16T04:04:37.928610+00:00\", \"device\": 0, \"errors\": [], \"utilization\": {\"aicore\": {\"rc\": 0, \"value\": 0}, \"hbm_bw\": {\"rc\": 0, \"value\": 0}, \"vector\": {\"rc\": 0, \"value\": 0}, \"npu\": {\"rc\": 0, \"value\": 0}, \"cube\": {\"rc\": 0, \"value\": 0}}, \"abi\": {\"verified\": true, \"machine\": \"aarch64\", \"manifest\": \"/etc/ascend-npu-guard-abi.json\", \"input_identities_unchanged\": true}, \"coordination_scope\": \"container\", \"device_node\": \"/dev/davinci6\", \"logical_to_physical\": {\"rc\": 0, \"logical\": 0, \"physical\": 6}, \"pid_query_rc\": 0, \"pids\": [], \"health\": {\"rc\": 0, \"value\": 0}, \"memory\": {\"rc\": 0, \"total_mib\": 98304.0, \"used_mib\": 4769.49609375}, \"core_frequency\": [{\"rc\": 0, \"mhz\": 100}, {\"rc\": 0, \"mhz\": 100}], \"power\": {\"rc\": 0, \"watts\": 392.5}, \"proc_fd_errors\": [], \"fd_candidates\": [{\"pid\": 2630827, \"start_ticks\": 379146279, \"uid\": 0, \"pgid\": 95937, \"nodes\": [\"/dev/davinci_manager\"]}], \"unreadable_proc_pids\": [], \"state\": \"busy\", \"reasons\": [\"other processes hold Ascend device FDs (possibly initializing)\"], \"reservation\": {\"locked\": false, \"metadata\": {\"pid\": 2619360, \"start_ticks\": 379139115, \"uid\": 0, \"pgid\": 2619360, \"boot_id\": \"301915ec-b974-48cf-a38e-0627f81babb1\", \"owner\": \"baseline-master/binary-crosscheck/pow-container1-origin1-r1\", \"device\": 0, \"coordination_scope\": \"container\", \"device_node\": \"/dev/davinci6\", \"command\": \"bash\", \"phase\": \"finished\", \"requested_at\": \"2026-11-16T04:03:26.718933+00:00\", \"queue_ticket\": \"00000000000000000001-cfmfacy6.ticket\", \"acquired_at\": \"2026-11-16T04:03:26.719388+00:00\", \"updated_at\": \"2026-11-16T04:04:36.733154+00:00\", \"child\": {\"pid\": 2619429, \"start_ticks\": 379139577, \"uid\": 0, \"pgid\": 2619429}, \"conflict_policy\": \"record\", \"conflict_detected\": false, \"visibility_lost\": false, \"performance_valid\": true, \"tracking\": \"linux-subreaper-pidfd\", \"postflight_checked_at\": \"2026-11-16T04:04:36.731861+00:00\", \"workload_exit_code\": 0, \"workload_completed\": true, \"exit_code\": 0}}}\n"
+      },
+      "openlibing-DevEnv-055409": {
+        "queue": [
+          "00000000000000000002-p6f_xudb.ticket"
+        ],
+        "workers": [],
+        "disk": 945587236864
+      }
+    }
+  },
+  "H1_external_block": "baseline-master task queue/device handles; admission refuses even AI Core=0",
+  "H2_resource_gate": "Last fresh queue nonempty after241; live controller independently checks task release and physical guard. No resource refusal counted as complete.",
+  "complex6_explicit_user_hold_unchanged": true,
+  "no_kernel_checker_precision_or_migration_changes": true
+}

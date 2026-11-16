@@ -1,0 +1,2627 @@
+{
+  "checked_at_remote": "2026-11-16T02:12:00.921294+00:00",
+  "available_qualified_metadata": 1944,
+  "rows": [
+    {
+      "target": 147,
+      "metadata_missing": true
+    },
+    {
+      "target": 148,
+      "metadata_missing": true
+    },
+    {
+      "target": 184,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 240,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-2k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            8,
+            2048,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            8,
+            2048,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            8,
+            2048,
+            2048
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "36717beda779193c725a0d1e42dcb3d92064d88a7e73bd218bce6250e0039a14",
+      "descriptor_sha256": "6eb7002b4f66d314250b402cc2cb8b4e883d0c66d8f00396e3d2c553eb16d132",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 241,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "moe-prefill-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            512,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            128,
+            2048,
+            512
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            512,
+            512
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "2750f07b337a94409cb7c44762289332791abb3c351c60b097fa6fe995c0e9a4",
+      "descriptor_sha256": "bd7b8308e058e48c60d197739c159d56db71a9dac82306a89f6fa06f006f0e90",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 244,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            8,
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ]
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "9e7108f7dcd5b4420d3f199494fdc9892ca699d7c27044600fd03dc12dabe786",
+      "descriptor_sha256": "58e4ba61a27458a90f4d251158e37172ce7f2945c9dbbca538158d07060acc6f",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 245,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "params": {
+        "a": [
+          [
+            64,
+            128,
+            2048
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            64,
+            2048,
+            128
+          ],
+          "float16"
+        ],
+        "d": [
+          [
+            64,
+            128,
+            128
+          ],
+          "float16"
+        ]
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "9dd2ef1f93f74e012cb5fff27d8cb703ffb39da866e206221d006d19b49a5705",
+      "descriptor_sha256": "d7b71bbd14470143ce60c81595e4368f68a793e1b710cd6f745dc8c0f6e9732e",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 270,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            4096,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "50982165f4e4bfe84beb665c12c6eb1f7633199b4b26002d373587aabea4e10c",
+      "descriptor_sha256": "378d37f1643ea0f0e9dd86e3d9826be2306143d66059af0217648a946fbdc32d",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 271,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-mlp-up-float16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "float16"
+        ],
+        "d": [
+          [
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "84dc4b700e32895e3cabc7ffce7f11bd4b1dc972b24aebf10d45c11af85e656b",
+      "descriptor_sha256": "51383eabbee06a95291cbe0c3161fd11c9d8a352f72f400a30304d28d3c6de10",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 272,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-o-proj-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            16384
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            16384
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "0fc20631292c7ac75b11d96a2530107225768afa9be70c21ce83ecfb237097c8",
+      "descriptor_sha256": "85fe75375e2eee37cc7e709a06187c6673bedfce1c95c23afa8ca084a306a71c",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 273,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-down-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "da9de8df1fd2120b7be63c52bfdb6fb147377cbb60f801693c4ae0c002b8a675",
+      "descriptor_sha256": "332c60d8ac1ad153f0ae1f373eac09f53dc528bd5d3813a62db5e697930f5613",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 274,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-prefill-q-b-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            24576,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            4096,
+            24576
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "700eec88dae3f8db5724539221438930ac5badee47472e79570eb29b0b880a3b",
+      "descriptor_sha256": "f9fb239038e567b3fe215b6c576131e3c18572a07e0facbfa3d6e477505c2f72",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 276,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            256,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            21843,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            256,
+            21843
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "54cc7a77132b23479634d5ed6c612d1240a16900e963ec97dc58129219718e86",
+      "descriptor_sha256": "ae010bf2b2540c9053cac59d144dab69da110e1dea28ed326299d83c94f6ae00",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 277,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            12288
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            12288
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "2f30e2b7282c5a3d8bf95aaae915ada51e279cc1d74db82fb9239ba1042db984",
+      "descriptor_sha256": "033d786eb51771d6fbc0a8bc52e67d08c1b0abdedcea1a6af64f6faf15e9e90b",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 278,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            64,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "790d2aa047aada5f1d36877feb360791f726ec166c3f1c27e737405bcfc9868b",
+      "descriptor_sha256": "da766d996905ab2c1f5ec56f9e47508e1da9d2b8c997244c87f896718595c852",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 279,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            96,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            96,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "2cab8d3633caf87263f48c5821438aa4a2a7f3c5a43dcc27be97a0b01d3e3a37",
+      "descriptor_sha256": "dc136f594e393e59f4c848264a954575f795ffcef3cf0ec8654ff4d04d9facf8",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 280,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            32,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            24576,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            32,
+            24576
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "b2ae93b04eb7e011dd621c2ef9e9dd096b8860a44cdc0a5de0b1236eb6bae29f",
+      "descriptor_sha256": "d1fac9db8921eddf9008e5a277cabca42974e2a7f6aa7553162a988cab687185",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 281,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            32,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "34d5530ddd217037bd6ac298c035bd3ee760c0eb019bf4c50f5a5aa3b058234f",
+      "descriptor_sha256": "cc3868219f02168c2829591602f68b0f1bdc2e7e4be952835daa7591b279a8b5",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 282,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            16,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            16,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "b868848e1f17c7e551178cb02e0b5a5ccc343dedfe2c41e578bb466b933125be",
+      "descriptor_sha256": "534ea16e81b2765780276a9f3382b8571eb151b52475ab47c39283df93337a13",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 284,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            2,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            2,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "8f0e8442a76cb15b8eb4b72c04255a0c86b1110cb8a51207d46a8b481670e6fc",
+      "descriptor_sha256": "fd8d02d304bbb34f322a9041a41d6460c06a4fe84f241313113e23271f6cc961",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 295,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "moe-fwd-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            4096,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            4096,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "9c4ea77487e5bb1a9455502f84805a7edee5c43487a9523c367c143e9a88d202",
+      "descriptor_sha256": "34e89bc89f7361c6f6f3bd6df00cb5075cf242567dd8026627abda9643f0fc5e",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 296,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            1024,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            1536,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            1024,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "fb6bd7176a747ed8fbcde1ee831c0d40194dee6d360d0478c131704ae8c661f2",
+      "descriptor_sha256": "37050fe067753f70dfefbb7d049461f55eb0ca189d22a35d085bd2eb7072b602",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 297,
+      "key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            257,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            1536,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            257,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "1c5ce101bc7e0900755147a55ba32cdcf461c4c0bbded56459a53616649cdeb1",
+      "descriptor_sha256": "e5bc7d60634feedbee87020761f4cc612a790d970682105feb368d26ebbf4135",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 309,
+      "key": [
+        "ops-math",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "params": {
+        "x": [
+          [
+            8,
+            128,
+            32,
+            32
+          ],
+          "float16"
+        ],
+        "weight": [
+          [
+            128
+          ],
+          "float16"
+        ],
+        "bias": [
+          [
+            128
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            8,
+            128,
+            32,
+            32
+          ],
+          "float16"
+        ],
+        "use_input_stats": true,
+        "momentum": 0.1,
+        "eps": 1e-05
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "77b907cd17159d51f7338e47d0cd30a8309d30911ed3e3a7a5f5bff9a7e27799",
+      "descriptor_sha256": "9b3af06d061347deafc2e9994f147f3350c555f157028fce66e4fecfd6cab96e",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 370,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-grouped-prefill-float16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            3,
+            3072,
+            8,
+            128
+          ],
+          "float16"
+        ],
+        "B_mat": [
+          [
+            3,
+            3072,
+            8,
+            128
+          ],
+          "float16"
+        ],
+        "cb": [
+          [
+            3,
+            12,
+            8,
+            256,
+            256
+          ],
+          "float16"
+        ],
+        "chunk_len": 256
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "2d18cf138c25348afced03c5ad27be20bfdfd0e1937407deddd934e4c993f997",
+      "descriptor_sha256": "d000a710c55ea0b45d795e220126cf4958a6a1ffa7a82608cfa89036553158d4",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 371,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-780m-float16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            1,
+            4096,
+            1,
+            128
+          ],
+          "float16"
+        ],
+        "B_mat": [
+          [
+            1,
+            4096,
+            1,
+            128
+          ],
+          "float16"
+        ],
+        "cb": [
+          [
+            1,
+            16,
+            1,
+            256,
+            256
+          ],
+          "float16"
+        ],
+        "chunk_len": 256
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "26552fad14198aac0fae328094354a4f5b6cb522725f7e665fc6950f4ade4171",
+      "descriptor_sha256": "b0a864f9418d5f598432380551e1fb9d211950be41a6ebbd21ba0c4856447db0",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 372,
+      "key": [
+        "ops-math",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 486,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m2-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            2,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            2,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "8f0e8442a76cb15b8eb4b72c04255a0c86b1110cb8a51207d46a8b481670e6fc",
+      "descriptor_sha256": "fd8d02d304bbb34f322a9041a41d6460c06a4fe84f241313113e23271f6cc961",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 487,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            32,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            24576,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            32,
+            24576
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "b2ae93b04eb7e011dd621c2ef9e9dd096b8860a44cdc0a5de0b1236eb6bae29f",
+      "descriptor_sha256": "d1fac9db8921eddf9008e5a277cabca42974e2a7f6aa7553162a988cab687185",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 489,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            16,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            16,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "b868848e1f17c7e551178cb02e0b5a5ccc343dedfe2c41e578bb466b933125be",
+      "descriptor_sha256": "534ea16e81b2765780276a9f3382b8571eb151b52475ab47c39283df93337a13",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 490,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            64,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            64,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "790d2aa047aada5f1d36877feb360791f726ec166c3f1c27e737405bcfc9868b",
+      "descriptor_sha256": "da766d996905ab2c1f5ec56f9e47508e1da9d2b8c997244c87f896718595c852",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 491,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            96,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            96,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "2cab8d3633caf87263f48c5821438aa4a2a7f3c5a43dcc27be97a0b01d3e3a37",
+      "descriptor_sha256": "dc136f594e393e59f4c848264a954575f795ffcef3cf0ec8654ff4d04d9facf8",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 492,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-qkv-a-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            2112,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            2112
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "af91d5d5c8d58be6b52913ae253609d7a2b5e91efa0eed93d482678517c56e8d",
+      "descriptor_sha256": "52f16b234b4b51e5da8d2f0d55f5d7ff695d46caccf5ff60223f672e8b04a85e",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 493,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            32,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            32,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "34d5530ddd217037bd6ac298c035bd3ee760c0eb019bf4c50f5a5aa3b058234f",
+      "descriptor_sha256": "cc3868219f02168c2829591602f68b0f1bdc2e7e4be952835daa7591b279a8b5",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 494,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-down-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            7168,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            7168
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "69b9845d612780cfe55b9394ef4510a7152089839cc9cc31320584be623e8fe1",
+      "descriptor_sha256": "55f2df8ded85cf556a123afc9ba9dc8ce5e8ec495df634d162b0a2a56d0d174f",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 495,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            128,
+            12288
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            4096,
+            12288
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            128,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "2f30e2b7282c5a3d8bf95aaae915ada51e279cc1d74db82fb9239ba1042db984",
+      "descriptor_sha256": "033d786eb51771d6fbc0a8bc52e67d08c1b0abdedcea1a6af64f6faf15e9e90b",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 496,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            1024,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": false
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "07fea9a43faa90dfad30aa94b515e6f0f172ed67a455339bfe7afdadc188c0f4",
+      "descriptor_sha256": "8dc38096aca2206aca49fd5fba8b5092066943feb35ce9d4c7c7466f917d7684",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 498,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            256,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            21843,
+            1024
+          ],
+          "bfloat16"
+        ],
+        "d": [
+          [
+            256,
+            21843
+          ],
+          "bfloat16"
+        ],
+        "trans_a": false,
+        "trans_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "54cc7a77132b23479634d5ed6c612d1240a16900e963ec97dc58129219718e86",
+      "descriptor_sha256": "ae010bf2b2540c9053cac59d144dab69da110e1dea28ed326299d83c94f6ae00",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 733,
+      "key": [
+        "ops-tensor",
+        "TruncFwdOp",
+        "256M-float16"
+      ],
+      "params": {
+        "input": [
+          [
+            16384,
+            16384
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            16384,
+            16384
+          ],
+          "float16"
+        ]
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "8620ac2ed68c1d9fef74bbd87692cf0c4b9d2deda654cf3d1303f72f70f3b832",
+      "descriptor_sha256": "68a778ab72f70e731e8c3fb3343f65f1accf0a506b143c22cf8a5ad7bd63553e",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 734,
+      "metadata_missing": true
+    },
+    {
+      "target": 759,
+      "key": [
+        "ops-transformer",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "params": {
+        "a": [
+          [
+            64,
+            128,
+            2048
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            64,
+            2048,
+            128
+          ],
+          "float16"
+        ],
+        "d": [
+          [
+            64,
+            128,
+            128
+          ],
+          "float16"
+        ]
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "9dd2ef1f93f74e012cb5fff27d8cb703ffb39da866e206221d006d19b49a5705",
+      "descriptor_sha256": "d7b71bbd14470143ce60c81595e4368f68a793e1b710cd6f745dc8c0f6e9732e",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 772,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            257,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            1536,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            257,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "1c5ce101bc7e0900755147a55ba32cdcf461c4c0bbded56459a53616649cdeb1",
+      "descriptor_sha256": "e5bc7d60634feedbee87020761f4cc612a790d970682105feb368d26ebbf4135",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 773,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "params": {
+        "a": [
+          [
+            1024,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "b": [
+          [
+            16,
+            1536,
+            2048
+          ],
+          "bfloat16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            1024,
+            1536
+          ],
+          "bfloat16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "fb6bd7176a747ed8fbcde1ee831c0d40194dee6d360d0478c131704ae8c661f2",
+      "descriptor_sha256": "37050fe067753f70dfefbb7d049461f55eb0ca189d22a35d085bd2eb7072b602",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 774,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "moe-fwd-float16"
+      ],
+      "params": {
+        "a": [
+          [
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "b": [
+          [
+            16,
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "batch_sizes": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "batch_offsets": [
+          [
+            16
+          ],
+          "int32"
+        ],
+        "output": [
+          [
+            4096,
+            4096
+          ],
+          "float16"
+        ],
+        "transpose_a": false,
+        "transpose_b": true
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "7c07a5a8b899ff4ba53489448692d6d48b94aac3453aabd8e0a2447aefb269ee",
+      "descriptor_sha256": "b59579ab49c6c5e4239b75e33d6089c780048d9663ff115e032700baa6e6b19c",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 777,
+      "key": [
+        "ops-transformer",
+        "InstanceNormFwdOp",
+        "image-affine-float16"
+      ],
+      "params": {
+        "x": [
+          [
+            8,
+            128,
+            32,
+            32
+          ],
+          "float16"
+        ],
+        "weight": [
+          [
+            128
+          ],
+          "float16"
+        ],
+        "bias": [
+          [
+            128
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            8,
+            128,
+            32,
+            32
+          ],
+          "float16"
+        ],
+        "use_input_stats": true,
+        "momentum": 0.1,
+        "eps": 1e-05
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "77b907cd17159d51f7338e47d0cd30a8309d30911ed3e3a7a5f5bff9a7e27799",
+      "descriptor_sha256": "9b3af06d061347deafc2e9994f147f3350c555f157028fce66e4fecfd6cab96e",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 804,
+      "key": [
+        "ops-transformer",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "reference_policy": "original_cpu",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1082,
+      "key": [
+        "sgl-kernel-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1253,
+      "key": [
+        "vllm-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-grouped-prefill-float16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            3,
+            3072,
+            8,
+            128
+          ],
+          "float16"
+        ],
+        "B_mat": [
+          [
+            3,
+            3072,
+            8,
+            128
+          ],
+          "float16"
+        ],
+        "cb": [
+          [
+            3,
+            12,
+            8,
+            256,
+            256
+          ],
+          "float16"
+        ],
+        "chunk_len": 256
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "2d18cf138c25348afced03c5ad27be20bfdfd0e1937407deddd934e4c993f997",
+      "descriptor_sha256": "d000a710c55ea0b45d795e220126cf4958a6a1ffa7a82608cfa89036553158d4",
+      "exact_qualified_contract_matches": [
+        182,
+        1080,
+        1490
+      ]
+    },
+    {
+      "target": 1254,
+      "key": [
+        "vllm-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-780m-float16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            1,
+            4096,
+            1,
+            128
+          ],
+          "float16"
+        ],
+        "B_mat": [
+          [
+            1,
+            4096,
+            1,
+            128
+          ],
+          "float16"
+        ],
+        "cb": [
+          [
+            1,
+            16,
+            1,
+            256,
+            256
+          ],
+          "float16"
+        ],
+        "chunk_len": 256
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "26552fad14198aac0fae328094354a4f5b6cb522725f7e665fc6950f4ade4171",
+      "descriptor_sha256": "b0a864f9418d5f598432380551e1fb9d211950be41a6ebbd21ba0c4856447db0",
+      "exact_qualified_contract_matches": [
+        183,
+        1081,
+        1489
+      ]
+    },
+    {
+      "target": 1255,
+      "key": [
+        "vllm-ascend",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "params": {
+        "C_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "B_mat": [
+          [
+            4,
+            2048,
+            1,
+            128
+          ],
+          "bfloat16"
+        ],
+        "cb": [
+          [
+            4,
+            8,
+            1,
+            256,
+            256
+          ],
+          "bfloat16"
+        ],
+        "chunk_len": 256
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "descriptor_sha256": "8abdcc6fc6e1e7e3ee395fab9d0eaafd117e23b0b33920183b717cc950278a2a",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1292,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex64"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "bool"
+        ],
+        "dim": [
+          0,
+          2
+        ],
+        "keepdim": false
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "descriptor_sha256": "f07302a4c1b37d59170e22a3d6810b452bfc109e00c1e3041b50599511d03145",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1293,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex128"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "bool"
+        ],
+        "dim": [
+          0,
+          2
+        ],
+        "keepdim": false
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "descriptor_sha256": "7848bf0d753516e019a8a8869b3fb7976c7a99deab3881e621480a5328abe8b5",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1294,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex64"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "bool"
+        ],
+        "dim": [
+          0,
+          2
+        ],
+        "keepdim": false
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "descriptor_sha256": "fd8010f26c89a89da58fd26531606676251ac2da09d6045f9fc7299747e3ed2a",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1295,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex128"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "bool"
+        ],
+        "dim": [
+          0,
+          2
+        ],
+        "keepdim": false
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "descriptor_sha256": "877fa2fe36c300a27c1971f1b22a9a5fa94db3770658ac7f3756aed8acadeac5",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1298,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex64"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "int64"
+        ],
+        "dim": [
+          0,
+          2
+        ]
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "descriptor_sha256": "3adaf0735c2e615fa26193cc4f2e08b46d967138438bffd2c3c150e278e6ef34",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1299,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "params": {
+        "x": [
+          [
+            4,
+            128,
+            4096
+          ],
+          "complex128"
+        ],
+        "output": [
+          [
+            128
+          ],
+          "int64"
+        ],
+        "dim": [
+          0,
+          2
+        ]
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "descriptor_sha256": "d261b96f66f1cf432279567ec8462992fe2481f0fcd322eed75fa7bdac9b7546",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1617,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "params": {
+        "x": [
+          [
+            1,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "scale": [
+          [
+            1,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "shift": [
+          [
+            1,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            1,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "eps": 1e-05
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "fb28c38cb3c3efbb7b4473bc0f0c2d391a106ad878dd76604923802d5d7e9193",
+      "descriptor_sha256": "f35c8bc85eae33617fdc5b0420858812acd38b548417cc2f79830b0dd88f9edb",
+      "exact_qualified_contract_matches": [
+        1288
+      ]
+    },
+    {
+      "target": 1618,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "llama-8b-prefill-bfloat16"
+      ],
+      "params": {
+        "x": [
+          [
+            2048,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "scale": [
+          [
+            2048,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "shift": [
+          [
+            2048,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "gate": [
+          [
+            2048,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            2048,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "eps": 1e-05
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "6b2a67f46f28352812d04158388c6eea1164b5e0281479a767fa06cb9c0cf399",
+      "descriptor_sha256": "05028a942a5f72d8465324b81f4378682235d58de086749e02f710ad5178daad",
+      "exact_qualified_contract_matches": [
+        848
+      ]
+    },
+    {
+      "target": 1619,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "llama-8b-prefill-float16"
+      ],
+      "params": {
+        "x": [
+          [
+            2048,
+            4096
+          ],
+          "float16"
+        ],
+        "scale": [
+          [
+            2048,
+            4096
+          ],
+          "float16"
+        ],
+        "shift": [
+          [
+            2048,
+            4096
+          ],
+          "float16"
+        ],
+        "gate": [
+          [
+            2048,
+            4096
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            2048,
+            4096
+          ],
+          "float16"
+        ],
+        "eps": 1e-05
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "e1a2cfea70e0c43c6067d4d576e3bccad9c0819310c7a005c3ddf7e87a99f132",
+      "descriptor_sha256": "49f138629603859681684a9bd3abdd91ea92f8b260a81c10f970a72dee792d76",
+      "exact_qualified_contract_matches": [
+        849
+      ]
+    },
+    {
+      "target": 1620,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "dit-xl-2-float32"
+      ],
+      "params": {
+        "x": [
+          [
+            1024,
+            1152
+          ],
+          "float32"
+        ],
+        "scale": [
+          [
+            1024,
+            1152
+          ],
+          "float32"
+        ],
+        "shift": [
+          [
+            1024,
+            1152
+          ],
+          "float32"
+        ],
+        "gate": [
+          [
+            1024,
+            1152
+          ],
+          "float32"
+        ],
+        "output": [
+          [
+            1024,
+            1152
+          ],
+          "float32"
+        ],
+        "eps": 1e-05
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "47cf85f555dac3e1c04ebc645cad40e284bde9eae00a4f92d2a7590c1b5f613e",
+      "descriptor_sha256": "e7e8e9f517580f6c7060b28739b64c5cefc1d408c4ecba55da00e3606e4c73b7",
+      "exact_qualified_contract_matches": [
+        850
+      ]
+    },
+    {
+      "target": 1621,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "dit-xl-2-bfloat16"
+      ],
+      "params": {
+        "x": [
+          [
+            1024,
+            1152
+          ],
+          "bfloat16"
+        ],
+        "scale": [
+          [
+            1024,
+            1152
+          ],
+          "bfloat16"
+        ],
+        "shift": [
+          [
+            1024,
+            1152
+          ],
+          "bfloat16"
+        ],
+        "gate": [
+          [
+            1024,
+            1152
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            1024,
+            1152
+          ],
+          "bfloat16"
+        ],
+        "eps": 1e-05
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "79657b60dd25cafad26e7385693ff2c634891bd932184f873cdaa24db479a1ff",
+      "descriptor_sha256": "1c87a6f45dd18c4a5172fee4649f4ffd02b59aba6b3f4d810d514f99a164f6e2",
+      "exact_qualified_contract_matches": [
+        852
+      ]
+    },
+    {
+      "target": 1622,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "dit-xl-2-float16"
+      ],
+      "params": {
+        "x": [
+          [
+            1024,
+            1152
+          ],
+          "float16"
+        ],
+        "scale": [
+          [
+            1024,
+            1152
+          ],
+          "float16"
+        ],
+        "shift": [
+          [
+            1024,
+            1152
+          ],
+          "float16"
+        ],
+        "gate": [
+          [
+            1024,
+            1152
+          ],
+          "float16"
+        ],
+        "output": [
+          [
+            1024,
+            1152
+          ],
+          "float16"
+        ],
+        "eps": 1e-05
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "93e0e69607da529ae6389fb4257f87429950a4cab031606763ea0017f39ed440",
+      "descriptor_sha256": "6b96448f6197ce8df9e04925fbaf59fad262e5bec95c98e3692926970eb77202",
+      "exact_qualified_contract_matches": [
+        853
+      ]
+    },
+    {
+      "target": 1623,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormZeroFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "params": {
+        "x": [
+          [
+            1,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "scale": [
+          [
+            1,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "shift": [
+          [
+            1,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "gate": [
+          [
+            1,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "output": [
+          [
+            1,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "eps": 1e-05
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "d4b4a54daba27a041c05491759f807c78d034ca26cba17722a3dec7c20c2cc21",
+      "descriptor_sha256": "340cac10d3e09e02a389e411d88919e9d89a71f269730cb8cb45d468a1247170",
+      "exact_qualified_contract_matches": [
+        851,
+        1289
+      ]
+    },
+    {
+      "target": 1735,
+      "key": [
+        "tilelang-ascend",
+        "CumprodFwdOp",
+        "long-seq-bfloat16"
+      ],
+      "params": {
+        "x": [
+          [
+            64,
+            32768
+          ],
+          "bfloat16"
+        ],
+        "y": [
+          [
+            64,
+            32768
+          ],
+          "bfloat16"
+        ],
+        "dim": -1
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "06a8e153204d83d5d997cfd8398ed4a0f6e5f2848adecbdc38d64203c6784589",
+      "descriptor_sha256": "d4f3ee95c292f0ddd2f1def1b45f844d047de4651c43d50f0f42c9af7d2691fa",
+      "exact_qualified_contract_matches": [
+        1303
+      ]
+    },
+    {
+      "target": 1736,
+      "key": [
+        "tilelang-ascend",
+        "CumprodFwdOp",
+        "hidden-state-float16"
+      ],
+      "params": {
+        "x": [
+          [
+            2048,
+            4096
+          ],
+          "float16"
+        ],
+        "y": [
+          [
+            2048,
+            4096
+          ],
+          "float16"
+        ],
+        "dim": -1
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "9dfb783494e7d10e918ae3e2595dbe0aa32f1bd483d5ab01bf6787bf2ac08a9e",
+      "descriptor_sha256": "5c87cfb2d93a88772595b1a039a66e394e0247ed5c949176abdb3e6e9166d143",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 1737,
+      "key": [
+        "tilelang-ascend",
+        "CumprodFwdOp",
+        "hidden-state-bfloat16"
+      ],
+      "params": {
+        "x": [
+          [
+            2048,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "y": [
+          [
+            2048,
+            4096
+          ],
+          "bfloat16"
+        ],
+        "dim": -1
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "710df1314dc47c67b8844aec9a8591e80e824bca831a90afee088ac0c4a0fe28",
+      "descriptor_sha256": "9bcc63421e9a2f147e552cbca49346748e5e226192a0ba7d3e8befcb95797f24",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 2052,
+      "metadata_missing": true
+    },
+    {
+      "target": 2101,
+      "key": [
+        "tilelang-ascend",
+        "VarFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "params": {
+        "x": [
+          [
+            2048,
+            11008
+          ],
+          "float32"
+        ],
+        "output": [
+          [
+            2048
+          ],
+          "float32"
+        ],
+        "dim": -1,
+        "correction": 1,
+        "keepdim": false
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+      "descriptor_sha256": "4420b6bfed71e565157fbc4ec2b661f6ea327f0f42e4e2ee7c436bbb87e7bc24",
+      "exact_qualified_contract_matches": []
+    },
+    {
+      "target": 2107,
+      "key": [
+        "tilelang-ascend",
+        "VarMeanFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "params": {
+        "x": [
+          [
+            2048,
+            11008
+          ],
+          "float32"
+        ],
+        "var": [
+          [
+            2048
+          ],
+          "float32"
+        ],
+        "mean": [
+          [
+            2048
+          ],
+          "float32"
+        ],
+        "dim": -1,
+        "correction": 1,
+        "keepdim": false
+      },
+      "reference_policy": "original_npu",
+      "payload_sha256": "9d92c689a00c87d06c04b114988e05af9a74474f46ede9551e0bc233e70aa858",
+      "descriptor_sha256": "68240dec5ef1b4fb3bf983d33582f6f3aa75550a0f9f0416c50a6fe2aba8141b",
+      "exact_qualified_contract_matches": []
+    }
+  ],
+  "checked_at": "2026-11-16T02:13:27.649973+00:00"
+}

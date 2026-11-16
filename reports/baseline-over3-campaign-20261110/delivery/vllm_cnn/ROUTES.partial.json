@@ -1,0 +1,86 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "AddFwdOp",
+      "cnn-feat-broadcast-float16"
+    ],
+    "index": 0,
+    "selected_variant": "native",
+    "selected_us": 58.1436,
+    "ratio": 5.4542350410246145,
+    "result_sha256": "180c8cbc01472a6178afe9ad753b1d3d2eab10c451340647370240ece4756ad0",
+    "decision": "retain_original_api_over3",
+    "reason": "Current complete original muls_add_triton API requires equal input shapes, so channel broadcast materialization remains timed. Natural CNN width56 and singleton both select original BLOCK_SIZE1024; no different kernel configuration or new optimization claimed. Original checker and15 raw windows audited. Retain current library API engineering path, not a universal optimum claim."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "AddFwdOp",
+      "cnn-feat-broadcast-bfloat16"
+    ],
+    "index": 1,
+    "selected_variant": "native",
+    "selected_us": 59.900533333333335,
+    "ratio": 5.36345837014398,
+    "result_sha256": "c3b6cd946b01bd9b9bc0f9949eaeddf8afeceb2fd247662fce09c457a392aa2b",
+    "decision": "retain_original_api_over3",
+    "reason": "Current complete original muls_add_triton API requires equal input shapes, so channel broadcast materialization remains timed. Natural CNN width56 and singleton both select original BLOCK_SIZE1024; no different kernel configuration or new optimization claimed. Original checker and15 raw windows audited. Retain current library API engineering path, not a universal optimum claim."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "AddFwdOp",
+      "cnn-feat-broadcast-float32"
+    ],
+    "index": 2,
+    "selected_variant": "native",
+    "selected_us": 81.0264,
+    "ratio": 4.418240114000712,
+    "result_sha256": "ffe5e3ebab978719584b908840c0d259a9cf27a5545ddb0eaa57c382090e7a3b",
+    "decision": "retain_original_api_over3",
+    "reason": "Current complete original muls_add_triton API requires equal input shapes, so channel broadcast materialization remains timed. Natural CNN width56 and singleton both select original BLOCK_SIZE1024; no different kernel configuration or new optimization claimed. Original checker and15 raw windows audited. Retain current library API engineering path, not a universal optimum claim."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SubFwdOp",
+      "cnn-feat-broadcast-bfloat16"
+    ],
+    "index": 3,
+    "selected_variant": "native",
+    "selected_us": 60.638,
+    "ratio": 5.578507074560408,
+    "result_sha256": "061d5bf7e72efeb37a29323f011d32d11980b88c96c640fd0e7e6dfabb8648c7",
+    "decision": "retain_original_api_over3",
+    "reason": "Current complete original muls_add_triton API requires equal input shapes, so channel broadcast materialization remains timed. Natural CNN width56 and singleton both select original BLOCK_SIZE1024; no different kernel configuration or new optimization claimed. Original checker and15 raw windows audited. Retain current library API engineering path, not a universal optimum claim."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SubFwdOp",
+      "cnn-feat-broadcast-float16"
+    ],
+    "index": 4,
+    "selected_variant": "native",
+    "selected_us": 58.6428,
+    "ratio": 5.47156737121033,
+    "result_sha256": "92d53adc9a4e6464e85cb2517edf268572e5c2e13e2cf7e1c4af65cc2222052a",
+    "decision": "retain_original_api_over3",
+    "reason": "Current complete original muls_add_triton API requires equal input shapes, so channel broadcast materialization remains timed. Natural CNN width56 and singleton both select original BLOCK_SIZE1024; no different kernel configuration or new optimization claimed. Original checker and15 raw windows audited. Retain current library API engineering path, not a universal optimum claim."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "SubFwdOp",
+      "cnn-feat-broadcast-float32"
+    ],
+    "index": 5,
+    "selected_variant": "native",
+    "selected_us": 81.35646666666665,
+    "ratio": 4.38174623977135,
+    "result_sha256": "5b91e04887fd43a05c73002e5dc4b8dd5fc8481f7469f3782922feb9d9df6504",
+    "decision": "retain_original_api_over3",
+    "reason": "Current complete original muls_add_triton API requires equal input shapes, so channel broadcast materialization remains timed. Natural CNN width56 and singleton both select original BLOCK_SIZE1024; no different kernel configuration or new optimization claimed. Original checker and15 raw windows audited. Retain current library API engineering path, not a universal optimum claim."
+  }
+]

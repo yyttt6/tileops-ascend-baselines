@@ -1,0 +1,653 @@
+{
+  "checked_at": "2026-11-15T11:22:53.205972+00:00",
+  "proofs": [
+    {
+      "ordinal": 784,
+      "checkpoint_sha256": "c9bc024f94f6cd994f98f2d3d2a3ba139e1409d1b26bd40161c42c29fe9a8d2a",
+      "guard_valid": true,
+      "original_private_preprocessed_source": [
+        {
+          "private_source": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-routing-v1/private-v1/vendors/routingpairs_transformer/op_impl/ai_core/tbe/routingpairs_transformer_impl/ascendc/moe_init_routing_v2/op_kernel/moe_init_routing_v2.cpp",
+          "source_sha256": "d32a6343e7d5e77b27ee5597292f04e73cbf9eedb921a8cd094dc616483ef8a1",
+          "supplemental_qualified_capsule": null
+        }
+      ],
+      "actual_profile_kernel_to_ELF_sha256": {
+        "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175": "375875cb91f2f6b623d1357610b83fd752ac1b01f501595dc09e15291bc85c78"
+      },
+      "all15_windows_complete": [
+        {
+          "trace_sha256": "5ab786d9885b394236cbdca107d7379c6dbae553fd45c5b8f31cf3d26eb57c9b",
+          "tasks": [
+            {
+              "task_id": 26,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731496162488598,
+              "end_ns": 3731496162496661,
+              "duration_us": 8.063
+            }
+          ],
+          "total_device_us": 8.063
+        },
+        {
+          "trace_sha256": "be6c2104df95f5fbfd252c7e34903a9a44eb59c1b5bbaff4a224ce123feb8dc8",
+          "tasks": [
+            {
+              "task_id": 30,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731497789103931,
+              "end_ns": 3731497789112061,
+              "duration_us": 8.13
+            }
+          ],
+          "total_device_us": 8.13
+        },
+        {
+          "trace_sha256": "8b98b56bf1b67c7e0d888c914cf8a722f7cade34a89835846b54b63e028eff06",
+          "tasks": [
+            {
+              "task_id": 34,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731499702885340,
+              "end_ns": 3731499702892667,
+              "duration_us": 7.327
+            }
+          ],
+          "total_device_us": 7.327
+        },
+        {
+          "trace_sha256": "57e5699e9ae59d337cf4d12ab287cfcc10a3f00e129ad51c6e0558dbd86479ac",
+          "tasks": [
+            {
+              "task_id": 38,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731501262270264,
+              "end_ns": 3731501262278567,
+              "duration_us": 8.303
+            }
+          ],
+          "total_device_us": 8.302999999999999
+        },
+        {
+          "trace_sha256": "51d4be7f0a8123ec2918a785cbaa778bd71f0cd7481d35e46a972c8fef403b6b",
+          "tasks": [
+            {
+              "task_id": 42,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731502763224295,
+              "end_ns": 3731502763232080,
+              "duration_us": 7.785
+            }
+          ],
+          "total_device_us": 7.785
+        },
+        {
+          "trace_sha256": "dfffc0fdb4afd6b39818ca296eae65dc620d279154e7df65dac71633ddc33dea",
+          "tasks": [
+            {
+              "task_id": 46,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731504386918018,
+              "end_ns": 3731504386925586,
+              "duration_us": 7.568
+            }
+          ],
+          "total_device_us": 7.5680000000000005
+        },
+        {
+          "trace_sha256": "6397365e307321d8964913366ba8e3098486e54ea95842d7b85e079a6d8ed183",
+          "tasks": [
+            {
+              "task_id": 50,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731506009654826,
+              "end_ns": 3731506009662099,
+              "duration_us": 7.273
+            }
+          ],
+          "total_device_us": 7.273
+        },
+        {
+          "trace_sha256": "6b877d79718f04811b978dab96212ae5d63de20f8451922d9e2bf2d590efc542",
+          "tasks": [
+            {
+              "task_id": 54,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731507634212575,
+              "end_ns": 3731507634220443,
+              "duration_us": 7.868
+            }
+          ],
+          "total_device_us": 7.868
+        },
+        {
+          "trace_sha256": "296a1133e3ee008d4e9f95371a9fc80ff1ed721e7e14a6e47d496a18953cb314",
+          "tasks": [
+            {
+              "task_id": 58,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731509123318940,
+              "end_ns": 3731509123327892,
+              "duration_us": 8.952
+            }
+          ],
+          "total_device_us": 8.952
+        },
+        {
+          "trace_sha256": "e0e833495db7fd645e757bd3b6b6c41052d38ffdb2dc5ebbbc5cc33e645932b3",
+          "tasks": [
+            {
+              "task_id": 62,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731510684957565,
+              "end_ns": 3731510684964962,
+              "duration_us": 7.397
+            }
+          ],
+          "total_device_us": 7.397
+        },
+        {
+          "trace_sha256": "a3be83bd652de609ecc530ec873dbd90afca6e3390621c859586ea3354a4a0d5",
+          "tasks": [
+            {
+              "task_id": 66,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731512485360072,
+              "end_ns": 3731512485368690,
+              "duration_us": 8.618
+            }
+          ],
+          "total_device_us": 8.618
+        },
+        {
+          "trace_sha256": "1087d37aa3810e7464a99ff989d3ba72a8c3e1dfb46e546cd4064c3ab4bef424",
+          "tasks": [
+            {
+              "task_id": 70,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731514046336561,
+              "end_ns": 3731514046343977,
+              "duration_us": 7.416
+            }
+          ],
+          "total_device_us": 7.4159999999999995
+        },
+        {
+          "trace_sha256": "a995b819ffd97862c9d3b1f3193fc6b26f3fd1e9409cf4b18cc3fab9c0289efe",
+          "tasks": [
+            {
+              "task_id": 74,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731515607493957,
+              "end_ns": 3731515607502925,
+              "duration_us": 8.968
+            }
+          ],
+          "total_device_us": 8.968
+        },
+        {
+          "trace_sha256": "912bcd24ab68dfa86696a44ece02a3e661b168c3dd650eea70b020f5e7d84328",
+          "tasks": [
+            {
+              "task_id": 78,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731517179668568,
+              "end_ns": 3731517179675603,
+              "duration_us": 7.035
+            }
+          ],
+          "total_device_us": 7.034999999999999
+        },
+        {
+          "trace_sha256": "94419df822420d2c8430f8c3c8d207df0532a8dffef1a9d72daa043a22ff94bb",
+          "tasks": [
+            {
+              "task_id": 82,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731518781936038,
+              "end_ns": 3731518781943321,
+              "duration_us": 7.283
+            }
+          ],
+          "total_device_us": 7.283
+        }
+      ],
+      "retention_receipt_sha256": "b5d9b74817a7e1dd1c1cc7b1054faa810ad83b4b2937d374a27e6a9ec3c290c0",
+      "dual_archive_sha256": "d38d6cc380dc4c7b0a113efe3bf46da2da7e65d333ae6fc2954e140479556870"
+    },
+    {
+      "ordinal": 785,
+      "checkpoint_sha256": "5162562fa6780cd5c188d2ad5d676d4baabda3539bb7588d4bde54b5dba90de4",
+      "guard_valid": true,
+      "original_private_preprocessed_source": [
+        {
+          "private_source": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-routing-v1/private-v1/vendors/routingpairs_transformer/op_impl/ai_core/tbe/routingpairs_transformer_impl/ascendc/moe_init_routing_v2/op_kernel/moe_init_routing_v2.cpp",
+          "source_sha256": "d32a6343e7d5e77b27ee5597292f04e73cbf9eedb921a8cd094dc616483ef8a1",
+          "supplemental_qualified_capsule": null
+        },
+        {
+          "private_source": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-routing-v1/private-v1/vendors/routingpairs_transformer/op_impl/ai_core/tbe/routingpairs_transformer_impl/ascendc/moe_init_routing_v2/op_kernel/moe_init_routing_v2.cpp",
+          "source_sha256": "d32a6343e7d5e77b27ee5597292f04e73cbf9eedb921a8cd094dc616483ef8a1",
+          "supplemental_qualified_capsule": {
+            "checkpoint": "rollout-ops-transformer-prepermute-api-sdk-784-h1-v1.CHECKPOINT.json",
+            "sha256": "c9bc024f94f6cd994f98f2d3d2a3ba139e1409d1b26bd40161c42c29fe9a8d2a",
+            "capsule_sha256": "b5d9b74817a7e1dd1c1cc7b1054faa810ad83b4b2937d374a27e6a9ec3c290c0"
+          }
+        }
+      ],
+      "actual_profile_kernel_to_ELF_sha256": {
+        "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea": "e975878c21d77632b83956194c6aebf65763215a74e29995dbe771a7ca93ed21",
+        "te_moeinitroutingv2_809cadd445cdcdfb3ac9785cff0e52373d4e9f6221f359f8cbf481bdff610175": "375875cb91f2f6b623d1357610b83fd752ac1b01f501595dc09e15291bc85c78"
+      },
+      "all15_windows_complete": [
+        {
+          "trace_sha256": "ef6af423b548104e0d188581cd3fcdf9c2db9dbe92557de0bd3a54c1044604f2",
+          "tasks": [
+            {
+              "task_id": 26,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731582270003199,
+              "end_ns": 3731582270010885,
+              "duration_us": 7.686
+            }
+          ],
+          "total_device_us": 7.686
+        },
+        {
+          "trace_sha256": "fbd3289f11bedba5e76d3f31bff76651a26af0347dd153d85163e6a58f4c7ab6",
+          "tasks": [
+            {
+              "task_id": 30,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731583890330596,
+              "end_ns": 3731583890338761,
+              "duration_us": 8.165
+            }
+          ],
+          "total_device_us": 8.165
+        },
+        {
+          "trace_sha256": "cbcef600e4eeb9a7fbb91e971761973d413a8d3fdc000feee384bd1cb8fcde20",
+          "tasks": [
+            {
+              "task_id": 34,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731585634760251,
+              "end_ns": 3731585634767806,
+              "duration_us": 7.555
+            }
+          ],
+          "total_device_us": 7.555
+        },
+        {
+          "trace_sha256": "b7eecb693a23b7cdbf2b916892472d692932b1bbf3e274658ccbaea592ae109a",
+          "tasks": [
+            {
+              "task_id": 38,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731587185560797,
+              "end_ns": 3731587185569355,
+              "duration_us": 8.558
+            }
+          ],
+          "total_device_us": 8.558
+        },
+        {
+          "trace_sha256": "7a9d007c6e4c3d81ce5155a2ebd7032a6a2223c071e2f74f2ea6bcd412dffbdc",
+          "tasks": [
+            {
+              "task_id": 42,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731588809605625,
+              "end_ns": 3731588809613528,
+              "duration_us": 7.903
+            }
+          ],
+          "total_device_us": 7.9030000000000005
+        },
+        {
+          "trace_sha256": "88fb9e6aff23f2721725bb669568806fd25c3ea10a6cc81f3719fcd538cf2acf",
+          "tasks": [
+            {
+              "task_id": 46,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731590369946654,
+              "end_ns": 3731590369955064,
+              "duration_us": 8.41
+            }
+          ],
+          "total_device_us": 8.41
+        },
+        {
+          "trace_sha256": "ee5f8dea535f196a458ecc1a459866f93525a0e9cf885bded9e012d7a8bfc82e",
+          "tasks": [
+            {
+              "task_id": 50,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731591930105743,
+              "end_ns": 3731591930113277,
+              "duration_us": 7.534
+            }
+          ],
+          "total_device_us": 7.534
+        },
+        {
+          "trace_sha256": "a194048b6e27b92a3f8238b9c923b20c77b64ed460fa5a1e082d653a7e3c57e3",
+          "tasks": [
+            {
+              "task_id": 54,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731593781832240,
+              "end_ns": 3731593781839498,
+              "duration_us": 7.258
+            }
+          ],
+          "total_device_us": 7.258
+        },
+        {
+          "trace_sha256": "cf03c52204d311e28ce250cd82c0e474b0387f41adbf26857295dab7507c182f",
+          "tasks": [
+            {
+              "task_id": 58,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731595349332188,
+              "end_ns": 3731595349340754,
+              "duration_us": 8.566
+            }
+          ],
+          "total_device_us": 8.566
+        },
+        {
+          "trace_sha256": "98132fad90601b2f24360dd29bbc0fa5712576a69372fc34eff153ca5aa2d3ed",
+          "tasks": [
+            {
+              "task_id": 62,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731596903632553,
+              "end_ns": 3731596903640643,
+              "duration_us": 8.09
+            }
+          ],
+          "total_device_us": 8.09
+        },
+        {
+          "trace_sha256": "25bca6d3092864eef3bbe9fba5eae8b46a49b9ab70e55a18d87dc17caf0b2ddf",
+          "tasks": [
+            {
+              "task_id": 66,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731598525214384,
+              "end_ns": 3731598525222917,
+              "duration_us": 8.533
+            }
+          ],
+          "total_device_us": 8.533000000000001
+        },
+        {
+          "trace_sha256": "4fa72081feba0229155aac7faf8510f2105ca6c45e5a46aca242aed89f61eb62",
+          "tasks": [
+            {
+              "task_id": 70,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731600088230524,
+              "end_ns": 3731600088238060,
+              "duration_us": 7.536
+            }
+          ],
+          "total_device_us": 7.5360000000000005
+        },
+        {
+          "trace_sha256": "c644143291710001834e95b674ffa1b10048464ae7b14f239d6ed51dc19d35a7",
+          "tasks": [
+            {
+              "task_id": 74,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731601881804987,
+              "end_ns": 3731601881813599,
+              "duration_us": 8.612
+            }
+          ],
+          "total_device_us": 8.612
+        },
+        {
+          "trace_sha256": "5b9697c29e04ec46a338df7d6cf76ac560fa226ed8f09b92fec0b5ac0fe41a5b",
+          "tasks": [
+            {
+              "task_id": 78,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731603381246720,
+              "end_ns": 3731603381254470,
+              "duration_us": 7.75
+            }
+          ],
+          "total_device_us": 7.75
+        },
+        {
+          "trace_sha256": "34c85d38746a0d2aa028e8dcf37662e429b292edce25086d3e60bb90247e7752",
+          "tasks": [
+            {
+              "task_id": 82,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "te_moeinitroutingv2_ccfcf521b4e63a6c33e8edf43c76a94ea5ceb65cf3dc634e8739375d39f1ffea",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3731604950490213,
+              "end_ns": 3731604950497728,
+              "duration_us": 7.515
+            }
+          ],
+          "total_device_us": 7.515
+        }
+      ],
+      "retention_receipt_sha256": "50c5e3a5c7bd7ded22744f58447e01d7738ca9b5c5e0c76b08b914ddbeae85b0",
+      "dual_archive_sha256": "f20f9cea3fcff774f8da59926121c511437930380a36e837b506d45f3403f0de"
+    }
+  ]
+}

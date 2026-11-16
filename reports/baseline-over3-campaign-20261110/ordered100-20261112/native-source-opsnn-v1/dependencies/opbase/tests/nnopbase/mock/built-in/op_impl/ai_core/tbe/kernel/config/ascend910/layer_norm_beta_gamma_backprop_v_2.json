@@ -1,0 +1,864 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "95ea3be7439a9d4cc410afd5f1d74debef0d69188bdf70338bd37f4c747d64a5",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2,
+            -2
+          ]
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_5493d983ade0a35e0151754bc699bfc1_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "95ea3be7439a9d4cc410afd5f1d74debef0d69188bdf70338bd37f4c747d64a5",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2,
+            -2
+          ]
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_5493d983ade0a35e0151754bc699bfc1_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "3359726776f015a327cbb9f9f1350c09d432fefd2a2c3d155ec2911fce10125c",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2
+          ]
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_204e87ef2a712fad114392db91228ab2_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "3359726776f015a327cbb9f9f1350c09d432fefd2a2c3d155ec2911fce10125c",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2
+          ]
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_204e87ef2a712fad114392db91228ab2_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "52d7cb645c3ba09181c1cd0f83358a8433625954699fc4126f7d6d07c382e8ac",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2,
+            -2
+          ]
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_c5b3203a2f17d1880de50298acc64d0e_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "5030b47f8e9b178055261449823f9978106556a0ca2a95d8d51933614705266c",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2
+          ]
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_76b07349fb1dec11cc6c8270e569ddf9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "5030b47f8e9b178055261449823f9978106556a0ca2a95d8d51933614705266c",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2
+          ]
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_76b07349fb1dec11cc6c8270e569ddf9_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "f769bfbb4b3af32b126e7777079441851a6cbb13e9d3be9939a7430f178a248a",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2,
+            -2
+          ]
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_302de6579e3466f218387d1324480184_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "f769bfbb4b3af32b126e7777079441851a6cbb13e9d3be9939a7430f178a248a",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2,
+            -2
+          ]
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_302de6579e3466f218387d1324480184_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "440c220787e0ca7a312d4aa2ab66fb8323e5644e59d208847ecdf6c90a8f025c",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2
+          ]
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_3f53b4d32602f3253d8a728050b672be_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "440c220787e0ca7a312d4aa2ab66fb8323e5644e59d208847ecdf6c90a8f025c",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2
+          ]
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_3f53b4d32602f3253d8a728050b672be_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "143ad6e92ee11149d44e5928bbaa1d9c74983bdf2b189f3705551da8fd3c5e57",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2,
+            -2
+          ]
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_ee802680189c60728cbb190ec5b2cbae_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2a51cc63e951da692fa2335d5e9321256a0a797011a999b1cf75207f1dc84fd4",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2
+          ]
+        }
+      ],
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_376858b1dea114e8dc152045b5f9f4ff_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2a51cc63e951da692fa2335d5e9321256a0a797011a999b1cf75207f1dc84fd4",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_for_gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pd_gamma",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pd_beta",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "shape_gamma",
+          "dtype": "list_int",
+          "value": [
+            -2
+          ]
+        }
+      ],
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910/layer_norm_beta_gamma_backprop_v2/LayerNormBetaGammaBackpropV2_376858b1dea114e8dc152045b5f9f4ff_high_performance_deterministic.json"
+      }
+    }
+  ]
+}

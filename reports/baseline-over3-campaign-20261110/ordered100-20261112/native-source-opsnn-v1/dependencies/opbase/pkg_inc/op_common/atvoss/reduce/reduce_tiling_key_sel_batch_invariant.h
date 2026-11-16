@@ -1,0 +1,42 @@
+/**
+ * Copyright (c) 2026 Huawei Technologies Co., Ltd.
+ * This program is free software; you can redistribute it and/or modify it under the terms and conditions of
+ * CANN Open Software License Agreement Version 2.0 (the "License").
+ * Please refer to the License for details. You may not use this file except in compliance with the License.
+ * THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO NON-INFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR A PARTICULAR PURPOSE.
+ * See LICENSE in the root of the software repository for the full text of the License.
+ */
+
+/*!
+ * \file reduce_tiling_key_sel_batch_invariant.h
+ * \brief reduce tiling key select batch invariant
+ */
+
+#ifndef _REDUCE_TILING_KEY_SEL_BATCH_INVARIANT_H_
+#define _REDUCE_TILING_KEY_SEL_BATCH_INVARIANT_H_
+
+#include "reduce_tiling_key_decl_batch_invariant.h"
+
+ASCENDC_TPL_SEL(
+    // Empty
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_EMPTY_BATCH_INVARIANT()),
+    // A
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_A_BATCH_INVARIANT()),
+    // AR
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_AR_NORMAL_BATCH_INVARIANT()),
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_AR_GROUP_BATCH_INVARIANT()),
+    // ARA
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_ARA_NORMAL_BATCH_INVARIANT()),
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_ARA_GROUP_BATCH_INVARIANT()),
+    // ARAR
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_ARAR_NORMAL_BATCH_INVARIANT()),
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_ARAR_GROUP_BATCH_INVARIANT()),
+    // ARARARAR
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_ARARARAR_NORMAL_BATCH_INVARIANT()),
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_ARARARAR_GROUP_BATCH_INVARIANT()),
+    // ARARARARA
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_ARARARARA_NORMAL_BATCH_INVARIANT()),
+    ASCENDC_TPL_ARGS_SEL(REDUCE_TPL_KEY_SEL_ARARARARA_GROUP_BATCH_INVARIANT()));
+
+#endif

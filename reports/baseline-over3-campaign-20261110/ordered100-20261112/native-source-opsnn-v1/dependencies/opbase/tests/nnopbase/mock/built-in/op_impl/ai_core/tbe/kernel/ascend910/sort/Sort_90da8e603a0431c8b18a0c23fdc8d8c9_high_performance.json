@@ -1,0 +1,198 @@
+{
+    "binFileName": "Sort_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "compileInfo": {
+        "_coexisting_num": 3,
+        "_core_num": 32,
+        "_custom_vars": {
+            "2017612633061982208": [],
+            "2017612633063030785": [],
+            "2017612633064079361": [],
+            "2017612633065127937": [],
+            "2017612701781458944": []
+        },
+        "_normal_vars": {
+            "2017612633061982208": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_0"
+            ],
+            "2017612633063030785": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_1"
+            ],
+            "2017612633064079361": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_1"
+            ],
+            "2017612633065127937": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_1",
+                "_ub_factor_1_1"
+            ],
+            "2017612701781458944": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_0"
+            ]
+        },
+        "_op_mode": 0,
+        "_pattern": "Sort",
+        "_proposal_num": 8,
+        "_soc_version": "Ascend910",
+        "_ub_size": 261120,
+        "_vars": {
+            "2017612633061982208": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_0"
+            ],
+            "2017612633063030785": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_1"
+            ],
+            "2017612633064079361": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_1"
+            ],
+            "2017612633065127937": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_1",
+                "_ub_factor_1_1"
+            ],
+            "2017612701781458944": [
+                "_x_dim_0",
+                "_x_dim_1",
+                "_block_factor_0",
+                "_ub_factor_0_0"
+            ]
+        },
+        "_workspace_len": 3,
+        "_x_dtype_bytes": 2
+    },
+    "coreType": "AiCore",
+    "deterministic": "ignore",
+    "globalworkspace_spec_workspace": {
+        "size": 32,
+        "type": 0
+    },
+    "kernelList": [
+        {
+            "deterministic": "ignore",
+            "kernelName": "Sort_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance_2017612633061982208"
+        },
+        {
+            "deterministic": "ignore",
+            "kernelName": "Sort_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance_2017612633063030785"
+        },
+        {
+            "deterministic": "ignore",
+            "kernelName": "Sort_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance_2017612633064079361"
+        },
+        {
+            "deterministic": "ignore",
+            "kernelName": "Sort_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance_2017612633065127937"
+        },
+        {
+            "deterministic": "ignore",
+            "kernelName": "Sort_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance_2017612701781458944"
+        }
+    ],
+    "kernelName": "Sort_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 20,
+    "parameters": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+            "dtype": "float32",
+            "init_value": 0.0
+        },
+        null
+    ],
+    "sha256": "147857d0bc67318f4293f5197b9e8777a9c2e8ffd3ab3ce359aaa7108c5924ab",
+    "workspace": {
+        "num": 3,
+        "size": [
+            32,
+            32,
+            32
+        ],
+        "type": [
+            0,
+            0,
+            1
+        ]
+    },
+    "supportInfo": {
+        "int64Mode": false,
+        "staticKey": "b851318b6425577e715a37d1513007ae8031c5d3823f9f52903674cbbd7a76c3",
+        "inputs": [
+            {
+                "name": "x",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "outputs": [
+            {
+                "name": "y1",
+                "index": 0,
+                "dtype": "float16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            },
+            {
+                "name": "y2",
+                "index": 1,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ]
+            }
+        ],
+        "attrs": [
+            {
+                "name": "axis",
+                "dtype": "int",
+                "value": null
+            },
+            {
+                "name": "descending",
+                "dtype": "bool",
+                "value": true
+            }
+        ],
+        "deterministic": "ignore"
+    }
+}

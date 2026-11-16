@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-16T00:16:28.343154+00:00",
+  "accepted_complete_APIs": 1,
+  "rows": [
+    {
+      "ordinal": 1969,
+      "key": [
+        "tilelang-ascend",
+        "MeanFwdOp",
+        "long-seq-bfloat16"
+      ],
+      "api": "ops-math::aclnnMean",
+      "device_us": 9.550333333333334,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-mean-alternative-1969-h1-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "33bd0831e98462528a89a9a3e36a8a7699392047e686c94145a143c6ddc56b1c",
+      "payload_sha256": "4194b648eb67f64b744a202a31b267bd9f735f2cddec9fc6ac2f27aeb00a37d6",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

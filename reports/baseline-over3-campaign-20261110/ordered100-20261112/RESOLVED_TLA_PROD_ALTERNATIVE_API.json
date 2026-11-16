@@ -1,0 +1,92 @@
+{
+  "checked_at": "2026-11-15T22:35:13.396278+00:00",
+  "accepted_complete_APIs": 5,
+  "rows": [
+    {
+      "ordinal": 2038,
+      "key": [
+        "tilelang-ascend",
+        "ProdFwdOp",
+        "hidden-state-bfloat16"
+      ],
+      "api": "ops-math::aclnnProdDim",
+      "device_us": 11.420533333333333,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-prod-alternative-2038-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "48a42c5e4e7fed5a1ad980b33de4c978ac6b80b14e45b30759c0cdc8dc3c4154",
+      "payload_sha256": "710df1314dc47c67b8844aec9a8591e80e824bca831a90afee088ac0c4a0fe28",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2039,
+      "key": [
+        "tilelang-ascend",
+        "ProdFwdOp",
+        "hidden-state-bfloat16-float32"
+      ],
+      "api": "ops-math::aclnnProdDim",
+      "device_us": 13.079,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-prod-alternative-2039-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "985d88af2349765199522072c9103d990f73221cb9e8abad4b9e93b82c2c19a9",
+      "payload_sha256": "710df1314dc47c67b8844aec9a8591e80e824bca831a90afee088ac0c4a0fe28",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2040,
+      "key": [
+        "tilelang-ascend",
+        "ProdFwdOp",
+        "hidden-state-float16"
+      ],
+      "api": "ops-math::aclnnProdDim",
+      "device_us": 23.755133333333333,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-prod-alternative-2040-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "46cea6678d7100cd4f0883ed3a7a0c0cc43b7bd4cd524ff02467ed1b75a385c2",
+      "payload_sha256": "9dfb783494e7d10e918ae3e2595dbe0aa32f1bd483d5ab01bf6787bf2ac08a9e",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2041,
+      "key": [
+        "tilelang-ascend",
+        "ProdFwdOp",
+        "mlp-intermediate-float32"
+      ],
+      "api": "ops-math::aclnnProdDim",
+      "device_us": 29.66653333333333,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-prod-alternative-2041-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "2424e31760515f039f2935a073a69aa1aec171fe06d50a171f0dc38c57ab57df",
+      "payload_sha256": "8172e457513d1b558cac5f3cf9783c2b16354d6a1614af3ac332a040f1addbc8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2042,
+      "key": [
+        "tilelang-ascend",
+        "ProdFwdOp",
+        "3d-non-last-axis-float16"
+      ],
+      "api": "ops-math::aclnnProdDim",
+      "device_us": 15.456133333333334,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-prod-alternative-2042-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "20b29ed6e1abcb514beaf06dd95786c4b2679dc474b3335aa463c22263ff9d98",
+      "payload_sha256": "48268ea9f857b5308a181cb47a588fef672a14fa852cce668b343f0aaef7ae1a",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

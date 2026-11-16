@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-11-15T22:10:22.371062+00:00",
+  "accepted_complete_APIs": 3,
+  "rows": [
+    {
+      "ordinal": 1893,
+      "key": [
+        "tilelang-ascend",
+        "LogSumExpFwdOp",
+        "llama-8b-lm-head-float32"
+      ],
+      "api": "ops-math::aclnnLogSumExp",
+      "device_us": 27.8536,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsumexp-alternative-1893-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ff767cf46257e35416e7a74c4ca4449e23b55c782028b03aab497cf3d8507467",
+      "payload_sha256": "024533bdc50712fd597ba677b2c2cf1199e7583d09378bcfa37a327bfd0354b8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1894,
+      "key": [
+        "tilelang-ascend",
+        "LogSumExpFwdOp",
+        "lm-head-bfloat16"
+      ],
+      "api": "ops-math::aclnnLogSumExp",
+      "device_us": 33.12780000000001,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsumexp-alternative-1894-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "32d7b0c03ca2fd9c0ae594fd6744cd46def8b25e18b1a317c63c7a8c2e029fc6",
+      "payload_sha256": "942964de91ded8d71a4e407509e759e0b43b159f969389466bda571ca547508e",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1895,
+      "key": [
+        "tilelang-ascend",
+        "LogSumExpFwdOp",
+        "lm-head-float16"
+      ],
+      "api": "ops-math::aclnnLogSumExp",
+      "device_us": 33.64966666666666,
+      "source_attribution": "ops-math alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsumexp-alternative-1895-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "baa2a4f6082a0a84a9ec9fa66f65f34e4f9f9758a1525d07f2f4296d027fb399",
+      "payload_sha256": "84b5d1f96885c99d253f673a7292872915e1d2f2eaada75969760e7a9bdd2813",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

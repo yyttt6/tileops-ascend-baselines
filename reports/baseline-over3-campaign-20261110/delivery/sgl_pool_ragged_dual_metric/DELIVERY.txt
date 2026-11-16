@@ -1,0 +1,1 @@
+Staged both complete original SGL API versions. Runtime source root remains private verified vendor. Not installed or published. Host and device metrics retained separately, no mixed-denominator public speedup. All staged source bytes match each paired formal SOURCE.

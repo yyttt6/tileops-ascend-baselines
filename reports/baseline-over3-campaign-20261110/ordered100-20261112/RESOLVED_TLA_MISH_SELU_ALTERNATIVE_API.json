@@ -1,0 +1,143 @@
+{
+  "checked_at": "2026-11-15T21:41:12.601240+00:00",
+  "accepted_complete_APIs": 8,
+  "rows": [
+    {
+      "ordinal": 1984,
+      "key": [
+        "tilelang-ascend",
+        "MishFwdOp",
+        "yolo-p3-bfloat16"
+      ],
+      "api": "ops-nn::aclnnMish",
+      "device_us": 69.5672,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-mish-selu-alternative-1984-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "8b6aa93eb87dcf620fa1b87924975bcd15811d625802aabcfc16792176b6480a",
+      "payload_sha256": "b7ed7057ecd63cdd3945a116eaf2b2f9570298b7902418f3431f5912809d15d7",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1985,
+      "key": [
+        "tilelang-ascend",
+        "MishFwdOp",
+        "yolo-p3-float16"
+      ],
+      "api": "ops-nn::aclnnMish",
+      "device_us": 69.57853333333334,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-mish-selu-alternative-1985-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "735a0fa2ffd396e4d5185a3cdcba0afaa489cc1328765bd0264f2a04f7573ed1",
+      "payload_sha256": "7dfeccf022257be70b4e05f10293b60974cf5287b61f994b1d2d8f9542b6a056",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1986,
+      "key": [
+        "tilelang-ascend",
+        "MishFwdOp",
+        "yolo-p4-bfloat16"
+      ],
+      "api": "ops-nn::aclnnMish",
+      "device_us": 36.40673333333333,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-mish-selu-alternative-1986-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "a8343f0bc3d138d4345dceefadf3553196ef9c9ec34c673e33e151f714bc2497",
+      "payload_sha256": "372e140fade6a5df8d3a80b701b887acbd7bbe79496236320532ec57cd12dc02",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1987,
+      "key": [
+        "tilelang-ascend",
+        "MishFwdOp",
+        "yolo-p4-float16"
+      ],
+      "api": "ops-nn::aclnnMish",
+      "device_us": 36.57673333333334,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-mish-selu-alternative-1987-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "192e174c3472adcc07146ed0e82c814db7fa06d997a5101706253e4d85f08662",
+      "payload_sha256": "275fb0c6a0b8139f939b456e0233c507552fb8b7200797abaf39c444863d067f",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2053,
+      "key": [
+        "tilelang-ascend",
+        "SeluFwdOp",
+        "snn-fc-wide-bfloat16"
+      ],
+      "api": "ops-nn::aclnnSelu",
+      "device_us": 67.3434,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-mish-selu-alternative-2053-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "bcd2f4158d9249233b64ed644bc0aec452640c59eca04d6b03c66502221d2f19",
+      "payload_sha256": "741b362155b773b9404778901c80e7e2dd45829b0124ce47f97efdf05caebbb1",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2054,
+      "key": [
+        "tilelang-ascend",
+        "SeluFwdOp",
+        "snn-fc-wide-float16"
+      ],
+      "api": "ops-nn::aclnnSelu",
+      "device_us": 67.58433333333333,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-mish-selu-alternative-2054-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "7c85d0640eaf29be2a36d546a9f05d831f85fb3c90fedd02ec6a8a1071f5cfba",
+      "payload_sha256": "47bc8c4370974e774ce447160963a9bf32e69ffec1fa9f3bd011687eeb327958",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2055,
+      "key": [
+        "tilelang-ascend",
+        "SeluFwdOp",
+        "snn-fc-bfloat16"
+      ],
+      "api": "ops-nn::aclnnSelu",
+      "device_us": 35.45386666666667,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-mish-selu-alternative-2055-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "a09c2824f0fc025cfee10b775f6d8dffa9edb78823c4ebddfa433fbfc23000cc",
+      "payload_sha256": "4d0b2d8c3ae3e7c22a7cb766be662718ac6fb116c840ad9d653ab7a2a6e966f8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 2056,
+      "key": [
+        "tilelang-ascend",
+        "SeluFwdOp",
+        "snn-fc-float16"
+      ],
+      "api": "ops-nn::aclnnSelu",
+      "device_us": 35.35380000000001,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-mish-selu-alternative-2056-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "701e010a69035714c38fe17d31692b95f3aa7b2288b95a250fd71330146d0e09",
+      "payload_sha256": "e4f5cf4fc4186303ae19d825c8f64faaf3b2571e8dbb574da19b13b7a491bfdd",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

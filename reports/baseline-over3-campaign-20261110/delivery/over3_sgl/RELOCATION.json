@@ -1,0 +1,26 @@
+{
+  "mul_layout": {
+    "original_path": "reports/baseline-over3-campaign-20261110/sgl-server1/sgl_layout_v1.py",
+    "original_sha256": "2461f0407fd3ff4c93249db9d642818590aa7bab1ef2b30ee8a9dba89fa18159",
+    "packaged_sha256": "d84bbb9322530c9ea53e4dd94b8c1ca1cf3eb6ca4f575d296444554946e69826",
+    "changes": "Only module import namespace and vendor ROOT relocation; factory/run bodies unchanged."
+  },
+  "addsub_layout": {
+    "original_path": "reports/baseline-over3-campaign-20261110/sgl-addsub-server1/sgl_layout_v3.py",
+    "original_sha256": "5333a8c3c1dc470181c07f2f3e0449c5bb80bd60f6b6dc7bc31c18de25d485fa",
+    "packaged_sha256": "6363120154ca084d6f9f2636693548f7c41bd4d1ac2a9bb6776eabe2e390082e",
+    "changes": "Only module import namespace and vendor ROOT relocation; factory/run bodies unchanged."
+  },
+  "cnn_layout": {
+    "original_path": "reports/baseline-over3-campaign-20261110/sgl-cnn-server2/sgl_layout_v3.py",
+    "original_sha256": "666832f5bc252e47ec4cc31d1c8ed5da752419b444d7879c25221427526ec66c",
+    "packaged_sha256": "d7fdd7c5384a32b320aeebea1c816a2df54402ee4847b739ce03db48cf3efbdb",
+    "changes": "Only module import namespace and vendor ROOT relocation; factory/run bodies unchanged."
+  },
+  "pool_layout": {
+    "original_path": "reports/baseline-over3-campaign-20261110/sgl-pool-api-server1/sgl_layout_v2.py",
+    "original_sha256": "29d4860778405eb214d73a69cb2e672ee27a1f65775cbf8404e5d6bb71506063",
+    "packaged_sha256": "b2a56f11bc7d762f8507f11f7cf187a38b284cfac252d644a9174f21980c2242",
+    "changes": "Only relative module import; factory AST identical"
+  }
+}

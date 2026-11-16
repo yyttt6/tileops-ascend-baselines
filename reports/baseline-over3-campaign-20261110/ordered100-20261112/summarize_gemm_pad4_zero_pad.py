@@ -1,0 +1,17 @@
+from pathlib import Path
+import json,hashlib,datetime
+P=Path(__file__).resolve().parent
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+def summarize():
+ original=P/'rollout-ops-nn-gemm-pad4-497-l1-v1.CHECKPOINT.json';candidate=P/'rollout-gemm-pad4-zero-pad-497-v2.CHECKPOINT.json';b=json.loads(original.read_text());n=json.loads(candidate.read_text());br=b['batch']['results'][0];nr=n['batch']['results'][0];audit=json.loads((P/'ROLLOUT_AUDIT.json').read_text())
+ assert br['ordinal']==nr['ordinal']==497 and br['status']==nr['status']=='raw_checked_pending_guard'
+ for field in ['key','payload_sha256','prepare_sha256','api','reference_policy','metric']:assert br[field]==nr[field],field
+ assert b['batch']['runtime']==n['batch']['runtime'] and b['guard']['boot_id']==n['guard']['boot_id'] and b['guard']['device_node']==n['guard']['device_node'];assert br['timing']['measurement_protocol']==nr['timing']['measurement_protocol']=='ascend950-isolated-ffts-v3'
+ sources=[];libraries=[]
+ for cp,e in [(original,b),(candidate,n)]:
+  a=audit[cp.name.removesuffix('.CHECKPOINT.json')];assert a['checkpoint_sha256']==sha(cp) and a['guard_valid'] and next(r for r in a['rows'] if r['ordinal']==497)['status']=='formal_raw_and_full_output_verified';f=P/'remote/runs'/e['tag']/'SOURCE.json';assert sha(f)==e['batch']['source_sha256'];sources.append(json.loads(f.read_text()));libraries.append(json.loads((P/'remote/runs'/e['tag']/'LOADED_LIBRARIES.json').read_text()))
+ expected={str(Path('/opt/baseline-over3-20261110/ordered100-20261112')/name):sha(P/name) for name in ['worker_ops_nn_gemm_pad4_zero_pad_v2.py','ops_nn_gemm_pad4_zero_pad_support.py','OPS_NN_GEMM_PAD4_ZERO_PAD_CPU_PROOF.json']};assert all(sources[1].get(k)==h for k,h in expected.items()),'Candidate actual SOURCEroute missing';common=sources[0].keys()&sources[1].keys();diff={k:[sources[0][k],sources[1][k]] for k in common if sources[0][k]!=sources[1][k]};assert not diff,diff;assert all(libraries[0][k]==libraries[1][k] for k in libraries[0].keys()&libraries[1].keys());private=lambda libs:{k:v for k,v in libs.items() if '/ops-nn-gemm-pad4-v1/' in k};assert private(libraries[0])==private(libraries[1]) and private(libraries[0]);reduction=100*(1-nr['device_us']/br['device_us'])
+ row={'ordinal':497,'key':nr['key'],'guard_checker_15raw_valid':True,'original_checkpoint':original.name,'candidate_checkpoint':candidate.name,'original_device_us':br['device_us'],'candidate_device_us':nr['device_us'],'device_reduction_percent':reduction,'original_host_us_diagnostic':br['host_us_diagnostic'],'candidate_host_us_diagnostic':nr['host_us_diagnostic'],'selection':'candidate' if reduction>=5 else 'original_conservative_small_gain_or_regression','protocol':nr['timing']['measurement_protocol'],'common_SOURCE_differences':diff,'private_loaded_library_SHAs_equal':True,'comparison':'Samehost/currentruntime nearcontemporaneous originalthen candidate, matchedpayload/protocol/boot/source/nativebinaries; no randomizedcausal claim','not_final_under3_ratio_closure':True};out={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'paired_cases':1,'rows':[row],'coverage_increment':0,'no_historical_or_public_ratio_rewrite':True}
+ for f in [P/'OPS_NN_GEMM_PAD4_ZERO_PAD_CURRENT.json',P.parent/'delivery/ordered_gemm_pad4_zero_pad/ROUTES.json']:
+  f.parent.mkdir(parents=True,exist_ok=True);f.write_text(json.dumps(out,indent=2)+'\n')
+ return out

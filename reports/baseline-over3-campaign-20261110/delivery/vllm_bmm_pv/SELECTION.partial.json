@@ -1,0 +1,22 @@
+{
+  "pairs": [],
+  "pending": [
+    {
+      "batch": "vllm-bmm-pv-server1",
+      "index": 0,
+      "case": "mha-decode-pv-float16"
+    },
+    {
+      "batch": "vllm-bmm-pv-server1",
+      "index": 1,
+      "case": "mha-decode-pv-bfloat16"
+    }
+  ],
+  "windows": {
+    "screening": 0,
+    "isolated": 0
+  },
+  "metric": "device latency; HOST_TIMING remains separate diagnostic",
+  "historical_ratio_update": false,
+  "caveat": "Current Torch2.13 vs historical2.10; frozen TileOPs denominator has not been realigned. No mixed-protocol or crossenvironment ratio claim."
+}

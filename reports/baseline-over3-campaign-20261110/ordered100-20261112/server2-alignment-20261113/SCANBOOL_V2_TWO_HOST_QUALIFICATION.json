@@ -1,0 +1,56 @@
+{
+  "two_host_functional_and_private_kernel_verified": true,
+  "scope": "Only2 fulloutput/input small calls perhost, 2same-library original native APIs and originalINT32marker; frozen4 originalchecker/formal15 still required",
+  "qualified_ops": [
+    "LogicalOr",
+    "NotEqual"
+  ],
+  "hosts": [
+    {
+      "host": "openlibing-DevEnv-661495",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER1_SCANBOOL_V2_QUALIFICATION.json",
+      "guard_record_sha256": "4728b8d719d20ea052cb64b0bc708afa2b5ff8aaef137cc6c2c5f055446c14e7",
+      "result": "server1-scanbool-v2-qualification-155109311560.json",
+      "result_sha256": "6d0acf798ac6f2b23164323c89e5551df57acb7a3f9589d7b08bb8201bc89fa5",
+      "log_sha256": "119a0615b4d3fea2759eb6502b4b94f7c9bd2a49fca1ded13396d710a3746170",
+      "checked_2_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(1123595,python):2026-11-14-15:49:56.659.808 [op_kernel.cpp:397][NNOP][BinLoadImpl][1123595] OpName:[aclnnLogicalOr_0_LogicalOrAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab31acf398, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v2/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/logical_or_apt/LogicalOr_BOOL_high_performance.o",
+        "[DEBUG] OP(1123595,python):2026-11-14-15:49:56.680.114 [op_kernel.cpp:397][NNOP][BinLoadImpl][1123595] OpName:[aclnnNeTensor_1_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab31b45358, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v2/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_BOOL_high_performance.o",
+        "[DEBUG] OP(1123595,python):2026-11-14-15:49:56.708.771 [op_kernel.cpp:397][NNOP][BinLoadImpl][1123881] OpName:[aclnnNeScalar_7_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xfffd583a8a78, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v2/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_INT32_high_performance.o"
+      ],
+      "qualified_ops": [
+        "LogicalOr",
+        "NotEqual"
+      ],
+      "package_sha256": "b832f6a8e9bb48199692e5c220125c5cb42f3f62dcfe23db7608f2ccdd349070",
+      "not_formal_baseline_acceptance": true
+    },
+    {
+      "host": "openlibing-DevEnv-055409",
+      "status": "complete_original_APIs_functional_and_private_native_paths_verified",
+      "private_original_device_kernels_verified": true,
+      "guard_record": "SERVER2_OPSMATH_SCANBOOL_V2_QUALIFICATION.json",
+      "guard_record_sha256": "194118f9bf64f0a32b05241a9d4bf9144ddf141e39fa1e34d6729befb3e5375f",
+      "result": "server2-opsmath-scanbool-v2-qualification-154903329488.json",
+      "result_sha256": "6dfdc402e37e33251fa0a09078305c344b35370a7faef0d8c740667d040b00e0",
+      "log_sha256": "a3c0c56a73defe060e6a84cbcb2ef4fb0b7250e42c3033abe0f3d753ade98602",
+      "checked_2_outputs_inputs_and_marker": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(327515,python):2026-11-14-15:47:49.712.201 [op_kernel.cpp:397][NNOP][BinLoadImpl][327515] OpName:[aclnnLogicalOr_0_LogicalOrAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab36bc2bb8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v2/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/logical_or_apt/LogicalOr_BOOL_high_performance.o",
+        "[DEBUG] OP(327515,python):2026-11-14-15:47:49.733.064 [op_kernel.cpp:397][NNOP][BinLoadImpl][327515] OpName:[aclnnNeTensor_1_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab36c38b78, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v2/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_BOOL_high_performance.o",
+        "[DEBUG] OP(327515,python):2026-11-14-15:47:49.766.046 [op_kernel.cpp:397][NNOP][BinLoadImpl][327802] OpName:[aclnnNeScalar_7_NotEqualAiCore] Register Kernel succ on dev[0], binHandle: 0xfffd543a8a78, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-scanbool-v1/private-v2/vendors/allpairs_math_scanbool_math/op_impl/ai_core/tbe/kernel/ascend950/not_equal_apt/NotEqual_INT32_high_performance.o"
+      ],
+      "qualified_ops": [
+        "LogicalOr",
+        "NotEqual"
+      ],
+      "package_sha256": "b832f6a8e9bb48199692e5c220125c5cb42f3f62dcfe23db7608f2ccdd349070",
+      "not_formal_baseline_acceptance": true
+    }
+  ],
+  "package_sha256": "b832f6a8e9bb48199692e5c220125c5cb42f3f62dcfe23db7608f2ccdd349070",
+  "qualified_at": "2026-11-14T15:51:44.662140+00:00"
+}

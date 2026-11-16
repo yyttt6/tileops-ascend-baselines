@@ -1,0 +1,1 @@
+13 exact TileKernels dequant routes. Only skip F.pad when every pad value is zero; whole original native API/casts/scale expansion preserved. Original cases, precision and tolerance retained. CPU27 plus original fulloutput15raw/guard eachcandidate verified. Runtime/source identities attached. Staged only, no shared registry install or historical/web ratio replacement.

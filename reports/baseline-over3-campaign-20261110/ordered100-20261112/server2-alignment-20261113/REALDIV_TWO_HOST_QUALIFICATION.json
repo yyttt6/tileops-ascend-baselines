@@ -1,0 +1,61 @@
+{
+  "two_host_functional_and_private_kernel_verified": true,
+  "two_host_scope": "F16/F32 same/broadcast4calls perhost + originalINT32marker, actualprivateRealDiv kernelpath and SHA; no frozenformal/ratio claim",
+  "hosts": [
+    {
+      "host": "openlibing-DevEnv-661495",
+      "state": "SERVER1_REALDIV_CAPI_V2_QUALIFICATION.json",
+      "state_sha256": "86ce2dde2ad536d5a7a555475c82c056ab7bfa8f38ba0af4f14aea6fea11f5fc",
+      "result": "server1-realdiv-capi-v2-qualification-142005460240.json",
+      "result_sha256": "11d2fbc02d4a875e4265111c5d3c7b6692a39c211d9191479cfb8ba223afb738",
+      "log_sha256": "04620e8ecd828d0e9cfb3af2d7217365ee3ed65df0cf5955829e368393821f21",
+      "guard_performance_valid": true,
+      "full_output_and_inputs_verified": true,
+      "original_INT32_marker_passed": true,
+      "native_entry": "full original aclnnDivGetWorkspaceSize+aclnnDiv",
+      "private_original_device_kernels_verified": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(845319,python):2026-11-14-14:18:52.825.158 [op_kernel.cpp:397][NNOP][BinLoadImpl][845319] OpName:[aclnnDiv_0_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab0abdc8d8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT16_high_precision.o",
+        "[DEBUG] OP(845319,python):2026-11-14-14:18:52.853.881 [op_kernel.cpp:397][NNOP][BinLoadImpl][845319] OpName:[aclnnDiv_2_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab0ac63608, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o"
+      ],
+      "RealDiv_native_launches": 4,
+      "objects": {
+        "op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+        "op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_performance.o": "90ba512c2d72da062c8248aa67798711aa85896a6d54a79781abf3b220682501",
+        "op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT16_high_performance.o": "e8fbf2a9c40fef48e1573a34d37bb92f62d522820eb98b1c25de230ac3b53dc5",
+        "op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT16_high_precision.o": "529c5a0c94165c05bf26493b2027abe943ebaf56e0b32fb3e4e2f50a5be4c5b8"
+      },
+      "package_manifest_sha256": "70c0b031f6a350a9b130b40de7158e241602f35a2709d76e2541cfba9805a416",
+      "not_baseline_or_performance_acceptance": true
+    },
+    {
+      "host": "openlibing-DevEnv-055409",
+      "state": "SERVER2_OPSMATH_REALDIV_CAPI_V2_QUALIFICATION.json",
+      "state_sha256": "6fd2d08cacd6cadb77f98765ff55e2ebdba88f2efd8a8ac1d0fe3acf759d5be4",
+      "result": "server2-opsmath-realdiv-capi-v2-qualification-141910839140.json",
+      "result_sha256": "8a71ae039ab37672c8be1394c513262b66a3af3a0d6382982a0580f667d7ecac",
+      "log_sha256": "e00031b89aa939b3d9435aaf4820d531970fdbbc02cf9481a56e7ea40113d2c5",
+      "guard_performance_valid": true,
+      "full_output_and_inputs_verified": true,
+      "original_INT32_marker_passed": true,
+      "native_entry": "full original aclnnDivGetWorkspaceSize+aclnnDiv",
+      "private_original_device_kernels_verified": true,
+      "actual_private_kernel_registration": [
+        "[DEBUG] OP(3874567,python):2026-11-14-14:18:06.297.818 [op_kernel.cpp:397][NNOP][BinLoadImpl][3874567] OpName:[aclnnDiv_0_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaaafd0f3908, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT16_high_precision.o",
+        "[DEBUG] OP(3874567,python):2026-11-14-14:18:06.313.893 [op_kernel.cpp:397][NNOP][BinLoadImpl][3874567] OpName:[aclnnDiv_2_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaaafd17a638, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o"
+      ],
+      "RealDiv_native_launches": 4,
+      "objects": {
+        "op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+        "op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_performance.o": "90ba512c2d72da062c8248aa67798711aa85896a6d54a79781abf3b220682501",
+        "op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT16_high_performance.o": "e8fbf2a9c40fef48e1573a34d37bb92f62d522820eb98b1c25de230ac3b53dc5",
+        "op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT16_high_precision.o": "529c5a0c94165c05bf26493b2027abe943ebaf56e0b32fb3e4e2f50a5be4c5b8"
+      },
+      "package_manifest_sha256": "70c0b031f6a350a9b130b40de7158e241602f35a2709d76e2541cfba9805a416",
+      "not_baseline_or_performance_acceptance": true
+    }
+  ],
+  "source_pin": "64322f6487162c0934ec0364af57ed2f51175a03",
+  "no_source_kernel_flags_checker_precision_change": true,
+  "qualified_at": "2026-11-14T14:20:42.106223+00:00"
+}

@@ -1,0 +1,249 @@
+{
+  "checked_at": "2026-11-14T22:59:44.348229+00:00",
+  "full_API_and_original_flush_and_private_kernel_verified": true,
+  "execution_hostname": "a5d0b50dc68f",
+  "native_package_manifest_sha256": "dc454a1e54c952180bd77af8048699a01b8ff8bfded9e43611921a95d1e55577",
+  "qualified_API_source_sha256": {
+    "ops_math_pool_indices_api.py": "d931fae4ffd36ddc25dbb2968c11f20d5ba808a595f0a4f1ef17e63dde4ee630",
+    "ops_math_pool_indices_support.py": "c9afd9069ff81d75c915d2f0b303e30410df913d09c47c8aa0beeee4eb4272a8",
+    "ops_math_l1_api.py": "cbe5aadece2353fa3cb7e3940f27c76d8bbbaa0c708b1739629610d1d578a302"
+  },
+  "private_load_and_launch_per_complete_group": [
+    {
+      "marker": {
+        "ndim": 1,
+        "shape": [
+          2,
+          3,
+          13
+        ],
+        "dtype": "torch.float16",
+        "adaptive": false,
+        "ties": true
+      },
+      "launches": [
+        {
+          "kernel": "ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance.o",
+          "sha256": "f00abc6e90536cfccf32302119f58d9db6de062b143b5c8553eec38846125f99",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:38.623.487 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_2_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09104698, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:38.626.071 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040842c00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance.o",
+          "sha256": "f00abc6e90536cfccf32302119f58d9db6de062b143b5c8553eec38846125f99",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:38.623.487 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_2_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09104698, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:38.764.576 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040842c00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "ndim": 2,
+        "shape": [
+          1,
+          2,
+          7,
+          9
+        ],
+        "dtype": "torch.float32",
+        "adaptive": false,
+        "ties": false
+      },
+      "launches": [
+        {
+          "kernel": "ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance.o",
+          "sha256": "7058d2988b8f829551bb20eaceda248ec11679c88619be5d0d48bd744490697f",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:38.835.290 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_28_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09296b48, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:38.837.409 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040934200, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance.o",
+          "sha256": "7058d2988b8f829551bb20eaceda248ec11679c88619be5d0d48bd744490697f",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:38.835.290 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_28_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09296b48, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:38.915.208 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040934200, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance.o",
+          "sha256": "7058d2988b8f829551bb20eaceda248ec11679c88619be5d0d48bd744490697f",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:38.835.290 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_28_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09296b48, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:38.930.961 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040934200, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance.o",
+          "sha256": "7058d2988b8f829551bb20eaceda248ec11679c88619be5d0d48bd744490697f",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:38.835.290 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_28_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09296b48, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:38.995.837 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_7a09f5b7af4126487a7f726a9aac7548_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040934200, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "ndim": 3,
+        "shape": [
+          1,
+          2,
+          5,
+          7,
+          9
+        ],
+        "dtype": "torch.bfloat16",
+        "adaptive": false,
+        "ties": false
+      },
+      "launches": [
+        {
+          "kernel": "ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "sha256": "bf29bd457b8632274d5d42798e5ab89f73d260d96965f843adddca43a4b5f903",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:39.062.285 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_112_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09309898, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:39.064.460 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040951300, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "sha256": "bf29bd457b8632274d5d42798e5ab89f73d260d96965f843adddca43a4b5f903",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:39.062.285 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_112_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09309898, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:39.172.522 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040951300, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "sha256": "bf29bd457b8632274d5d42798e5ab89f73d260d96965f843adddca43a4b5f903",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:39.062.285 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_112_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09309898, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:39.214.338 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040951300, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "sha256": "bf29bd457b8632274d5d42798e5ab89f73d260d96965f843adddca43a4b5f903",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:39.062.285 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_112_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09309898, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:39.333.464 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040951300, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "sha256": "bf29bd457b8632274d5d42798e5ab89f73d260d96965f843adddca43a4b5f903",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:39.062.285 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_112_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09309898, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:39.362.184 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040951300, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "sha256": "bf29bd457b8632274d5d42798e5ab89f73d260d96965f843adddca43a4b5f903",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:39.062.285 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_112_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09309898, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:39.416.389 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040951300, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "sha256": "bf29bd457b8632274d5d42798e5ab89f73d260d96965f843adddca43a4b5f903",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:39.062.285 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_112_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09309898, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:39.482.415 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040951300, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "sha256": "bf29bd457b8632274d5d42798e5ab89f73d260d96965f843adddca43a4b5f903",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:39.062.285 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_112_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09309898, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:39.508.026 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_c956995141babe6b46a07ca335faa2f6_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040951300, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "ndim": 2,
+        "shape": [
+          1,
+          2,
+          7,
+          9
+        ],
+        "dtype": "torch.float16",
+        "adaptive": true,
+        "ties": true
+      },
+      "launches": [
+        {
+          "kernel": "ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_10001",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance.o",
+          "sha256": "f00abc6e90536cfccf32302119f58d9db6de062b143b5c8553eec38846125f99",
+          "load_line": "[DEBUG] OP(2415598,python):2026-11-14-22:57:38.623.487 [op_kernel.cpp:397][NNOP][BinLoadImpl][2415598] OpName:[aclnnMaxDim_2_Max2AiCore] Register Kernel succ on dev[0], binHandle: 0xaaab09104698, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-indices-v1/private-v1/vendors/allpairs_math_poolindices_math/op_impl/ai_core/tbe/kernel/ascend950/arg_max_with_value_apt/ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2415598,python):2026-11-14-22:57:39.598.276 [aix_starsv2.cc:666] 2415598 StreamLaunchKernelV2: stream_id=61, kernel_name=ArgMaxWithValue_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_10001, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=5, arg_size=208, mixType=2, coreDim=1, taskRation=0, kernelVfType=2, dynamicSmSize=0, addr1=0x120040842c00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    }
+  ],
+  "original_reference_and_full_inputs_verified": [
+    {
+      "ndim": 1,
+      "shape": [
+        2,
+        3,
+        13
+      ],
+      "dtype": "torch.float16",
+      "adaptive": false,
+      "ties": true,
+      "both_full_outputs_exact": true,
+      "inputbits_preserved": true,
+      "original_coordinate_indices_and_first_ties_verified": true
+    },
+    {
+      "ndim": 2,
+      "shape": [
+        1,
+        2,
+        7,
+        9
+      ],
+      "dtype": "torch.float32",
+      "adaptive": false,
+      "ties": false,
+      "both_full_outputs_exact": true,
+      "inputbits_preserved": true,
+      "original_coordinate_indices_and_first_ties_verified": true
+    },
+    {
+      "ndim": 3,
+      "shape": [
+        1,
+        2,
+        5,
+        7,
+        9
+      ],
+      "dtype": "torch.bfloat16",
+      "adaptive": false,
+      "ties": false,
+      "both_full_outputs_exact": true,
+      "inputbits_preserved": true,
+      "original_coordinate_indices_and_first_ties_verified": true
+    },
+    {
+      "ndim": 2,
+      "shape": [
+        1,
+        2,
+        7,
+        9
+      ],
+      "dtype": "torch.float16",
+      "adaptive": true,
+      "ties": true,
+      "both_full_outputs_exact": true,
+      "inputbits_preserved": true,
+      "original_coordinate_indices_and_first_ties_verified": true
+    }
+  ],
+  "guard_sha256": "3e03224b62f48e28f33b7c2f119f2cb7cc603c2a4f3ee79532bdbafed4fbf857",
+  "result_sha256": "0a9106031c2967d7d6c9c5587675610816a0fad0d3352f102104fbe178e4b22c",
+  "log_sha256": "5576ce13bb59d940b6c3b7fd79dd7728bf21fdf70e53887d4a2e9e3754a31a98",
+  "no_formal_15raw_or_baseline_coverage": true,
+  "scope": "20original poolindices cases complete aclnnMaxDim both outputs plus original full window/coordinate table/gather AST. Original tie/dilation/pad/ceil/adaptive behavior, all packing/casts/workspace/copy timed. No kernel/checker/precision changes."
+}

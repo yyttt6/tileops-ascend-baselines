@@ -1,0 +1,161 @@
+{
+  "checked_at": "2026-11-16T04:29:00.836455+00:00",
+  "rows": [
+    {
+      "ordinal": 487,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-b32-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 421.32973333333337,
+      "checkpoint": "rollout-golden42-nn-gemm7-487-golden42-routefix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "bbb7a55889ac1de9349271f0746da67e5d8a1d60ddb98c576397a0a42b1cb27b",
+      "payload_sha256": "b2ae93b04eb7e011dd621c2ef9e9dd096b8860a44cdc0a5de0b1236eb6bae29f",
+      "prepare_sha256": "5688c7b88d3193b1986b88bdf137197eaf8f89c5652d8e404327d9b3ef9afcc0",
+      "full_checker_15raw_guard_valid": true,
+      "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "golden_correction_receipt_sha256": "ecfb9ed7433f79224e95e6418e07b22c87331ee86ffb702e818823aa67942398",
+      "loaded_private_host_library_bound": true,
+      "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+      "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 489,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m16-mlp-up-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 76.9866,
+      "checkpoint": "rollout-golden42-nn-gemm7-489-golden42-routefix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "2655b26fecf750ae77a504b3d6d7079dd1a7bf82a93e18a372ca70a9cf667ec2",
+      "payload_sha256": "b868848e1f17c7e551178cb02e0b5a5ccc343dedfe2c41e578bb466b933125be",
+      "prepare_sha256": "0a2ce7b5abde427254cdfec6fcd6de4940855c6b766c6032dc53155647aafe07",
+      "full_checker_15raw_guard_valid": true,
+      "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "golden_correction_receipt_sha256": "383cb7f3b4dfc97f4065e70072dd7e4f91b78f2ed328bbd0f71f13388442c549",
+      "loaded_private_host_library_bound": true,
+      "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+      "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 491,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m96-qkv-a-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 159.03466666666665,
+      "checkpoint": "rollout-golden42-nn-gemm7-491-golden42-routefix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "de0578941428642ab62e24ed2989b0dca1d12a5f60c0b1c35f79bbe126b377f4",
+      "payload_sha256": "2cab8d3633caf87263f48c5821438aa4a2a7f3c5a43dcc27be97a0b01d3e3a37",
+      "prepare_sha256": "c1510825da744f0c4914e45d82669b1f8a7d6a333a680892a4e136b3725b3356",
+      "full_checker_15raw_guard_valid": true,
+      "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "golden_correction_receipt_sha256": "f0db966f05ad483149c347e5a0f8e74c5c95b30ae0bb7790349768ff21fb5e25",
+      "loaded_private_host_library_bound": true,
+      "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+      "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 492,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-qkv-a-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 185.70626666666666,
+      "checkpoint": "rollout-golden42-nn-gemm7-492-golden42-routefix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a14bafd67ea097c6d1b1a6a59f6809690e27df603bd83f4b1f4e4dff2ce26039",
+      "payload_sha256": "af91d5d5c8d58be6b52913ae253609d7a2b5e91efa0eed93d482678517c56e8d",
+      "prepare_sha256": "2d334597b411815d23886c136793beb91cf8bf83ad9e9654df677bb25df9279a",
+      "full_checker_15raw_guard_valid": true,
+      "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "golden_correction_receipt_sha256": "e5a8c819bb799a411860978f3b7df7d00e149f7f8fe413fc9e199e03f706ff85",
+      "loaded_private_host_library_bound": true,
+      "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+      "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 493,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m32-mlp-up-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 111.04666666666667,
+      "checkpoint": "rollout-golden42-nn-gemm7-493-golden42-ownes-runtime-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c7ec523c001e858429e57e1a39b785c914b5825b657a8d2ad1cbf1b7e24d57bf",
+      "payload_sha256": "34d5530ddd217037bd6ac298c035bd3ee760c0eb019bf4c50f5a5aa3b058234f",
+      "prepare_sha256": "d5a186568469a39079e7dfbf96bfb642a473aa2bc13b50347b7a03971e4cfb34",
+      "full_checker_15raw_guard_valid": true,
+      "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "golden_correction_receipt_sha256": "006712f6f54cd98d5cafadda54b9f83df49a299fd942c8f60c9d9a46769edab0",
+      "loaded_private_host_library_bound": true,
+      "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+      "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 495,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "qwen3-8b-down-prefill-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 564.1836,
+      "checkpoint": "rollout-golden42-nn-gemm7-495-golden42-ownes-runtime-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a6d3a38048974348904f0cdc99935a72314ecb5689e0e691b734c8ba8ab9b4ca",
+      "payload_sha256": "2f30e2b7282c5a3d8bf95aaae915ada51e279cc1d74db82fb9239ba1042db984",
+      "prepare_sha256": "f7d2a7a2169dba8903b886d898542754dba1b98459e59be3f70371360a3d127f",
+      "full_checker_15raw_guard_valid": true,
+      "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "golden_correction_receipt_sha256": "55bcbf4284a7fba887cd0dcf4d82d2a1061fa5b55360bc52171b4ea93872d080",
+      "loaded_private_host_library_bound": true,
+      "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+      "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 498,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "vit-l16-in21k-head-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 492.1642,
+      "checkpoint": "rollout-golden42-nn-gemm7-498-golden42-ownes-runtime-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "1b05d14b19686b997b247a0c2fa28763927a2a10a47c305f740f546670ec4cf0",
+      "payload_sha256": "54cc7a77132b23479634d5ed6c612d1240a16900e963ec97dc58129219718e86",
+      "prepare_sha256": "100cba487754b9b4e72438ff30b7e176677fd6804c2974c49dbbd81f869be729",
+      "full_checker_15raw_guard_valid": true,
+      "golden_manifest_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "golden_correction_receipt_sha256": "da382596a684f1cf1689c1b2d0a525b0d23902a80c002559bd2ba2a73a16c081",
+      "loaded_private_host_library_bound": true,
+      "private_device_ELF_source_identity_and_all15_profile_names_bound": true,
+      "private_binary_provenance_origin_preserved": "original H1 qualification; new H1/H2 runtime verified by this actual guarded case",
+      "new_pairs": 0,
+      "new_final_closures": 0
+    }
+  ],
+  "accepted_complete_APIs": 7,
+  "staged_not_published": true
+}

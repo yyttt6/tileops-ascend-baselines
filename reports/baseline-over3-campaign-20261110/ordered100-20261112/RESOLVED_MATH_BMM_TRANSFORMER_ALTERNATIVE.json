@@ -1,0 +1,187 @@
+{
+  "checked_at": "2026-11-16T05:15:06.066000+00:00",
+  "accepted_complete_APIs": 10,
+  "rows": [
+    {
+      "ordinal": 237,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-512-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 336.9136,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-237-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "bdbe02e8e880d9ce59c45970365925db82ed369f5b926b70b05cc4fb4b28897c",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "bd36bd8f406a639c1cbe861ecf2667c86d23bd3375488f4e344be3041389c5f6",
+      "prepare_sha256": "d3c069f6df99b12b61436bfe6fa729f107eae212750d6fa3a0e8a32867669bbd",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 239,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-256-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 531.4346666666667,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-239-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "bba1ebb78d2c68953921f8b4ba6048bac5cfb65e335f7f605a0cd7cc01a95841",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "cf38c99ba7f239629e190534d8a0a26781df59064048a688a2a070ce41b1c7d3",
+      "prepare_sha256": "287f25ec571029b3d6d9a78a5286497cd2e82b127abab2d5eac9a70021720865",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 242,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-pv-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 1551.7319333333332,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-242-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a85eaa87747db8d06001ee0cbd15495a1e28fae6d3f76720268ff9f5401af3f3",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "8884f55601e845d787cd2e5db44a28eabcc2f0203884bf37dc91e268ccda0d36",
+      "prepare_sha256": "e1ab45faeb00652f2e6d6767fa87e5cdfeb313fa606671afa7cf6835f819b4ad",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 243,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-1k-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 323.27453333333335,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-243-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "59eb6132ea0e1ea703271708e07dd6f92d7582b42d16d64d5426916f1c6685e5",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "5f6236dba7ad0ce0f6821e2b37666bb242e2dc4183431e860bb4eae575c07bd0",
+      "prepare_sha256": "e243819e7be82a4823e691b8abade7372a36ab58af3c754d847d86b3174f03aa",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 246,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-128-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 107.06993333333334,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-246-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c06a3dc7be6e9782de57431a91302d344e9190aabb3d2885e655fe246203a942",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "8f5b1d9fde77b348efd7268c9db3dbdfac987d56eb140811d2aec5475242c1fb",
+      "prepare_sha256": "7f234192835db1667751d3a298443e57fac9cb5fb5f69f5e1c638c30550b5128",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 247,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-128-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 107.06593333333333,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-247-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ae43bfc143b971531a1b8695dd9e00969b536501d6fb98c4b4f933fffb73ecec",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "1856d97f25ac84e5830fc46ce9bbb449c798ef5b1372d243811c34386c4375c8",
+      "prepare_sha256": "0ab5a8cd4c62c6c9068c09d3ee0c9a68df603fc630ca2482373d4eb6e50408d2",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 241,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "moe-prefill-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 4533.868533333333,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-241-golden42-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "dac65e240080c6b4a97aeaa099ab37b92893923c4f1b593ca840158dcd2ba059",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2750f07b337a94409cb7c44762289332791abb3c351c60b097fa6fe995c0e9a4",
+      "prepare_sha256": "e5e45802ccd04d4d2c142528a0086b906e7aa867976fd3d3bedd96761f7b9f2b",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 244,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 325.01753333333335,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-244-golden42-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "23a9702b9926fc6afc8e92418a6680ca7a92c038f327cdef758208354c57753a",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "9e7108f7dcd5b4420d3f199494fdc9892ca699d7c27044600fd03dc12dabe786",
+      "prepare_sha256": "1ddcbe1b0bf0d1ffc55136d7cf1b0238ba5aab8548e22a809a74ceedfa146705",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 245,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 1554.1445333333334,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-245-golden42-routefix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "15c05b4664b573316202879838a379daf2b6cfda62337c571072ee84e606fc83",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "9dd2ef1f93f74e012cb5fff27d8cb703ffb39da866e206221d006d19b49a5705",
+      "prepare_sha256": "b5e5a4ffb37eaea24d45f45e698357e381def249dad10bc537b4218d257a4935",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 240,
+      "key": [
+        "ops-math",
+        "BmmFwdOp",
+        "square-2k-bfloat16"
+      ],
+      "api": "ops-transformer::original GroupedMatmulAdd independent k-groups",
+      "device_us": 742.6744000000001,
+      "checkpoint": "rollout-math-bmm-transformer-alternative-240-golden42-inputfix-h2-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "e308696e2c51cb00f8c6a81a1c2fe410e4c084d15844a4e7451c726f4ff1de35",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "36717beda779193c725a0d1e42dcb3d92064d88a7e73bd218bce6250e0039a14",
+      "prepare_sha256": "9be9f49ecda0eb8c2cd8ff2cce65328d4ddc32469e877f7050a58cec7e1c66ef",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

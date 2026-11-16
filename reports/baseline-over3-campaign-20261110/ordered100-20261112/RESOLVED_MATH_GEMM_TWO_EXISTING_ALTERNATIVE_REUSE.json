@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-11-16T01:23:21.745033+00:00",
+  "accepted_reused_complete_API_contracts": 2,
+  "rows": [
+    {
+      "ordinal": 283,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "qwen3-8b-gate-up-decode-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 300.2398666666666,
+      "source_ordinal": 488,
+      "checkpoint": "rollout-ops-nn-gemm10-488-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "bdd9575dcccc04eae46282af83dc0174edf22f583f9c038b5838b28e5c82a160",
+      "payload_sha256": "54a6f784be8b675c238b57be8f39c40d844f3bca86aebcd7ec5cecc56a0caf40",
+      "descriptor_sha256": "27768c4330c45ab71ac06ac134b7909632ff46f7dcb991b4a65166bc61201036",
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "complete originalNNGemmAPI on exactinput/descriptor/params/checker/CPUreferencepolicy, alternativeforMathcontract",
+      "original_math_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_actual_old_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "source_actual_old_device_node": "/dev/davinci6",
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/MATH_GEMM_TWO_ALTERNATIVE_REUSE_FULL_AUDIT.json",
+      "audit_sha256": "26a07596e1e388ce83de55f352b5c739857544ef1859e8761b10d5ebb3d3156c",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 285,
+      "key": [
+        "ops-math",
+        "GemmFwdOp",
+        "ds-v3-m1-qkv-a-bfloat16"
+      ],
+      "api": "exact037f902 originalmm/run AST; complete FP32 Matmul CAPI KEEP_DTYPE0, originalpercallfloat32/contiguous/transposes/fullK/outputcast",
+      "device_us": 45.82966666666666,
+      "source_ordinal": 485,
+      "checkpoint": "rollout-ops-nn-gemm10-485-486-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "3026ad3fd14b44fb77a7dc79da445a9fd26e9a328ff7dc454eca13c0be1e40a9",
+      "payload_sha256": "f71be5b253d00658136e68fd89acad1d40bad34b219f2e108a4ee34708010e76",
+      "descriptor_sha256": "767367fb9b750732a2557d69a95164edf47b1220bbc21c0d1c533d18372344f8",
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "complete originalNNGemmAPI on exactinput/descriptor/params/checker/CPUreferencepolicy, alternativeforMathcontract",
+      "original_math_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_actual_old_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "source_actual_old_device_node": "/dev/davinci6",
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/MATH_GEMM_TWO_ALTERNATIVE_REUSE_FULL_AUDIT.json",
+      "audit_sha256": "26a07596e1e388ce83de55f352b5c739857544ef1859e8761b10d5ebb3d3156c",
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "new_native_measurements": 0,
+  "no_publication_or_old_checkpoint_changes": true
+}

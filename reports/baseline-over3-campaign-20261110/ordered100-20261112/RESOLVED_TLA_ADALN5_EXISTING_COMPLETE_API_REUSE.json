@@ -1,0 +1,165 @@
+{
+  "checked_at": "2026-11-16T01:54:40.775740+00:00",
+  "accepted_reused_complete_API_contracts": 5,
+  "rows": [
+    {
+      "ordinal": 1612,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormFwdOp",
+        "llama-8b-prefill-float16"
+      ],
+      "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups",
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "exact input/descriptor/params/original_npu reference policy, original complete vllm API reused explicitly for TLA contract",
+      "original_TLA_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 1120,
+      "checkpoint": "rollout-vllm-adaln-fla-prefill-1120-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "024c9047a92a285f94b2765fdb3dffa3f1535c717fd22cf93b38d9cc9a9e1ce7",
+      "payload_sha256": "e45741516b884d13a5942a46af5062acf1032eca6edad9c3ffd35fb30de3778b",
+      "descriptor_sha256": "df85e764f91e75cdb74ce7d03c363d6efc8bdc61baba1f4091cd3d44ddbe0290",
+      "actual_loaded_ELF_sha256": "8f358503ca8813631616df89e4042f460d8eb4eadfef7e2c11ae56f963d1179b",
+      "source_actual_old_runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/TLA_ADALN5_COMPLETE_API_REUSE_FULL_AUDIT_20261116.json",
+      "audit_sha256": "863e9cc5193483a2f2684deba4a8ed8d62329024995a13195f0ba90f82d0fce6",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1613,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormFwdOp",
+        "llama-8b-prefill-bfloat16"
+      ],
+      "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups",
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "exact input/descriptor/params/original_npu reference policy, original complete vllm API reused explicitly for TLA contract",
+      "original_TLA_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 1121,
+      "checkpoint": "rollout-vllm-adaln-fla-prefill-1121-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "17733c8e5b88eb95c626c8982409d24682aa3b74da295ff853c6ba44f0b62912",
+      "payload_sha256": "178862adec0338d6926fafcf33d5454696727a3d21de750a75e04ded3d94601e",
+      "descriptor_sha256": "5e7d5e16726b8ff2c45dd9cdc6d4d6f27e90b8cf6adcde8d479ee977d5c2aab9",
+      "actual_loaded_ELF_sha256": "688817e4bed334008539946ad3f131dc864425d8329715edf9bb0faae61404f3",
+      "source_actual_old_runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/TLA_ADALN5_COMPLETE_API_REUSE_FULL_AUDIT_20261116.json",
+      "audit_sha256": "863e9cc5193483a2f2684deba4a8ed8d62329024995a13195f0ba90f82d0fce6",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1614,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-float32"
+      ],
+      "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups",
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "exact input/descriptor/params/original_npu reference policy, original complete vllm API reused explicitly for TLA contract",
+      "original_TLA_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 1117,
+      "checkpoint": "rollout-vllm-adaln-fla-defined-1119-1117-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "659cd96948a500a032b216b454b6181ae3154c6f3d1ea5cb50ec3680250b1fe5",
+      "payload_sha256": "1bd10774d4636582964f6c28b54e825fd8406fba02498b177293dfbcbda6a492",
+      "descriptor_sha256": "278c1f18ca8e88392619143c59fd494dfff2ebbb96c2291e4f968765314bc388",
+      "actual_loaded_ELF_sha256": "d87b1d70a982016440b23beb3ad1c9970b1b3e1b3ba94213572c5eae4f81fdc3",
+      "source_actual_old_runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/TLA_ADALN5_COMPLETE_API_REUSE_FULL_AUDIT_20261116.json",
+      "audit_sha256": "863e9cc5193483a2f2684deba4a8ed8d62329024995a13195f0ba90f82d0fce6",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1615,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-bfloat16"
+      ],
+      "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups",
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "exact input/descriptor/params/original_npu reference policy, original complete vllm API reused explicitly for TLA contract",
+      "original_TLA_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 1118,
+      "checkpoint": "rollout-vllm-adaln-fla-defined-1118-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "42780048042311209dbf8bcd1cfa79faf3cb1979266865e98ba508995447673d",
+      "payload_sha256": "4b828c21710817f7056fd07070372bcd5386d65f21eaf072927b0a8e392eb014",
+      "descriptor_sha256": "ecee183d4008135a93a5a9c98b6eafefa1edae52ee28aafce2b55b22c618c76a",
+      "actual_loaded_ELF_sha256": "67c84924b5d4c27dc05ccbeb3669f0cc97992f325eefbed349ede993a637d582",
+      "source_actual_old_runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/TLA_ADALN5_COMPLETE_API_REUSE_FULL_AUDIT_20261116.json",
+      "audit_sha256": "863e9cc5193483a2f2684deba4a8ed8d62329024995a13195f0ba90f82d0fce6",
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1616,
+      "key": [
+        "tilelang-ascend",
+        "AdaLayerNormFwdOp",
+        "dit-xl-2-float16"
+      ],
+      "api": "vllm-ascend::fla._layer_norm_fwd complete LayerNorm independent affine groups",
+      "full_checker_15raw_guard_valid": true,
+      "reuse_type": "exact input/descriptor/params/original_npu reference policy, original complete vllm API reused explicitly for TLA contract",
+      "original_TLA_implementation_not_qualified": true,
+      "new_native_measurements": 0,
+      "source_ordinal": 1119,
+      "checkpoint": "rollout-vllm-adaln-fla-defined-1119-1117-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "659cd96948a500a032b216b454b6181ae3154c6f3d1ea5cb50ec3680250b1fe5",
+      "payload_sha256": "182a5934aeeb96472123abc8e06f5b1f22ad24631469dcd075dfefab7e683481",
+      "descriptor_sha256": "1892cc7d03acd309bbe50372326170cf4572db334da4684399df6859ca93e93b",
+      "actual_loaded_ELF_sha256": "2e052b88f53c9f9b1e5064465d17f5ad1992884d8282273653d4e5552c43ce26",
+      "source_actual_old_runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "current_runtime_comparison_not_inferred": true,
+      "audit": "server2-alignment-20261113/TLA_ADALN5_COMPLETE_API_REUSE_FULL_AUDIT_20261116.json",
+      "audit_sha256": "863e9cc5193483a2f2684deba4a8ed8d62329024995a13195f0ba90f82d0fce6",
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "new_device_measurements": 0,
+  "new_pairs": 0,
+  "new_final_closures": 0,
+  "historical_checkpoint_and_ratios_unchanged": true
+}

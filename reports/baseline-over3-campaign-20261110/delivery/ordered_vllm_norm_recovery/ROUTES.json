@@ -1,0 +1,170 @@
+[
+  {
+    "ordinal": 1178,
+    "key": [
+      "vllm-ascend",
+      "GroupNormFwdOp",
+      "image-affine-bfloat16"
+    ],
+    "selection": "complete_same_pinned_vendor_alternative_API",
+    "candidate_us": 18.1148,
+    "original_compile_failure": "rollout-1178-1181.CHECKPOINT.json",
+    "original_failure_checkpoint_sha256": "702b91b2bb03af30b33427746568d488c9b8231626d5e42d7dfd151b74a8f468",
+    "accepted_checkpoint": "rollout-vllm-norm-candidate-1178.CHECKPOINT.json",
+    "accepted_checkpoint_sha256": "6ee446a330836dad4e0e42ea6425cd23de7a6aa6200fafba351fc6e34fa8a31a",
+    "api": "vllm-ascend::layer_norm_fwd_npu(group_size=group_elements)",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "full_checker_15raw_guard_valid": true,
+    "helpers": {
+      "vllm_norm_api.py": "ce43ebc291585276dc6a86cefc6ea35e326a3fb691098e016b343d727b6b81c6"
+    },
+    "current_valid_selection_only_no_old_new_speedup": true
+  },
+  {
+    "ordinal": 1179,
+    "key": [
+      "vllm-ascend",
+      "GroupNormFwdOp",
+      "image-affine-float16"
+    ],
+    "selection": "complete_same_pinned_vendor_alternative_API",
+    "candidate_us": 18.040666666666667,
+    "original_compile_failure": "rollout-1179-1182.CHECKPOINT.json",
+    "original_failure_checkpoint_sha256": "1af557c25177e73349ee916f8fa1a0da65891e12acb17636923d83dbea01612c",
+    "accepted_checkpoint": "rollout-vllm-norm-candidate-1179-expand1.CHECKPOINT.json",
+    "accepted_checkpoint_sha256": "6046c346810bbfd037ca4c58045033065c7e4d90df6c6bd39720113f46a40630",
+    "api": "vllm-ascend::layer_norm_fwd_npu(group_size=group_elements)",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "full_checker_15raw_guard_valid": true,
+    "helpers": {
+      "vllm_norm_api_v2.py": "17bba4d855f61a01d4592206b371f397eff46006bfa299fbc7ff88ee1f416852"
+    },
+    "current_valid_selection_only_no_old_new_speedup": true
+  },
+  {
+    "ordinal": 1181,
+    "key": [
+      "vllm-ascend",
+      "GroupNormFwdOp",
+      "image-bfloat16"
+    ],
+    "selection": "complete_same_pinned_vendor_alternative_API",
+    "candidate_us": 15.599933333333333,
+    "original_compile_failure": "rollout-1181-1182.CHECKPOINT.json",
+    "original_failure_checkpoint_sha256": "ab04dadc8afec6cbcd58bb85fea347dbbb75a938d7afff5d99967849541f1b51",
+    "accepted_checkpoint": "rollout-vllm-norm-candidate-1181-expand1.CHECKPOINT.json",
+    "accepted_checkpoint_sha256": "fbd9eaf3d144ae9f82fdc7c9d5e970ee598f9ce2aad9fb85379a7930d4d10b3a",
+    "api": "vllm-ascend::layer_norm_fwd_npu(group_size=group_elements)",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "full_checker_15raw_guard_valid": true,
+    "helpers": {
+      "vllm_norm_api_v2.py": "17bba4d855f61a01d4592206b371f397eff46006bfa299fbc7ff88ee1f416852"
+    },
+    "current_valid_selection_only_no_old_new_speedup": true
+  },
+  {
+    "ordinal": 1182,
+    "key": [
+      "vllm-ascend",
+      "GroupNormFwdOp",
+      "image-float16"
+    ],
+    "selection": "complete_same_pinned_vendor_alternative_API",
+    "candidate_us": 15.466666666666667,
+    "original_compile_failure": "rollout-1182-1182.CHECKPOINT.json",
+    "original_failure_checkpoint_sha256": "ea21629d7146478b89b0ef67e6db74499e1fd7666967e23ad3933d02c1908e91",
+    "accepted_checkpoint": "rollout-vllm-norm-candidate-1182-expand1.CHECKPOINT.json",
+    "accepted_checkpoint_sha256": "c1212ef29def3012137f2295ea0d810d014c8443b6c3ead65cad5068f7552604",
+    "api": "vllm-ascend::layer_norm_fwd_npu(group_size=group_elements)",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "full_checker_15raw_guard_valid": true,
+    "helpers": {
+      "vllm_norm_api_v2.py": "17bba4d855f61a01d4592206b371f397eff46006bfa299fbc7ff88ee1f416852"
+    },
+    "current_valid_selection_only_no_old_new_speedup": true
+  },
+  {
+    "ordinal": 1193,
+    "key": [
+      "vllm-ascend",
+      "InstanceNormFwdOp",
+      "image-affine-float16"
+    ],
+    "selection": "complete_same_pinned_vendor_alternative_API",
+    "candidate_us": 28.159933333333335,
+    "original_compile_failure": "rollout-1193-1196.CHECKPOINT.json",
+    "original_failure_checkpoint_sha256": "f496a9a9c7f216f3ab3d6bca96e414041cdda2c976a418d8dc446387b4cbec88",
+    "accepted_checkpoint": "rollout-vllm-norm-candidate-1193-expand1.CHECKPOINT.json",
+    "accepted_checkpoint_sha256": "9c71e23d2b52f1703dfe9eed0fcf4a13ffd1ec6e548f2d7e0bceace1695ed702",
+    "api": "vllm-ascend::layer_norm_fwd_npu(group_size=group_elements)",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "full_checker_15raw_guard_valid": true,
+    "helpers": {
+      "vllm_norm_api_v2.py": "17bba4d855f61a01d4592206b371f397eff46006bfa299fbc7ff88ee1f416852"
+    },
+    "current_valid_selection_only_no_old_new_speedup": true
+  },
+  {
+    "ordinal": 1196,
+    "key": [
+      "vllm-ascend",
+      "InstanceNormFwdOp",
+      "image-float16"
+    ],
+    "selection": "complete_same_pinned_vendor_alternative_API",
+    "candidate_us": 25.97866666666667,
+    "original_compile_failure": "rollout-1196-1198.CHECKPOINT.json",
+    "original_failure_checkpoint_sha256": "e19361935f788597b7b5a8207b60aa36b91bb71e0b40c551f21aa9aae894c5c8",
+    "accepted_checkpoint": "rollout-vllm-norm-candidate-1196-expand1.CHECKPOINT.json",
+    "accepted_checkpoint_sha256": "46b5e0277e1e91c17882ececa4d98789de85b3cbbc38042e6c7f6557a78c3cfe",
+    "api": "vllm-ascend::layer_norm_fwd_npu(group_size=group_elements)",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "full_checker_15raw_guard_valid": true,
+    "helpers": {
+      "vllm_norm_api_v2.py": "17bba4d855f61a01d4592206b371f397eff46006bfa299fbc7ff88ee1f416852"
+    },
+    "current_valid_selection_only_no_old_new_speedup": true
+  },
+  {
+    "ordinal": 1197,
+    "key": [
+      "vllm-ascend",
+      "InstanceNormFwdOp",
+      "image-bfloat16"
+    ],
+    "selection": "complete_same_pinned_vendor_alternative_API",
+    "candidate_us": 25.690933333333337,
+    "original_compile_failure": "rollout-1197-1198.CHECKPOINT.json",
+    "original_failure_checkpoint_sha256": "b791fef1c7f341a1ddda9105afae3152e7c518c64f684ff82fb1b81046895e77",
+    "accepted_checkpoint": "rollout-vllm-norm-candidate-1197-expand1.CHECKPOINT.json",
+    "accepted_checkpoint_sha256": "6d39246202b89053d057fe752a0a9fa544b90faf7407b5c47961ef9b62774b6d",
+    "api": "vllm-ascend::layer_norm_fwd_npu(group_size=group_elements)",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "full_checker_15raw_guard_valid": true,
+    "helpers": {
+      "vllm_norm_api_v2.py": "17bba4d855f61a01d4592206b371f397eff46006bfa299fbc7ff88ee1f416852"
+    },
+    "current_valid_selection_only_no_old_new_speedup": true
+  },
+  {
+    "ordinal": 1198,
+    "key": [
+      "vllm-ascend",
+      "InstanceNormFwdOp",
+      "image-affine-bfloat16"
+    ],
+    "selection": "complete_same_pinned_vendor_alternative_API",
+    "candidate_us": 28.419266666666665,
+    "original_compile_failure": "rollout-1198-1198.CHECKPOINT.json",
+    "original_failure_checkpoint_sha256": "d27e4881341676e2892eeb6d6d67e1c7a5683ca10880d64b0c7575e7f0e92ed8",
+    "accepted_checkpoint": "rollout-vllm-norm-candidate-1198-expand1.CHECKPOINT.json",
+    "accepted_checkpoint_sha256": "1fb212ad6dcc7aef0fafa37d56b7092d0f23c696dc5731f5cb5cc67b6fb7c4c1",
+    "api": "vllm-ascend::layer_norm_fwd_npu(group_size=group_elements)",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "full_checker_15raw_guard_valid": true,
+    "helpers": {
+      "vllm_norm_api_v2.py": "17bba4d855f61a01d4592206b371f397eff46006bfa299fbc7ff88ee1f416852"
+    },
+    "current_valid_selection_only_no_old_new_speedup": true
+  }
+]

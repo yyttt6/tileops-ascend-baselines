@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-11-15T02:34:23.429162+00:00",
+  "accepted_original_Torch_programs": 1,
+  "rows": [
+    {
+      "ordinal": 1499,
+      "key": [
+        "torch-eager",
+        "SelectiveScanFwdOp",
+        "bare-scan-bfloat16"
+      ],
+      "checkpoint": "rollout-torch-selective-scan-bare-1499-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "65e8d02a373b8bab2e0cd523b895994cd96301e51b72bdc95c9c17db684e3656",
+      "source_sha256": "ee9e43541ea06297af1e0efc6877dcc68c38a60daac69457c453786791330b46",
+      "device_us": 152240.7092,
+      "host_us_diagnostic": 175391.4786502719,
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "8d439684ce38f331f73939b10d9be92736034f02b037918a4c987398eb63eb83",
+      "prepare_sha256": "a9fa9e8a71e6afa984a658d1d9469fcdccd483257ab34974c6793b5b962c595c",
+      "full_checker_15raw_guard_valid": true,
+      "frozen_FP64_oracle_normalized_checker_unchanged": true,
+      "both_outputs_checked": true,
+      "exact_catalog_restored_not_alias": true,
+      "no_historical_performance_substitution": true,
+      "not_finalratio_or_paired_speedup": true
+    }
+  ],
+  "staged_not_published": true
+}

@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-11-15T23:13:11.233307+00:00",
+  "accepted_complete_APIs": 7,
+  "rows": [
+    {
+      "ordinal": 1883,
+      "key": [
+        "tilelang-ascend",
+        "LogSoftmaxFwdOp",
+        "attn-weights-4k-float16"
+      ],
+      "api": "ops-nn::aclnnLogSoftmax",
+      "device_us": 9.356666666666666,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsoftmax-alternative-1883-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "d2c031cca595846cdc2097f2810330e8a6cb00738440e47f4a426912bf646817",
+      "payload_sha256": "a3ed32cdd2cd08f6e04640aa2c9a5d84c855670622e22f01e9373d0dcaee3584",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1884,
+      "key": [
+        "tilelang-ascend",
+        "LogSoftmaxFwdOp",
+        "attn-weights-4k-bfloat16"
+      ],
+      "api": "ops-nn::aclnnLogSoftmax",
+      "device_us": 9.572799999999999,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsoftmax-alternative-1884-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "7ef50137ac49a5bef53f176efd19c77194ff674f2c1c28c1bfba9500e70eafe7",
+      "payload_sha256": "e779a215e091b6c485530b52e16662305cd4501bbb46985f9d1846915bffc613",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1885,
+      "key": [
+        "tilelang-ascend",
+        "LogSoftmaxFwdOp",
+        "attn-weights-4k-float32"
+      ],
+      "api": "ops-nn::aclnnLogSoftmax",
+      "device_us": 9.5662,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsoftmax-alternative-1885-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "8c3298cdc63a473f85e9bacf943ecb31d9a1575fc83e081c3edb77a3b0977a87",
+      "payload_sha256": "fa9889e11711cbf541b88a12a2dbe7750ab1c25f6388a213d8fc34de692a4c1f",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1886,
+      "key": [
+        "tilelang-ascend",
+        "LogSoftmaxFwdOp",
+        "llama-8b-lm-head-bfloat16-float32"
+      ],
+      "api": "ops-nn::aclnnLogSoftmax",
+      "device_us": 24.655133333333335,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsoftmax-alternative-1886-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "d29182bfcfe22e9dd54c0a663d67dc5f29b860f72db687c9915507618869263a",
+      "payload_sha256": "b0178ae13f6931847fdac5c8994f907e5c462e852c51214b3e8ed472942e0ca8",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1887,
+      "key": [
+        "tilelang-ascend",
+        "LogSoftmaxFwdOp",
+        "lm-head-bfloat16"
+      ],
+      "api": "ops-nn::aclnnLogSoftmax",
+      "device_us": 10.8764,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsoftmax-alternative-1887-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "6551d586663b066729d19a9d2b9d15df2e43055cf04970947341cf7171b9edc9",
+      "payload_sha256": "942964de91ded8d71a4e407509e759e0b43b159f969389466bda571ca547508e",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1888,
+      "key": [
+        "tilelang-ascend",
+        "LogSoftmaxFwdOp",
+        "lm-head-float16"
+      ],
+      "api": "ops-nn::aclnnLogSoftmax",
+      "device_us": 10.846333333333334,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsoftmax-alternative-1888-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "b397c5b7be41e947dd836ff6298df590ff27ce9f6ec4f213ab536ac7ce37286e",
+      "payload_sha256": "84b5d1f96885c99d253f673a7292872915e1d2f2eaada75969760e7a9bdd2813",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 1889,
+      "key": [
+        "tilelang-ascend",
+        "LogSoftmaxFwdOp",
+        "lm-head-float32"
+      ],
+      "api": "ops-nn::aclnnLogSoftmax",
+      "device_us": 17.232466666666667,
+      "source_attribution": "ops-nn alternative completeAPI for originalTLAcontract",
+      "checkpoint": "rollout-tla-logsoftmax-alternative-1889-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "da51eddc0dabe2f9a66ddb7b35ac487bf282b18a398cd392709992d4ee766fc0",
+      "payload_sha256": "89d9c91c924be090ee597a8050bd2102f34435211a6f7bc58388d764e2153311",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

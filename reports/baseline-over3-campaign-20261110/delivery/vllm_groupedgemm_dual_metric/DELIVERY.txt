@@ -1,0 +1,1 @@
+Exact audited pairs only; complete original/new API wrappers with current metadata/emptygroups. Host/device separate, no cross-environment published ratio or automatic install.

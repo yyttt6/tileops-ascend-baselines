@@ -1,0 +1,1 @@
+ops_example_add_executable(weight_quant_batch_matmul_mx_swat weight_quant_batch_matmul_mx_swat/weight_quant_batch_matmul_mx_swat.cpp)

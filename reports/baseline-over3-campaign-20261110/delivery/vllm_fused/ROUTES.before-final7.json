@@ -1,0 +1,82 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedAddRMSNormFwdOp",
+      "llama-8b-prefill-float16"
+    ],
+    "index": 0,
+    "selected_us": 101.24726666666668,
+    "selected_variant": "fixed",
+    "control_us": 116.14106666666667,
+    "candidate_us": 101.24726666666668,
+    "ratio": 4.520074882735304,
+    "result_sha256": "e6c48727f427367ec018a801960dd18d6f7ae39560ed19715b82eaf8b747ec16",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Keep natural hidden-feature layout for original addition API, retaining original RMSNorm and input-dtype-rounded sum as second output. Full packing/casts/allocations timed; no kernel/config/checker changes. Original/control each15 raw windows audited."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedAddRMSNormFwdOp",
+      "llama-405b-decode-bfloat16"
+    ],
+    "index": 1,
+    "selected_us": 13.379866666666667,
+    "selected_variant": "native",
+    "control_us": 13.379866666666667,
+    "candidate_us": 13.4722,
+    "ratio": 4.108706778307777,
+    "result_sha256": "ce3a4db443f89256d0d670b4b786961430d6610fe0b7f71fa711e09d76339009",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Keep natural hidden-feature layout for original addition API, retaining original RMSNorm and input-dtype-rounded sum as second output. Full packing/casts/allocations timed; no kernel/config/checker changes. Original/control each15 raw windows audited."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedAddRMSNormFwdOp",
+      "llama-8b-prefill-bfloat16"
+    ],
+    "index": 2,
+    "selected_us": 101.03406666666667,
+    "selected_variant": "fixed",
+    "control_us": 115.84513333333334,
+    "candidate_us": 101.03406666666667,
+    "ratio": 4.476859633523476,
+    "result_sha256": "93750800b056ac1e01f436946fe4829803ce6dba264ec2936becd8ceecff8ac3",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Keep natural hidden-feature layout for original addition API, retaining original RMSNorm and input-dtype-rounded sum as second output. Full packing/casts/allocations timed; no kernel/config/checker changes. Original/control each15 raw windows audited."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedAddRMSNormFwdOp",
+      "llama-70b-prefill-bfloat16"
+    ],
+    "index": 3,
+    "selected_us": 202.42293333333333,
+    "selected_variant": "fixed",
+    "control_us": 244.89166666666665,
+    "candidate_us": 202.42293333333333,
+    "ratio": 4.792202032509419,
+    "result_sha256": "ad843d6ee2936cb8e278ec217a4c83a62829a42ad6d711decfb9ee4ab2abd99d",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Keep natural hidden-feature layout for original addition API, retaining original RMSNorm and input-dtype-rounded sum as second output. Full packing/casts/allocations timed; no kernel/config/checker changes. Original/control each15 raw windows audited."
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "FusedAddRMSNormFwdOp",
+      "llama-70b-prefill-float16"
+    ],
+    "index": 4,
+    "selected_us": 202.26473333333334,
+    "selected_variant": "fixed",
+    "control_us": 244.94860000000003,
+    "candidate_us": 202.26473333333334,
+    "ratio": 4.847311425960365,
+    "result_sha256": "bab60925c12fd2ac222b4dae31688f92faa853369f731a8ea871464a7f20898e",
+    "decision": "retain_best_engineering_layout_over3",
+    "reason": "Keep natural hidden-feature layout for original addition API, retaining original RMSNorm and input-dtype-rounded sum as second output. Full packing/casts/allocations timed; no kernel/config/checker changes. Original/control each15 raw windows audited."
+  }
+]

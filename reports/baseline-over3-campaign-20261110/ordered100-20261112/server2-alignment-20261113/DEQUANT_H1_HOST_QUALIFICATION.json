@@ -1,0 +1,94 @@
+{
+  "checked_at": "2026-11-14T18:47:11.628307+00:00",
+  "host": "openlibing-DevEnv-661495",
+  "execution_hostname": "a5d0b50dc68f",
+  "full_API_and_original_flush_and_private_kernel_verified": true,
+  "not_formal_checker_or15raw": true,
+  "package_manifest_sha256": "5d35b06e03e318feb6cb94325c034e0618e4bcb1394c126e03ff6b4cec5736ec",
+  "guard_sha256": "c3fce81b2b1ed9348b054215389f76cce7fe659261a9cf91df4c0dddcf968d9d",
+  "result_sha256": "d2728edbb9a20eee9fd09c771a2267ff59b9ad18c7efe34008921431c4366bba",
+  "api_sha256": "9aae36824cd1796a8204c972b2bae13931983931b13bfb9a3eb6cdb651f0e795",
+  "private_kernel_registration_lines": [
+    "[DEBUG] OP(1884336,python):2026-11-14-18:44:28.000.937 [op_kernel.cpp:397][NNOP][BinLoadImpl][1884336] OpName:[aclnnMul_2_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab2b3bb178, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o"
+  ],
+  "scope": [
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307
+  ],
+  "six_full_output_and_inputbit_checks": [
+    {
+      "op": "INT8Dequant",
+      "mode": "tensor",
+      "dtype": "torch.float16",
+      "shape": [
+        17,
+        4099
+      ],
+      "all_outputs_and_input_bits_verified": true
+    },
+    {
+      "op": "INT8Dequant",
+      "mode": "tensor",
+      "dtype": "torch.bfloat16",
+      "shape": [
+        17,
+        4099
+      ],
+      "all_outputs_and_input_bits_verified": true
+    },
+    {
+      "op": "INT8Dequant",
+      "mode": "channel",
+      "dtype": "torch.float16",
+      "shape": [
+        17,
+        4099
+      ],
+      "all_outputs_and_input_bits_verified": true
+    },
+    {
+      "op": "INT8Dequant",
+      "mode": "channel",
+      "dtype": "torch.bfloat16",
+      "shape": [
+        17,
+        4099
+      ],
+      "all_outputs_and_input_bits_verified": true
+    },
+    {
+      "op": "INT8Dequant",
+      "mode": "block",
+      "dtype": "torch.float16",
+      "shape": [
+        17,
+        4099
+      ],
+      "all_outputs_and_input_bits_verified": true
+    },
+    {
+      "op": "INT8Dequant",
+      "mode": "block",
+      "dtype": "torch.bfloat16",
+      "shape": [
+        17,
+        4099
+      ],
+      "all_outputs_and_input_bits_verified": true
+    }
+  ],
+  "runtime": {
+    "torch": "2.13.0+cpu",
+    "torch_npu": "2.13.0.rc1",
+    "cube": 32,
+    "vector": 64
+  },
+  "other_host_functional_acceptance_not_assumed": true
+}

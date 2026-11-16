@@ -1,0 +1,338 @@
+{
+  "checked_at": "2026-11-13T13:50:09.909557+00:00",
+  "complete_pairs": 5,
+  "rows": [
+    {
+      "ordinal": 1152,
+      "key": [
+        "vllm-ascend",
+        "FusedQKNormRoPEFwdOp",
+        "glm-4.5-partial-rope-bfloat16-float32"
+      ],
+      "original_us": 6895.2566,
+      "candidate_us": 6059.776733333333,
+      "device_reduction_percent": 12.116733504401655,
+      "host_original_us_diagnostic": 11262.786636749903,
+      "host_candidate_us_diagnostic": 11074.208002537489,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1152-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1152-rms-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "681efebbbe12f009253bbb328d6380c4342203e4c2b4bdd77dbf697a13e3daf8",
+        "b9000e5f1b055941ccebe13097bb232b016a5de20003e90e279204b3108c568e"
+      ],
+      "source_sha256": [
+        "54b907599b0d3afa9db89a85cc0f545599c5109e7caee9417dccad0d312c9a59",
+        "38fbc9cb59cc113817e707525f84b2e26199db3e91e149c5d136e72dd3ac9632"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_fusedqk_rms_original.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_batch_invariant_rmsnorm_pyd71da6c952b76bfde5f2/rmsnorm.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/batch_invariant/rmsnorm.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_fusedqk_rms_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_fusedqk_rms.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_fusedqk_rms_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/basic.py": "f453534dfd7d05c7c2435912e4b12cf6d376902d2704efc794392e99c0fd70e5",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py": "3aeeb4d137437bcd07745c76b2e58ef9b18a4b05bea4707e3b917633476f7d2e",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py": "6f68ca00ed74c2805dc84f960aa172bf33b0a6618b7d699293910dcbd657e540",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/rope.py": "82422c46f93c0962673ad51bc77fdd5caef412f45f2ff8b20bbeb20a4407f64b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_rope_py82422c46f93c0962673a/rope.py": "b42cf3ae0ba9f34d3bc70b307b82c3db0ae287b2d905363984cb3da4c530226f",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_fusedqk_rms_api.py": "9b113a9690171b08870ae59058fd180f7bbd96c3772ed4ff1b59d976a683d2fb"
+      }
+    },
+    {
+      "ordinal": 1153,
+      "key": [
+        "vllm-ascend",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-235b-t4096-bfloat16-bfloat16"
+      ],
+      "original_us": 4515.559466666667,
+      "candidate_us": 4010.1128,
+      "device_reduction_percent": 11.193445029299587,
+      "host_original_us_diagnostic": 11565.783309439817,
+      "host_candidate_us_diagnostic": 11565.564728031555,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1153-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1153-rms-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "7c74be193c9992a73c9b00483448d9368787d1728ccf128b41e87e9edecafe52",
+        "b1d13e8e71fd7c7a76b60402aa3c82c26ec829f4ebb799ba9d1c76b0477246fb"
+      ],
+      "source_sha256": [
+        "54b907599b0d3afa9db89a85cc0f545599c5109e7caee9417dccad0d312c9a59",
+        "38fbc9cb59cc113817e707525f84b2e26199db3e91e149c5d136e72dd3ac9632"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_fusedqk_rms_original.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_batch_invariant_rmsnorm_pyd71da6c952b76bfde5f2/rmsnorm.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/batch_invariant/rmsnorm.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_fusedqk_rms_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_fusedqk_rms.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_fusedqk_rms_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/basic.py": "f453534dfd7d05c7c2435912e4b12cf6d376902d2704efc794392e99c0fd70e5",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py": "3aeeb4d137437bcd07745c76b2e58ef9b18a4b05bea4707e3b917633476f7d2e",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py": "6f68ca00ed74c2805dc84f960aa172bf33b0a6618b7d699293910dcbd657e540",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/rope.py": "82422c46f93c0962673ad51bc77fdd5caef412f45f2ff8b20bbeb20a4407f64b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_rope_py82422c46f93c0962673a/rope.py": "b42cf3ae0ba9f34d3bc70b307b82c3db0ae287b2d905363984cb3da4c530226f",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_fusedqk_rms_api.py": "9b113a9690171b08870ae59058fd180f7bbd96c3772ed4ff1b59d976a683d2fb"
+      }
+    },
+    {
+      "ordinal": 1154,
+      "key": [
+        "vllm-ascend",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-8b-t8192-bfloat16-bfloat16"
+      ],
+      "original_us": 5314.701599999999,
+      "candidate_us": 4798.6512,
+      "device_reduction_percent": 9.709865931137118,
+      "host_original_us_diagnostic": 11131.54006501039,
+      "host_candidate_us_diagnostic": 11211.702041327953,
+      "selection": "alternate",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1154-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1154-rms-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "a2a8594f9bdb0a39544ab59d51183b71f09a364aeebe6d6f49115e47418f6bb9",
+        "b6bd22104b9048fad4b83e184cd4c5d12770457607d7cb27d92930f0d8e112de"
+      ],
+      "source_sha256": [
+        "54b907599b0d3afa9db89a85cc0f545599c5109e7caee9417dccad0d312c9a59",
+        "38fbc9cb59cc113817e707525f84b2e26199db3e91e149c5d136e72dd3ac9632"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_fusedqk_rms_original.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_batch_invariant_rmsnorm_pyd71da6c952b76bfde5f2/rmsnorm.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/batch_invariant/rmsnorm.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_fusedqk_rms_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_fusedqk_rms.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_fusedqk_rms_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/basic.py": "f453534dfd7d05c7c2435912e4b12cf6d376902d2704efc794392e99c0fd70e5",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py": "3aeeb4d137437bcd07745c76b2e58ef9b18a4b05bea4707e3b917633476f7d2e",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py": "6f68ca00ed74c2805dc84f960aa172bf33b0a6618b7d699293910dcbd657e540",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/rope.py": "82422c46f93c0962673ad51bc77fdd5caef412f45f2ff8b20bbeb20a4407f64b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_rope_py82422c46f93c0962673a/rope.py": "b42cf3ae0ba9f34d3bc70b307b82c3db0ae287b2d905363984cb3da4c530226f",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_fusedqk_rms_api.py": "9b113a9690171b08870ae59058fd180f7bbd96c3772ed4ff1b59d976a683d2fb"
+      }
+    },
+    {
+      "ordinal": 1155,
+      "key": [
+        "vllm-ascend",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-8b-t64-bfloat16-bfloat16"
+      ],
+      "original_us": 80.46293333333334,
+      "candidate_us": 81.2518,
+      "device_reduction_percent": -0.9804100273086425,
+      "host_original_us_diagnostic": 10998.522645483414,
+      "host_candidate_us_diagnostic": 11830.534630765518,
+      "selection": "original",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1155-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1155-rms-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "0d613b5a11d5c51caf34871d35aec3a3da9e926ab2d93292073af1ec3e9c57c1",
+        "a75b945cb1e0a5083608701d8a2216e5349c900aa13aedceea44ec965403f7c6"
+      ],
+      "source_sha256": [
+        "54b907599b0d3afa9db89a85cc0f545599c5109e7caee9417dccad0d312c9a59",
+        "38fbc9cb59cc113817e707525f84b2e26199db3e91e149c5d136e72dd3ac9632"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_fusedqk_rms_original.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_batch_invariant_rmsnorm_pyd71da6c952b76bfde5f2/rmsnorm.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/batch_invariant/rmsnorm.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_fusedqk_rms_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_fusedqk_rms.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_fusedqk_rms_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/basic.py": "f453534dfd7d05c7c2435912e4b12cf6d376902d2704efc794392e99c0fd70e5",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/batch_invariant/rmsnorm.py": "d71da6c952b76bfde5f29f9ede956b0b3921b64174fd0e25872fff68e85798b9",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_batch_invariant_rmsnorm_pyd71da6c952b76bfde5f2/rmsnorm.py": "7ad3fa438aeb6b76ff9a3989a178a9a5994140c4492957b6a9d1922458f3076c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/rope.py": "82422c46f93c0962673ad51bc77fdd5caef412f45f2ff8b20bbeb20a4407f64b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_rope_py82422c46f93c0962673a/rope.py": "b42cf3ae0ba9f34d3bc70b307b82c3db0ae287b2d905363984cb3da4c530226f",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b"
+      }
+    },
+    {
+      "ordinal": 1156,
+      "key": [
+        "vllm-ascend",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-8b-t64-float16-float32"
+      ],
+      "original_us": 80.69153333333334,
+      "candidate_us": 80.93093333333333,
+      "device_reduction_percent": -0.29668540193805715,
+      "host_original_us_diagnostic": 11400.861386209726,
+      "host_candidate_us_diagnostic": 11692.874692380428,
+      "selection": "original",
+      "selection_note": "retainoriginal for observed improvement below1percent; no claim of statistical significance",
+      "original_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1156-original-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-vllm-fusedqk-rms-candidate-1156-rms-v1.CHECKPOINT.json",
+      "checkpoints_sha256": [
+        "9f15916e2eacb45738b8eda85e4dc0843259698cb644e5b7872969a5c7479654",
+        "c8b4e13968c8ba11296222661c660982df4e2fc7adbc7c7f1b0ccb172dee600b"
+      ],
+      "source_sha256": [
+        "54b907599b0d3afa9db89a85cc0f545599c5109e7caee9417dccad0d312c9a59",
+        "38fbc9cb59cc113817e707525f84b2e26199db3e91e149c5d136e72dd3ac9632"
+      ],
+      "common_SOURCE_entries_identical": 714,
+      "expected_unique_source_paths": {
+        "original": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_fusedqk_rms_original.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_batch_invariant_rmsnorm_pyd71da6c952b76bfde5f2/rmsnorm.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/batch_invariant/rmsnorm.py"
+        ],
+        "candidate": [
+          "/opt/baseline-over3-20261110/ordered100-20261112/vllm_fusedqk_rms_support.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/worker_vllm_fusedqk_rms.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_fla_layernorm_guard_py3aeeb4d137437bcd0774/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/fla/layernorm_guard.py",
+          "/opt/baseline-over3-20261110/ordered100-20261112/workspace/isolated_wrappers/vllm_fusedqk_rms_api.py"
+        ]
+      },
+      "guard_checker_15raw_valid": true,
+      "runtime": {
+        "torch": "2.10.0+cpu",
+        "torch_npu": "2.10.0.post4",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/usr/local/Ascend/cann-9.1.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "selected_sources": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/contracts.py": "f93e23804d324c8fd9acd46b514644241a1e9c55904c160637eeec23748728bb",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/__init__.py": "94077f9580b80e9d60011fd1d4ef7fa5400fde4e8191d17362ee0a0abebc4c26",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/basic.py": "f453534dfd7d05c7c2435912e4b12cf6d376902d2704efc794392e99c0fd70e5",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/batch_invariant/rmsnorm.py": "d71da6c952b76bfde5f29f9ede956b0b3921b64174fd0e25872fff68e85798b9",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_batch_invariant_rmsnorm_pyd71da6c952b76bfde5f2/rmsnorm.py": "7ad3fa438aeb6b76ff9a3989a178a9a5994140c4492957b6a9d1922458f3076c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/rope.py": "82422c46f93c0962673ad51bc77fdd5caef412f45f2ff8b20bbeb20a4407f64b",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/envs.py": "905b703e70ed9f46b3db6f565d331501e5ae6a28b5542f1fad648c94adaad2c2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/triton_utils.py": "057221397bdbfa80258e861eb3fc79792af4003917156fd3cd9be8abf4036fc2",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_envs_py905b703e70ed9f46b3db/envs.py": "09ca5514b245e809962a5fd483b83da5de1820dd08a362d0897c2b79c7302f1c",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_triton_utils_py057221397bdbfa80258e/triton_utils.py": "65a404df8776224001944632e2ed3a8215aa174b828efb6d2a5c3d11ca5c8863",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/.cache/all-pairs/vllm/runtime/_allpairs_vllm_vllm_ascend_ops_triton_rope_py82422c46f93c0962673a/rope.py": "b42cf3ae0ba9f34d3bc70b307b82c3db0ae287b2d905363984cb3da4c530226f",
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b"
+      }
+    }
+  ],
+  "effective_retest_coverage_not_incremented": true,
+  "historical_or_public_ratios_not_updated": true,
+  "runtime_repair": "REFERENCE_RUNTIME_PRIVATE_COPY.json",
+  "not_all_SOURCE_bytes_same_expected_import_API_differences_explicit": true
+}

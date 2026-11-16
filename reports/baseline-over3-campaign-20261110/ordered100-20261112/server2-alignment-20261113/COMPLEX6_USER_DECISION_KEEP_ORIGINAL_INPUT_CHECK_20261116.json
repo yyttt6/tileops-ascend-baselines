@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-16T02:51:42.118201+00:00",
+  "scope": [
+    1292,
+    1293,
+    1294,
+    1295,
+    1298,
+    1299
+  ],
+  "user_decision": "保持原检查方式，六项留待处理",
+  "compatibility_not_applied": true,
+  "no_further_device_retry_for_unchanged_check": true
+}

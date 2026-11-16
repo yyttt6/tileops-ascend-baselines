@@ -1,0 +1,112 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "401b1d0324521d82ee0834961d2176c2c8037f7eb255c2ebc2071e571a477a80",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y2",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "descending",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/sort/Sort_a7ccd11457f139f90156acf7d9c6d3c1_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "b851318b6425577e715a37d1513007ae8031c5d3823f9f52903674cbbd7a76c3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y2",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "descending",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/sort/Sort_90da8e603a0431c8b18a0c23fdc8d8c9_high_performance.json"
+      }
+    }
+  ]
+}

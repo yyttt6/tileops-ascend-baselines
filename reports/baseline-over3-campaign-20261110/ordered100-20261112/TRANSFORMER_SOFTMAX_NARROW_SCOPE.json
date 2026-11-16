@@ -1,0 +1,15 @@
+{
+  "ordinals": [
+    807,
+    808,
+    821,
+    822,
+    823,
+    826,
+    835,
+    838,
+    841
+  ],
+  "original_API": "MoeGatingTopKSoftmax",
+  "timed_run_AST_exact": true
+}

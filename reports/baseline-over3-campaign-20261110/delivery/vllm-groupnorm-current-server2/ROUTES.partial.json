@@ -1,0 +1,50 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "InstanceNormFwdOp",
+      "tail-spatial-float16"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "GroupNormFwdOp",
+      "wider-channel-float16"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "InstanceNormFwdOp",
+      "wider-channel-float16"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "GroupNormFwdOp",
+      "image-affine-bfloat16"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "GroupNormFwdOp",
+      "image-bfloat16"
+    ],
+    "fixed": false
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "InstanceNormFwdOp",
+      "image-bfloat16"
+    ],
+    "fixed": false
+  }
+]

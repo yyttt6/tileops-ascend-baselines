@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-11-16T04:43:33.854940+00:00",
+  "rows": [
+    {
+      "ordinal": 773,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "source_ordinal": 296,
+      "source_key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-routed1k-bfloat16"
+      ],
+      "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+      "device_us": 526.5926666666666,
+      "checkpoint": "rollout-math-grouped-nn-alternative-296-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c82bb4bc8c1b55e4709667295daab4475004e1ef5fa313847318dc226e3b5866",
+      "payload_sha256": "fb6bd7176a747ed8fbcde1ee831c0d40194dee6d360d0478c131704ae8c661f2",
+      "descriptor_sha256": "37050fe067753f70dfefbb7d049461f55eb0ca189d22a35d085bd2eb7072b602",
+      "corrected_golden_sha256": "a20d5158bfce5a307c2960c8834efc166b02e6996e1d9156e9dc06a57809b2e8",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "source_golden_selection_sha256": "d16c60679b9dec41973845a5639e539496b0f32144991b80a8e321066ff790ec",
+      "source_qualified_row": {
+        "ordinal": 296,
+        "key": [
+          "ops-math",
+          "GroupedGemmFwdOp",
+          "qwen3-30b-ep8-routed1k-bfloat16"
+        ],
+        "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+        "device_us": 526.5926666666666,
+        "source_attribution": "originalNNcompleteGroupedAPI alternativefororiginalMathcontract",
+        "checkpoint": "rollout-math-grouped-nn-alternative-296-golden42-routefix-h1-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "c82bb4bc8c1b55e4709667295daab4475004e1ef5fa313847318dc226e3b5866",
+        "payload_sha256": "fb6bd7176a747ed8fbcde1ee831c0d40194dee6d360d0478c131704ae8c661f2",
+        "full_checker_15raw_guard_valid": true,
+        "actual_original_AoT_source_device_profile_identity_verified": true,
+        "not_paired_or_finalratio": true
+      },
+      "same_frozen_params_inputs_descriptor_Exact_checker_and_corrected_golden": true,
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "Existing full original NN grouped API alternative, exact-contract qualified measurement reuse",
+      "new_native_runs": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    },
+    {
+      "ordinal": 772,
+      "key": [
+        "ops-transformer",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "source_ordinal": 297,
+      "source_key": [
+        "ops-math",
+        "GroupedGemmFwdOp",
+        "qwen3-30b-ep8-ragged-bfloat16"
+      ],
+      "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+      "device_us": 522.0182666666666,
+      "checkpoint": "rollout-math-grouped-nn-alternative-297-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "54ae6788ac8520afd396d48a54b13e6e764d0f7351c0b5398d1e916f6a934a19",
+      "payload_sha256": "1c5ce101bc7e0900755147a55ba32cdcf461c4c0bbded56459a53616649cdeb1",
+      "descriptor_sha256": "e5bc7d60634feedbee87020761f4cc612a790d970682105feb368d26ebbf4135",
+      "corrected_golden_sha256": "c982cd3ba293936e0eee68db49f785e117fa353737e30470cebe96ddca9047b1",
+      "golden_certificate_sha256": "9bcc63e141261b634f93e5bfe2518a842bc09a5894da20070cc3fae56f79a33c",
+      "source_golden_selection_sha256": "f22c00c67c65f8c3862457bd649573ff749bbf8e9e70a8dc2d982b85daed0e0d",
+      "source_qualified_row": {
+        "ordinal": 297,
+        "key": [
+          "ops-math",
+          "GroupedGemmFwdOp",
+          "qwen3-30b-ep8-ragged-bfloat16"
+        ],
+        "api": "ops-nn::original matrix.grouped complete MatMulV3 API per logicalgroup",
+        "device_us": 522.0182666666666,
+        "source_attribution": "originalNNcompleteGroupedAPI alternativefororiginalMathcontract",
+        "checkpoint": "rollout-math-grouped-nn-alternative-297-golden42-routefix-h1-v1.CHECKPOINT.json",
+        "checkpoint_sha256": "54ae6788ac8520afd396d48a54b13e6e764d0f7351c0b5398d1e916f6a934a19",
+        "payload_sha256": "1c5ce101bc7e0900755147a55ba32cdcf461c4c0bbded56459a53616649cdeb1",
+        "full_checker_15raw_guard_valid": true,
+        "actual_original_AoT_source_device_profile_identity_verified": true,
+        "not_paired_or_finalratio": true
+      },
+      "same_frozen_params_inputs_descriptor_Exact_checker_and_corrected_golden": true,
+      "full_checker_15raw_guard_valid": true,
+      "coverage_kind": "Existing full original NN grouped API alternative, exact-contract qualified measurement reuse",
+      "new_native_runs": 0,
+      "new_pairs": 0,
+      "new_final_closures": 0
+    }
+  ],
+  "new_qualified_coverage": 2,
+  "no_remeasurement": true,
+  "not_published": true
+}

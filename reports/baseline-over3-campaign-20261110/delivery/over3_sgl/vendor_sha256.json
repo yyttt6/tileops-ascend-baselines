@@ -1,0 +1,6 @@
+{
+  "sgl_kernel_npu/utils/triton_utils.py": "a3f4f314a3945aed6b038f94e918cb312dc9af1ed04931b39ff315a4102b0648",
+  "sgl_kernel_npu/fla/layernorm_gated.py": "6a6906735fe77f7896ae0dd3b5957f34657dd9b400bf89cb63a2c9e24365a507",
+  "sgl_kernel_npu/moe/mul_add.py": "4ad25c8fc1383093ae6226daada78e39fe794bed884b18f0067c216b8c4acac8",
+  "sgl_kernel_npu/norm/scale_shift.py": "792712f933871966fcb716c086f90a11bbc510cc4ee325dfed8576b5bd54ac15"
+}

@@ -1,0 +1,169 @@
+{
+  "checked_at": "2026-11-14T20:59:58.212592+00:00",
+  "full_API_and_original_flush_and_private_kernel_verified": true,
+  "execution_hostname": "a5d0b50dc68f",
+  "native_package_manifest_sha256": "cc831840db4ed5d54fd405afc140ccd04174c61756dd320149287a5cbcd9dd46",
+  "qualified_API_source_sha256": {
+    "ops_math_maxpool_api.py": "2dc93a7feb0da9b6de56d9d14fdad38c3b9b3f994ac916b9e7ab71345ca74dd4",
+    "ops_math_maxpool_support.py": "34312867f9721aabd07c6d901ed76608a8e6ddda333b8a54b5d77ff67c5fe32e",
+    "ops_math_vectorinf_api.py": "a63983e2c34d9c125dcdc99e998fe1a19b847dfa66a0e0b63ed844db1bd1107b"
+  },
+  "signed_maximum_no_Abs_launch": true,
+  "private_load_and_launch_per_complete_group": [
+    {
+      "marker": {
+        "op": "MaxPool1dFwdOp",
+        "shape": [
+          2,
+          3,
+          13
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      "launches": [
+        {
+          "kernel": "ReduceMax_bfloat16_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_bfloat16_int64_high_performance.o",
+          "sha256": "8ebe1e09390d6c2d5edfe016d75e86424ed95fe576360766ce5e394b8b204731",
+          "load_line": "[DEBUG] OP(2098048,python):2026-11-14-20:56:55.152.412 [op_kernel.cpp:397][NNOP][BinLoadImpl][2098048] OpName:[aclnnAmax_4_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab0d9d51f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_bfloat16_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2098048,python):2026-11-14-20:56:55.155.216 [aix_starsv2.cc:666] 2098048 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMax_bfloat16_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x1200408f3600, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "op": "MaxPool2dFwdOp",
+        "shape": [
+          1,
+          2,
+          7,
+          9
+        ],
+        "dtype": "torch.float32"
+      },
+      "launches": [
+        {
+          "kernel": "ReduceMax_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_float32_int64_high_performance.o",
+          "sha256": "ec2b1f9ef40c1c4af91de5a7a3fe5ded087983fa5cf8c65f4fae72d638559827",
+          "load_line": "[DEBUG] OP(2098048,python):2026-11-14-20:56:55.244.377 [op_kernel.cpp:397][NNOP][BinLoadImpl][2098048] OpName:[aclnnAmax_9_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab0dc461a8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2098048,python):2026-11-14-20:56:55.246.993 [aix_starsv2.cc:666] 2098048 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMax_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004dcea500, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "op": "MaxPool3dFwdOp",
+        "shape": [
+          1,
+          2,
+          5,
+          7,
+          9
+        ],
+        "dtype": "torch.float16"
+      },
+      "launches": [
+        {
+          "kernel": "ReduceMax_float16_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_float16_int64_high_performance.o",
+          "sha256": "dd2d9ccc246a647119e8e1363d23caa128f5c060af144ae73140b0d685abc23f",
+          "load_line": "[DEBUG] OP(2098048,python):2026-11-14-20:56:55.325.909 [op_kernel.cpp:397][NNOP][BinLoadImpl][2098048] OpName:[aclnnAmax_14_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab0e2fc188, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_float16_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2098048,python):2026-11-14-20:56:55.328.891 [aix_starsv2.cc:666] 2098048 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMax_float16_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004deea600, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "op": "AdaptiveMaxPool2dFwdOp",
+        "shape": [
+          2,
+          3,
+          7,
+          11
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      "launches": [
+        {
+          "kernel": "ReduceMax_bfloat16_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_bfloat16_int64_high_performance.o",
+          "sha256": "8ebe1e09390d6c2d5edfe016d75e86424ed95fe576360766ce5e394b8b204731",
+          "load_line": "[DEBUG] OP(2098048,python):2026-11-14-20:56:55.152.412 [op_kernel.cpp:397][NNOP][BinLoadImpl][2098048] OpName:[aclnnAmax_4_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab0d9d51f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_bfloat16_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2098048,python):2026-11-14-20:56:55.433.091 [aix_starsv2.cc:666] 2098048 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMax_bfloat16_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x1200408f3600, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMax_bfloat16_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_bfloat16_int64_high_performance.o",
+          "sha256": "8ebe1e09390d6c2d5edfe016d75e86424ed95fe576360766ce5e394b8b204731",
+          "load_line": "[DEBUG] OP(2098048,python):2026-11-14-20:56:55.152.412 [op_kernel.cpp:397][NNOP][BinLoadImpl][2098048] OpName:[aclnnAmax_4_ReduceMaxAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab0d9d51f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/private-v1/vendors/allpairs_math_vectorinf_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_max_apt/ReduceMax_bfloat16_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2098048,python):2026-11-14-20:56:55.488.654 [aix_starsv2.cc:666] 2098048 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMax_bfloat16_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x1200408f3600, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "op": "MaxPool1dFwdOp",
+      "shape": [
+        2,
+        3,
+        13
+      ],
+      "dtype": "torch.bfloat16",
+      "full_output_exact": true,
+      "negative_inputs_and_inputbits_verified": true
+    },
+    {
+      "op": "MaxPool2dFwdOp",
+      "shape": [
+        1,
+        2,
+        7,
+        9
+      ],
+      "dtype": "torch.float32",
+      "full_output_exact": true,
+      "negative_inputs_and_inputbits_verified": true
+    },
+    {
+      "op": "MaxPool3dFwdOp",
+      "shape": [
+        1,
+        2,
+        5,
+        7,
+        9
+      ],
+      "dtype": "torch.float16",
+      "full_output_exact": true,
+      "negative_inputs_and_inputbits_verified": true
+    },
+    {
+      "op": "AdaptiveMaxPool2dFwdOp",
+      "shape": [
+        2,
+        3,
+        7,
+        11
+      ],
+      "dtype": "torch.bfloat16",
+      "full_output_exact": true,
+      "negative_inputs_and_inputbits_verified": true
+    }
+  ],
+  "not_formal15raw_or_coverage": true,
+  "scope": [
+    205,
+    206,
+    207,
+    336,
+    340,
+    341,
+    342,
+    352,
+    353
+  ],
+  "CPU_proof_sha256": "b6eab394fd47cd7e13ca602b413d0dc07ee524eea91f8ffd75f64d7b42066b07",
+  "guard_sha256": "cdbae027cf37b21272c1fe3fdcc950d23fcf19c2301b87339bd7b4cb0c5d43b2"
+}

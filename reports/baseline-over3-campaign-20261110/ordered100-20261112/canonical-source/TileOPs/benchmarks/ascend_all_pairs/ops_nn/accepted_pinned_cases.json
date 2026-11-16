@@ -1,0 +1,161 @@
+{
+  "AbsFwdOp": [
+    "16M-float16"
+  ],
+  "AdaLayerNormFwdOp": [
+    "llama-8b-decode-bfloat16"
+  ],
+  "AdaLayerNormZeroFwdOp": [
+    "llama-8b-decode-bfloat16"
+  ],
+  "AdaptiveAvgPool2dFwdOp": [
+    "resnet-gap-unbatched-float16"
+  ],
+  "AllFwdOp": [
+    "mask-validation-4k-bfloat16"
+  ],
+  "AmaxFwdOp": [
+    "long-seq-bfloat16"
+  ],
+  "AnyFwdOp": [
+    "mask-validation-4k-bfloat16"
+  ],
+  "ArgmaxFwdOp": [
+    "lm-head-bfloat16"
+  ],
+  "AvgPool1dFwdOp": [
+    "ceil-bfloat16"
+  ],
+  "AvgPool2dFwdOp": [
+    "vision-5x5-s2-float16"
+  ],
+  "AvgPool3dFwdOp": [
+    "divisor-bfloat16"
+  ],
+  "BatchNormBwdOp": [
+    "resnet-fc-float16"
+  ],
+  "BatchNormFwdOp": [
+    "resnet-fc-float16"
+  ],
+  "BitwiseAndFwdOp": [
+    "linear-bias-bool"
+  ],
+  "BitwiseOrFwdOp": [
+    "linear-bias-bool"
+  ],
+  "BitwiseXorFwdOp": [
+    "linear-bias-bool"
+  ],
+  "BmmFwdOp": [
+    "square-128-float16"
+  ],
+  "CausalConv1dUpdateFwdOp": [
+    "mamba2-2.7b-decode-b1-bfloat16"
+  ],
+  "Conv1dFwdOp": [
+    "encodec-deep-float16"
+  ],
+  "Conv3dFwdOp": [
+    "resnext-grouped-float16"
+  ],
+  "CountNonzeroFwdOp": [
+    "sparsity-seq-float16"
+  ],
+  "DivFwdOp": [
+    "linear-bias-bfloat16"
+  ],
+  "FusedAddLayerNormFwdOp": [
+    "llama-8b-decode-bfloat16"
+  ],
+  "FusedAddRMSNormFwdOp": [
+    "llama-8b-decode-bfloat16"
+  ],
+  "GeluFwdOp": [
+    "llama-8b-ffn-decode-bfloat16"
+  ],
+  "GemmFP8FwdOp": [
+    "ds-v3-kv-a-m128-s128-float8_e4m3fn-bfloat16"
+  ],
+  "GemmW4A16FwdOp": [
+    "single-tile-float16"
+  ],
+  "GroupNormFwdOp": [
+    "tail-spatial-float16"
+  ],
+  "HardsigmoidFwdOp": [
+    "mbv3-se-gate-bfloat16"
+  ],
+  "INT8DequantPerBlockFwdOp": [
+    "ragged-k-few-rows-float16"
+  ],
+  "INT8DequantPerChannelFwdOp": [
+    "ragged-k-few-rows-bfloat16"
+  ],
+  "INT8DequantPerTensorFwdOp": [
+    "ragged-k-few-rows-float16"
+  ],
+  "InstanceNormFwdOp": [
+    "tail-spatial-float16"
+  ],
+  "LayerNormFwdOp": [
+    "llama-8b-decode-bfloat16"
+  ],
+  "LerpScalarFwdOp": [
+    "linear-bias-bfloat16"
+  ],
+  "LogSoftmaxFwdOp": [
+    "lm-head-bfloat16"
+  ],
+  "LogicalAndFwdOp": [
+    "linear-bias-bfloat16"
+  ],
+  "LogicalOrFwdOp": [
+    "linear-bias-bfloat16"
+  ],
+  "MaxPool1dFwdOp": [
+    "textcnn-global-float16"
+  ],
+  "MaxPool1dIndicesFwdOp": [
+    "textcnn-global-float16"
+  ],
+  "MaxPool2dFwdOp": [
+    "alexnet-ceil-bfloat16"
+  ],
+  "MaximumFwdOp": [
+    "linear-bias-bfloat16"
+  ],
+  "MulFwdOp": [
+    "linear-bias-float16"
+  ],
+  "PagedKVCacheWriteFwdOp": [
+    "odd-tokens-and-page-float16-float16"
+  ],
+  "ProdFwdOp": [
+    "long-seq-bfloat16"
+  ],
+  "ReluFwdOp": [
+    "hidden-state-decode-bfloat16"
+  ],
+  "SiluAndMulFwdOp": [
+    "llama-8b-ffn-decode-bfloat16"
+  ],
+  "SiluFwdOp": [
+    "llama-8b-ffn-decode-bfloat16"
+  ],
+  "SoftmaxFwdOp": [
+    "qwen3-8b-lm-head-b1-float32"
+  ],
+  "StdFwdOp": [
+    "long-seq-bfloat16"
+  ],
+  "VarFwdOp": [
+    "long-seq-bfloat16"
+  ],
+  "VarMeanFwdOp": [
+    "long-seq-bfloat16"
+  ],
+  "VectorNormFwdOp": [
+    "inf-long-seq-bfloat16"
+  ]
+}

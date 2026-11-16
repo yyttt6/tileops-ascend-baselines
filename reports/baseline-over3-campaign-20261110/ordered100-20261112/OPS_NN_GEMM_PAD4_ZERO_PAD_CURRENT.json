@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-14T20:17:39.170701+00:00",
+  "paired_cases": 1,
+  "rows": [
+    {
+      "ordinal": 497,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "square-1k-float16"
+      ],
+      "guard_checker_15raw_valid": true,
+      "original_checkpoint": "rollout-ops-nn-gemm-pad4-497-l1-v1.CHECKPOINT.json",
+      "candidate_checkpoint": "rollout-gemm-pad4-zero-pad-497-v2.CHECKPOINT.json",
+      "original_device_us": 35.30446666666666,
+      "candidate_device_us": 27.77166666666667,
+      "device_reduction_percent": 21.336676945504518,
+      "original_host_us_diagnostic": 942.8000698486964,
+      "candidate_host_us_diagnostic": 877.9273678859075,
+      "selection": "candidate",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "common_SOURCE_differences": {},
+      "private_loaded_library_SHAs_equal": true,
+      "comparison": "Samehost/currentruntime nearcontemporaneous originalthen candidate, matchedpayload/protocol/boot/source/nativebinaries; no randomizedcausal claim",
+      "not_final_under3_ratio_closure": true
+    }
+  ],
+  "coverage_increment": 0,
+  "no_historical_or_public_ratio_rewrite": true
+}

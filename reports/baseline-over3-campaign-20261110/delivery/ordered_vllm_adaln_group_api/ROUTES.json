@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-11-13T14:32:07.432669+00:00",
+  "complete_pairs": 0,
+  "rows": [],
+  "effective_retest_coverage_not_incremented": true,
+  "historical_or_public_ratios_not_updated": true,
+  "runtime_repair": "REFERENCE_RUNTIME_PRIVATE_COPY.json",
+  "not_all_SOURCE_bytes_same_expected_import_API_differences_explicit": true
+}

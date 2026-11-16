@@ -1,0 +1,208 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "7c537f860ad128edf8fd71b1c09c6a8ff5ff2912b2850b11f031b51b0763e165",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "base",
+          "dtype": "float",
+          "value": -1.0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "shift",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/log/Log_b9e1030977b1dc266a4781fe63584cae_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "7c537f860ad128edf8fd71b1c09c6a8ff5ff2912b2850b11f031b51b0763e165",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "base",
+          "dtype": "float",
+          "value": 2.0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "shift",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/log/Log_29c662db4f7758ca8d12fd2ffe8f1856_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "48e969ad38fa426c727d2b5c7fd949d2663b7aa0193e1396663c44991b7c1253",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "base",
+          "dtype": "float",
+          "value": -1.0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "shift",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/log/Log_412256dd60fdbbe591b2622c247bd510_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "48e969ad38fa426c727d2b5c7fd949d2663b7aa0193e1396663c44991b7c1253",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "base",
+          "dtype": "float",
+          "value": 2.0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "shift",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910/log/Log_fb42ea349cd1f1779279250bf66d5d90_high_performance.json"
+      }
+    }
+  ]
+}

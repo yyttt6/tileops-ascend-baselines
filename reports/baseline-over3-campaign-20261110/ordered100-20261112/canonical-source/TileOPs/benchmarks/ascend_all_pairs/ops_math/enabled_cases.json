@@ -1,0 +1,304 @@
+{
+  "AbsFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "AddFwdOp": [
+    "hidden-state-prefill-float16",
+    "hidden-state-prefill-bfloat16",
+    "hidden-state-prefill-float32",
+    "cnn-feat-broadcast-float16",
+    "cnn-feat-broadcast-bfloat16",
+    "cnn-feat-broadcast-float32",
+    "llama-7b-ffn-float16",
+    "llama-7b-ffn-bfloat16",
+    "llama-7b-ffn-float32",
+    "linear-bias-float16",
+    "linear-bias-bfloat16",
+    "linear-bias-float32"
+  ],
+  "AllFwdOp": [
+    "mask-validation-4k-bool"
+  ],
+  "AmaxFwdOp": [
+    "hidden-state-float16"
+  ],
+  "AminFwdOp": [
+    "hidden-state-float16"
+  ],
+  "AnyFwdOp": [
+    "mask-validation-4k-bool"
+  ],
+  "ArgmaxFwdOp": [
+    "lm-head-float16"
+  ],
+  "ArgminFwdOp": [
+    "lm-head-float16"
+  ],
+  "AvgPool1dFwdOp": [
+    "audio-downsample-float16"
+  ],
+  "BitwiseNotFwdOp": [
+    "16M-int32"
+  ],
+  "CeilFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "ClampScalarFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "ClampTensorFwdOp": [
+    "16M-float16"
+  ],
+  "CosFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "CumsumFwdOp": [
+    "hidden-state-float16"
+  ],
+  "DivFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "EqFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "ErfFwdOp": [
+    "16M-float16"
+  ],
+  "ExpFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "Expm1FwdOp": [
+    "16M-float16"
+  ],
+  "FloorDivideFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "FloorFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "GroupNormFwdOp": [
+    "image-float16",
+    "image-bfloat16",
+    "wider-channel-float16",
+    "wider-channel-float32",
+    "tail-spatial-float16",
+    "image-affine-float16",
+    "image-affine-bfloat16",
+    "wider-channel-affine-float16",
+    "wider-channel-affine-float32",
+    "tail-spatial-affine-float16"
+  ],
+  "HardtanhFwdOp": [
+    "bounded-hidden-float16"
+  ],
+  "InstanceNormFwdOp": [
+    "image-affine-float16",
+    "image-affine-bfloat16",
+    "wider-channel-affine-float32",
+    "tail-spatial-affine-float16",
+    "image-float16",
+    "image-bfloat16",
+    "wider-channel-float16",
+    "wider-channel-float32",
+    "tail-spatial-float16"
+  ],
+  "IsfiniteFwdOp": [
+    "16M-float16"
+  ],
+  "IsinfFwdOp": [
+    "16M-float16"
+  ],
+  "IsnanFwdOp": [
+    "16M-float16"
+  ],
+  "LayerNormFwdOp": [
+    "llama-8b-prefill-float16",
+    "llama-8b-prefill-bfloat16",
+    "llama-8b-decode-bfloat16",
+    "llama-70b-prefill-float16",
+    "llama-70b-prefill-bfloat16",
+    "llama-70b-decode-bfloat16",
+    "llama-405b-prefill-float16",
+    "llama-405b-prefill-bfloat16",
+    "llama-405b-decode-bfloat16",
+    "llama-13b-prefill-float32",
+    "dit-xl-2-bfloat16"
+  ],
+  "LerpScalarFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "Log1pFwdOp": [
+    "16M-float16"
+  ],
+  "LogFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "LogSumExpFwdOp": [
+    "attn-weights-4k-float16"
+  ],
+  "LogicalAndFwdOp": [
+    "hidden-state-prefill-bool"
+  ],
+  "LogicalNotFwdOp": [
+    "16M-bool"
+  ],
+  "MaskedFillScalarFwdOp": [
+    "16M-float16"
+  ],
+  "MaskedFillTensorFwdOp": [
+    "16M-float16"
+  ],
+  "MaximumFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "MeanFwdOp": [
+    "hidden-state-float16"
+  ],
+  "MeanPoolingFwdOp": [
+    "uniform-8k-float16-float32"
+  ],
+  "MinimumFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "MulFwdOp": [
+    "hidden-state-prefill-float16",
+    "hidden-state-prefill-bfloat16",
+    "hidden-state-prefill-float32",
+    "cnn-feat-broadcast-float16",
+    "cnn-feat-broadcast-bfloat16",
+    "cnn-feat-broadcast-float32",
+    "llama-7b-ffn-float16",
+    "llama-7b-ffn-bfloat16",
+    "llama-7b-ffn-float32",
+    "linear-bias-float16",
+    "linear-bias-bfloat16",
+    "linear-bias-float32",
+    "llama-7b-hidden-float16"
+  ],
+  "NanToNumFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "NeFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "NegFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16"
+  ],
+  "PowFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "ProdFwdOp": [
+    "hidden-state-float16"
+  ],
+  "ReciprocalFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "ReluFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "RemainderFwdOp": [
+    "hidden-state-prefill-float16"
+  ],
+  "RoundFwdOp": [
+    "16M-float16"
+  ],
+  "RsqrtFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "SignFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "SinFwdOp": [
+    "16M-float16",
+    "16M-bfloat16",
+    "16M-float32",
+    "256M-float16",
+    "256M-bfloat16"
+  ],
+  "SqrtFwdOp": [
+    "16M-float16"
+  ],
+  "StdFwdOp": [
+    "hidden-state-float16"
+  ],
+  "SubFwdOp": [
+    "hidden-state-prefill-float16",
+    "hidden-state-prefill-bfloat16",
+    "hidden-state-prefill-float32",
+    "cnn-feat-broadcast-float16",
+    "cnn-feat-broadcast-bfloat16",
+    "cnn-feat-broadcast-float32",
+    "llama-7b-ffn-float16",
+    "llama-7b-ffn-bfloat16",
+    "llama-7b-ffn-float32",
+    "linear-bias-float16",
+    "linear-bias-bfloat16",
+    "linear-bias-float32",
+    "llama-7b-hidden-float16",
+    "phi-2-ffn-float16",
+    "phi-2-ffn-bias-float16",
+    "llama-7b-ffn-bias-float16"
+  ],
+  "SumFwdOp": [
+    "hidden-state-float16"
+  ],
+  "TanhFwdOp": [
+    "16M-float16"
+  ],
+  "TruncFwdOp": [
+    "16M-float16"
+  ],
+  "VarFwdOp": [
+    "hidden-state-float16"
+  ],
+  "VarMeanFwdOp": [
+    "hidden-state-float16"
+  ]
+}

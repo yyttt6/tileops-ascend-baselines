@@ -1,0 +1,7 @@
+{
+    "AvgPool2D": {
+        "opFile": {
+            "value": "from_vendor"
+        }
+    }
+}

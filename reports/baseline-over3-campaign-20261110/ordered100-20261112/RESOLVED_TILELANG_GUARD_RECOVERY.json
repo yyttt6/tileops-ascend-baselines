@@ -1,0 +1,124 @@
+{
+  "checked_at": "2026-11-13T16:18:53.887357+00:00",
+  "accepted_original_APIs": 4,
+  "rows": [
+    {
+      "ordinal": 1587,
+      "key": [
+        "tilelang",
+        "RMSNormFwdOp",
+        "qk-norm-head-bfloat16"
+      ],
+      "device_us": 44.33453333333333,
+      "host_us_diagnostic": 1391.0153570274513,
+      "api": "tilelang.examples.ascend.example_rmsnorm.rms_norm_fwd",
+      "source_sha256": "21578d7b098094bbe25736617e3d484d47d5298a463c8112f8efaf4046389930",
+      "checkpoint": "rollout-tilelang-guard-recovery-1587-1590-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ba085bcc00ce6e8af2e38bbc2e31d4661be70bbd6df314a01a6add571b2a141c",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "prepare_sha256": "ec4bc7695bbc8fc9e8f88a672daad68a39e8e806bf44420896cece88d5d58a9c",
+      "payload_sha256": "1080a05353ea48f085ff246d2ffd221d62f51d84664bf4250cc2116918a90a9c",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "no_alternate_or_speedup_claim": true
+    },
+    {
+      "ordinal": 1588,
+      "key": [
+        "tilelang",
+        "RMSNormFwdOp",
+        "quack-throughput-512-float16"
+      ],
+      "device_us": 194.48760000000001,
+      "host_us_diagnostic": 1327.9920133451621,
+      "api": "tilelang.examples.ascend.example_rmsnorm.rms_norm_fwd",
+      "source_sha256": "21578d7b098094bbe25736617e3d484d47d5298a463c8112f8efaf4046389930",
+      "checkpoint": "rollout-tilelang-guard-recovery-1587-1590-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ba085bcc00ce6e8af2e38bbc2e31d4661be70bbd6df314a01a6add571b2a141c",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "prepare_sha256": "78038a2bb12ee81a75e4af60dd108d2b20d3425fbb9cc037318212a369cebb03",
+      "payload_sha256": "56e134752a0d13c29664667f435f41e0aca390706a7236ac18a7020661bedba2",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "no_alternate_or_speedup_claim": true
+    },
+    {
+      "ordinal": 1589,
+      "key": [
+        "tilelang",
+        "RMSNormFwdOp",
+        "quack-throughput-512-bfloat16"
+      ],
+      "device_us": 194.52700000000002,
+      "host_us_diagnostic": 1455.857294301192,
+      "api": "tilelang.examples.ascend.example_rmsnorm.rms_norm_fwd",
+      "source_sha256": "21578d7b098094bbe25736617e3d484d47d5298a463c8112f8efaf4046389930",
+      "checkpoint": "rollout-tilelang-guard-recovery-1587-1590-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ba085bcc00ce6e8af2e38bbc2e31d4661be70bbd6df314a01a6add571b2a141c",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "prepare_sha256": "106bbd4eec7201cb988ca8c4b3228c9d9477d1eb4cce4a85174e41885c52b1ba",
+      "payload_sha256": "2ec57cd43eca16cb82c07452a38751e8be1eb9106f7fcb33bb1ffc81551e7f83",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "no_alternate_or_speedup_claim": true
+    },
+    {
+      "ordinal": 1590,
+      "key": [
+        "tilelang",
+        "RMSNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "device_us": 20.206599999999998,
+      "host_us_diagnostic": 1297.0993295311928,
+      "api": "tilelang.examples.ascend.example_rmsnorm.rms_norm_fwd",
+      "source_sha256": "21578d7b098094bbe25736617e3d484d47d5298a463c8112f8efaf4046389930",
+      "checkpoint": "rollout-tilelang-guard-recovery-1587-1590-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ba085bcc00ce6e8af2e38bbc2e31d4661be70bbd6df314a01a6add571b2a141c",
+      "runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "protocol": "ascend950-isolated-ffts-v3",
+      "prepare_sha256": "9fb89451ad794b5712d589f0f50d1ca27142d2c784753876f2853644612e30cc",
+      "payload_sha256": "097cf8c3bf6953268e947706119a65d8bb371aeaebb479af0881036002d0636c",
+      "reference_policy": "original_npu",
+      "full_checker_15raw_guard_valid": true,
+      "not_final_under3_ratio_closure": true,
+      "no_alternate_or_speedup_claim": true
+    }
+  ],
+  "no_historical_public_ratio_updated": true,
+  "old_CPU_prepare_failure_retained": true
+}

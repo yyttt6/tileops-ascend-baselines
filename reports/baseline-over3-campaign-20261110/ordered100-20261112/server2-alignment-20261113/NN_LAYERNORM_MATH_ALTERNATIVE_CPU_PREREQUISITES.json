@@ -1,0 +1,122 @@
+{
+  "checked_at_remote": "2026-11-16T00:25:14.546332+00:00",
+  "scope": [
+    519,
+    520,
+    521,
+    522,
+    523
+  ],
+  "all5_original_inputs_and_source_qualified": true,
+  "input_proofs": [
+    {
+      "ordinal": 519,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "79c263ece1b945d524a444d96e18c9f2e38c5d3e44fbbe78f279bb0866c92bc9",
+      "payload_sha256": "05a143994456524e8292bce188afedc6fe4e125f2ca9a2926b528531fde63981",
+      "descriptor_sha256": "d2247aaa7883534e083873c68bf73b161c2915a4b13a2a1388f0f57dc6ec5d3a",
+      "helper_sha256": "2fc5ec6d4d683728c140bb402341d91864640bf3070b44fa0b67663a3ee6aa24",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true
+    },
+    {
+      "ordinal": 520,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-405b-prefill-float16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "2c4af0dc55d2a73a491e9d4165fb45b52b0a6e26cc0a9d440eff48657e58aab1",
+      "payload_sha256": "89da2dd59c31fc0fc0821682d3c1deaa0d54b2a84a020b1c2ec3e13696e52d50",
+      "descriptor_sha256": "270817fa250a09bd44ed5c73329daedaaa8dacd3409fc4de2a1ed4db0b142363",
+      "helper_sha256": "2fc5ec6d4d683728c140bb402341d91864640bf3070b44fa0b67663a3ee6aa24",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true
+    },
+    {
+      "ordinal": 521,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-405b-prefill-bfloat16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "1a79e4c7a58951d353677ffa165a4be3313b57f5a552ec0517cd28198e3ca035",
+      "payload_sha256": "14320d6cbb518f5d79fa7c9499ee03df48c0aa1a8417ed13cdf2acd629ff1fba",
+      "descriptor_sha256": "6a6a923f71e91d6208133fdef78ee2ab1f46e7d7fc98cb57470fe8096bb8385b",
+      "helper_sha256": "2fc5ec6d4d683728c140bb402341d91864640bf3070b44fa0b67663a3ee6aa24",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true
+    },
+    {
+      "ordinal": 522,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-70b-decode-bfloat16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "40f593774a4a320529de945cca050cd2739cc3a885f0babdc6bc1df2e74dc52a",
+      "payload_sha256": "e57bce8e268f99564c55730a61a1b5e6797ca86259b4395fe22863851f054061",
+      "descriptor_sha256": "00cb8b90a26aea48019c6b61b029bd52adb84af317be7450f96f70bbe328562f",
+      "helper_sha256": "2fc5ec6d4d683728c140bb402341d91864640bf3070b44fa0b67663a3ee6aa24",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true
+    },
+    {
+      "ordinal": 523,
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "llama-405b-decode-bfloat16"
+      ],
+      "only_source_delta": {
+        "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/sgl/row_gemv.py": [
+          "618ca3568073f86f64d2873967140a6f4cf3419771c549eee50e021e4e428204",
+          "9b86e94c65732d1e10f4be445113418104ad42d47436272385bcf425274d9d4e"
+        ]
+      },
+      "current_source_map_sha256": "e057161caf29ae19b168c54072f1adb09e627b3e20e4cc7f76962c874c96a62e",
+      "prepare_sha256": "1742a526b8236cdc869347c5b578003c8954115d8c4fa7df89309ce024fe5abc",
+      "payload_sha256": "a667d05b1f95ed3f6e90cba8558fbba7367077bf4308d8305996b4b1e0fbfbda",
+      "descriptor_sha256": "b573c5d9873b1f0b4a6bf404d03f8ab309a7e70fe6be178608b93bfbc264361c",
+      "helper_sha256": "2fc5ec6d4d683728c140bb402341d91864640bf3070b44fa0b67663a3ee6aa24",
+      "old_metadata_untouched": true,
+      "timed_function_and_checker_unchanged": true
+    }
+  ],
+  "original_math_qualification_sha256": "2ac780e096ab7038a9f6a06a42e0a4f4f7456a8b2f906d1d6f1d417464f8f633",
+  "host_binary_sha256": "3dc8d202bf2df4969928d0726432ffa4a930f1e2d70304319d4fbb84f4cb46e8",
+  "original_API_AST_unchanged": true,
+  "not_NPU_work_or_coverage": true
+}

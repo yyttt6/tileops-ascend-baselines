@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-11-13T14:01:47.551478+00:00",
+  "name": "ops-tensor",
+  "declared_commit": "29488cb2a70c9dc3d6e8e5ebb4431028bac8aedf",
+  "actual_commit": "29488cb2a70c9dc3d6e8e5ebb4431028bac8aedf",
+  "origin": "https://gitcode.com/cann/ops-tensor.git",
+  "source_only_no_build_or_device": true
+}

@@ -1,0 +1,275 @@
+[
+  {
+    "ordinal": 13,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerBlockFwdOp",
+      "ds-v3-decode-bfloat16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 17.761799999999997,
+    "original_device_us": 25.4596,
+    "device_reduction_percent": 30.235353265565845,
+    "host_us_diagnostic": 822.6546769340833,
+    "metric": "device_async",
+    "evidence": "candidate-pad-13-16.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 14,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerBlockFwdOp",
+      "ds-v3-prefill-bfloat16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 447.7250666666667,
+    "original_device_us": 600.3826,
+    "device_reduction_percent": 25.426708457795634,
+    "host_us_diagnostic": 1129.341373840968,
+    "metric": "device_async",
+    "evidence": "candidate-pad-13-16.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 16,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerBlockFwdOp",
+      "qwen3-235b-prefill-float16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 238.99173333333334,
+    "original_device_us": 321.9178,
+    "device_reduction_percent": 25.76001285628401,
+    "host_us_diagnostic": 1165.3059783081214,
+    "metric": "device_async",
+    "evidence": "candidate-pad-13-16.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 17,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerChannelFwdOp",
+      "llama-70b-mlp-down-bfloat16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 3571.789466666667,
+    "original_device_us": 4802.668666666667,
+    "device_reduction_percent": 25.629067616990163,
+    "host_us_diagnostic": 3946.74992809693,
+    "metric": "device_async",
+    "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 18,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerChannelFwdOp",
+      "llama-8b-mlp-down-float32"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 788.1351999999999,
+    "original_device_us": 1107.6442666666667,
+    "device_reduction_percent": 28.845819572397012,
+    "host_us_diagnostic": 1256.8086075286071,
+    "metric": "device_async",
+    "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 19,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerChannelFwdOp",
+      "llama-8b-mlp-up-float16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 890.7327333333333,
+    "original_device_us": 1201.7941999999998,
+    "device_reduction_percent": 25.88308935645276,
+    "host_us_diagnostic": 1339.59266046683,
+    "metric": "device_async",
+    "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 20,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerChannelFwdOp",
+      "llama-8b-mlp-up-bfloat16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 891.0716666666666,
+    "original_device_us": 1207.0158,
+    "device_reduction_percent": 26.175641887482616,
+    "host_us_diagnostic": 1339.6393818159897,
+    "metric": "device_async",
+    "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 23,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerChannelFwdOp",
+      "gpt-oss-20b-mlp-up-bfloat16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 232.13920000000002,
+    "original_device_us": 289.0652,
+    "device_reduction_percent": 19.69313497439331,
+    "host_us_diagnostic": 1128.1220242381096,
+    "metric": "device_async",
+    "evidence": "candidate-pad-17-23.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 24,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerTensorFwdOp",
+      "qwen3-32b-prefill-float16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 620.1163333333334,
+    "original_device_us": 846.0333333333334,
+    "device_reduction_percent": 26.70308498483117,
+    "host_us_diagnostic": 1064.0140001972516,
+    "metric": "device_async",
+    "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 25,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerTensorFwdOp",
+      "llama-8b-prefill-bfloat16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 234.53626666666665,
+    "original_device_us": 294.6893333333333,
+    "device_reduction_percent": 20.412366469547592,
+    "host_us_diagnostic": 632.0806841055552,
+    "metric": "device_async",
+    "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 26,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerTensorFwdOp",
+      "gpt-oss-prefill-bfloat16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 102.01653333333334,
+    "original_device_us": 140.19313333333332,
+    "device_reduction_percent": 27.231433588996502,
+    "host_us_diagnostic": 621.0466225941976,
+    "metric": "device_async",
+    "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 27,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerTensorFwdOp",
+      "llama-8b-decode-bfloat16"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 13.3406,
+    "original_device_us": 20.3824,
+    "device_reduction_percent": 34.54843394300966,
+    "host_us_diagnostic": 730.6333941717943,
+    "metric": "device_async",
+    "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  },
+  {
+    "ordinal": 28,
+    "key": [
+      "TileKernels",
+      "INT8DequantPerTensorFwdOp",
+      "qwen3-32b-prefill-float32"
+    ],
+    "selection": "zero_pad_adapter",
+    "device_us": 540.7620666666666,
+    "original_device_us": 774.3998666666668,
+    "device_reduction_percent": 30.170175649134944,
+    "host_us_diagnostic": 1039.1900315880775,
+    "metric": "device_async",
+    "evidence": "candidate-pad-24-28.CHECKPOINT.json",
+    "protocol": "experimental-baseline-full32-marker-session-v1",
+    "historical_ratio_update": false,
+    "source_hashes": {
+      "candidate.py": "0162a494c13886eeb7a665889bc723d75166dceb646e33571c1357c45603230a",
+      "original_dequant.py": "dda8e7f5b809e5b42507fd5c54ce9404a2e129bf89bd722e3bf466bffd7b1532"
+    }
+  }
+]

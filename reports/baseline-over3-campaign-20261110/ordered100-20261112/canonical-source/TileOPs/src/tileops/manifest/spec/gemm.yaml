@@ -1,0 +1,330 @@
+# Dense GEMM family.
+GemmFwdOp:
+  ref_api: nvmath.linalg.advanced.Matmul.execute
+  family: gemm
+  status: implemented
+
+  signature:
+    types:
+      # A matrix stored as written, or transposed.
+      Mat:
+        params: {t: Bool, R: Dim, C: Dim}
+        match: t
+        cases:
+        - {when: false, is: "[R, C]"}
+        - {when: true, is: "[C, R]"}
+    forall: {M: Dim, N: Dim, K: Dim, T: "DType[float16 | bfloat16]"}
+    params:
+      trans_a: {type: bool, default: false}
+      trans_b: {type: bool, default: true}
+    inputs:
+      a: {dtype: T, shape: "Mat[trans_a, M, K]"}
+      b: {dtype: T, shape: "Mat[trans_b, K, N]"}
+    outputs:
+      d: {dtype: T, shape: "[M, N]"}
+
+  workloads:
+  # trans_a/trans_b pick the storage layout the kernel compiles for. The NT (N, K) shapes mirror
+  # DeepGEMM's normal-GEMM test set (DeepSeek-V3 MLP/attention projections), swept over decode
+  # (M=128) and prefill (M=4096) token counts.
+  - {M: 1024, N: 1024, K: 1024, trans_a: false, trans_b: false, dtype_cases: [{T: float16}, {T: bfloat16}], label: square-1k}
+  - {M: 128, N: 2112, K: 7168, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-decode-qkv-a}
+  - {M: 128, N: 7168, K: 2048, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-decode-down}
+  - {M: 4096, N: 2112, K: 7168, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-prefill-qkv-a}
+  - {M: 4096, N: 7168, K: 2048, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-prefill-down}
+  - {M: 4096, N: 4096, K: 7168, trans_a: false, trans_b: true, dtype_cases: [{T: float16}, {T: bfloat16}], label: ds-v3-prefill-mlp-up}
+  - {M: 4096, N: 7168, K: 16384, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-prefill-o-proj}
+  - {M: 4096, N: 24576, K: 1536, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-prefill-q-b}
+  # Mid-M band: samples of M = 9..127, the token-count gap below the decode/prefill sweep; N/K
+  # reuse the DeepSeek-V3 projection shapes above.
+  - {M: 16, N: 4096, K: 7168, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-m16-mlp-up}
+  - {M: 32, N: 4096, K: 7168, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-m32-mlp-up}
+  - {M: 64, N: 7168, K: 2048, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-m64-down}
+  - {M: 96, N: 2112, K: 7168, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-m96-qkv-a}
+  # Single- and two-token decode. These are the only workloads whose M reaches the bandwidth
+  # kernel modes, one per mode, on the same projection as the decode rows above. The two-token
+  # shape keeps N narrow on purpose: on a grid wide enough for the operand-swapped generic kernel
+  # that one serves M = 2 instead.
+  - {M: 1, N: 2112, K: 7168, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-m1-qkv-a}
+  - {M: 2, N: 2112, K: 7168, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: ds-v3-m2-qkv-a}
+  - {M: 1, N: 24576, K: 4096, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: qwen3-8b-gate-up-decode}
+  - {M: 32, N: 24576, K: 4096, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: qwen3-8b-gate-up-b32}
+  - {M: 128, N: 4096, K: 12288, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: qwen3-8b-down-prefill}
+  # ViT-L/16's ImageNet-21k classifier over a 256-image batch: 21843 classes, an N that is not a
+  # multiple of 8.
+  - {M: 256, N: 21843, K: 1024, trans_a: false, trans_b: true, dtype_cases: [{T: bfloat16}], label: vit-l16-in21k-head}
+
+  roofline:
+    # The contraction; one multiply per weight for the group scale; and the epilogue,
+    # which scales each result by its channel and its token scale.
+    flops: "2 * M * N * K + N * K + 2 * M * N"
+
+GemmFP8FwdOp:
+  ref_api: deep_gemm.fp8_gemm_nt
+  family: gemm
+  status: implemented
+
+  signature:
+    # b is the [N, K] operand torch._scaled_mm receives transposed. The scales are per-tensor
+    # [1, 1] for both operands, or scale_a per 1x128 block along K, [M, ceil(K/128)], with
+    # scale_b either per 1x128 block, [N, ceil(K/128)], or per 128x128 block,
+    # [ceil(N/128), ceil(K/128)].
+    forall: {M: Dim, N: Dim, K: Dim, SA: Shape, SB: Shape, T: "DType[float8_e4m3fn]"}
+    params:
+      out_dtype: {type: "bfloat16 | float16", default: bfloat16}
+    inputs:
+      a: {dtype: T, shape: "[M, K]"}
+      b: {dtype: T, shape: "[N, K]"}
+      scale_a: {dtype: float32, shape: "[*SA]"}
+      scale_b: {dtype: float32, shape: "[*SB]"}
+      bias: {dtype: out_dtype, shape: "[N]", optional: true}
+    outputs:
+      d: {dtype: out_dtype, shape: "[M, N]"}
+    shape_rules:
+    - "(SA == (1, 1) and SB == (1, 1)) or (SA == (M, ceil_div(K, 128)) and (SB == (N, ceil_div(K, 128)) or SB == (ceil_div(N, 128), ceil_div(K, 128))))"
+
+  workloads:
+  - {M: 128, N: 2112, K: 7168, SA: [1, 1], SB: [1, 1], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-decode-qkv-a}
+  - {M: 128, N: 7168, K: 2048, SA: [1, 1], SB: [1, 1], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-decode-down}
+  - {M: 4096, N: 2112, K: 7168, SA: [1, 1], SB: [1, 1], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-qkv-a}
+  - {M: 4096, N: 7168, K: 2048, SA: [1, 1], SB: [1, 1], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-down}
+  - {M: 128, N: 2112, K: 7168, SA: [128, 56], SB: [2112, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-decode-qkv-a-blk}
+  - {M: 128, N: 7168, K: 2048, SA: [128, 16], SB: [7168, 16], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-decode-down-blk}
+  - {M: 4096, N: 2112, K: 7168, SA: [4096, 56], SB: [2112, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-qkv-a-blk}
+  - {M: 4096, N: 7168, K: 2048, SA: [4096, 16], SB: [7168, 16], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-down-blk}
+  - {M: 4096, N: 4096, K: 7168, SA: [4096, 56], SB: [4096, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-mlp-up}
+  - {M: 4096, N: 7168, K: 16384, SA: [4096, 128], SB: [7168, 128], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-o-proj}
+  - {M: 4096, N: 24576, K: 1536, SA: [4096, 12], SB: [24576, 12], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-q-b}
+  - {M: 8, N: 7168, K: 2048, SA: [1, 1], SB: [1, 1], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-m8-down}
+  - {M: 1, N: 7168, K: 2048, SA: [1, 1], SB: [1, 1], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-m1-down}
+  - {M: 1, N: 7168, K: 2048, SA: [1, 16], SB: [7168, 16], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-m1-down-blk}
+  - {M: 128, N: 2112, K: 7168, SA: [128, 56], SB: [17, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-decode-qkv-a-2d}
+  - {M: 128, N: 7168, K: 2048, SA: [128, 16], SB: [56, 16], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-decode-down-2d}
+  - {M: 4096, N: 2112, K: 7168, SA: [4096, 56], SB: [17, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-qkv-a-2d}
+  - {M: 4096, N: 7168, K: 2048, SA: [4096, 16], SB: [56, 16], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-down-2d}
+  - {M: 4096, N: 4096, K: 7168, SA: [4096, 56], SB: [32, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-mlp-up-2d}
+  - {M: 4096, N: 7168, K: 16384, SA: [4096, 128], SB: [56, 128], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-o-proj-2d}
+  - {M: 4096, N: 24576, K: 1536, SA: [4096, 12], SB: [192, 12], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-prefill-q-b-2d}
+  - {M: 1, N: 7168, K: 2048, SA: [1, 16], SB: [56, 16], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-m1-down-2d}
+  - {M: 128, N: 2112, K: 7168, SA: [1, 1], SB: [1, 1], some: [bias], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-decode-qkv-a-bias}
+  - {M: 128, N: 2112, K: 7168, SA: [1, 1], SB: [1, 1], out_dtype: float16, dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-decode-qkv-a}
+  - {M: 128, N: 2112, K: 7168, SA: [128, 56], SB: [2112, 56], out_dtype: float16, dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-decode-qkv-a-blk}
+  - {M: 128, N: 576, K: 7168, SA: [128, 56], SB: [576, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-kv-a-m128-s1}
+  - {M: 128, N: 576, K: 7168, SA: [128, 56], SB: [5, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-kv-a-m128-s128}
+  - {M: 128, N: 24576, K: 1536, SA: [128, 12], SB: [24576, 12], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-q-b-m128-s1}
+  - {M: 128, N: 24576, K: 1536, SA: [128, 12], SB: [192, 12], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-q-b-m128-s128}
+  - {M: 128, N: 32768, K: 512, SA: [128, 4], SB: [32768, 4], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-kv-b-m128-s1}
+  - {M: 128, N: 32768, K: 512, SA: [128, 4], SB: [256, 4], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-kv-b-m128-s128}
+  - {M: 128, N: 7168, K: 16384, SA: [128, 128], SB: [7168, 128], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-o-proj-m128-s1}
+  - {M: 128, N: 7168, K: 16384, SA: [128, 128], SB: [56, 128], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-o-proj-m128-s128}
+  - {M: 128, N: 4096, K: 7168, SA: [128, 56], SB: [4096, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-mlp-up-m128-s1}
+  - {M: 128, N: 4096, K: 7168, SA: [128, 56], SB: [32, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-mlp-up-m128-s128}
+  - {M: 4096, N: 576, K: 7168, SA: [4096, 56], SB: [576, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-kv-a-m4096-s1}
+  - {M: 4096, N: 576, K: 7168, SA: [4096, 56], SB: [5, 56], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-kv-a-m4096-s128}
+  - {M: 4096, N: 32768, K: 512, SA: [4096, 4], SB: [32768, 4], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-kv-b-m4096-s1}
+  - {M: 4096, N: 32768, K: 512, SA: [4096, 4], SB: [256, 4], dtype_cases: [{T: float8_e4m3fn}], label: ds-v3-kv-b-m4096-s128}
+
+  roofline:
+    # The contraction; one multiply per weight for the group scale; and the epilogue,
+    # which scales each result by its channel and its token scale.
+    flops: "2 * M * N * K + N * K + 2 * M * N"
+
+GemmW4A16FwdOp:
+  family: gemm
+  status: implemented
+  ref_api: vllm._custom_ops.marlin_gemm
+
+  signature:
+    forall: {M: Dim, N: Dim, K: Dim, T: "DType[float16]"}
+    params:
+      group_size: {type: int, default: 128}
+    inputs:
+      activation: {dtype: T, shape: "[M, K]"}
+      # Two INT4 weights per byte, in the order GemmW4A16FwdOp.repack produces.
+      packed_weight: {dtype: uint8, shape: "[N, K // 2]"}
+      weight_scale: {dtype: T, shape: "[N, K // group_size]"}
+      weight_zero: {dtype: uint8, shape: "[N, K // group_size]"}
+    outputs:
+      output: {dtype: T, shape: "[M, N]"}
+    shape_rules:
+    - "group_size > 0"
+    # The packing order is defined per 128-element K step.
+    - "K % 128 == 0 and K % group_size == 0"
+
+  workloads:
+  # Decode-oriented coverage. The small non-decode shapes are compile/smoke checks only; they are
+  # not intended to claim full GEMM performance coverage.
+  - {M: 64, N: 64, K: 128, dtype_cases: [{T: float16}], label: single-tile}
+  - {M: 128, N: 256, K: 256, dtype_cases: [{T: float16}], label: multi-tile}
+  - {M: 1, N: 8192, K: 8192, dtype_cases: [{T: float16}], label: decode-l2-resident}
+  - {M: 1, N: 8192, K: 16384, dtype_cases: [{T: float16}], label: decode-hbm-streaming}
+  - {M: 1, N: 7168, K: 20480, dtype_cases: [{T: float16}], label: decode-non-pow2}
+  - {M: 1, N: 8192, K: 81920, dtype_cases: [{T: float16}], label: decode-long-k}
+  # The token axis at one shape. Server batching lands here, and the kernel picks a different
+  # tile at each of these counts.
+  - {M: 2, N: 8192, K: 8192, dtype_cases: [{T: float16}], label: decode-b2}
+  - {M: 8, N: 8192, K: 8192, dtype_cases: [{T: float16}], label: decode-b8}
+  - {M: 32, N: 8192, K: 8192, dtype_cases: [{T: float16}], label: decode-b32}
+  - {M: 128, N: 8192, K: 8192, dtype_cases: [{T: float16}], label: chunked-prefill-tile}
+  - {M: 512, N: 8192, K: 8192, dtype_cases: [{T: float16}], label: prefill-mlp-up}
+  # Hidden sizes other than 8192, where the decode rows above do not predict the result: the
+  # one-token grid under-fills the machine at 4096, the prefill one at 5120, and the tile selector
+  # answers each differently.
+  - {M: 1, N: 4096, K: 14336, dtype_cases: [{T: float16}], label: llama-8b-decode-down}
+  - {M: 128, N: 4096, K: 14336, dtype_cases: [{T: float16}], label: llama-8b-prefill-down}
+  - {M: 128, N: 5120, K: 25600, dtype_cases: [{T: float16}], label: qwen3-32b-prefill-down}
+  # A tensor-parallel shard: N is a fraction of the layer's, so the grid is far smaller than the
+  # machine and the per-CTA work dominates.
+  - {M: 1, N: 1024, K: 8192, dtype_cases: [{T: float16}], label: decode-tp8-attn-out}
+
+  roofline:
+    # The contraction, and one subtract and one multiply dequantizing each weight once.
+    flops: "2 * M * N * K + 2 * N * K"
+
+
+GroupedGemmFwdOp:
+  family: gemm
+  status: implemented
+  ref_api: quack.gemm_interface.gemm
+
+  signature:
+    # G groups packed along M rows. Without transpose_a each group multiplies its rows of a by
+    # its own b; with transpose_a the groups split the contraction and the output keeps a group
+    # axis. transpose_b stores the per-group operand transposed.
+    types:
+      A:
+        params: {ta: Bool, M: Dim, N: Dim, K: Dim}
+        match: ta
+        cases:
+        - {when: false, is: "[M, K]"}
+        - {when: true, is: "[M, N]"}
+      B:
+        params: {ta: Bool, tb: Bool, M: Dim, G: Dim, N: Dim, K: Dim}
+        match: [ta, tb]
+        cases:
+        - {when: [false, false], is: "[G, K, N]"}
+        - {when: [false, true], is: "[G, N, K]"}
+        - {when: [true, false], is: "[M, K]"}
+        - {when: [true, true], is: "[K, M]"}
+      Out:
+        params: {ta: Bool, M: Dim, G: Dim, N: Dim, K: Dim}
+        match: ta
+        cases:
+        - {when: false, is: "[M, N]"}
+        - {when: true, is: "[G, N, K]"}
+    forall: {M: Dim, G: Dim, N: Dim, K: Dim, T: "DType[float16 | bfloat16]"}
+    params:
+      transpose_a: {type: bool, default: false}
+      transpose_b: {type: bool, default: true}
+    inputs:
+      a: {dtype: T, shape: "A[transpose_a, M, N, K]"}
+      b: {dtype: T, shape: "B[transpose_a, transpose_b, M, G, N, K]"}
+      batch_sizes: {dtype: int32, shape: "[G]", values: "as_tensor(balanced_sizes(M, G))", requires: ["in_range(0, M + 1)", "sums_to(M)"]}
+      batch_offsets: {dtype: int32, shape: "[G]", values: "exclusive_prefix_sum(balanced_sizes(M, G))", requires: ["exclusive_prefix_of(batch_sizes)"]}
+    outputs:
+      output: {dtype: T, shape: "Out[transpose_a, M, G, N, K]"}
+    shape_rules:
+    - "M > 0"
+    - "G > 0"
+    - "N > 0"
+    - "K > 0"
+
+  workloads:
+  - {M: 4096, G: 16, N: 4096, K: 4096, transpose_a: false, transpose_b: true, dtype_cases: [{T: float16}, {T: bfloat16}], label: moe-fwd}
+  - {M: 4096, G: 16, N: 4096, K: 4096, transpose_a: false, transpose_b: false, dtype_cases: [{T: float16}], label: moe-dgrad}
+  - {M: 4096, G: 16, N: 4096, K: 4096, transpose_a: true, transpose_b: false, dtype_cases: [{T: float16}], label: moe-wgrad}
+  - {M: 8, G: 16, N: 1536, K: 2048, transpose_a: false, transpose_b: true, dtype_cases: [{T: bfloat16}], label: qwen3-30b-ep8-empty}
+  - {M: 1024, G: 16, N: 1536, K: 2048, transpose_a: false, transpose_b: true, dtype_cases: [{T: bfloat16}], label: qwen3-30b-ep8-routed1k}
+  - {M: 257, G: 16, N: 1536, K: 2048, transpose_a: false, transpose_b: true, dtype_cases: [{T: bfloat16}], label: qwen3-30b-ep8-ragged}
+
+  roofline:
+    # The contraction; one multiply per weight for the group scale; and the epilogue,
+    # which scales each result by its channel and its token scale.
+    flops: "2 * M * N * K + N * K + 2 * M * N"
+GemmINT8W8A8FwdOp:
+  family: gemm
+  status: spec-only
+  ref_api: vllm._custom_ops.cutlass_scaled_mm
+  signature:
+    forall:
+      M: Dim
+      N: Dim
+      K: Dim
+      SA: Shape
+      SB: Shape
+    params:
+      out_dtype: {type: "bfloat16 | float16", default: bfloat16}
+    inputs:
+      a: {dtype: int8, shape: "[M, K]"}
+      b: {dtype: int8, shape: "[N, K]"}
+      scale_a: {dtype: float32, shape: "[*SA]"}
+      scale_b: {dtype: float32, shape: "[*SB]"}
+      bias: {dtype: out_dtype, shape: "[N]", optional: true}
+    outputs:
+      d: {dtype: out_dtype, shape: "[M, N]"}
+    shape_rules:
+      # The two sides choose their granularity independently: either operand may carry one
+      # scale for the whole tensor or one per row of the output.
+      - "SA == (1, 1) or SA == (M, 1)"
+      - "SB == (1, 1) or SB == (1, N)"
+  roofline:
+    # The contraction; one multiply per weight for the group scale; and the epilogue,
+    # which scales each result by its channel and its token scale.
+    flops: "2 * M * N * K + N * K + 2 * M * N"
+  workloads:
+    - {M: 128, N: 6144, K: 4096, SA: [128, 1], SB: [1, 6144], label: llama3-8b-decode-qkv}
+    - {M: 128, N: 4096, K: 14336, SA: [128, 1], SB: [1, 4096], label: llama3-8b-decode-down}
+    - {M: 4096, N: 6144, K: 4096, SA: [4096, 1], SB: [1, 6144], label: llama3-8b-prefill-qkv}
+    - {M: 4096, N: 4096, K: 14336, SA: [4096, 1], SB: [1, 4096], label: llama3-8b-prefill-down}
+    - {M: 128, N: 10240, K: 8192, SA: [1, 1], SB: [1, 1], label: llama3-70b-dec-qkv-tsr}
+    - {M: 4096, N: 8192, K: 28672, SA: [4096, 1], SB: [1, 8192], label: llama3-70b-prefill-down}
+
+GemmW4A8FwdOp:
+  # Dequantization is affine in two steps: a group scale along K, then a per-channel
+  # scale along N. The activation carries a per-token scale. The packing order is the
+  # implementation's, held between its `repack` and its GEMM, so it is not in the
+  # signature.
+  family: gemm
+  status: spec-only
+  ref_api: vllm._custom_ops.cutlass_w4a8_mm
+
+  signature:
+    forall: {M: Dim, N: Dim, K: Dim}
+    params:
+      group_size: {type: int, default: 128}
+    inputs:
+      activation: {dtype: float8_e4m3fn, shape: "[M, K]"}
+      # Two INT4 weights per byte, in the order this op's `repack` produces.
+      packed_weight: {dtype: uint8, shape: "[N, K // 2]"}
+      weight_group_scale: {dtype: bfloat16, shape: "[N, K // group_size]"}
+      weight_channel_scale: {dtype: float32, shape: "[N]"}
+      activation_scale: {dtype: float32, shape: "[M]"}
+    outputs:
+      output: {dtype: bfloat16, shape: "[M, N]"}
+    shape_rules:
+    - "M > 0 and N > 0"
+    - "group_size > 0"
+    # The packing order is defined per 128-element K step, as in GemmW4A16FwdOp.
+    - "K % 128 == 0 and K % group_size == 0"
+
+  workloads:
+  # DeepSeek-R1: hidden 7168, MLP intermediate 18432. Both directions, since the down
+  # projection contracts over the intermediate axis and the up projection over the hidden.
+  - {M: 1, N: 7168, K: 18432, label: ds-r1-down-b1}
+  - {M: 64, N: 7168, K: 18432, label: ds-r1-down-b64}
+  - {M: 4096, N: 7168, K: 18432, label: ds-r1-down-4k}
+  - {M: 1, N: 18432, K: 7168, label: ds-r1-up-b1}
+  - {M: 64, N: 18432, K: 7168, label: ds-r1-up-b64}
+  - {M: 4096, N: 18432, K: 7168, label: ds-r1-up-4k}
+  # Llama-3 70B: hidden 8192, MLP intermediate 28672.
+  - {M: 1, N: 8192, K: 28672, label: llama-70b-down-b1}
+  - {M: 64, N: 8192, K: 28672, label: llama-70b-down-b64}
+  - {M: 4096, N: 8192, K: 28672, label: llama-70b-down-4k}
+  - {M: 1, N: 28672, K: 8192, label: llama-70b-up-b1}
+  - {M: 64, N: 28672, K: 8192, label: llama-70b-up-b64}
+  - {M: 4096, N: 28672, K: 8192, label: llama-70b-up-4k}
+
+  roofline:
+    # The contraction; one multiply per weight for the group scale; and the epilogue,
+    # which scales each result by its channel and its token scale.
+    flops: "2 * M * N * K + N * K + 2 * M * N"

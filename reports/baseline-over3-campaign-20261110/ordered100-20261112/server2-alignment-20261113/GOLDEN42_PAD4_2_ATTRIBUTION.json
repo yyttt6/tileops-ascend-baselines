@@ -1,0 +1,1004 @@
+{
+  "checked_at": "2026-11-16T05:16:40.488244+00:00",
+  "proofs": [
+    {
+      "ordinal": 490,
+      "checkpoint": "rollout-golden42-pad4-2-490-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "55974cbeacf1387d548c110a9511333eca8719191bb9324838ff2362313736d8",
+      "all15_actual_kernel_to_original_AoT": [
+        {
+          "trace_sha": "051db8b7205fdca9bbfbd161ba23d6d955ce44f7928ea035a2c516392381ab4d",
+          "actual_kernels": [
+            {
+              "task_id": 36,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794846380989729,
+              "end_ns": 3794846381065055,
+              "duration_us": 75.326,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "449ec6909bdafb8e87f4e652adb8fbde7695d300f0a76c437ba84e547fe88fca",
+          "actual_kernels": [
+            {
+              "task_id": 42,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794848067729315,
+              "end_ns": 3794848067804778,
+              "duration_us": 75.463,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "cea10d3529b26997503dfbdf16ebde49b97777e0c005d81fc717de4dd81f4e3c",
+          "actual_kernels": [
+            {
+              "task_id": 48,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794849561320831,
+              "end_ns": 3794849561396282,
+              "duration_us": 75.451,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "4afa7ea5f145dda2fb1fa6bae92e95c172fc34d16ce49b804ad28f7fd668ae53",
+          "actual_kernels": [
+            {
+              "task_id": 54,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794851183124861,
+              "end_ns": 3794851183200311,
+              "duration_us": 75.45,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "695a67122fdc5ba5189f177d927c7494991cba7c13a55ab345fe4ba48533a0c7",
+          "actual_kernels": [
+            {
+              "task_id": 60,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794852673921569,
+              "end_ns": 3794852673996891,
+              "duration_us": 75.322,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "4ed52f7d2ec0d55f2f060ec821f50af90022f262fea58a986849bf700952991a",
+          "actual_kernels": [
+            {
+              "task_id": 66,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794854304379273,
+              "end_ns": 3794854304454904,
+              "duration_us": 75.631,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "2e11af24c8327e3881e6f4e234caab86e8649ce0c35f63bba7f431b026614ece",
+          "actual_kernels": [
+            {
+              "task_id": 72,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794856155826039,
+              "end_ns": 3794856155902073,
+              "duration_us": 76.034,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "65d3e150a5d421f1ed7897962ba2acf8538be8832a203a8699fd9e1252112e31",
+          "actual_kernels": [
+            {
+              "task_id": 78,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794857595879766,
+              "end_ns": 3794857595955799,
+              "duration_us": 76.033,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "c8dd7eeeff08e3d5f4fc4cd3425e3919d388aef31d517ff546e0484cd34487fc",
+          "actual_kernels": [
+            {
+              "task_id": 84,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794859215896374,
+              "end_ns": 3794859215971732,
+              "duration_us": 75.358,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "b6b3d18ecdab26511ae5c04736efecea7b9b76e5e204cabcbd8d5a1a04d10145",
+          "actual_kernels": [
+            {
+              "task_id": 90,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794860839733789,
+              "end_ns": 3794860839809525,
+              "duration_us": 75.736,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "83f68359b15bbc20d74e14c344d2199b29480ee8a29646b9e1ae8b4244a2da48",
+          "actual_kernels": [
+            {
+              "task_id": 96,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794862401497856,
+              "end_ns": 3794862401573493,
+              "duration_us": 75.637,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "f0f6dfe6e1b69f24a7cff712ce1d857eddef29bd290c40d0aa6261ab7a54657b",
+          "actual_kernels": [
+            {
+              "task_id": 102,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794864139999691,
+              "end_ns": 3794864140075563,
+              "duration_us": 75.872,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "9d997e08b91c4abf35356a6a0396599c71fa122f24a213d44b41fd0038f7656d",
+          "actual_kernels": [
+            {
+              "task_id": 108,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794865648121681,
+              "end_ns": 3794865648197182,
+              "duration_us": 75.501,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "c4bc5205d982809c034bdaf4700b237308f749bef04ff821eef925cfdfef3c93",
+          "actual_kernels": [
+            {
+              "task_id": 114,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794867260763623,
+              "end_ns": 3794867260838933,
+              "duration_us": 75.31,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "df1a89fdbcf8f9c77b8c53160bcd51a1b57a8df87e468c91e7b136db4535bb32",
+          "actual_kernels": [
+            {
+              "task_id": 120,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794868996291304,
+              "end_ns": 3794868996366410,
+              "duration_us": 75.106,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        }
+      ],
+      "source_pin": "84bf2da40119e3b8114a6d2a9e7369190a0470d1",
+      "source_files_verified": 25610,
+      "retention_sha256": "fd8ef9c2721c1bb198a7e01fa34caf96ad51eca55ad62733be399bb16361c46d",
+      "guard_valid": true,
+      "archive_sha256": "5fe08e0757494a518cfb1d12ae11ea1e83632692367ca5c61d6c1c7865548137",
+      "original_outputs_checked": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.5,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "ordinal": 494,
+      "checkpoint": "rollout-golden42-pad4-2-494-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c5e4032e8c2696a910c5768a7098fddb9960195f90ae5452574fba073fabf35f",
+      "all15_actual_kernel_to_original_AoT": [
+        {
+          "trace_sha": "49d22f4cf5dcf1393878a41c00e61d493777f0268057c88c40c864f0aa153ea7",
+          "actual_kernels": [
+            {
+              "task_id": 36,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794915742989059,
+              "end_ns": 3794915743064884,
+              "duration_us": 75.825,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "36c8a9aa120ca99caefe84e0f49975dc57cdd127fa59995e8b912049fa51f419",
+          "actual_kernels": [
+            {
+              "task_id": 42,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794917236396939,
+              "end_ns": 3794917236472184,
+              "duration_us": 75.245,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "9e1ed39d89de47fe60c49d3226b2075002cf18efc836af1df4ce14bad0cfdd41",
+          "actual_kernels": [
+            {
+              "task_id": 48,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794918866118737,
+              "end_ns": 3794918866194232,
+              "duration_us": 75.495,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "172464063a7bb3384a65794f77a15fe199424cfe25cc6e16f434478e45f983e6",
+          "actual_kernels": [
+            {
+              "task_id": 54,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794920415935365,
+              "end_ns": 3794920416010370,
+              "duration_us": 75.005,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "679b4ecefdac8c604649371e859e16f3c7a90413db17df3cae9d3096776a3cee",
+          "actual_kernels": [
+            {
+              "task_id": 60,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794921914890085,
+              "end_ns": 3794921914965434,
+              "duration_us": 75.349,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "6b883e73f01684cbc612615a0c9caf30b6f534b8f01fbc7971cc8cae60616046",
+          "actual_kernels": [
+            {
+              "task_id": 66,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794923595855343,
+              "end_ns": 3794923595931276,
+              "duration_us": 75.933,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "69b81b1009d1c3f475280fc4a24e4fcffcaba15ac48c74ff1954f8f3c2943849",
+          "actual_kernels": [
+            {
+              "task_id": 72,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794925158518357,
+              "end_ns": 3794925158594733,
+              "duration_us": 76.376,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "7158000662b2db2f5579bb93c6eb17ced8906d07f24f34d4b7c941c1e31179cc",
+          "actual_kernels": [
+            {
+              "task_id": 78,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794926773746951,
+              "end_ns": 3794926773822250,
+              "duration_us": 75.299,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "53587aad01a808183c6617cef62c98c41de017e6b44ec3ba8ff67f50686b6f90",
+          "actual_kernels": [
+            {
+              "task_id": 84,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794928514409144,
+              "end_ns": 3794928514484952,
+              "duration_us": 75.808,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "7f80c506db08425192112af2da788b66ef09a0d4c605b803dfe101c3a08ca62a",
+          "actual_kernels": [
+            {
+              "task_id": 90,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794930074648832,
+              "end_ns": 3794930074724431,
+              "duration_us": 75.599,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "d988d1c3128071894556579e2bbe3ac5b7127b1bc23d9d8f2ba5718cc77ccde1",
+          "actual_kernels": [
+            {
+              "task_id": 96,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794931755371359,
+              "end_ns": 3794931755447397,
+              "duration_us": 76.038,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "22af0efc72a609603638d8f43cfd0d7018c04f3263e784793770d823b277ae18",
+          "actual_kernels": [
+            {
+              "task_id": 102,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794933435598036,
+              "end_ns": 3794933435673624,
+              "duration_us": 75.588,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "9654213260d66f2f476ab1ac76fd5fab683e78b6dede5a9758fe373bceeaf98e",
+          "actual_kernels": [
+            {
+              "task_id": 108,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794934940050352,
+              "end_ns": 3794934940125864,
+              "duration_us": 75.512,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "76c9af6ef9b1bbc01ca5faf35a86e6db07a94a376ff43b214287d8cbef5f76d9",
+          "actual_kernels": [
+            {
+              "task_id": 114,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794936674652238,
+              "end_ns": 3794936674728267,
+              "duration_us": 76.029,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "c7b128b88cfb6937298d38bd7b04b9b2e5394fb614971c283b9d4251316c4f96",
+          "actual_kernels": [
+            {
+              "task_id": 120,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3794938183452630,
+              "end_ns": 3794938183528488,
+              "duration_us": 75.858,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        }
+      ],
+      "source_pin": "84bf2da40119e3b8114a6d2a9e7369190a0470d1",
+      "source_files_verified": 25610,
+      "retention_sha256": "27b7797755bf2b52bb2e24239b0cde50702a0d54fbe69c0174e9df6a0e2c781b",
+      "guard_valid": true,
+      "archive_sha256": "7f839e0f067ceb0acaa5129e33bf12126ad457eb28091377c8d5276fde3db4da",
+      "original_outputs_checked": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.5,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "ordinal": 496,
+      "checkpoint": "rollout-golden42-pad4-2-496-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "7ab0187e300e92094759df9e448791d6bc455517767dccc8aec663d482246e92",
+      "all15_actual_kernel_to_original_AoT": [
+        {
+          "trace_sha": "ff7e3aea90bd920b742b7d88a2c289cf404c9c8d2448168f59ef03ee2e282468",
+          "actual_kernels": [
+            {
+              "task_id": 41,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796013921021125,
+              "end_ns": 3796013921031010,
+              "duration_us": 9.885,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "fdd3c3f4361e39d6cee00ed74881a5777916bf57c317684e890a45decb9ff563",
+          "actual_kernels": [
+            {
+              "task_id": 48,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796015475156891,
+              "end_ns": 3796015475166855,
+              "duration_us": 9.964,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "6acd1bc0c2c678ea41c9c51fc473213b4b5a2c7971341e639ab4617493a43856",
+          "actual_kernels": [
+            {
+              "task_id": 55,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796017039809062,
+              "end_ns": 3796017039819446,
+              "duration_us": 10.384,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "3776495d81a89b067970a56cd5e11d8369c13ce72caec1bd22c501e5597640d8",
+          "actual_kernels": [
+            {
+              "task_id": 62,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796018900973375,
+              "end_ns": 3796018900982849,
+              "duration_us": 9.474,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "b06b4cd0c1283afd074d9c700d5b1b9edd5faf431aebb87a8430afc9dfed8acd",
+          "actual_kernels": [
+            {
+              "task_id": 69,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796020454575305,
+              "end_ns": 3796020454585206,
+              "duration_us": 9.901,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "1408cb8b4ada1c65645007a2dfc8ec6e87360085cc03a1524009b89ff9287596",
+          "actual_kernels": [
+            {
+              "task_id": 76,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796021954086776,
+              "end_ns": 3796021954096840,
+              "duration_us": 10.064,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "623c2f7e58035f8e78ca123ea940840ebb26aa4cf26fc6460aa5243605259cf3",
+          "actual_kernels": [
+            {
+              "task_id": 83,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796023516330651,
+              "end_ns": 3796023516340041,
+              "duration_us": 9.39,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "9aa92090d7ed3db69be1d701e85569023e7accdda51187515d4b0f98d18ea039",
+          "actual_kernels": [
+            {
+              "task_id": 90,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796025138115878,
+              "end_ns": 3796025138125730,
+              "duration_us": 9.852,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "0412bc8bf3ad0f9cb490feef6a6448181663b3209c19564b2f254a80cb80fe2a",
+          "actual_kernels": [
+            {
+              "task_id": 97,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796026949977792,
+              "end_ns": 3796026949987887,
+              "duration_us": 10.095,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "69f5f6c73f757fa368d099aa6ad9a2498343875ba773c4613c208129133f31e8",
+          "actual_kernels": [
+            {
+              "task_id": 104,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796028502086926,
+              "end_ns": 3796028502096182,
+              "duration_us": 9.256,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "ece1e0568e0e6c1dee4385bd75d5d334d6700331791c9fee9c041d2380a76396",
+          "actual_kernels": [
+            {
+              "task_id": 111,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796030002456300,
+              "end_ns": 3796030002466473,
+              "duration_us": 10.173,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "11fa5483a35ba7b199ea9f99a2a8c006c0ddb2b2a337be1f93b2b00bb8db1cdb",
+          "actual_kernels": [
+            {
+              "task_id": 118,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796031501286341,
+              "end_ns": 3796031501296403,
+              "duration_us": 10.062,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "2014a89a724c94be25aeaa74cf14bdd51f2bf95dd9e9d282a36b65ad3f061fcf",
+          "actual_kernels": [
+            {
+              "task_id": 125,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796033062767941,
+              "end_ns": 3796033062777862,
+              "duration_us": 9.921,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "681adcb5a132278d62c042bf20ab7d6cc0f9626d2d8803ed780eb83fa73c72a3",
+          "actual_kernels": [
+            {
+              "task_id": 132,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796034864843993,
+              "end_ns": 3796034864854772,
+              "duration_us": 10.779,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        },
+        {
+          "trace_sha": "d6ce2f2fa273acd5c5f7cf6a665378fd103331e537195bed0e0c4debe1dd9f0a",
+          "actual_kernels": [
+            {
+              "task_id": 139,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+              "core_roles": [
+                "AIC"
+              ],
+              "start_ns": 3796036415797720,
+              "end_ns": 3796036415808166,
+              "duration_us": 10.446,
+              "device_ELF_sha": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def"
+            }
+          ],
+          "full32_complete": true
+        }
+      ],
+      "source_pin": "84bf2da40119e3b8114a6d2a9e7369190a0470d1",
+      "source_files_verified": 25610,
+      "retention_sha256": "049ff896ae8674f7b3d6bf22aefa6ce2f0224720f90a7a3a037c2da9f61daf29",
+      "guard_valid": true,
+      "archive_sha256": "46a31203694b98e0ec4dc20aa3092b76711379fae91776eeda822e5f5cddcaa3",
+      "original_outputs_checked": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.25,
+        "unchecked_reason": null
+      }
+    }
+  ]
+}

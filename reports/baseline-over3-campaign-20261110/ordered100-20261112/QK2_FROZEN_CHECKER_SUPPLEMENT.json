@@ -1,0 +1,182 @@
+{
+  "checked_at": "2026-11-15T02:22:42.985855+00:00",
+  "status": "passed",
+  "rows": [
+    {
+      "ordinal": 1356,
+      "role": "original",
+      "checkpoint": "rollout-torch-qk2-original-08f-1356-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "9bf8dfcd2d34f26aabd23335cb5d06c39d270dc6eeca653c35d9de4b53b1f169",
+      "payload_sha256": "30768b490af768fe385290c1601ae4bac0aee6ab1cadaa11469c740c31b1c1fa",
+      "old_checker_AST_unmodified": true,
+      "legacy_custom_reference_tolerance_and_normalized_error_and_exactV_passed": true,
+      "both_negative_controls_rejected": true,
+      "original_shared_inputs_bit_preserved": true,
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.001953125,
+        "unchecked_reason": null
+      },
+      "no_performance_remeasurement": true
+    },
+    {
+      "ordinal": 1356,
+      "role": "RMS",
+      "checkpoint": "rollout-torch-qk2-native-rms-1356-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "9241d9f38dab5ac6be53e43e971445e043c02bc2f4df5c8c952ee7d8a9369ae0",
+      "payload_sha256": "30768b490af768fe385290c1601ae4bac0aee6ab1cadaa11469c740c31b1c1fa",
+      "old_checker_AST_unmodified": true,
+      "legacy_custom_reference_tolerance_and_normalized_error_and_exactV_passed": true,
+      "both_negative_controls_rejected": true,
+      "original_shared_inputs_bit_preserved": true,
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.001953125,
+        "unchecked_reason": null
+      },
+      "no_performance_remeasurement": true
+    },
+    {
+      "ordinal": 1356,
+      "role": "RMS_RoPE",
+      "checkpoint": "rollout-torch-qk2-native-rms-rope-1356-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "f30de584c0de100d463710724ac70a8489fe9d659f4fb2ead29f6a550f73be31",
+      "payload_sha256": "30768b490af768fe385290c1601ae4bac0aee6ab1cadaa11469c740c31b1c1fa",
+      "old_checker_AST_unmodified": true,
+      "legacy_custom_reference_tolerance_and_normalized_error_and_exactV_passed": true,
+      "both_negative_controls_rejected": true,
+      "original_shared_inputs_bit_preserved": true,
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.001953125,
+        "unchecked_reason": null
+      },
+      "no_performance_remeasurement": true
+    },
+    {
+      "ordinal": 1356,
+      "role": "TileOps",
+      "checkpoint": "rollout-tileops-qk2-denominator-1356-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "73737efd23a0c45765d73822966d468fb4ca78d09dcafeb569d991419d99f34e",
+      "payload_sha256": "30768b490af768fe385290c1601ae4bac0aee6ab1cadaa11469c740c31b1c1fa",
+      "old_checker_AST_unmodified": true,
+      "legacy_custom_reference_tolerance_and_normalized_error_and_exactV_passed": true,
+      "both_negative_controls_rejected": true,
+      "original_shared_inputs_bit_preserved": true,
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.001953125,
+        "unchecked_reason": null
+      },
+      "no_performance_remeasurement": true
+    },
+    {
+      "ordinal": 1358,
+      "role": "original",
+      "checkpoint": "rollout-torch-qk2-original-08f-1358-v3.CHECKPOINT.json",
+      "checkpoint_sha256": "92206dc79e6c7c9a241b35aa47a7bd266a4a24f2416eb67bda317806bf8e3f48",
+      "payload_sha256": "a7ef97541e814cff47cfdd21c804ca1dda85e150e205222c5e31773a2ca2490f",
+      "old_checker_AST_unmodified": true,
+      "legacy_custom_reference_tolerance_and_normalized_error_and_exactV_passed": true,
+      "both_negative_controls_rejected": true,
+      "original_shared_inputs_bit_preserved": true,
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.015625,
+        "unchecked_reason": null
+      },
+      "no_performance_remeasurement": true
+    },
+    {
+      "ordinal": 1358,
+      "role": "RMS",
+      "checkpoint": "rollout-torch-qk2-native-rms-1358-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "00857bf8d3814cdb559ac06c430c90d87904c4019fe4fa58a350f6009a1df5a9",
+      "payload_sha256": "a7ef97541e814cff47cfdd21c804ca1dda85e150e205222c5e31773a2ca2490f",
+      "old_checker_AST_unmodified": true,
+      "legacy_custom_reference_tolerance_and_normalized_error_and_exactV_passed": true,
+      "both_negative_controls_rejected": true,
+      "original_shared_inputs_bit_preserved": true,
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.015625,
+        "unchecked_reason": null
+      },
+      "no_performance_remeasurement": true
+    },
+    {
+      "ordinal": 1358,
+      "role": "RMS_RoPE",
+      "checkpoint": "rollout-torch-qk2-native-rms-rope-1358-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "fb58c4aeac1b1c6e23df48f88bebbc63d33b54538081064c374f753627dad999",
+      "payload_sha256": "a7ef97541e814cff47cfdd21c804ca1dda85e150e205222c5e31773a2ca2490f",
+      "old_checker_AST_unmodified": true,
+      "legacy_custom_reference_tolerance_and_normalized_error_and_exactV_passed": true,
+      "both_negative_controls_rejected": true,
+      "original_shared_inputs_bit_preserved": true,
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.015625,
+        "unchecked_reason": null
+      },
+      "no_performance_remeasurement": true
+    },
+    {
+      "ordinal": 1358,
+      "role": "TileOps",
+      "checkpoint": "rollout-tileops-qk2-denominator-1358-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "ae502c472e3592c65366a68601f8ad40f6d1a198cb5e7179085801909e34c0ef",
+      "payload_sha256": "a7ef97541e814cff47cfdd21c804ca1dda85e150e205222c5e31773a2ca2490f",
+      "old_checker_AST_unmodified": true,
+      "legacy_custom_reference_tolerance_and_normalized_error_and_exactV_passed": true,
+      "both_negative_controls_rejected": true,
+      "original_shared_inputs_bit_preserved": true,
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.03125,
+        "unchecked_reason": null
+      },
+      "no_performance_remeasurement": true
+    }
+  ],
+  "qualified_checkpoint_sha256": {
+    "rollout-torch-qk2-original-08f-1356-v3.CHECKPOINT.json": "9bf8dfcd2d34f26aabd23335cb5d06c39d270dc6eeca653c35d9de4b53b1f169",
+    "rollout-torch-qk2-native-rms-1356-v1.CHECKPOINT.json": "9241d9f38dab5ac6be53e43e971445e043c02bc2f4df5c8c952ee7d8a9369ae0",
+    "rollout-torch-qk2-native-rms-rope-1356-v1.CHECKPOINT.json": "f30de584c0de100d463710724ac70a8489fe9d659f4fb2ead29f6a550f73be31",
+    "rollout-tileops-qk2-denominator-1356-v1.CHECKPOINT.json": "73737efd23a0c45765d73822966d468fb4ca78d09dcafeb569d991419d99f34e",
+    "rollout-torch-qk2-original-08f-1358-v3.CHECKPOINT.json": "92206dc79e6c7c9a241b35aa47a7bd266a4a24f2416eb67bda317806bf8e3f48",
+    "rollout-torch-qk2-native-rms-1358-v1.CHECKPOINT.json": "00857bf8d3814cdb559ac06c430c90d87904c4019fe4fa58a350f6009a1df5a9",
+    "rollout-torch-qk2-native-rms-rope-1358-v1.CHECKPOINT.json": "fb58c4aeac1b1c6e23df48f88bebbc63d33b54538081064c374f753627dad999",
+    "rollout-tileops-qk2-denominator-1358-v1.CHECKPOINT.json": "ae502c472e3592c65366a68601f8ad40f6d1a198cb5e7179085801909e34c0ef"
+  },
+  "frozen_checker_source": "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/ascend_extended.py",
+  "frozen_checker_source_sha256": "cd20de054e2684d2e6dba098e9f66cfa80a6721e3c2be8f72074ce89b5d5f6ed",
+  "frozen_numerics_source_sha256": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+  "frozen_ref_and_verification_FunctionDef_AST_unmodified": true,
+  "supplements_stricter_frozen_protocol_than_original_published_workload_default": true,
+  "original15raw_and_all_performance_checkpoints_unchanged": true,
+  "correctness_only_no_timing_or_profiler_runs": true,
+  "SOURCE": {
+    "/opt/baseline-over3-20261110/ordered100-20261112/qk2_frozen_checker_supplement_v2.py": "0a4089601b09e08356f000be0fb6274bb4ff2ff7f5bb2a621a7f696667d4c692",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/ascend_extended.py": "cd20de054e2684d2e6dba098e9f66cfa80a6721e3c2be8f72074ce89b5d5f6ed",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/numerics.py": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOps-08f-original/workloads/norm.py": "2090993802e113c9ca8a7e519dd24dddc24f40a829cf609948e277da86e125ce",
+    "/opt/baseline-over3-20261110/ordered100-20261112/torch_qk2_native_rms_support.py": "11aa6ced59bfdd182c25256a2b8a32ff8272cbbf0ad6b79cc1b5220a17290291",
+    "/opt/baseline-over3-20261110/ordered100-20261112/torch_qk2_native_rms_rope_support.py": "12e8576a177583493e7f4e15f68bc8561177b5457ddb4f11435362a8bf3b23a0",
+    "/opt/baseline-over3-20261110/ordered100-20261112/tileops_qk2_denominator_support.py": "b0c4badb6cad87fe80582c4ef70303d1579f75c8ee36bd40a9f01cfa7a1db309",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/scripts/cache_frozen_pair_check.py": "b59f74e053f76adc32a3b8f2cba760a2f086496c1e6cd9b3f68c76d6b079f4f0"
+  },
+  "guard_receipt": "qk2-frozen-checker-v2-20261115T022348571662Z-guard.json",
+  "guard_receipt_sha256": "b61f929b9304a1a509d817b91e7f064f2d2ba5979ec02a0ca2caa866c6fd77ea",
+  "archive": "qk2-frozen-checker-v2-20261115T022348571662Z.tar.gz",
+  "archive_sha256": "1755aed57cddc518a4e579ba22047e7da0c844789b9f88e7f7dd5dd7bd2df9c3",
+  "archive_both_local_and_remote_SHA_verified": true
+}

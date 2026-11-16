@@ -1,0 +1,418 @@
+{
+    "binFileName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance",
+    "binFileSuffix": ".o",
+    "blockDim": -1,
+    "coreType": "MIX",
+    "intercoreSync": 1,
+    "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance",
+    "magic": "RT_DEV_BINARY_MAGIC_ELF",
+    "memoryStamping": [],
+    "opParaSize": 272,
+    "parameters": [],
+    "sha256": "4702dbbd85983533a83fe1dbd2dcf9521a9d3d0558d59b389fc7f08f678a647e",
+    "workspace": {
+        "num": 1,
+        "size": [
+            -1
+        ],
+        "type": [
+            0
+        ]
+    },
+    "kernelList": [
+        {
+            "tilingKey": 0,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_0"
+        },
+        {
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1"
+        },
+        {
+            "tilingKey": 10,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_10"
+        },
+        {
+            "tilingKey": 11,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 0,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_11"
+        },
+        {
+            "tilingKey": 10000,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 0,
+            "taskRation": "1:0",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_10000"
+        },
+        {
+            "tilingKey": 10001,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:0",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_10001"
+        },
+        {
+            "tilingKey": 10010,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_10010"
+        },
+        {
+            "tilingKey": 10011,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_10011"
+        },
+        {
+            "tilingKey": 100000,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_100000"
+        },
+        {
+            "tilingKey": 100001,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_100001"
+        },
+        {
+            "tilingKey": 100010,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_100010"
+        },
+        {
+            "tilingKey": 100011,
+            "kernelType": "AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_100011"
+        },
+        {
+            "tilingKey": 110000,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_110000"
+        },
+        {
+            "tilingKey": 110001,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_110001"
+        },
+        {
+            "tilingKey": 110010,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_110010"
+        },
+        {
+            "tilingKey": 110011,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_110011"
+        },
+        {
+            "tilingKey": 1000000,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1000000"
+        },
+        {
+            "tilingKey": 1000001,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1000001"
+        },
+        {
+            "tilingKey": 1000010,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1000010"
+        },
+        {
+            "tilingKey": 1000011,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1000011"
+        },
+        {
+            "tilingKey": 1010000,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1010000"
+        },
+        {
+            "tilingKey": 1010001,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1010001"
+        },
+        {
+            "tilingKey": 1010010,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1010010"
+        },
+        {
+            "tilingKey": 1010011,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1010011"
+        },
+        {
+            "tilingKey": 1100000,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1100000"
+        },
+        {
+            "tilingKey": 1100001,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1100001"
+        },
+        {
+            "tilingKey": 1100010,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1100010"
+        },
+        {
+            "tilingKey": 1100011,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1100011"
+        },
+        {
+            "tilingKey": 1110000,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1110000"
+        },
+        {
+            "tilingKey": 1110001,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1110001"
+        },
+        {
+            "tilingKey": 1110010,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1110010"
+        },
+        {
+            "tilingKey": 1110011,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:1",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1110011"
+        },
+        {
+            "tilingKey": 1000,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1000"
+        },
+        {
+            "tilingKey": 1001,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1001"
+        },
+        {
+            "tilingKey": 1010,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1010"
+        },
+        {
+            "tilingKey": 1011,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_1011"
+        },
+        {
+            "tilingKey": 101000,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_101000"
+        },
+        {
+            "tilingKey": 101001,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_101001"
+        },
+        {
+            "tilingKey": 101010,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_101010"
+        },
+        {
+            "tilingKey": 101011,
+            "kernelType": "MIX_AIC",
+            "crossCoreSync": 1,
+            "taskRation": "1:2",
+            "kernelName": "QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance_101011"
+        }
+    ],
+    "taskRation": "tilingKey",
+    "optionalInputMode": "gen_placeholder",
+    "compileInfo": {},
+    "supportInfo": {
+        "implMode": "high_performance",
+        "int64Mode": false,
+        "simplifiedKeyMode": 0,
+        "simplifiedKey": [
+            "QuantBatchMatmulV3/d=0,p=1/2,2/2,2/27,2/27,2",
+            "QuantBatchMatmulV3/d=0,p=0/2,2/2,2/27,2/27,2",
+            "QuantBatchMatmulV3/d=1,p=1/2,2/2,2/27,2/27,2",
+            "QuantBatchMatmulV3/d=1,p=0/2,2/2,2/27,2/27,2"
+        ],
+        "staticKey": "352beeaa0969265001fd4106f060cd1230bce880954c78310594dfe907234b55,8a68226251a3790501c197175f45c19dc34e2c60d3f499376a193e4e1844b365",
+        "inputs": [
+            {
+                "name": "x1",
+                "index": 0,
+                "dtype": "int8",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ],
+                "format_match_mode": "FormatDefault"
+            },
+            {
+                "name": "x2",
+                "index": 1,
+                "dtype": "int8",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ],
+                "format_match_mode": "FormatDefault"
+            },
+            {
+                "name": "scale",
+                "index": 2,
+                "dtype": "bfloat16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ],
+                "format_match_mode": "FormatDefault"
+            },
+            {
+                "name": "offset",
+                "index": 3,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ],
+                "format_match_mode": "FormatDefault"
+            },
+            {
+                "name": "pertoken_scale",
+                "index": 4,
+                "dtype": "float32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ],
+                "format_match_mode": "FormatDefault"
+            },
+            {
+                "name": "bias",
+                "index": 5,
+                "dtype": "int32",
+                "format": "ND",
+                "paramType": "optional",
+                "shape": [
+                    -2
+                ],
+                "format_match_mode": "FormatDefault"
+            }
+        ],
+        "outputs": [
+            {
+                "name": "y",
+                "index": 0,
+                "dtype": "bfloat16",
+                "format": "ND",
+                "paramType": "required",
+                "shape": [
+                    -2
+                ],
+                "format_match_mode": "FormatDefault"
+            }
+        ],
+        "attrs": [
+            {
+                "name": "dtype",
+                "dtype": "int",
+                "value": 27
+            },
+            {
+                "name": "transpose_x1",
+                "dtype": "bool",
+                "value": null
+            },
+            {
+                "name": "transpose_x2",
+                "dtype": "bool",
+                "value": null
+            }
+        ],
+        "opMode": "dynamic",
+        "optionalInputMode": "gen_placeholder",
+        "deterministic": "ignore"
+    }
+}

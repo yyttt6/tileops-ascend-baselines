@@ -1,0 +1,133 @@
+{
+  "checked_at": "2026-11-15T09:27:39.561515+00:00",
+  "accepted_complete_APIs": 7,
+  "rows": [
+    {
+      "ordinal": 797,
+      "key": [
+        "ops-transformer",
+        "RoPEFwdOp",
+        "neox-1d-2k-float16"
+      ],
+      "api": "ops-transformer::original RotaryPositionEmbedding BSND",
+      "device_us": 65.4976,
+      "checkpoint": "rollout-ops-transformer-rope-api-sdk-797-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "66a1d67ef344f3b8b9dc2646fe05206668652a4671efc64fadb376bf8669418a",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "9fa9c16b7f28a32f65378310b04c622d06afca23ee6660e04b11765bb49bf33a",
+      "prepare_sha256": "8905a47024f0ab8ccf65122b9d8597ada94e48922b03492561f7b672a39ccb4b",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 798,
+      "key": [
+        "ops-transformer",
+        "RoPEFwdOp",
+        "interleaved-1d-2k-float16"
+      ],
+      "api": "ops-transformer::original RotaryPositionEmbedding BSND",
+      "device_us": 62.79853333333334,
+      "checkpoint": "rollout-ops-transformer-rope-api-sdk-798-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "245c971e05940563f47d82c15de452047f79846e807908a86bf8c024caacd84a",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "9fa9c16b7f28a32f65378310b04c622d06afca23ee6660e04b11765bb49bf33a",
+      "prepare_sha256": "1005c2c8001e0016466971a11281f035d14bde0f55e33040ed9be495f1434be5",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 799,
+      "key": [
+        "ops-transformer",
+        "RoPEFwdOp",
+        "neox-1d-4k-bfloat16"
+      ],
+      "api": "ops-transformer::original RotaryPositionEmbedding BSND",
+      "device_us": 66.08233333333332,
+      "checkpoint": "rollout-ops-transformer-rope-api-sdk-799-h2-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "9f7730c79b8186eca074fe8daff5a7f2e8f385caff45ac551bbef20756634d23",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "556b19de651436abd99af7061488200c5ceaafad39f8fe7fcfc4e8e806f77f3d",
+      "prepare_sha256": "f9ffcb5d7424bc4ecc5cdf0f10f82f98a4a9fd8eb9c5f0a0a71f890e3b625af4",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 800,
+      "key": [
+        "ops-transformer",
+        "RoPEFwdOp",
+        "neox-1d-2k-float32"
+      ],
+      "api": "ops-transformer::original RotaryPositionEmbedding BSND",
+      "device_us": 39.71573333333333,
+      "checkpoint": "rollout-ops-transformer-rope-api-sdk-800-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "cc5745726c22296c91acfa7e951e5cabcb32e4d5fc6c6067202673aa1dfac410",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "be1f85078df675721bc5e7a64d8eb058524c98350b3b40e5b08f0b9ab149d0c5",
+      "prepare_sha256": "3b8f25b84c470ec6c38f7000842bfd22ff5427980b70e368d2a9277cf6dd6ca1",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 801,
+      "key": [
+        "ops-transformer",
+        "RoPEFwdOp",
+        "interleaved-1d-5k-float32"
+      ],
+      "api": "ops-transformer::original RotaryPositionEmbedding BSND",
+      "device_us": 47.77986666666667,
+      "checkpoint": "rollout-ops-transformer-rope-api-sdk-801-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "2744f0a2f1b55e368283acd411a95d49c2c945a5b3fb0d5b15c147a6b6e8de65",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "adcb1d3310b9bf948c8fb1eb449a53419f43c0552c93ed4ad44014d5c105652e",
+      "prepare_sha256": "413a4ba7a7f3505a13af0e7c5437663bb743b0078ff74039d195e2d7df791037",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 802,
+      "key": [
+        "ops-transformer",
+        "RoPEFwdOp",
+        "neox-2d-2k-float16"
+      ],
+      "api": "ops-transformer::original RotaryPositionEmbedding BSND",
+      "device_us": 133.12446666666665,
+      "checkpoint": "rollout-ops-transformer-rope-api-sdk-802-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "1d1cba41cdb789306f368194e499bd1522e4f33f9a1a8f9f8787add17d50674c",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "ed707a0b43adf9026c57e87256a8397955de6e4d206ddbdf4827d31117d8203c",
+      "prepare_sha256": "555eb8471c70a052d959dad59d2e58f2f01a4c85c6d2568380c0aa3bd0185e69",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 803,
+      "key": [
+        "ops-transformer",
+        "RoPEFwdOp",
+        "interleaved-2d-2k-bfloat16"
+      ],
+      "api": "ops-transformer::original RotaryPositionEmbedding BSND",
+      "device_us": 137.39353333333332,
+      "checkpoint": "rollout-ops-transformer-rope-api-sdk-803-h1-v2.CHECKPOINT.json",
+      "checkpoint_sha256": "abd4258b837f0f44df8f6bc42c60f5854b144caa755143c527970d1838978b7f",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "2e867aaad6ef95102f05bfa755df8fd465cc745fd3f2c3dc984ccfeb5ba2ea21",
+      "prepare_sha256": "9153ee4e02ae4470522cf7194ef4e7cf450f7cd9b90417b36988efa128233728",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

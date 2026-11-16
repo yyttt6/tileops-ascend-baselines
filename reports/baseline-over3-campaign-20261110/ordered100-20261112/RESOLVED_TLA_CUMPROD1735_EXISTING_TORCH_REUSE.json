@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-11-16T02:48:34.056519+00:00",
+  "rows": [
+    {
+      "ordinal": 1735,
+      "key": [
+        "tilelang-ascend",
+        "CumprodFwdOp",
+        "long-seq-bfloat16"
+      ],
+      "api": "original manifest torch eager ref_program",
+      "device_us": 20889.497930694473,
+      "checkpoint": "rollout-1303-1303.CHECKPOINT.json",
+      "checkpoint_sha256": "ec2209429028fb5b21b7cb8ddc70b4b69ad7157eab79b06120af9c1ff373c1c2",
+      "source_ordinal": 1303,
+      "full_checker_15raw_guard_valid": true,
+      "payload_sha256": "06a8e153204d83d5d997cfd8398ed4a0f6e5f2848adecbdc38d64203c6784589",
+      "descriptor_sha256": "d4f3ee95c292f0ddd2f1def1b45f844d047de4651c43d50f0f42c9af7d2691fa",
+      "actual_old_runtime": {
+        "torch": "2.13.0+cpu",
+        "torch_npu": "2.13.0.rc1",
+        "cube": 32,
+        "vector": 64,
+        "sdk": "/opt/baseline-over3-20261110/unified-stack-v1/toolchain-candidate/sdk-9.2.0",
+        "hostname": "a5d0b50dc68f"
+      },
+      "actual_loaded_SDK_core_SHA_reverified": {
+        "/opt/tileops-ci/runtime/lib/python3.12/site-packages/torch_npu/lib/libtorch_npu.so": "e2e9daa8e4fd17701f6c7772acc4c6236366d5efe13410ec9b5c9ab7cbc0f39f",
+        "/usr/local/Ascend/cann-9.1.0/aarch64-linux/lib64/libascendcl.so": "123d67c313f743e5d6f2e856f40c24d5edac376975cf0a7a1019e079b4171480",
+        "/usr/local/Ascend/cann-9.1.0/aarch64-linux/lib64/libnnopbase.so": "308dda461704a6e5f70de6e0eac4495e9829b9cec3328563b75a5b382c6e438b",
+        "/usr/local/Ascend/cann-9.1.0/aarch64-linux/lib64/libopapi.so": "3e10def2f7158482f3967b9db6ad2707cca8691198ddae8cc52bbbaf61bb2675",
+        "/usr/local/Ascend/cann-9.1.0/aarch64-linux/lib64/libruntime.so": "7bc2b610dff552df2f114c95701156b4aba43ffcba24e06e3c249e1cf57bbc21",
+        "/usr/local/Ascend/cann-9.1.0/aarch64-linux/lib64/libruntime_common.so": "b02fb580c4d3ccebfa0d481f21e5ccea7f135042e8239d57446737decb4f6958",
+        "/usr/local/Ascend/cann-9.1.0/aarch64-linux/lib64/libruntime_v200.so": "f009d4a33de9a72ff733044857769bc494d1454d83c71f02bce617e2a318f306"
+      },
+      "SDK_AICORE_ELF_and_actual_AICPU_task_separate": true,
+      "original_TLA_provider_not_qualified": true,
+      "explicit_complete_Torch_API_reuse": true,
+      "new_device_measurements": 0,
+      "not_paired_or_finalratio": true,
+      "audit": "server2-alignment-20261113/TLA_CUMPROD1735_EXISTING_TORCH_REUSE_AUDIT_20261116.json",
+      "audit_sha256": "dcf03471287b2c1bd314f51b031a13fdb1b88a975a5ea7aef58d71e811e518fa"
+    }
+  ],
+  "new_device_measurements": 0,
+  "new_pairs": 0,
+  "new_final_closures": 0
+}

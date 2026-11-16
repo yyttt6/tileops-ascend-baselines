@@ -1,0 +1,398 @@
+[
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "linear-bias-float16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 1.8990692233355373,
+    "result_sha256": "5bf6762f217ce239badd6315b82fd249e5b0f2ef0ae57219d0f4b912bd7d2b2a",
+    "evidence_report": "SGL_MUL_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "linear-bias-float32"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.442047882778771,
+    "result_sha256": "33f08df1304eb3b554d4676305f9ce5d37cc598b8b1de565fae5dfb24314b74c",
+    "evidence_report": "SGL_MUL_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "llama-7b-ffn-bias-float16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.398280617220956,
+    "result_sha256": "e6cddeb096b4511385ef25b79f81942c5dc48297f3d7b0e217d968a030623211",
+    "evidence_report": "SGL_MUL_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "cnn-feat-broadcast-bfloat16"
+    ],
+    "implementation": "cnn_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 8.458892427332689,
+    "result_sha256": "97e181eaef7a3e214411b613d21b138f81a629fe5493a0b184860ec3dc3e279a",
+    "evidence_report": "SGL_CNN_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "linear-bias-bfloat16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 1.8567250317910595,
+    "result_sha256": "aa03bc58b3ab077ff16010f6e354790033601ee08eb7c1fac6db7d92f745133a",
+    "evidence_report": "SGL_MUL_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "phi-2-ffn-bias-float16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.202118059241958,
+    "result_sha256": "a36dd00d4c84807fec981a3072f62654a8bae8cfec8d1068b8900e98cc56df23",
+    "evidence_report": "SGL_MUL_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "cnn-feat-broadcast-float16"
+    ],
+    "implementation": "cnn_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 8.867386903183824,
+    "result_sha256": "b54a9a0372ea72efb72b46ed79251a7e77cc025718aa50686fd23c36b5ed9f31",
+    "evidence_report": "SGL_CNN_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "cnn-feat-broadcast-float32"
+    ],
+    "implementation": "cnn_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 6.076340569371585,
+    "result_sha256": "335e46d461f53b0956ca1ec45e4823edb1b888469746cf0f1503334eb58ededd",
+    "evidence_report": "SGL_CNN_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "AddFwdOp",
+      "linear-bias-float16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.1747019286668636,
+    "result_sha256": "bc56c7439df9ee0eb71b908e077e66ca0ff63fb09c90c415eb89095e0899a48a",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "SubFwdOp",
+      "linear-bias-float16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.1943566749922265,
+    "result_sha256": "b34d23e0268103d685860d693b690f90502ae291b43c5c9c292d2eee790b080e",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "SubFwdOp",
+      "phi-2-ffn-bias-float16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.745412608567693,
+    "result_sha256": "0ba08e291a25d0e5019e94adb27529b44059c24d62b0af0bc710c3fd0c593816",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "SubFwdOp",
+      "cnn-feat-broadcast-bfloat16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.8809192328686466,
+    "result_sha256": "3888d94bab9e299c232c7a8767ceb5647eea5bac99358d796a4c15e12c9a7e1b",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "SubFwdOp",
+      "cnn-feat-broadcast-float32"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 3.0498012617277115,
+    "result_sha256": "ddeacc7cf80f8128c71fdf6e68277f565c53230471ecb2e069959bec3bc4df93",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "AddFwdOp",
+      "linear-bias-float32"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.6336432280651225,
+    "result_sha256": "84e3b0ab79a209910e4342ba2f1fb8958dec5cc5fa3040a0dec1b29b2f74bc4f",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "AddFwdOp",
+      "linear-bias-bfloat16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.119836444722024,
+    "result_sha256": "4795c246616045a23dae3219c4c30de3ba573368d57649f7c8274789271c3230",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "AddFwdOp",
+      "cnn-feat-broadcast-float16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.799085701420853,
+    "result_sha256": "217f7402d8c58c7b991c757f68d76116416febf415f0409c23b40e984a45c304",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "AddFwdOp",
+      "cnn-feat-broadcast-float32"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 3.0683204525130323,
+    "result_sha256": "60d3a6bf6823eb305b4fb4e67871f5da1d485ff854c88ae189473ac2eab510bc",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "SubFwdOp",
+      "linear-bias-bfloat16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.1495315355385167,
+    "result_sha256": "236372b07b4cab9901d36968f03365c90d37072503aa0bd3b2dc389171a949f9",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "SubFwdOp",
+      "linear-bias-float32"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.59263352400824,
+    "result_sha256": "e2d554f2e7087c029d78453d98e770fdd816357a987b2e7323d7e000e69ec949",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "SubFwdOp",
+      "llama-7b-ffn-bias-float16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.832609043404074,
+    "result_sha256": "9b58d3dad02e42bf2a001553a22787c1f165f1add977826d33b403fd282b18ad",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "SubFwdOp",
+      "cnn-feat-broadcast-float16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.7803018051080453,
+    "result_sha256": "08ffdf65e9b85eb87cb346839d09ad2665a32a75f11c563e9e386391a2d20a24",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "AddFwdOp",
+      "cnn-feat-broadcast-bfloat16"
+    ],
+    "implementation": "addsub_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 2.7399477089849813,
+    "result_sha256": "99dfa446ab658e5b41ba8c920363798601f85da45803ba8049afe5629d31339c",
+    "evidence_report": "SGL_ADDSUB_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "llama-7b-ffn-float16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_original",
+    "ratio": 58.94476498414257,
+    "result_sha256": "679a242eeeeb55dcf6a0c4666a759f09d9ce337f4c6f18d51063d6177e366332",
+    "evidence_report": "SGL_ELEMENTWISE_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "hidden-state-prefill-float32"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_original",
+    "ratio": 32.808957993640036,
+    "result_sha256": "9f0d5d5de6bc169bddee1b2713e76bc10a41541a197e655c49994bfc76a8fb08",
+    "evidence_report": "SGL_ELEMENTWISE_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "llama-7b-ffn-float32"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_original",
+    "ratio": 31.017603160941693,
+    "result_sha256": "a402f1d7dde8aa85d3dcd63a2be27b9fd1f3012e2fa9fd3f627fe8d10207bb9d",
+    "evidence_report": "SGL_ELEMENTWISE_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "llama-7b-hidden-float16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_original",
+    "ratio": 46.85262666112957,
+    "result_sha256": "a45911a21647c31ccf422e839c82976d6432c5a7586e5ab7b5266f3d50e30c9e",
+    "evidence_report": "SGL_ELEMENTWISE_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "hidden-state-prefill-float16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_original",
+    "ratio": 54.66246312134541,
+    "result_sha256": "aea5f5136a65587c82086896319ff807efec6fe8cf7263952ca21828ec5461f7",
+    "evidence_report": "SGL_ELEMENTWISE_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "llama-7b-ffn-bfloat16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_original",
+    "ratio": 63.28531459130647,
+    "result_sha256": "b9b60256a7b9c45a88789e4d4a2096a95128b1bc06a68fa12809281faae83e93",
+    "evidence_report": "SGL_ELEMENTWISE_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "hidden-state-prefill-bfloat16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_original",
+    "ratio": 55.27743810559974,
+    "result_sha256": "709bc9edef62aa153fc00230607c2d756ed52514da9e20fc1b78618c0fd43dfb",
+    "evidence_report": "SGL_ELEMENTWISE_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MulFwdOp",
+      "phi-2-ffn-float16"
+    ],
+    "implementation": "mul_layout",
+    "selected_variant": "sgl_original",
+    "ratio": 55.96490644561565,
+    "result_sha256": "82fe1fa86c6c662c43854871a3aaec56866adc922f4a4237b317f924fc28896a",
+    "evidence_report": "SGL_ELEMENTWISE_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MeanPoolingFwdOp",
+      "uniform-batched-float16-float32"
+    ],
+    "implementation": "pool_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 11.064854934666267,
+    "result_sha256": "d143bd54768ad112bb2a5034f1b7ac6739f11a23a360228989c6382fce0ad3a8",
+    "evidence_report": "SGL_POOL_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MeanPoolingFwdOp",
+      "uniform-8k-float16-float32"
+    ],
+    "implementation": "pool_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 10.083438732468954,
+    "result_sha256": "7e219120313b785550bd30d7b9a51970682c7fceaf89ba4f10797ff9557ebb7d",
+    "evidence_report": "SGL_POOL_SELECTION.json"
+  },
+  {
+    "key": [
+      "sgl-kernel-npu",
+      "MeanPoolingFwdOp",
+      "uniform-8k-bfloat16-float32"
+    ],
+    "implementation": "pool_layout",
+    "selected_variant": "sgl_fixed",
+    "ratio": 10.351216733393777,
+    "result_sha256": "5907c9e6118c1263a15acf733625b4b474a994c6758d2c6b3d259030791274bf",
+    "evidence_report": "SGL_POOL_SELECTION.json"
+  }
+]

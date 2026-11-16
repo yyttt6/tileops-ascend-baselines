@@ -1,0 +1,79 @@
+{
+  "checked_at": "2026-11-15T11:35:49.736148+00:00",
+  "accepted_complete_APIs": 4,
+  "rows": [
+    {
+      "ordinal": 768,
+      "key": [
+        "ops-transformer",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-8b-t64-bfloat16-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat+RotaryPositionEmbedding",
+      "device_us": 91.53413333333334,
+      "checkpoint": "rollout-ops-transformer-fusedqk-api-sdk-768-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a5991da12981e6f0c3eff75b70fcc53c21392de2b34bc2db7e6bdb83b04f2f81",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "155f14c456f1b25f34a4e8b42dee0e883c64b5e88aacbcded35ddc282b933ec8",
+      "prepare_sha256": "191056d6488633f9035227ccc6ea2b171e65cb5df6eab767d6abab8c79b8c18d",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 769,
+      "key": [
+        "ops-transformer",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-8b-t64-float16-float32"
+      ],
+      "api": "ops-transformer::original NormRopeConcat+RotaryPositionEmbedding",
+      "device_us": 89.71686666666668,
+      "checkpoint": "rollout-ops-transformer-fusedqk-api-sdk-769-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "0f2dd07721944c3ded8b0f3d528dafe90aa4b7400755d9b43bb0607216e47790",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "63f9e9e5776a406c30b7075dd5825350502eda6183b8d676ca4663041e34f69f",
+      "prepare_sha256": "00d3dd18533e837a8315746e9fbcd3a9964bf0a96ef0601b05df4201aece6592",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 770,
+      "key": [
+        "ops-transformer",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-235b-t4096-bfloat16-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat+RotaryPositionEmbedding",
+      "device_us": 927.5842,
+      "checkpoint": "rollout-ops-transformer-fusedqk-api-sdk-770-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "a68453ed05878dee014f672fd47dd01f895836b0bdafc5837d7f38ad7c24eff4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "c13dea7a657184b9fd77fd5d8456b68a65a779915afb3b3ec83a09b81e373825",
+      "prepare_sha256": "e0acc7f681a31fde1bd098b74563fff742bbef464a765f29fa7741a99123a094",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 771,
+      "key": [
+        "ops-transformer",
+        "FusedQKNormRoPEFwdOp",
+        "qwen3-8b-t8192-bfloat16-bfloat16"
+      ],
+      "api": "ops-transformer::original NormRopeConcat+RotaryPositionEmbedding",
+      "device_us": 1135.5231999999999,
+      "checkpoint": "rollout-ops-transformer-fusedqk-api-sdk-771-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "0e15f5c6c1c9e9a1e3b47fd37c1ae769b795768cc82d6979aaac9cebe3f457d6",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "payload_sha256": "5117b15b54acd9aa31e6ae0b6148370a07fc384c0864890d3775262a594833b5",
+      "prepare_sha256": "5dc13a756abd52d4978d9b1764dc74415e017814669a739c2b7bde080fe2ab74",
+      "full_checker_15raw_guard_valid": true,
+      "actual_private_ELF_and_original_source_all15trace_identity_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

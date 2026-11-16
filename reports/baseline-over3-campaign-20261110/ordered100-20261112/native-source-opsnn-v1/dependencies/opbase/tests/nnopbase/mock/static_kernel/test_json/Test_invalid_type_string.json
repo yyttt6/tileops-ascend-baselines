@@ -1,0 +1,11 @@
+{
+    "binFileName": "Test_invalid_type_string",
+    "binFileSuffix": ".o",
+    "blockDim": 8,
+    "localMemorySize": "invalid",
+    "workspace": {
+        "size": [
+            1024
+        ]
+    }
+}

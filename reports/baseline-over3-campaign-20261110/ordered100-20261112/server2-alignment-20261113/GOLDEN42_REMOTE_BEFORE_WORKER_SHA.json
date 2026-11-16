@@ -1,0 +1,13 @@
+{
+  "worker_math_bmm_transformer_alternative.py": "c833823a1505a4fb4fca5dccd59b9397164cd68a60159babae109c03d5595fd7",
+  "worker_ops_transformer_bmm_api.py": "f7417c933256bfe39d5effc4cf6413994442190eae68789ac901705c92abe9b5",
+  "worker_math_grouped_nn_alternative.py": "634f40307702ce4b0be30cbff60cde6fe4128c16181aea5f0e0e91a0e82a0242",
+  "worker_ops_nn_gemm10.py": "c3a160064f17ad46c69cc5917193a2915b54f39cbe49dcdd4a2b2474a72efb84",
+  "worker_ops_nn_gemm_pad4.py": "5c18ea176bf371312b5c28b59b7d3b7701b7d7139fb2606e07971552818f1390",
+  "worker_ops_math_original_norm.py": "072f7167aed13e3e3cff44340bbe38e25d2716dc6209adca46a15bc74c88a71e",
+  "worker_ops_nn_layernorm.py": null,
+  "worker_vllm_norm_fla_defined.py": "1120c7811b8fd6ccd0e2f3f89ece90dc6113ab59368ee95abe20e3d28fda548d",
+  "worker_ops_transformer_coupling_api.py": null,
+  "worker_fla_tap_api.py": "70202f9d8c518f49e77e8703508cd2c977445fa692ad6184cfa45dc85ef0048b",
+  "worker_remaining_torch_complete_alternative.py": "0acdcbb89084bc1b861492fe358ef4fc3413843c6155d48f4d9c61d49fd75ae5"
+}

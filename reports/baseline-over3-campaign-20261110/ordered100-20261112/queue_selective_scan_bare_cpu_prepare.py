@@ -1,0 +1,15 @@
+from pathlib import Path
+import os,sys,json,datetime,subprocess,shlex,hashlib,fcntl
+P=Path(__file__).resolve().parent;sys.path.insert(0,str(P));import rollout_controller as c
+now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat();lock=(P/'selective-scan-bare-cpu-prepare.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);f=P/'SELECTIVE_SCAN_BARE_CPU_PROCESS.json';s={'pid':os.getpid(),'entry':Path(__file__).name,'status':'CPU_only_original_catalog_and_frozen_policy_prepare','scope':[1499],'queued_at':now(),'zero_native_qualification':True};c.put(f,s)
+try:
+ assert json.loads((P.parent/'STATE.json').read_text())['status']=='active' and not (P/'STOP').exists() and not (P.parent/'STOP').exists()
+ c.put(P/'CURRENT_PROCESS.json',{'status':'active','pid':os.getpid(),'entry':Path(__file__).name,'updated_at':now(),'phase':'CPU_only_missing_bare_scan_original08f_catalog_frozen_FP64_oracle_and_normalized_checker_no_NPU','snapshot_read_only':True})
+ pub=json.loads(Path('/root/dyq/workspace/reports/ascend-web-over10-audit-20261109/baseline-cache.json').read_text());rows=[x for x in pub['rows'] if x.get('library')=='torch-eager' and x.get('op')=='SelectiveScanFwdOp' and x.get('case')=='bare-scan-bfloat16'];assert len(rows)==1 and rows[0]['tileops_commit']=='08f66b153c44b47330e7fe4311470152f287a112';c.put(P/'SELECTIVE_SCAN_BARE_PUBLISHED_ROW.json',rows[0])
+ for name in ['selective_scan_bare_frozen_policy.py','prepare_selective_scan_bare_original_cpu.py','SELECTIVE_SCAN_BARE_PUBLISHED_ROW.json']:
+  file=P/name;dest=c.R+'/'+name;code='from pathlib import Path;import sys;Path('+repr(dest)+').write_bytes(sys.stdin.buffer.read())';c.remote('python3 -c '+shlex.quote(code),input=file.read_bytes(),check=True);assert c.remote('sha256sum '+dest,stdout=subprocess.PIPE,text=True,check=True).stdout.split()[0]==hashlib.sha256(file.read_bytes()).hexdigest()
+ command='source /opt/baseline-over3-20261110/server2-aligned-stack/environment.sh; export TORCH_DEVICE_BACKEND_AUTOLOAD=0; exec /opt/baseline-over3-20261110/server2-aligned-stack/job-python-v1/bin/python '+c.R+'/prepare_selective_scan_bare_original_cpu.py'
+ with (P/'selective-scan-bare-cpu-prepare.log').open('w') as out:rc=c.remote(command,stdout=out,stderr=subprocess.STDOUT).returncode
+ assert rc==0,'CPU source/frozen policy preparation failed, no native work attempted';raw=c.remote('cat '+c.R+'/SELECTIVE_SCAN_BARE_ORIGINAL_CPU_PREPARATION.json',stdout=subprocess.PIPE,check=True).stdout;(P/'SELECTIVE_SCAN_BARE_ORIGINAL_CPU_PREPARATION.json').write_bytes(raw);s.update(status='CPU_original_params_inputbits_frozen_FP64_oracle_checker_passed_pending_formal',result=json.loads(raw))
+except BaseException as ex:s.update(status='stopped_requires_diagnosis',error=repr(ex));raise
+finally:s['checked_at']=now();c.put(f,s);c.put(P/'CURRENT_PROCESS.json',{'status':'group_finished_next_dispatch_required','pid':None,'prior_pid':os.getpid(),'entry':Path(__file__).name,'checked_at':now(),'outcome':s['status'],'snapshot_read_only':True})

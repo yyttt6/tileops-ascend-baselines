@@ -1,0 +1,246 @@
+{
+  "checked_at": "2026-11-14T21:34:30.668082+00:00",
+  "full_API_and_original_flush_and_private_kernel_verified": true,
+  "execution_hostname": "a5d0b50dc68f",
+  "native_package_manifest_sha256": "ea72d1758c77013858652038450544c2bc25e69d4fabf5ee703b8733cdcea319",
+  "qualified_API_source_sha256": {
+    "ops_math_pool_mean_api.py": "4d80b38057227c29b3b3175c4561f3cdf51df3393596b1e3c2568568469a5e6c",
+    "ops_math_pool_mean_support.py": "40bb7474816bda7422e25e341816bf6c2ad6d9c10db3a6ea43cf966b2e0c27d8",
+    "ops_math_l1_api.py": "cbe5aadece2353fa3cb7e3940f27c76d8bbbaa0c708b1739629610d1d578a302"
+  },
+  "mean_no_Abs_launch": true,
+  "private_load_and_launch_per_complete_group": [
+    {
+      "marker": {
+        "op": "AvgPool1dFwdOp",
+        "shape": [
+          2,
+          3,
+          13
+        ],
+        "dtype": "torch.float16"
+      },
+      "launches": [
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.005.668 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.080.802 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "op": "AvgPool2dFwdOp",
+        "shape": [
+          1,
+          2,
+          7,
+          9
+        ],
+        "dtype": "torch.float32"
+      },
+      "launches": [
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.264.605 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "op": "AvgPool3dFwdOp",
+        "shape": [
+          1,
+          2,
+          5,
+          7,
+          9
+        ],
+        "dtype": "torch.float32"
+      },
+      "launches": [
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.411.648 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.490.975 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.530.199 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.566.571 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.631.474 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.668.490 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.704.431 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10641",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.740.242 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10641, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004dff5200, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "op": "AdaptiveAvgPool2dFwdOp",
+        "shape": [
+          2,
+          3,
+          7,
+          11
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      "launches": [
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.803.050 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceMean_float32_int64_high_precision_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "sha256": "8c88e6d817c2e7a5bbc631c0bc44a641211c5a5f9a2f27b14dc605ab02159709",
+          "load_line": "[DEBUG] OP(2172767,python):2026-11-14-21:30:24.000.291 [op_kernel.cpp:397][NNOP][BinLoadImpl][2172767] OpName:[aclnnMean_4_ReduceMeanAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab222da508, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-pool-mean-v1/private-v1/vendors/allpairs_math_poolmean_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_mean_apt/ReduceMean_float32_int64_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2172767,python):2026-11-14-21:30:24.845.275 [aix_starsv2.cc:666] 2172767 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceMean_float32_int64_high_precision_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004e000000, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "op": "AvgPool1dFwdOp",
+      "shape": [
+        2,
+        3,
+        13
+      ],
+      "dtype": "torch.float16",
+      "full_output_original_dtype_tolerance_passed": true,
+      "tolerance": {
+        "rtol": 0.001,
+        "atol": 0.001
+      },
+      "negative_inputs_and_inputbits_verified": true
+    },
+    {
+      "op": "AvgPool2dFwdOp",
+      "shape": [
+        1,
+        2,
+        7,
+        9
+      ],
+      "dtype": "torch.float32",
+      "full_output_original_dtype_tolerance_passed": true,
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 1e-05
+      },
+      "negative_inputs_and_inputbits_verified": true
+    },
+    {
+      "op": "AvgPool3dFwdOp",
+      "shape": [
+        1,
+        2,
+        5,
+        7,
+        9
+      ],
+      "dtype": "torch.float32",
+      "full_output_original_dtype_tolerance_passed": true,
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 1e-05
+      },
+      "negative_inputs_and_inputbits_verified": true
+    },
+    {
+      "op": "AdaptiveAvgPool2dFwdOp",
+      "shape": [
+        2,
+        3,
+        7,
+        11
+      ],
+      "dtype": "torch.bfloat16",
+      "full_output_original_dtype_tolerance_passed": true,
+      "tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      },
+      "negative_inputs_and_inputbits_verified": true
+    }
+  ],
+  "not_formal15raw_or_coverage": true,
+  "scope": [
+    201,
+    202,
+    203,
+    204,
+    216,
+    217,
+    218,
+    219,
+    221,
+    222,
+    223,
+    224,
+    225,
+    227
+  ],
+  "CPU_proof_sha256": "bafe0f1965936ec7b05fc9f185d6acc030a8323cd760e48686201c79adcb5818",
+  "guard_sha256": "9bbbfa722877b7289306a9a2e89dcd4795e8981b243fa07ebb69f5dafaf7b42d"
+}

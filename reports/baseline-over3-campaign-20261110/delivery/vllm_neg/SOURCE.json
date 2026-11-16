@@ -1,0 +1,6 @@
+{
+  "adapter_sha256": "a5fbe2f46303ab249cc8b19df63893b3832d951ef7728b8a2475b1617e2ccb35",
+  "formal_SOURCE_verified_exact_cases": 3,
+  "origin": "vllm-neg-server1/native_adapters_v2.py",
+  "scope": "Neg16M BF16/F16/F32 only"
+}

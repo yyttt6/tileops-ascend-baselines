@@ -1,0 +1,5157 @@
+{
+  "checked_at": "2026-11-15T12:04:05.751124+00:00",
+  "proofs": [
+    {
+      "ordinal": 744,
+      "checkpoint_sha256": "042e14bc3af5bbf90af27504e7c5573d04fdd38fc0b8b686f86287466861c665",
+      "guard_valid": true,
+      "loaded_library_sha256": "8476cf41ff6df522fa422c12c29cb5dcba7c13ef1a8a373c842680b21b97f071",
+      "actual_device_ELFs": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-f16-add-v1/device-identity/original-device-0.elf": {
+          "sha256": "9f81d226040e23209fe6a47f808e1f18d7683a51a73077515c2c277db651c37a",
+          "object": {
+            "offset": 64744,
+            "bytes": 35960,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          },
+          "linked_so": {
+            "offset": 346808,
+            "bytes": 35960,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          }
+        },
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-f16-add-v1/device-identity/original-device-1.elf": {
+          "sha256": "b3a4948525896d134c9da181b4fc6c8d108f01aaf4e4b07bb7acaa0ba48ead29",
+          "object": {
+            "offset": 6400,
+            "bytes": 35096,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          },
+          "linked_so": {
+            "offset": 450816,
+            "bytes": 35096,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          }
+        }
+      },
+      "actual_private_entry": "layerNormAddAddQuant2dSingleCore_kernel",
+      "all15_windows_complete": [
+        {
+          "trace_sha256": "243e534160690c0e035dfb810a615ed1332731e370968f1a09b50246e2ea7430",
+          "all_tasks": [
+            {
+              "task_id": 46,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733831847931667,
+              "end_ns": 3733831847940978,
+              "duration_us": 9.311
+            },
+            {
+              "task_id": 47,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733831847953442,
+              "end_ns": 3733831847955834,
+              "duration_us": 2.392
+            },
+            {
+              "task_id": 48,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733831847962511,
+              "end_ns": 3733831847963524,
+              "duration_us": 1.013
+            },
+            {
+              "task_id": 49,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733831847972265,
+              "end_ns": 3733831847974334,
+              "duration_us": 2.069
+            },
+            {
+              "task_id": 50,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733831847982456,
+              "end_ns": 3733831847984618,
+              "duration_us": 2.162
+            },
+            {
+              "task_id": 51,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733831848003727,
+              "end_ns": 3733831848362578,
+              "duration_us": 358.851
+            }
+          ],
+          "device_us": 375.798
+        },
+        {
+          "trace_sha256": "880e6e79ab64fc128875eb66f405af18a83b87a620abc01039c9cd6208d3088f",
+          "all_tasks": [
+            {
+              "task_id": 55,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733833401995450,
+              "end_ns": 3733833402003919,
+              "duration_us": 8.469
+            },
+            {
+              "task_id": 56,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733833402016642,
+              "end_ns": 3733833402018976,
+              "duration_us": 2.334
+            },
+            {
+              "task_id": 57,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733833402025105,
+              "end_ns": 3733833402026498,
+              "duration_us": 1.393
+            },
+            {
+              "task_id": 58,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733833402036470,
+              "end_ns": 3733833402038795,
+              "duration_us": 2.325
+            },
+            {
+              "task_id": 59,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733833402044327,
+              "end_ns": 3733833402046688,
+              "duration_us": 2.361
+            },
+            {
+              "task_id": 60,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733833402060851,
+              "end_ns": 3733833402419763,
+              "duration_us": 358.912
+            }
+          ],
+          "device_us": 375.79400000000004
+        },
+        {
+          "trace_sha256": "454c7f1d5d511175d9dc2d88fb1e9b61c9457c85bcd1fd767314925e17180d79",
+          "all_tasks": [
+            {
+              "task_id": 64,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733835273508429,
+              "end_ns": 3733835273516451,
+              "duration_us": 8.022
+            },
+            {
+              "task_id": 65,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733835273532195,
+              "end_ns": 3733835273534679,
+              "duration_us": 2.484
+            },
+            {
+              "task_id": 66,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733835273541245,
+              "end_ns": 3733835273542478,
+              "duration_us": 1.233
+            },
+            {
+              "task_id": 67,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733835273552089,
+              "end_ns": 3733835273554175,
+              "duration_us": 2.086
+            },
+            {
+              "task_id": 68,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733835273561426,
+              "end_ns": 3733835273563468,
+              "duration_us": 2.042
+            },
+            {
+              "task_id": 69,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733835273590236,
+              "end_ns": 3733835273950540,
+              "duration_us": 360.304
+            }
+          ],
+          "device_us": 376.171
+        },
+        {
+          "trace_sha256": "c7ad7600fd577d55b5e101165122f8f637fd53d725f483f74bdd6f85ad8c1f5b",
+          "all_tasks": [
+            {
+              "task_id": 73,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733836822096586,
+              "end_ns": 3733836822104456,
+              "duration_us": 7.87
+            },
+            {
+              "task_id": 74,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733836822129422,
+              "end_ns": 3733836822131665,
+              "duration_us": 2.243
+            },
+            {
+              "task_id": 75,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733836822138137,
+              "end_ns": 3733836822139238,
+              "duration_us": 1.101
+            },
+            {
+              "task_id": 76,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733836822147410,
+              "end_ns": 3733836822149602,
+              "duration_us": 2.192
+            },
+            {
+              "task_id": 77,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733836822156016,
+              "end_ns": 3733836822158473,
+              "duration_us": 2.457
+            },
+            {
+              "task_id": 78,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733836822173789,
+              "end_ns": 3733836822533308,
+              "duration_us": 359.519
+            }
+          ],
+          "device_us": 375.382
+        },
+        {
+          "trace_sha256": "632e8cc85a7be8ce2d23fffa5177b4a44b1782ff1ce63cf3b100ad00970b9094",
+          "all_tasks": [
+            {
+              "task_id": 82,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733838382448760,
+              "end_ns": 3733838382456487,
+              "duration_us": 7.727
+            },
+            {
+              "task_id": 83,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733838382473352,
+              "end_ns": 3733838382475841,
+              "duration_us": 2.489
+            },
+            {
+              "task_id": 84,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733838382481668,
+              "end_ns": 3733838382483021,
+              "duration_us": 1.353
+            },
+            {
+              "task_id": 85,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733838382491948,
+              "end_ns": 3733838382494374,
+              "duration_us": 2.426
+            },
+            {
+              "task_id": 86,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733838382501371,
+              "end_ns": 3733838382503513,
+              "duration_us": 2.142
+            },
+            {
+              "task_id": 87,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733838382521026,
+              "end_ns": 3733838382881261,
+              "duration_us": 360.235
+            }
+          ],
+          "device_us": 376.37199999999996
+        },
+        {
+          "trace_sha256": "51662e86e1f6eeaf53ada2890d0ed02290735be66ca401f25b9e5c2b0cf3ebe7",
+          "all_tasks": [
+            {
+              "task_id": 91,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733840002988816,
+              "end_ns": 3733840002996342,
+              "duration_us": 7.526
+            },
+            {
+              "task_id": 92,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733840003013610,
+              "end_ns": 3733840003016366,
+              "duration_us": 2.756
+            },
+            {
+              "task_id": 93,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733840003022097,
+              "end_ns": 3733840003023206,
+              "duration_us": 1.109
+            },
+            {
+              "task_id": 94,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733840003033183,
+              "end_ns": 3733840003035258,
+              "duration_us": 2.075
+            },
+            {
+              "task_id": 95,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733840003042868,
+              "end_ns": 3733840003044896,
+              "duration_us": 2.028
+            },
+            {
+              "task_id": 96,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733840003061244,
+              "end_ns": 3733840003420174,
+              "duration_us": 358.93
+            }
+          ],
+          "device_us": 374.424
+        },
+        {
+          "trace_sha256": "3ce87f78e0b42b4b721f5dd49206a97caf34c92b7b7765f695b5fadb66d2390e",
+          "all_tasks": [
+            {
+              "task_id": 100,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733841562135673,
+              "end_ns": 3733841562143222,
+              "duration_us": 7.549
+            },
+            {
+              "task_id": 101,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733841562157217,
+              "end_ns": 3733841562159611,
+              "duration_us": 2.394
+            },
+            {
+              "task_id": 102,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733841562165226,
+              "end_ns": 3733841562166428,
+              "duration_us": 1.202
+            },
+            {
+              "task_id": 103,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733841562176060,
+              "end_ns": 3733841562178364,
+              "duration_us": 2.304
+            },
+            {
+              "task_id": 104,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733841562185899,
+              "end_ns": 3733841562187910,
+              "duration_us": 2.011
+            },
+            {
+              "task_id": 105,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733841562204864,
+              "end_ns": 3733841562564866,
+              "duration_us": 360.002
+            }
+          ],
+          "device_us": 375.46200000000005
+        },
+        {
+          "trace_sha256": "aa1c20411ed53267694e7e9c4b757c773c02eb2715d798b46aa571829c68e456",
+          "all_tasks": [
+            {
+              "task_id": 109,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733843363256568,
+              "end_ns": 3733843363264000,
+              "duration_us": 7.432
+            },
+            {
+              "task_id": 110,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733843363275492,
+              "end_ns": 3733843363277992,
+              "duration_us": 2.5
+            },
+            {
+              "task_id": 111,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733843363283522,
+              "end_ns": 3733843363284801,
+              "duration_us": 1.279
+            },
+            {
+              "task_id": 112,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733843363294508,
+              "end_ns": 3733843363296427,
+              "duration_us": 1.919
+            },
+            {
+              "task_id": 113,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733843363301527,
+              "end_ns": 3733843363303596,
+              "duration_us": 2.069
+            },
+            {
+              "task_id": 114,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733843363344993,
+              "end_ns": 3733843363704939,
+              "duration_us": 359.946
+            }
+          ],
+          "device_us": 375.145
+        },
+        {
+          "trace_sha256": "c71f448af55689a0892cf5296080d67bb233ec68d0e1b4d35a040c7523b14a3d",
+          "all_tasks": [
+            {
+              "task_id": 118,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733844864354246,
+              "end_ns": 3733844864362104,
+              "duration_us": 7.858
+            },
+            {
+              "task_id": 119,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733844864390440,
+              "end_ns": 3733844864392842,
+              "duration_us": 2.402
+            },
+            {
+              "task_id": 120,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733844864400659,
+              "end_ns": 3733844864401702,
+              "duration_us": 1.043
+            },
+            {
+              "task_id": 121,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733844864413598,
+              "end_ns": 3733844864415551,
+              "duration_us": 1.953
+            },
+            {
+              "task_id": 122,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733844864420733,
+              "end_ns": 3733844864422749,
+              "duration_us": 2.016
+            },
+            {
+              "task_id": 123,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733844864439288,
+              "end_ns": 3733844864799108,
+              "duration_us": 359.82
+            }
+          ],
+          "device_us": 375.092
+        },
+        {
+          "trace_sha256": "ff57514fba10ed7105e294ec7331be74896da9e826c1f72b57644582fcecb08a",
+          "all_tasks": [
+            {
+              "task_id": 127,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733846426268480,
+              "end_ns": 3733846426276910,
+              "duration_us": 8.43
+            },
+            {
+              "task_id": 128,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733846426301888,
+              "end_ns": 3733846426304306,
+              "duration_us": 2.418
+            },
+            {
+              "task_id": 129,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733846426306339,
+              "end_ns": 3733846426307624,
+              "duration_us": 1.285
+            },
+            {
+              "task_id": 130,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733846426315780,
+              "end_ns": 3733846426317875,
+              "duration_us": 2.095
+            },
+            {
+              "task_id": 131,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733846426325365,
+              "end_ns": 3733846426327509,
+              "duration_us": 2.144
+            },
+            {
+              "task_id": 132,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733846426343376,
+              "end_ns": 3733846426702931,
+              "duration_us": 359.555
+            }
+          ],
+          "device_us": 375.927
+        },
+        {
+          "trace_sha256": "59f2a260a7f54bce6cf80d6182cf2b9d9d8a77062eb2c877b215e7dac22b2736",
+          "all_tasks": [
+            {
+              "task_id": 136,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733847988986831,
+              "end_ns": 3733847988994951,
+              "duration_us": 8.12
+            },
+            {
+              "task_id": 137,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733847989014415,
+              "end_ns": 3733847989017008,
+              "duration_us": 2.593
+            },
+            {
+              "task_id": 138,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733847989024123,
+              "end_ns": 3733847989025357,
+              "duration_us": 1.234
+            },
+            {
+              "task_id": 139,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733847989035976,
+              "end_ns": 3733847989038053,
+              "duration_us": 2.077
+            },
+            {
+              "task_id": 140,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733847989046013,
+              "end_ns": 3733847989048032,
+              "duration_us": 2.019
+            },
+            {
+              "task_id": 141,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733847989066887,
+              "end_ns": 3733847989426297,
+              "duration_us": 359.41
+            }
+          ],
+          "device_us": 375.453
+        },
+        {
+          "trace_sha256": "f2ac33ab041d4a563697e3da9a0c3dab725fd0d4765188a079c5234ccb9ebef1",
+          "all_tasks": [
+            {
+              "task_id": 145,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733849549024734,
+              "end_ns": 3733849549032840,
+              "duration_us": 8.106
+            },
+            {
+              "task_id": 146,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733849549053960,
+              "end_ns": 3733849549056186,
+              "duration_us": 2.226
+            },
+            {
+              "task_id": 147,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733849549060429,
+              "end_ns": 3733849549061638,
+              "duration_us": 1.209
+            },
+            {
+              "task_id": 148,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733849549070622,
+              "end_ns": 3733849549073066,
+              "duration_us": 2.444
+            },
+            {
+              "task_id": 149,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733849549080800,
+              "end_ns": 3733849549083057,
+              "duration_us": 2.257
+            },
+            {
+              "task_id": 150,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733849549100620,
+              "end_ns": 3733849549459532,
+              "duration_us": 358.912
+            }
+          ],
+          "device_us": 375.154
+        },
+        {
+          "trace_sha256": "43157080adb4bda57104f245a39f353eef02ffc0f191baf056ad7b4bcc00898b",
+          "all_tasks": [
+            {
+              "task_id": 154,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733851160769187,
+              "end_ns": 3733851160776948,
+              "duration_us": 7.761
+            },
+            {
+              "task_id": 155,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733851160795193,
+              "end_ns": 3733851160797885,
+              "duration_us": 2.692
+            },
+            {
+              "task_id": 156,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733851160802882,
+              "end_ns": 3733851160804239,
+              "duration_us": 1.357
+            },
+            {
+              "task_id": 157,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733851160813245,
+              "end_ns": 3733851160815658,
+              "duration_us": 2.413
+            },
+            {
+              "task_id": 158,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733851160821814,
+              "end_ns": 3733851160824013,
+              "duration_us": 2.199
+            },
+            {
+              "task_id": 159,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733851160840743,
+              "end_ns": 3733851161200000,
+              "duration_us": 359.257
+            }
+          ],
+          "device_us": 375.679
+        },
+        {
+          "trace_sha256": "a48722e29b7f800304c3625708b33ed5ca262af74bda089ff7b7baa649150259",
+          "all_tasks": [
+            {
+              "task_id": 163,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733852720280537,
+              "end_ns": 3733852720288501,
+              "duration_us": 7.964
+            },
+            {
+              "task_id": 164,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733852720312655,
+              "end_ns": 3733852720315100,
+              "duration_us": 2.445
+            },
+            {
+              "task_id": 165,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733852720324168,
+              "end_ns": 3733852720325283,
+              "duration_us": 1.115
+            },
+            {
+              "task_id": 166,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733852720348623,
+              "end_ns": 3733852720350840,
+              "duration_us": 2.217
+            },
+            {
+              "task_id": 167,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733852720360554,
+              "end_ns": 3733852720362694,
+              "duration_us": 2.14
+            },
+            {
+              "task_id": 168,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733852720381271,
+              "end_ns": 3733852720741060,
+              "duration_us": 359.789
+            }
+          ],
+          "device_us": 375.67
+        },
+        {
+          "trace_sha256": "7f9d7e4e3bcc63b85324f6e11bdb37ca12f414689c4434394680de02d927477a",
+          "all_tasks": [
+            {
+              "task_id": 172,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733854291198515,
+              "end_ns": 3733854291206479,
+              "duration_us": 7.964
+            },
+            {
+              "task_id": 173,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733854291226032,
+              "end_ns": 3733854291228599,
+              "duration_us": 2.567
+            },
+            {
+              "task_id": 174,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733854291236769,
+              "end_ns": 3733854291238006,
+              "duration_us": 1.237
+            },
+            {
+              "task_id": 175,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733854291248724,
+              "end_ns": 3733854291251345,
+              "duration_us": 2.621
+            },
+            {
+              "task_id": 176,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733854291259605,
+              "end_ns": 3733854291262025,
+              "duration_us": 2.42
+            },
+            {
+              "task_id": 177,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733854291290069,
+              "end_ns": 3733854291649368,
+              "duration_us": 359.299
+            }
+          ],
+          "device_us": 376.108
+        }
+      ],
+      "dual_archive_sha256": "0938dc65a686e6c22176010249dc3179814087868b9c3ffb4404de0d855c4bfb",
+      "source_and_originalflags_unchanged": true
+    },
+    {
+      "ordinal": 745,
+      "checkpoint_sha256": "7dc8a2cd72302a0b5937ba9d945a1ecc44857cdcd5cb9181d4d7e0d13b18ba5f",
+      "guard_valid": true,
+      "loaded_library_sha256": "8476cf41ff6df522fa422c12c29cb5dcba7c13ef1a8a373c842680b21b97f071",
+      "actual_device_ELFs": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-f16-add-v1/device-identity/original-device-0.elf": {
+          "sha256": "9f81d226040e23209fe6a47f808e1f18d7683a51a73077515c2c277db651c37a",
+          "object": {
+            "offset": 64744,
+            "bytes": 35960,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          },
+          "linked_so": {
+            "offset": 346808,
+            "bytes": 35960,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          }
+        },
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-f16-add-v1/device-identity/original-device-1.elf": {
+          "sha256": "b3a4948525896d134c9da181b4fc6c8d108f01aaf4e4b07bb7acaa0ba48ead29",
+          "object": {
+            "offset": 6400,
+            "bytes": 35096,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          },
+          "linked_so": {
+            "offset": 450816,
+            "bytes": 35096,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          }
+        }
+      },
+      "actual_private_entry": "layerNormAddAddQuant2dSingleCore_kernel",
+      "all15_windows_complete": [
+        {
+          "trace_sha256": "5faac672ce030df0c31b2494cce829c5038bdf4337e71e8ce4620735eeeba2c4",
+          "all_tasks": [
+            {
+              "task_id": 46,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733904203657886,
+              "end_ns": 3733904203663468,
+              "duration_us": 5.582
+            },
+            {
+              "task_id": 47,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733904203686738,
+              "end_ns": 3733904203689108,
+              "duration_us": 2.37
+            },
+            {
+              "task_id": 48,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733904203695232,
+              "end_ns": 3733904203696259,
+              "duration_us": 1.027
+            },
+            {
+              "task_id": 49,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733904203708064,
+              "end_ns": 3733904203710205,
+              "duration_us": 2.141
+            },
+            {
+              "task_id": 50,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733904203720238,
+              "end_ns": 3733904203722254,
+              "duration_us": 2.016
+            },
+            {
+              "task_id": 51,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733904203741348,
+              "end_ns": 3733904203860527,
+              "duration_us": 119.179
+            }
+          ],
+          "device_us": 132.315
+        },
+        {
+          "trace_sha256": "fa4d6b49b3732d7ba3ccaf89f98815389f4b043fc51b77cafbe12b2802f75694",
+          "all_tasks": [
+            {
+              "task_id": 55,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733905765355245,
+              "end_ns": 3733905765360718,
+              "duration_us": 5.473
+            },
+            {
+              "task_id": 56,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733905765374706,
+              "end_ns": 3733905765377014,
+              "duration_us": 2.308
+            },
+            {
+              "task_id": 57,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733905765381734,
+              "end_ns": 3733905765383127,
+              "duration_us": 1.393
+            },
+            {
+              "task_id": 58,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733905765391059,
+              "end_ns": 3733905765393418,
+              "duration_us": 2.359
+            },
+            {
+              "task_id": 59,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733905765399004,
+              "end_ns": 3733905765401325,
+              "duration_us": 2.321
+            },
+            {
+              "task_id": 60,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733905765415843,
+              "end_ns": 3733905765535096,
+              "duration_us": 119.253
+            }
+          ],
+          "device_us": 133.107
+        },
+        {
+          "trace_sha256": "003845245443374c9f9f69b895673b0e7121864396990d4d09fe3f37e0afc996",
+          "all_tasks": [
+            {
+              "task_id": 64,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733907328441526,
+              "end_ns": 3733907328446908,
+              "duration_us": 5.382
+            },
+            {
+              "task_id": 65,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733907328466374,
+              "end_ns": 3733907328468833,
+              "duration_us": 2.459
+            },
+            {
+              "task_id": 66,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733907328475761,
+              "end_ns": 3733907328477009,
+              "duration_us": 1.248
+            },
+            {
+              "task_id": 67,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733907328499988,
+              "end_ns": 3733907328502354,
+              "duration_us": 2.366
+            },
+            {
+              "task_id": 68,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733907328508111,
+              "end_ns": 3733907328510180,
+              "duration_us": 2.069
+            },
+            {
+              "task_id": 69,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733907328527671,
+              "end_ns": 3733907328646387,
+              "duration_us": 118.716
+            }
+          ],
+          "device_us": 132.24
+        },
+        {
+          "trace_sha256": "37f7f34e14f88cdfe88e7a61a6e26d09b2d290a550d5047fdcdac787dc137409",
+          "all_tasks": [
+            {
+              "task_id": 73,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733909243396188,
+              "end_ns": 3733909243401188,
+              "duration_us": 5.0
+            },
+            {
+              "task_id": 74,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733909243418374,
+              "end_ns": 3733909243420592,
+              "duration_us": 2.218
+            },
+            {
+              "task_id": 75,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733909243426694,
+              "end_ns": 3733909243427802,
+              "duration_us": 1.108
+            },
+            {
+              "task_id": 76,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733909243437652,
+              "end_ns": 3733909243439859,
+              "duration_us": 2.207
+            },
+            {
+              "task_id": 77,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733909243446839,
+              "end_ns": 3733909243449178,
+              "duration_us": 2.339
+            },
+            {
+              "task_id": 78,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733909243467886,
+              "end_ns": 3733909243587595,
+              "duration_us": 119.709
+            }
+          ],
+          "device_us": 132.58100000000002
+        },
+        {
+          "trace_sha256": "f299d204913194abd5e1c6edc7a8107b49bdb4dafb1b3b2c1c67b1f39afad913",
+          "all_tasks": [
+            {
+              "task_id": 82,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733910807018694,
+              "end_ns": 3733910807023962,
+              "duration_us": 5.268
+            },
+            {
+              "task_id": 83,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733910807049836,
+              "end_ns": 3733910807052273,
+              "duration_us": 2.437
+            },
+            {
+              "task_id": 84,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733910807058123,
+              "end_ns": 3733910807059486,
+              "duration_us": 1.363
+            },
+            {
+              "task_id": 85,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733910807068250,
+              "end_ns": 3733910807070673,
+              "duration_us": 2.423
+            },
+            {
+              "task_id": 86,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733910807076397,
+              "end_ns": 3733910807078410,
+              "duration_us": 2.013
+            },
+            {
+              "task_id": 87,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733910807110637,
+              "end_ns": 3733910807230158,
+              "duration_us": 119.521
+            }
+          ],
+          "device_us": 133.025
+        },
+        {
+          "trace_sha256": "5a0090dcdfa69546e188351bbe07eab332a50f3b1cb84e0a6bc1ff1b85ff5296",
+          "all_tasks": [
+            {
+              "task_id": 91,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733912366585651,
+              "end_ns": 3733912366590735,
+              "duration_us": 5.084
+            },
+            {
+              "task_id": 92,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733912366607200,
+              "end_ns": 3733912366609747,
+              "duration_us": 2.547
+            },
+            {
+              "task_id": 93,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733912366614455,
+              "end_ns": 3733912366615647,
+              "duration_us": 1.192
+            },
+            {
+              "task_id": 94,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733912366625264,
+              "end_ns": 3733912366627348,
+              "duration_us": 2.084
+            },
+            {
+              "task_id": 95,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733912366633656,
+              "end_ns": 3733912366635677,
+              "duration_us": 2.021
+            },
+            {
+              "task_id": 96,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733912366662984,
+              "end_ns": 3733912366782554,
+              "duration_us": 119.57
+            }
+          ],
+          "device_us": 132.498
+        },
+        {
+          "trace_sha256": "fc22c21263164641e8b1d80328840069977263e5ecc3ffd69571daeeb264c599",
+          "all_tasks": [
+            {
+              "task_id": 100,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733913987346708,
+              "end_ns": 3733913987352129,
+              "duration_us": 5.421
+            },
+            {
+              "task_id": 101,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733913987379493,
+              "end_ns": 3733913987382057,
+              "duration_us": 2.564
+            },
+            {
+              "task_id": 102,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733913987383160,
+              "end_ns": 3733913987384256,
+              "duration_us": 1.096
+            },
+            {
+              "task_id": 103,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733913987390476,
+              "end_ns": 3733913987392774,
+              "duration_us": 2.298
+            },
+            {
+              "task_id": 104,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733913987399281,
+              "end_ns": 3733913987401379,
+              "duration_us": 2.098
+            },
+            {
+              "task_id": 105,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733913987417804,
+              "end_ns": 3733913987536831,
+              "duration_us": 119.027
+            }
+          ],
+          "device_us": 132.50400000000002
+        },
+        {
+          "trace_sha256": "ec54fb505f287dce19909a573e627d8a1740684b9a6e045444e1b0696e75afe7",
+          "all_tasks": [
+            {
+              "task_id": 109,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733915540706092,
+              "end_ns": 3733915540711307,
+              "duration_us": 5.215
+            },
+            {
+              "task_id": 110,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733915540734394,
+              "end_ns": 3733915540736900,
+              "duration_us": 2.506
+            },
+            {
+              "task_id": 111,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733915540742950,
+              "end_ns": 3733915540744248,
+              "duration_us": 1.298
+            },
+            {
+              "task_id": 112,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733915540753519,
+              "end_ns": 3733915540755457,
+              "duration_us": 1.938
+            },
+            {
+              "task_id": 113,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733915540763258,
+              "end_ns": 3733915540765004,
+              "duration_us": 1.746
+            },
+            {
+              "task_id": 114,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733915540784441,
+              "end_ns": 3733915540903654,
+              "duration_us": 119.213
+            }
+          ],
+          "device_us": 131.916
+        },
+        {
+          "trace_sha256": "72060b03788a4206704230368646f75d376485e8f8befaf10ef0eae9b0f64e54",
+          "all_tasks": [
+            {
+              "task_id": 118,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733917166671203,
+              "end_ns": 3733917166676670,
+              "duration_us": 5.467
+            },
+            {
+              "task_id": 119,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733917166697240,
+              "end_ns": 3733917166699634,
+              "duration_us": 2.394
+            },
+            {
+              "task_id": 120,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733917166705660,
+              "end_ns": 3733917166706706,
+              "duration_us": 1.046
+            },
+            {
+              "task_id": 121,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733917166717283,
+              "end_ns": 3733917166719260,
+              "duration_us": 1.977
+            },
+            {
+              "task_id": 122,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733917166726615,
+              "end_ns": 3733917166728618,
+              "duration_us": 2.003
+            },
+            {
+              "task_id": 123,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733917166758632,
+              "end_ns": 3733917166878252,
+              "duration_us": 119.62
+            }
+          ],
+          "device_us": 132.507
+        },
+        {
+          "trace_sha256": "c221945bb89b8e2f53996fa8f2b3b486bb55adcfe1748ec81a9206b54b820358",
+          "all_tasks": [
+            {
+              "task_id": 127,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733918726770336,
+              "end_ns": 3733918726775430,
+              "duration_us": 5.094
+            },
+            {
+              "task_id": 128,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733918726807604,
+              "end_ns": 3733918726810168,
+              "duration_us": 2.564
+            },
+            {
+              "task_id": 129,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733918726811333,
+              "end_ns": 3733918726812400,
+              "duration_us": 1.067
+            },
+            {
+              "task_id": 130,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733918726819537,
+              "end_ns": 3733918726821742,
+              "duration_us": 2.205
+            },
+            {
+              "task_id": 131,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733918726828955,
+              "end_ns": 3733918726830974,
+              "duration_us": 2.019
+            },
+            {
+              "task_id": 132,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733918726859563,
+              "end_ns": 3733918726979126,
+              "duration_us": 119.563
+            }
+          ],
+          "device_us": 132.512
+        },
+        {
+          "trace_sha256": "64b369f30cf76331611fdaa872243a3ebb040e73e1d84dd8d9ce18e8030d916f",
+          "all_tasks": [
+            {
+              "task_id": 136,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733920341698053,
+              "end_ns": 3733920341703556,
+              "duration_us": 5.503
+            },
+            {
+              "task_id": 137,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733920341722595,
+              "end_ns": 3733920341725195,
+              "duration_us": 2.6
+            },
+            {
+              "task_id": 138,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733920341731044,
+              "end_ns": 3733920341732299,
+              "duration_us": 1.255
+            },
+            {
+              "task_id": 139,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733920341741288,
+              "end_ns": 3733920341743384,
+              "duration_us": 2.096
+            },
+            {
+              "task_id": 140,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733920341751064,
+              "end_ns": 3733920341753278,
+              "duration_us": 2.214
+            },
+            {
+              "task_id": 141,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733920341771059,
+              "end_ns": 3733920341890281,
+              "duration_us": 119.222
+            }
+          ],
+          "device_us": 132.89000000000001
+        },
+        {
+          "trace_sha256": "13557a8e19d6803ceab162fa9873096b775385545e8fee9a16d72a85b36aa081",
+          "all_tasks": [
+            {
+              "task_id": 145,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733922205743967,
+              "end_ns": 3733922205749793,
+              "duration_us": 5.826
+            },
+            {
+              "task_id": 146,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733922205766753,
+              "end_ns": 3733922205769193,
+              "duration_us": 2.44
+            },
+            {
+              "task_id": 147,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733922205787376,
+              "end_ns": 3733922205788605,
+              "duration_us": 1.229
+            },
+            {
+              "task_id": 148,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733922205793071,
+              "end_ns": 3733922205795525,
+              "duration_us": 2.454
+            },
+            {
+              "task_id": 149,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733922205802620,
+              "end_ns": 3733922205804742,
+              "duration_us": 2.122
+            },
+            {
+              "task_id": 150,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733922205822202,
+              "end_ns": 3733922205941284,
+              "duration_us": 119.082
+            }
+          ],
+          "device_us": 133.153
+        },
+        {
+          "trace_sha256": "81540754327fdd75b68a420ab364e0a79f162eaa5eb1ab40e69a30649c491b59",
+          "all_tasks": [
+            {
+              "task_id": 154,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733923765808113,
+              "end_ns": 3733923765813124,
+              "duration_us": 5.011
+            },
+            {
+              "task_id": 155,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733923765841247,
+              "end_ns": 3733923765843908,
+              "duration_us": 2.661
+            },
+            {
+              "task_id": 156,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733923765849495,
+              "end_ns": 3733923765850872,
+              "duration_us": 1.377
+            },
+            {
+              "task_id": 157,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733923765858341,
+              "end_ns": 3733923765860741,
+              "duration_us": 2.4
+            },
+            {
+              "task_id": 158,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733923765867446,
+              "end_ns": 3733923765869341,
+              "duration_us": 1.895
+            },
+            {
+              "task_id": 159,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733923765894756,
+              "end_ns": 3733923766013705,
+              "duration_us": 118.949
+            }
+          ],
+          "device_us": 132.293
+        },
+        {
+          "trace_sha256": "00280abfde404310af146c6b5b146f46fe279147189417ecef887c62aeba1acb",
+          "all_tasks": [
+            {
+              "task_id": 163,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733925329780098,
+              "end_ns": 3733925329785608,
+              "duration_us": 5.51
+            },
+            {
+              "task_id": 164,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733925329813565,
+              "end_ns": 3733925329815985,
+              "duration_us": 2.42
+            },
+            {
+              "task_id": 165,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733925329817919,
+              "end_ns": 3733925329819044,
+              "duration_us": 1.125
+            },
+            {
+              "task_id": 166,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733925329826350,
+              "end_ns": 3733925329828426,
+              "duration_us": 2.076
+            },
+            {
+              "task_id": 167,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733925329836401,
+              "end_ns": 3733925329838402,
+              "duration_us": 2.001
+            },
+            {
+              "task_id": 168,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733925329867889,
+              "end_ns": 3733925329987817,
+              "duration_us": 119.928
+            }
+          ],
+          "device_us": 133.06
+        },
+        {
+          "trace_sha256": "226522ab303e99c45f4830c56c92efc9c1de50317286225edbb74b3ac32d81bb",
+          "all_tasks": [
+            {
+              "task_id": 172,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733926884133568,
+              "end_ns": 3733926884138718,
+              "duration_us": 5.15
+            },
+            {
+              "task_id": 173,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733926884156310,
+              "end_ns": 3733926884158597,
+              "duration_us": 2.287
+            },
+            {
+              "task_id": 174,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733926884164553,
+              "end_ns": 3733926884165789,
+              "duration_us": 1.236
+            },
+            {
+              "task_id": 175,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733926884175276,
+              "end_ns": 3733926884177623,
+              "duration_us": 2.347
+            },
+            {
+              "task_id": 176,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733926884183901,
+              "end_ns": 3733926884186203,
+              "duration_us": 2.302
+            },
+            {
+              "task_id": 177,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733926884210348,
+              "end_ns": 3733926884329857,
+              "duration_us": 119.509
+            }
+          ],
+          "device_us": 132.83100000000002
+        }
+      ],
+      "dual_archive_sha256": "02ee49286a58f942f2ad1ca00a3a5d407ac7da51ad22433ac7d4a52b019452de",
+      "source_and_originalflags_unchanged": true
+    },
+    {
+      "ordinal": 746,
+      "checkpoint_sha256": "fa959b24196ab2407e411fbcc1f5d985b1d812628e63c382e2e1f9d467e09aab",
+      "guard_valid": true,
+      "loaded_library_sha256": "8476cf41ff6df522fa422c12c29cb5dcba7c13ef1a8a373c842680b21b97f071",
+      "actual_device_ELFs": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-f16-add-v1/device-identity/original-device-0.elf": {
+          "sha256": "9f81d226040e23209fe6a47f808e1f18d7683a51a73077515c2c277db651c37a",
+          "object": {
+            "offset": 64744,
+            "bytes": 35960,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          },
+          "linked_so": {
+            "offset": 346808,
+            "bytes": 35960,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          }
+        },
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-f16-add-v1/device-identity/original-device-1.elf": {
+          "sha256": "b3a4948525896d134c9da181b4fc6c8d108f01aaf4e4b07bb7acaa0ba48ead29",
+          "object": {
+            "offset": 6400,
+            "bytes": 35096,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          },
+          "linked_so": {
+            "offset": 450816,
+            "bytes": 35096,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          }
+        }
+      },
+      "actual_private_entry": "layerNormAddAddQuant2dSingleCore_kernel",
+      "all15_windows_complete": [
+        {
+          "trace_sha256": "456392d1e82c8de3ba39655f131881a538ba28d2bf1aec952b40953bc9e4ebc8",
+          "all_tasks": [
+            {
+              "task_id": 42,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733982503324976,
+              "end_ns": 3733982503327494,
+              "duration_us": 2.518
+            },
+            {
+              "task_id": 43,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733982503349421,
+              "end_ns": 3733982503350550,
+              "duration_us": 1.129
+            },
+            {
+              "task_id": 44,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733982503356844,
+              "end_ns": 3733982503358913,
+              "duration_us": 2.069
+            },
+            {
+              "task_id": 45,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733982503369379,
+              "end_ns": 3733982503371339,
+              "duration_us": 1.96
+            },
+            {
+              "task_id": 46,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733982503387137,
+              "end_ns": 3733982503708143,
+              "duration_us": 321.006
+            }
+          ],
+          "device_us": 328.68199999999996
+        },
+        {
+          "trace_sha256": "9e59e0ef4fa347eec38e4c07058f4252b9aff969f920db92bd5b0955146d82aa",
+          "all_tasks": [
+            {
+              "task_id": 50,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733984245550295,
+              "end_ns": 3733984245552832,
+              "duration_us": 2.537
+            },
+            {
+              "task_id": 51,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733984245567218,
+              "end_ns": 3733984245568472,
+              "duration_us": 1.254
+            },
+            {
+              "task_id": 52,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733984245577501,
+              "end_ns": 3733984245579662,
+              "duration_us": 2.161
+            },
+            {
+              "task_id": 53,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733984245588401,
+              "end_ns": 3733984245590354,
+              "duration_us": 1.953
+            },
+            {
+              "task_id": 54,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733984245608101,
+              "end_ns": 3733984245928433,
+              "duration_us": 320.332
+            }
+          ],
+          "device_us": 328.237
+        },
+        {
+          "trace_sha256": "fd4d7acd8bbee1d460b0e2704a92c03a9bfc6bb8170f405193249a6875083e25",
+          "all_tasks": [
+            {
+              "task_id": 58,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733985746119099,
+              "end_ns": 3733985746121695,
+              "duration_us": 2.596
+            },
+            {
+              "task_id": 59,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733985746138763,
+              "end_ns": 3733985746140076,
+              "duration_us": 1.313
+            },
+            {
+              "task_id": 60,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733985746147887,
+              "end_ns": 3733985746150261,
+              "duration_us": 2.374
+            },
+            {
+              "task_id": 61,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733985746157003,
+              "end_ns": 3733985746158931,
+              "duration_us": 1.928
+            },
+            {
+              "task_id": 62,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733985746173244,
+              "end_ns": 3733985746493774,
+              "duration_us": 320.53
+            }
+          ],
+          "device_us": 328.741
+        },
+        {
+          "trace_sha256": "99e63d85413460340ad09413a91073c80e168316dfe93455e6ef86256d12b0cd",
+          "all_tasks": [
+            {
+              "task_id": 66,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733987248305703,
+              "end_ns": 3733987248308772,
+              "duration_us": 3.069
+            },
+            {
+              "task_id": 67,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733987248320048,
+              "end_ns": 3733987248321443,
+              "duration_us": 1.395
+            },
+            {
+              "task_id": 68,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733987248330159,
+              "end_ns": 3733987248332593,
+              "duration_us": 2.434
+            },
+            {
+              "task_id": 69,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733987248339995,
+              "end_ns": 3733987248342337,
+              "duration_us": 2.342
+            },
+            {
+              "task_id": 70,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733987248358119,
+              "end_ns": 3733987248677425,
+              "duration_us": 319.306
+            }
+          ],
+          "device_us": 328.546
+        },
+        {
+          "trace_sha256": "646e55dc63cf9dba9acb629170c1f7bfffe8ccfb866c090f96ccbe45046255d4",
+          "all_tasks": [
+            {
+              "task_id": 74,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733988747513397,
+              "end_ns": 3733988747515578,
+              "duration_us": 2.181
+            },
+            {
+              "task_id": 75,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733988747528698,
+              "end_ns": 3733988747529778,
+              "duration_us": 1.08
+            },
+            {
+              "task_id": 76,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733988747538492,
+              "end_ns": 3733988747540756,
+              "duration_us": 2.264
+            },
+            {
+              "task_id": 77,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733988747548376,
+              "end_ns": 3733988747550707,
+              "duration_us": 2.331
+            },
+            {
+              "task_id": 78,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733988747567418,
+              "end_ns": 3733988747886978,
+              "duration_us": 319.56
+            }
+          ],
+          "device_us": 327.416
+        },
+        {
+          "trace_sha256": "4009ab483ef23d8e4e7711c8b15e61be853ec5f1138fccac4e7593b36ff4b6e8",
+          "all_tasks": [
+            {
+              "task_id": 82,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733990310637600,
+              "end_ns": 3733990310640322,
+              "duration_us": 2.722
+            },
+            {
+              "task_id": 83,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733990310664730,
+              "end_ns": 3733990310666047,
+              "duration_us": 1.317
+            },
+            {
+              "task_id": 84,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733990310679993,
+              "end_ns": 3733990310682312,
+              "duration_us": 2.319
+            },
+            {
+              "task_id": 85,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733990310690433,
+              "end_ns": 3733990310692308,
+              "duration_us": 1.875
+            },
+            {
+              "task_id": 86,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733990310721082,
+              "end_ns": 3733990311041824,
+              "duration_us": 320.742
+            }
+          ],
+          "device_us": 328.975
+        },
+        {
+          "trace_sha256": "0708bf4dcf45c6227c74d69ed441370a977d76d90a4397093beeec9cfdceb190",
+          "all_tasks": [
+            {
+              "task_id": 90,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733992105006753,
+              "end_ns": 3733992105009267,
+              "duration_us": 2.514
+            },
+            {
+              "task_id": 91,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733992105065778,
+              "end_ns": 3733992105067064,
+              "duration_us": 1.286
+            },
+            {
+              "task_id": 92,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733992105084689,
+              "end_ns": 3733992105086743,
+              "duration_us": 2.054
+            },
+            {
+              "task_id": 93,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733992105103442,
+              "end_ns": 3733992105105411,
+              "duration_us": 1.969
+            },
+            {
+              "task_id": 94,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733992105121216,
+              "end_ns": 3733992105441282,
+              "duration_us": 320.066
+            }
+          ],
+          "device_us": 327.889
+        },
+        {
+          "trace_sha256": "13510585949c43fc32c5f845ac5fc0c92c5b7c78a1d91c6cea79d8275519a3ca",
+          "all_tasks": [
+            {
+              "task_id": 98,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733993669137250,
+              "end_ns": 3733993669139674,
+              "duration_us": 2.424
+            },
+            {
+              "task_id": 99,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733993669175985,
+              "end_ns": 3733993669177326,
+              "duration_us": 1.341
+            },
+            {
+              "task_id": 100,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733993669183719,
+              "end_ns": 3733993669186375,
+              "duration_us": 2.656
+            },
+            {
+              "task_id": 101,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733993669193173,
+              "end_ns": 3733993669195259,
+              "duration_us": 2.086
+            },
+            {
+              "task_id": 102,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733993669214146,
+              "end_ns": 3733993669533553,
+              "duration_us": 319.407
+            }
+          ],
+          "device_us": 327.914
+        },
+        {
+          "trace_sha256": "4e19ef69385ce556531d7ca901acf2948d954b8c9fbb9d07c94f72cedd3f37d0",
+          "all_tasks": [
+            {
+              "task_id": 106,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733995222489417,
+              "end_ns": 3733995222491682,
+              "duration_us": 2.265
+            },
+            {
+              "task_id": 107,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733995222505681,
+              "end_ns": 3733995222506910,
+              "duration_us": 1.229
+            },
+            {
+              "task_id": 108,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733995222526823,
+              "end_ns": 3733995222529407,
+              "duration_us": 2.584
+            },
+            {
+              "task_id": 109,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733995222531754,
+              "end_ns": 3733995222534220,
+              "duration_us": 2.466
+            },
+            {
+              "task_id": 110,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733995222548342,
+              "end_ns": 3733995222868478,
+              "duration_us": 320.136
+            }
+          ],
+          "device_us": 328.68
+        },
+        {
+          "trace_sha256": "62d24f465cb616d1652915eaaa80f1672ec355d42653c7fb0dc80c0fcde91331",
+          "all_tasks": [
+            {
+              "task_id": 114,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733996846112846,
+              "end_ns": 3733996846115170,
+              "duration_us": 2.324
+            },
+            {
+              "task_id": 115,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733996846136201,
+              "end_ns": 3733996846137330,
+              "duration_us": 1.129
+            },
+            {
+              "task_id": 116,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733996846146872,
+              "end_ns": 3733996846149010,
+              "duration_us": 2.138
+            },
+            {
+              "task_id": 117,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733996846157239,
+              "end_ns": 3733996846159326,
+              "duration_us": 2.087
+            },
+            {
+              "task_id": 118,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733996846193230,
+              "end_ns": 3733996846513604,
+              "duration_us": 320.374
+            }
+          ],
+          "device_us": 328.052
+        },
+        {
+          "trace_sha256": "4997e75fd41fbab8fa69337eff8c1123fc222a3cfbbbea442ef623c6edfd4339",
+          "all_tasks": [
+            {
+              "task_id": 122,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733998399761568,
+              "end_ns": 3733998399764139,
+              "duration_us": 2.571
+            },
+            {
+              "task_id": 123,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733998399781316,
+              "end_ns": 3733998399782591,
+              "duration_us": 1.275
+            },
+            {
+              "task_id": 124,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733998399791024,
+              "end_ns": 3733998399793452,
+              "duration_us": 2.428
+            },
+            {
+              "task_id": 125,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733998399801130,
+              "end_ns": 3733998399803109,
+              "duration_us": 1.979
+            },
+            {
+              "task_id": 126,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3733998399820089,
+              "end_ns": 3733998400141269,
+              "duration_us": 321.18
+            }
+          ],
+          "device_us": 329.433
+        },
+        {
+          "trace_sha256": "35700ebad1f05d4f181e211b52d49f7edc2f56d270ff8b3cdc82d9891e6b71d7",
+          "all_tasks": [
+            {
+              "task_id": 130,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734000030661693,
+              "end_ns": 3734000030664111,
+              "duration_us": 2.418
+            },
+            {
+              "task_id": 131,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734000030692192,
+              "end_ns": 3734000030693487,
+              "duration_us": 1.295
+            },
+            {
+              "task_id": 132,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734000030698402,
+              "end_ns": 3734000030700581,
+              "duration_us": 2.179
+            },
+            {
+              "task_id": 133,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734000030706471,
+              "end_ns": 3734000030708355,
+              "duration_us": 1.884
+            },
+            {
+              "task_id": 134,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734000030725519,
+              "end_ns": 3734000031045832,
+              "duration_us": 320.313
+            }
+          ],
+          "device_us": 328.089
+        },
+        {
+          "trace_sha256": "e9aece9581dddd573018f2f5206f69f823b8e39c8b07f993e3c0f8e201d67ea6",
+          "all_tasks": [
+            {
+              "task_id": 138,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734001529760689,
+              "end_ns": 3734001529762898,
+              "duration_us": 2.209
+            },
+            {
+              "task_id": 139,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734001529778027,
+              "end_ns": 3734001529779308,
+              "duration_us": 1.281
+            },
+            {
+              "task_id": 140,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734001529789277,
+              "end_ns": 3734001529791656,
+              "duration_us": 2.379
+            },
+            {
+              "task_id": 141,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734001529801587,
+              "end_ns": 3734001529803954,
+              "duration_us": 2.367
+            },
+            {
+              "task_id": 142,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734001529824423,
+              "end_ns": 3734001530144528,
+              "duration_us": 320.105
+            }
+          ],
+          "device_us": 328.341
+        },
+        {
+          "trace_sha256": "fad8e575caf797ef87e0317c14edd4ec4d3a27987b2ad9b47b81c12efcb66493",
+          "all_tasks": [
+            {
+              "task_id": 146,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734003082436422,
+              "end_ns": 3734003082438666,
+              "duration_us": 2.244
+            },
+            {
+              "task_id": 147,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734003082451917,
+              "end_ns": 3734003082453046,
+              "duration_us": 1.129
+            },
+            {
+              "task_id": 148,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734003082472544,
+              "end_ns": 3734003082474824,
+              "duration_us": 2.28
+            },
+            {
+              "task_id": 149,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734003082481286,
+              "end_ns": 3734003082483677,
+              "duration_us": 2.391
+            },
+            {
+              "task_id": 150,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734003082499659,
+              "end_ns": 3734003082820298,
+              "duration_us": 320.639
+            }
+          ],
+          "device_us": 328.683
+        },
+        {
+          "trace_sha256": "ceb5726c8ff3c4ceed795db19f4e2901d0fbaf39e0c01823c76c953c561f8e80",
+          "all_tasks": [
+            {
+              "task_id": 154,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734004772340053,
+              "end_ns": 3734004772342540,
+              "duration_us": 2.487
+            },
+            {
+              "task_id": 155,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734004772355858,
+              "end_ns": 3734004772356884,
+              "duration_us": 1.026
+            },
+            {
+              "task_id": 156,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734004772365145,
+              "end_ns": 3734004772367314,
+              "duration_us": 2.169
+            },
+            {
+              "task_id": 157,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734004772373959,
+              "end_ns": 3734004772375907,
+              "duration_us": 1.948
+            },
+            {
+              "task_id": 158,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734004772392248,
+              "end_ns": 3734004772712626,
+              "duration_us": 320.378
+            }
+          ],
+          "device_us": 328.00800000000004
+        }
+      ],
+      "dual_archive_sha256": "38817a1c8bcd1ebabe7b603820ddb545b6fc5641e529ca362bb06d20960f23dc",
+      "source_and_originalflags_unchanged": true
+    },
+    {
+      "ordinal": 747,
+      "checkpoint_sha256": "b3da4b22a3d42200a54334cc8c65aac5a8f84e5d31567abf8fa8571b68cc9869",
+      "guard_valid": true,
+      "loaded_library_sha256": "8476cf41ff6df522fa422c12c29cb5dcba7c13ef1a8a373c842680b21b97f071",
+      "actual_device_ELFs": {
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-f16-add-v1/device-identity/original-device-0.elf": {
+          "sha256": "9f81d226040e23209fe6a47f808e1f18d7683a51a73077515c2c277db651c37a",
+          "object": {
+            "offset": 64744,
+            "bytes": 35960,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          },
+          "linked_so": {
+            "offset": 346808,
+            "bytes": 35960,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          }
+        },
+        "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-transformer-f16-add-v1/device-identity/original-device-1.elf": {
+          "sha256": "b3a4948525896d134c9da181b4fc6c8d108f01aaf4e4b07bb7acaa0ba48ead29",
+          "object": {
+            "offset": 6400,
+            "bytes": 35096,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          },
+          "linked_so": {
+            "offset": 450816,
+            "bytes": 35096,
+            "machine": 4137,
+            "kernel_symbol": "layerNormAddAddQuant2dSingleCore_kernel"
+          }
+        }
+      },
+      "actual_private_entry": "layerNormAddAddQuant2dSingleCore_kernel",
+      "all15_windows_complete": [
+        {
+          "trace_sha256": "a8f43736aba5582f0bf1297819078dcf8049b99af8ed1170718f0deb25888ade",
+          "all_tasks": [
+            {
+              "task_id": 42,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734057441859402,
+              "end_ns": 3734057441861808,
+              "duration_us": 2.406
+            },
+            {
+              "task_id": 43,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734057441874653,
+              "end_ns": 3734057441875781,
+              "duration_us": 1.128
+            },
+            {
+              "task_id": 44,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734057441884965,
+              "end_ns": 3734057441887023,
+              "duration_us": 2.058
+            },
+            {
+              "task_id": 45,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734057441894705,
+              "end_ns": 3734057441896551,
+              "duration_us": 1.846
+            },
+            {
+              "task_id": 46,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734057441909863,
+              "end_ns": 3734057442148061,
+              "duration_us": 238.198
+            }
+          ],
+          "device_us": 245.636
+        },
+        {
+          "trace_sha256": "9259286bae43a2a1d42afc56402d6d8ec9554746575f2ac3c04e8b20acfe2238",
+          "all_tasks": [
+            {
+              "task_id": 50,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734059250247813,
+              "end_ns": 3734059250250324,
+              "duration_us": 2.511
+            },
+            {
+              "task_id": 51,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734059250259892,
+              "end_ns": 3734059250261139,
+              "duration_us": 1.247
+            },
+            {
+              "task_id": 52,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734059250269366,
+              "end_ns": 3734059250271537,
+              "duration_us": 2.171
+            },
+            {
+              "task_id": 53,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734059250277113,
+              "end_ns": 3734059250278955,
+              "duration_us": 1.842
+            },
+            {
+              "task_id": 54,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734059250289261,
+              "end_ns": 3734059250527272,
+              "duration_us": 238.011
+            }
+          ],
+          "device_us": 245.782
+        },
+        {
+          "trace_sha256": "08b74bee3a749cecdbbc0fc1a458c05ddfaa7386a274a098de455d75175a91d2",
+          "all_tasks": [
+            {
+              "task_id": 58,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734060809542243,
+              "end_ns": 3734060809544807,
+              "duration_us": 2.564
+            },
+            {
+              "task_id": 59,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734060809567010,
+              "end_ns": 3734060809568319,
+              "duration_us": 1.309
+            },
+            {
+              "task_id": 60,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734060809571221,
+              "end_ns": 3734060809573474,
+              "duration_us": 2.253
+            },
+            {
+              "task_id": 61,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734060809579678,
+              "end_ns": 3734060809581511,
+              "duration_us": 1.833
+            },
+            {
+              "task_id": 62,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734060809597532,
+              "end_ns": 3734060809836143,
+              "duration_us": 238.611
+            }
+          ],
+          "device_us": 246.57000000000002
+        },
+        {
+          "trace_sha256": "00d6c10935dfa6de69d469f3eb9b10491ab79ae1be75a4cc835a6a0b5f60df75",
+          "all_tasks": [
+            {
+              "task_id": 66,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734062369341419,
+              "end_ns": 3734062369343956,
+              "duration_us": 2.537
+            },
+            {
+              "task_id": 67,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734062369366022,
+              "end_ns": 3734062369367424,
+              "duration_us": 1.402
+            },
+            {
+              "task_id": 68,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734062369374787,
+              "end_ns": 3734062369377190,
+              "duration_us": 2.403
+            },
+            {
+              "task_id": 69,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734062369381318,
+              "end_ns": 3734062369383554,
+              "duration_us": 2.236
+            },
+            {
+              "task_id": 70,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734062369395611,
+              "end_ns": 3734062369633364,
+              "duration_us": 237.753
+            }
+          ],
+          "device_us": 246.331
+        },
+        {
+          "trace_sha256": "b28146d84527c0833e1fd3d0014c83b3f4bd1d086f1b8165d712fb96e0062c3e",
+          "all_tasks": [
+            {
+              "task_id": 74,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734064111672772,
+              "end_ns": 3734064111674934,
+              "duration_us": 2.162
+            },
+            {
+              "task_id": 75,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734064111687708,
+              "end_ns": 3734064111688786,
+              "duration_us": 1.078
+            },
+            {
+              "task_id": 76,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734064111697235,
+              "end_ns": 3734064111699536,
+              "duration_us": 2.301
+            },
+            {
+              "task_id": 77,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734064111704690,
+              "end_ns": 3734064111706900,
+              "duration_us": 2.21
+            },
+            {
+              "task_id": 78,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734064111718576,
+              "end_ns": 3734064111956104,
+              "duration_us": 237.528
+            }
+          ],
+          "device_us": 245.279
+        },
+        {
+          "trace_sha256": "62d4eaa8045c2b7ce9355be4be29be8d3b72de68bd688b86dea768d99e404ed8",
+          "all_tasks": [
+            {
+              "task_id": 82,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734065661027017,
+              "end_ns": 3734065661029772,
+              "duration_us": 2.755
+            },
+            {
+              "task_id": 83,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734065661048797,
+              "end_ns": 3734065661049945,
+              "duration_us": 1.148
+            },
+            {
+              "task_id": 84,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734065661056334,
+              "end_ns": 3734065661058521,
+              "duration_us": 2.187
+            },
+            {
+              "task_id": 85,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734065661063760,
+              "end_ns": 3734065661065504,
+              "duration_us": 1.744
+            },
+            {
+              "task_id": 86,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734065661078560,
+              "end_ns": 3734065661316781,
+              "duration_us": 238.221
+            }
+          ],
+          "device_us": 246.055
+        },
+        {
+          "trace_sha256": "cb47fa25b7519443718f38c39e0c44013543b5a6b667d5a731be35af5ed082df",
+          "all_tasks": [
+            {
+              "task_id": 90,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734067286231753,
+              "end_ns": 3734067286234482,
+              "duration_us": 2.729
+            },
+            {
+              "task_id": 91,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734067286252262,
+              "end_ns": 3734067286253687,
+              "duration_us": 1.425
+            },
+            {
+              "task_id": 92,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734067286266425,
+              "end_ns": 3734067286268481,
+              "duration_us": 2.056
+            },
+            {
+              "task_id": 93,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734067286271630,
+              "end_ns": 3734067286273490,
+              "duration_us": 1.86
+            },
+            {
+              "task_id": 94,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734067286285531,
+              "end_ns": 3734067286523287,
+              "duration_us": 237.756
+            }
+          ],
+          "device_us": 245.826
+        },
+        {
+          "trace_sha256": "cb4dfc04ba2e2a6042d0f5393c33bce091b46a34a4160d2ca3e2096b67b97bd1",
+          "all_tasks": [
+            {
+              "task_id": 98,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734068910317786,
+              "end_ns": 3734068910320162,
+              "duration_us": 2.376
+            },
+            {
+              "task_id": 99,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734068910333307,
+              "end_ns": 3734068910334650,
+              "duration_us": 1.343
+            },
+            {
+              "task_id": 100,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734068910343656,
+              "end_ns": 3734068910346165,
+              "duration_us": 2.509
+            },
+            {
+              "task_id": 101,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734068910352478,
+              "end_ns": 3734068910354501,
+              "duration_us": 2.023
+            },
+            {
+              "task_id": 102,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734068910380238,
+              "end_ns": 3734068910617844,
+              "duration_us": 237.606
+            }
+          ],
+          "device_us": 245.857
+        },
+        {
+          "trace_sha256": "d62cbd2829a3d2f916d9564e9516c21560f776a27bfd9c010942c0678f604370",
+          "all_tasks": [
+            {
+              "task_id": 106,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734070523756348,
+              "end_ns": 3734070523758618,
+              "duration_us": 2.27
+            },
+            {
+              "task_id": 107,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734070523773585,
+              "end_ns": 3734070523774823,
+              "duration_us": 1.238
+            },
+            {
+              "task_id": 108,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734070523784314,
+              "end_ns": 3734070523786905,
+              "duration_us": 2.591
+            },
+            {
+              "task_id": 109,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734070523799249,
+              "end_ns": 3734070523801375,
+              "duration_us": 2.126
+            },
+            {
+              "task_id": 110,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734070523827673,
+              "end_ns": 3734070524066210,
+              "duration_us": 238.537
+            }
+          ],
+          "device_us": 246.762
+        },
+        {
+          "trace_sha256": "64ba9b271e928deb65e7f52ae8fc3fe4731d49699f2e1aa679c4cb447c3886b1",
+          "all_tasks": [
+            {
+              "task_id": 114,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734072384491156,
+              "end_ns": 3734072384493770,
+              "duration_us": 2.614
+            },
+            {
+              "task_id": 115,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734072384505125,
+              "end_ns": 3734072384506245,
+              "duration_us": 1.12
+            },
+            {
+              "task_id": 116,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734072384514104,
+              "end_ns": 3734072384516653,
+              "duration_us": 2.549
+            },
+            {
+              "task_id": 117,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734072384521915,
+              "end_ns": 3734072384524112,
+              "duration_us": 2.197
+            },
+            {
+              "task_id": 118,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734072384537069,
+              "end_ns": 3734072384774643,
+              "duration_us": 237.574
+            }
+          ],
+          "device_us": 246.054
+        },
+        {
+          "trace_sha256": "51fb0bc4a14300fe3ba8b40beb10554b5af92ad7c6379024e33e43b8f3c398e9",
+          "all_tasks": [
+            {
+              "task_id": 122,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734073887206853,
+              "end_ns": 3734073887209405,
+              "duration_us": 2.552
+            },
+            {
+              "task_id": 123,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734073887223732,
+              "end_ns": 3734073887225028,
+              "duration_us": 1.296
+            },
+            {
+              "task_id": 124,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734073887232431,
+              "end_ns": 3734073887234645,
+              "duration_us": 2.214
+            },
+            {
+              "task_id": 125,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734073887239695,
+              "end_ns": 3734073887241678,
+              "duration_us": 1.983
+            },
+            {
+              "task_id": 126,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734073887255135,
+              "end_ns": 3734073887493164,
+              "duration_us": 238.029
+            }
+          ],
+          "device_us": 246.07399999999998
+        },
+        {
+          "trace_sha256": "d363088fcd71df0044b73aec55eac5181d803313807ae0728e9d76e2d55661e7",
+          "all_tasks": [
+            {
+              "task_id": 130,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734075447534846,
+              "end_ns": 3734075447537256,
+              "duration_us": 2.41
+            },
+            {
+              "task_id": 131,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734075447551407,
+              "end_ns": 3734075447552705,
+              "duration_us": 1.298
+            },
+            {
+              "task_id": 132,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734075447560945,
+              "end_ns": 3734075447563121,
+              "duration_us": 2.176
+            },
+            {
+              "task_id": 133,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734075447569484,
+              "end_ns": 3734075447571245,
+              "duration_us": 1.761
+            },
+            {
+              "task_id": 134,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734075447582950,
+              "end_ns": 3734075447821247,
+              "duration_us": 238.297
+            }
+          ],
+          "device_us": 245.942
+        },
+        {
+          "trace_sha256": "3f75be5c8d37f7aa07daeacc9925e8287c871d2e444fa3d229956b97e17cab11",
+          "all_tasks": [
+            {
+              "task_id": 138,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734077071228750,
+              "end_ns": 3734077071230938,
+              "duration_us": 2.188
+            },
+            {
+              "task_id": 139,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734077071244155,
+              "end_ns": 3734077071245435,
+              "duration_us": 1.28
+            },
+            {
+              "task_id": 140,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734077071253359,
+              "end_ns": 3734077071255854,
+              "duration_us": 2.495
+            },
+            {
+              "task_id": 141,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734077071261025,
+              "end_ns": 3734077071263311,
+              "duration_us": 2.286
+            },
+            {
+              "task_id": 142,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734077071276272,
+              "end_ns": 3734077071514769,
+              "duration_us": 238.497
+            }
+          ],
+          "device_us": 246.74599999999998
+        },
+        {
+          "trace_sha256": "e5c9f8778b4862ab71845b60a72bc3bce5aef548392191b94f1cd6e1e80505cc",
+          "all_tasks": [
+            {
+              "task_id": 146,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734078622254271,
+              "end_ns": 3734078622256519,
+              "duration_us": 2.248
+            },
+            {
+              "task_id": 147,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734078622266249,
+              "end_ns": 3734078622267384,
+              "duration_us": 1.135
+            },
+            {
+              "task_id": 148,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734078622274051,
+              "end_ns": 3734078622276332,
+              "duration_us": 2.281
+            },
+            {
+              "task_id": 149,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734078622283442,
+              "end_ns": 3734078622285694,
+              "duration_us": 2.252
+            },
+            {
+              "task_id": 150,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734078622302868,
+              "end_ns": 3734078622540961,
+              "duration_us": 238.093
+            }
+          ],
+          "device_us": 246.00900000000001
+        },
+        {
+          "trace_sha256": "67b4c0edaaf40e62423620b792e67847020f955e19fcadd8eb0da4ff78a4d87d",
+          "all_tasks": [
+            {
+              "task_id": 154,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734080244223846,
+              "end_ns": 3734080244226334,
+              "duration_us": 2.488
+            },
+            {
+              "task_id": 155,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "Fill_INT64_FLOAT16_high_performance_101",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734080244241788,
+              "end_ns": 3734080244242815,
+              "duration_us": 1.027
+            },
+            {
+              "task_id": 156,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "ZerosLike_2_BYTES_high_performance_1",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734080244252390,
+              "end_ns": 3734080244254570,
+              "duration_us": 2.18
+            },
+            {
+              "task_id": 157,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "OnesLike_FLOAT32_high_performance_7",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734080244262033,
+              "end_ns": 3734080244263848,
+              "duration_us": 1.815
+            },
+            {
+              "task_id": 158,
+              "context_id": 0,
+              "stream_ids": [
+                61
+              ],
+              "name": "layerNormAddAddQuant2dSingleCore_kernel",
+              "core_roles": [
+                "AIV"
+              ],
+              "start_ns": 3734080244293749,
+              "end_ns": 3734080244531478,
+              "duration_us": 237.729
+            }
+          ],
+          "device_us": 245.239
+        }
+      ],
+      "dual_archive_sha256": "89ceb4486b596e9d798dce14492850803c60bbeb5e15c266810fee3bff4289ab",
+      "source_and_originalflags_unchanged": true
+    }
+  ]
+}

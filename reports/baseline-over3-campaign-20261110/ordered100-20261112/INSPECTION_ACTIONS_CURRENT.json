@@ -1,0 +1,7 @@
+[
+  "LogSumExp3、Mean1968和Softplus4已全原checker/15raw/source/guard审计，覆盖1626/2119；新原新对照和最终倍率闭环均为0。",
+  "Mean1969进程139无完整stack，LogSoftmax1883冷调用AI Core timeout；旧失败双archive保留，同条件不重试，同onlineSoftmax6项挂起。",
+  "一号Softplus4完成后当前无正式测量进程，不以二号支持构建掩盖空闲。Div7共性依赖正在二号私有原栈构建。",
+  "Div编译首次exit127由控制器仍引用旧compile-float3入口造成，尚未运行编译。已保留源码/状态/log/guard双SHA，只修正为已部署float2-compile-entry.sh，经新整项任务释放/queue/guard/disk检查后启动独立attempt。",
+  "不搬运、不发布、不恢复STOP；disk20e9底线及原kernel/checker/精度/采样保持。"
+]

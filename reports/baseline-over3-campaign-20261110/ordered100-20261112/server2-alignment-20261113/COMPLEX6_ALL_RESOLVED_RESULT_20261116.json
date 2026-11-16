@@ -1,0 +1,546 @@
+{
+  "checked_at": "2026-11-16T06:19:32.724340+00:00",
+  "status": "all6_resolved_and_qualified",
+  "scope": [
+    1292,
+    1293,
+    1294,
+    1295,
+    1298,
+    1299
+  ],
+  "qualified_cases": 6,
+  "native_formal_windows": 90,
+  "actual_original_baseline_calls": 114,
+  "coverage_before": 2113,
+  "coverage_after": 2119,
+  "scope_total": 2119,
+  "percentage": 100,
+  "initial_remaining69_qualified": 69,
+  "initial_remaining69_pending": 0,
+  "authorization": "COMPLEX6_USER_AUTHORIZATION_20261116.json",
+  "CPU_preflight_sha256": "a3745e66b489ee6baa0f6e2ab745125e469a93025396e37943454bedcefc5a7c",
+  "source_AST_audit_sha256": "d1fb339357feaabdca13b21173807bdf575b537dd944e9112bd36e37ee446665",
+  "independent_full15_SDK_source_guard_attribution_sha256": "deaaeb060037a44dea0ec30bf20db93c1f91b74d2da5a681fab54053d4a1e023",
+  "completion_inspection": "../COMPLEX6_COMPLETION_INSPECTION.json",
+  "changes": "Only authorized exact6 process-local complex input preservation comparison uses same original zero-tolerance/equal-NaN CPU comparator through byte-preserving transfers, outside timed windows.",
+  "original_baseline_math_kernel_dtype_input_golden_output_checker_tolerance_and_timing_unchanged": true,
+  "process_local_comparator_restored_after_each_case": true,
+  "old_failed_checkpoints_and_user_decisions_preserved": true,
+  "shared_measured_correctness_or_numerics_not_edited": true,
+  "new_complete_original_candidate_pairs": 0,
+  "new_final_ratio_closures": 0,
+  "staged_not_published": true,
+  "rows": [
+    {
+      "ordinal": 1292,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "status": "qualified_original_Torch_NPU_baseline",
+      "device_us": 2151.317524325216,
+      "full_original_NPU_golden_output_check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "original_input_checker_body_tolerance_unchanged_CPU_backend_only": true,
+      "input_check_receipt_sha256": "9e5a5d956facf0dc947489cb5e202421a3eb8ecddf24f419650a02785d76c143",
+      "input_checks": {
+        "complex_comparisons": 11,
+        "noncomplex_comparisons": 0,
+        "original_checker_sha256": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+        "CPU_backend_only_for_complex_inputs": true,
+        "original_rtol": 0,
+        "original_atol": 0,
+        "original_equal_nan": true,
+        "outside_timed_windows": true,
+        "guarded_NPU_transfer_negative_controls": {
+          "torch.complex64": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          },
+          "torch.complex128": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          }
+        },
+        "negative_control_complex_comparisons": 10,
+        "original_restored": true,
+        "formal_complex_comparisons": 1,
+        "checked_at_remote": "2026-11-16T06:11:39.359864+00:00"
+      },
+      "formal_windows": 15,
+      "actual_baseline_calls": 19,
+      "checkpoint": "rollout-complex6-original-1292-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "d513229bd368025230eeb64bdc68a3b4ce32c492278ba5fccc4eefe495f234e2",
+      "guard": {
+        "pid": 3372329,
+        "start_ticks": 379904012,
+        "uid": 0,
+        "pgid": 3372329,
+        "boot_id": "301915ec-b974-48cf-a38e-0627f81babb1",
+        "owner": "root/baseline-ordered100/rollout-complex6-original-1292-h1-v1-061220656916",
+        "device": 0,
+        "coordination_scope": "container",
+        "device_node": "/dev/davinci6",
+        "command": "bash",
+        "phase": "finished",
+        "requested_at": "2026-11-16T06:10:55.676075+00:00",
+        "queue_ticket": "00000000000000000001-meo39szl.ticket",
+        "acquired_at": "2026-11-16T06:10:55.676502+00:00",
+        "updated_at": "2026-11-16T06:11:48.377229+00:00",
+        "child": {
+          "pid": 3372428,
+          "start_ticks": 379904493,
+          "uid": 0,
+          "pgid": 3372428
+        },
+        "conflict_policy": "record",
+        "conflict_detected": false,
+        "visibility_lost": false,
+        "performance_valid": true,
+        "tracking": "linux-subreaper-pidfd",
+        "postflight_checked_at": "2026-11-16T06:11:48.375867+00:00",
+        "workload_exit_code": 0,
+        "workload_completed": true,
+        "exit_code": 0
+      },
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "prepare_sha256": "adc83248092a9f7c3a50eafee9993fe776ead1c16f0cc37a62f5425085c43daf",
+      "SDK_retention_sha256": "8c2a03fa799d875d213b92b1cdf1827523857d911e4be1672f3c0e0eca0fcfaa"
+    },
+    {
+      "ordinal": 1293,
+      "key": [
+        "torch-eager",
+        "AllFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "status": "qualified_original_Torch_NPU_baseline",
+      "device_us": 3198.1289655676305,
+      "full_original_NPU_golden_output_check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "original_input_checker_body_tolerance_unchanged_CPU_backend_only": true,
+      "input_check_receipt_sha256": "124878f6052145fb04796ccfb98b0f656f0ce5570d56f884badfe4d6272d4def",
+      "input_checks": {
+        "complex_comparisons": 11,
+        "noncomplex_comparisons": 0,
+        "original_checker_sha256": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+        "CPU_backend_only_for_complex_inputs": true,
+        "original_rtol": 0,
+        "original_atol": 0,
+        "original_equal_nan": true,
+        "outside_timed_windows": true,
+        "guarded_NPU_transfer_negative_controls": {
+          "torch.complex64": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          },
+          "torch.complex128": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          }
+        },
+        "negative_control_complex_comparisons": 10,
+        "original_restored": true,
+        "formal_complex_comparisons": 1,
+        "checked_at_remote": "2026-11-16T06:12:40.546098+00:00"
+      },
+      "formal_windows": 15,
+      "actual_baseline_calls": 19,
+      "checkpoint": "rollout-complex6-original-1293-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "1f4ee14dd5cc1dc101f43fa780b816e82c76c6c985adf7ba7e5bef45ddcf7d61",
+      "guard": {
+        "pid": 3378198,
+        "start_ticks": 379910099,
+        "uid": 0,
+        "pgid": 3378198,
+        "boot_id": "301915ec-b974-48cf-a38e-0627f81babb1",
+        "owner": "root/baseline-ordered100/rollout-complex6-original-1293-h1-v1-061321254665",
+        "device": 0,
+        "coordination_scope": "container",
+        "device_node": "/dev/davinci6",
+        "command": "bash",
+        "phase": "finished",
+        "requested_at": "2026-11-16T06:11:56.542807+00:00",
+        "queue_ticket": "00000000000000000001-0w_sgnl0.ticket",
+        "acquired_at": "2026-11-16T06:11:56.543194+00:00",
+        "updated_at": "2026-11-16T06:12:50.109591+00:00",
+        "child": {
+          "pid": 3378297,
+          "start_ticks": 379910583,
+          "uid": 0,
+          "pgid": 3378297
+        },
+        "conflict_policy": "record",
+        "conflict_detected": false,
+        "visibility_lost": false,
+        "performance_valid": true,
+        "tracking": "linux-subreaper-pidfd",
+        "postflight_checked_at": "2026-11-16T06:12:50.108128+00:00",
+        "workload_exit_code": 0,
+        "workload_completed": true,
+        "exit_code": 0
+      },
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "prepare_sha256": "ad83eeecf215c76373f953ab4837a43f9f95fdd59d686f7324d05245d6fb2524",
+      "SDK_retention_sha256": "73fe0ed11efa7cce9d4f5fe3e9c83aae9b7e7e03f893f44ec7ea43d269a6f035"
+    },
+    {
+      "ordinal": 1294,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "status": "qualified_original_Torch_NPU_baseline",
+      "device_us": 2149.424175015747,
+      "full_original_NPU_golden_output_check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "original_input_checker_body_tolerance_unchanged_CPU_backend_only": true,
+      "input_check_receipt_sha256": "ffd816fa3ef0aa63494e4bda3bfc9f1767a7e3d066c0acbbe86e7d2db1d4dd3e",
+      "input_checks": {
+        "complex_comparisons": 11,
+        "noncomplex_comparisons": 0,
+        "original_checker_sha256": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+        "CPU_backend_only_for_complex_inputs": true,
+        "original_rtol": 0,
+        "original_atol": 0,
+        "original_equal_nan": true,
+        "outside_timed_windows": true,
+        "guarded_NPU_transfer_negative_controls": {
+          "torch.complex64": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          },
+          "torch.complex128": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          }
+        },
+        "negative_control_complex_comparisons": 10,
+        "original_restored": true,
+        "formal_complex_comparisons": 1,
+        "checked_at_remote": "2026-11-16T06:13:39.042575+00:00"
+      },
+      "formal_windows": 15,
+      "actual_baseline_calls": 19,
+      "checkpoint": "rollout-complex6-original-1294-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "86fb9f00c505c3db01a37f9fb95b9c6225186af9b8e5ee776fe67b0da5674523",
+      "guard": {
+        "pid": 3384162,
+        "start_ticks": 379915973,
+        "uid": 0,
+        "pgid": 3384162,
+        "boot_id": "301915ec-b974-48cf-a38e-0627f81babb1",
+        "owner": "root/baseline-ordered100/rollout-complex6-original-1294-h1-v1-061420381238",
+        "device": 0,
+        "coordination_scope": "container",
+        "device_node": "/dev/davinci6",
+        "command": "bash",
+        "phase": "finished",
+        "requested_at": "2026-11-16T06:12:55.283124+00:00",
+        "queue_ticket": "00000000000000000001-pyid3bb4.ticket",
+        "acquired_at": "2026-11-16T06:12:55.283526+00:00",
+        "updated_at": "2026-11-16T06:13:48.758431+00:00",
+        "child": {
+          "pid": 3384260,
+          "start_ticks": 379916475,
+          "uid": 0,
+          "pgid": 3384260
+        },
+        "conflict_policy": "record",
+        "conflict_detected": false,
+        "visibility_lost": false,
+        "performance_valid": true,
+        "tracking": "linux-subreaper-pidfd",
+        "postflight_checked_at": "2026-11-16T06:13:48.756925+00:00",
+        "workload_exit_code": 0,
+        "workload_completed": true,
+        "exit_code": 0
+      },
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "prepare_sha256": "4e09c6b133ec1b43afeacaeff240d4bf4c5dd790ef538892d30104efabb2c96c",
+      "SDK_retention_sha256": "a898edd50189aabd9d954cbd46c923562a1e38d7edb7baa9490b61f93d9bc0e9"
+    },
+    {
+      "ordinal": 1295,
+      "key": [
+        "torch-eager",
+        "AnyFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "status": "qualified_original_Torch_NPU_baseline",
+      "device_us": 3202.522530175169,
+      "full_original_NPU_golden_output_check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "original_input_checker_body_tolerance_unchanged_CPU_backend_only": true,
+      "input_check_receipt_sha256": "d32e3a3f90334ef3337ec2b5c5168b90ea5df64de4faaf44b2289b824a17c234",
+      "input_checks": {
+        "complex_comparisons": 11,
+        "noncomplex_comparisons": 0,
+        "original_checker_sha256": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+        "CPU_backend_only_for_complex_inputs": true,
+        "original_rtol": 0,
+        "original_atol": 0,
+        "original_equal_nan": true,
+        "outside_timed_windows": true,
+        "guarded_NPU_transfer_negative_controls": {
+          "torch.complex64": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          },
+          "torch.complex128": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          }
+        },
+        "negative_control_complex_comparisons": 10,
+        "original_restored": true,
+        "formal_complex_comparisons": 1,
+        "checked_at_remote": "2026-11-16T06:14:43.116303+00:00"
+      },
+      "formal_windows": 15,
+      "actual_baseline_calls": 19,
+      "checkpoint": "rollout-complex6-original-1295-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "b4b6fad26bcfb2fb6976c0a903f4b5bd7c17082fed3d4f32ab599782e8667872",
+      "guard": {
+        "pid": 3390280,
+        "start_ticks": 379922514,
+        "uid": 0,
+        "pgid": 3390280,
+        "boot_id": "301915ec-b974-48cf-a38e-0627f81babb1",
+        "owner": "root/baseline-ordered100/rollout-complex6-original-1295-h1-v1-061519366509",
+        "device": 0,
+        "coordination_scope": "container",
+        "device_node": "/dev/davinci6",
+        "command": "bash",
+        "phase": "finished",
+        "requested_at": "2026-11-16T06:14:00.692530+00:00",
+        "queue_ticket": "00000000000000000001-y2sgratv.ticket",
+        "acquired_at": "2026-11-16T06:14:00.692910+00:00",
+        "updated_at": "2026-11-16T06:14:53.236083+00:00",
+        "child": {
+          "pid": 3390346,
+          "start_ticks": 379922882,
+          "uid": 0,
+          "pgid": 3390346
+        },
+        "conflict_policy": "record",
+        "conflict_detected": false,
+        "visibility_lost": false,
+        "performance_valid": true,
+        "tracking": "linux-subreaper-pidfd",
+        "postflight_checked_at": "2026-11-16T06:14:53.234801+00:00",
+        "workload_exit_code": 0,
+        "workload_completed": true,
+        "exit_code": 0
+      },
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "prepare_sha256": "72472fa667c017ac6ffaa9f02294ff952792f2b638299228a59fe8dcf2f4e331",
+      "SDK_retention_sha256": "41a3223ccd1091193659399b1b6c705300433b6cf24a50eef1a4459fd0705496"
+    },
+    {
+      "ordinal": 1298,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex64"
+      ],
+      "status": "qualified_original_Torch_NPU_baseline",
+      "device_us": 2947.528585214209,
+      "full_original_NPU_golden_output_check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "original_input_checker_body_tolerance_unchanged_CPU_backend_only": true,
+      "input_check_receipt_sha256": "4ae43983022eb2daab056f68a9274d4c365d4b388c38742814625e4dc62e1fc7",
+      "input_checks": {
+        "complex_comparisons": 11,
+        "noncomplex_comparisons": 0,
+        "original_checker_sha256": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+        "CPU_backend_only_for_complex_inputs": true,
+        "original_rtol": 0,
+        "original_atol": 0,
+        "original_equal_nan": true,
+        "outside_timed_windows": true,
+        "guarded_NPU_transfer_negative_controls": {
+          "torch.complex64": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          },
+          "torch.complex128": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          }
+        },
+        "negative_control_complex_comparisons": 10,
+        "original_restored": true,
+        "formal_complex_comparisons": 1,
+        "checked_at_remote": "2026-11-16T06:15:46.224171+00:00"
+      },
+      "formal_windows": 15,
+      "actual_baseline_calls": 19,
+      "checkpoint": "rollout-complex6-original-1298-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "8ee4e3532be41c49c4f5224960e70e82a49f8d0cb76e7fd8ff3ffaf47dc36b83",
+      "guard": {
+        "pid": 3396136,
+        "start_ticks": 379928723,
+        "uid": 0,
+        "pgid": 3396136,
+        "boot_id": "301915ec-b974-48cf-a38e-0627f81babb1",
+        "owner": "root/baseline-ordered100/rollout-complex6-original-1298-h1-v1-061627494237",
+        "device": 0,
+        "coordination_scope": "container",
+        "device_node": "/dev/davinci6",
+        "command": "bash",
+        "phase": "finished",
+        "requested_at": "2026-11-16T06:15:02.784851+00:00",
+        "queue_ticket": "00000000000000000001-vedfrewb.ticket",
+        "acquired_at": "2026-11-16T06:15:02.785225+00:00",
+        "updated_at": "2026-11-16T06:15:55.933261+00:00",
+        "child": {
+          "pid": 3396210,
+          "start_ticks": 379929231,
+          "uid": 0,
+          "pgid": 3396210
+        },
+        "conflict_policy": "record",
+        "conflict_detected": false,
+        "visibility_lost": false,
+        "performance_valid": true,
+        "tracking": "linux-subreaper-pidfd",
+        "postflight_checked_at": "2026-11-16T06:15:55.931945+00:00",
+        "workload_exit_code": 0,
+        "workload_completed": true,
+        "exit_code": 0
+      },
+      "payload_sha256": "ad67b14adb099734ac0d66939fd002c7807ed7268b57bd1c126c87a7cf9dfab3",
+      "prepare_sha256": "0f3ca2cbbd07c7a2152088c1af9073ac6bb77b932e3c8815efc4d0db7ceee8cb",
+      "SDK_retention_sha256": "adef5ac9c8bb6bca362a518032432db159e0fb645d444de26c2c26810af69421"
+    },
+    {
+      "ordinal": 1299,
+      "key": [
+        "torch-eager",
+        "CountNonzeroFwdOp",
+        "3d-multidim-complex128"
+      ],
+      "status": "qualified_original_Torch_NPU_baseline",
+      "device_us": 3315.0749217868142,
+      "full_original_NPU_golden_output_check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "original_input_checker_body_tolerance_unchanged_CPU_backend_only": true,
+      "input_check_receipt_sha256": "d8a9ae37c00fea376696f9aefb443742988d2c8cbfba09c714b51d370b8ef1a9",
+      "input_checks": {
+        "complex_comparisons": 11,
+        "noncomplex_comparisons": 0,
+        "original_checker_sha256": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+        "CPU_backend_only_for_complex_inputs": true,
+        "original_rtol": 0,
+        "original_atol": 0,
+        "original_equal_nan": true,
+        "outside_timed_windows": true,
+        "guarded_NPU_transfer_negative_controls": {
+          "torch.complex64": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          },
+          "torch.complex128": {
+            "same_and_equal_nan_pass": true,
+            "imaginary_corruption_rejected": true,
+            "real_corruption_rejected": true,
+            "shape_and_dtype_changes_rejected": true
+          }
+        },
+        "negative_control_complex_comparisons": 10,
+        "original_restored": true,
+        "formal_complex_comparisons": 1,
+        "checked_at_remote": "2026-11-16T06:16:48.585571+00:00"
+      },
+      "formal_windows": 15,
+      "actual_baseline_calls": 19,
+      "checkpoint": "rollout-complex6-original-1299-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "864517f3963f6ca6577eefede7764175b1532dbb7c4e007bffd251b44fddb873",
+      "guard": {
+        "pid": 3402061,
+        "start_ticks": 379934963,
+        "uid": 0,
+        "pgid": 3402061,
+        "boot_id": "301915ec-b974-48cf-a38e-0627f81babb1",
+        "owner": "root/baseline-ordered100/rollout-complex6-original-1299-h1-v1-061730174303",
+        "device": 0,
+        "coordination_scope": "container",
+        "device_node": "/dev/davinci6",
+        "command": "bash",
+        "phase": "finished",
+        "requested_at": "2026-11-16T06:16:05.182152+00:00",
+        "queue_ticket": "00000000000000000001-drdgo236.ticket",
+        "acquired_at": "2026-11-16T06:16:05.182572+00:00",
+        "updated_at": "2026-11-16T06:16:57.546293+00:00",
+        "child": {
+          "pid": 3402139,
+          "start_ticks": 379935446,
+          "uid": 0,
+          "pgid": 3402139
+        },
+        "conflict_policy": "record",
+        "conflict_detected": false,
+        "visibility_lost": false,
+        "performance_valid": true,
+        "tracking": "linux-subreaper-pidfd",
+        "postflight_checked_at": "2026-11-16T06:16:57.544840+00:00",
+        "workload_exit_code": 0,
+        "workload_completed": true,
+        "exit_code": 0
+      },
+      "payload_sha256": "e48ce7ce7cff06fac0e3f5c2a17f4be8eaefa62b251ea4010dd489cd018eedbc",
+      "prepare_sha256": "5a54a9a589b3f90833d32d8256de17a51f83bc42a759bb291ce4fa52fcab4fd6",
+      "SDK_retention_sha256": "d0eb7ad267f6233a795232835cf87885234fcd7fb793f42c85701174936bce55"
+    }
+  ]
+}

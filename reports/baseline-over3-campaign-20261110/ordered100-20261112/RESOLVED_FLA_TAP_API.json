@@ -1,0 +1,449 @@
+{
+  "checked_at": "2026-11-16T05:23:23.367826+00:00",
+  "accepted_complete_APIs": 26,
+  "rows": [
+    {
+      "ordinal": 133,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "mha-decode-pv-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(window dot product)(matrix rows as independent 1D windows)",
+      "device_us": 610753.0136666667,
+      "checkpoint": "rollout-fla-tap-api-sdk-133-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "05a6399e59bab3968ef8b5bf7fbfab6267d757028d40cef69177e19d0601d54a",
+      "payload_sha256": "9dd2ef1f93f74e012cb5fff27d8cb703ffb39da866e206221d006d19b49a5705",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 134,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-2k-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(window dot product)(matrix rows as independent 1D windows)",
+      "device_us": 7004675.272133334,
+      "checkpoint": "rollout-fla-tap-api-sdk-134-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "202367cb3f02d28f3fc0341cfb916ee2fd4ba40efbdd7b610156e54a65a97ec2",
+      "payload_sha256": "d0301e65456db98406472c4a4186d5b6055d98f1cc6849026a5543a312304704",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 135,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-512-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(window dot product)(matrix rows as independent 1D windows)",
+      "device_us": 183279.1237333333,
+      "checkpoint": "rollout-fla-tap-api-sdk-135-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "92e2f800a40381369505ce1a9a731c6366298df5180735457ef0ae11fc314549",
+      "payload_sha256": "7cfe9a6b306eacd8eedde4aa79f29d45f73092fc5a18323db3b76c1386d09d73",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 136,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-1k-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(window dot product)(matrix rows as independent 1D windows)",
+      "device_us": 871366.834,
+      "checkpoint": "rollout-fla-tap-api-sdk-136-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "c1c0fc75464358b59d82eedd6385c9f21744f2a341c8a41cf29bbd9b7f424b9f",
+      "payload_sha256": "5f6236dba7ad0ce0f6821e2b37666bb242e2dc4183431e860bb4eae575c07bd0",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 137,
+      "key": [
+        "flash-linear-attention-npu",
+        "BmmFwdOp",
+        "square-256-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(window dot product)(matrix rows as independent 1D windows)",
+      "device_us": 56354.5172,
+      "checkpoint": "rollout-fla-tap-api-sdk-137-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "73ea44c714ed5eb463ff759ad8316a240e674d3fa1ae3c6c7e074e0493ea6c4a",
+      "payload_sha256": "44a0470dc697a3d433649cf71b8e84ed9b14a1e73d9c6d1baccf8ee544455778",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 169,
+      "key": [
+        "flash-linear-attention-npu",
+        "GroupedGemmFwdOp",
+        "moe-dgrad-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(grouped matrix window dots)",
+      "device_us": 6933232.613733334,
+      "checkpoint": "rollout-fla-tap-api-sdk-169-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "5709cac24f89f79570a3974ddfbe215c706237a4c87416c187245e3115d33d0a",
+      "payload_sha256": "7c07a5a8b899ff4ba53489448692d6d48b94aac3453aabd8e0a2447aefb269ee",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 170,
+      "key": [
+        "flash-linear-attention-npu",
+        "GroupedGemmFwdOp",
+        "moe-fwd-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(grouped matrix window dots)",
+      "device_us": 6796086.0462,
+      "checkpoint": "rollout-fla-tap-api-sdk-170-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "3eeae43aab16b38495e8e702b7ceeb3c423b15730a380a24ede332bd25830162",
+      "payload_sha256": "7c07a5a8b899ff4ba53489448692d6d48b94aac3453aabd8e0a2447aefb269ee",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 171,
+      "key": [
+        "flash-linear-attention-npu",
+        "GroupedGemmFwdOp",
+        "moe-wgrad-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(grouped matrix window dots)",
+      "device_us": 6966953.283466666,
+      "checkpoint": "rollout-fla-tap-api-sdk-171-h2-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "3f257c4b0aa05f9c79156e4571e18694ab6380e0d9b51d5295c9081f21733bf1",
+      "payload_sha256": "73168bd72359b797e1f55bd103085c41d78e71caf89fb7360fc7f48bee3a2a39",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 175,
+      "key": [
+        "flash-linear-attention-npu",
+        "INT8DequantPerTensorFwdOp",
+        "qwen3-32b-prefill-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(W=1, FP32 tap=scale)",
+      "device_us": 1213.5977333333335,
+      "checkpoint": "rollout-fla-tap-api-sdk-175-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "859d55a87cf2372ad0b80133695f350097ba7b9b52527e99fde6e4af954b542e",
+      "payload_sha256": "b1f2d8b47000436b5f68a1f362d68a367155eb2eae33663ab15be2fa16dbfe70",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 176,
+      "key": [
+        "flash-linear-attention-npu",
+        "INT8DequantPerTensorFwdOp",
+        "llama-8b-prefill-bfloat16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(W=1, FP32 tap=scale)",
+      "device_us": 463.00413333333336,
+      "checkpoint": "rollout-fla-tap-api-sdk-176-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "7c02d162eab470d87936d2912d37015b57b8f3932df60e0ad7d35075e610ae64",
+      "payload_sha256": "ae3fe8c9538c7a62a40ee305209020b361cfa51ea8fc6a1e82900bbb28b9cce3",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 177,
+      "key": [
+        "flash-linear-attention-npu",
+        "INT8DequantPerTensorFwdOp",
+        "gpt-oss-prefill-bfloat16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(W=1, FP32 tap=scale)",
+      "device_us": 249.84546666666668,
+      "checkpoint": "rollout-fla-tap-api-sdk-177-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "d083c29b392db070b618a1d0df0903fc16f8fc91174c4c1cc33544b16cdb9902",
+      "payload_sha256": "3d2db905fd19d51984bc628fc75a0c548976e7dfb8f710626b51ac332afe7352",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 178,
+      "key": [
+        "flash-linear-attention-npu",
+        "INT8DequantPerTensorFwdOp",
+        "qwen3-32b-prefill-float32"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(W=1, FP32 tap=scale)",
+      "device_us": 1128.8344666666665,
+      "checkpoint": "rollout-fla-tap-api-sdk-178-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "f847d2974beea9da309ab7e295000a118ef25680039a235c00882e19d3c6d652",
+      "payload_sha256": "b1f2d8b47000436b5f68a1f362d68a367155eb2eae33663ab15be2fa16dbfe70",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 179,
+      "key": [
+        "flash-linear-attention-npu",
+        "INT8DequantPerTensorFwdOp",
+        "ragged-k-float32"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(W=1, FP32 tap=scale)",
+      "device_us": 118.21606666666666,
+      "checkpoint": "rollout-fla-tap-api-sdk-179-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "884cbcd8f488da961278b7f227f7e5b85a597dbbbc52cd818399370db91dbbfe",
+      "payload_sha256": "d1f61edcab347ebbfc9d0aab4bb379d725d34e9ab4dea1df92af7d655d5d1b88",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 180,
+      "key": [
+        "flash-linear-attention-npu",
+        "INT8DequantPerTensorFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(W=1, FP32 tap=scale)",
+      "device_us": 26.02306666666667,
+      "checkpoint": "rollout-fla-tap-api-sdk-180-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "a4267cd3c4a5c98719c726ea4affe565adc1809ea4148263c26cf511a065f268",
+      "payload_sha256": "75fead6e692b23d8b56f71bb38fe1f5c992bb3b08ca5ca5709c246810e9d3299",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 181,
+      "key": [
+        "flash-linear-attention-npu",
+        "INT8DequantPerTensorFwdOp",
+        "ragged-k-few-rows-float16"
+      ],
+      "api": "FLA causal_conv1d_fwd_impl_old(W=1, FP32 tap=scale)",
+      "device_us": 21.981599999999997,
+      "checkpoint": "rollout-fla-tap-api-sdk-181-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "9dae081375048dd2fbdba40a61ee67f3079997a2b5cf56f0be2cd01e45b6007d",
+      "payload_sha256": "d1de04a68f4f7409a3162585e2357ae440200a984ae14688aefb9ef51638a0c4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 184,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCouplingFwdOp",
+        "mamba2-2p7b-bfloat16"
+      ],
+      "api": "FLA native matrix product + original constant causal tap mask",
+      "device_us": 2450.6252,
+      "checkpoint": "rollout-fla-tap-api-sdk-184-golden42-scopefix-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "d93718517ea2e1c507463972e3c0197eca54f0716316aaf08d59787ecf4584d4",
+      "payload_sha256": "d2e92d77cf98d712ed14b28e14bb9c0e0936e62ee95bfc8ebcb5e93eab6297b6",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 185,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCumsumFwdOp",
+        "mamba2-780m-dt-bias-float16"
+      ],
+      "api": "FLA KdaGateCumsum(T=1 raw gate), native tap product, original chunk_local_cumsum",
+      "device_us": 120.85873333333335,
+      "checkpoint": "rollout-fla-tap-api-sdk-185-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "75eb96a5811059d4634efafa10ebffc5847b4412d63668e4dd61298d978b7123",
+      "payload_sha256": "75b476bfe2b81c3d3cfbb3374f3af6f62a2ec658bd3c3ce2182a8d36796bdbf4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 186,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCumsumFwdOp",
+        "mamba2-780m-float16"
+      ],
+      "api": "FLA KdaGateCumsum(T=1 raw gate), native tap product, original chunk_local_cumsum",
+      "device_us": 95.89893333333333,
+      "checkpoint": "rollout-fla-tap-api-sdk-186-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "b19335e11cc9e2a1a198de5f96905f71d2407159c3eb35bb0ddc6a06314bfb95",
+      "payload_sha256": "fa9f73a82417c7677f1b31ca967a32d613cc7954d72eebebafae126984001245",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 187,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCumsumFwdOp",
+        "mamba2-2p7b-float16"
+      ],
+      "api": "FLA KdaGateCumsum(T=1 raw gate), native tap product, original chunk_local_cumsum",
+      "device_us": 1270.9386666666667,
+      "checkpoint": "rollout-fla-tap-api-sdk-187-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "f9c04162c8e3034fe2805e406fd358a3776c6ca14751ba3f4a20ff2b0222d28c",
+      "payload_sha256": "5fd37d8292500928815e7cb77ba5600a207870264f6b05d5a6a55d32fd6dc5eb",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 188,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCumsumFwdOp",
+        "mamba2-1p3b-dt-bias-bfloat16"
+      ],
+      "api": "FLA KdaGateCumsum(T=1 raw gate), native tap product, original chunk_local_cumsum",
+      "device_us": 277.9638,
+      "checkpoint": "rollout-fla-tap-api-sdk-188-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "c61673c592eadcb236a6a477dfd3c06c9cd82c36ed48fb12edee749be7ecca5c",
+      "payload_sha256": "e52594f8525818af247abbf5477ce70dbc2f0773d4695d6be7b8e5b773a1691f",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 189,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDChunkCumsumFwdOp",
+        "mamba2-1p3b-bfloat16"
+      ],
+      "api": "FLA KdaGateCumsum(T=1 raw gate), native tap product, original chunk_local_cumsum",
+      "device_us": 240.6658,
+      "checkpoint": "rollout-fla-tap-api-sdk-189-h1-v8.CHECKPOINT.json",
+      "checkpoint_sha256": "d00536d7723733976979de8aac551402b349611210b1c14781a6e2f07c061a38",
+      "payload_sha256": "339f235fce7cd8f29090f976e451551687a6de47d5bee6a240e6765920897408",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 190,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDStatePassingFwdOp",
+        "mamba2-1p3b-bfloat16"
+      ],
+      "api": "FLA ChunkFwdH exponentials + original FP32 causal tap/residual recurrence",
+      "device_us": 170.53099999999998,
+      "checkpoint": "rollout-fla-tap-api-sdk-190-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "9b32cb85d55a7aabc7b89f17c8945182ae65bf75ec6237236660f52d4601a5aa",
+      "payload_sha256": "df1a9fdf2a1ae70b4318c6f25519e59f3e662b289eaf42dd8963dde85cd77dc4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 191,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDStatePassingFwdOp",
+        "mamba2-1p3b-float16"
+      ],
+      "api": "FLA ChunkFwdH exponentials + original FP32 causal tap/residual recurrence",
+      "device_us": 170.48639999999997,
+      "checkpoint": "rollout-fla-tap-api-sdk-191-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "f04f79312bbaf069b2c6613c2f1c816dcfc2c0b747b830a64fac688714e5a952",
+      "payload_sha256": "4c70acaa823dc5fc9164d4f25e85547561a6a994a32197137840f52e2a05c61b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 192,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDStatePassingFwdOp",
+        "mamba2-1p3b-init-float16"
+      ],
+      "api": "FLA ChunkFwdH exponentials + original FP32 causal tap/residual recurrence",
+      "device_us": 173.94986666666668,
+      "checkpoint": "rollout-fla-tap-api-sdk-192-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "84076e684edd3dbba8b6f6f1b227475a32dcaaba995246cf8a8b3d8747d3b57f",
+      "payload_sha256": "3f4b38a3717f2938ab17e0512dd38bbf6a4660940b5cf1bb314d42340628f8d9",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 193,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDStatePassingFwdOp",
+        "mamba2-1p3b-init-bfloat16"
+      ],
+      "api": "FLA ChunkFwdH exponentials + original FP32 causal tap/residual recurrence",
+      "device_us": 174.71786666666668,
+      "checkpoint": "rollout-fla-tap-api-sdk-193-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "9df0873fe66f4d9398001b213b51adf4ccda50d6c9be679d405f8d59dd8beabf",
+      "payload_sha256": "2d637fa20e51ca16548f316a20beb5cb37f20d8d4f6a98cd272b077f81a11d1d",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    },
+    {
+      "ordinal": 194,
+      "key": [
+        "flash-linear-attention-npu",
+        "SSDStatePassingFwdOp",
+        "mamba2-2p7b-float16"
+      ],
+      "api": "FLA ChunkFwdH exponentials + original FP32 causal tap/residual recurrence",
+      "device_us": 1752.3622666666665,
+      "checkpoint": "rollout-fla-tap-api-sdk-194-h1-v7.CHECKPOINT.json",
+      "checkpoint_sha256": "ca6e696e570790dee6eaf3e9d693f268f3a6056083961a69a8513fe095288881",
+      "payload_sha256": "ab0b628c065e14d255914c1cebd1c2fea13a8065bf93e2ea2204f5cd22f34273",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "full_checker_15raw_guard_valid": true,
+      "original_Triton_source_recomputed_key_actual_loaded_ELF_launches_all15_verified": true,
+      "not_paired_or_final_ratio": true
+    }
+  ],
+  "staged_not_published": true
+}

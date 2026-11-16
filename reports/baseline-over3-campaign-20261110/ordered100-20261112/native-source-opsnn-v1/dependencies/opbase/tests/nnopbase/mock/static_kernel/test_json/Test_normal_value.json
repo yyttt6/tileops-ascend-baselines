@@ -1,0 +1,11 @@
+{
+    "binFileName": "Test_normal_value",
+    "binFileSuffix": ".o",
+    "blockDim": 8,
+    "localMemorySize": 4096,
+    "workspace": {
+        "size": [
+            1024
+        ]
+    }
+}

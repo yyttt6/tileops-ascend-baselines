@@ -1,0 +1,22 @@
+"""CPU file retention outside timed windows, before CANN process-exit cleanup."""
+from pathlib import Path
+import hashlib,json,shutil,datetime
+PREFIX='te_moegatingtopksoftmaxv2_'
+def capture(work,destination):
+ work=Path(work);out=Path(destination);out.mkdir(parents=True,exist_ok=False);records=[]
+ for meta in sorted(work.rglob(PREFIX+'*.json')):
+  data=json.loads(meta.read_text())
+  if 'binFileName' not in data or 'sha256' not in data:continue
+  name=data['binFileName'];assert name.startswith(PREFIX) and Path(name).name==name
+  obj=meta.with_name(name+data.get('binFileSuffix','.o'));assert obj.is_file();sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();files={}
+  # Retain raw evidence before assertion so an auditing failure cannot erase it.
+  for p in meta.parent.glob(name+'*'):
+   if p.is_file():
+    dst=out/p.name
+    if dst.exists():assert dst.read_bytes()==p.read_bytes()
+    else:shutil.copy2(p,dst)
+    files[p.name]={'sha256':sha(dst),'bytes':dst.stat().st_size}
+  assert sha(obj)==data['sha256'],('ELF metadata digest mismatch',str(obj))
+  records.append({'kernel':name,'source_metadata_path':str(meta),'device_ELF_sha256':sha(obj),'metadata':data,'retained_files':files})
+ assert records,'No exact private-selection generated ELF metadata retained before exit; no qualification inferred'
+ r={'captured_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'outside_timed_windows':True,'work_root':str(work),'records':records,'source_or_flags_or_tensor_changes':False};(out/'RETENTION.json').write_text(json.dumps(r,indent=2)+chr(10));return r

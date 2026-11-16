@@ -1,0 +1,197 @@
+[
+  {
+    "ordinal": 122,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "cnn-feat-broadcast-float16"
+    ],
+    "selection": "zero_pad_wrapper",
+    "original_us": 222.51453333333333,
+    "candidate_us": 195.5319333333333,
+    "device_reduction_percent": 12.126219171302077,
+    "original_evidence": "rollout-122-129-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-122-129.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 123,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "cnn-feat-broadcast-bfloat16"
+    ],
+    "selection": "zero_pad_wrapper",
+    "original_us": 222.1754,
+    "candidate_us": 194.3808,
+    "device_reduction_percent": 12.510205900383209,
+    "original_evidence": "rollout-122-129-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-122-129.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 124,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "cnn-feat-broadcast-float32"
+    ],
+    "selection": "zero_pad_wrapper",
+    "original_us": 301.8867333333333,
+    "candidate_us": 249.37893333333332,
+    "device_reduction_percent": 17.393212156170712,
+    "original_evidence": "rollout-122-129-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-122-129.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 125,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "linear-bias-float16"
+    ],
+    "selection": "zero_pad_wrapper",
+    "original_us": 76.05966666666667,
+    "candidate_us": 67.4826,
+    "device_reduction_percent": 11.276760788679063,
+    "original_evidence": "rollout-122-129-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-122-129.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 126,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "llama-7b-ffn-bfloat16"
+    ],
+    "selection": "zero_pad_wrapper",
+    "original_us": 176.17066666666668,
+    "candidate_us": 172.19073333333336,
+    "device_reduction_percent": 2.2591350811334343,
+    "original_evidence": "rollout-122-129-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-122-129.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 127,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "llama-7b-ffn-float16"
+    ],
+    "selection": "zero_pad_wrapper",
+    "original_us": 176.16226666666665,
+    "candidate_us": 171.93413333333334,
+    "device_reduction_percent": 2.4001356325266676,
+    "original_evidence": "rollout-122-129-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-122-129.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 128,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "linear-bias-bfloat16"
+    ],
+    "selection": "zero_pad_wrapper",
+    "original_us": 76.2228,
+    "candidate_us": 68.05793333333334,
+    "device_reduction_percent": 10.71184300060699,
+    "original_evidence": "rollout-122-129-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-122-129.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 129,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "hidden-state-prefill-bfloat16"
+    ],
+    "selection": "original",
+    "original_us": 125.47460000000002,
+    "candidate_us": 130.36873333333335,
+    "device_reduction_percent": -3.9004972586749176,
+    "original_evidence": "rollout-122-129-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-122-129.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 130,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "hidden-state-prefill-float32"
+    ],
+    "selection": "zero_pad_wrapper",
+    "original_us": 184.408,
+    "candidate_us": 157.0747333333333,
+    "device_reduction_percent": 14.822169681720244,
+    "original_evidence": "rollout-130-132-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-130-132.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 131,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "llama-7b-ffn-float32"
+    ],
+    "selection": "zero_pad_wrapper",
+    "original_us": 250.90626666666665,
+    "candidate_us": 206.12833333333333,
+    "device_reduction_percent": 17.846478658431273,
+    "original_evidence": "rollout-130-132-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-130-132.CHECKPOINT.json",
+    "input_prepare_runtime_provider_source_equal": true,
+    "only_source_addition": {
+      "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/fla/zero_pad_candidate.py": "0d231549ee3055e755ba7aee4135d869cd18ab1d7ef22e76edac2763af200c47"
+    }
+  },
+  {
+    "ordinal": 132,
+    "key": [
+      "flash-linear-attention-npu",
+      "AddFwdOp",
+      "linear-bias-float32"
+    ],
+    "selection": "original",
+    "original_us": 22.703466666666667,
+    "candidate_us": 81.64766666666668,
+    "original_evidence": "rollout-130-132-dep2.CHECKPOINT.json",
+    "candidate_evidence": "rollout-fla-candidate-130-132.CHECKPOINT.json",
+    "source_route_difference": "original registry exactcase override uses integration700_fla_native standard BTD layout; candidate used generic pointwise flattenedlayout. Not a zero-pad-only comparison; candidate rejected, original retained.",
+    "one_change_comparison_qualified": false
+  }
+]

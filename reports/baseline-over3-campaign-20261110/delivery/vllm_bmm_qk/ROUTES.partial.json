@@ -1,0 +1,20 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "BmmFwdOp",
+      "mha-decode-qk-float16"
+    ],
+    "fixed": false,
+    "evidence": "VLLM_BMM_QK_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "BmmFwdOp",
+      "mha-decode-qk-bfloat16"
+    ],
+    "fixed": false,
+    "evidence": "VLLM_BMM_QK_CURRENT.partial.json"
+  }
+]

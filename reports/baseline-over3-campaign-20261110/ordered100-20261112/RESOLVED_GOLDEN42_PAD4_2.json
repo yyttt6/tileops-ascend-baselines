@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-11-16T05:16:40.488244+00:00",
+  "accepted_complete_APIs": 3,
+  "rows": [
+    {
+      "ordinal": 490,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-m64-down-bfloat16"
+      ],
+      "api": "ops-nn complete original aclnnMatmul, original alignedpacking and timedrun AST",
+      "device_us": 93.06766666666667,
+      "source_attribution": "originalNNcompletePad4GemmAPI",
+      "checkpoint": "rollout-golden42-pad4-2-490-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "55974cbeacf1387d548c110a9511333eca8719191bb9324838ff2362313736d8",
+      "payload_sha256": "790d2aa047aada5f1d36877feb360791f726ec166c3f1c27e737405bcfc9868b",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 494,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "ds-v3-decode-down-bfloat16"
+      ],
+      "api": "ops-nn complete original aclnnMatmul, original alignedpacking and timedrun AST",
+      "device_us": 92.99919999999999,
+      "source_attribution": "originalNNcompletePad4GemmAPI",
+      "checkpoint": "rollout-golden42-pad4-2-494-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "c5e4032e8c2696a910c5768a7098fddb9960195f90ae5452574fba073fabf35f",
+      "payload_sha256": "69b9845d612780cfe55b9394ef4510a7152089839cc9cc31320584be623e8fe1",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    },
+    {
+      "ordinal": 496,
+      "key": [
+        "ops-nn",
+        "GemmFwdOp",
+        "square-1k-bfloat16"
+      ],
+      "api": "ops-nn complete original aclnnMatmul, original alignedpacking and timedrun AST",
+      "device_us": 35.3632,
+      "source_attribution": "originalNNcompletePad4GemmAPI",
+      "checkpoint": "rollout-golden42-pad4-2-496-golden42-routefix-h1-v1.CHECKPOINT.json",
+      "checkpoint_sha256": "7ab0187e300e92094759df9e448791d6bc455517767dccc8aec663d482246e92",
+      "payload_sha256": "07fea9a43faa90dfad30aa94b515e6f0f172ed67a455339bfe7afdadc188c0f4",
+      "full_checker_15raw_guard_valid": true,
+      "actual_original_AoT_source_device_profile_identity_verified": true,
+      "not_paired_or_finalratio": true
+    }
+  ],
+  "staged_not_published": true
+}

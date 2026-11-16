@@ -1,0 +1,56 @@
+[
+  {
+    "key": [
+      "vllm-ascend",
+      "BmmFwdOp",
+      "square-128-float16"
+    ],
+    "fixed": false,
+    "evidence": "VLLM_BMM_API_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "BmmFwdOp",
+      "square-128-bfloat16"
+    ],
+    "fixed": false,
+    "evidence": "VLLM_BMM_API_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "BmmFwdOp",
+      "square-256-float16"
+    ],
+    "fixed": false,
+    "evidence": "VLLM_BMM_API_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "BmmFwdOp",
+      "square-256-bfloat16"
+    ],
+    "fixed": false,
+    "evidence": "VLLM_BMM_API_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "BmmFwdOp",
+      "square-512-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_BMM_API_CURRENT.partial.json"
+  },
+  {
+    "key": [
+      "vllm-ascend",
+      "BmmFwdOp",
+      "square-1k-float16"
+    ],
+    "fixed": true,
+    "evidence": "VLLM_BMM_API_CURRENT.partial.json"
+  }
+]

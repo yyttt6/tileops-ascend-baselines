@@ -1,0 +1,16 @@
+用途：本任务私有的候选筛选/同轮工程比较吞吐模块，不替换共享正式timer，不直接发布或混入历史网页倍率。
+
+调用：from restricted_profiler import make_selected_timer
+ timer = make_selected_timer(core._time_reference, unique_evidence_dir,
+     opt_in=True, stateless=True, single_stream=True, metric='device')
+ timing = timer(torch, torch_npu, fn, inputs, warmup, repeats, reset)
+调用者必须由整个前台npu-guard包住，每短任务空queue/idle/资源准入；原checker/probes/精度/flush/15次数及原始归档不省。
+
+默认opt_in=False使用原timer。状态/reset、未知或多stream、host_completed在执行前保留原timer。原timer自身也可能不支持多stream；回退不等于新增多stream支持。原始trace解析失败直接抛出，禁止静默自动重跑或拼接两个协议样本。先保存失败，再人工分析，以新attempt/原协议另做有效测量。
+
+新协议：experimental-baseline-full32-marker-session-v1；使用原1GiB flush作前后marker，不是CI的2MiB尾marker。partition SHA必须写入protocol_selection.module_sha256，区分初版跨时钟错误和v2。STAR AICPU只由原full32加一次；边界分别在STAR整数tick和FFTS ns时钟内验证。不改变已有kernel duration公式。
+证据：selection.json；session/raw完整trace、traceSHA；session/partition.json逐窗口全任务字段/marker；result中single_session和protocol_selection。独立离线重放须与保存proof全等，并检查每窗口任务名/角色/重复次数、无未归属任务和命名覆盖。不能用旧retained_profiles逐window审计伪装共享trace；新retained_profiles应为空。
+
+4个old-new-old对照共180窗口通过源码身份/原checker/guard/raw/topology审计。进程减少40.3%–55.0%，是这些案例的单进程成本，不是全项目速度承诺。设备读数偏差分别+0.137%、-0.0671%、+0.0230%、-0.6622%；末例旧控制漂移0.6268%，不能声称完全等价。host wall在两协议下变化较大，不采用host等价结论。
+
+应用边界：新独立批次先保留原/新实现同协议比较与必要旧控制，记录采样协议；达到需要与历史网页相比较或最终交付数值时，原isolated协议复测所选实现。已有已验收case不为迁移重跑，不修改共享timer、历史证据、网页cache。多stream已用真实2stream trace验证拒绝；reset仅验证执行前拒绝，不声称支持。任何新合同/硬件/工具链/采样条件需重新验证。

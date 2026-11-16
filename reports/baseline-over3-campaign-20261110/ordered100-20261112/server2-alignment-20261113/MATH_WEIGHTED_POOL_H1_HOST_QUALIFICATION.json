@@ -1,0 +1,363 @@
+{
+  "checked_at": "2026-11-14T22:14:36.062471+00:00",
+  "full_API_and_original_flush_and_private_kernel_verified": true,
+  "execution_hostname": "a5d0b50dc68f",
+  "native_package_manifest_sha256": {
+    "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/DEQUANT_PACKAGE.json": "5d35b06e03e318feb6cb94325c034e0618e4bcb1394c126e03ff6b4cec5736ec",
+    "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/DIV_PACKAGE_V2.json": "70c0b031f6a350a9b130b40de7158e241602f35a2709d76e2541cfba9805a416",
+    "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-vectorinf-v1/VECTORINF_PACKAGE.json": "cc831840db4ed5d54fd405afc140ccd04174c61756dd320149287a5cbcd9dd46",
+    "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/MATH_L1_SUM_PACKAGE.json": "476eb15e0c74ff5308121940f0163860b64ec6ca42461b3980ea6b0d616a15c4"
+  },
+  "qualified_API_source_sha256": {
+    "ops_math_weighted_pool_api.py": "238db1f509b65e9601c7678928bb41736905400fc3807d58a94079e0744530e9",
+    "ops_math_weighted_pool_support.py": "73dc7b43f79784f33334f7cab35aa42c5b79a0e96e98a81685159523a3baba9e",
+    "ops_math_realdiv_capi_v2.py": "05f9b300a94983de93ed5acb38f3a6219e0a9099084614570d52df0b22c7d5fd",
+    "ops_math_l2_api.py": "af8088b273f36779c71ef343fd7d70c9fbdb3b29f2cceda5492c3805a2f41a29",
+    "ops_math_sqrt_api.py": "04e151c7ce1fc3090b90922b1b6d6c79a4f19f4584ff816ba3f35597ae8cb695",
+    "ops_math_l1_api.py": "cbe5aadece2353fa3cb7e3940f27c76d8bbbaa0c708b1739629610d1d578a302",
+    "ops_math_dequant_api.py": "9aae36824cd1796a8204c972b2bae13931983931b13bfb9a3eb6cdb651f0e795"
+  },
+  "private_load_and_launch_per_complete_group": [
+    {
+      "marker": {
+        "ndim": 2,
+        "shape": [
+          1,
+          2,
+          7,
+          9
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      "launches": [
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:53.546.111 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:53.549.898 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:53.702.443 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:53.910.730 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:53.911.906 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:53.912.896 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.032.129 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.033.375 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.034.821 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.155.495 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.156.655 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.157.732 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "ndim": 2,
+        "shape": [
+          1,
+          2,
+          7,
+          9
+        ],
+        "dtype": "torch.float32"
+      },
+      "launches": [
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.302.942 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.303.527 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.303.957 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.424.659 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.425.231 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.425.760 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.541.813 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.542.512 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.542.921 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.661.377 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.662.232 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.662.746 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=1, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "ndim": 3,
+        "shape": [
+          1,
+          2,
+          5,
+          7,
+          9
+        ],
+        "dtype": "torch.bfloat16"
+      },
+      "launches": [
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.812.250 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=13, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.813.437 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=13, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.814.801 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "ndim": 3,
+        "shape": [
+          1,
+          2,
+          5,
+          7,
+          9
+        ],
+        "dtype": "torch.float32"
+      },
+      "launches": [
+        {
+          "kernel": "Mul_ee98c6628030785f610b924ab1557b31_high_performance_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "sha256": "916d81125e3646ac6ebd307dcf82a29a886249a4b73cade917cb0b7ef0d869d8",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.545.525 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnMul_16_MulAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab175f33f8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-dequant-v1/private-v1/vendors/allpairs_math_dequant_math/op_impl/ai_core/tbe/kernel/ascend950/mul_apt/Mul_ee98c6628030785f610b924ab1557b31_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.954.651 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=Mul_ee98c6628030785f610b924ab1557b31_high_performance_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=13, taskRation=2, kernelVfType=2, dynamicSmSize=221184, addr1=0x12004da2df00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "RealDiv_FLOAT32_high_precision_8",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "sha256": "b5ebfff8b5eb6a6c1f8b5419f6746967b869cc0db6c5de1e27cdc9c664a92660",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.549.399 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnDiv_17_RealDivAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab17687c38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-realdiv-v1/graph-private-v2/vendors/allpairs_math_realdiv_math/op_impl/ai_core/tbe/kernel/ascend950/real_div_apt/RealDiv_FLOAT32_high_precision.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.955.233 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=RealDiv_FLOAT32_high_precision_8, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=80, mixType=0, coreDim=13, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004da5c400, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        },
+        {
+          "kernel": "ReduceSum_float32_int64_high_performance_10285",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "sha256": "d6cba76afdbc7345f2dc4a21c9fb6e3606ef22f849716f1064b50e8c8f4ca4e4",
+          "load_line": "[DEBUG] OP(2335230,python):2026-11-14-22:11:53.698.037 [op_kernel.cpp:397][NNOP][BinLoadImpl][2335230] OpName:[aclnnReduceSum_18_ReduceSumOpAiCore] Register Kernel succ on dev[0], binHandle: 0xaaab180096e8, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-math-countnz-v1/private-l1-v2/vendors/allpairs_math_countnz_math/op_impl/ai_core/tbe/kernel/ascend950/reduce_sum_apt/ReduceSum_float32_int64_high_performance.o",
+          "launch_line": "[INFO] RUNTIME(2335230,python):2026-11-14-22:11:54.955.659 [aix_starsv2.cc:666] 2335230 StreamLaunchKernelV2: stream_id=61, kernel_name=ReduceSum_float32_int64_high_performance_10285, kernelAttrType=KERNEL_ATTR_TYPE_VECTOR(2), funcType=3, arg_size=624, mixType=0, coreDim=2, taskRation=2, kernelVfType=2, dynamicSmSize=0, addr1=0x12004f1ebd00, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    }
+  ],
+  "original_reference_and_full_inputs_verified": [
+    {
+      "ndim": 2,
+      "shape": [
+        1,
+        2,
+        7,
+        9
+      ],
+      "dtype": "torch.bfloat16",
+      "full_output_original_reference_tolerance_passed": true,
+      "inputbits_preserved": true,
+      "tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      }
+    },
+    {
+      "ndim": 2,
+      "shape": [
+        1,
+        2,
+        7,
+        9
+      ],
+      "dtype": "torch.float32",
+      "full_output_original_reference_tolerance_passed": true,
+      "inputbits_preserved": true,
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 1e-05
+      }
+    },
+    {
+      "ndim": 3,
+      "shape": [
+        1,
+        2,
+        5,
+        7,
+        9
+      ],
+      "dtype": "torch.bfloat16",
+      "full_output_original_reference_tolerance_passed": true,
+      "inputbits_preserved": true,
+      "tolerance": {
+        "rtol": 0.016,
+        "atol": 0.016
+      }
+    },
+    {
+      "ndim": 3,
+      "shape": [
+        1,
+        2,
+        5,
+        7,
+        9
+      ],
+      "dtype": "torch.float32",
+      "full_output_original_reference_tolerance_passed": true,
+      "inputbits_preserved": true,
+      "tolerance": {
+        "rtol": 1e-05,
+        "atol": 1e-05
+      }
+    }
+  ],
+  "guard_sha256": "27990f91f66f90946af5c8d35c614895ea2da5925e5a77eb26160300e1eeeb83",
+  "result_sha256": "c8bd148e6c289f2d8546078fd6146b094381720284437fa7535cbf47352d39d7",
+  "log_sha256": "4a7953e5ba17545221db17d12cc8f0cb1734206b9587b664b2e0623068169c7e",
+  "no_formal_15raw_or_baseline_coverage": true,
+  "scope": "Weighted AvgPool220/226 complete same-pin Mul+Div+ReduceSum original DAG order. All original timed pooling run/reduce AST retained. No reference/checker/kernel/precision changes."
+}

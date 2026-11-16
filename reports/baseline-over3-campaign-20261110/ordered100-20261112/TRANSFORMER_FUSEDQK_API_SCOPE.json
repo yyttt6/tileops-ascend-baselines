@@ -1,0 +1,10 @@
+{
+  "ordinals": [
+    768,
+    769,
+    770,
+    771
+  ],
+  "original_fused_qk_rope_run_AST_exact": true,
+  "original_FP32_intermediate_and_tables_unchangedV_kept": true
+}

@@ -1,0 +1,15 @@
+from pathlib import Path
+import json,hashlib,datetime
+P=Path(__file__).resolve().parent;sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def summarize():
+ originals={r['ordinal']:r for r in json.loads((P/'SELECTIVE_SCAN_ORIGINAL_CURRENT.json').read_text())['rows']};audit=json.loads((P/'ROLLOUT_AUDIT.json').read_text());rows=[]
+ for cp in P.glob('rollout-torch-scan-grouped-layout-*.CHECKPOINT.json'):
+  e=json.loads(cp.read_text());nr=e['batch']['results'][0];i=nr['ordinal']
+  if nr['status']!='raw_checked_pending_guard':continue
+  assert i in {1497,1498,1500,1501,1502};original=P/originals[i]['checkpoint'];b=json.loads(original.read_text());br=next(x for x in b['batch']['results'] if x['ordinal']==i)
+  for key in ['key','payload_sha256','prepare_sha256','reference_policy','metric']:assert br[key]==nr[key]
+  assert b['batch']['runtime']==e['batch']['runtime'] and b['guard']['boot_id']==e['guard']['boot_id'] and b['guard']['device_node']==e['guard']['device_node'];assert br['timing']['measurement_protocol']==nr['timing']['measurement_protocol']=='ascend950-isolated-ffts-v3';sources=[];libs=[]
+  for file,event in [(original,b),(cp,e)]:
+   a=audit[file.name.removesuffix('.CHECKPOINT.json')];assert a['guard_valid'] and a['checkpoint_sha256']==sha(file) and next(x for x in a['rows'] if x['ordinal']==i)['status']=='formal_raw_and_full_output_verified';root=P/'remote/runs'/event['tag'];assert sha(root/'SOURCE.json')==event['batch']['source_sha256'];sources.append(json.loads((root/'SOURCE.json').read_text()));libs.append(json.loads((root/'LOADED_LIBRARIES.json').read_text()))
+  assert any(k.endswith('/'+name) and v==sha(P/name) for name in ['worker_grouped_scan_layout.py','worker_grouped_scan_layout_expansion.py'] for k,v in sources[1].items());assert all(sources[0][k]==sources[1][k] for k in sources[0].keys()&sources[1].keys());assert all(libs[0][k]==libs[1][k] for k in libs[0].keys()&libs[1].keys());proof=json.loads((P/'remote/runs'/e['tag']/str(i)/'TORCH_DEVICE_BOUNDARY.json').read_text());assert proof['full_reverse_AST_identical'] and proof['FP32_cast_exp_softplus_silu_reduction_and_multiply_add_order_preserved'] and proof['both_outputs_reset_initialstate_and_optional_work_retained'];reduction=100*(1-nr['device_us']/br['device_us']);rows.append({'ordinal':i,'key':nr['key'],'guard_checker_15raw_valid':True,'original_checkpoint':original.name,'candidate_checkpoint':cp.name,'original_device_us':br['device_us'],'candidate_device_us':nr['device_us'],'device_reduction_percent':reduction,'selection':'candidate' if reduction>=5 else 'original_conservative_small_gain_or_regression','same_frozen_FP64_oracle_and_checker':True,'view_broadcast_only_no_precision_or_kernel_change':True,'not_final_ratio_closure':True})
+ out={'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'paired_cases':len(rows),'rows':rows,'coverage_increment':0,'no_history_or_publication':True};f=P/'TORCH_SCAN_GROUPED_LAYOUT_CURRENT.json';tmp=f.with_suffix('.tmp');tmp.write_text(json.dumps(out,indent=2));tmp.replace(f);return out

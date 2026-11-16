@@ -1,0 +1,160 @@
+{
+  "checked_at": "2026-11-14T20:00:49.974088+00:00",
+  "host": "openlibing-DevEnv-661495",
+  "execution_hostname": "a5d0b50dc68f",
+  "private_original_device_kernels_verified": true,
+  "not_formal_checker_or15raw": true,
+  "package_manifest_sha256": "1d8ac5de679cb10705dea4e4c129dcad653cdf1721ec3e4abfd427f834e64b15",
+  "guard_sha256": "49ff7df7152ccbf05d9f8675c513b081041eb99502a3e3f930d89c0d304b1c9e",
+  "result_sha256": "8570515b2fe14cfd197bdaa0f2a57be602bb11764772888e90dae3d330a2e613",
+  "api_sha256": "a30a8f66890374ba6ea50db50a9b6b5aa5664c2c91fbde18309c14f122d890f6",
+  "private_kernel_registration_lines": [
+    {
+      "marker": {
+        "index": 0,
+        "dtype": "torch.float16",
+        "trans_a": false,
+        "trans_b": false
+      },
+      "launches": [
+        {
+          "kernel": "MatMulV3_ND_ND_ND_ND_FP16_FP16_FP16_FP16_high_performance_66",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-gemm-pad4-v1/complete-private-device-v1/op_impl/ai_core/tbe/kernel/ascend950/mat_mul_v3/MatMulV3_ND_ND_ND_ND_FP16_FP16_FP16_FP16_high_performance.o",
+          "sha256": "7967febcef0bd96dc006063d187d12778d88841f44780affbd7b6b1cb2eab607",
+          "load_log": "[DEBUG] OP(2010924,python):2026-11-14-19:58:59.548.099 [op_kernel.cpp:397][NNOP][BinLoadImpl][2010924] OpName:[aclnnMatmul_6_MatMulV3Common] Register Kernel succ on dev[0], binHandle: 0xaaab219bc848, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-gemm-pad4-v1/complete-private-device-v1/op_impl/ai_core/tbe/kernel/ascend950/mat_mul_v3/MatMulV3_ND_ND_ND_ND_FP16_FP16_FP16_FP16_high_performance.o",
+          "launch_log": "[INFO] RUNTIME(2010924,python):2026-11-14-19:58:59.551.245 [aix_starsv2.cc:666] 2010924 StreamLaunchKernelV2: stream_id=61, kernel_name=MatMulV3_ND_ND_ND_ND_FP16_FP16_FP16_FP16_high_performance_66, kernelAttrType=KERNEL_ATTR_TYPE_CUBE(1), funcType=2, arg_size=192, mixType=0, coreDim=32, taskRation=2, kernelVfType=0, dynamicSmSize=0, addr1=0x12004082c260, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "index": 1,
+        "dtype": "torch.float16",
+        "trans_a": true,
+        "trans_b": true
+      },
+      "launches": [
+        {
+          "kernel": "MatMulV3_ND_ND_ND_ND_FP16_FP16_FP16_FP16_high_performance_66",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-gemm-pad4-v1/complete-private-device-v1/op_impl/ai_core/tbe/kernel/ascend950/mat_mul_v3/MatMulV3_ND_ND_ND_ND_FP16_FP16_FP16_FP16_high_performance.o",
+          "sha256": "7967febcef0bd96dc006063d187d12778d88841f44780affbd7b6b1cb2eab607",
+          "load_log": "[DEBUG] OP(2010924,python):2026-11-14-19:58:59.548.099 [op_kernel.cpp:397][NNOP][BinLoadImpl][2010924] OpName:[aclnnMatmul_6_MatMulV3Common] Register Kernel succ on dev[0], binHandle: 0xaaab219bc848, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-gemm-pad4-v1/complete-private-device-v1/op_impl/ai_core/tbe/kernel/ascend950/mat_mul_v3/MatMulV3_ND_ND_ND_ND_FP16_FP16_FP16_FP16_high_performance.o",
+          "launch_log": "[INFO] RUNTIME(2010924,python):2026-11-14-19:58:59.604.209 [aix_starsv2.cc:666] 2010924 StreamLaunchKernelV2: stream_id=61, kernel_name=MatMulV3_ND_ND_ND_ND_FP16_FP16_FP16_FP16_high_performance_66, kernelAttrType=KERNEL_ATTR_TYPE_CUBE(1), funcType=2, arg_size=192, mixType=0, coreDim=32, taskRation=2, kernelVfType=0, dynamicSmSize=0, addr1=0x12004082c260, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "index": 2,
+        "dtype": "torch.bfloat16",
+        "trans_a": false,
+        "trans_b": false
+      },
+      "launches": [
+        {
+          "kernel": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-gemm-pad4-v1/complete-private-device-v1/op_impl/ai_core/tbe/kernel/ascend950/mat_mul_v3/MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance.o",
+          "sha256": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def",
+          "load_log": "[DEBUG] OP(2010924,python):2026-11-14-19:58:59.705.792 [op_kernel.cpp:397][NNOP][BinLoadImpl][2010924] OpName:[aclnnMatmul_21_MatMulV3Common] Register Kernel succ on dev[0], binHandle: 0xaaab21cd4f38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-gemm-pad4-v1/complete-private-device-v1/op_impl/ai_core/tbe/kernel/ascend950/mat_mul_v3/MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance.o",
+          "launch_log": "[INFO] RUNTIME(2010924,python):2026-11-14-19:58:59.708.403 [aix_starsv2.cc:666] 2010924 StreamLaunchKernelV2: stream_id=61, kernel_name=MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66, kernelAttrType=KERNEL_ATTR_TYPE_CUBE(1), funcType=2, arg_size=192, mixType=0, coreDim=32, taskRation=2, kernelVfType=0, dynamicSmSize=0, addr1=0x1200408e4260, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    },
+    {
+      "marker": {
+        "index": 3,
+        "dtype": "torch.bfloat16",
+        "trans_a": true,
+        "trans_b": true
+      },
+      "launches": [
+        {
+          "kernel": "MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66",
+          "path": "/opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-gemm-pad4-v1/complete-private-device-v1/op_impl/ai_core/tbe/kernel/ascend950/mat_mul_v3/MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance.o",
+          "sha256": "6b8f0bbf306be1bdc27b0f4993843be332418e6cf96b0eef80bf875be4604def",
+          "load_log": "[DEBUG] OP(2010924,python):2026-11-14-19:58:59.705.792 [op_kernel.cpp:397][NNOP][BinLoadImpl][2010924] OpName:[aclnnMatmul_21_MatMulV3Common] Register Kernel succ on dev[0], binHandle: 0xaaab21cd4f38, bin path: /opt/baseline-over3-20261110/server2-aligned-stack/native/ops-nn-gemm-pad4-v1/complete-private-device-v1/op_impl/ai_core/tbe/kernel/ascend950/mat_mul_v3/MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance.o",
+          "launch_log": "[INFO] RUNTIME(2010924,python):2026-11-14-19:58:59.726.445 [aix_starsv2.cc:666] 2010924 StreamLaunchKernelV2: stream_id=61, kernel_name=MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_high_performance_66, kernelAttrType=KERNEL_ATTR_TYPE_CUBE(1), funcType=2, arg_size=192, mixType=0, coreDim=32, taskRation=2, kernelVfType=0, dynamicSmSize=0, addr1=0x1200408e4260, addr2=0x0, kernelFlag=0x0, qos=0, partId=0, schemMode=0, infoAddr=(nil), atomicIndex=0, groupDim=0, groupBlockDim=0."
+        }
+      ]
+    }
+  ],
+  "scope": [
+    490,
+    494,
+    496,
+    497
+  ],
+  "four_full_output_and_inputbit_checks": [
+    {
+      "op": "GemmPad4",
+      "dtype": "torch.float16",
+      "trans_a": false,
+      "trans_b": false,
+      "shape": [
+        17,
+        65,
+        19
+      ],
+      "all_outputs_and_input_bits_verified": true,
+      "original_ASTs": {
+        "_layout": "e94224a9261037cbc10ed888459b35d40f1f76402e3b4e0583b937d1557fd7aa",
+        "run": "1c6de87aa04e8ace1f146e4f4ff89070729863401d8f8dc0fdfba62e02ab2202"
+      }
+    },
+    {
+      "op": "GemmPad4",
+      "dtype": "torch.float16",
+      "trans_a": true,
+      "trans_b": true,
+      "shape": [
+        17,
+        65,
+        19
+      ],
+      "all_outputs_and_input_bits_verified": true,
+      "original_ASTs": {
+        "_layout": "e94224a9261037cbc10ed888459b35d40f1f76402e3b4e0583b937d1557fd7aa",
+        "run": "1c6de87aa04e8ace1f146e4f4ff89070729863401d8f8dc0fdfba62e02ab2202"
+      }
+    },
+    {
+      "op": "GemmPad4",
+      "dtype": "torch.bfloat16",
+      "trans_a": false,
+      "trans_b": false,
+      "shape": [
+        17,
+        65,
+        19
+      ],
+      "all_outputs_and_input_bits_verified": true,
+      "original_ASTs": {
+        "_layout": "e94224a9261037cbc10ed888459b35d40f1f76402e3b4e0583b937d1557fd7aa",
+        "run": "1c6de87aa04e8ace1f146e4f4ff89070729863401d8f8dc0fdfba62e02ab2202"
+      }
+    },
+    {
+      "op": "GemmPad4",
+      "dtype": "torch.bfloat16",
+      "trans_a": true,
+      "trans_b": true,
+      "shape": [
+        17,
+        65,
+        19
+      ],
+      "all_outputs_and_input_bits_verified": true,
+      "original_ASTs": {
+        "_layout": "e94224a9261037cbc10ed888459b35d40f1f76402e3b4e0583b937d1557fd7aa",
+        "run": "1c6de87aa04e8ace1f146e4f4ff89070729863401d8f8dc0fdfba62e02ab2202"
+      }
+    }
+  ],
+  "runtime": {
+    "torch": "2.13.0+cpu",
+    "torch_npu": "2.13.0.rc1",
+    "cube": 32,
+    "vector": 64
+  },
+  "other_host_functional_acceptance_not_assumed": true
+}

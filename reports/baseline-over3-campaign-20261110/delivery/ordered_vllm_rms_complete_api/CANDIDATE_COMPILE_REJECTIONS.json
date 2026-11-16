@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-11-13T07:39:50.456802+00:00",
+  "rows": [
+    {
+      "ordinal": 1225,
+      "key": [
+        "vllm-ascend",
+        "RMSNormFwdOp",
+        "quack-throughput-32768-bfloat16"
+      ],
+      "selection": "original",
+      "candidate_failure": "compile_UB_overflow_before_timing_not_numerical_failure",
+      "requires_bits": 4194560,
+      "available_bits": 2031616,
+      "candidate_checkpoint": "rollout-vllm-rms-api-candidate-1225-alternate-private-v1.CHECKPOINT.json",
+      "candidate_checkpoint_sha256": "b4d0721f8905fd23b13b8a5d2d1b9e196d90385af44974bd36bfc704f38819bb",
+      "dual_archive_sha256": "4ef65bef3b16cc047897c90de73344a6541012af7a33243c5cf57d2866bbfe84",
+      "original_accepted_checkpoint": "rollout-vllm-rms-api-candidate-1225-original-private-v1.CHECKPOINT.json",
+      "original_checker_15raw_valid": true,
+      "candidate_performance_accepted": false,
+      "no_same_condition_retry_or_kernel_compiler_changes": true
+    },
+    {
+      "ordinal": 1227,
+      "key": [
+        "vllm-ascend",
+        "RMSNormFwdOp",
+        "quack-throughput-32768-float16"
+      ],
+      "selection": "original",
+      "candidate_failure": "compile_UB_overflow_before_timing_not_numerical_failure",
+      "requires_bits": 4194560,
+      "available_bits": 2031616,
+      "candidate_checkpoint": "rollout-vllm-rms-api-candidate-1227-alternate-private-v1.CHECKPOINT.json",
+      "candidate_checkpoint_sha256": "8a179f45c69982f0f16e05327b5479022d95953ee65c5befea672d75c2abe44f",
+      "dual_archive_sha256": "7306f15bc30ae6a73541ff34b9e754778adf61a8c518621fe3e8af327a350785",
+      "original_accepted_checkpoint": "rollout-vllm-rms-api-candidate-1227-original-private-v1.CHECKPOINT.json",
+      "original_checker_15raw_valid": true,
+      "candidate_performance_accepted": false,
+      "no_same_condition_retry_or_kernel_compiler_changes": true
+    }
+  ]
+}

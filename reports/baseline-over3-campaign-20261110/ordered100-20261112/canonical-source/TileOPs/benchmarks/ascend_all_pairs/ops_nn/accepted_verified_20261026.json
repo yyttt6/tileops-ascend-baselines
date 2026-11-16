@@ -1,0 +1,256 @@
+{
+  "records": [
+    {
+      "key": [
+        "ops-nn",
+        "GroupNormFwdOp",
+        "image-affine-bfloat16"
+      ],
+      "factory": "normalization:normalization",
+      "vendor": "/root/dyq/workspace/.cache/all-pairs/ops_nn/install3/vendors/allpairs_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/GroupNormFwdOp--image-affine-bfloat16/output/checker.json",
+      "checker_sha256": "b1dbf40e07f03ebb2d392a382e0b80f941d0baeab3b542aad38cc649a3246352",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/GroupNormFwdOp--image-affine-bfloat16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GroupNormFwdOp",
+        "image-affine-float16"
+      ],
+      "factory": "normalization:normalization",
+      "vendor": "/root/dyq/workspace/.cache/all-pairs/ops_nn/install3/vendors/allpairs_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/GroupNormFwdOp--image-affine-float16/output/checker.json",
+      "checker_sha256": "fc9cc97d0d5e0695fd401e4d330e543db886aa0bca1c8669a59341d65e6e99b1",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/GroupNormFwdOp--image-affine-float16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "GroupNormFwdOp",
+        "tail-spatial-float16"
+      ],
+      "factory": "normalization:normalization",
+      "vendor": "/root/dyq/workspace/.cache/all-pairs/ops_nn/install3/vendors/allpairs_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/GroupNormFwdOp--tail-spatial-float16/output/checker.json",
+      "checker_sha256": "4242348084c2a42a8765425d3a7a4d199e342a801e05967e8c507f153099d08e",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/GroupNormFwdOp--tail-spatial-float16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "LayerNormFwdOp",
+        "dit-xl-2-bfloat16"
+      ],
+      "factory": "normalization:normalization",
+      "vendor": "/root/dyq/workspace/.cache/all-pairs/ops_nn/install3/vendors/allpairs_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/LayerNormFwdOp--dit-xl-2-bfloat16/output/checker.json",
+      "checker_sha256": "5a0549dfca68c00995053424268a1f1a755b04657bf04faf4ee0e736cc05df21",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/LayerNormFwdOp--dit-xl-2-bfloat16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "RMSNormFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "factory": "ascend_rms_cases:opsnn_rms_cases",
+      "vendor": "/root/dyq/workspace/.cache/ascend-classic/native-pilot-20261020/ops-nn/install/vendors/classicpilot_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--llama-8b-decode-bfloat16/output/checker.json",
+      "checker_sha256": "960c0d375e36bfb38f257970ae0d1d3e11f36e32981c459d11f4fcf4c0664afe",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--llama-8b-decode-bfloat16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "RMSNormFwdOp",
+        "llama-8b-prefill-bfloat16"
+      ],
+      "factory": "ascend_rms_cases:opsnn_rms_cases",
+      "vendor": "/root/dyq/workspace/.cache/ascend-classic/native-pilot-20261020/ops-nn/install/vendors/classicpilot_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--llama-8b-prefill-bfloat16/output/checker.json",
+      "checker_sha256": "3e75e5912c046145c04c6cac36a7c328f0a3288ca71ab38dc00d7b655fe8db51",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--llama-8b-prefill-bfloat16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "RMSNormFwdOp",
+        "llama-8b-prefill-float16"
+      ],
+      "factory": "ascend_rms_cases:opsnn_rms_cases",
+      "vendor": "/root/dyq/workspace/.cache/ascend-classic/native-pilot-20261020/ops-nn/install/vendors/classicpilot_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--llama-8b-prefill-float16/output/checker.json",
+      "checker_sha256": "5fc86f39dfbb036465a66399e2c8793d000e76b5f2efecb1416eee2cc485cd4b",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--llama-8b-prefill-float16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "RMSNormFwdOp",
+        "qk-norm-head-bfloat16"
+      ],
+      "factory": "ascend_rms_cases:opsnn_rms_cases",
+      "vendor": "/root/dyq/workspace/.cache/ascend-classic/native-pilot-20261020/ops-nn/install/vendors/classicpilot_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--qk-norm-head-bfloat16/output/checker.json",
+      "checker_sha256": "035c2e700a1d72b16424f9bbff5de69a05cb9d5646c73e189d197024cf6e4e44",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--qk-norm-head-bfloat16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "RMSNormFwdOp",
+        "quack-throughput-1024-float16"
+      ],
+      "factory": "ascend_rms_cases:opsnn_rms_cases",
+      "vendor": "/root/dyq/workspace/.cache/ascend-classic/native-pilot-20261020/ops-nn/install/vendors/classicpilot_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-1024-float16/output/checker.json",
+      "checker_sha256": "d7df45fc859ae4f880f66b25e565612ecb70adf90cb5d47b0ce619aee4594baa",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-1024-float16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "RMSNormFwdOp",
+        "quack-throughput-256-bfloat16"
+      ],
+      "factory": "ascend_rms_cases:opsnn_rms_cases",
+      "vendor": "/root/dyq/workspace/.cache/ascend-classic/native-pilot-20261020/ops-nn/install/vendors/classicpilot_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-256-bfloat16/output/checker.json",
+      "checker_sha256": "d0c2200755cd076b93ee773c055c73e102713d18e677560fb80d60a911e50728",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-256-bfloat16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "RMSNormFwdOp",
+        "quack-throughput-256-float16"
+      ],
+      "factory": "ascend_rms_cases:opsnn_rms_cases",
+      "vendor": "/root/dyq/workspace/.cache/ascend-classic/native-pilot-20261020/ops-nn/install/vendors/classicpilot_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-256-float16/output/checker.json",
+      "checker_sha256": "659e2a3909d7f38bd93312b8ae8b87b7129bb0ced87b7e7ebc5be903b8b4c526",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-256-float16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "RMSNormFwdOp",
+        "quack-throughput-512-bfloat16"
+      ],
+      "factory": "ascend_rms_cases:opsnn_rms_cases",
+      "vendor": "/root/dyq/workspace/.cache/ascend-classic/native-pilot-20261020/ops-nn/install/vendors/classicpilot_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-512-bfloat16/output/checker.json",
+      "checker_sha256": "5acb389ffbe460d144859f6fe99a39dba3cb0add541e4eccd910f74ad7e45cd9",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-512-bfloat16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "RMSNormFwdOp",
+        "quack-throughput-512-float16"
+      ],
+      "factory": "ascend_rms_cases:opsnn_rms_cases",
+      "vendor": "/root/dyq/workspace/.cache/ascend-classic/native-pilot-20261020/ops-nn/install/vendors/classicpilot_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-512-float16/output/checker.json",
+      "checker_sha256": "c4ad4aaa140fa91fa520c61fa6b0d5f25f03884babcba7de236827fcbe507dd2",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/RMSNormFwdOp--quack-throughput-512-float16/GUARD_RESULT.json",
+      "guard_sha256": "c365161d39236fe0f1d32937fbc549796b8487d8faf65ed3879b96897c78ea5d",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_norm/PARENT_REVIEW.json",
+      "review_sha256": "e63a0ff3ec28300834c0467e073d4b982a84292d2dd886394b38a6fa31de21fe"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "BatchNormBwdOp",
+        "resnet-stage3-float32"
+      ],
+      "factory": "normalization_misc:normalization",
+      "vendor": "/root/dyq/workspace/.cache/all-pairs/ops_nn/install3/vendors/allpairs_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_misc_math/recovery01/runs/BatchNormBwdOp/output/checker.json",
+      "checker_sha256": "fd62cce515bad4af7eadd3f6aad78a9060673669b6a3a3233928d7f48b066459",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_misc_math/recovery01/runs/BatchNormBwdOp/GUARD_RESULT.json",
+      "guard_sha256": "a744baf104bd9dd7aa5f54bde51728060c14ab13ac66bfa66c2992fa37981bac",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_misc_math/recovery01/PARENT_REVIEW.json",
+      "review_sha256": "f4c85e848b27b565d1531392e6891ab5ca6f67f5de0d5ba37d84f7ce514a37c7"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "CountNonzeroFwdOp",
+        "sparsity-seq-float16"
+      ],
+      "factory": "normalization_misc:count_nonzero",
+      "vendor": "/root/dyq/workspace/.cache/all-pairs/ops_nn/install3/vendors/allpairs_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_misc_math/recovery01/runs/CountNonzeroFwdOp/output/checker.json",
+      "checker_sha256": "ff941771d4871cfaf195bd94c20b7c3ec26eebf4fe4f2ffdd233f55284d711d5",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_misc_math/recovery01/runs/CountNonzeroFwdOp/GUARD_RESULT.json",
+      "guard_sha256": "a744baf104bd9dd7aa5f54bde51728060c14ab13ac66bfa66c2992fa37981bac",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_misc_math/recovery01/PARENT_REVIEW.json",
+      "review_sha256": "f4c85e848b27b565d1531392e6891ab5ca6f67f5de0d5ba37d84f7ce514a37c7"
+    },
+    {
+      "key": [
+        "ops-nn",
+        "VectorNormFwdOp",
+        "inf-long-seq-bfloat16"
+      ],
+      "factory": "normalization_misc:normalization",
+      "vendor": "/root/dyq/workspace/.cache/all-pairs/ops_nn/install3/vendors/allpairs_nn",
+      "checker": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_misc_math/recovery01/runs/VectorNormFwdOp/output/checker.json",
+      "checker_sha256": "c32ef306669142646dcbda091beaaa5c9a2450ebb319fe007c65c3a8f4afb412",
+      "guard": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_misc_math/recovery01/runs/VectorNormFwdOp/GUARD_RESULT.json",
+      "guard_sha256": "a744baf104bd9dd7aa5f54bde51728060c14ab13ac66bfa66c2992fa37981bac",
+      "review": "/root/dyq/workspace/reports/baseline-integration-20261026/nn_misc_math/recovery01/PARENT_REVIEW.json",
+      "review_sha256": "f4c85e848b27b565d1531392e6891ab5ca6f67f5de0d5ba37d84f7ce514a37c7"
+    }
+  ],
+  "runtime_files": {
+    "verified_20261026/common.py": "f8c6317afebd9a8bac495729936e2c4577a37f612a2bd3bbf1fceca349a70358",
+    "verified_20261026/graph.py": "caab7e464808f00a23269f15f9cf14d7a9a5ea88af6d8134718f7523ef8013ca",
+    "verified_20261026/catalog.py": "c1bcb5eb685308ae4fb03ba45e6e11b6a9d6bbff3b6ebcc66cf116a9ae5f8acf",
+    "verified_20261026/truth.py": "da84be0a01e2c5555ed9436fe28a0cd86aa2d371ac9f90df505f824666802f99",
+    "verified_20261026/tensorlist.py": "14257989fc850ce983abcb76c688af61151e4004a8d9d4873df19c1fdf565a87",
+    "verified_20261026/normalization.py": "4ff3a046ad025a49684850924836b64d93c6473edf95dec256184ab70418c0a9",
+    "verified_20261026/normalization_misc.py": "840265d968bd97af18226ac859b0b8b200406708b9a947ca34518df3d2870723",
+    "verified_20261026/ascend_graph_call.py": "6056513b6aabaa49ee75fe4529c0b069f5742bbd9dcc82a039461f3977bc300f",
+    "verified_20261026/ascend_nn_direct.py": "e665860f3384736f77859f1f810fe58fe42214c3aee4211abbd6880cefaf2fa1",
+    "verified_20261026/ascend_rms_cases.py": "79560e5e6c4d9bf690784a8147e4d7c230810afc307c70e50153cd6d54a2b3ad"
+  }
+}
