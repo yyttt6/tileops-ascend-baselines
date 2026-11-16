@@ -1,0 +1,647 @@
+{
+  "checked_at": "2026-11-16T09:02:19.395683+00:00",
+  "live_scope_checked_at": "2026-11-16T08:00:42.684297+00:00",
+  "scope_count": 63,
+  "handoff_new_catalog_count": 50,
+  "inherited_count": 13,
+  "confirmed_site_integration_errors": [],
+  "limitation": "Review of the63 focused fastest-baseline records and handoff/catalog consistency; not a claim that every aspect of site or every provider has no defect. Historical optimizations not named as selected qualified routes in this refresh cannot be classified as site omission solely because they exist elsewhere.",
+  "producer_issue": "Six INT4 refreshed qualified routes explicitly specify original manifest torch eager ref_program, so publishing these exact values agrees with handoff export. Historical arithmetic packing fix omitted upstream from current selected routes.",
+  "no_case_wide_impossibility_proved": true,
+  "rows": [
+    {
+      "key": [
+        "TileKernels",
+        "INT8DequantPerBlockFwdOp",
+        "qwen3-235b-prefill-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 16,
+      "issues": [],
+      "note": "Catalog API null; website API matches retained candidate result, rather than contradicting it."
+    },
+    {
+      "key": [
+        "TileKernels",
+        "INT8DequantPerBlockFwdOp",
+        "ds-v3-prefill-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 14,
+      "issues": [],
+      "note": "Catalog API null; website API matches retained candidate result, rather than contradicting it."
+    },
+    {
+      "key": [
+        "ops-math",
+        "INT8DequantPerTensorFwdOp",
+        "qwen3-32b-prefill-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 305,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8DequantPerTensorFwdOp",
+        "ragged-k-few-rows-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1387,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8DequantPerTensorFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1386,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8DequantPerChannelFwdOp",
+        "ragged-k-few-rows-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1384,
+      "issues": []
+    },
+    {
+      "key": [
+        "TileKernels",
+        "INT8DequantPerBlockFwdOp",
+        "ds-v3-decode-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 13,
+      "issues": [],
+      "note": "Catalog API null; website API matches retained candidate result, rather than contradicting it."
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8DequantPerBlockFwdOp",
+        "ragged-k-few-rows-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1382,
+      "issues": []
+    },
+    {
+      "key": [
+        "ops-math",
+        "INT8DequantPerChannelFwdOp",
+        "llama-70b-mlp-down-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 303,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPEFwdOp",
+        "interleaved-1d-2k-float16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "ops-transformer",
+        "RoPEFwdOp",
+        "interleaved-1d-5k-float32"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 801,
+      "issues": []
+    },
+    {
+      "key": [
+        "ops-transformer",
+        "RoPEFwdOp",
+        "neox-1d-2k-float32"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 800,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPEFwdOp",
+        "neox-1d-2k-float16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPEFwdOp",
+        "neox-1d-4k-bfloat16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "vllm-ascend",
+        "RoPEFwdOp",
+        "neox-2d-2k-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1251,
+      "issues": []
+    },
+    {
+      "key": [
+        "tilelang",
+        "FP8QuantFwdOp",
+        "kv-index-8k-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1567,
+      "issues": []
+    },
+    {
+      "key": [
+        "tilelang",
+        "FP8QuantFwdOp",
+        "kv-index-8k-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1566,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerChannelFwdOp",
+        "ragged-k-few-rows-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1393,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "SmoothQuantFwdOp",
+        "ragged-k-decode-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1507,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "ds-v3-decode-few-tokens-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1389,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPENeoxPositionIdsFwdOp",
+        "qwen3-8b-decode-b32-bfloat16-int32"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPELlama31FwdOp",
+        "1d-8k-bfloat16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "LongRoPEFwdOp",
+        "1d-8k-bfloat16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "LongRoPEFwdOp",
+        "1d-8k-rescaled-bfloat16-float16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPELlama31FwdOp",
+        "1d-5k-float32"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1481,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "LongRoPEFwdOp",
+        "1d-5k-float32"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1422,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "FP8QuantPerBlockFwdOp",
+        "ragged-k-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1336,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPENeoxPositionIdsFwdOp",
+        "prefill-2k-float16-int32"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1483,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "ds-v3-prefill-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1391,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "qwen3-32b-o-proj-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1378,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPELlama31FwdOp",
+        "2d-8k-float16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "LongRoPEFwdOp",
+        "2d-8k-float16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "FP8QuantPerBlockFwdOp",
+        "ds-v3-expert-gate-up-float32"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1335,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "qwen2-7b-mlp-down-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1376,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerChannelFwdOp",
+        "llama-8b-mlp-up-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1396,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerChannelFwdOp",
+        "qwen3-32b-o-proj-float32"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1398,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "FP8QuantPerBlockFwdOp",
+        "ds-v3-mlp-down-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1331,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerTensorFwdOp",
+        "gpt-oss-20b-decode-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1400,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerTensorFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1401,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "SmoothQuantFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1508,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "ds-v3-decode-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1388,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "YaRNFwdOp",
+        "1d-8k-bfloat16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "LongRoPEFwdOp",
+        "1d-8k-rescaled-bfloat16-bfloat16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "LongRoPEFwdOp",
+        "1d-8k-rescaled-bfloat16-float32"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "YaRNFwdOp",
+        "1d-5k-float32"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1545,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "FP8QuantPerBlockFwdOp",
+        "gpt-oss-expert-down-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1337,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "qwen3-235b-prefill-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1392,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPENeoxPositionIdsFwdOp",
+        "prefill-4k-bfloat16-int32"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1482,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "FP8QuantPerBlockFwdOp",
+        "ds-v3-expert-gate-up-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1334,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "ds-v3-prefill-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1390,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "SmoothQuantFwdOp",
+        "llama-70b-prefill-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1509,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "FP8QuantPerBlockFwdOp",
+        "qwen3-235b-qkv-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1333,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "FP8QuantPerBlockFwdOp",
+        "qwen3-235b-qkv-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1332,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerTensorFwdOp",
+        "qwen3-32b-prefill-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1399,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerChannelFwdOp",
+        "qwen3-32b-o-proj-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1395,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "YaRNFwdOp",
+        "2d-8k-float16"
+      ],
+      "origin": "preexisting_site_record",
+      "ordinal": null,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "llama-8b-mlp-up-chan-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1373,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "llama-8b-mlp-up-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1375,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "RoPENeoxPositionIdsFwdOp",
+        "prefill-varlen-float32-int64"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1484,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "qwen2-7b-mlp-up-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1377,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerChannelFwdOp",
+        "llama-8b-mlp-up-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1397,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "llama-70b-mlp-down-float16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1374,
+      "issues": []
+    },
+    {
+      "key": [
+        "torch-eager",
+        "INT8QuantPerChannelFwdOp",
+        "llama-70b-mlp-down-bfloat16"
+      ],
+      "origin": "handoff_new_catalog",
+      "ordinal": 1394,
+      "issues": []
+    }
+  ],
+  "upstream_null_api_fields_supplemented_from_candidate_result": 3
+}

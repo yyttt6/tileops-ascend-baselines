@@ -1,0 +1,16 @@
+--- a/worker_v19.py
++++ b/worker_v19.py
+@@ -146,6 +146,13 @@
+   saved=load(payload)
+   cpu=saved['inputs'];expected=saved['expected'];case.__dict__['inputs']=cpu
+   args=convert(cpu,'npu');fn=case.reference;reset=None;cleanup=None
++  # User-authorized equivalent eager fixes; CPU oracle and policy remain unchanged.
++  if task['key'][1]=='INT4QuantPerGroupFwdOp':
++   from adapters.aicpu_fixes import int4_quant_per_group
++   def fn(*a):return int4_quant_per_group(*a,group_size=case._call.params['group_size'])
++  elif task['key'][1] in ('AllFwdOp','AnyFwdOp','CountNonzeroFwdOp') and args[0].is_complex():
++   from adapters.aicpu_fixes import reduction
++   def fn(*a):return reduction(task['key'][1],*a,case._call.params)
+   auxiliary=saved.get('auxiliary',{})
+   if auxiliary:
+    assert task['key'][1]=='LongRoPEFwdOp'

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "created_at": "2026-11-16T09:14:30.771662+00:00",
+  "purpose": "Reconcile implementation qualification, selected/adopted result, and published website identity; preserve pending optimizations across coverage refreshes.",
+  "scope": {
+    "current_refresh_records": 2119,
+    "historical_quant_exact_cases": 71,
+    "historical_registered_formal_variants": 160,
+    "historical_optimized_cases": 58,
+    "historical_retained_unimproved_controls": 13,
+    "focused_rope_quant_over3_cases": 63,
+    "focused_historically_optimized_cases": 34
+  },
+  "adoption_pending": 58,
+  "historical_exact_variants_observed_published": 0,
+  "frozen_refresh_catalog_modified": false,
+  "new_NPU_validation_performed": false,
+  "ratio_recomputed_or_published": false,
+  "policy": [
+    "Coverage qualification is not an adoption decision. Never select solely by newest timestamp or mix environments by min latency.",
+    "Selected historical candidate is a producer follow-up priority, not an automatic replacement of a current measurement.",
+    "Preserve actual variant/provider labels. torch-eager-control for INT4 is the verified arithmetic implementation, not original raw reference.",
+    "Keep each optimization pending until adopted identity is published and checked, or a documented rejection explains why it cannot be used.",
+    "Unmeasured/family-deferred/pilot-only rows remain pending; none are declared permanently impossible."
+  ],
+  "readings": [
+    "BENCHMARK_PROTOCOLS",
+    "VR01-06",
+    "BR01-04"
+  ],
+  "live_snapshot": {
+    "checked_at": "2026-11-16T09:13:17.058645+00:00",
+    "url": "https://yyttt6.github.io/TileOPs.github.io/benchmarks/baseline-cache.json",
+    "last_modified": "Mon, 16 Nov 2026 07:33:50 GMT",
+    "sha256": "a150cad5740d0b6153293ddb3ed8741286b02176c36aa2f122a97278b8620a2c",
+    "rows": 7735
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "path": "catalog/baseline-reconciliation-20261116/release-plan.json",
+    "sha256": "3541aa7b3be7497a5992528a9ee65dde483f85fa0474869e14e7963099134b49"
+  },
+  {
+    "path": "catalog/baseline-reconciliation-20261116/summary.json",
+    "sha256": "39797566eb3c775f2b6cd3f2c9364913d54ca994944c70c5b1342df7f0c618a7"
+  },
+  {
+    "path": "docs/handoffs/BASELINE_RECONCILIATION_20261116.zh.md",
+    "sha256": "c6056d6f120baed29769c28b4586f0e43459ffb97e0a62fbf9eaef14219ab771"
+  },
+  {
+    "path": "docs/handoffs/BASELINE_REFRESH_20261116.zh.md",
+    "sha256": "661d6d165efca757d11f1b894e28db29b75db86f4ad5a5dcde6aca524622641b"
+  },
+  {
+    "path": "reports/aicpu-baseline-fix-server2-20261108/fixes.py",
+    "sha256": "537cd0d1c221300700e53483db156d6ea075277af44064d0c45291c6bb8921f6"
+  },
+  {
+    "path": "reports/baseline-result-reconciliation-20261116/AICPU14_TORCH_RESULTS.json",
+    "sha256": "d7c964161a4fb08f83df5dd4aabf9a1651e0c6cccf99aff6476fb39e5d82cd2e"
+  },
+  {
+    "path": "reports/baseline-result-reconciliation-20261116/AICPU_INTEGRATION.txt",
+    "sha256": "9f0b12edccffd287dfbf65c6454005180e96e29cfdf4f83e1a4b5c50f1fa8e47"
+  },
+  {
+    "path": "reports/baseline-result-reconciliation-20261116/INT4_HISTORICAL_ROUTING.patch",
+    "sha256": "a050ab75ea694ef90a3c92f3a1cfd2b466e707e01335351760f572c6b222f4f8"
+  },
+  {
+    "path": "reports/baseline-result-reconciliation-20261116/LIVE_FETCH.json",
+    "sha256": "80149170305cc8323ba3f2eef1f10f2d10c9a8a6aa6d6d271abc1a1d223ba437"
+  },
+  {
+    "path": "reports/baseline-result-reconciliation-20261116/QUANT71_COMPARISON.json",
+    "sha256": "5abeedda754ab9347cafc5a27ca456025a1ee8f010c87015fba73d652df79afd"
+  },
+  {
+    "path": "reports/baseline-result-reconciliation-20261116/ROPE_QUANT63_AUDIT.csv",
+    "sha256": "d60561687bb7900512530e411e948b5974ac60f2e151b368ffb3a999e9402d01"
+  },
+  {
+    "path": "reports/baseline-result-reconciliation-20261116/ROPE_QUANT63_AUDIT.json",
+    "sha256": "8cdd4055caee3e17c6b1012e3210f904c333c4d81b2f9f41b2cd3dcfadf77d43"
+  },
+  {
+    "path": "reports/baseline-result-reconciliation-20261116/SITE_ATTRIBUTION_REVIEW.json",
+    "sha256": "91ebc591b0fcd68ad6ef51038cce4011b57647fe4a526efb479c10d05b0e9b95"
+  },
+  {
+    "path": "reports/quant-baseline-fix-server2-20261110/quant_baselines/__init__.py",
+    "sha256": "8895142b1ecde13c652a859b72332038c6ae7551f2a28073a9824d031cc03e4b"
+  },
+  {
+    "path": "reports/quant-baseline-fix-server2-20261110/quant_baselines/layouts.py",
+    "sha256": "0b26edca698586770fa59613e83b2c5eb976f3954a8cce6dcb39500c46903c90"
+  },
+  {
+    "path": "reports/quant-baseline-fix-server2-20261110/quant_baselines/native.py",
+    "sha256": "ff24645503ed6df4000aaf0b6fbdf6b41762d625f5362a86360900398c98a859"
+  },
+  {
+    "path": "reports/quant-baseline-fix-server2-20261110/quant_baselines/ops_math.py",
+    "sha256": "92c25e63785903ff24fadd6e0d4e6c7a534c110e63b01f7bb1f8c70b94a552d6"
+  },
+  {
+    "path": "reports/quant-baseline-fix-server2-20261110/quant_baselines/registry.py",
+    "sha256": "63fc8d482c7dccc11050ff703f0d0bf3e8c46c702e3cc909d3b08ae88ab8847c"
+  },
+  {
+    "path": "reports/quant-baseline-fix-server2-20261110/reference_source_hashes.json",
+    "sha256": "51f2a54021ef43335dad3611d3479010efd6c8e1eb27d565905d767e857d8b14"
+  },
+  {
+    "path": "reports/quant-baseline-fix-server2-20261110/verified_cases.json",
+    "sha256": "5112f071c44633a1993a0973cc696cebc076aece2364f05230fb32c2e7f920ba"
+  },
+  {
+    "path": "scripts/baseline_reconciliation.py",
+    "sha256": "222a00d211a0e2da955e9f1f5cc2edd87b73312be269ad8315d4238686bed173"
+  }
+]

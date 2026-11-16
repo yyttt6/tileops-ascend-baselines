@@ -1,0 +1,13 @@
+修正源码与接入说明；本次未发布网站。
+
+Torch: fixes.py 为二号远端实际复测源码。安装为隔离baseline快照的 adapters/aicpu_fixes.py；torch-worker-routing.patch 给出仅设备侧的接入位置。保留原CPU oracle、case、seed、checker及容差。更新SOURCES manifest及measurement/cache身份，不能沿用旧源码ID。
+
+Native: 最终完整补丁 native-adapter-v4.patch，源码 native-v4/tla_adapters_v2.py。保留原TileLang kernel、compiler/pass、schedule和完整checker。9个mask pair的实测源码为native-v2版本，其select及全部helper与v4的AST完全一致；只有LogicalNot常量构造不同。LogicalNot用v4单独复测。依赖核对见NATIVE_V4_DEPENDENCY_CHECK.json。
+
+失败候选完整保留：v1未规范化非标准bool字节；v2 int16 fill_(1)仍走AICPU Fill；v3 int16 self-equality仍走AICPU Equal。短探测确认FP32 ones后转INT16完全一致且无AICPU，最终v4采用该路径。转换均在计时内。失败版本不作为替换候选。
+
+每个pair保留15个独立设备窗口；原1GiB flush/sync、3次预热及v3 distinct-task统计不变。后8个native pair共享一个有时限的前台guard，逐case独立验证/采样；每份测量时间须包含在其guard与group_member范围内。
+
+TORCH_RESULTS.csv含同轮原/新baseline。Native旧值来自公开一号远端记录，新值在二号；不是同轮A/B。复算TileOPs倍率沿用原网页TileOPs耗时，本轮未重测TileOPs。
+
+REPLACEMENT_CANDIDATES.json为通过验收后的对应关系。旧测量不覆盖；新结果尚未发布。新发现365个torch pair仅留档。4个Cumprod和1个精度敏感SelectiveScan未修复，见hard/DEFERRED.json。
