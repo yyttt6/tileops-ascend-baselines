@@ -64,7 +64,7 @@ def compare(baselines, denominator, review=None):
     if len(processes) != len(set(processes)):
         raise ValueError("Two result files from the same process do not establish independent repetition")
     for row in rows:
-        for key in ["key", "payload_sha256", "contract_sha256", "protocol"]:
+        for key in ["key", "library", "payload_sha256", "contract_sha256", "protocol"]:
             if row[key] != d[key]:
                 raise ValueError(f"Noncomparable {key}")
         for key in ["hostname", "cube", "vector", "device_name", "precision"]:
@@ -90,14 +90,14 @@ def compare(baselines, denominator, review=None):
         if not evidence.get("reviewer") or not evidence.get("physical_device_identity"):
             raise ValueError("Review needs reviewer and actual physical device identity")
         reviewed = True
-    return {"key": d["key"], "baseline_process_means_us": means,
+    return {"key": d["key"], "library": d.get("library"), "baseline_process_means_us": means,
             "baseline_worst_mean_us": max(means), "tileops_mean_us": d["device_us"],
             "ratio_baseline_over_tileops": ratio, "numeric_target_met": numeric,
             "independent_repeat_required": repeat, "identity_review_complete": reviewed,
             "accepted": numeric and not repeat and reviewed,
             "status": "accepted_local_comparison" if numeric and not repeat and reviewed else
                       "repeat_required" if repeat else "identity_review_required" if numeric else "continue_optimization",
-            "scope_note": "One exact local case, not historical revalidation, all665 completion, publication or CI adoption"}
+            "scope_note": "One exact local library/op/case pair, not all4314 completion, historical revalidation or publication"}
 
 
 def main():

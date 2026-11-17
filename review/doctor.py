@@ -1,6 +1,7 @@
 """CPU-only checkout verification, without importing Torch or NPU."""
 import argparse
 import ast
+import csv
 from review.common import HERE, read, sha
 
 
@@ -11,6 +12,9 @@ def main():
     export = read(HERE / "catalog/EXPORT.json")
     status = read(HERE / "catalog/CASE_STATUS.json")
     accepted = read(HERE / "catalog/ACCEPTED_SELECTIONS.json")
+    with (HERE / "catalog/ALL_OVER3_PAIRS.csv").open() as file:
+        full = list(csv.DictReader(file))
+    assert len(full) == len({(r['library'], r['op'], r['case']) for r in full}) == 4314
     assert len(status["rows"]) == 665
     assert sum(r["verified_within3"] for r in status["rows"]) == len(accepted["cases"]) == 178
     assert len({(r["op"], r["case"]) for r in status["rows"]}) == 665
@@ -32,7 +36,7 @@ def main():
         name, symbol = row["candidate_entry"].split(":")
         tree = ast.parse((HERE / "baselines" / name).read_text())
         assert any(isinstance(n, ast.FunctionDef) and n.name == symbol for n in tree.body)
-    print("PASS:665 unique cases;178 historical accepted selections; original source SHA; selected entries")
+    print("PASS:4314 unique library/op/case pairs;665 historical priority cases;178 historical accepted selections; original source SHA")
     print("No device operation performed. New portable runner still requires local machine validation.")
     if edited:
         print("Development changes require new measurements; historical results remain bound to original hashes:", edited)

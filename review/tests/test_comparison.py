@@ -14,7 +14,7 @@ def row(side, value, pid):
     check = {"checked_outputs": 2, "total_outputs": 2, "unchecked_reason": None}
     return {"schema": "baseline-review-measurement-v1", "side": side,
         "status": "measured_pending_identity_review", "inputs_preserved": True,
-        "key": ["ExampleOp", "case"], "device_us": value,
+        "key": ["ExampleOp", "case"], "library": "example-library", "device_us": value,
         "payload_sha256": "same-payload", "contract_sha256": "same-contract",
         "protocol": "ascend950-isolated-ffts-v3", "tileops_commit":
         "62c5fa4d1f80b5325c6632aa23622ec2d6c3f2c9" if side == "tileops" else None,

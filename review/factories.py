@@ -42,7 +42,25 @@ def selected(case):
     if len(matches) != 1:
         raise ValueError("No accepted selection for this case. Use original or a custom factory.")
     row = matches[0]
+    requested = getattr(case, "review_library", None)
+    if requested and requested != row["key"][0]:
+        raise ValueError("Selected route belongs to another library pair; use the requested original provider")
     return build_entry(case, row["candidate_entry"])
+
+
+def pair(case):
+    """Full4314 dispatch: never replace a library by the same case's fastest library."""
+    library = getattr(case, "review_library", None)
+    if not library:
+        raise ValueError("Full pair tuning requires --library, e.g. torch-eager or vllm-ascend")
+    rows = read(HERE / "catalog/ACCEPTED_SELECTIONS.json")["cases"]
+    op = case._call.signature.name
+    if any(r["key"] == [library, op, case.id] for r in rows):
+        return selected(case)
+    if library == "torch-eager":
+        return original(case)
+    os.environ["REVIEW_LIBRARY"] = library
+    return vendor(case)
 
 
 def best_known(case):

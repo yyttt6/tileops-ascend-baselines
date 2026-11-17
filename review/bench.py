@@ -6,6 +6,7 @@ Run in the machine owner's chosen device environment. CPU commands --help and
 catalog never import torch. Device commands are explicit prepare / measure.
 """
 import argparse
+import csv
 import dataclasses
 import datetime
 import importlib
@@ -141,6 +142,7 @@ def prepare(args):
     identities = source_tree(root)
     write_new(args.output / "contract.json", {
         "schema": "baseline-review-input-v1", "op": args.op, "case": args.case,
+        "library": args.library,
         "seed": seed, "params": plain(case.params), "tensors": plain(case._call.tensors),
         "payload_sha256": sha(payload), "source_root": str(root),
         "workload_module": cls.__module__, "workload_class": cls.__name__,
@@ -191,6 +193,9 @@ def measure(args):
     cpu_inputs = torch.load(args.inputs / "inputs.pt", map_location="cpu", weights_only=False)
     check_transfer_aliases(torch, cpu_inputs)
     case.__dict__["inputs"] = cpu_inputs
+    case.__dict__["review_library"] = args.library or metadata.get("library")
+    if args.library and metadata.get("library") and args.library != metadata["library"]:
+        raise ValueError("Requested library differs from the prepared pair")
     if frozen_cls is not None:
         # Bind exact original methods, including their original helper globals.
         for name in ["ref_program", "verification"]:
@@ -336,6 +341,7 @@ def measure(args):
     write_new(args.output / "result.json", {
         "schema": "baseline-review-measurement-v1", "status": "measured_pending_identity_review",
         "side": args.side, "key": [metadata["op"], metadata["case"]],
+        "library": case.review_library,
         "created_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "device_us": statistics.mean(timing["latency_samples_ms"]) * 1000,
         "protocol": "ascend950-isolated-ffts-v3", "timing": timing,
@@ -361,9 +367,12 @@ def main():
     sub = parser.add_subparsers(dest="command", required=True)
     listing = sub.add_parser("catalog", help="CPU-only list/query; no Torch import")
     listing.add_argument("--op")
+    listing.add_argument("--library")
+    listing.add_argument("--fastest-subset", action="store_true", help="Historical665 subset only")
     prep = sub.add_parser("prepare", help="Original NPU input generation only; no benchmark")
     prep.add_argument("--source-root", type=Path, default=HERE / "frozen/torch20261105")
     prep.add_argument("--op", required=True)
+    prep.add_argument("--library", help="Requested full pair library; required by default pair factory")
     prep.add_argument("--case", required=True)
     prep.add_argument("--output", type=Path, required=True)
     run = sub.add_parser("measure", help="Full correctness and isolated15 device measurement")
@@ -371,15 +380,22 @@ def main():
     run.add_argument("--contract-root", type=Path, default=HERE / "frozen/torch20261105")
     run.add_argument("--inputs", type=Path, required=True)
     run.add_argument("--side", choices=["baseline", "tileops"], required=True)
-    run.add_argument("--factory", default="review.factories:best_known")
+    run.add_argument("--library", help="Must match the prepared library pair")
+    run.add_argument("--factory", default="review.factories:pair")
     run.add_argument("--flush-factory", help="Optional local full 1GiB flush factory(case)->(callable,buffer)")
     run.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     if args.command == "catalog":
-        rows = read(HERE / "catalog/CASE_STATUS.json")["rows"]
+        if args.fastest_subset:
+            rows = read(HERE / "catalog/CASE_STATUS.json")["rows"]
+        else:
+            with (HERE / "catalog/ALL_OVER3_PAIRS.csv").open() as file:
+                rows = list(csv.DictReader(file))
         for row in rows:
-            if not args.op or row["op"] == args.op:
-                print(row["op"], row["case"], row["status"], row.get("final_ratio"), sep="\t")
+            library = row.get("library", row.get("original_fastest_library"))
+            if (not args.op or row["op"] == args.op) and (not args.library or library == args.library):
+                print(library, row["op"], row["case"], row.get("status", row.get("optimization_status")),
+                      row.get("final_ratio", row.get("ratio")), sep="\t")
     else:
         if args.output.exists():
             raise FileExistsError("Use a new output directory; existing results are preserved")

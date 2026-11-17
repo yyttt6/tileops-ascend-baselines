@@ -1,10 +1,12 @@
 # Baseline performance development
 
+Scope: **all4314 frozen >3x library/op/case pairs**, not only the previous665 fastest-case priority subset.
+
 Start with the [Chinese handoff](../docs/handoffs/BASELINE_PERF_REVIEW_20261117.zh.md).
 
 ```bash
 python3 -m review.doctor
-python3 -m review.bench catalog --op TopKMaskFwdOp
+python3 -m review.bench catalog --library torch-eager --op TopKMaskFwdOp
 python3 -m review.bench --help
 python3 -m review.compare --help
 ```

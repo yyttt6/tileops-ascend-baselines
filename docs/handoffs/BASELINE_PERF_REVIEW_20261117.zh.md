@@ -13,17 +13,22 @@
 `R = baseline_device_mean_us / tileops_device_mean_us <= 3.0`。
 R 越大，baseline 相对于 TileOPs 越慢；R=2 表示 TileOPs 是 baseline 的2倍速度。
 
-- 冻结范围为 **665 个去重 `(op, case)`**。原网页4314个>3x的库/case pair里，
-  有666个并列/独占最快 pair，对应这665个case。其他库较慢的pair不是这批分母。
-- 暂停时，**178/665 在原机器、原合同下完成≤3x验收，487项未完成目标**。
-  这是历史资格，不是你机器上的验证，也不是网页/CI已采用这些新结果。
-- 旧2119是上一轮合格覆盖数量，不是2119项均优化到3x。不要用它作为本轮进度。
+- **本次交接范围是全部4314个 `(library, op, case)` pair**，涉及1692个去重case。
+  包括同case里较慢的各个库，不能只看最快库；另一个库已经≤3x，不代表本库已优化。
+- 完整baseline快照共7735条，见`ALL_BASELINES_SNAPSHOT.json`。4314是该冻结快照里
+  逐库实际倍率严格>3.0的集合；全量性能问题的分析、代码和测量方法均可在本分支推进。
+- **665只是之前挑出的优先子集，不是学长这次要看的范围。** 178/665是其历史验收，
+  不能写成4314中的整体完成率，也不能跨库把同case的改善复制记账。
+- 旧2119是上一轮覆盖账，不等于全部性能调优完成。旧快照时间固定，网页后续变化另记版本。
 - 我方设备调优保持暂停。你可以在本分支独立修改、测量、提交，不依赖我方继续跑。
 
 | 路径 | 用途 |
 | --- | --- |
-| [`review/catalog/WORKLIST.csv`](../../review/catalog/WORKLIST.csv) | 全部665项，当前结果/待处理状态、原最快库、候选入口 |
-| [`review/catalog/ACCEPTED_SELECTIONS.json`](../../review/catalog/ACCEPTED_SELECTIONS.json) | 178项逐case选中路线、参数、历史均值/倍率、独立进程次数 |
+| [`review/catalog/WORKLIST.csv`](../../review/catalog/WORKLIST.csv) | **全量4314个逐库pair**，已有归因、证据等级和下一步 |
+| [`review/catalog/ALL_BASELINES_SNAPSHOT.json`](../../review/catalog/ALL_BASELINES_SNAPSHOT.json) | 完整7735条baseline快照，含每库case/参数/原倍率/版本 |
+| [`review/catalog/ALL_OVER3_SUMMARY.json`](../../review/catalog/ALL_OVER3_SUMMARY.json) | 4314项全量统计、数据时间及证据边界 |
+| [`review/catalog/FASTEST665_WORKLIST.csv`](../../review/catalog/FASTEST665_WORKLIST.csv) | 历史优先子集，仅作附加参考 |
+| [`review/catalog/ACCEPTED_SELECTIONS.json`](../../review/catalog/ACCEPTED_SELECTIONS.json) | 665优先子集中的178项历史选中路线，供复用思路；不替代全量清单 |
 | [`review/baselines/`](../../review/baselines/) | 选中实现的27份源码及额外未达标路线；**主要编辑位置**，保留原代码字节/SHA |
 | [`review/factories.py`](../../review/factories.py) | 可编辑的选中实现、原 eager、原 vendor 与本机路径绑定入口 |
 | [`review/bench.py`](../../review/bench.py) | 本机生成输入、完整正确性、原 isolated15 device 测量入口 |
@@ -45,7 +50,7 @@ git clone --branch baseline/perf-review-20261117 \
   https://github.com/yyttt6/tileops-ascend-baselines.git
 cd tileops-ascend-baselines
 python3 -m review.doctor
-python3 -m review.bench catalog --op TopKMaskFwdOp
+python3 -m review.bench catalog --library torch-eager --op TopKMaskFwdOp
 
 # 单独保留不修改的TileOPs性能对手；不要拿根目录旧快照代替。
 git clone https://github.com/yyttt6/TileOPs.git ../TileOPs-public
@@ -85,7 +90,7 @@ git submodule update --init ascend_baselines/flash-linear-attention-npu
 
 ```bash
 python -m review.bench prepare \
-  --op TopKMaskFwdOp --case deepseek-v3-b17-mixed-bfloat16 \
+  --library torch-eager --op TopKMaskFwdOp --case deepseek-v3-b17-mixed-bfloat16 \
   --output local-runs/topk-input
 ```
 
@@ -98,7 +103,7 @@ python -m review.bench prepare \
 ### 量 baseline 和固定 TileOPs
 
 ```bash
-# 默认选择已验收实现或已记录的当前候选；本例是accepted selection。
+# 默认按请求的library选择本库路线；本例正好有该pair的历史选中实现。
 python -m review.bench measure \
   --source-root review/frozen/torch20261105 \
   --inputs local-runs/topk-input --side baseline \
@@ -138,6 +143,31 @@ python -m review.compare \
 若比值在 **[2.9,3.0]**，必须用**新Python进程、同输入**独立复测baseline；
 传入两份result，按较慢进程的15次均值除以同一合格分母。复制JSON不算独立复测。
 分母受代码、输入、栈或机器变化影响时也要重建；不能一直复用不再可比的旧分母。
+
+### 逐库开发，不能按最快库自动替代
+
+`catalog`默认列出全量4314项，支持`--library`和`--op`筛选。
+`--fastest-subset`才会切到历史665清单。运行时在`prepare --library`指定目标库，
+后续角色读取同一pair合同，`review.compare`也核对library。
+默认`review.factories:pair`只使用该精确库/pair已有的选中路线，其他库走自己的原provider；
+不会把torch-eager的快结果套成ops-math或vLLM的优化。跨库替代实验可另列actual provider，
+但不能据此宣称原库已改快。
+
+对于非torch库，请使用分支里较完整的原provider合同根目录：
+
+```bash
+CANONICAL=reports/baseline-over3-campaign-20261110/ordered100-20261112/canonical-source/TileOPs
+python -m review.bench prepare --source-root "$CANONICAL" \
+  --library ops-math --op ClampScalarFwdOp --case 16M-bfloat16 \
+  --output local-runs/math-clamp-input
+python -m review.bench measure --source-root "$CANONICAL" --contract-root "$CANONICAL" \
+  --inputs local-runs/math-clamp-input --side baseline \
+  --output local-runs/math-clamp-baseline
+# 对手仍是固定public TileOPs，使用相同inputs和相同--contract-root。
+```
+
+先安装/构建该库的原完整API并配置其本机入口；部署不齐或ABI不兼容应明确报错。
+全量7735/4314条快照用于选题和定位，不能替代本机实际构建、完整检查和采样。
 
 ## 4. 怎么修改 baseline
 
@@ -224,7 +254,7 @@ TileOPs新旧manifest/API曾有`k/top_k`、`p/top_p`、GDN元数据等变化。
 runner只容许代码中列出的纯元数据桥接；参数不匹配直接失败。
 public Op使用public binder，但reference/verification恢复冻结源码并检查函数身份。
 若类名、构造状态、私有参数、输入别名或API语义不兼容，需要逐family显式适配，
-不要用新默认checker绕过报错。通用runner不是对665项所有ABI的盲目自动迁移承诺。
+不要用新默认checker绕过报错。通用runner不是对4314项所有ABI的盲目自动迁移承诺。
 
 历史42项golden修正和6项复数输入保护修复见旧handoff及逐case授权/证书。
 尤其golden修正绑定当时case和输入身份，**不能自动泛化到你重新生成的任意输入**。
@@ -266,4 +296,4 @@ B32候选325.76us已完成原检查/15raw，但暂停时分母中断，**没有�
 本分支保留原选中实现和冻结timer/parser源码身份，并对catalog、源码、入口和比较器
 进行CPU检查。新的路径可配置runner没有在此次交接中启动NPU实验；
 应先在你的环境完成上述单case烟雾验证，再扩大到需要的family。
-原178项历史验收与新runner在你机器上的资格分别记录。
+全量4314项工作、历史665优先子集的178项验收，以及新runner在你机器上的资格分别记录。

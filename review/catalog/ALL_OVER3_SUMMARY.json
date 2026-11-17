@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-11-16T09:50:34.749218+00:00",
+  "snapshot": {
+    "checked_at": "2026-11-16T09:32:43.686207+00:00",
+    "url": "https://yyttt6.github.io/TileOPs.github.io/benchmarks/baseline-cache.json",
+    "sha256": "a150cad5740d0b6153293ddb3ed8741286b02176c36aa2f122a97278b8620a2c",
+    "last_modified": "Mon, 16 Nov 2026 07:33:50 GMT",
+    "rows": 7735
+  },
+  "pair_definition": "(displayed library,op,case); each current nonretired baseline row with actual numeric baseline_us/tileops_us>3.0",
+  "threshold": "strict >3.0, not rounded page label",
+  "over3_pairs": 4314,
+  "distinct_cases": 1692,
+  "fastest_baseline_cases_over3": 665,
+  "pairs_with_another_library_within3": 2762,
+  "pairs_on_cases_where_fastest_still_over3": 1552,
+  "primary_classes": {
+    "旧v2只有汇总，缺逐任务证据": 1571,
+    "矩阵乘/卷积/Attention主计算占优": 138,
+    "借用较重完整API适配目标运算": 85,
+    "多步设备组合，未形成单一主导任务": 835,
+    "归约/归一化/排序等主计算占优": 160,
+    "类型转换/布局/索引搬运主导": 398,
+    "大量分块/循环设备任务": 326,
+    "单一或少量内核耗时，内部瓶颈待定位": 248,
+    "完整API适配有额外计算/打包": 41,
+    "AICPU任务主导": 341,
+    "任务数巨大，只有汇总计数支持": 171
+  },
+  "evidence_levels": {
+    "15aggregate_samples_only_no_task_trace": 1571,
+    "all15_task_decomposition": 2336,
+    "qualified_source_build_and_adapter_reuse_review": 41,
+    "one_representative_raw_window_plus15_accepted_samples": 195,
+    "accepted15_sample_mean_and_kernel_count_only": 171
+  },
+  "by_family": {
+    "elementwise": 853,
+    "linear_attention": 1336,
+    "attention": 72,
+    "gemm": 557,
+    "mamba": 49,
+    "sampling": 43,
+    "quantization": 149,
+    "norm": 285,
+    "reduction": 329,
+    "pool": 130,
+    "convolution": 358,
+    "moe": 97,
+    "rope": 43,
+    "sequence_modeling": 11,
+    "transform": 2
+  },
+  "legacy_original_measurements_found": 1212,
+  "legacy_original_measurements_not_found_at_both_known_hosts": 359,
+  "legacy_original_files_with_any_profile_reference": 0,
+  "new_NPU_runs": 0,
+  "npu_or_compiler_or_checker_changes": false,
+  "performance_ceiling_proved_count": 0,
+  "limitations": [
+    "These are measured dominant components or evidenced structural explanations, not proof that a3x target is achievable or impossible.",
+    "One-window observations are labelled separately from all15-window decompositions. Large-count-only observations do not claim task-level shares.",
+    "V2 aggregate-only records lack physical bottleneck evidence. Single-kernel observations do not identify internal bandwidth/compute/scheduling limits.",
+    "Different baseline/TileOPs protocols and runtime histories remain explicit; no host-duration reinterpretation or driver causal claim.",
+    "Library alternatives and historical candidate improvements are separate axes, not automatically counted as publication errors."
+  ],
+  "not_fully_localized_physical_bottleneck_pairs": 1819
+}

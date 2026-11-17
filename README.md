@@ -5,7 +5,7 @@
 For baseline tuning on your own machine, start with
 [the performance handoff](docs/handoffs/BASELINE_PERF_REVIEW_20261117.zh.md)
 and [`review/`](review/). They provide an editable baseline dispatch, frozen
-665-case worklist, 178 historical accepted selections, configurable local input/
+4314 library/op/case worklist and the full7735-row baseline snapshot;178 historical priority-subset selections, configurable local input/
 correctness/device-measurement tools, and explicit comparison/qualification rules.
 The new local runner still needs validation in your device environment.
 The material below describes the older source export; its historical controllers
