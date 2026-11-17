@@ -1,0 +1,136 @@
+{
+  "head": "0076593499b4d5f2b8c6b003f660c40e00a9eefb",
+  "source_tree": "5aa82bd0d6770a9e2fbe393540fcbc8e6431bbed",
+  "hardware": {
+    "device": "Ascend950DT_9582",
+    "cube": 32,
+    "vector": 64,
+    "clock": "platform-default",
+    "torch": "2.13.0+cpu",
+    "torch_npu": "2.13.0.rc1",
+    "adapter_sha256": "9076fd89b0c562870d32dfa36b1b5cc3a0d6d44d3b9b7f4d2011c4f351abaa15"
+  },
+  "source_hash_matches": 1076,
+  "guard_exit": 0,
+  "performance_valid": true,
+  "correctness": 15,
+  "public": {
+    "tests": 156,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "raw_windows_replayed": 450,
+  "native_performance_passed": 6,
+  "native_performance_failed": 9,
+  "minimum_ratio": 0.523509250372291,
+  "decision": "hold performance; current head numerical/public passed, 9/15 below fastest admitted same-process native comparator threshold 0.8",
+  "official_baseline_modified": false,
+  "rows": [
+    {
+      "case": "single-tile-float16",
+      "tileops_us": 2.9715333333333334,
+      "native_us": 3.291866666666667,
+      "ratio": 1.1078006865142576,
+      "passed": true
+    },
+    {
+      "case": "multi-tile-float16",
+      "tileops_us": 3.6834,
+      "native_us": 6.057266666666667,
+      "ratio": 1.644477023040307,
+      "passed": true
+    },
+    {
+      "case": "decode-l2-resident-float16",
+      "tileops_us": 47.4524,
+      "native_us": 29.2394,
+      "ratio": 0.616183796815335,
+      "passed": false
+    },
+    {
+      "case": "decode-hbm-streaming-float16",
+      "tileops_us": 89.17559999999999,
+      "native_us": 51.22673333333333,
+      "ratio": 0.5744478684004742,
+      "passed": false
+    },
+    {
+      "case": "decode-non-pow2-float16",
+      "tileops_us": 97.93013333333333,
+      "native_us": 61.702933333333334,
+      "ratio": 0.6300709621553325,
+      "passed": false
+    },
+    {
+      "case": "decode-long-k-float16",
+      "tileops_us": 435.23293333333334,
+      "native_us": 227.84846666666667,
+      "ratio": 0.523509250372291,
+      "passed": false
+    },
+    {
+      "case": "decode-b2-float16",
+      "tileops_us": 46.9326,
+      "native_us": 29.629733333333334,
+      "ratio": 0.6313252053654248,
+      "passed": false
+    },
+    {
+      "case": "decode-b8-float16",
+      "tileops_us": 47.23273333333333,
+      "native_us": 30.46173333333333,
+      "ratio": 0.6449284465151992,
+      "passed": false
+    },
+    {
+      "case": "decode-b32-float16",
+      "tileops_us": 47.95706666666666,
+      "native_us": 37.20413333333333,
+      "ratio": 0.7757800032251069,
+      "passed": false
+    },
+    {
+      "case": "chunked-prefill-tile-float16",
+      "tileops_us": 50.44826666666666,
+      "native_us": 49.81993333333333,
+      "ratio": 0.9875449965905667,
+      "passed": true
+    },
+    {
+      "case": "prefill-mlp-up-float16",
+      "tileops_us": 174.5768,
+      "native_us": 168.7300666666667,
+      "ratio": 0.9665091046843949,
+      "passed": true
+    },
+    {
+      "case": "llama-8b-decode-down-float16",
+      "tileops_us": 35.1608,
+      "native_us": 26.343533333333337,
+      "ratio": 0.7492302033324991,
+      "passed": false
+    },
+    {
+      "case": "llama-8b-prefill-down-float16",
+      "tileops_us": 57.3886,
+      "native_us": 50.2804,
+      "ratio": 0.8761391635272512,
+      "passed": true
+    },
+    {
+      "case": "qwen3-32b-prefill-down-float16",
+      "tileops_us": 112.23293333333334,
+      "native_us": 218.79706666666664,
+      "ratio": 1.9494907614758352,
+      "passed": true
+    },
+    {
+      "case": "decode-tp8-attn-out-float16",
+      "tileops_us": 13.9074,
+      "native_us": 10.0816,
+      "ratio": 0.7249090412298488,
+      "passed": false
+    }
+  ]
+}
