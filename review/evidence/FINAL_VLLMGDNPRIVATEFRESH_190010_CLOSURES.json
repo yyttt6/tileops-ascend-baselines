@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-11-17T02:12:51.118576+00:00",
+  "scope": [
+    190010
+  ],
+  "verified_within3": 0,
+  "rows": [
+    {
+      "ordinal": 190010,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "q35-gva-decode-b4-float16"
+      ],
+      "candidate_entry": "vllm_gdn_dense_private_state_v6.py:specialize",
+      "actual_provider": "vllm-ascend original Torch210 full native GDN API with fresh private FP32 inplace state with positive indices and contract-permitted output-state view, B1T1",
+      "code_sha256": "9a09617e58390ca4a0909930cc30ebf5eb1aabebf440d43420bb741c734a576d",
+      "candidate_us": 65.66353333333335,
+      "tileops_us": 18.718400000000003,
+      "ratio": 3.5079672051742317,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/vllm-gdn-private-state-v2-20261117T020930Z-3547561c/190010/candidate-result.json"
+      ],
+      "denominator_result": "remote/runs/vllm-gdn-denominator-v4-20261117T021119Z-035336b3/190010/result.json",
+      "generated_identity": "remote/runs/vllm-gdn-denominator-v4-20261117T021119Z-035336b3/190010/TILEOPS_GENERATED_IDENTITY.json",
+      "payload_sha256": "8b9b0f1787b4ca2e019833b6df831d19057035a1df347617b9eaf13a936b9f96",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "metric": "full15_device_mean",
+      "original_vendor_and_CI_profiles_separately_verified": true,
+      "status": "continue_optimization",
+      "publication_status": "staged; no website/CI/nightly adoption"
+    }
+  ]
+}

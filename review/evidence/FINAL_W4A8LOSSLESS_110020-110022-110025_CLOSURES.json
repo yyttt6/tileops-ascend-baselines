@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-11-16T20:20:00.111334+00:00",
+  "verified_within3": 3,
+  "scope": [
+    110020,
+    110022,
+    110025
+  ],
+  "rows": [
+    {
+      "ordinal": 110020,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b48"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-lossless-antiquant-FP32-values-original-FP8-rounding",
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "code_sha256": "3361e14a8947de8b52230484536b8724fb6642cea0bf05ef830ca89e113ace05",
+      "candidate_us": 866.8562,
+      "tileops_us": 298.4030666666667,
+      "ratio": 2.904984220448136,
+      "verified_within3": true,
+      "candidate_processes": 2,
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195853Z-370fa5d0/110020/result.json",
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T201800Z-3f2d147f/110020/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110020/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110020/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/110020.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "0d64ba549b35968ceb349f1ba35dca1bb1c284c3734486225c59c031ae9ede53",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 110022,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b33"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-lossless-antiquant-FP32-values-original-FP8-rounding",
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "code_sha256": "3361e14a8947de8b52230484536b8724fb6642cea0bf05ef830ca89e113ace05",
+      "candidate_us": 866.2436,
+      "tileops_us": 295.1008666666666,
+      "ratio": 2.9354153031968964,
+      "verified_within3": true,
+      "candidate_processes": 2,
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195853Z-370fa5d0/110022/result.json",
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T201800Z-3f2d147f/110022/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110022/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110022/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/110022.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "c7801d033f125c868ef7ee4d5f6623f86a8108ebde2dcbc38577bf496281ccaa",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 110025,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b32"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-lossless-antiquant-FP32-values-original-FP8-rounding",
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "code_sha256": "3361e14a8947de8b52230484536b8724fb6642cea0bf05ef830ca89e113ace05",
+      "candidate_us": 866.0074666666667,
+      "tileops_us": 293.57413333333335,
+      "ratio": 2.949876601299115,
+      "verified_within3": true,
+      "candidate_processes": 2,
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195853Z-370fa5d0/110025/result.json",
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T201800Z-3f2d147f/110025/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110025/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110025/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/110025.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "aabc55bf55f5d1b316d7e5f379aca19b43cf6bb6b53c058d1c8cadf23c5bff2b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

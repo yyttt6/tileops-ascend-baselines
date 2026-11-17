@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-16T23:04:40.963381+00:00",
+  "verified_within3": 1,
+  "scope": [
+    180009
+  ],
+  "rows": [
+    {
+      "ordinal": 180009,
+      "key": [
+        "torch-eager",
+        "MergeAttentionStatesFwdOp",
+        "qwen3-dcp-ragged-log2-float16"
+      ],
+      "actual_provider": "torch-eager-native-attention-update-original-storage-finite",
+      "candidate_entry": "merge_attention_direct_log2.py:factory",
+      "code_sha256": "cb7acb1e62306b0775a762b547da27cd6badf2bea5fbf3a396b15087f10016c5",
+      "candidate_us": 56.26233333333334,
+      "tileops_us": 19.5394,
+      "ratio": 2.8794299381420787,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/merge-attention-direct-log2-v7-20261116T230309Z-3796c9bd/180009/result.json"
+      ],
+      "denominator_result": "remote/runs/merge-attention-denominator62c5-v3-20261116T221958Z-ccf77271/180009/result.json",
+      "generated_identity": "remote/runs/merge-attention-denominator62c5-v3-20261116T221958Z-ccf77271/180009/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/180009.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.001953125,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "036eb5c2bb87f58563f312409c3046c3738d062f62726dac32b0db5ad26323f1",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

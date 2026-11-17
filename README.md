@@ -1,5 +1,16 @@
 # TileOPs Ascend Baselines
 
+## Performance development branch (2026-11-17)
+
+For baseline tuning on your own machine, start with
+[the performance handoff](docs/handoffs/BASELINE_PERF_REVIEW_20261117.zh.md)
+and [`review/`](review/). They provide an editable baseline dispatch, frozen
+665-case worklist, 178 historical accepted selections, configurable local input/
+correctness/device-measurement tools, and explicit comparison/qualification rules.
+The new local runner still needs validation in your device environment.
+The material below describes the older source export; its historical controllers
+are not the development entry point for this branch.
+
 Ascend baseline adapters, benchmark support code, pinned upstream dependencies,
 and compact result catalogs collected for TileOPs, including the fixed NV
 TileOPs v0.1.0 retest campaigns. This repository is a source and result snapshot,

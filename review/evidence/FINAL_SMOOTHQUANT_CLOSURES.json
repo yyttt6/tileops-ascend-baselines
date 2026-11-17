@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-11-16T16:35:08.388584+00:00",
+  "verified_within3": 1,
+  "scope": [
+    1507,
+    1508,
+    1509
+  ],
+  "rows": [
+    {
+      "ordinal": 1507,
+      "key": [
+        "torch-eager",
+        "SmoothQuantFwdOp",
+        "ragged-k-decode-bfloat16"
+      ],
+      "actual_provider": "torch-npu-explicit-scale-quantize",
+      "candidate_entry": "int8_general_norminf.py:factory",
+      "code_sha256": "d5dbd1bdabe2d808829e16ea9ed9e222ffed51e054034b6219de1555e0f5606d",
+      "candidate_us": 33.0488,
+      "tileops_us": 5.0356000000000005,
+      "ratio": 6.563031217729764,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-general-norminf-20261116T162404Z/1507/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-quant-denominator62c5-blob-20261116T162948Z/1507/result.json",
+      "generated_identity": "remote/runs/int8-quant-denominator62c5-blob-20261116T162948Z/1507/TILEOPS_GENERATED_IDENTITY.json",
+      "generated_identity_complete": true,
+      "input_manifest": "input-manifests/1507.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "4989717faef4edb295bd4cb7318614e33d577c632f29d02677ac1592ccb8c398",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "continue_optimization"
+    },
+    {
+      "ordinal": 1508,
+      "key": [
+        "torch-eager",
+        "SmoothQuantFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "actual_provider": "torch-npu-explicit-scale-quantize",
+      "candidate_entry": "int8_general_norminf.py:factory",
+      "code_sha256": "d5dbd1bdabe2d808829e16ea9ed9e222ffed51e054034b6219de1555e0f5606d",
+      "candidate_us": 35.79313333333333,
+      "tileops_us": 8.332866666666668,
+      "ratio": 4.295416543326425,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-general-norminf-20261116T162404Z/1508/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-quant-denominator62c5-blob-20261116T162948Z/1508/result.json",
+      "generated_identity": "remote/runs/int8-quant-denominator62c5-blob-20261116T162948Z/1508/TILEOPS_GENERATED_IDENTITY.json",
+      "generated_identity_complete": true,
+      "input_manifest": "input-manifests/1508.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "f22d2f4ec9f7e92fae2fe845e20ef70f06af1690e4b2d01e65d29c46e0960884",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "continue_optimization"
+    },
+    {
+      "ordinal": 1509,
+      "key": [
+        "torch-eager",
+        "SmoothQuantFwdOp",
+        "llama-70b-prefill-bfloat16"
+      ],
+      "actual_provider": "torch-npu-explicit-scale-quantize",
+      "candidate_entry": "int8_general_norminf.py:factory",
+      "code_sha256": "d5dbd1bdabe2d808829e16ea9ed9e222ffed51e054034b6219de1555e0f5606d",
+      "candidate_us": 541.2117333333333,
+      "tileops_us": 221.90806666666668,
+      "ratio": 2.4389006738826677,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-general-norminf-20261116T162404Z/1509/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-quant-denominator62c5-blob-20261116T162948Z/1509/result.json",
+      "generated_identity": "remote/runs/int8-quant-denominator62c5-blob-20261116T162948Z/1509/TILEOPS_GENERATED_IDENTITY.json",
+      "generated_identity_complete": true,
+      "input_manifest": "input-manifests/1509.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "19139fd097d8481c19ab8a2f996ab104647c236154ddb29a0649e4b736de8d6d",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "checked_at_remote": "2026-11-17T01:39:34.832751+00:00",
+  "CPU_only": true,
+  "no_NPU_import_no_input_generation": true,
+  "torch": "2.10.0+cpu",
+  "torch_path": "/opt/baseline-over3-20261110/ordered100-20261112/reference-runtime-torch210-v1/remote_triton_runtime/overlay/site-packages/torch/__init__.py",
+  "cases": 12,
+  "rows": [
+    {
+      "private_ordinal": 190000,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "decode-b1-float16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190001,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "decode-b8-float16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190002,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "decode-beta-l2norm-bfloat16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190003,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "decode-gate-fused-bfloat16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190004,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "prefill-raw-4k-bfloat16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190005,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "prefill-raw-ragged-bfloat16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190006,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "q35-2b-4096-4096-bfloat16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190007,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "q35-gva-decode-b1-float16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190008,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "q35-gva-decode-b16-float16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190009,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "q35-gva-decode-b32-float16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190010,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "q35-gva-decode-b4-float16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    },
+    {
+      "private_ordinal": 190011,
+      "key": [
+        "vllm-ascend",
+        "GDNFwdOp",
+        "q35-gva-decode-b8-float16"
+      ],
+      "params_exact": true,
+      "state_v_first": false,
+      "output_contiguous_requirements": {
+        "o": false,
+        "final_state": false
+      },
+      "state_output_alias": null
+    }
+  ],
+  "sources": {
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/src/tileops/manifest/signature.py": "ddb5f3f2833ccd161ec24d31917c1606e3ecb454e6d9461702a24e157283997c",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/src/tileops/manifest/spec/linear_attention.yaml": "9b92b90ab5a3198eb75ba104521511ead02628b3e33610d5b8f4c71fa2807f7f",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/linear_attention.py": "5c08af7bb977562fadbb9114224c3290df72fda42077464b100c389209a03fbb",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/vllm/runtime.py": "e128c59ce7ec5b8d5919bd4ebf1e10e1056972477a28f68c94b677392e28493a",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/benchmarks/ascend_all_pairs/jit_evidence.py": "3f07874323dcaf8368fab4bf7831c9440a54bdea55c52965dc32d7424f6dc68b",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/linear_attention/gdn.py": "cf8dba9acf742663b857d80df210d235a826c0b3ac1aa245f66ec19157f48a9c",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/numerics.py": "ef600c156d927cb9a7401debe056ceaaad57dc0450e949d5f7ba27f14f6ac173",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/workloads/workload_base.py": "3524c0f8666dc11115d7e0b037a0b4d01c3a7592f8f0908d68605b8bb66aca59",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/TileOPs/scripts/cache_frozen_pair_check.py": "b59f74e053f76adc32a3b8f2cba760a2f086496c1e6cd9b3f68c76d6b079f4f0",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/tools/baseline_protocol.py": "4e51774023205eb40c76e94678d8b7f1c088b320fb1d5ae47826d4a7c125e9f9",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/chunk_delta_h.py": "4475148caaf529664ab6b3b8d9b11771eb2ab94dd66f7df13c966973035e567f",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/conv_state.py": "923c26197eef620a7c5bf744b5c4c84a5341124af714115d13bf1e27c45acb54",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/cumsum.py": "594b60d4db886809c593fb8adfd661fdea913f3f4ff7e8294ea43232efcc3e79",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/fused_recurrent_kda.py": "6d18c60c4ef58e8972b7cbec785d3c1325a5b130e628ab27ab08c7b37a9c6728",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/gate.py": "d991db4d0edc5764f1e4c76a5416d251bb075cfe9d48a2373ae4e3555a390725",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/kda.py": "9e3f06883280d45f650d04759391fb3fbb4164eab8cd3d560d471018e6ff2686",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/l2norm.py": "dc157bcd4a5ab36ff24d613a3c8caf12cd397ba4024432e64f49cc860379b104",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/output_writeback.py": "b0052b9a0965156bf90ca94a0cc3c78d8d702397a1169cf8f666c554260c5110",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/solve_tril.py": "1920c0d8a5e213efe51e1273279b7e4161aac8a0bec3a778c2616435277daecc",
+    "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/vllm-ascend/vllm_ascend/ops/triton/kda/utils.py": "36cbc006dae9817960de516c52309a5a0c03ba471fe2bf3657988821d3fd99af"
+  },
+  "not_native_loaded_binary_or_NPU_qualification": true,
+  "no_contiguous_output_requirement": true,
+  "interpretation": "state_v_first defines logical axes; original manifest Tensor.contiguous=False does not require a materialized contiguous output. A transpose view of a fresh native FP32 state preserves logical axes, shape/dtype and input non-aliasing. Initial-state layout adaptation remains required.",
+  "does_not_authorize_B_gt1_native_out_of_place": true
+}

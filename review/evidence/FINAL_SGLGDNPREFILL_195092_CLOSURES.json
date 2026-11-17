@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-11-16T23:28:06.628334+00:00",
+  "scope": [
+    195092
+  ],
+  "verified_within3": 0,
+  "rows": [
+    {
+      "ordinal": 195092,
+      "key": [
+        "sgl-kernel-npu",
+        "GDNFwdOp",
+        "q35-397b-tp8-2048-float16"
+      ],
+      "candidate_entry": "sgl_gdn_fp32_gate_wrapper.py:specialize",
+      "actual_provider": "sgl-kernel-npu original Torch210 full native GDN API; original FP32 gate scan storage and zero-initial-state mode",
+      "code_sha256": "006609efd9b39add7f68304b28d2491dba6435f451df8c9303dc82ea7c8c55c5",
+      "candidate_us": 374.39626666666663,
+      "tileops_us": 91.97480000000002,
+      "ratio": 4.070639638973573,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/sgl-gdn-zero-state-comparison-v2-20261116T231715Z-c59eed6b/195092/candidate-result.json"
+      ],
+      "denominator_result": "remote/runs/sgl-gdn-prefill-denominator-v4-20261116T232637Z-e9c8fa4d/195092/result.json",
+      "generated_identity": "remote/runs/sgl-gdn-prefill-denominator-v4-20261116T232637Z-e9c8fa4d/195092/TILEOPS_GENERATED_IDENTITY.json",
+      "payload_sha256": "9d9671eec34b3ef081093520523cfb3be5f5d2512439f922ae386822f4162b63",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "metric": "full15_device_mean",
+      "original_vendor_and_CI_profiles_separately_verified": true,
+      "status": "continue_optimization",
+      "publication_status": "staged; no website/CI/nightly adoption"
+    }
+  ]
+}

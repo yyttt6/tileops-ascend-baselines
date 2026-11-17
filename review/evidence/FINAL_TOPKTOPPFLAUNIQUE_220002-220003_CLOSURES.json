@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-11-17T01:13:25.577853+00:00",
+  "verified_within3": 2,
+  "scope": [
+    220002,
+    220003
+  ],
+  "rows": [
+    {
+      "ordinal": 220002,
+      "key": [
+        "torch-eager",
+        "TopKTopPMaskFwdOp",
+        "llama-8b-b256-bfloat16"
+      ],
+      "actual_provider": "Original-Torch-full-TopK-plus-original-FLA-FP32-TopP-unique-group-writes",
+      "candidate_entry": "top_k_top_p_fla_unique_v1.py:factory",
+      "code_sha256": "6800326da9450ea68dfef5e5e37a589842dfda9419d7942ed907c4996ab5a2ff",
+      "candidate_us": 7542.359933333333,
+      "tileops_us": 2816.986866666667,
+      "ratio": 2.6774565485490487,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topktopp-fla-unique-v1-20261117T010825Z-b475538d/220002/result.json"
+      ],
+      "denominator_result": "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220002/result.json",
+      "generated_identity": "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220002/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/220002.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "b3779752e0944b5f8dadab5e03291d810c3811cea9c7af58e98f8faf421c811f",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 220003,
+      "key": [
+        "torch-eager",
+        "TopKTopPMaskFwdOp",
+        "llama-8b-b256-float16"
+      ],
+      "actual_provider": "Original-Torch-full-TopK-plus-original-FLA-FP32-TopP-unique-group-writes",
+      "candidate_entry": "top_k_top_p_fla_unique_v1.py:factory",
+      "code_sha256": "6800326da9450ea68dfef5e5e37a589842dfda9419d7942ed907c4996ab5a2ff",
+      "candidate_us": 7526.5796,
+      "tileops_us": 3219.4874,
+      "ratio": 2.33781924414427,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topktopp-fla-unique-v1-20261117T010825Z-b475538d/220003/result.json"
+      ],
+      "denominator_result": "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220003/result.json",
+      "generated_identity": "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220003/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/220003.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "52167b76110624c852d4ed521efdf7e779f88d865a7a3f727f2d7cbec1c9eb22",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

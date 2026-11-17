@@ -1,0 +1,200 @@
+{
+  "checked_at": "2026-11-16T18:32:13.398852+00:00",
+  "verified_within3": 6,
+  "scope": [
+    130012,
+    130013,
+    130014,
+    130015,
+    130016,
+    130017
+  ],
+  "rows": [
+    {
+      "ordinal": 130012,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "qwen2.5-72b-down-b64-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 118.91286666666667,
+      "tileops_us": 149.22126666666665,
+      "ratio": 0.7968895407669775,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T182146Z/130012/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130012/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130012/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130012.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "7a58b2943725f69d3673f39f479e48867bcf0f8be2443e87cc577c76f6c56023",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130013,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "llama3-8b-gate-up-b64-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 64.42433333333334,
+      "tileops_us": 53.953599999999994,
+      "ratio": 1.1940692249142475,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T182146Z/130013/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130013/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130013/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130013.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "e6e9641e0885582a050456833d9e3dcf14de4f8008b2cfeb8912f3e9cd278c0b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130014,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "llama3-70b-down-b1-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 81.34513333333334,
+      "tileops_us": 79.11946666666667,
+      "ratio": 1.0281304558844346,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T182146Z/130014/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130014/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130014/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130014.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "c7bfe18f11c6cfd7bff3ec89fc3507b7eb34af6234c502af1db1b3b22b5457da",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130015,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "llama3-70b-qkv-b64-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 55.3836,
+      "tileops_us": 49.44026666666667,
+      "ratio": 1.1202124044638377,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T182146Z/130015/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130015/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130015/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130015.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "ffe778314010ea3772341d6f34e7364f0800ea8b12f42a7520c5b0cdd3fe165b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130016,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "qwen2.5-7b-qkv-b64-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 37.70406666666667,
+      "tileops_us": 18.566533333333332,
+      "ratio": 2.030754260353755,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T182146Z/130016/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130016/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130016/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130016.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "c3d14e6fcc2e8837029abef4e586079eece5057d3483c9d6361ab3f4590e3141",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130017,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "qwen2.5-7b-down-b1-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 31.913933333333333,
+      "tileops_us": 46.163066666666666,
+      "ratio": 0.6913304430959237,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T182146Z/130017/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130017/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-v2-20261116T182714Z-904d281c/130017/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130017.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "4e7d31bcad6b7874f3cd943f8ce38b1007c70fbd8302ac5020a98cf90b2cbff3",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

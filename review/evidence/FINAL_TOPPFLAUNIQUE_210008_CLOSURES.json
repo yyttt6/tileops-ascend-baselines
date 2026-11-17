@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-17T00:57:35.015355+00:00",
+  "verified_within3": 1,
+  "scope": [
+    210008
+  ],
+  "rows": [
+    {
+      "ordinal": 210008,
+      "key": [
+        "torch-eager",
+        "TopPMaskFwdOp",
+        "llama-8b-b256-float16"
+      ],
+      "actual_provider": "Torch-full-TopP-plus-original-FLA-FP32-CDF-unique-group-writes",
+      "candidate_entry": "top_p_fla_unique_scatter_v1.py:factory",
+      "code_sha256": "1cc1bc4a33f13ccd9abc668d25d9398a26dc9cb8616353387b0def03d03ab618",
+      "candidate_us": 5696.309666666667,
+      "tileops_us": 2208.6966,
+      "ratio": 2.5790367344553644,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topp-fla-unique-v1-20261117T005401Z-303470e2/210008/result.json"
+      ],
+      "denominator_result": "remote/runs/topp-denominator-v1-20261117T005533Z-fb51a0dc/210008/result.json",
+      "generated_identity": "remote/runs/topp-denominator-v1-20261117T005533Z-fb51a0dc/210008/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/210008.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "1aa8e19e35b6363c9b65f09141160e574d11abcac400131896d22f27867894c6",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

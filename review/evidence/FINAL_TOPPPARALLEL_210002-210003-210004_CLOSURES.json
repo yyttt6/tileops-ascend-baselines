@@ -1,0 +1,104 @@
+{
+  "checked_at": "2026-11-17T00:07:24.402739+00:00",
+  "verified_within3": 1,
+  "scope": [
+    210002,
+    210003,
+    210004
+  ],
+  "rows": [
+    {
+      "ordinal": 210002,
+      "key": [
+        "torch-eager",
+        "TopPMaskFwdOp",
+        "deepseek-v3-b17-bfloat16"
+      ],
+      "actual_provider": "torch-eager-original-FP32-TopP-int32-parallel-group-prefix",
+      "candidate_entry": "top_p_parallel_groups_v1.py:top_p_mask",
+      "code_sha256": "5b3af289d8526624e5bb0077df1c6f18d03d247e6162f43c2e3e1ae7c6d5a4a9",
+      "candidate_us": 1162.3818,
+      "tileops_us": 506.7442666666666,
+      "ratio": 2.293823288117452,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topp-parallel-v1-20261117T000133Z-8e4a395a/210002/result.json"
+      ],
+      "denominator_result": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210002/result.json",
+      "generated_identity": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210002/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/210002.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "ad7d46ba1b1d00ce3f42a68ce7c1bab6dd8acf133174688c7defe9df7de73793",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 210003,
+      "key": [
+        "torch-eager",
+        "TopPMaskFwdOp",
+        "llama2-7b-b100-float16"
+      ],
+      "actual_provider": "torch-eager-original-FP32-TopP-int32-parallel-group-prefix",
+      "candidate_entry": "top_p_parallel_groups_v1.py:top_p_mask",
+      "code_sha256": "5b3af289d8526624e5bb0077df1c6f18d03d247e6162f43c2e3e1ae7c6d5a4a9",
+      "candidate_us": 1977.9087333333334,
+      "tileops_us": 286.4424,
+      "ratio": 6.905083651489211,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topp-parallel-v1-20261117T000133Z-8e4a395a/210003/result.json"
+      ],
+      "denominator_result": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210003/result.json",
+      "generated_identity": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210003/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/210003.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "b88f02768de3635002ae90260809a518db96ac410a6c0f2ee1802a5151a4743f",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "continue_optimization"
+    },
+    {
+      "ordinal": 210004,
+      "key": [
+        "torch-eager",
+        "TopPMaskFwdOp",
+        "llama-8b-b64-bfloat16"
+      ],
+      "actual_provider": "torch-eager-original-FP32-TopP-int32-parallel-group-prefix",
+      "candidate_entry": "top_p_parallel_groups_v1.py:top_p_mask",
+      "code_sha256": "5b3af289d8526624e5bb0077df1c6f18d03d247e6162f43c2e3e1ae7c6d5a4a9",
+      "candidate_us": 6466.543666666667,
+      "tileops_us": 506.0092666666667,
+      "ratio": 12.779496528324449,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topp-parallel-v1-20261117T000133Z-8e4a395a/210004/result.json"
+      ],
+      "denominator_result": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210004/result.json",
+      "generated_identity": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210004/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/210004.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "c07e9503a9fd9be575dd00855781252a958cbcc16081a7526877880422ed7f7c",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "continue_optimization"
+    }
+  ]
+}

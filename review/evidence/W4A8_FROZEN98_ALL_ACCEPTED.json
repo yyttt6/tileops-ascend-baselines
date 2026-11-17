@@ -1,0 +1,1596 @@
+{
+  "checked_at": "2026-11-16T21:44:47.268214+00:00",
+  "frozen_family": "GemmW4A8FwdOp",
+  "scope": 98,
+  "verified_within3": 98,
+  "highest_retained_ratio": 2.9886229119470964,
+  "range29to3_independent_repeat_rule_verified": true,
+  "candidate_routes": {
+    "w4a8_native_fp8_fp32.py:factory": 6,
+    "w4a8_native_lossless_antiquant.py:factory": 69,
+    "w4a8_native_pair_lut.py:factory": 15,
+    "w4a8_native_pair_unsigned.py:factory": 8
+  },
+  "full_audit_source": "AUDITED_MEASUREMENTS.json",
+  "full_audit_sha256": "d1662630e14289e7416772a53a31ca61b4e18262c9602d02dbeee46769a8ae9a",
+  "full_audit_measurements": 384,
+  "rows": [
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-4k"
+      ],
+      "ratio": 2.515977665361275,
+      "candidate_entry": "w4a8_native_fp8_fp32.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-native-fp32-20261116T162833Z/100000/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator62c5-v4-20261116T164119Z/100000/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-4k"
+      ],
+      "ratio": 2.4852605325640753,
+      "candidate_entry": "w4a8_native_fp8_fp32.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8BATCH_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-native-fp32-batch-v2-20261116T165504Z/100001/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator62c5-v4-batch-v3-20261116T170723Z/100001/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b64"
+      ],
+      "ratio": 1.8226770223460613,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120018-120019-120020-120021-120022-120023_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T210910Z-187aa00a/120019/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T211220Z-70b297fc/120019/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b1024"
+      ],
+      "ratio": 2.175115552576315,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8PAIR_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-lut-native-fp32-v2-20261116T172042Z/100006/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator62c5-v4-batch-v3-20261116T170723Z/100006/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-4k"
+      ],
+      "ratio": 2.4417043519003663,
+      "candidate_entry": "w4a8_native_fp8_fp32.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8BATCH_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-native-fp32-batch-v2-20261116T165504Z/100002/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator62c5-v4-batch-v3-20261116T170723Z/100002/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b32"
+      ],
+      "ratio": 1.7641102248485487,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120018-120019-120020-120021-120022-120023_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T210910Z-187aa00a/120022/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T211220Z-70b297fc/120022/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b16"
+      ],
+      "ratio": 1.7642502872194354,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120024-120025-120026-120027-120028-120029_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T211720Z-8fafedb9/120024/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212033Z-d8afa93b/120024/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-4k"
+      ],
+      "ratio": 2.367708838915778,
+      "candidate_entry": "w4a8_native_fp8_fp32.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8BATCH_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-native-fp32-batch-v2-20261116T165504Z/100003/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator62c5-v4-batch-v3-20261116T170723Z/100003/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b97"
+      ],
+      "ratio": 1.6968522622012887,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120018-120019-120020-120021-120022-120023_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T210910Z-187aa00a/120018/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T211220Z-70b297fc/120018/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b96"
+      ],
+      "ratio": 1.7546584745030762,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120018-120019-120020-120021-120022-120023_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T210910Z-187aa00a/120020/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T211220Z-70b297fc/120020/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b8"
+      ],
+      "ratio": 1.741258793481995,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120024-120025-120026-120027-120028-120029_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T211720Z-8fafedb9/120026/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212033Z-d8afa93b/120026/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b65"
+      ],
+      "ratio": 1.7209413537507765,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120018-120019-120020-120021-120022-120023_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T210910Z-187aa00a/120021/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T211220Z-70b297fc/120021/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b128"
+      ],
+      "ratio": 1.7343362803562006,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120008-120009-120011-120014-120016-120017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T205722Z-26474566/120017/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T210352Z-c70e53ce/120017/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b48"
+      ],
+      "ratio": 1.7827214555213282,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120018-120019-120020-120021-120022-120023_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T210910Z-187aa00a/120023/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T211220Z-70b297fc/120023/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b513"
+      ],
+      "ratio": 2.4180058183167725,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EXPANSION_110000-110001-110002-110003-110004-110005_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-expansion-20261116T172742Z/110002/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-20261116T173115Z/110002/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b33"
+      ],
+      "ratio": 1.760955055667176,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120024-120025-120026-120027-120028-120029_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T211720Z-8fafedb9/120025/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212033Z-d8afa93b/120025/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b64"
+      ],
+      "ratio": 1.8015169255686876,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120000-120001-120002-120003-120004-120007_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T204851Z-5283febf/120003/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T205200Z-b19ed6d5/120003/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b160"
+      ],
+      "ratio": 2.08861360833793,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EARLIER42_120005-120006-120010-120012-120013-120015_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-earlier42-20261116T174204Z/120013/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-20261116T174754Z/120013/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b576"
+      ],
+      "ratio": 2.567986929357038,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EXPANSION_110000-110001-110002-110003-110004-110005_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-expansion-20261116T172742Z/110003/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-20261116T173115Z/110003/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b193"
+      ],
+      "ratio": 2.0423348656821663,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EARLIER42_120005-120006-120010-120012-120013-120015_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-earlier42-20261116T174204Z/120005/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-20261116T174754Z/120005/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b577"
+      ],
+      "ratio": 2.534166218802501,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EXPANSION_110000-110001-110002-110003-110004-110005_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-expansion-20261116T172742Z/110004/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-20261116T173115Z/110004/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b192"
+      ],
+      "ratio": 2.121949329165956,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EARLIER42_120005-120006-120010-120012-120013-120015_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-earlier42-20261116T174204Z/120010/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-20261116T174754Z/120010/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b256"
+      ],
+      "ratio": 2.071651016378393,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EARLIER42_120005-120006-120010-120012-120013-120015_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-earlier42-20261116T174204Z/120006/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-20261116T174754Z/120006/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b512"
+      ],
+      "ratio": 2.832958801830793,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EXPANSION_110006-110007-110008-110009-110010-110011_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-expansion-v2-20261116T185948Z-a45a2325/110007/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T190315Z-c4579032/110007/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b513"
+      ],
+      "ratio": 2.6313968211062564,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EXPANSION_110000-110001-110002-110003-110004-110005_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-expansion-20261116T172742Z/110000/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-20261116T173115Z/110000/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b96"
+      ],
+      "ratio": 1.7582769621474,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120000-120001-120002-120003-120004-120007_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T204851Z-5283febf/120004/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T205200Z-b19ed6d5/120004/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b1"
+      ],
+      "ratio": 1.605825261015416,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120024-120025-120026-120027-120028-120029_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T211720Z-8fafedb9/120028/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212033Z-d8afa93b/120028/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b385"
+      ],
+      "ratio": 2.963150661419005,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 2,
+      "closure": "FINAL_W4A8EXPANSION_110009_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-expansion-v2-20261116T185948Z-a45a2325/110009/result.json",
+        "remote/runs/w4a8-pair-expansion-v2-20261116T190906Z-8b3a2544/110009/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T190315Z-c4579032/110009/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b161"
+      ],
+      "ratio": 2.029436589116192,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EARLIER42_120005-120006-120010-120012-120013-120015_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-earlier42-20261116T174204Z/120012/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-20261116T174754Z/120012/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b256"
+      ],
+      "ratio": 1.609091997724755,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120000-120001-120002-120003-120004-120007_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T204851Z-5283febf/120000/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T205200Z-b19ed6d5/120000/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-b129"
+      ],
+      "ratio": 2.069502951064189,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EARLIER42_120005-120006-120010-120012-120013-120015_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-earlier42-20261116T174204Z/120015/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-20261116T174754Z/120015/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b32"
+      ],
+      "ratio": 1.7911796192064944,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120008-120009-120011-120014-120016-120017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T205722Z-26474566/120008/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T210352Z-c70e53ce/120008/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b48"
+      ],
+      "ratio": 1.774048343837746,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120000-120001-120002-120003-120004-120007_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T204851Z-5283febf/120007/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T205200Z-b19ed6d5/120007/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b192"
+      ],
+      "ratio": 1.581571610586783,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120000-120001-120002-120003-120004-120007_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T204851Z-5283febf/120001/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T205200Z-b19ed6d5/120001/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b33"
+      ],
+      "ratio": 1.763535871470024,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120008-120009-120011-120014-120016-120017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T205722Z-26474566/120009/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T210352Z-c70e53ce/120009/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b129"
+      ],
+      "ratio": 1.555909148089197,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120000-120001-120002-120003-120004-120007_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T204851Z-5283febf/120002/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T205200Z-b19ed6d5/120002/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b513"
+      ],
+      "ratio": 2.530710448714446,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EXPANSION_110006-110007-110008-110009-110010-110011_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-expansion-v2-20261116T185948Z-a45a2325/110006/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T190315Z-c4579032/110006/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b16"
+      ],
+      "ratio": 1.76511192989074,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120008-120009-120011-120014-120016-120017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T205722Z-26474566/120011/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T210352Z-c70e53ce/120011/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b257"
+      ],
+      "ratio": 2.8059099981356472,
+      "candidate_entry": "w4a8_native_pair_lut.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8EXPANSION_110006-110007-110008-110009-110010-110011_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-expansion-v2-20261116T185948Z-a45a2325/110011/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T190315Z-c4579032/110011/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b8"
+      ],
+      "ratio": 1.749437233136354,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120008-120009-120011-120014-120016-120017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T205722Z-26474566/120014/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T210352Z-c70e53ce/120014/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b384"
+      ],
+      "ratio": 2.75306958142952,
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8UNSIGNED_110001-110008-110015_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T193327Z-55e63964/110015/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T191331Z-bf273c46/110015/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b257"
+      ],
+      "ratio": 2.9248036247009614,
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "candidate_processes": 2,
+      "closure": "FINAL_W4A8UNSIGNED_110001_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T193327Z-55e63964/110001/result.json",
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T194221Z-4f788051/110001/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-20261116T173115Z/110001/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-tp8-b1"
+      ],
+      "ratio": 1.6578663497087482,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120008-120009-120011-120014-120016-120017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T205722Z-26474566/120016/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T210352Z-c70e53ce/120016/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-tp8-4k"
+      ],
+      "ratio": 1.5983638486547422,
+      "candidate_entry": "w4a8_native_fp8_fp32.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8BATCH_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-native-fp32-batch-v2-20261116T165504Z/100004/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator62c5-v4-batch-v3-20261116T170723Z/100004/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-b64"
+      ],
+      "ratio": 2.668749569868308,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110005-110008-110034_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195419Z-dc9ca2bd/110008/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T190315Z-c4579032/110008/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b257"
+      ],
+      "ratio": 2.7829980495092648,
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8UNSIGNED_110018-110021-110023_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T193327Z-55e63964/110018/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T193925Z-3815b4f5/110018/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b64"
+      ],
+      "ratio": 2.454974778579683,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110019-110020-110022-110025-110026-110027_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T201134Z-29ee882f/110026/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110026/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-tp8-4k"
+      ],
+      "ratio": 1.9658411581759145,
+      "candidate_entry": "w4a8_native_fp8_fp32.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8BATCH_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-native-fp32-batch-v2-20261116T165504Z/100005/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator62c5-v4-batch-v3-20261116T170723Z/100005/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b65"
+      ],
+      "ratio": 2.416136095945234,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110019-110020-110022-110025-110026-110027_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T201134Z-29ee882f/110027/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110027/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b193"
+      ],
+      "ratio": 2.190012583966108,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110005-110008-110034_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195419Z-dc9ca2bd/110005/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-20261116T173115Z/110005/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b193"
+      ],
+      "ratio": 2.817152277183296,
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8UNSIGNED_110024-110028-110031-110034-110035_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T194221Z-4f788051/110024/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T194732Z-63d8255c/110024/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-b48"
+      ],
+      "ratio": 2.6979618868604636,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110010-110012-110013-110014-110016-110017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T200625Z-06bf19ce/110012/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T191331Z-bf273c46/110012/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b48"
+      ],
+      "ratio": 2.4799135234122645,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110029-110030-110032-110033-110035-110036_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202038Z-6f90d744/110030/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T202336Z-95bf995d/110030/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-b33"
+      ],
+      "ratio": 2.7179103113565044,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110010-110012-110013-110014-110016-110017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T200625Z-06bf19ce/110013/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T191331Z-bf273c46/110013/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b256"
+      ],
+      "ratio": 2.792823034614532,
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8UNSIGNED_110018-110021-110023_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T193327Z-55e63964/110023/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T193925Z-3815b4f5/110023/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b33"
+      ],
+      "ratio": 2.496307871528083,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110029-110030-110032-110033-110035-110036_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202038Z-6f90d744/110032/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T202336Z-95bf995d/110032/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b129"
+      ],
+      "ratio": 2.653911666557613,
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8UNSIGNED_110018-110021-110023_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T193327Z-55e63964/110021/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T193925Z-3815b4f5/110021/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-b32"
+      ],
+      "ratio": 2.7267251776140484,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110010-110012-110013-110014-110016-110017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T200625Z-06bf19ce/110014/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T191331Z-bf273c46/110014/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b32"
+      ],
+      "ratio": 2.50324348111442,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110029-110030-110032-110033-110035-110036_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202038Z-6f90d744/110033/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T202336Z-95bf995d/110033/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b97"
+      ],
+      "ratio": 2.627223758062565,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110029-110030-110032-110033-110035-110036_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202038Z-6f90d744/110035/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T194732Z-63d8255c/110035/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b64"
+      ],
+      "ratio": 2.899973585800576,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110010-110012-110013-110014-110016-110017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T200625Z-06bf19ce/110016/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T191331Z-bf273c46/110016/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b65"
+      ],
+      "ratio": 2.856183600810648,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110010-110012-110013-110014-110016-110017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195853Z-370fa5d0/110017/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T200925Z-57a44851/110017/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b128"
+      ],
+      "ratio": 2.6040685199380067,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110005-110008-110034_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195419Z-dc9ca2bd/110034/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T194732Z-63d8255c/110034/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b64"
+      ],
+      "ratio": 2.72959725684474,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110037-110038-110039-110040-110041-110042_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202944Z-c073095a/110039/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T203408Z-f5c47e23/110039/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b192"
+      ],
+      "ratio": 2.8620261247890246,
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8UNSIGNED_110024-110028-110031-110034-110035_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T194221Z-4f788051/110028/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T194732Z-63d8255c/110028/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b65"
+      ],
+      "ratio": 2.683188310305502,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110037-110038-110039-110040-110041-110042_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202944Z-c073095a/110041/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T203408Z-f5c47e23/110041/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b80"
+      ],
+      "ratio": 2.6735739424318097,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110037-110038-110039-110040-110041-110042_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202944Z-c073095a/110038/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T203408Z-f5c47e23/110038/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b1"
+      ],
+      "ratio": 2.5071022519335404,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110029-110030-110032-110033-110035-110036_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202038Z-6f90d744/110036/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T202336Z-95bf995d/110036/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b96"
+      ],
+      "ratio": 2.6281990264225725,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110037-110038-110039-110040-110041-110042_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202944Z-c073095a/110037/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T203408Z-f5c47e23/110037/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b81"
+      ],
+      "ratio": 2.646082688389705,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110037-110038-110039-110040-110041-110042_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202944Z-c073095a/110040/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T203408Z-f5c47e23/110040/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-b1"
+      ],
+      "ratio": 2.7366699374288053,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110019-110020-110022-110025-110026-110027_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195853Z-370fa5d0/110019/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110019/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b48"
+      ],
+      "ratio": 2.904984220448136,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 2,
+      "closure": "FINAL_W4A8LOSSLESS_110020-110022-110025_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195853Z-370fa5d0/110020/result.json",
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T201800Z-3f2d147f/110020/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110020/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b129"
+      ],
+      "ratio": 2.1956916446549846,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110010-110012-110013-110014-110016-110017_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T200625Z-06bf19ce/110010/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T190315Z-c4579032/110010/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b33"
+      ],
+      "ratio": 2.9354153031968964,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 2,
+      "closure": "FINAL_W4A8LOSSLESS_110020-110022-110025_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195853Z-370fa5d0/110022/result.json",
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T201800Z-3f2d147f/110022/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110022/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b129"
+      ],
+      "ratio": 2.8771237640700047,
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8UNSIGNED_110024-110028-110031-110034-110035_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T194221Z-4f788051/110031/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T194732Z-63d8255c/110031/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b48"
+      ],
+      "ratio": 2.751908037168896,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110037-110038-110039-110040-110041-110042_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202944Z-c073095a/110042/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T203408Z-f5c47e23/110042/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b33"
+      ],
+      "ratio": 2.73561019385661,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110043-110044-110045-110046-110047-110048_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T203952Z-7bd22fc8/110043/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T204302Z-cbbf3f8f/110043/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b64"
+      ],
+      "ratio": 1.7000877657793352,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120024-120025-120026-120027-120028-120029_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T211720Z-8fafedb9/120027/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212033Z-d8afa93b/120027/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b32"
+      ],
+      "ratio": 2.949876601299115,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 2,
+      "closure": "FINAL_W4A8LOSSLESS_110020-110022-110025_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195853Z-370fa5d0/110025/result.json",
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T201800Z-3f2d147f/110025/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T201302Z-8692460f/110025/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b48"
+      ],
+      "ratio": 1.7010413959710873,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120024-120025-120026-120027-120028-120029_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T211720Z-8fafedb9/120029/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212033Z-d8afa93b/120029/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b32"
+      ],
+      "ratio": 2.760050917495285,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110043-110044-110045-110046-110047-110048_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T203952Z-7bd22fc8/110044/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T204302Z-cbbf3f8f/110044/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b33"
+      ],
+      "ratio": 1.6981407067072247,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120030-120031-120032-120033-120034-120035_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120030/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120030/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b32"
+      ],
+      "ratio": 1.7001379478182264,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120030-120031-120032-120033-120034-120035_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120031/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120031/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-down-b1"
+      ],
+      "ratio": 2.9886229119470964,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 2,
+      "closure": "FINAL_W4A8LOSSLESS_110029_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T195853Z-370fa5d0/110029/result.json",
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T202755Z-95143eab/110029/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T202336Z-95bf995d/110029/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b16"
+      ],
+      "ratio": 2.7709433615457284,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110043-110044-110045-110046-110047-110048_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T203952Z-7bd22fc8/110045/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T204302Z-cbbf3f8f/110045/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b2"
+      ],
+      "ratio": 2.7586247594571818,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110043-110044-110045-110046-110047-110048_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T203952Z-7bd22fc8/110046/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T204302Z-cbbf3f8f/110046/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b8"
+      ],
+      "ratio": 1.6338267334289607,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120030-120031-120032-120033-120034-120035_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120032/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120032/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b8"
+      ],
+      "ratio": 2.768318324646559,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110043-110044-110045-110046-110047-110048_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T203952Z-7bd22fc8/110047/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T204302Z-cbbf3f8f/110047/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b16"
+      ],
+      "ratio": 1.6649990618936148,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120030-120031-120032-120033-120034-120035_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120033/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120033/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b1"
+      ],
+      "ratio": 2.7400013069291904,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESS_110043-110044-110045-110046-110047-110048_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-v2-20261116T203952Z-7bd22fc8/110048/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T204302Z-cbbf3f8f/110048/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-tp8-b64"
+      ],
+      "ratio": 1.5980919480143219,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120030-120031-120032-120033-120034-120035_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120035/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120035/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b1"
+      ],
+      "ratio": 1.5620799932913276,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120030-120031-120032-120033-120034-120035_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120034/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120034/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-tp8-b48"
+      ],
+      "ratio": 1.6201089281865353,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120036-120037-120038-120039-120040-120041_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T213502Z-156a4936/120036/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T213814Z-6e82d168/120036/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-tp8-b33"
+      ],
+      "ratio": 1.576826662250186,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120036-120037-120038-120039-120040-120041_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T213502Z-156a4936/120037/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T213814Z-6e82d168/120037/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-tp8-b32"
+      ],
+      "ratio": 1.596289034714057,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120036-120037-120038-120039-120040-120041_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T213502Z-156a4936/120038/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T213814Z-6e82d168/120038/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-tp8-b8"
+      ],
+      "ratio": 1.5385744125061842,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120036-120037-120038-120039-120040-120041_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T213502Z-156a4936/120040/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T213814Z-6e82d168/120040/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-tp8-b16"
+      ],
+      "ratio": 1.566984740210026,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120036-120037-120038-120039-120040-120041_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T213502Z-156a4936/120039/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T213814Z-6e82d168/120039/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    },
+    {
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-tp8-b1"
+      ],
+      "ratio": 1.452070081274576,
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "candidate_processes": 1,
+      "closure": "FINAL_W4A8LOSSLESSEARLIER_120036-120037-120038-120039-120040-120041_CLOSURES.json",
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T213502Z-156a4936/120041/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T213814Z-6e82d168/120041/result.json",
+      "all_candidate_denominator_raw_and_guard_in_current_full_audit": true
+    }
+  ],
+  "goal665_verified_so_far": 144,
+  "not_full_goal_complete": true,
+  "publication": "staged only; not website/CI/nightly adoption"
+}

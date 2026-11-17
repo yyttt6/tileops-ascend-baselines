@@ -209372,8 +209372,15 @@
   {
     "path": "README.md",
     "source": "baseline refresh handoff20261116",
-    "sha256": "3fc17ebf3f1b07f8d2a08a2b31165f211b7a1ca26b01c1a3caca4ca5f226aa72",
-    "bytes": 5667
+    "sha256": "7eb04f9aad2715ce505997b37f5625470f0443a78c40ad415c3b6677e3f04f27",
+    "bytes": 6292,
+    "previous_export_entry": {
+      "path": "README.md",
+      "source": "baseline refresh handoff20261116",
+      "sha256": "3fc17ebf3f1b07f8d2a08a2b31165f211b7a1ca26b01c1a3caca4ca5f226aa72",
+      "bytes": 5667
+    },
+    "updated_for": "baseline/perf-review-20261117 development navigation; source history preserved in git"
   },
   {
     "path": "docs/handoffs/BASELINE_REFRESH_20261116.zh.md",

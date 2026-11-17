@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-11-17T00:49:47.845407+00:00",
+  "original_pin": "7e39f9668eed285fc91cde0502f46cd48686a681",
+  "original_full_manifest": "/opt/baseline-over3-20261110/server2-aligned-stack/native/fla-original-chunk-v1/FLA_ORIGINAL_COMPLETE_SOURCE_V3.json",
+  "manifest_entry": "fla/ops/triton/triton_core/cumsum.py",
+  "expected_sha256": "a71289997eeed623702d9b96c95f92e138599f345ebcb9ef88923e5624191be4",
+  "actual_source": "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/flash-linear-attention-npu/fla/ops/triton/triton_core/cumsum.py",
+  "actual_fresh_sha256": "a71289997eeed623702d9b96c95f92e138599f345ebcb9ef88923e5624191be4",
+  "matches": true,
+  "scope": "this complete original cumsum API only; other manifest files not rehashed in this check",
+  "kernel_or_compiler_bytes_changed": false
+}

@@ -1,0 +1,200 @@
+{
+  "checked_at": "2026-11-16T18:07:19.261425+00:00",
+  "verified_within3": 6,
+  "scope": [
+    130000,
+    130001,
+    130002,
+    130003,
+    130004,
+    130005
+  ],
+  "rows": [
+    {
+      "ordinal": 130000,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "qwen2.5-7b-prefill-down-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 749.9153333333334,
+      "tileops_us": 717.9992666666667,
+      "ratio": 1.0444513917330835,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T175725Z/130000/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130000/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130000/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130000.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "ab1daa00fefcd4a154778d74b07a28959c859049148ca1cf3dbd65370167b2e2",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130001,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "llama3-70b-prefill-qkv-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 1214.4882666666665,
+      "tileops_us": 987.3176,
+      "ratio": 1.2300887441555448,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T175725Z/130001/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130001/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130001/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130001.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "675c64403239eae964aa20a2afa14c4848d53af9577e1a91501db96efac18110",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130002,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "qwen2.5-72b-prefill-down-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 2642.9413999999997,
+      "tileops_us": 2989.8972000000003,
+      "ratio": 0.8839572812068587,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T175725Z/130002/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130002/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130002/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130002.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "80ffacdb9e5818340d85c6e1c9710ed71f704749eef6798338ca3d6eda709c40",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130003,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "llama3-70b-down-b64-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 104.62039999999999,
+      "tileops_us": 92.67733333333334,
+      "ratio": 1.1288671807561719,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T175725Z/130003/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130003/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130003/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130003.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "223e2fbbe8f58456adf9dc17032b34539689d5e49da82920a877f9d49466e947",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130004,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "llama3-8b-prefill-gateup-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 2334.1723333333334,
+      "tileops_us": 1546.5564,
+      "ratio": 1.509270747147232,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T175725Z/130004/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130004/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130004/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130004.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "1bb1f1c9b12f753d03f9aec2a8409b479076eb07db3dc7f2ec8404cc69f23e4e",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 130005,
+      "key": [
+        "torch-eager",
+        "GemmINT8W8A8FwdOp",
+        "qwen2.5-7b-prefill-qkv-bfloat16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-INT32-exact-FP32-epilogue",
+      "candidate_entry": "int8_gemm_native_exact.py:factory",
+      "code_sha256": "3c5ce0f6fa39be3cef57a46ba2f17aa5b9f18ca26d6c8648aade4e8c5fe77d4b",
+      "candidate_us": 354.85213333333337,
+      "tileops_us": 246.54313333333334,
+      "ratio": 1.4393105520142926,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-gemm-native-exact-20261116T175725Z/130005/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130005/result.json",
+      "generated_identity": "remote/runs/int8-gemm-denominator62c5-20261116T180136Z/130005/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/130005.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "4d4f36feaebf8ec994b42f12a4fa42ff3490cbd7cc0b21eafc7977e187a82388",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

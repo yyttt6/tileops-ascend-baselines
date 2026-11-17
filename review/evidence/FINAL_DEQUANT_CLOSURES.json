@@ -1,0 +1,136 @@
+{
+  "checked_at": "2026-11-16T15:28:34.228438+00:00",
+  "verified_within3": 4,
+  "scope": [
+    1382,
+    1384,
+    1386,
+    1387
+  ],
+  "rows": [
+    {
+      "ordinal": 1382,
+      "key": [
+        "torch-eager",
+        "INT8DequantPerBlockFwdOp",
+        "ragged-k-few-rows-float16"
+      ],
+      "actual_provider": "torch-npu-antiquant",
+      "candidate_entry": "quant_native_antiquant.py:factory",
+      "code_sha256": "ff24645503ed6df4000aaf0b6fbdf6b41762d625f5362a86360900398c98a859",
+      "candidate_us": 6.751933333333333,
+      "tileops_us": 4.276866666666667,
+      "ratio": 1.5787102707589666,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/dequant-native-20261116T151431Z/1382/result.json"
+      ],
+      "denominator_result": "remote/runs/dequant-denominator62c5-ffi-20261116T152554Z/1382/result.json",
+      "generated_identity": "remote/runs/dequant-denominator62c5-ffi-20261116T152554Z/1382/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/1382.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "979b4b96c96b71bf1b1680e589d9b0ef4cc90f9fa7bfdb81de9f7220cd8d5a33",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1384,
+      "key": [
+        "torch-eager",
+        "INT8DequantPerChannelFwdOp",
+        "ragged-k-few-rows-bfloat16"
+      ],
+      "actual_provider": "torch-npu-antiquant",
+      "candidate_entry": "quant_native_antiquant.py:factory",
+      "code_sha256": "ff24645503ed6df4000aaf0b6fbdf6b41762d625f5362a86360900398c98a859",
+      "candidate_us": 4.705266666666667,
+      "tileops_us": 1.8114666666666666,
+      "ratio": 2.5974900633004565,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/dequant-native-20261116T151431Z/1384/result.json"
+      ],
+      "denominator_result": "remote/runs/dequant-denominator62c5-ffi-20261116T152554Z/1384/result.json",
+      "generated_identity": "remote/runs/dequant-denominator62c5-ffi-20261116T152554Z/1384/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/1384.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "bd4dc22594f2017e8b79a95be8a586f674c60f8e854631ad3e725d0dfc1dfe06",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1386,
+      "key": [
+        "torch-eager",
+        "INT8DequantPerTensorFwdOp",
+        "llama-8b-decode-bfloat16"
+      ],
+      "actual_provider": "torch-npu-antiquant",
+      "candidate_entry": "quant_native_antiquant.py:factory",
+      "code_sha256": "ff24645503ed6df4000aaf0b6fbdf6b41762d625f5362a86360900398c98a859",
+      "candidate_us": 4.290933333333333,
+      "tileops_us": 1.9979333333333336,
+      "ratio": 2.1476859421402112,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/dequant-native-20261116T151431Z/1386/result.json"
+      ],
+      "denominator_result": "remote/runs/dequant-denominator62c5-ffi-20261116T152554Z/1386/result.json",
+      "generated_identity": "remote/runs/dequant-denominator62c5-ffi-20261116T152554Z/1386/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/1386.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "75fead6e692b23d8b56f71bb38fe1f5c992bb3b08ca5ca5709c246810e9d3299",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1387,
+      "key": [
+        "torch-eager",
+        "INT8DequantPerTensorFwdOp",
+        "ragged-k-few-rows-float16"
+      ],
+      "actual_provider": "torch-npu-antiquant",
+      "candidate_entry": "quant_native_antiquant.py:factory",
+      "code_sha256": "ff24645503ed6df4000aaf0b6fbdf6b41762d625f5362a86360900398c98a859",
+      "candidate_us": 4.411466666666667,
+      "tileops_us": 1.8179333333333334,
+      "ratio": 2.426638307235322,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/dequant-native-20261116T151431Z/1387/result.json"
+      ],
+      "denominator_result": "remote/runs/dequant-denominator62c5-ffi-20261116T152554Z/1387/result.json",
+      "generated_identity": "remote/runs/dequant-denominator62c5-ffi-20261116T152554Z/1387/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/1387.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "d1de04a68f4f7409a3162585e2357ae440200a984ae14688aefb9ef51638a0c4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

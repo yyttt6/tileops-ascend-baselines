@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-17T00:19:36.313050+00:00",
+  "verified_within3": 0,
+  "scope": [
+    210003
+  ],
+  "rows": [
+    {
+      "ordinal": 210003,
+      "key": [
+        "torch-eager",
+        "TopPMaskFwdOp",
+        "llama2-7b-b100-float16"
+      ],
+      "actual_provider": "torch-eager-FP32-shortrow-CDF-exact-int32-group-scatteradd",
+      "candidate_entry": "top_p_blockcdf_scatteradd_v1.py:top_p_mask",
+      "code_sha256": "0a07753558b380bbbd84588d9f9b9b9800c949e26f713e24caaaae6e1f1e2916",
+      "candidate_us": 1819.9903333333332,
+      "tileops_us": 286.4424,
+      "ratio": 6.353774208473791,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topp-blockcdf-v1-20261117T001800Z-d601dcb1/210003/result.json"
+      ],
+      "denominator_result": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210003/result.json",
+      "generated_identity": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210003/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/210003.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "b88f02768de3635002ae90260809a518db96ac410a6c0f2ee1802a5151a4743f",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "continue_optimization"
+    }
+  ]
+}

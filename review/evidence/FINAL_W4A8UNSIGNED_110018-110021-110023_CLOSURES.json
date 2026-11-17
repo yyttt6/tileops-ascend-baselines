@@ -1,0 +1,104 @@
+{
+  "checked_at": "2026-11-16T19:42:27.804546+00:00",
+  "verified_within3": 3,
+  "scope": [
+    110018,
+    110021,
+    110023
+  ],
+  "rows": [
+    {
+      "ordinal": 110018,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b257"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-full-domain-pair-lut-unsigned-index",
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "code_sha256": "9513c11e611769cd9292fe8605fd6055f5f2ed4c6266af461b3782cc66b0bdd3",
+      "candidate_us": 715.3121333333333,
+      "tileops_us": 257.02933333333334,
+      "ratio": 2.7829980495092648,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T193327Z-55e63964/110018/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T193925Z-3815b4f5/110018/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-expansion-v2-20261116T193925Z-3815b4f5/110018/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/110018.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "f5609dbe8cd0b5ab47da47261746d3934b9d912913fe6fcd35c1f345cf82cf74",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 110021,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-b129"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-full-domain-pair-lut-unsigned-index",
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "code_sha256": "9513c11e611769cd9292fe8605fd6055f5f2ed4c6266af461b3782cc66b0bdd3",
+      "candidate_us": 675.9955333333332,
+      "tileops_us": 254.71666666666664,
+      "ratio": 2.653911666557613,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T193327Z-55e63964/110021/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T193925Z-3815b4f5/110021/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-expansion-v2-20261116T193925Z-3815b4f5/110021/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/110021.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "c0d169e7f6d1aae8af4ff93727f66e0be5c2db108f475300a4c15c14afe85f47",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 110023,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-down-b256"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-full-domain-pair-lut-unsigned-index",
+      "candidate_entry": "w4a8_native_pair_unsigned.py:factory",
+      "code_sha256": "9513c11e611769cd9292fe8605fd6055f5f2ed4c6266af461b3782cc66b0bdd3",
+      "candidate_us": 689.3225333333334,
+      "tileops_us": 246.81926666666666,
+      "ratio": 2.792823034614532,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/w4a8-pair-unsigned-v2-20261116T193327Z-55e63964/110023/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-expansion-v2-20261116T193925Z-3815b4f5/110023/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-expansion-v2-20261116T193925Z-3815b4f5/110023/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/110023.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "0edef51a5ed1477f76a2656d007f3772d60097a6728d6092fb92e7e854c38ade",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

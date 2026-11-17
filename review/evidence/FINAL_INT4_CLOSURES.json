@@ -1,0 +1,213 @@
+{
+  "checked_at": "2026-11-16T15:14:29.422996+00:00",
+  "scope": "six INT4 members of frozen665; all other659 remain in scope",
+  "verified_within3": 6,
+  "rows": [
+    {
+      "ordinal": 1373,
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "llama-8b-mlp-up-chan-float16"
+      ],
+      "actual_provider": "torch-npu-quantize-int4pack",
+      "variant": "packed-int32-mulswap",
+      "candidate_entry": "int4_native_int32_mulswap.py:int4_group",
+      "candidate_us": 636.1111999999999,
+      "tileops_us": 215.41153333333332,
+      "ratio": 2.9530043733343896,
+      "verified_within3": true,
+      "candidate_processes": 2,
+      "candidate_results": [
+        "remote/runs/int4-native-mulswap-20261116T145840Z/1373/result.json",
+        "remote/runs/int4-native-mulswap-20261116T151249Z/1373/result.json"
+      ],
+      "candidate_means_us": [
+        636.1111999999999,
+        635.2864000000001
+      ],
+      "denominator_result": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1373/result.json",
+      "generated_identity": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1373/TILEOPS_GENERATED_IDENTITY.json",
+      "original_checker_outputs": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "36259c56f75b022fb9e48f8366804a31ada190fb0906a87b3d2a523f2fb7bd09",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "guard_device": "/dev/davinci6",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1374,
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "llama-70b-mlp-down-float16"
+      ],
+      "actual_provider": "torch-npu-quantize-int4pack",
+      "variant": "FP32-pair-reversal",
+      "candidate_entry": "int4_native_quant.py:int4_group",
+      "candidate_us": 4013.4979333333335,
+      "tileops_us": 1759.2868666666668,
+      "ratio": 2.281320920071288,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int4-native-quant-20261116T144819Z/1374/result.json"
+      ],
+      "candidate_means_us": [
+        4013.4979333333335
+      ],
+      "denominator_result": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1374/result.json",
+      "generated_identity": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1374/TILEOPS_GENERATED_IDENTITY.json",
+      "original_checker_outputs": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "ade6ed281d8d7b3ff001314a36d9eef27858ef8c8d9c8ea52c617f915f16c9bb",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "guard_device": "/dev/davinci6",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1375,
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "llama-8b-mlp-up-float16"
+      ],
+      "actual_provider": "torch-npu-quantize-int4pack",
+      "variant": "FP32-pair-reversal",
+      "candidate_entry": "int4_native_quant.py:int4_group",
+      "candidate_us": 1022.6936,
+      "tileops_us": 437.76106666666664,
+      "ratio": 2.3361913104500234,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int4-native-quant-20261116T144819Z/1375/result.json"
+      ],
+      "candidate_means_us": [
+        1022.6936
+      ],
+      "denominator_result": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1375/result.json",
+      "generated_identity": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1375/TILEOPS_GENERATED_IDENTITY.json",
+      "original_checker_outputs": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "36259c56f75b022fb9e48f8366804a31ada190fb0906a87b3d2a523f2fb7bd09",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "guard_device": "/dev/davinci6",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1376,
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "qwen2-7b-mlp-down-float16"
+      ],
+      "actual_provider": "torch-npu-quantize-int4pack",
+      "variant": "FP32-pair-reversal",
+      "candidate_entry": "int4_native_quant.py:int4_group",
+      "candidate_us": 1173.6446666666666,
+      "tileops_us": 508.31579999999997,
+      "ratio": 2.308888818066774,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int4-native-quant-20261116T144819Z/1376/result.json"
+      ],
+      "candidate_means_us": [
+        1173.6446666666666
+      ],
+      "denominator_result": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1376/result.json",
+      "generated_identity": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1376/TILEOPS_GENERATED_IDENTITY.json",
+      "original_checker_outputs": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "57574170878a7763bdf369e034ca81f5f5f7fc3a5e2e1affaaae6d751100c867",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "guard_device": "/dev/davinci6",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1377,
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "qwen2-7b-mlp-up-float16"
+      ],
+      "actual_provider": "torch-npu-quantize-int4pack",
+      "variant": "FP32-pair-reversal",
+      "candidate_entry": "int4_native_quant.py:int4_group",
+      "candidate_us": 1175.0394666666666,
+      "tileops_us": 512.0164666666667,
+      "ratio": 2.294925150193737,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int4-native-quant-20261116T144819Z/1377/result.json"
+      ],
+      "candidate_means_us": [
+        1175.0394666666666
+      ],
+      "denominator_result": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1377/result.json",
+      "generated_identity": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1377/TILEOPS_GENERATED_IDENTITY.json",
+      "original_checker_outputs": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "a9bc3e419dbf02677b4bce30fe23520deb15d579fad56aea4961cc9924b444a6",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "guard_device": "/dev/davinci6",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1378,
+      "key": [
+        "torch-eager",
+        "INT4QuantPerGroupFwdOp",
+        "qwen3-32b-o-proj-float16"
+      ],
+      "actual_provider": "torch-npu-quantize-int4pack",
+      "variant": "FP32-pair-reversal",
+      "candidate_entry": "int4_native_quant.py:int4_group",
+      "candidate_us": 723.1247333333333,
+      "tileops_us": 314.0022666666666,
+      "ratio": 2.3029283865042167,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int4-native-quant-20261116T144819Z/1378/result.json"
+      ],
+      "candidate_means_us": [
+        723.1247333333333
+      ],
+      "denominator_result": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1378/result.json",
+      "generated_identity": "remote/runs/int4-denominator62c5-final-20261116T150856Z/1378/TILEOPS_GENERATED_IDENTITY.json",
+      "original_checker_outputs": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "4692fbbcc17ec412d81e357daefa773e14ce0d7d022143602225890150aafbee",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "guard_device": "/dev/davinci6",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

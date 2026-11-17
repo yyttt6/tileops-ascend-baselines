@@ -1,0 +1,8 @@
+{
+  "source_file": "/opt/baseline-over3-20261110/ordered100-20261112/workspace/ascend_baselines/flash-linear-attention-npu/fla/ops/triton/triton_core/cumsum.py",
+  "source_sha256": "a71289997eeed623702d9b96c95f92e138599f345ebcb9ef88923e5624191be4",
+  "public_API": "chunk_local_cumsum",
+  "comparison": "fresh remote byteSHA equals original local source, no kernel edits",
+  "precision": "input and output FP32; original public num_warps and compiler flags unchanged",
+  "local_original_source": "ascend_baselines/flash-linear-attention-npu/fla/ops/triton/triton_core/cumsum.py"
+}

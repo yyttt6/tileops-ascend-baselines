@@ -1,0 +1,200 @@
+{
+  "checked_at": "2026-11-16T21:34:08.932021+00:00",
+  "verified_within3": 6,
+  "scope": [
+    120030,
+    120031,
+    120032,
+    120033,
+    120034,
+    120035
+  ],
+  "rows": [
+    {
+      "ordinal": 120030,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b33"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-lossless-antiquant-FP32-values-original-FP8-rounding",
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "code_sha256": "3361e14a8947de8b52230484536b8724fb6642cea0bf05ef830ca89e113ace05",
+      "candidate_us": 92.7452,
+      "tileops_us": 54.61573333333333,
+      "ratio": 1.6981407067072247,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120030/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120030/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120030/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/120030.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "ed0131801ffb5f40863ea02cd70a1148c3d712da43c05f688d617c2a7ac1cafc",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 120031,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b32"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-lossless-antiquant-FP32-values-original-FP8-rounding",
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "code_sha256": "3361e14a8947de8b52230484536b8724fb6642cea0bf05ef830ca89e113ace05",
+      "candidate_us": 91.28346666666665,
+      "tileops_us": 53.69180000000001,
+      "ratio": 1.7001379478182264,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120031/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120031/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120031/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/120031.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "91ca63e8555edfcf4cc7402e4406317c19a135db0213ce7a313f4f594d00d069",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 120032,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b8"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-lossless-antiquant-FP32-values-original-FP8-rounding",
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "code_sha256": "3361e14a8947de8b52230484536b8724fb6642cea0bf05ef830ca89e113ace05",
+      "candidate_us": 86.33826666666667,
+      "tileops_us": 52.844199999999994,
+      "ratio": 1.6338267334289607,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120032/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120032/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120032/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/120032.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "a5257b02d796117f238d6479c3ab7a0d3fbac72c05d4688b3665899c094d8e4c",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 120033,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b16"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-lossless-antiquant-FP32-values-original-FP8-rounding",
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "code_sha256": "3361e14a8947de8b52230484536b8724fb6642cea0bf05ef830ca89e113ace05",
+      "candidate_us": 88.15093333333333,
+      "tileops_us": 52.943533333333335,
+      "ratio": 1.6649990618936148,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120033/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120033/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120033/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/120033.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "68e6b47db5134b490fed0ccb33ba74752fc90c3b4b3ee8d994158f90fff85359",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 120034,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "llama-70b-up-tp8-b1"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-lossless-antiquant-FP32-values-original-FP8-rounding",
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "code_sha256": "3361e14a8947de8b52230484536b8724fb6642cea0bf05ef830ca89e113ace05",
+      "candidate_us": 81.96139999999998,
+      "tileops_us": 52.4694,
+      "ratio": 1.5620799932913276,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120034/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120034/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120034/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/120034.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "efbdc5046c5c60e537e237fef8b2d9747e1858f05c2dedae8bd37deb949af455",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 120035,
+      "key": [
+        "torch-eager",
+        "GemmW4A8FwdOp",
+        "ds-r1-up-tp8-b64"
+      ],
+      "actual_provider": "torch-npu-quant-matmul-FP8-FP32-lossless-antiquant-FP32-values-original-FP8-rounding",
+      "candidate_entry": "w4a8_native_lossless_antiquant.py:factory",
+      "code_sha256": "3361e14a8947de8b52230484536b8724fb6642cea0bf05ef830ca89e113ace05",
+      "candidate_us": 67.663,
+      "tileops_us": 42.33986666666667,
+      "ratio": 1.5980919480143219,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/w4a8-lossless-antiquant-earlier-v2-20261116T212559Z-6b08688d/120035/result.json"
+      ],
+      "denominator_result": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120035/result.json",
+      "generated_identity": "remote/runs/w4a8-denominator-earlier42-v2-20261116T212911Z-5174c168/120035/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/120035.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "3a998ce9664e065309f496fecef7deb115f08ca7463b93720550e2a9eda06186",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

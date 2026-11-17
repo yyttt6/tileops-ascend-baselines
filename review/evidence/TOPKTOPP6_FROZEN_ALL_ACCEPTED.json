@@ -1,0 +1,387 @@
+{
+  "checked_at": "2026-11-17T01:14:09.505864+00:00",
+  "scope": 6,
+  "frozen_family": "TopKTopPMaskFwdOp",
+  "all6_verified_within3": true,
+  "max_ratio": 2.7049981714734557,
+  "rows": [
+    {
+      "ordinal": 220001,
+      "key": [
+        "torch-eager",
+        "TopKTopPMaskFwdOp",
+        "gpt2-b17-mixed-float16"
+      ],
+      "actual_provider": "Original-Torch-full-TopK-plus-original-FLA-FP32-TopP-unique-group-writes",
+      "candidate_entry": "top_k_top_p_fla_unique_v1.py:factory",
+      "code_sha256": "6800326da9450ea68dfef5e5e37a589842dfda9419d7942ed907c4996ab5a2ff",
+      "candidate_us": 518.5262,
+      "tileops_us": 340.7376,
+      "ratio": 1.5217757007151544,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topktopp-fla-unique-v1-20261117T005733Z-41841b18/220001/result.json"
+      ],
+      "denominator_result": "remote/runs/topktopp-denominator-v1-20261117T005855Z-f358896b/220001/result.json",
+      "generated_identity": "remote/runs/topktopp-denominator-v1-20261117T005855Z-f358896b/220001/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/220001.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "f0a1324ccb2799f918de0a67a47740f10f8543fdb6b28f450d6998551987b622",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            17,
+            50257
+          ],
+          "float16"
+        ],
+        "k": [
+          [
+            17
+          ],
+          "int32"
+        ],
+        "p": [
+          [
+            17
+          ],
+          "float32"
+        ],
+        "masked_logits": [
+          [
+            17,
+            50257
+          ],
+          "float16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    },
+    {
+      "ordinal": 220000,
+      "key": [
+        "torch-eager",
+        "TopKTopPMaskFwdOp",
+        "deepseek-v3-b100-bfloat16"
+      ],
+      "actual_provider": "Original-Torch-full-TopK-plus-original-FLA-FP32-TopP-unique-group-writes",
+      "candidate_entry": "top_k_top_p_fla_unique_v1.py:factory",
+      "code_sha256": "6800326da9450ea68dfef5e5e37a589842dfda9419d7942ed907c4996ab5a2ff",
+      "candidate_us": 3321.4072000000006,
+      "tileops_us": 1425.1753333333331,
+      "ratio": 2.3305253201594383,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topktopp-fla-unique-v1-20261117T010043Z-245cefdb/220000/result.json"
+      ],
+      "denominator_result": "remote/runs/topktopp-denominator-v1-20261117T010433Z-7a702d34/220000/result.json",
+      "generated_identity": "remote/runs/topktopp-denominator-v1-20261117T010433Z-7a702d34/220000/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/220000.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "11e116457bfc0d2ff9943838c8cb65ccc321a90d521c894517e480823ce1f81e",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            100,
+            129280
+          ],
+          "bfloat16"
+        ],
+        "k": [
+          [
+            100
+          ],
+          "int32"
+        ],
+        "p": [
+          [
+            100
+          ],
+          "float32"
+        ],
+        "masked_logits": [
+          [
+            100,
+            129280
+          ],
+          "bfloat16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    },
+    {
+      "ordinal": 220004,
+      "key": [
+        "torch-eager",
+        "TopKTopPMaskFwdOp",
+        "llama-8b-b64-bfloat16"
+      ],
+      "actual_provider": "Original-Torch-full-TopK-plus-original-FLA-FP32-TopP-unique-group-writes",
+      "candidate_entry": "top_k_top_p_fla_unique_v1.py:factory",
+      "code_sha256": "6800326da9450ea68dfef5e5e37a589842dfda9419d7942ed907c4996ab5a2ff",
+      "candidate_us": 1869.2628,
+      "tileops_us": 716.5369333333333,
+      "ratio": 2.60874591809829,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topktopp-fla-unique-v1-20261117T010043Z-245cefdb/220004/result.json"
+      ],
+      "denominator_result": "remote/runs/topktopp-denominator-v1-20261117T010433Z-7a702d34/220004/result.json",
+      "generated_identity": "remote/runs/topktopp-denominator-v1-20261117T010433Z-7a702d34/220004/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/220004.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "07147af69c0ef5ee24461762bc046176058f1bc8384bdc92b830789b7ed2840b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            64,
+            128256
+          ],
+          "bfloat16"
+        ],
+        "k": [
+          [
+            64
+          ],
+          "int32"
+        ],
+        "p": [
+          [
+            64
+          ],
+          "float32"
+        ],
+        "masked_logits": [
+          [
+            64,
+            128256
+          ],
+          "bfloat16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    },
+    {
+      "ordinal": 220005,
+      "key": [
+        "torch-eager",
+        "TopKTopPMaskFwdOp",
+        "qwen3-235b-b128-bfloat16"
+      ],
+      "actual_provider": "Original-Torch-full-TopK-plus-original-FLA-FP32-TopP-unique-group-writes",
+      "candidate_entry": "top_k_top_p_fla_unique_v1.py:factory",
+      "code_sha256": "6800326da9450ea68dfef5e5e37a589842dfda9419d7942ed907c4996ab5a2ff",
+      "candidate_us": 4502.594066666667,
+      "tileops_us": 1664.5460666666668,
+      "ratio": 2.7049981714734557,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topktopp-fla-unique-v1-20261117T010043Z-245cefdb/220005/result.json"
+      ],
+      "denominator_result": "remote/runs/topktopp-denominator-v1-20261117T010433Z-7a702d34/220005/result.json",
+      "generated_identity": "remote/runs/topktopp-denominator-v1-20261117T010433Z-7a702d34/220005/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/220005.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "9afbe49989a5d3a44505bd601d3d16ccf15dd09d8670666d1414fcb1faf846ed",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            128,
+            151936
+          ],
+          "bfloat16"
+        ],
+        "k": [
+          [
+            128
+          ],
+          "int32"
+        ],
+        "p": [
+          [
+            128
+          ],
+          "float32"
+        ],
+        "masked_logits": [
+          [
+            128,
+            151936
+          ],
+          "bfloat16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    },
+    {
+      "ordinal": 220002,
+      "key": [
+        "torch-eager",
+        "TopKTopPMaskFwdOp",
+        "llama-8b-b256-bfloat16"
+      ],
+      "actual_provider": "Original-Torch-full-TopK-plus-original-FLA-FP32-TopP-unique-group-writes",
+      "candidate_entry": "top_k_top_p_fla_unique_v1.py:factory",
+      "code_sha256": "6800326da9450ea68dfef5e5e37a589842dfda9419d7942ed907c4996ab5a2ff",
+      "candidate_us": 7542.359933333333,
+      "tileops_us": 2816.986866666667,
+      "ratio": 2.6774565485490487,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topktopp-fla-unique-v1-20261117T010825Z-b475538d/220002/result.json"
+      ],
+      "denominator_result": "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220002/result.json",
+      "generated_identity": "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220002/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/220002.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "b3779752e0944b5f8dadab5e03291d810c3811cea9c7af58e98f8faf421c811f",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            256,
+            128256
+          ],
+          "bfloat16"
+        ],
+        "k": [
+          [
+            256
+          ],
+          "int32"
+        ],
+        "p": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "masked_logits": [
+          [
+            256,
+            128256
+          ],
+          "bfloat16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    },
+    {
+      "ordinal": 220003,
+      "key": [
+        "torch-eager",
+        "TopKTopPMaskFwdOp",
+        "llama-8b-b256-float16"
+      ],
+      "actual_provider": "Original-Torch-full-TopK-plus-original-FLA-FP32-TopP-unique-group-writes",
+      "candidate_entry": "top_k_top_p_fla_unique_v1.py:factory",
+      "code_sha256": "6800326da9450ea68dfef5e5e37a589842dfda9419d7942ed907c4996ab5a2ff",
+      "candidate_us": 7526.5796,
+      "tileops_us": 3219.4874,
+      "ratio": 2.33781924414427,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topktopp-fla-unique-v1-20261117T010825Z-b475538d/220003/result.json"
+      ],
+      "denominator_result": "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220003/result.json",
+      "generated_identity": "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220003/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/220003.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "52167b76110624c852d4ed521efdf7e779f88d865a7a3f727f2d7cbec1c9eb22",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            256,
+            128256
+          ],
+          "float16"
+        ],
+        "k": [
+          [
+            256
+          ],
+          "int32"
+        ],
+        "p": [
+          [
+            256
+          ],
+          "float32"
+        ],
+        "masked_logits": [
+          [
+            256,
+            128256
+          ],
+          "float16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    }
+  ],
+  "evidence_sha256": {
+    "remote/runs/topktopp-fla-unique-v1-20261117T005733Z-41841b18/220001/result.json": "03253e3160fd6729aba5200e9f08cafd92c1aa0fe60bc9f5b3eadcb474282105",
+    "remote/runs/topktopp-denominator-v1-20261117T005855Z-f358896b/220001/result.json": "293424a55fb616a27b808f054d59ee9460e55e3b4a49cf1c078b4f445d37301a",
+    "remote/runs/topktopp-fla-unique-v1-20261117T010043Z-245cefdb/220000/result.json": "c28265f8192d6268be4a41fef4bc219b3da63dc68ff397e5f8858e768e120761",
+    "remote/runs/topktopp-denominator-v1-20261117T010433Z-7a702d34/220000/result.json": "49b30370979af04e487739d6da667baece97273806581237a0d8df81632eac41",
+    "remote/runs/topktopp-fla-unique-v1-20261117T010043Z-245cefdb/220004/result.json": "121cc6165682cfa9e38596e05accfa3554e7f4426e789ca9f707c96a337d5897",
+    "remote/runs/topktopp-denominator-v1-20261117T010433Z-7a702d34/220004/result.json": "371ff8afd8da83074cbb24514ecb803f210ec5a7ba6fcf765fcbee1e6761a0d5",
+    "remote/runs/topktopp-fla-unique-v1-20261117T010043Z-245cefdb/220005/result.json": "2edc5a309e2838703ac6bf8c6d1b23748bae915bb0e806cde63f30cf30085c2f",
+    "remote/runs/topktopp-denominator-v1-20261117T010433Z-7a702d34/220005/result.json": "a3850d51ff3ec32d326ceeea9e209d5cb5becc9394cebaf7fa8a4e9fce7acf26",
+    "remote/runs/topktopp-fla-unique-v1-20261117T010825Z-b475538d/220002/result.json": "f326da65b0c47a5311bcac3cd6cf0d9682297eae628989f884453ef75d5a257c",
+    "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220002/result.json": "1e1c0e3e5ca0a539bb3e6287e5a3322ff6f00ffe972d3d6fd738a79edce2e8db",
+    "remote/runs/topktopp-fla-unique-v1-20261117T010825Z-b475538d/220003/result.json": "02d648df8e2d7fbc4fcf9514d5c9a7f999cba0d6579ee74eccf3734ae817c888",
+    "remote/runs/topktopp-denominator-v1-20261117T011025Z-b1921141/220003/result.json": "111edfef4e0973db7390362a51dcdb5ae083c4f320347e6361c27accb6bc4855"
+  },
+  "original_new_complete_API_comparison": "TOPKTOPP_220001_FIRST_SAME_ENV_ORIGINAL_NEW_API_COMPARISON.json",
+  "qualification": "Individual closers independently checked frozen input/golden/checker identity, all15raw, generated native/public identity, original9.1 reference compiler profile and common runtimes, complete valid guards.",
+  "publication": "staged only; no website/CI/nightly adoption",
+  "whole665_not_complete": true
+}

@@ -1,0 +1,14 @@
+{
+  "note": "Additional completed candidate-only measurement; not a matched final ratio or accepted case",
+  "cases": [
+    {
+      "op": "GDNFwdOp",
+      "case": "q35-gva-decode-b32-float16",
+      "candidate_entry": "vllm_gdn_packed_readonly_v9.py:specialize",
+      "candidate_us": 325.76,
+      "matched_tileops_denominator": null,
+      "accepted": false,
+      "reason": "denominator interrupted at user pause; original full checker/raw15/JIT/source/guard candidate audit completed"
+    }
+  ]
+}

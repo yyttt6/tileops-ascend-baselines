@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-17T03:09:04.731745+00:00",
+  "branch": "baseline/perf-review-20261117",
+  "historical_scope": 665,
+  "historical_accepted": 178,
+  "CPU_validation": [
+    "review.doctor:665 unique cases/178 accepted/selected source SHA and function entry checks passed",
+    "all new Python modules parse/compile",
+    "10 comparator regression checks passed: partial outputs, missing raw, altered mean/sample count, crossed input/host, metadata collision, borderline repetition, duplicate process, conservative worst mean, missing identity",
+    "TopK real original/public metadata collection and frozen policy binding passed with TorchCPU; torch_npu/acl imports explicitly blocked; no inputs generated or NPU work",
+    "new Markdown local links passed",
+    "original source-manifest verified after explicitly versioning changed README navigation"
+  ],
+  "new_portable_runner_NPU_validation": false,
+  "existing178_historical_acceptance_not_claimed_on_new_machine": true,
+  "not_resuming_paused_tuning_task": true,
+  "source_of_public_metadata_test": "read-only existing source and CPU Torch; no device imports/initialization permitted",
+  "known_limits": [
+    "Native dependencies must be installed/built locally at recorded pins; private binaries/raw/input tensors not in Git",
+    "Generic binder rejects ABI/parameter or shared-storage input discrepancies; explicit family binder required where applicable",
+    "One vendor GDN selected specialization retained as source evidence with explicit path-porting requirement",
+    "Numerical threshold alone does not grant qualification or publication"
+  ]
+}

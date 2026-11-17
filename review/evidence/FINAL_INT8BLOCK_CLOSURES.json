@@ -1,0 +1,173 @@
+{
+  "checked_at": "2026-11-16T16:05:22.271427+00:00",
+  "verified_within3": 3,
+  "scope": [
+    1388,
+    1389,
+    1390,
+    1391,
+    1392
+  ],
+  "rows": [
+    {
+      "ordinal": 1388,
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "ds-v3-decode-bfloat16"
+      ],
+      "actual_provider": "torch-npu-explicit-scale-quantize",
+      "candidate_entry": "int8_exact_norm_floatclip.py:factory",
+      "code_sha256": "a3aaeab750b07e6f9f2814d84bb13ffb8fa5ed8b4a242aa51a77a44c25990c4b",
+      "candidate_us": 40.4794,
+      "tileops_us": 6.130333333333333,
+      "ratio": 6.603131966722854,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-floatclip-norm-20261116T154824Z/1388/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-quant-denominator62c5-ffi-20261116T155250Z/1388/result.json",
+      "generated_identity": "remote/runs/int8-quant-denominator62c5-ffi-20261116T155250Z/1388/TILEOPS_GENERATED_IDENTITY.json",
+      "generated_identity_complete": false,
+      "input_manifest": "input-manifests/1388.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "ef2ca8946292b17c58847c8079931f7334e6147b0e26a0051139a1349d68833c",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "continue_optimization"
+    },
+    {
+      "ordinal": 1389,
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "ds-v3-decode-few-tokens-bfloat16"
+      ],
+      "actual_provider": "torch-npu-explicit-scale-quantize",
+      "candidate_entry": "int8_exact_norm_floatclip.py:factory",
+      "code_sha256": "a3aaeab750b07e6f9f2814d84bb13ffb8fa5ed8b4a242aa51a77a44c25990c4b",
+      "candidate_us": 34.6436,
+      "tileops_us": 6.027066666666666,
+      "ratio": 5.748003451098379,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-floatclip-norm-20261116T154824Z/1389/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-quant-denominator62c5-ffi-20261116T155250Z/1389/result.json",
+      "generated_identity": "remote/runs/int8-quant-denominator62c5-ffi-20261116T155250Z/1389/TILEOPS_GENERATED_IDENTITY.json",
+      "generated_identity_complete": false,
+      "input_manifest": "input-manifests/1389.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "1e667ea42708f7fd414204678d8572017ea41173ebbaf74a8b9ebb6d9b6369f7",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "continue_optimization"
+    },
+    {
+      "ordinal": 1390,
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "ds-v3-prefill-float16"
+      ],
+      "actual_provider": "torch-npu-explicit-scale-quantize",
+      "candidate_entry": "int8_exact_norm_floatclip.py:factory",
+      "code_sha256": "a3aaeab750b07e6f9f2814d84bb13ffb8fa5ed8b4a242aa51a77a44c25990c4b",
+      "candidate_us": 387.4114,
+      "tileops_us": 224.7740666666667,
+      "ratio": 1.7235591531763301,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-floatclip-norm-20261116T154824Z/1390/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-quant-denominator62c5-blob-20261116T160102Z/1390/result.json",
+      "generated_identity": "remote/runs/int8-quant-denominator62c5-blob-20261116T160102Z/1390/TILEOPS_GENERATED_IDENTITY.json",
+      "generated_identity_complete": true,
+      "input_manifest": "input-manifests/1390.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "830a22ff401a61e88bae1e97d369cc731e6f4b0213be3863b371b2cf6115bb50",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1391,
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "ds-v3-prefill-bfloat16"
+      ],
+      "actual_provider": "torch-npu-explicit-scale-quantize",
+      "candidate_entry": "int8_exact_norm_floatclip.py:factory",
+      "code_sha256": "a3aaeab750b07e6f9f2814d84bb13ffb8fa5ed8b4a242aa51a77a44c25990c4b",
+      "candidate_us": 388.2503333333333,
+      "tileops_us": 239.31439999999998,
+      "ratio": 1.6223442188741393,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-floatclip-norm-20261116T154824Z/1391/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-quant-denominator62c5-blob-20261116T160235Z/1391/result.json",
+      "generated_identity": "remote/runs/int8-quant-denominator62c5-blob-20261116T160235Z/1391/TILEOPS_GENERATED_IDENTITY.json",
+      "generated_identity_complete": true,
+      "input_manifest": "input-manifests/1391.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "b3a2193377746a236eb5daff9380b12a1d2d0d192a8158b4d74cdc339f64cf0f",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    },
+    {
+      "ordinal": 1392,
+      "key": [
+        "torch-eager",
+        "INT8QuantPerBlockFwdOp",
+        "qwen3-235b-prefill-bfloat16"
+      ],
+      "actual_provider": "torch-npu-explicit-scale-quantize",
+      "candidate_entry": "int8_exact_norm_floatclip.py:factory",
+      "code_sha256": "a3aaeab750b07e6f9f2814d84bb13ffb8fa5ed8b4a242aa51a77a44c25990c4b",
+      "candidate_us": 199.45073333333332,
+      "tileops_us": 135.2006,
+      "ratio": 1.4752207707165006,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/int8-floatclip-norm-20261116T154824Z/1392/result.json"
+      ],
+      "denominator_result": "remote/runs/int8-quant-denominator62c5-blob-20261116T160235Z/1392/result.json",
+      "generated_identity": "remote/runs/int8-quant-denominator62c5-blob-20261116T160235Z/1392/TILEOPS_GENERATED_IDENTITY.json",
+      "generated_identity_complete": true,
+      "input_manifest": "input-manifests/1392.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "182d543054765dd58b68c24d64842343b1111d39d58dde752f208110425a6d40",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

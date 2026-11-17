@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-16T18:55:52.869988+00:00",
+  "verified_within3": 1,
+  "scope": [
+    140000
+  ],
+  "rows": [
+    {
+      "ordinal": 140000,
+      "key": [
+        "torch-eager",
+        "GDNFwdOp",
+        "q35-gva-decode-b64-float16"
+      ],
+      "actual_provider": "torch-eager-functional-FP32-GDN-decode",
+      "candidate_entry": "gdn_decode_direct.py:factory",
+      "code_sha256": "75b4abbe25b6696bc26f0bd23b368030e06c30454a9a95a5e486db0bde842ea5",
+      "candidate_us": 478.74326666666667,
+      "tileops_us": 252.542,
+      "ratio": 1.8956976133342838,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/gdn-decode-direct-v2-20261116T185042Z-59eb0e71/140000/result.json"
+      ],
+      "denominator_result": "remote/runs/gdn-denominator62c5-v3-20261116T185417Z-e15981f6/140000/result.json",
+      "generated_identity": "remote/runs/gdn-denominator62c5-v3-20261116T185417Z-e15981f6/140000/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/140000.json",
+      "check": {
+        "checked_outputs": 2,
+        "total_outputs": 2,
+        "max_abs_err": 9.5367431640625e-07,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "53ed8b7753d7cb9c70a4a882c6f99e1361f5dac9f8d649b3c08fabcacb1b979b",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}

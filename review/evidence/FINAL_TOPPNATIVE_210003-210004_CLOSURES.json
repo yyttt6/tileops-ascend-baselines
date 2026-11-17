@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-11-17T00:12:35.120183+00:00",
+  "verified_within3": 0,
+  "scope": [
+    210003,
+    210004
+  ],
+  "rows": [
+    {
+      "ordinal": 210003,
+      "key": [
+        "torch-eager",
+        "TopPMaskFwdOp",
+        "llama2-7b-b100-float16"
+      ],
+      "actual_provider": "torch-eager-complete-native-TopP-tie-restoration",
+      "candidate_entry": "top_p_native_full_api_v1.py:top_p_mask",
+      "code_sha256": "ec2946c05a444fc82f2dcb8d0f0b16923e9cdc6169ecd8b11899d06e61688106",
+      "candidate_us": 8731.330066666667,
+      "tileops_us": 286.4424,
+      "ratio": 30.481974968324057,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topp-native-v1-20261117T000956Z-236b27db/210003/result.json"
+      ],
+      "denominator_result": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210003/result.json",
+      "generated_identity": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210003/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/210003.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "b88f02768de3635002ae90260809a518db96ac410a6c0f2ee1802a5151a4743f",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "continue_optimization"
+    },
+    {
+      "ordinal": 210004,
+      "key": [
+        "torch-eager",
+        "TopPMaskFwdOp",
+        "llama-8b-b64-bfloat16"
+      ],
+      "actual_provider": "torch-eager-complete-native-TopP-tie-restoration",
+      "candidate_entry": "top_p_native_full_api_v1.py:top_p_mask",
+      "code_sha256": "ec2946c05a444fc82f2dcb8d0f0b16923e9cdc6169ecd8b11899d06e61688106",
+      "candidate_us": 25395.557666666668,
+      "tileops_us": 506.0092666666667,
+      "ratio": 50.18793002341591,
+      "verified_within3": false,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topp-native-v1-20261117T000956Z-236b27db/210004/result.json"
+      ],
+      "denominator_result": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210004/result.json",
+      "generated_identity": "remote/runs/topp-denominator-v1-20261117T000412Z-e40bb006/210004/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/210004.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "c07e9503a9fd9be575dd00855781252a958cbcc16081a7526877880422ed7f7c",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "continue_optimization"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Install torch/torch_npu/TileLang/CANN according to the selected runtime profile.
+# This file lists only the source/metadata support dependency.
+PyYAML>=6

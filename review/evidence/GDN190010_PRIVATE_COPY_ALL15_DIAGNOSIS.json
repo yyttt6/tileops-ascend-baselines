@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-11-17T02:15:22.433511+00:00",
+  "rows": [
+    {
+      "tag": "vllm-gdn-private-state-v2-20261117T020930Z-3547561c",
+      "device_us": 65.66353333333335,
+      "all15_task_mean_us": {
+        "RepeatInterleave_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_101": 7.753600000000001,
+        "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001": 3.8796666666666666,
+        "Transpose_float32_int64_high_performance_10002": 11.281333333333333,
+        "PadV3_c2aede63817fe62d6f288c6ac5d94001_high_performance_30010": 7.031933333333335,
+        "Range_b2cb2b97546bcd85efbca38148db9aes_high_performance_1002": 2.0130666666666666,
+        "fused_recurrent_gated_delta_rule_fwd_kernel": 33.70393333333333
+      },
+      "task_counts_all15": {
+        "RepeatInterleave_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_101": 30,
+        "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001": 15,
+        "Transpose_float32_int64_high_performance_10002": 15,
+        "PadV3_c2aede63817fe62d6f288c6ac5d94001_high_performance_30010": 15,
+        "Range_b2cb2b97546bcd85efbca38148db9aes_high_performance_1002": 15,
+        "fused_recurrent_gated_delta_rule_fwd_kernel": 15
+      }
+    },
+    {
+      "tag": "vllm-gdn-private-state-v3-20261117T021251Z-8d6a8d6d",
+      "device_us": 65.67099999999999,
+      "all15_task_mean_us": {
+        "RepeatInterleave_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_101": 7.556266666666667,
+        "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001": 3.7721333333333336,
+        "Transpose_float32_int64_high_performance_10002": 11.470266666666667,
+        "PadV3_c2aede63817fe62d6f288c6ac5d94001_high_performance_30010": 6.985933333333333,
+        "Range_b2cb2b97546bcd85efbca38148db9aes_high_performance_1002": 1.9993333333333336,
+        "fused_recurrent_gated_delta_rule_fwd_kernel": 33.88706666666667
+      },
+      "task_counts_all15": {
+        "RepeatInterleave_03c0542f2023bc999d5085c3cf4d9b0b_high_performance_101": 30,
+        "BroadcastTo_be837fe498fad076d01c0ce8dfd3d0146_high_performance_11001": 15,
+        "Transpose_float32_int64_high_performance_10002": 15,
+        "PadV3_c2aede63817fe62d6f288c6ac5d94001_high_performance_30010": 15,
+        "Range_b2cb2b97546bcd85efbca38148db9aes_high_performance_1002": 15,
+        "fused_recurrent_gated_delta_rule_fwd_kernel": 15
+      }
+    }
+  ],
+  "finding": "Omitting explicit contiguous did not remove native Transpose+Pad tasks; both routes seven tasks and virtually identical device means. No gain established. Original packed fullAPI removes private state padding; first pending trial currently running.",
+  "not_performance_ceiling": true
+}

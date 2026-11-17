@@ -1,0 +1,296 @@
+{
+  "checked_at": "2026-11-17T01:41:28.411335+00:00",
+  "scope": 5,
+  "frozen_family": "TopKMaskFwdOp",
+  "all5_verified_within3": true,
+  "max_ratio": 2.83486578601849,
+  "rows": [
+    {
+      "ordinal": 230000,
+      "key": [
+        "torch-eager",
+        "TopKMaskFwdOp",
+        "deepseek-v3-b17-mixed-bfloat16"
+      ],
+      "actual_provider": "Torch-complete-TopK-exact-input-value-order-without-FP32-temporary",
+      "candidate_entry": "top_k_storage_sort_v1.py:top_k_mask",
+      "code_sha256": "b6080074851c9d7b5277b2cea314432401e9135f64f35978f97af4d56eaca3cd",
+      "candidate_us": 193.7449333333333,
+      "tileops_us": 68.34360000000001,
+      "ratio": 2.83486578601849,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topk-storage-v1-20261117T011324Z-8220a0ae/230000/result.json"
+      ],
+      "denominator_result": "remote/runs/topk-denominator-v1-20261117T011445Z-8b77837f/230000/result.json",
+      "generated_identity": "remote/runs/topk-denominator-v1-20261117T011445Z-8b77837f/230000/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/230000.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "9ca5bb694001dba7368f17b7e68088c1821e40158cd753399182065bda4aa319",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            17,
+            129280
+          ],
+          "bfloat16"
+        ],
+        "k": [
+          [
+            17
+          ],
+          "int32"
+        ],
+        "masked_logits": [
+          [
+            17,
+            129280
+          ],
+          "bfloat16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    },
+    {
+      "ordinal": 230001,
+      "key": [
+        "torch-eager",
+        "TopKMaskFwdOp",
+        "gpt-oss-120b-b64-bfloat16"
+      ],
+      "actual_provider": "Torch-complete-original-FP32-TopK-from-actual-live-k-bound",
+      "candidate_entry": "top_k_bounded_selection_v1.py:top_k_mask",
+      "code_sha256": "a6c21932a5e28f98b23ba765956df6e6180777985307b4709d47f0a9a912b977",
+      "candidate_us": 420.088,
+      "tileops_us": 243.87146666666666,
+      "ratio": 1.7225795446344414,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topk-bounded-v1-20261117T012257Z-a971ba57/230001/result.json"
+      ],
+      "denominator_result": "remote/runs/topk-denominator-v1-20261117T012444Z-73ec44e3/230001/result.json",
+      "generated_identity": "remote/runs/topk-denominator-v1-20261117T012444Z-73ec44e3/230001/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/230001.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "6550ddd3160841708c264a5f4b818831a1c8a472779353756d44ca4582ad2359",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            64,
+            201088
+          ],
+          "bfloat16"
+        ],
+        "k": [
+          [
+            64
+          ],
+          "int32"
+        ],
+        "masked_logits": [
+          [
+            64,
+            201088
+          ],
+          "bfloat16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    },
+    {
+      "ordinal": 230003,
+      "key": [
+        "torch-eager",
+        "TopKMaskFwdOp",
+        "llama-8b-b64-bfloat16"
+      ],
+      "actual_provider": "Torch-complete-original-FP32-TopK-from-actual-live-k-bound",
+      "candidate_entry": "top_k_bounded_selection_v1.py:top_k_mask",
+      "code_sha256": "a6c21932a5e28f98b23ba765956df6e6180777985307b4709d47f0a9a912b977",
+      "candidate_us": 298.1603333333333,
+      "tileops_us": 155.12166666666667,
+      "ratio": 1.9221063036541208,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topk-bounded-v1-20261117T012839Z-7d87d737/230003/result.json"
+      ],
+      "denominator_result": "remote/runs/topk-denominator-v1-20261117T012444Z-73ec44e3/230003/result.json",
+      "generated_identity": "remote/runs/topk-denominator-v1-20261117T012444Z-73ec44e3/230003/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/230003.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "33523215cdf8e1f0b4e78c67b1d616f77ed75df0365f486f71588a445782f231",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            64,
+            128256
+          ],
+          "bfloat16"
+        ],
+        "k": [
+          [
+            64
+          ],
+          "int32"
+        ],
+        "masked_logits": [
+          [
+            64,
+            128256
+          ],
+          "bfloat16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    },
+    {
+      "ordinal": 230004,
+      "key": [
+        "torch-eager",
+        "TopKMaskFwdOp",
+        "qwen3-235b-b128-bfloat16"
+      ],
+      "actual_provider": "Torch-complete-original-FP32-TopK-from-actual-live-k-bound",
+      "candidate_entry": "top_k_bounded_selection_v1.py:top_k_mask",
+      "code_sha256": "a6c21932a5e28f98b23ba765956df6e6180777985307b4709d47f0a9a912b977",
+      "candidate_us": 595.9792666666667,
+      "tileops_us": 346.6732666666666,
+      "ratio": 1.7191382317913566,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topk-bounded-v1-20261117T012839Z-7d87d737/230004/result.json"
+      ],
+      "denominator_result": "remote/runs/topk-denominator-v1-20261117T012444Z-73ec44e3/230004/result.json",
+      "generated_identity": "remote/runs/topk-denominator-v1-20261117T012444Z-73ec44e3/230004/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/230004.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "bd680d063f51ac3c9cc5f481ba3f83b5e5e805a9ad2953ce80397ddf9acbf096",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            128,
+            151936
+          ],
+          "bfloat16"
+        ],
+        "k": [
+          [
+            128
+          ],
+          "int32"
+        ],
+        "masked_logits": [
+          [
+            128,
+            151936
+          ],
+          "bfloat16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    },
+    {
+      "ordinal": 230002,
+      "key": [
+        "torch-eager",
+        "TopKMaskFwdOp",
+        "llama-8b-b256-bfloat16"
+      ],
+      "actual_provider": "Torch-complete-original-FP32-TopK-from-actual-live-k-bound",
+      "candidate_entry": "top_k_bounded_selection_v1.py:top_k_mask",
+      "code_sha256": "a6c21932a5e28f98b23ba765956df6e6180777985307b4709d47f0a9a912b977",
+      "candidate_us": 1092.395,
+      "tileops_us": 515.2524666666667,
+      "ratio": 2.1201160026793335,
+      "verified_within3": true,
+      "candidate_processes": 1,
+      "candidate_results": [
+        "remote/runs/topk-bounded-v1-20261117T012839Z-7d87d737/230002/result.json"
+      ],
+      "denominator_result": "remote/runs/topk-denominator-v1-20261117T013350Z-17e601df/230002/result.json",
+      "generated_identity": "remote/runs/topk-denominator-v1-20261117T013350Z-17e601df/230002/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/230002.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "66dad3794812f2c78e7e2a95707dc69921b5b2c109a3496765a15462a2c8854c",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3",
+      "parameters": {
+        "logits": [
+          [
+            256,
+            128256
+          ],
+          "bfloat16"
+        ],
+        "k": [
+          [
+            256
+          ],
+          "int32"
+        ],
+        "masked_logits": [
+          [
+            256,
+            128256
+          ],
+          "bfloat16"
+        ]
+      },
+      "publication_status": "staged; not a website update"
+    }
+  ],
+  "evidence_sha256": {
+    "remote/runs/topk-storage-v1-20261117T011324Z-8220a0ae/230000/result.json": "034fa98faad5563dce1d62fc772c9d45a79612fc0fe1082237d97e2c63a9d597",
+    "remote/runs/topk-denominator-v1-20261117T011445Z-8b77837f/230000/result.json": "a0256d20f28d84c1d8cf71627667ea7737f34ed75d7f7e35fd34221dc790ff88",
+    "remote/runs/topk-bounded-v1-20261117T012257Z-a971ba57/230001/result.json": "9b88852d8262e0e28dafa405e9f658620ca3cea24d0287d60f4ea48d9b31c0d5",
+    "remote/runs/topk-denominator-v1-20261117T012444Z-73ec44e3/230001/result.json": "c1b1ddfff5082ae2f164075a113114966189fd28681337d9f92509c8a392f586",
+    "remote/runs/topk-bounded-v1-20261117T012839Z-7d87d737/230003/result.json": "7c9e33f660914ed77db6b90848ccdd88c192d15eaa3ea61764e2708228105fee",
+    "remote/runs/topk-denominator-v1-20261117T012444Z-73ec44e3/230003/result.json": "6dba5b709383bc5dddd8ec317e6d4ab5d263b07aa9546c2227f300a7dbaed7ac",
+    "remote/runs/topk-bounded-v1-20261117T012839Z-7d87d737/230004/result.json": "9e96f52acced879df630b7fe6bb99a7aea0b2eb6f20d1d64b4f9fa03aceeb526",
+    "remote/runs/topk-denominator-v1-20261117T012444Z-73ec44e3/230004/result.json": "a91fa9be869cab0087a015f33a4baa131b78d7a52b08851202d3c6516e6dbab9",
+    "remote/runs/topk-bounded-v1-20261117T012839Z-7d87d737/230002/result.json": "92c5731252203c90048a00cefc950e906b536bc3b7fdae9d67dd9556f860ef09",
+    "remote/runs/topk-denominator-v1-20261117T013350Z-17e601df/230002/result.json": "23482639da15d4e1f29145301d3f381552f405cf2873060daf6fc5535bb8353f"
+  },
+  "original_new_complete_API_comparison": "TOPK_BOUNDED_230001_FIRST_SAME_ENV_ORIGINAL_NEW_API_COMPARISON.json",
+  "qualification": "Frozen original inputs/golden/checker and full15raw/source/valid wholeprocessguards independently checked in family closers; matched public62c5device denominators.",
+  "route_choice": "Mixed-k230000 exact storage sort; uniform-k230001..4 FP32 boundedTopK recomputes maxcount from actualk each call, no cached data. Full42NPU boundaries passed for bounded route. Larger storage-sort failures retained, not selected.",
+  "publication": "staged only, not website/CI/nightly adoption",
+  "whole665_not_complete": true
+}

@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-11-16T19:39:27.792712+00:00",
+  "verified_within3": 1,
+  "scope": [
+    150000
+  ],
+  "rows": [
+    {
+      "ordinal": 150000,
+      "key": [
+        "torch-eager",
+        "GemmFP8FwdOp",
+        "ds-v3-m1-down-blk-float8_e4m3fn-bfloat16"
+      ],
+      "actual_provider": "torch-npu-FP8-batched128-FP32-contract-preencoded-unit-only",
+      "candidate_entry": "fp8_gemm_batched128_static_unit.py:factory",
+      "code_sha256": "48c0f099d8ff880aa3609190bfd3619caa896d932388a812f51d69a3ba15521e",
+      "candidate_us": 38.47573333333333,
+      "tileops_us": 13.242933333333333,
+      "ratio": 2.905378465999476,
+      "verified_within3": true,
+      "candidate_processes": 2,
+      "candidate_results": [
+        "remote/runs/fp8-gemm-batched128-static-unit-v3-20261116T193159Z-4fb6891c/150000/result.json",
+        "remote/runs/fp8-gemm-batched128-static-unit-v3-20261116T193801Z-86a716fa/150000/result.json"
+      ],
+      "denominator_result": "remote/runs/fp8-gemm-denominator62c5-v2-20261116T192331Z-2ce3b027/150000/result.json",
+      "generated_identity": "remote/runs/fp8-gemm-denominator62c5-v2-20261116T192331Z-2ce3b027/150000/TILEOPS_GENERATED_IDENTITY.json",
+      "input_manifest": "input-manifests/150000.json",
+      "check": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0078125,
+        "unchecked_reason": null
+      },
+      "payload_sha256": "fa6b591b846c31f406a9ea30986043beab83fb3a687dae684c184470d07fdad4",
+      "protocol": "ascend950-isolated-ffts-v3",
+      "status": "staged_verified_under3"
+    }
+  ]
+}
