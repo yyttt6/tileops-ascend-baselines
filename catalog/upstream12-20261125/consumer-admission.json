@@ -1,0 +1,57 @@
+{
+  "live_pins": {
+    "nightly": {
+      "site_commit": "3f22085ea964919682e1969aa94e57732f935014",
+      "files": {
+        "data/baseline-cache/snapshot.json": {
+          "git_blob": "1198ed4a2a13d59cf41a89c52227d6e1be59ee14",
+          "sha256": "db51780b276fff5ca6dc60e11e2cbc30d5035fa42ca5066218deb463b3350fb0"
+        },
+        "data/baseline-cache/latest-release.json": {
+          "git_blob": "93bba439a765845655ec129252bd8614bae2f1b4",
+          "sha256": "2720226071c655a09adf0f113c31c6ddfd609af5650832649d402a40784f7786"
+        },
+        "scripts/nightly_snapshot.py": {
+          "git_blob": "5286879002cdabae0ed6be8c254b15c9a8426707",
+          "sha256": "eb6120f503a716946332c097c7127b7c2d9114ffe4e004708b9d05b19405c02c"
+        },
+        "scripts/nightly_server2.py": {
+          "git_blob": "89abafbd9f803d7ed57cedf4f31f1eadcb5dbdc0",
+          "sha256": "86691f70676f0e5dbccfefd6b556fa19b28f855645f32c0526b219e029b5d0f0"
+        },
+        "scripts/baseline_release.py": {
+          "git_blob": "13eeab34b6f34c26bfe8ab622658cf5e6416bf07",
+          "sha256": "3a663344b82de546de73e9e235d8c0370cbb1d2da184e9730ac2b3e681f45b87"
+        },
+        "scripts/baseline_contracts.py": {
+          "git_blob": "7db8a89b09e678d823bb4a480ea7b0aacc2d5ce8",
+          "sha256": "7fe4e7db28930edfa3c7fb678d600f4482ca9930b0d8f498719412c8630ef527"
+        },
+        ".github/workflows/ascend950-nightly.yml": {
+          "git_blob": "2504c852630077bfdf749b324c36514ac8938d62",
+          "sha256": "71f96b696ae68fab2987fc016c8a68038475f89e2575a6cd33ff78704843feb5"
+        }
+      }
+    },
+    "ci": {
+      "site_commit": "63c58f4738f484009b6ae4d9da660212177663a8",
+      "files": {
+        "data/baseline-cache/snapshot.json": {
+          "git_blob": "1198ed4a2a13d59cf41a89c52227d6e1be59ee14",
+          "sha256": "db51780b276fff5ca6dc60e11e2cbc30d5035fa42ca5066218deb463b3350fb0"
+        },
+        "data/baseline-cache/latest-release.json": {
+          "git_blob": "93bba439a765845655ec129252bd8614bae2f1b4",
+          "sha256": "2720226071c655a09adf0f113c31c6ddfd609af5650832649d402a40784f7786"
+        }
+      }
+    }
+  },
+  "existing_baseline_rows": 7735,
+  "candidate_baseline_rows": 7835,
+  "current_new_cases_matched": 0,
+  "ci_candidate_matches": 100,
+  "nightly_candidate_matches": 100,
+  "existing_rows_untouched_by_addition": true,
+  "production_changed": false
+}

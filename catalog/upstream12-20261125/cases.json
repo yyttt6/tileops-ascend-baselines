@@ -1,0 +1,4753 @@
+{
+  "upstream": "tile-ai/TileOPs@2aa61fbff7bb7bcc778c8554d720543df293ab66",
+  "source": "yyttt6/TileOPs@fe6bdab98325d9625957aafffebca3c6bd0d7e80",
+  "ascend_parent": "b47b02deea178d662d31c51d5b723b6739a465f4",
+  "operators": {
+    "GatedPoolCompressFwdOp": {
+      "ref_api": "workloads.attention.gated_pool_compress.gated_pool_compress",
+      "spec_sha256": "c3d38ed783164cbb45ac7e7744fe72c7ce7cd92ba7eb199c1b07e290c01f6904",
+      "case_sha256": "a8182e5a7589dd3dbadd05e1c56e6007e87b0345e532e7b991fdc0011837b5e8",
+      "case_count": 12,
+      "cases": [
+        {
+          "id": "dsv4-flash-csa-4k-float32",
+          "tensors": {
+            "kv": [
+              [
+                4096,
+                1024
+              ],
+              "float32"
+            ],
+            "score": [
+              [
+                4096,
+                1024
+              ],
+              "float32"
+            ],
+            "ape": [
+              [
+                4,
+                1024
+              ],
+              "float32"
+            ],
+            "kv_state": [
+              [
+                64,
+                8,
+                1024
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                8,
+                1024
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                2
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                4096,
+                512
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                4096
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 4,
+            "overlap": true,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-csa-32k-float32",
+          "tensors": {
+            "kv": [
+              [
+                32768,
+                1024
+              ],
+              "float32"
+            ],
+            "score": [
+              [
+                32768,
+                1024
+              ],
+              "float32"
+            ],
+            "ape": [
+              [
+                4,
+                1024
+              ],
+              "float32"
+            ],
+            "kv_state": [
+              [
+                64,
+                8,
+                1024
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                8,
+                1024
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                2
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                32768,
+                512
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                32768
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 4,
+            "overlap": true,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-csa-b64-float32",
+          "tensors": {
+            "kv": [
+              [
+                64,
+                1024
+              ],
+              "float32"
+            ],
+            "score": [
+              [
+                64,
+                1024
+              ],
+              "float32"
+            ],
+            "ape": [
+              [
+                4,
+                1024
+              ],
+              "float32"
+            ],
+            "kv_state": [
+              [
+                64,
+                8,
+                1024
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                8,
+                1024
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                65
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                64,
+                512
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                64
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 4,
+            "overlap": true,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-csa-mtp-float32",
+          "tensors": {
+            "kv": [
+              [
+                32,
+                1024
+              ],
+              "float32"
+            ],
+            "score": [
+              [
+                32,
+                1024
+              ],
+              "float32"
+            ],
+            "ape": [
+              [
+                4,
+                1024
+              ],
+              "float32"
+            ],
+            "kv_state": [
+              [
+                64,
+                8,
+                1024
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                8,
+                1024
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                17
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                16
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                16
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                32,
+                512
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                32
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 4,
+            "overlap": true,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-hca-4k-float32",
+          "tensors": {
+            "kv": [
+              [
+                4096,
+                512
+              ],
+              "float32"
+            ],
+            "score": [
+              [
+                4096,
+                512
+              ],
+              "float32"
+            ],
+            "ape": [
+              [
+                128,
+                512
+              ],
+              "float32"
+            ],
+            "kv_state": [
+              [
+                64,
+                128,
+                512
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                128,
+                512
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                2
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                4096,
+                512
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                4096
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 128,
+            "overlap": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-hca-32k-float32",
+          "tensors": {
+            "kv": [
+              [
+                32768,
+                512
+              ],
+              "float32"
+            ],
+            "score": [
+              [
+                32768,
+                512
+              ],
+              "float32"
+            ],
+            "ape": [
+              [
+                128,
+                512
+              ],
+              "float32"
+            ],
+            "kv_state": [
+              [
+                64,
+                128,
+                512
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                128,
+                512
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                2
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                32768,
+                512
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                32768
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 128,
+            "overlap": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-hca-b64-float32",
+          "tensors": {
+            "kv": [
+              [
+                64,
+                512
+              ],
+              "float32"
+            ],
+            "score": [
+              [
+                64,
+                512
+              ],
+              "float32"
+            ],
+            "ape": [
+              [
+                128,
+                512
+              ],
+              "float32"
+            ],
+            "kv_state": [
+              [
+                64,
+                128,
+                512
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                128,
+                512
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                65
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                64,
+                512
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                64
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 128,
+            "overlap": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-idx-4k-float32",
+          "tensors": {
+            "kv": [
+              [
+                4096,
+                256
+              ],
+              "float32"
+            ],
+            "score": [
+              [
+                4096,
+                256
+              ],
+              "float32"
+            ],
+            "ape": [
+              [
+                4,
+                256
+              ],
+              "float32"
+            ],
+            "kv_state": [
+              [
+                64,
+                8,
+                256
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                8,
+                256
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                2
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                4096,
+                128
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                4096
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 4,
+            "overlap": true,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-idx-b64-float32",
+          "tensors": {
+            "kv": [
+              [
+                64,
+                256
+              ],
+              "float32"
+            ],
+            "score": [
+              [
+                64,
+                256
+              ],
+              "float32"
+            ],
+            "ape": [
+              [
+                4,
+                256
+              ],
+              "float32"
+            ],
+            "kv_state": [
+              [
+                64,
+                8,
+                256
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                8,
+                256
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                65
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                64
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 4,
+            "overlap": true,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "glm-5.3-flash-4k-bfloat16",
+          "tensors": {
+            "kv": [
+              [
+                4096,
+                128
+              ],
+              "bfloat16"
+            ],
+            "score": [
+              [
+                4096,
+                128
+              ],
+              "bfloat16"
+            ],
+            "ape": [
+              [
+                4,
+                128
+              ],
+              "bfloat16"
+            ],
+            "kv_state": [
+              [
+                64,
+                4,
+                128
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                4,
+                128
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                2
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                1
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                4096,
+                128
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                4096
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 4,
+            "overlap": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "glm-5.3-flash-ragged-bfloat16",
+          "tensors": {
+            "kv": [
+              [
+                32768,
+                128
+              ],
+              "bfloat16"
+            ],
+            "score": [
+              [
+                32768,
+                128
+              ],
+              "bfloat16"
+            ],
+            "ape": [
+              [
+                4,
+                128
+              ],
+              "bfloat16"
+            ],
+            "kv_state": [
+              [
+                64,
+                4,
+                128
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                4,
+                128
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                3
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                2
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                2
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                32768,
+                128
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                32768
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 4,
+            "overlap": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "glm-5.3-flash-b64-bfloat16",
+          "tensors": {
+            "kv": [
+              [
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "score": [
+              [
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "ape": [
+              [
+                4,
+                128
+              ],
+              "bfloat16"
+            ],
+            "kv_state": [
+              [
+                64,
+                4,
+                128
+              ],
+              "float32"
+            ],
+            "score_state": [
+              [
+                64,
+                4,
+                128
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                65
+              ],
+              "int32"
+            ],
+            "start_pos": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "state_slots": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "entries": [
+              [
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "valid": [
+              [
+                64
+              ],
+              "bool"
+            ]
+          },
+          "parameters": {
+            "ratio": 4,
+            "overlap": false,
+            "validate_inputs": false
+          }
+        }
+      ]
+    },
+    "EmbeddingFwdOp": {
+      "ref_api": "torch.nn.functional.embedding",
+      "spec_sha256": "a87b4326f8132e995c01bf91089a7cc4f77a62c8f563cff6fc9a9b8ebe930220",
+      "case_sha256": "8456e0db28129e2df2bfcd7217395361a10dbce653ab56481b0d6755ce1ff144",
+      "case_count": 12,
+      "cases": [
+        {
+          "id": "qwen3.6-27b-prefill-int64-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                1,
+                4096
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                248320,
+                5120
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                5120
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.6-27b-prefill-32k-int64-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                1,
+                32768
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                248320,
+                5120
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1,
+                32768,
+                5120
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.6-27b-decode-b64-int64-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                64,
+                1
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                248320,
+                5120
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                64,
+                1,
+                5120
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "llama3-8b-prefill-int32-float16",
+          "tensors": {
+            "input": [
+              [
+                1,
+                4096
+              ],
+              "int32"
+            ],
+            "weight": [
+              [
+                128256,
+                4096
+              ],
+              "float16"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                4096
+              ],
+              "float16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "llama3-8b-prefill-int64-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                1,
+                4096
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                128256,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.6-vision-pos-int64-float32",
+          "tensors": {
+            "input": [
+              [
+                4,
+                4096
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                2304,
+                1152
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                4,
+                4096,
+                1152
+              ],
+              "float32"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.6-35b-a3b-prefill-int64-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                1,
+                4096
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                248320,
+                2048
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                2048
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-prefill-int64-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                1,
+                4096
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                129280,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-tid2eid-int64-int64",
+          "tensors": {
+            "input": [
+              [
+                1,
+                4096
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                129280,
+                6
+              ],
+              "int64"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                6
+              ],
+              "int64"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "glm-5.3-flash-prefill-int64-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                1,
+                4096
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                154880,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.8-flash-prefill-int64-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                1,
+                4096
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                248320,
+                2560
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                2560
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "ngram-table-64bit-int64-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                1,
+                4096
+              ],
+              "int64"
+            ],
+            "weight": [
+              [
+                16777216,
+                160
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                160
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "padding_idx": null,
+            "max_norm": null,
+            "norm_type": 2.0,
+            "scale_grad_by_freq": false,
+            "sparse": false,
+            "validate_inputs": false
+          }
+        }
+      ]
+    },
+    "MaskedScatterFwdOp": {
+      "ref_api": "torch.masked_scatter",
+      "spec_sha256": "20aba844c0c2342d367007cb5220736ba21322b190e2e4d47855b9f1f6803f0b",
+      "case_sha256": "3dce7e51d9520164f19a6006cbbeb7ff00d399bb6f7058b70167ea09d46e1431",
+      "case_count": 7,
+      "cases": [
+        {
+          "id": "qwen3.6-27b-image-4k-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                4096,
+                5120
+              ],
+              "bfloat16"
+            ],
+            "mask": [
+              [
+                4096,
+                1
+              ],
+              "bool"
+            ],
+            "source": [
+              [
+                4096,
+                5120
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                5120
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {}
+        },
+        {
+          "id": "qwen3.6-27b-image-16k-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                16384,
+                5120
+              ],
+              "bfloat16"
+            ],
+            "mask": [
+              [
+                16384,
+                1
+              ],
+              "bool"
+            ],
+            "source": [
+              [
+                16384,
+                5120
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                16384,
+                5120
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {}
+        },
+        {
+          "id": "qwen3.6-35b-a3b-image-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                4096,
+                2048
+              ],
+              "bfloat16"
+            ],
+            "mask": [
+              [
+                4096,
+                1
+              ],
+              "bool"
+            ],
+            "source": [
+              [
+                4096,
+                2048
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                2048
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {}
+        },
+        {
+          "id": "glm-5.3-flash-image-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "mask": [
+              [
+                4096,
+                1
+              ],
+              "bool"
+            ],
+            "source": [
+              [
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {}
+        },
+        {
+          "id": "qwen3.8-flash-image-bfloat16",
+          "tensors": {
+            "input": [
+              [
+                4096,
+                2560
+              ],
+              "bfloat16"
+            ],
+            "mask": [
+              [
+                4096,
+                1
+              ],
+              "bool"
+            ],
+            "source": [
+              [
+                4096,
+                2560
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                2560
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {}
+        },
+        {
+          "id": "llava-image-3k-float16",
+          "tensors": {
+            "input": [
+              [
+                3000,
+                4096
+              ],
+              "float16"
+            ],
+            "mask": [
+              [
+                3000,
+                1
+              ],
+              "bool"
+            ],
+            "source": [
+              [
+                3000,
+                4096
+              ],
+              "float16"
+            ],
+            "output": [
+              [
+                3000,
+                4096
+              ],
+              "float16"
+            ]
+          },
+          "parameters": {}
+        },
+        {
+          "id": "llava-image-3k-float32",
+          "tensors": {
+            "input": [
+              [
+                3000,
+                4096
+              ],
+              "float32"
+            ],
+            "mask": [
+              [
+                3000,
+                1
+              ],
+              "bool"
+            ],
+            "source": [
+              [
+                3000,
+                4096
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                3000,
+                4096
+              ],
+              "float32"
+            ]
+          },
+          "parameters": {}
+        }
+      ]
+    },
+    "ConcatFwdOp": {
+      "ref_api": "torch.cat",
+      "spec_sha256": "57f50189ca1d18ceb7dc492cdace587bb2ed089786dbfa62937fc79c13a3e8c4",
+      "case_sha256": "977bd05f3e8f8d5a0fe3fe4ac2e32ae3dbfec307028444087f8bac277c1ecd35",
+      "case_count": 11,
+      "cases": [
+        {
+          "id": "qwen36-mtp-prefill-float16.float16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    4096,
+                    5120
+                  ],
+                  "float16"
+                ],
+                [
+                  [
+                    4096,
+                    5120
+                  ],
+                  "float16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                4096,
+                10240
+              ],
+              "float16"
+            ]
+          },
+          "parameters": {
+            "dim": -1
+          }
+        },
+        {
+          "id": "qwen36-mtp-prefill-bfloat16.bfloat16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    4096,
+                    5120
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    4096,
+                    5120
+                  ],
+                  "bfloat16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                4096,
+                10240
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "dim": -1
+          }
+        },
+        {
+          "id": "qwen36-mtp-prefill-float32.float32",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    4096,
+                    5120
+                  ],
+                  "float32"
+                ],
+                [
+                  [
+                    4096,
+                    5120
+                  ],
+                  "float32"
+                ]
+              ]
+            },
+            "output": [
+              [
+                4096,
+                10240
+              ],
+              "float32"
+            ]
+          },
+          "parameters": {
+            "dim": -1
+          }
+        },
+        {
+          "id": "qwen36-mtp-draft-bfloat16.bfloat16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    64,
+                    5120
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    64,
+                    5120
+                  ],
+                  "bfloat16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                64,
+                10240
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "dim": -1
+          }
+        },
+        {
+          "id": "qwen36-mtp-decode-4-bfloat16.bfloat16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    4,
+                    5120
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    4,
+                    5120
+                  ],
+                  "bfloat16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                4,
+                10240
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "dim": -1
+          }
+        },
+        {
+          "id": "qwen36-mtp-decode-bfloat16.bfloat16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    1,
+                    5120
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    1,
+                    5120
+                  ],
+                  "bfloat16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                1,
+                10240
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "dim": -1
+          }
+        },
+        {
+          "id": "uneven-cols-bfloat16.bfloat16.bfloat16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    2048,
+                    1024
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    2048,
+                    4096
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    2048,
+                    3000
+                  ],
+                  "bfloat16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                2048,
+                8120
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "dim": 1
+          }
+        },
+        {
+          "id": "uneven-cols-bfloat16.float16.bfloat16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    2048,
+                    1024
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    2048,
+                    4096
+                  ],
+                  "float16"
+                ],
+                [
+                  [
+                    2048,
+                    3000
+                  ],
+                  "bfloat16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                2048,
+                8120
+              ],
+              "float32"
+            ]
+          },
+          "parameters": {
+            "dim": 1
+          }
+        },
+        {
+          "id": "uneven-rows-bfloat16.bfloat16.bfloat16.bfloat16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    512,
+                    4096
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    1000,
+                    4096
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    512,
+                    4096
+                  ],
+                  "bfloat16"
+                ],
+                [
+                  [
+                    24,
+                    4096
+                  ],
+                  "bfloat16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                2048,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "dim": 0
+          }
+        },
+        {
+          "id": "uneven-rows-float16.float32.float16.float16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    512,
+                    4096
+                  ],
+                  "float16"
+                ],
+                [
+                  [
+                    1000,
+                    4096
+                  ],
+                  "float32"
+                ],
+                [
+                  [
+                    512,
+                    4096
+                  ],
+                  "float16"
+                ],
+                [
+                  [
+                    24,
+                    4096
+                  ],
+                  "float16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                2048,
+                4096
+              ],
+              "float32"
+            ]
+          },
+          "parameters": {
+            "dim": 0
+          }
+        },
+        {
+          "id": "narrow-rows-float16.float16",
+          "tensors": {
+            "tensors": {
+              "items": [
+                [
+                  [
+                    300000,
+                    8
+                  ],
+                  "float16"
+                ],
+                [
+                  [
+                    300000,
+                    8
+                  ],
+                  "float16"
+                ]
+              ]
+            },
+            "output": [
+              [
+                300000,
+                16
+              ],
+              "float16"
+            ]
+          },
+          "parameters": {
+            "dim": -1
+          }
+        }
+      ]
+    },
+    "MoEGroupedGEMMMXFP4FwdOp": {
+      "ref_api": "workloads.moe.ref_moe_grouped_gemm_mxfp4",
+      "spec_sha256": "1a2437ae97bb76a1e7c1fc4128d61a9e224dae38f49b2fe3f241e76f8b735ba9",
+      "case_sha256": "472e80f39073b0b66c4154ebcafdc1e9dcee46eeb4db2aa3827210ebebd141fc",
+      "case_count": 9,
+      "cases": [
+        {
+          "id": "dsv4-dec-b64-up-float8_e8m0fnu",
+          "tensors": {
+            "a": [
+              [
+                32,
+                64,
+                4096
+              ],
+              "float8_e4m3fn"
+            ],
+            "a_scale": [
+              [
+                32,
+                64,
+                32
+              ],
+              "float8_e8m0fnu"
+            ],
+            "b": [
+              [
+                32,
+                4096,
+                2048
+              ],
+              "uint8"
+            ],
+            "b_scale": [
+              [
+                32,
+                4096,
+                128
+              ],
+              "float8_e8m0fnu"
+            ],
+            "layout_metadata": [
+              [
+                32
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                32,
+                64,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "layout": {
+              "masked": {
+                "max_m": 64
+              }
+            }
+          }
+        },
+        {
+          "id": "dsv4-dec-b64-down-float8_e8m0fnu",
+          "tensors": {
+            "a": [
+              [
+                32,
+                64,
+                2048
+              ],
+              "float8_e4m3fn"
+            ],
+            "a_scale": [
+              [
+                32,
+                64,
+                16
+              ],
+              "float8_e8m0fnu"
+            ],
+            "b": [
+              [
+                32,
+                4096,
+                1024
+              ],
+              "uint8"
+            ],
+            "b_scale": [
+              [
+                32,
+                4096,
+                64
+              ],
+              "float8_e8m0fnu"
+            ],
+            "layout_metadata": [
+              [
+                32
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                32,
+                64,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "layout": {
+              "masked": {
+                "max_m": 64
+              }
+            }
+          }
+        },
+        {
+          "id": "dsv4-dec-b256-up-float8_e8m0fnu",
+          "tensors": {
+            "a": [
+              [
+                32,
+                256,
+                4096
+              ],
+              "float8_e4m3fn"
+            ],
+            "a_scale": [
+              [
+                32,
+                256,
+                32
+              ],
+              "float8_e8m0fnu"
+            ],
+            "b": [
+              [
+                32,
+                4096,
+                2048
+              ],
+              "uint8"
+            ],
+            "b_scale": [
+              [
+                32,
+                4096,
+                128
+              ],
+              "float8_e8m0fnu"
+            ],
+            "layout_metadata": [
+              [
+                32
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                32,
+                256,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "layout": {
+              "masked": {
+                "max_m": 256
+              }
+            }
+          }
+        },
+        {
+          "id": "dsv4-dec-b256-up-float32",
+          "tensors": {
+            "a": [
+              [
+                32,
+                256,
+                4096
+              ],
+              "float8_e4m3fn"
+            ],
+            "a_scale": [
+              [
+                32,
+                256,
+                32
+              ],
+              "float32"
+            ],
+            "b": [
+              [
+                32,
+                4096,
+                2048
+              ],
+              "uint8"
+            ],
+            "b_scale": [
+              [
+                32,
+                4096,
+                128
+              ],
+              "float32"
+            ],
+            "layout_metadata": [
+              [
+                32
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                32,
+                256,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "layout": {
+              "masked": {
+                "max_m": 256
+              }
+            }
+          }
+        },
+        {
+          "id": "dsv4-dec-b256-down-float8_e8m0fnu",
+          "tensors": {
+            "a": [
+              [
+                32,
+                256,
+                2048
+              ],
+              "float8_e4m3fn"
+            ],
+            "a_scale": [
+              [
+                32,
+                256,
+                16
+              ],
+              "float8_e8m0fnu"
+            ],
+            "b": [
+              [
+                32,
+                4096,
+                1024
+              ],
+              "uint8"
+            ],
+            "b_scale": [
+              [
+                32,
+                4096,
+                64
+              ],
+              "float8_e8m0fnu"
+            ],
+            "layout_metadata": [
+              [
+                32
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                32,
+                256,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "layout": {
+              "masked": {
+                "max_m": 256
+              }
+            }
+          }
+        },
+        {
+          "id": "dsv4-ep8-4k-up-float8_e8m0fnu",
+          "tensors": {
+            "a": [
+              [
+                4096,
+                4096
+              ],
+              "float8_e4m3fn"
+            ],
+            "a_scale": [
+              [
+                4096,
+                32
+              ],
+              "float8_e8m0fnu"
+            ],
+            "b": [
+              [
+                32,
+                4096,
+                2048
+              ],
+              "uint8"
+            ],
+            "b_scale": [
+              [
+                32,
+                4096,
+                128
+              ],
+              "float8_e8m0fnu"
+            ],
+            "layout_metadata": [
+              [
+                4096
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "layout": {
+              "contiguous": {
+                "packing": "aligned",
+                "metadata_kind": "per_row",
+                "alignment": 128
+              }
+            }
+          }
+        },
+        {
+          "id": "dsv4-ep8-4k-down-float8_e8m0fnu",
+          "tensors": {
+            "a": [
+              [
+                4096,
+                2048
+              ],
+              "float8_e4m3fn"
+            ],
+            "a_scale": [
+              [
+                4096,
+                16
+              ],
+              "float8_e8m0fnu"
+            ],
+            "b": [
+              [
+                32,
+                4096,
+                1024
+              ],
+              "uint8"
+            ],
+            "b_scale": [
+              [
+                32,
+                4096,
+                64
+              ],
+              "float8_e8m0fnu"
+            ],
+            "layout_metadata": [
+              [
+                4096
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "layout": {
+              "contiguous": {
+                "packing": "aligned",
+                "metadata_kind": "per_row",
+                "alignment": 128
+              }
+            }
+          }
+        },
+        {
+          "id": "dsv4-ep8-32k-up-float8_e8m0fnu",
+          "tensors": {
+            "a": [
+              [
+                24576,
+                4096
+              ],
+              "float8_e4m3fn"
+            ],
+            "a_scale": [
+              [
+                24576,
+                32
+              ],
+              "float8_e8m0fnu"
+            ],
+            "b": [
+              [
+                32,
+                4096,
+                2048
+              ],
+              "uint8"
+            ],
+            "b_scale": [
+              [
+                32,
+                4096,
+                128
+              ],
+              "float8_e8m0fnu"
+            ],
+            "layout_metadata": [
+              [
+                24576
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                24576,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "layout": {
+              "contiguous": {
+                "packing": "aligned",
+                "metadata_kind": "per_row",
+                "alignment": 128
+              }
+            }
+          }
+        },
+        {
+          "id": "dsv4-ep8-32k-down-float8_e8m0fnu",
+          "tensors": {
+            "a": [
+              [
+                24576,
+                2048
+              ],
+              "float8_e4m3fn"
+            ],
+            "a_scale": [
+              [
+                24576,
+                16
+              ],
+              "float8_e8m0fnu"
+            ],
+            "b": [
+              [
+                32,
+                4096,
+                1024
+              ],
+              "uint8"
+            ],
+            "b_scale": [
+              [
+                32,
+                4096,
+                64
+              ],
+              "float8_e8m0fnu"
+            ],
+            "layout_metadata": [
+              [
+                24576
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                24576,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "layout": {
+              "contiguous": {
+                "packing": "aligned",
+                "metadata_kind": "per_row",
+                "alignment": 128
+              }
+            }
+          }
+        }
+      ]
+    },
+    "RMSNormGatedFwdOp": {
+      "ref_api": "workloads.norm.rms_norm_gated",
+      "spec_sha256": "9fac0af55e3df5413c5c73b0db5d5bd93c7ad701e92a4a3fbc26e4c10721a253",
+      "case_sha256": "c5b9ef0a307467b613ed97592168ac3799d11207f99b63b25fd57f6f3ebbd8a2",
+      "case_count": 13,
+      "cases": [
+        {
+          "id": "qwen3.6-27b-gdn-prefill-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                48,
+                128
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "bfloat16"
+            ],
+            "z": [
+              [
+                4096,
+                48,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                48,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "silu"
+          }
+        },
+        {
+          "id": "qwen3.6-27b-gdn-decode-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                64,
+                48,
+                128
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "bfloat16"
+            ],
+            "z": [
+              [
+                64,
+                48,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                64,
+                48,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "silu"
+          }
+        },
+        {
+          "id": "qwen3.6-27b-gdn-decode-float16-float16-float16",
+          "tensors": {
+            "x": [
+              [
+                64,
+                48,
+                128
+              ],
+              "float16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "float16"
+            ],
+            "z": [
+              [
+                64,
+                48,
+                128
+              ],
+              "float16"
+            ],
+            "output": [
+              [
+                64,
+                48,
+                128
+              ],
+              "float16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "silu"
+          }
+        },
+        {
+          "id": "qwen3-next-gdn-prefill-bfloat16-float32-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "float32"
+            ],
+            "z": [
+              [
+                4096,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                32,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "silu"
+          }
+        },
+        {
+          "id": "qwen3.6-35b-a3b-prefill-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "bfloat16"
+            ],
+            "z": [
+              [
+                4096,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                32,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "silu"
+          }
+        },
+        {
+          "id": "qwen3.6-35b-a3b-decode-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                64,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "bfloat16"
+            ],
+            "z": [
+              [
+                64,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                64,
+                32,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "silu"
+          }
+        },
+        {
+          "id": "qwen3.8-flash-prefill-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                48,
+                128
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "bfloat16"
+            ],
+            "z": [
+              [
+                4096,
+                48,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                48,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "sigmoid"
+          }
+        },
+        {
+          "id": "qwen3.8-flash-decode-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                64,
+                48,
+                128
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "bfloat16"
+            ],
+            "z": [
+              [
+                64,
+                48,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                64,
+                48,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "sigmoid"
+          }
+        },
+        {
+          "id": "glm-5.3-flash-prefill-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "bfloat16"
+            ],
+            "z": [
+              [
+                4096,
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                64,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "sigmoid"
+          }
+        },
+        {
+          "id": "glm-5.3-flash-decode-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                64,
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                128
+              ],
+              "bfloat16"
+            ],
+            "z": [
+              [
+                64,
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                64,
+                64,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "sigmoid"
+          }
+        },
+        {
+          "id": "mamba2-2.7b-bfloat16-float32-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                5120
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                5120
+              ],
+              "float32"
+            ],
+            "z": [
+              [
+                4096,
+                5120
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                5120
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": 5120,
+            "norm_before_gate": false,
+            "activation": "silu"
+          }
+        },
+        {
+          "id": "codestral-mamba-7b-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                8192
+              ],
+              "bfloat16"
+            ],
+            "weight": [
+              [
+                8192
+              ],
+              "bfloat16"
+            ],
+            "z": [
+              [
+                4096,
+                8192
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                8192
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-06,
+            "group_size": 1024,
+            "norm_before_gate": false,
+            "activation": "silu"
+          }
+        },
+        {
+          "id": "ungated-bias-float32-float32-float32",
+          "tensors": {
+            "x": [
+              [
+                2048,
+                3000
+              ],
+              "float32"
+            ],
+            "weight": [
+              [
+                3000
+              ],
+              "float32"
+            ],
+            "bias": [
+              [
+                3000
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                2048,
+                3000
+              ],
+              "float32"
+            ]
+          },
+          "parameters": {
+            "eps": 1e-05,
+            "group_size": null,
+            "norm_before_gate": true,
+            "activation": "silu"
+          }
+        }
+      ]
+    },
+    "FP4QuantPerGroupFwdOp": {
+      "ref_api": "workloads.quantization.quantize.fp4_quant_per_group",
+      "spec_sha256": "0dfab1ad3f3a85578c9133613f9bc133fb5b387e90158ae022087493d6f54670",
+      "case_sha256": "563d636618e89039adc2b323fe31c1bc8754b8ee1b8d20bdce6654dc27e47695",
+      "case_count": 6,
+      "cases": [
+        {
+          "id": "dsv4-flash-idx-q-t1",
+          "tensors": {
+            "x": [
+              [
+                1,
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1,
+                64,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "block_size": 32,
+            "inplace": true
+          }
+        },
+        {
+          "id": "dsv4-flash-idx-q-4k",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4096,
+                64,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "block_size": 32,
+            "inplace": true
+          }
+        },
+        {
+          "id": "dsv4-flash-idx-q-32k",
+          "tensors": {
+            "x": [
+              [
+                32768,
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                32768,
+                64,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "block_size": 32,
+            "inplace": true
+          }
+        },
+        {
+          "id": "dsv4-flash-idx-k-1k",
+          "tensors": {
+            "x": [
+              [
+                1024,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                1024,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "block_size": 32,
+            "inplace": true
+          }
+        },
+        {
+          "id": "dsv4-flash-idx-k-3000",
+          "tensors": {
+            "x": [
+              [
+                3000,
+                128
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                3000,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "block_size": 32,
+            "inplace": true
+          }
+        },
+        {
+          "id": "dsv4-flash-q-4k-quant",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                64,
+                128
+              ],
+              "bfloat16"
+            ],
+            "q": [
+              [
+                4096,
+                64,
+                64
+              ],
+              "uint8"
+            ],
+            "scale": [
+              [
+                4096,
+                64,
+                4
+              ],
+              "float8_e8m0fnu"
+            ]
+          },
+          "parameters": {
+            "block_size": 32,
+            "inplace": false
+          }
+        }
+      ]
+    },
+    "RoPECosSinFwdOp": {
+      "ref_api": "flash_attn.layers.rotary.apply_rotary_emb",
+      "spec_sha256": "358c03b59224e2d3b5f636f008ac971b312b84be47908af65761f2d8c46d5d07",
+      "case_sha256": "f9766a9623fecdd4a22465b7d69ceadacbddd0e46547b81d73631489398e53b5",
+      "case_count": 14,
+      "cases": [
+        {
+          "id": "qwen3.6-vision-4k-bfloat16-float32-float32",
+          "tensors": {
+            "x": [
+              [
+                1,
+                4096,
+                16,
+                72
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                4096,
+                36
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                4096,
+                36
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                16,
+                72
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": false,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.6-vision-16k-bfloat16-float32-float32",
+          "tensors": {
+            "x": [
+              [
+                1,
+                16384,
+                16,
+                72
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                16384,
+                36
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                16384,
+                36
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                1,
+                16384,
+                16,
+                72
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": false,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "llama3-8b-prefill-float16-float16-float16",
+          "tensors": {
+            "x": [
+              [
+                4,
+                2048,
+                32,
+                128
+              ],
+              "float16"
+            ],
+            "cos": [
+              [
+                4096,
+                64
+              ],
+              "float16"
+            ],
+            "sin": [
+              [
+                4096,
+                64
+              ],
+              "float16"
+            ],
+            "output": [
+              [
+                4,
+                2048,
+                32,
+                128
+              ],
+              "float16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": false,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "llama3-8b-prefill-bfloat16-bfloat16-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                4,
+                2048,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                4096,
+                64
+              ],
+              "bfloat16"
+            ],
+            "sin": [
+              [
+                4096,
+                64
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                4,
+                2048,
+                32,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": false,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "glm-4.5-partial-bfloat16-float32-float32",
+          "tensors": {
+            "x": [
+              [
+                4,
+                2048,
+                96,
+                128
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                8192,
+                32
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                8192,
+                32
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                4,
+                2048,
+                96,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": true,
+            "inplace": false,
+            "max_seqlen": 2048,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "glm-5.3-vision-bfloat16-float32-float32",
+          "tensors": {
+            "x": [
+              [
+                1,
+                4096,
+                16,
+                64
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                4096,
+                32
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                4096,
+                32
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                16,
+                64
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": false,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.8-qsa-indexer-bfloat16-float32-float32",
+          "tensors": {
+            "x": [
+              [
+                1,
+                4096,
+                4,
+                128
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                4096,
+                32
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                4096,
+                32
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                4,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": false,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-q-tail-bfloat16-float32-float32",
+          "tensors": {
+            "x": [
+              [
+                1,
+                4096,
+                64,
+                64
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                4096,
+                32
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                4096,
+                32
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                64,
+                64
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": true,
+            "inplace": true,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "dsv4-flash-kv-tail-bfloat16-float32-float32",
+          "tensors": {
+            "x": [
+              [
+                1,
+                4096,
+                1,
+                64
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                4096,
+                32
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                4096,
+                32
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                1,
+                4096,
+                1,
+                64
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": true,
+            "inplace": true,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "varlen-inplace-bfloat16-bfloat16-bfloat16-int32",
+          "tensors": {
+            "x": [
+              [
+                5120,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                4096,
+                64
+              ],
+              "bfloat16"
+            ],
+            "sin": [
+              [
+                4096,
+                64
+              ],
+              "bfloat16"
+            ],
+            "cu_seqlens": [
+              [
+                4
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                5120,
+                32,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": true,
+            "max_seqlen": 3000,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "varlen-inplace-float32-float32-float32-int64",
+          "tensors": {
+            "x": [
+              [
+                5120,
+                32,
+                128
+              ],
+              "float32"
+            ],
+            "cos": [
+              [
+                4096,
+                64
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                4096,
+                64
+              ],
+              "float32"
+            ],
+            "cu_seqlens": [
+              [
+                4
+              ],
+              "int64"
+            ],
+            "output": [
+              [
+                5120,
+                32,
+                128
+              ],
+              "float32"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": true,
+            "max_seqlen": 3000,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "llama3-8b-decode-bfloat16-float32-float32-int32",
+          "tensors": {
+            "x": [
+              [
+                64,
+                1,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                8192,
+                64
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                8192,
+                64
+              ],
+              "float32"
+            ],
+            "seqlen_offsets": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                64,
+                1,
+                32,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": false,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "llama3-8b-decode-bfloat16-float32-float32-int64",
+          "tensors": {
+            "x": [
+              [
+                64,
+                1,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                8192,
+                64
+              ],
+              "float32"
+            ],
+            "sin": [
+              [
+                8192,
+                64
+              ],
+              "float32"
+            ],
+            "seqlen_offsets": [
+              [
+                64
+              ],
+              "int64"
+            ],
+            "output": [
+              [
+                64,
+                1,
+                32,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": false,
+            "max_seqlen": null,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "varlen-offsets-bfloat16-bfloat16-bfloat16-int32-int32",
+          "tensors": {
+            "x": [
+              [
+                5120,
+                32,
+                128
+              ],
+              "bfloat16"
+            ],
+            "cos": [
+              [
+                8192,
+                64
+              ],
+              "bfloat16"
+            ],
+            "sin": [
+              [
+                8192,
+                64
+              ],
+              "bfloat16"
+            ],
+            "cu_seqlens": [
+              [
+                4
+              ],
+              "int32"
+            ],
+            "seqlen_offsets": [
+              [
+                3
+              ],
+              "int32"
+            ],
+            "output": [
+              [
+                5120,
+                32,
+                128
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "interleaved": false,
+            "inplace": false,
+            "max_seqlen": 3000,
+            "validate_inputs": false
+          }
+        }
+      ]
+    },
+    "HyperConnectionPreFwdOp": {
+      "ref_api": "vllm.model_executor.kernels.mhc.torch.mhc_pre_torch",
+      "spec_sha256": "8b187e59245bb8f1350ad5f43ad0f368cc1ea7cfc5f4cff7128e543a377ed96f",
+      "case_sha256": "c217a211cb1a88778135dff73fb2231eb92c68f122b36ded04d6ce0e958d5e4c",
+      "case_count": 4,
+      "cases": [
+        {
+          "id": "dsv4-flash-t1",
+          "tensors": {
+            "residual": [
+              [
+                1,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "fn": [
+              [
+                24,
+                16384
+              ],
+              "float32"
+            ],
+            "hc_scale": [
+              [
+                3
+              ],
+              "float32"
+            ],
+            "hc_base": [
+              [
+                24
+              ],
+              "float32"
+            ],
+            "post_mix": [
+              [
+                1,
+                4,
+                1
+              ],
+              "float32"
+            ],
+            "comb_mix": [
+              [
+                1,
+                4,
+                4
+              ],
+              "float32"
+            ],
+            "layer_input": [
+              [
+                1,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "rms_eps": 1e-06,
+            "hc_pre_eps": 1e-06,
+            "hc_sinkhorn_eps": 1e-06,
+            "hc_post_mult_value": 2.0,
+            "sinkhorn_repeat": 20
+          }
+        },
+        {
+          "id": "dsv4-flash-t4096",
+          "tensors": {
+            "residual": [
+              [
+                4096,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "fn": [
+              [
+                24,
+                16384
+              ],
+              "float32"
+            ],
+            "hc_scale": [
+              [
+                3
+              ],
+              "float32"
+            ],
+            "hc_base": [
+              [
+                24
+              ],
+              "float32"
+            ],
+            "post_mix": [
+              [
+                4096,
+                4,
+                1
+              ],
+              "float32"
+            ],
+            "comb_mix": [
+              [
+                4096,
+                4,
+                4
+              ],
+              "float32"
+            ],
+            "layer_input": [
+              [
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "rms_eps": 1e-06,
+            "hc_pre_eps": 1e-06,
+            "hc_sinkhorn_eps": 1e-06,
+            "hc_post_mult_value": 2.0,
+            "sinkhorn_repeat": 20
+          }
+        },
+        {
+          "id": "dsv4-flash-t32768",
+          "tensors": {
+            "residual": [
+              [
+                32768,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "fn": [
+              [
+                24,
+                16384
+              ],
+              "float32"
+            ],
+            "hc_scale": [
+              [
+                3
+              ],
+              "float32"
+            ],
+            "hc_base": [
+              [
+                24
+              ],
+              "float32"
+            ],
+            "post_mix": [
+              [
+                32768,
+                4,
+                1
+              ],
+              "float32"
+            ],
+            "comb_mix": [
+              [
+                32768,
+                4,
+                4
+              ],
+              "float32"
+            ],
+            "layer_input": [
+              [
+                32768,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "rms_eps": 1e-06,
+            "hc_pre_eps": 1e-06,
+            "hc_sinkhorn_eps": 1e-06,
+            "hc_post_mult_value": 2.0,
+            "sinkhorn_repeat": 20
+          }
+        },
+        {
+          "id": "glm-5.3-flash-t3000",
+          "tensors": {
+            "residual": [
+              [
+                3000,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "fn": [
+              [
+                24,
+                16384
+              ],
+              "float32"
+            ],
+            "hc_scale": [
+              [
+                3
+              ],
+              "float32"
+            ],
+            "hc_base": [
+              [
+                24
+              ],
+              "float32"
+            ],
+            "post_mix": [
+              [
+                3000,
+                4,
+                1
+              ],
+              "float32"
+            ],
+            "comb_mix": [
+              [
+                3000,
+                4,
+                4
+              ],
+              "float32"
+            ],
+            "layer_input": [
+              [
+                3000,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "rms_eps": 1e-05,
+            "hc_pre_eps": 1e-06,
+            "hc_sinkhorn_eps": 1e-06,
+            "hc_post_mult_value": 2.0,
+            "sinkhorn_repeat": 20
+          }
+        }
+      ]
+    },
+    "HyperConnectionPostFwdOp": {
+      "ref_api": "vllm.model_executor.kernels.mhc.torch.mhc_post_torch",
+      "spec_sha256": "eed4939be8dde9df7216100eb0abcc06c91f6ed9f0ee0bc1ba95e41259d925c0",
+      "case_sha256": "d28914ab6b15bd26b2d7745234ea30c36d405fbcbdb98276cb043d246fddf6f9",
+      "case_count": 4,
+      "cases": [
+        {
+          "id": "dsv4-flash-t1-float32",
+          "tensors": {
+            "x": [
+              [
+                1,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "residual": [
+              [
+                1,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "post_layer_mix": [
+              [
+                1,
+                4,
+                1
+              ],
+              "float32"
+            ],
+            "comb_res_mix": [
+              [
+                1,
+                4,
+                4
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                1,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {}
+        },
+        {
+          "id": "dsv4-flash-t4096-float32",
+          "tensors": {
+            "x": [
+              [
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "residual": [
+              [
+                4096,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "post_layer_mix": [
+              [
+                4096,
+                4,
+                1
+              ],
+              "float32"
+            ],
+            "comb_res_mix": [
+              [
+                4096,
+                4,
+                4
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                4096,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {}
+        },
+        {
+          "id": "dsv4-flash-t32768-float32",
+          "tensors": {
+            "x": [
+              [
+                32768,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "residual": [
+              [
+                32768,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "post_layer_mix": [
+              [
+                32768,
+                4,
+                1
+              ],
+              "float32"
+            ],
+            "comb_res_mix": [
+              [
+                32768,
+                4,
+                4
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                32768,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {}
+        },
+        {
+          "id": "glm-5.3-flash-t3000-bfloat16",
+          "tensors": {
+            "x": [
+              [
+                3000,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "residual": [
+              [
+                3000,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "post_layer_mix": [
+              [
+                3000,
+                4,
+                1
+              ],
+              "bfloat16"
+            ],
+            "comb_res_mix": [
+              [
+                3000,
+                4,
+                4
+              ],
+              "bfloat16"
+            ],
+            "output": [
+              [
+                3000,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {}
+        }
+      ]
+    },
+    "HyperConnectionHeadFwdOp": {
+      "ref_api": "workloads.sequence_modeling.hyper_connection.hc_head",
+      "spec_sha256": "9a2ba265e097914fe2b6384a0071b8997d4e9836a4688c3646f15aa4c994b162",
+      "case_sha256": "3a12466bd9a4c23d8952560b8c3a681c61bc1d8c56a0129a4e504bb6c2cd5940",
+      "case_count": 4,
+      "cases": [
+        {
+          "id": "dsv4-flash-t1",
+          "tensors": {
+            "hidden_states": [
+              [
+                1,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "hc_fn": [
+              [
+                4,
+                16384
+              ],
+              "float32"
+            ],
+            "hc_scale": [
+              [
+                1
+              ],
+              "float32"
+            ],
+            "hc_base": [
+              [
+                4
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                1,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "rms_norm_eps": 1e-06,
+            "hc_eps": 1e-06
+          }
+        },
+        {
+          "id": "dsv4-flash-b64",
+          "tensors": {
+            "hidden_states": [
+              [
+                64,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "hc_fn": [
+              [
+                4,
+                16384
+              ],
+              "float32"
+            ],
+            "hc_scale": [
+              [
+                1
+              ],
+              "float32"
+            ],
+            "hc_base": [
+              [
+                4
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                64,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "rms_norm_eps": 1e-06,
+            "hc_eps": 1e-06
+          }
+        },
+        {
+          "id": "dsv4-flash-t4096",
+          "tensors": {
+            "hidden_states": [
+              [
+                4096,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "hc_fn": [
+              [
+                4,
+                16384
+              ],
+              "float32"
+            ],
+            "hc_scale": [
+              [
+                1
+              ],
+              "float32"
+            ],
+            "hc_base": [
+              [
+                4
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                4096,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "rms_norm_eps": 1e-06,
+            "hc_eps": 1e-06
+          }
+        },
+        {
+          "id": "glm-5.3-flash-t3000",
+          "tensors": {
+            "hidden_states": [
+              [
+                3000,
+                4,
+                4096
+              ],
+              "bfloat16"
+            ],
+            "hc_fn": [
+              [
+                4,
+                16384
+              ],
+              "float32"
+            ],
+            "hc_scale": [
+              [
+                1
+              ],
+              "float32"
+            ],
+            "hc_base": [
+              [
+                4
+              ],
+              "float32"
+            ],
+            "output": [
+              [
+                3000,
+                4096
+              ],
+              "bfloat16"
+            ]
+          },
+          "parameters": {
+            "rms_norm_eps": 1e-05,
+            "hc_eps": 1e-06
+          }
+        }
+      ]
+    },
+    "NGramHashFwdOp": {
+      "ref_api": "workloads.sequence_modeling.ngram_hash.ngram_hash",
+      "spec_sha256": "b4c3a91f56bf450e2640f45024645e394e38ebc3709f4774dc82f046cdbe3c45",
+      "case_sha256": "e16cdaa82a0671af94f96b5dcd3c36e597e3e06bea1fe096cd0d3548d83c4a68",
+      "case_count": 4,
+      "cases": [
+        {
+          "id": "qwen3.8-flash-prefill",
+          "tensors": {
+            "input_ids": [
+              [
+                1,
+                4096
+              ],
+              "int64"
+            ],
+            "context": [
+              [
+                1,
+                2
+              ],
+              "int64"
+            ],
+            "multipliers": [
+              [
+                3
+              ],
+              "int64"
+            ],
+            "primes": [
+              [
+                16
+              ],
+              "int64"
+            ],
+            "offsets": [
+              [
+                16
+              ],
+              "int64"
+            ],
+            "ngram_ids": [
+              [
+                1,
+                4096,
+                16
+              ],
+              "int64"
+            ]
+          },
+          "parameters": {
+            "eos_token_id": 248044,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.8-flash-varlen",
+          "tensors": {
+            "input_ids": [
+              [
+                8192
+              ],
+              "int64"
+            ],
+            "context": [
+              [
+                64,
+                2
+              ],
+              "int64"
+            ],
+            "multipliers": [
+              [
+                3
+              ],
+              "int64"
+            ],
+            "primes": [
+              [
+                16
+              ],
+              "int64"
+            ],
+            "offsets": [
+              [
+                16
+              ],
+              "int64"
+            ],
+            "cu_seqlens": [
+              [
+                3
+              ],
+              "int32"
+            ],
+            "context_indices": [
+              [
+                2
+              ],
+              "int32"
+            ],
+            "ngram_ids": [
+              [
+                8192,
+                16
+              ],
+              "int64"
+            ]
+          },
+          "parameters": {
+            "eos_token_id": 248044,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.8-flash-decode",
+          "tensors": {
+            "input_ids": [
+              [
+                64,
+                1
+              ],
+              "int64"
+            ],
+            "context": [
+              [
+                256,
+                2
+              ],
+              "int64"
+            ],
+            "multipliers": [
+              [
+                3
+              ],
+              "int64"
+            ],
+            "primes": [
+              [
+                16
+              ],
+              "int64"
+            ],
+            "offsets": [
+              [
+                16
+              ],
+              "int64"
+            ],
+            "context_indices": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "ngram_ids": [
+              [
+                64,
+                1,
+                16
+              ],
+              "int64"
+            ]
+          },
+          "parameters": {
+            "eos_token_id": 248044,
+            "validate_inputs": false
+          }
+        },
+        {
+          "id": "qwen3.8-flash-verify",
+          "tensors": {
+            "input_ids": [
+              [
+                64,
+                4
+              ],
+              "int64"
+            ],
+            "context": [
+              [
+                256,
+                5
+              ],
+              "int64"
+            ],
+            "multipliers": [
+              [
+                3
+              ],
+              "int64"
+            ],
+            "primes": [
+              [
+                16
+              ],
+              "int64"
+            ],
+            "offsets": [
+              [
+                16
+              ],
+              "int64"
+            ],
+            "context_indices": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "num_accepted_tokens": [
+              [
+                64
+              ],
+              "int32"
+            ],
+            "ngram_ids": [
+              [
+                64,
+                4,
+                16
+              ],
+              "int64"
+            ]
+          },
+          "parameters": {
+            "eos_token_id": 248044,
+            "validate_inputs": false
+          }
+        }
+      ]
+    }
+  }
+}
