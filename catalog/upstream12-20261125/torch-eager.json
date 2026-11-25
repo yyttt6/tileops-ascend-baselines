@@ -1,4 +1,5 @@
 {
+  "admission_status": "development evidence only; individual guard exit codes and raw windows retained; original run did not save per-job guard JSON",
   "measured_source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
   "rows": [
     {
