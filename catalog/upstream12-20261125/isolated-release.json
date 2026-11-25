@@ -1,0 +1,1659 @@
+{
+  "scope": "100 cases from 12 additive Ascend 950 interfaces",
+  "toolchain_lock_sha256": "f40732e6bda586255550f638bc8c03ba1983eb9b00848b1c3de23d9d2337243f",
+  "runtime_packages": {
+    "torch": {
+      "version": "2.13.0+cpu",
+      "metadata_sha256": "b3c7f4b3f77d06f86a42aab7d0facef7b661ca3c22967bfcc396917d935dd335"
+    },
+    "torch-npu": {
+      "version": "2.13.0rc1",
+      "metadata_sha256": "b63fd11677f472469803fad277014bc2f5de96172d2ee1c912fda3841ab966e0"
+    },
+    "tilelang": {
+      "version": "0.1.15",
+      "metadata_sha256": "380d3486286aeb708dc4846cfdc4b438985c84199a160b21238cadf3e4e3fa19"
+    },
+    "triton": {
+      "version": "3.5.0",
+      "metadata_sha256": "cb6741d2005b360f5cc869a518fa12f68a79986fc0c265dea3e2ca14f69359bb"
+    }
+  },
+  "source_revisions": {
+    "b9a51c049d90518788ac2cd551cc900beb900f6b": "frozen-source.patch.gz on b47b02de",
+    "cc30003f9a680eaedcba9d8cef6d2912f93ed0be": "yyttt6/TileOPs@ff937dcb6e1e31d2ab5a7d835646a833166f6c50",
+    "dc6188b409eb701669e8c60e2137e0188407f9c0": "yyttt6/TileOPs@08b74920b943d0ddb843af9c8ac4d016175f4573"
+  },
+  "row_count": 19,
+  "raw_windows": 285,
+  "pending_operators": [
+    "GatedPoolCompressFwdOp",
+    "ConcatFwdOp",
+    "MoEGroupedGEMMMXFP4FwdOp",
+    "RMSNormGatedFwdOp",
+    "FP4QuantPerGroupFwdOp",
+    "RoPECosSinFwdOp",
+    "HyperConnectionPreFwdOp",
+    "HyperConnectionPostFwdOp",
+    "HyperConnectionHeadFwdOp",
+    "NGramHashFwdOp"
+  ],
+  "rejected_operators": [],
+  "rows": [
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-27b-prefill-int64-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "25f4ff52586860b951f31fd6be0a079597275310b080e385945e16f9e5340fcd",
+      "latency_us": 17.355866666666664,
+      "samples": 15,
+      "latency_samples_us": [
+        16.796,
+        16.791,
+        17.425,
+        16.927999999999997,
+        17.381,
+        16.825,
+        17.607000000000003,
+        17.687,
+        17.228,
+        17.933,
+        17.612,
+        17.305,
+        18.486,
+        17.311,
+        17.023
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "f5b485a0b144d2911106aa5871a98023ca49e1dc15152db52cde8271e1106fcd",
+        "b1125a11b379821a1019929ecc20ba0b863c40b4c375a38ccf9324a71361d5bc",
+        "779fe75f3eaa3084461d9cd0a7894e42bb60beccba36dd163c461e21da4f6a0f",
+        "f6f42517bd9feb7f0105a94cef03a7339a7fcd34f92cb11de85991813a5e5989",
+        "061974a96f2c46e57e518632e875f5bbed600702248ab80f0d55673ef24f587c",
+        "ec6c3a434fc571f5f37f35743035b724360c923b5a8bca6ef03e4a3972ddf1b7",
+        "1217bcc516d986c135cb143172ce17606fb0672d4e1e69fc97dc77743d5e0abc",
+        "a7ab5f42a7f2b346c1eff8fede7064032da2bc46ca64bd2fc913a182324b8a85",
+        "de839a94de3da4e69f1e0b4cdcfeac62e3219e8018ce57284ae773275a029f24",
+        "8a85d82c28361ca36ac33ed6e760a8cbe5369a01278d6fa15e16112c3f883527",
+        "ee5e227f91a4637c43f907a92a8aec7dc8140d6f3fcf248b27e08e427a8144e4",
+        "2431871701f881f565c2ef01c13c0a1ada06ed8ec0545ced3f05f467a131b459",
+        "b745dc5742f1405777477c774735e084027cc05207f6e4086ce8623db0afa9e2",
+        "f836a624bab18ca4293545d6c73473b324573c47de4c0cc60d2952ef08889243",
+        "2085a3929eb0a994277bcfb054d6e2a4e2284e539e2a7503f8098f602b515bb0"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 3082034809,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-27b-prefill-32k-int64-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              32768
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              32768,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "87f5fc39ed917d44eb6ed1c57131e3daa432bd502baf3da23fdeafcf9cc41d89",
+      "latency_us": 184.35213333333334,
+      "samples": 15,
+      "latency_samples_us": [
+        184.105,
+        184.859,
+        183.848,
+        184.65400000000002,
+        183.164,
+        183.56,
+        183.136,
+        189.37,
+        183.51500000000001,
+        184.493,
+        183.77599999999998,
+        183.469,
+        183.748,
+        184.18300000000002,
+        185.40200000000002
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "7c3cb53c3689ff3a342fe33b5ad0be7d0ef39d69c09e314a9e43b757bb777673",
+        "bbbe23f6ebafaa00a084c48eaf24946baaf06667149416a65798b8576ce12e8d",
+        "137b43a8741122b5bd3a0e80d7e00e8e70fe8cac7b874adde53c6c28e334e4fc",
+        "0b2e17e69371c73758ee84ba4587c25462649186b43334681f50cb701880ce4d",
+        "632c037da31d7cd1db3d619e2e67626fa3c2e421293f0e45716616967ed9c8f7",
+        "584450f0362325579ee7df870ec8e982cc52b7b1f56544ce87fe0b62ace1c0b2",
+        "7b484ef99b2471807f88f54be367b7a2c298f4ac022c40055bdc3c97fde0571f",
+        "bde8cc58729f6d90a679cbc468c16c7722bdbdf60c85e2da57a384a51e5d4abb",
+        "af02b15009d6e0270ed29e0445aa2c9669ae65acbcea5f85ebd26a3ab18ca129",
+        "dc71d915c803b2a6cf53f8811f856cfb73333c6d6cf2f2d5dc16309b4c9bfaf2",
+        "5872398d1cda4e77b6d72e452e848c95bcc99b0fd6171346187594e4b702a240",
+        "0702fa361ae6e1275c86f5e0cbc98084c28b0db393d3658e3220ed57c6951fad",
+        "fba964a21b53455a4da0db5609ad7e021706da735d26ad4e463b5526a8f7e0f4",
+        "78d09dc860b2318c45911bc9a00683301a543a9623856f640f6ba00e9a1bea35",
+        "1d2b3060a2aba305b20498ab808f117fcf931045ed9779ab02b7b86477c2782a"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 292009148,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-27b-decode-b64-int64-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              64,
+              1
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              64,
+              1,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "802ed7bb4f78eb04b1f05d1cc4ec6eda2a2ca13b7847fef3ca79446ededd170d",
+      "latency_us": 4.004,
+      "samples": 15,
+      "latency_samples_us": [
+        4.760000000000001,
+        3.715,
+        4.898,
+        3.5530000000000004,
+        3.605,
+        3.913,
+        4.031,
+        4.636,
+        4.001,
+        3.948,
+        4.183,
+        3.384,
+        4.165,
+        3.72,
+        3.548
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "0b540a184837dd8ffb6747a6d383d8f7705fb3dfde001bf1793a0c27b8b1295b",
+        "b3ea1de950399e532a534f74aea418e1aa1d2ba562215fe53bef55effc465907",
+        "8bed592ec6243ce8fdc33df5aff28929fad85fc459ff083c9a4c88b28643d15e",
+        "23a7f5d44a756632673181e17ac22e8e9406b42f635ff57faee6bf53b2891d6e",
+        "836d0fd9172451e6d0d19c24f2085b47476429bad7ab7ba18875ff0483001605",
+        "6c008d4a6ba69355ffbc77aa9630584d04ac81306167c39024ad48ea3b2bdf4f",
+        "3b5ae7add0ee8ae8fc7435f40b50756cb0efcc65c22840efc78734d9c0c8ec58",
+        "2838e12a8c6331d3d2f49992899e51520882064aeb7e17d99be61fedc22069ea",
+        "33698c56e520460f2ce95ecd0644aac85fc5848dd9ce56210675cb321c7ea61f",
+        "c5dfd8a225955a956b12eb449f8ff102372a9f38ab04aee3187a10eda9def67b",
+        "b5c21445cd10693be730e01650282cd725798085b1d8a7de1913d5d5554dda06",
+        "c9bb0f92e064bc5a87062f7d8b2a51a0020d2148d921ea0dee8e5902cd3cf7c7",
+        "da6f0244a62f2315e5258cfac2f4fc62c81a429d8e8b0cf412b965b922ee77e3",
+        "494c0c9e616140ce11237d09c11c643dd1bacdd60632ae78ce1b378a78c8ad26",
+        "927ed162168ea24de9e082609923334d46d7c40d138b81a39650127b0db95d42"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 3451579642,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "llama3-8b-prefill-int32-float16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int32"
+          ],
+          "weight": [
+            [
+              128256,
+              4096
+            ],
+            "float16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              4096
+            ],
+            "float16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "afab5ec40c6ed06b2ea68d7ec63ca706e6613602a38d7aba1e8a5a064177fa1f",
+      "latency_us": 15.652,
+      "samples": 15,
+      "latency_samples_us": [
+        14.779,
+        14.783,
+        16.163,
+        15.337,
+        15.254999999999999,
+        15.2,
+        16.232,
+        16.256,
+        15.735,
+        15.256,
+        16.692,
+        15.886999999999999,
+        15.93,
+        15.617,
+        15.657999999999998
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "91d4b1828dc0bf66539f0a5d3ed78f1a774f1a4220759f4fecb379cef3ad886c",
+        "ae6fc10ac89d7f525752e55e19048834567f450893811757d07875f4be25300e",
+        "ff589df3358c5b9a34ec67f0e165595c9ce5db53c5184fd957ed839d5bc80e95",
+        "fa99064f074d099f3b33ed6a3675e3bcdcbb424c80a1c8a64725f437fbc5c0d0",
+        "d1640744bf1f6de78a2869bb0644d154be1902162d9d971da97ce2344b8adad5",
+        "9f62bd972e5469264530b5d6bbbbfc5c8e5d558c0816988b3f772489ce816864",
+        "23e6065cf89f6198dfd3d009358cfadf867258c5855ac157018132f6fa278b3b",
+        "3a16f91662b5f920ea78ef656c3c99ba3ecdf4da3314246dc7c00fb8d720cba6",
+        "6f21538e1528992da3e5c93da3d4315aa07edd4b7d1fecab4191eb0f8d9cdf6b",
+        "47529098806dc2babdc3930c88f1c2dbedb29e2f31dd46f8999dbd214575dd7a",
+        "514e512b4a278df8f06af40eafd04bc1f0dd07846a952341bdc376f3b6b76820",
+        "a6f15e317b474d954e99519f4bf154ffc8a0fc48784798935e132ec82106482f",
+        "8303798cc5cccfef331d1d6085d3144639c056f851e06979bc234ae3a9b60b55",
+        "75ea41f860300b57663f14fcc1da4c1d15eed4448d849b5a7dad20da977b2446",
+        "ede2dac0d238c1dec1bfed967cd4438a017de3dec14db72d071ca62f4ef3ff87"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 2810943745,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "llama3-8b-prefill-int64-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              128256,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "dfa12ea8c68983956b89e36920bc3a4360a820ad7ee735e5b98a1cabeab703b0",
+      "latency_us": 14.759333333333334,
+      "samples": 15,
+      "latency_samples_us": [
+        15.082,
+        14.33,
+        14.337000000000002,
+        14.971,
+        14.574,
+        15.65,
+        15.445,
+        14.626,
+        15.318999999999999,
+        14.943,
+        14.692,
+        14.394,
+        14.556,
+        14.472999999999999,
+        13.998
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "0a9337121330d6d67d0caaa760590900b05b0896efb374e3f86c1b27c3ef80cc",
+        "96a7855f7541f8eb24ada1cce159f44e8a97aaa14068f88fb1208fc23f08ad1b",
+        "813f99d81133bda1c2994b51b8b818e066e70054e682f4066676fd6e111786c5",
+        "14077d44f69e1df99450a03862a01c3c35b9c55b8de0d3525522f8e1db1b8557",
+        "83e9c3305eedb245b301a9138292c15dd8cbcacab5f25b850b038b01a2829793",
+        "81a7c2468962c6c60e781e87326a99b4e8f02c15c45cba1e3702edd755be7706",
+        "1d979f5c47364cbbcc8aeb45f1bff968be0cdd36c3fd78b1b3e6c6ebf5b3ba98",
+        "d9c2fb5533204c6fd692152470c951930f00049a1bb33135991af6b43eec0bb2",
+        "e767a284d12c0b5d5a94c9be729153e7c6c577beb0a6c52792f36fcb672b7ad8",
+        "604b78b6b36d6ee352b3f8006f703f91a542e3c3162615d7463cefe11a9e692e",
+        "220ae45f34f977fdd5d2f3630f902a1c0570a4e0f070e290338817b8acecd869",
+        "46da3aafcfb9b07abd8a4deded2c5542959f945d6af9553604c724d85c94d4af",
+        "431a7750e1d99fe4604670ab06faa89908dd9eb4b5b5cc7ee669f1ea0c97fe5a",
+        "f24b335b450c3e3eb2987ee96614a9184a25752b0ce2cda90d27791c7099861f",
+        "909c50cfc03612616e303d9fc58acbbaa5530702b2cf5266a9ec9ef72603a146"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 4139491850,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-vision-pos-int64-float32",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              2304,
+              1152
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              4,
+              4096,
+              1152
+            ],
+            "float32"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "4a9701c174c23edbb1bcad7cd5fc9c538689a50c9cd2bb090194d5888f0e106d",
+      "latency_us": 22.161866666666665,
+      "samples": 15,
+      "latency_samples_us": [
+        22.415999999999997,
+        21.782,
+        22.261,
+        21.613,
+        21.991,
+        22.264,
+        22.267,
+        21.555999999999997,
+        21.951999999999998,
+        21.348,
+        22.985,
+        21.807,
+        22.782,
+        21.397,
+        24.007
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "256ed5b8d58a6389e8ef6bb3253f3076bd7672e5d907c580daf9764326cc6e45",
+        "ab98eac46289d5bd00fcbd4f047bdd6c11caa74cedd7e82ca04c2e47f7092f08",
+        "e007f46581d14847025b03214a9bbc03f50a8fd5e9cf96adae918c6abc313d8b",
+        "0d40ad847409fd9776a535efdb7e0d47f28f022f5757cef551aba9b0411819d6",
+        "1b17b9b5bb51ae015b2b313639212da2a1138ad09366e76db855d1a0897efd6d",
+        "a5a17cd2ac0fd5467ad213646c55bcc84f801b29ff9175461feb1747a9de1171",
+        "8a7f5fb4e22dfe08c103c7ee27d8a23e147bc01601edf84efd7428c51e58d693",
+        "54e5f00fcb0afb1d29f6a12a3567f1c8619eec0f8b04f0d6d77f249b21d7aa32",
+        "f51d2505d255ca7f0e50c5ea99c4cb586d4cd1fb568bcb86759ca8377922852e",
+        "39e4e6b6f6d9ea8c1d18ac5f969eceb63b4148bd65519a8a878c116ece081e1a",
+        "de91c7641d6d2960ceb2d9fed1b46bf0e4fde779f41c5426627669a4028d1bc7",
+        "12c304bacf0e8db463e177098cc0c50c1a16a0f7bac9dea59412586e096ffcda",
+        "c11a13b482863eca2227e7bc3342daa6e09830284db08eb0fd95b3c1b91c2a89",
+        "6b8f7a41958acca32b6a58174eb976b8cd223c8a9cfd4e47ee80d96ad815d6e8",
+        "0e8edf8a82e57812610771ac570db62ff17cc8de7e4e6385d0d8566619965cb7"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 3094844543,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-35b-a3b-prefill-int64-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              2048
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              2048
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "076934657cde61f6712a178815037586c2742b730b199a639462a4d336755382",
+      "latency_us": 9.6712,
+      "samples": 15,
+      "latency_samples_us": [
+        10.024999999999999,
+        9.581,
+        9.321,
+        9.727,
+        9.997,
+        9.828999999999999,
+        10.026,
+        9.807,
+        9.466000000000001,
+        9.719,
+        9.762,
+        9.878,
+        9.379,
+        9.315,
+        9.235999999999999
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "7173c6d80fc583724424c5fe9dfd5ade2edc7efbf101e956608746066f2ebd4d",
+        "77b0b609cfbe84b35cc4817ff62edbcf5019fe9dbdce9268804d05cb96dbe695",
+        "9c48f9e312df6b27591b989379f5f5741f4b2e79ba6c7261f6b81d612ff69e47",
+        "c496f1bc95ba34bd44ddab3ea7fa62054bb87d19cac58705e18b1b7565b00242",
+        "72898c35d89b4971375c53b801460c2b091f89d1610454151ae14842ad8eb6ca",
+        "21f7676a8fe007ae0d3ede24ca8b6ac99e3badf7c74054bf2b06d698f0d65da9",
+        "12909bc3571161583c8058e4b692c74dd47cf2c1b8270a365827291074e6f391",
+        "deabfe25cf4ac4e4747cce4919730029f11421f5e522b7744375e26c709837e0",
+        "de6cc8a08a9964a7ba3886a553561349703b6d3f3ccd5041606eecf105dc6a50",
+        "d6a6eeb2fcad916beed7d6ca3ba35adf7f3717cc1d9737d37785a9c70760d050",
+        "ee5474a1a0c9157c4255f2c377b01f5050090e4c0bd685462d9113a6a0dbc4b1",
+        "ef89b65890c9ecc84b92eda1a5119cb3728f5ed0935dd7718b4202ce95c62429",
+        "530f4375dc572280873e29b0881fd08a0bcfaa7f3f7ff539e2ad910f52ae38eb",
+        "f8985cb732343f259027935f7c4aef2acf7ee70579dd40e97d4886429716a323",
+        "36919ee595b7913c7ab4cc17710abf8c04de80c64c8527ca8dc8b440e5e2d2c8"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 3286030708,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "dsv4-flash-prefill-int64-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              129280,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "d94bf5c6e16810cee410f4cd28b8cffceb4217dd980161dfbad376bd0c27c307",
+      "latency_us": 14.299666666666665,
+      "samples": 15,
+      "latency_samples_us": [
+        13.695,
+        14.65,
+        13.971,
+        14.893,
+        13.636000000000001,
+        14.463000000000001,
+        14.026,
+        14.301,
+        14.622,
+        14.445,
+        14.063,
+        15.668999999999999,
+        13.67,
+        14.203000000000001,
+        14.187999999999999
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "879146ee849b10c00d09f9577d0441bceb74a9406bc8f354f70098e01d864c03",
+        "28faca1b384eb26c672a4b108bf45348dae468e6a9927313cafa4aba23f2b002",
+        "d6b296910e7c513232c0532bb270643c344c546908524c37dc0c4e30b6b32457",
+        "51e9d1f2fd6a882b81f194edfeef29a6ecd67cf9cff3a3469f926cf3fecc5ae0",
+        "0bebde3e0e9b15810bee7f55627f25b79b429ec334cbd227e7a5b7651a0d026b",
+        "b1aa95e2021a8ae8d86e3dd29d71d35a14b9e6fd855699546c9c1d251b71c694",
+        "f6f1daa01a1ad629f4b32eff8943be9c3ad9b4eea09f67a5c9cb6d706d3dd389",
+        "acdd65a30193af719a2570c6227a9943b856a0a78331224a34ca6efbf75a2858",
+        "4ab6997c13ffdf8b86c2361831e0524bab50f2a88ed6f8bfb79fd82084578220",
+        "fe1993694c78af6fc28466d6f68ff7f3ace72a693fb433fcba604325aaca36fb",
+        "97727d89d5e4ee46b1c2a542c3ca3b87a585212d185d4173d9c8e738bc4b1d86",
+        "859257521a7d2ff633266b07b91b6a53393974616c08695bdf470a27c8b124d2",
+        "a197176413499f83f21390eb9691cc834a9b6743dbfb803d1150ebf56d697f42",
+        "62c19fcaea731550a4010cfc88e89c0b1cf618b3c937a77c65c5f38adf7e4ee6",
+        "1fcffb4b1acb91858f8bead223f258d4882e38c614410d81782da4ae97dc19dc"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 330769751,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "dsv4-flash-tid2eid-int64-int64",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              129280,
+              6
+            ],
+            "int64"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              6
+            ],
+            "int64"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "9b0540fe539c2af286b9e441fb6076e693e0f91cc61145e7902f14caa61d34c7",
+      "latency_us": 3.8896,
+      "samples": 15,
+      "latency_samples_us": [
+        3.743,
+        3.6510000000000002,
+        3.992,
+        3.879,
+        3.814,
+        3.827,
+        4.252,
+        3.953,
+        3.954,
+        3.846,
+        4.002999999999999,
+        3.6029999999999998,
+        3.799,
+        4.224,
+        3.8040000000000003
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "b545482e0c41ab05f4e63c87eb6bd7b406d45bc0928f68a8ceae580676d49109",
+        "89b5ed4c34a30541c5383d5f5f0ef32eca087d0418d102b586ed95ee22b3eff6",
+        "8ffb6b00b80051fda70b2a623ee114cffd92510925dfa36c5adaec406c89d4a8",
+        "843e943826d18ea58c0074978bd1265e83f0eeeab975537ea8299ff7c92dcb9f",
+        "f935ce2655b76e401dcacd8e7d6ec09f58a7cb23594fc5a5ac8489431cfb056e",
+        "a3044fd3ad74ecc60c1e3a51774dca027a10e5aeed27fb16991d91425d5d3771",
+        "d5fa9ce9b02e4653dde9794479de8ab76bea22c9e480cf59e1a4bfbbee32f3dc",
+        "324e5d55daf17b599ed14d537e729b592e1570a5827328a0d11b7f0a631dc3f3",
+        "0d23ed8c939d94a0742ecde2540fc1a0e7fab799e1e624674292aa2dd9a02fbe",
+        "246afde06f5d84f11c2d68f4f3b8c692b556646c7cda5d7f5ae9aff53b5b3169",
+        "3f67f904d523aeba181a3ecf8e3efe2099504590e049ca26c3d52e71bd356206",
+        "548fd80197806da29f06e78c5ecb0826ccd3be15e3c64a7e822175ff0ff38e55",
+        "15e5dcaf99c2311504b0ffc5176fb27c39fc5b9ec0abe46392e62835c48dc146",
+        "39ff34dcb2d204eae138f3144faff52dfc3729e243cfd6daf110a3acf43bc1f5",
+        "c98b0695a4535014f595568115489e2325110294ad88859f2a2a3777b3f03b61"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 2350959795,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "glm-5.3-flash-prefill-int64-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              154880,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "ddf1a98f316a7c4ba08a7fcbe5d62fe997812f3459e70a254335a29dd42a7c2c",
+      "latency_us": 14.8386,
+      "samples": 15,
+      "latency_samples_us": [
+        14.819,
+        13.813,
+        14.168,
+        15.155999999999999,
+        15.193999999999999,
+        13.892,
+        15.155999999999999,
+        15.206000000000001,
+        15.273,
+        14.794,
+        15.152000000000001,
+        14.305,
+        15.561,
+        15.447000000000001,
+        14.642999999999999
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "05b181a009b9621ba62d115e2e667320241d52b9ea23da3c6d6c1a5c4dd2c997",
+        "5cf0f028803356e09644e8ea7f82d11933371b49276cfab80f3b08160f1cfa07",
+        "59a4376a1b1e65d10598c5a37f7b5be5c5a79db723f964e10e977f4a7ec82fb2",
+        "23809a6d548f1f325ae69627508a2e3690cd7d8fb6a64cb1041e2341a94e1d1a",
+        "e30ac48dd1654ea983e5888ba004a2ab0428015666efacf5252ef849ea238f0e",
+        "6cf8fe68e38138c72988d28d5f1369051853b61e0feac6ac597c5cb6b59263bf",
+        "0c0732c688f6887f8044caa9ba0673df1553e3f8e4109f75f479211866779c84",
+        "cebf6a25048ff0f49c836e1227d6c298b57b0f9c017914dd0f5b1e8cffbca0c4",
+        "a477f32865e49abb526cfefd67332331c7900fb5e40a75007897cbd6f293a166",
+        "1b7d3565bc41ab4495ea8bcf49ad39569c5a94d41d513f8bcfeb2f5ffbef4949",
+        "574aa5073fc2d7eb2b59702bc109e566018940210c8dcdd0a65544852248607c",
+        "aad52b8294b4412e1b213b91acce45c276b3652466f09d8dcbed6c014873e390",
+        "29a1b26e7b0d616352ba5d38a93e1dcb9e059a2c0458b5bcc15e05f387b4393c",
+        "e5ad084220e6c4f11b02e9e23f757bba206e98427cb76f9255c1e6ff7ffb7f9e",
+        "c1526973247edbd211a913349644ad2cc866660bf534d1a0b91f328001631427"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 3057916747,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.8-flash-prefill-int64-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              2560
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              2560
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "6006b101dc67ba60a88ccd4dfda1e81114489303a017039620d4099503142a26",
+      "latency_us": 11.140133333333333,
+      "samples": 15,
+      "latency_samples_us": [
+        11.392,
+        10.715,
+        11.468,
+        11.414,
+        11.186,
+        10.968,
+        11.456,
+        10.932,
+        10.611,
+        11.799000000000001,
+        10.642000000000001,
+        10.841,
+        12.030000000000001,
+        11.132,
+        10.516
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "c3e1a8bd1432beafe08659f89a21dece9f9eef886be89c882fc3f9506c99a555",
+        "a359a21d6d064cf36915ada322f3fa571ec8a0177cebcd03268401b6e6f677aa",
+        "1210e9dfd37449562994748308d94e2d67943856d2a91533259696bef3be4a89",
+        "073df4d90ad081a648639cd613e6fc583a3cdc2ec985d2f5c2ed43897f30df47",
+        "83c3059d9d3c515873ceb770f8a65540d22e9e6bd27732f41590bb2a5264b641",
+        "35d7cc013a1b9d7e0c8fef19838ef631670a975819bb27741cca8d342ba2d9a4",
+        "d22f4703cfd9648fedcec0c9f27e88ee930df693b56a1cf6f9c8540846eece92",
+        "3c02a3e6fc61477f364c84c7e0ef4f53cfd3e424ff8d0a57153fcbad3831d164",
+        "e19cc651b69904f9f65d492c7ca69a784019709728f8a6439b0e30627ba0d09c",
+        "ebba0a87c03f129632b56e68f65dcdb6a2632e4586a870f6ea478af6a015916c",
+        "8383306b8e419aaf870b6e0a2e7364e580c6ea4647104566f993978b7be102da",
+        "71d1e8e2982ed09ebdd10958a86630403bc8f4b097952198ec5bb83a8304e2dc",
+        "7fc2c505908c6a690d1bc923e55709ba60a1356c92c19245702bb352bf82b093",
+        "11b6636181e1ea3525827948e942f855ac83fa632bce5c811fb462556ecd2cc6",
+        "00f342affb3750d3e285a74e30657371e8e8fa1088b885c24e60699390948427"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 1248885863,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "EmbeddingFwdOp",
+      "case": "ngram-table-64bit-int64-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              16777216,
+              160
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              160
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "e2386f325e2b51361ca100d19976f4357a94185018152a85f83fd65665c98938",
+      "latency_us": 7.401866666666667,
+      "samples": 15,
+      "latency_samples_us": [
+        8.234,
+        7.284,
+        6.835,
+        7.32,
+        6.933,
+        7.917999999999999,
+        7.097,
+        7.413,
+        7.445,
+        6.557,
+        7.037,
+        8.271,
+        7.2540000000000004,
+        7.957000000000001,
+        7.473
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "e0c1da783f0c1c3752fef89474054a48dee490abbac86222fa6662fcc30ead31",
+        "340f34e034f3f0d16969d2a7e2370f3a972d21f90d9218ff8b1ca8db107e84b2",
+        "c3408ef76845bb3376f2b39d198dfd4ebe1a26b8672657b2152f2b1982e84b73",
+        "e32e863377c6bc6203056b2614b4b5fdf9492354eec1741f759427db8214a5ec",
+        "37ff19a456c6f4e4399a7662c4caf4e9c586bfe1a80e0e9032dc1553866a276b",
+        "df4992912a1df5f3caa126d54267773b5edf5774fc05b23bdd450b2f3310a59e",
+        "5e8277002eb11cd88900bcefa284dab0d286230f51e5d63bd510986c0c9a05d3",
+        "af2bbcb782974c6d6fa4866acb4fb852727d40e737d8e6ed18e7f782cb1ca7ff",
+        "88e1f4e0a946703ef66ee955ee3e16637d984bb4baf0b8b54a405181ade1426b",
+        "067ad0076ea05384658cf223525fce39ca784700f976fc30ff8af88bdb3c11bc",
+        "f202e60d73909c1357a435d530158d9ecf4dfb4989121041eaceba683d6558e1",
+        "9d0d2cc3aa778fd1d671a15c680e6b0db5ebecc9e9f2be09cd6563fcdbab2b01",
+        "26780b38551ce4c669f4b43f7c27902f7f4fade988eb250460bd59d9eb7c1711",
+        "42ae72fccd4b55965119891ef413a7230c1c61e0e34e82e53cbf098bb4827de5",
+        "c20ea657e709368f3419d7fb59d7121f65e477e539eb2aea63a6026e8f4b814b"
+      ],
+      "guard_sha256": "e2da4d1aaa982b331f3d54a7d8afd7c4ab178a5db0240ebe4db9162e2020329d",
+      "seed": 3870709903,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "MaskedScatterFwdOp",
+      "case": "qwen3.6-27b-image-4k-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              4096,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "f22f44b08997b7d3e92ba5280d8087ab572d4a095d2437ccfec3ac8583b411a1",
+      "latency_us": 518.8147333333334,
+      "samples": 15,
+      "latency_samples_us": [
+        519.708,
+        514.7929999999999,
+        518.421,
+        517.683,
+        520.097,
+        520.215,
+        515.9240000000001,
+        520.0519999999999,
+        519.0129999999999,
+        523.524,
+        515.127,
+        521.1320000000001,
+        520.086,
+        518.927,
+        517.519
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "e7787d89c0cb381b0107e00d6b73c7e8b8ac4378cd9ac0171fd8c6202e3272c3",
+        "6a183f88c46459c65b31d10bbae8ef6ee36bc8d9c791eef978d08c8d46c41af1",
+        "6fa8f226af04fd5ffb7663536bd5e4b706ae5dea261000e096c1fb86c4419334",
+        "aeab966c941cd2062ecb9c6d51790a52e7a60acfb75b9c1cbd3236f5861891c4",
+        "7eecf4651666a61de79fc6a8e3abc1b92e1b975fa83544a346d9c078cb648996",
+        "505ed3b1f6890fc2f7c31f0c6f394d17681574bbaf0b574c01154742bd3dc918",
+        "4f27829aa87a9d55a9018d4e78fffc5cbc1d75a07f8d5494fee8fdde305b25b4",
+        "07256e9d4c05889d9c12a76e0704b267e722dcba6e618d1b7ca6efb8dff427c5",
+        "a0facd71ccf558b3b6965ca110533d83c37bfd1a425d0c6f95f6630ca85be7a0",
+        "b4e54526a98ab38d950f2f9b2c048c17226a2f07db8568d030c190e739adb6fe",
+        "e6111a7b968f3870d113bfd0540ed12e3f9e88187d9f32c5e152272d7a96a248",
+        "19eef1a66fd6cd6591696c316aeb7016169ab8623116aa412283a21460f360ce",
+        "5aba8e43c30333978c1167f4f6d9bcf7eded731926f74978a30a69cd50dff87a",
+        "c0b62c4d18f70aa412c52fc230f098c84569bcd2ed67bad85d27411c201c92e7",
+        "c7b2960d3f20d3d71f55c09a26d94ffc463d4b09384f1b73493e6f8a7c676ff4"
+      ],
+      "guard_sha256": "36c7986b134ac13341679df7d051cbef3d7521b9f303aa3977187ce65892c34f",
+      "seed": 433474843,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "MaskedScatterFwdOp",
+      "case": "qwen3.6-27b-image-16k-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              16384,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              16384,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              16384,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              16384,
+              5120
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "4c5dad99a502e051af3784421313a20157ca3f5e7bfc1da79f6a4f02b9e31461",
+      "latency_us": 2086.6992,
+      "samples": 15,
+      "latency_samples_us": [
+        2083.602,
+        2084.977,
+        2085.816,
+        2087.829,
+        2089.6569999999997,
+        2087.439,
+        2085.893,
+        2079.666,
+        2088.916,
+        2084.3790000000004,
+        2092.225,
+        2088.2000000000003,
+        2086.757,
+        2088.0589999999997,
+        2087.0730000000003
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "cf91ffff4a7cefbf528c9ab37a568c73c0ebdfdd62979e96c060d9e827cdbc30",
+        "b632e6e5357b3e9d1518c163d8d10fd70a9abd41fa321cc1daae8fc1361e46ab",
+        "cd41f09a00c9ab30e47d8f39f22276235c1f5b64d36e2cf25bdd7421c921a52b",
+        "57739220467f17d217e133279c7187f7fa6781e53e9a3f71014f19f870331a1a",
+        "9a6fa9e12d46d695f17503638ca679103732bc5ec9ca687c50806f0a5dda86f8",
+        "1f31d9d1f495c65fa3e8f9853e7855f6985695ed7af947cc8d3120667611d744",
+        "bfb0726ce2610895da84587a059ff2dae57aed6b4f1e011562660a590d6f9a81",
+        "e6c03e0f52e2fb033de2b25d12dd28dde30e220a483f948733fc0033d8d3f8ed",
+        "919cfa807443792e72c3482b82c8676dcc8443693bdeb93c6b33e2074d55915c",
+        "3a237d9ae3ac2f8675b5b2a50584a1a9e7dc1fcd9448d0ff6913ae3ac8bcbfa8",
+        "f192b11fd43cc4dbfb228eed7d923524ade188500999665dbaa3c14379138bfc",
+        "1162e0db92939ee6a198080b11db701c569fa7a094ea9b342907b05bf2897056",
+        "fa9d6e978fea790c13307a95f3156f6adc0fd69ada357c6018fee733dcedeca3",
+        "c959b4b08ec46017ac44347ed3790761ec72786b3c02512e74c3d25d751ec084",
+        "56838b91f7e4c989b4a3db53fbb6fd8cd2ecd1a9f3de2f475a67c0e725cda79d"
+      ],
+      "guard_sha256": "36c7986b134ac13341679df7d051cbef3d7521b9f303aa3977187ce65892c34f",
+      "seed": 3885104141,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "MaskedScatterFwdOp",
+      "case": "qwen3.6-35b-a3b-image-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4096,
+              2048
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              4096,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              4096,
+              2048
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              2048
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "26e11e5fb351ea1bca15cb3ef3b1c0bdb8f9d16c7be2252fc3343d0465a2549e",
+      "latency_us": 210.74213333333333,
+      "samples": 15,
+      "latency_samples_us": [
+        212.392,
+        210.724,
+        210.708,
+        212.66899999999998,
+        209.87900000000002,
+        209.536,
+        210.96300000000002,
+        210.426,
+        210.22899999999998,
+        210.49200000000002,
+        210.74200000000002,
+        210.99300000000002,
+        211.372,
+        209.484,
+        210.523
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "a8247d818ef57104a21bf8956e507fa56a84b0b99781520db777b302db1b136c",
+        "f103c65fece20174586c4f3614186225130d6a2e3d1a54fc04fa8667d810c1c2",
+        "a15c9a8b6598c75b7b62e8b90684ba99dc458e108d804d7c5d2c037f7c55809a",
+        "89d9c4f1541c9e1ef8ce9992e4d8002e4ce7c5e559180a99cf62c368a451bcc0",
+        "1688429a678890cfee991569b36c1d67f8913c08e58e030eaf1b1d2a11d968f0",
+        "49de641ca842230b8c128aaec6e4e5db609f2aea9145485abef1db140c43bd95",
+        "06a3fb6a7a0c0eb457a13783225f1db13de45d64308a26dcf8614ac37dc082be",
+        "acb762656002dcb111eedf9f168793fc9b9327b16130e8870db2033bc2a9c724",
+        "9ec34bbdc18141f48ad6e594542efb9ad621c63b14a6ed2f64e6974d64eb9724",
+        "6c8d9535094d228184b7fd66a8653fba47f2ddfa7828921d0f05c479acc09b6a",
+        "24ae7d0c18c6039a65eccdfeb019b5786307e666754cf651c4df30c091fc955a",
+        "dfbe9d02129f3f8a666006afb5cc8e32bd752b6468b3b08e7cbfc3d4f16c1c11",
+        "012c61ff9f2fc092ed27601c07f01d69a254f4929c7a31d7e8999afd215f54cc",
+        "99fefb5ac6b87a53d6d003eded2c6587c463ca439cb898675e82d43b4b6ca84c",
+        "2f39a38d22eedfbe5696c76bbfa135d2f9219ab744e7399c9a2969e154bc9478"
+      ],
+      "guard_sha256": "36c7986b134ac13341679df7d051cbef3d7521b9f303aa3977187ce65892c34f",
+      "seed": 2560126589,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "MaskedScatterFwdOp",
+      "case": "glm-5.3-flash-image-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              4096,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "e243efb64e87bae685ccf7fb6eb570d0f2c79401784cabdccb87656645e7ce6b",
+      "latency_us": 405.096,
+      "samples": 15,
+      "latency_samples_us": [
+        403.703,
+        406.197,
+        406.373,
+        404.75899999999996,
+        403.81,
+        403.524,
+        405.06399999999996,
+        404.834,
+        404.292,
+        403.74100000000004,
+        407.78,
+        406.13300000000004,
+        403.755,
+        407.881,
+        404.594
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "da15578b9547ebcb6d2b0bad5e08e80474abacebf7d013c08dd49d12d0be54bb",
+        "46285feae915ebed6d5c6c0dcf0517c8a813c1fd732d1a3693e3348f97515e67",
+        "b62532d5e3928e3aeedb6bc80db7c5a174621e0cbb122c72ecec02fda8b782af",
+        "e5a1d7b85fdf89d1fe727768860bc6c24bb21851781660e679938f678c69afde",
+        "ba0909e2613f8313434a5005821126b8998ab0923acb138b6ea1f334683fc641",
+        "9a9dd9ecb16c71e327edd0860d1f260bb8e35cdc963eead88c66e50fe684c7a4",
+        "a9ad6703d6e23f18d21015c1ddc8f58683103acc3997521000ab139af356f3ff",
+        "b8aa04faf0c760b6d8855ab202a74e4aa22415919d62250984cbc7a4ccdc1faa",
+        "91682851116479d0803eca03d7b45493c7919168dcaf7815a836f872aa8831af",
+        "37fe87b6731bbcb126da4328e9651ce86243f02354773d943514d275da7a02df",
+        "43447a7afcae5550bb453f2a68a00e4f4ca53c1e324eccc8dad06ae3a6547f99",
+        "43f76648a329f8755e86bd098ad20490f6a37ca091ebaa7f785743b8764a67f2",
+        "552bac52dca4329399a39cc21a6484a7c407a3daf625e84ab991849766de9a65",
+        "3a79862cb5a7b0cf0b2fb8789537c1e54656ed031a731157ebbf9aa665c1c683",
+        "6a9c98bb6819d3d9134ce13b1bca1381b2c18f6a69d59c1ae9e3987ee6289dfd"
+      ],
+      "guard_sha256": "36c7986b134ac13341679df7d051cbef3d7521b9f303aa3977187ce65892c34f",
+      "seed": 1182224819,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "MaskedScatterFwdOp",
+      "case": "qwen3.8-flash-image-bfloat16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4096,
+              2560
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              4096,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              4096,
+              2560
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              2560
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "8e2c61284dee6a9b36a0291adfbf613c5cf557387cc45a026571e08bd50b7e89",
+      "latency_us": 266.14133333333336,
+      "samples": 15,
+      "latency_samples_us": [
+        265.81300000000005,
+        266.24399999999997,
+        265.523,
+        266.18,
+        265.38,
+        270.50800000000004,
+        266.486,
+        265.096,
+        267.44,
+        265.187,
+        264.511,
+        266.91900000000004,
+        266.029,
+        267.387,
+        263.41700000000003
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "f5f3113533156a9452e77e292780453c82c1d01f2fbf50c1dcbf6821fce432f6",
+        "aa7dd366bbd941e7da693409550a2e618fec816a6bf4787e3cf81e8b2433d2cc",
+        "57785d32c6637aa5cf950236a9816d3216346aad6b71ec98bd6bed9f0448ad71",
+        "247135d26c00dae06587d50e9cee432a8fa870dc742a4aa777f14ad5c2a1b9bc",
+        "7bef1fa88af47e0420fcd296f5d00c44affc8170d97a5f60ff78090476ac87f2",
+        "466b5564d3b33f64e56b72e1be9b97d67abec5b3e01e07f0a6d30e1880b23a2d",
+        "69911e485ec3e289468c623dfabd4e3e52817db285762aa1792f5c9266076012",
+        "465d7bdb53c343db9c31178d55a63c5c77d82360681ed3b45e30b9e29c22b8f2",
+        "9a0ba81d0559e4de88bc73fb77d3b9f8fece93fa53ca47d9eb97916a1f8ddf6a",
+        "6b451fd6b15faab23af9358b11d069364bc309d9530b9df82a4d84ac5559ab48",
+        "4ab5f1575eac458561d35edc1f1a6a9fc3e215ddb78233f957a9cf5bf07c9f3e",
+        "c1ccb974448925e7d6cb8cd86a1b9f9a99f66824c25ea4d7cabc9801b756fff2",
+        "b5d476af73581cbd85034ec5ce8d0d89bcb22fe78aca5fcbb3acbb70794341c2",
+        "fc3337ba69c27108f08c0d845bc07526fd1a047a8e19a53df8a1bb2026a30f74",
+        "6840786aeef07ab2597bd53f86a6e61815970eb9753a3d9fb0744875b7731233"
+      ],
+      "guard_sha256": "36c7986b134ac13341679df7d051cbef3d7521b9f303aa3977187ce65892c34f",
+      "seed": 1743698418,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "MaskedScatterFwdOp",
+      "case": "llava-image-3k-float16",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              3000,
+              4096
+            ],
+            "float16"
+          ],
+          "mask": [
+            [
+              3000,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              3000,
+              4096
+            ],
+            "float16"
+          ],
+          "output": [
+            [
+              3000,
+              4096
+            ],
+            "float16"
+          ]
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "30b66c334f504cf1dc3dca690209cf83cddfa3dc215d2bad64baf78ed1e855c9",
+      "latency_us": 316.4861333333334,
+      "samples": 15,
+      "latency_samples_us": [
+        315.68600000000004,
+        314.469,
+        319.00800000000004,
+        317.185,
+        315.181,
+        314.841,
+        317.149,
+        317.3,
+        319.472,
+        315.886,
+        314.398,
+        315.573,
+        314.82500000000005,
+        316.452,
+        319.867
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "e4344b06c4aceca54fb51657015714058c715a73f657a064d9a236ce83845c9c",
+        "edec9dea9f69ee9af9c1b53c21c692da3e1358511b8a25bac04990e315b47825",
+        "5c50959fdda1486ebe1badf25e7bd711b5fa118e3566276e389a6e1d64c0e6ea",
+        "ba6f72a9963d8dacd10f17c3298d2addd4111a6aaae01d44424378f470cc16cf",
+        "5bb4b184d52e268ae4a112873cc2c5093ea827fa686fc1947bab3056bdb94fa3",
+        "5701d3abb9ee520545223a32397a3bb3c63df78ddaa828dbb1498d81ef8bdbce",
+        "4ae20f07540cb012069d74c746c8078800d2a50200ef43891369b4019b919747",
+        "ca1e9acf1d1418ff33b1d73c6b854b799faac9c9b6c9cbe848e7140599f914c7",
+        "f4c2c3496949cabf1aaf465237bb494074011d55b4a1dbb43523fde4319a3bf7",
+        "1c4f109228a7adee9db5567b608e5e3076a54609d587d45bb58041d8ca0a7379",
+        "b1741e60ea80063e24a28f94c486fd0c607343bdd7d9ad59f947db214c8914f3",
+        "a2d0c5b506f63181a4d95173a68c4a572900dcde03708fd1527721ba1547419f",
+        "affd13ba90cb35fe4f8424704d205c897e964eba9dbbd43f0ba8ffc371cb17db",
+        "0a093200490cd457bdd1fe25f9190675734eff9f8b2666f835cde3dab6db2cd8",
+        "e8e78c10cd1dc1b40d06c697e93a57778bf89607a2cde72a73ae54ebb710c1ad"
+      ],
+      "guard_sha256": "36c7986b134ac13341679df7d051cbef3d7521b9f303aa3977187ce65892c34f",
+      "seed": 2080533590,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    },
+    {
+      "library": "torch-eager",
+      "op": "MaskedScatterFwdOp",
+      "case": "llava-image-3k-float32",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              3000,
+              4096
+            ],
+            "float32"
+          ],
+          "mask": [
+            [
+              3000,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              3000,
+              4096
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              3000,
+              4096
+            ],
+            "float32"
+          ]
+        }
+      },
+      "source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+      "measurement_id": "2b7b14efca3fccef5ea1e1692149809c094b2ff51546215111e7eb2c127b73e9",
+      "latency_us": 381.33746666666667,
+      "samples": 15,
+      "latency_samples_us": [
+        379.963,
+        379.05899999999997,
+        378.813,
+        382.876,
+        378.436,
+        381.937,
+        380.502,
+        380.611,
+        379.08599999999996,
+        383.919,
+        380.178,
+        379.932,
+        384.409,
+        385.452,
+        384.88899999999995
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "parser_revision": "v3-distinct-ffts-plus-missing-named-aicpu-v1",
+      "profile_sha256": [
+        "b46269dc1aec4112c92a8562cefec84b6a5f1d5d0eca42b697b2c7c151ecb0ec",
+        "ab5980c77c8b6033a06be16459223e007274d981e8cff83912d430c03d817298",
+        "39e156fdc0826cb7c9952c3f5ae36ea249e9cd702ebab0519b9f9bec3354a890",
+        "ba7447c1ae1c5ab59c8ffa836239f9835e273386e298af96021dd4934f7df267",
+        "dc5703059e34360e0ea4103104815c11a21203933367ac14b35cac7e7c9fe227",
+        "132809c37e2f8caf58a9ef5fb12df9af4b4241d9de839cc2def12e4194e2a2d6",
+        "f0d66fa2d369f3609c46965cf5a1a79953422fc0660ba93250e14f3e885e1147",
+        "7c0304a89c56f637f72b8920ea01e95ad499fcd13db345b33b0ed7098553b29a",
+        "2a878d6325708093c72d944eeac736281a034d4eadbfc1f4edfaa1e050e61bb9",
+        "26ad9d777598a1492ecaaeaa405e7509a78e98eb6bfdbe6b79fea26c661a1358",
+        "42a5be304ae2a4b3ba66f2d63b9a2e753fd73a5322e126cdfc06f6b4fbc448c4",
+        "d6e7043718d17693a63fe579695afbd76b5630876c5af322f010991f6c147fb7",
+        "ce3d615b92e4b3d689d76d6cd21a628fd0b0d7feef491b35814006ebc7079438",
+        "434a5f8d36cabc41453091fe70df19d09e31d87261e451349ed1bd9c63a50420",
+        "27eb98bbe0fe48e7da2a9008aa3cbc86e7aca1d0a1b512bff8243f3614302300"
+      ],
+      "guard_sha256": "36c7986b134ac13341679df7d051cbef3d7521b9f303aa3977187ce65892c34f",
+      "seed": 4194362714,
+      "verification": {
+        "checked_outputs": 1,
+        "total_outputs": 1,
+        "max_abs_err": 0.0,
+        "unchecked_reason": null
+      }
+    }
+  ]
+}
