@@ -59,7 +59,61 @@
       "path": "quant/dynamic_mx_quant/README.md",
       "sha256": "21c9abae19a3dc4da9167361956955330c6b6dd9133976adc848f596dee64fd6",
       "revision": "84bf2da40119e3b8114a6d2a9e7369190a0470d1",
-      "status": "candidate; ABI, layout, numerical contract and device timings pending"
+      "status": "The tested direct provider configurations do not reproduce all upstream packed bytes and scales; no speed ratio admitted.",
+      "tested_entry": "torch_npu.npu_dynamic_mx_quant(..., dst_type=torch_npu.float4_e2m1fn_x2, round_mode=\"round\")",
+      "contract_probe": [
+        {
+          "input": "random",
+          "scale_alg": null,
+          "q_mismatches": 35,
+          "scale_mismatches": 2
+        },
+        {
+          "input": "random",
+          "scale_alg": 1,
+          "rejected_argument": true
+        },
+        {
+          "input": "random",
+          "scale_alg": 2,
+          "q_mismatches": 5,
+          "scale_mismatches": 0
+        },
+        {
+          "input": "zeros",
+          "scale_alg": null,
+          "q_mismatches": 0,
+          "scale_mismatches": 16
+        },
+        {
+          "input": "zeros",
+          "scale_alg": 1,
+          "rejected_argument": true
+        },
+        {
+          "input": "zeros",
+          "scale_alg": 2,
+          "q_mismatches": 0,
+          "scale_mismatches": 16
+        },
+        {
+          "input": "ties",
+          "scale_alg": null,
+          "q_mismatches": 113,
+          "scale_mismatches": 0
+        },
+        {
+          "input": "ties",
+          "scale_alg": 1,
+          "rejected_argument": true
+        },
+        {
+          "input": "ties",
+          "scale_alg": 2,
+          "q_mismatches": 113,
+          "scale_mismatches": 0
+        }
+      ]
     }
   ],
   "RoPECosSinFwdOp": [
