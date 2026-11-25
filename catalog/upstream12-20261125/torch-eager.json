@@ -3661,6 +3661,338 @@
       "guard_exit": 0,
       "checked_outputs": 1,
       "seed": 3608126672
+    },
+    {
+      "op": "NGramHashFwdOp",
+      "case": "qwen3.8-flash-prefill",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input_ids": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "context": [
+            [
+              1,
+              2
+            ],
+            "int64"
+          ],
+          "multipliers": [
+            [
+              3
+            ],
+            "int64"
+          ],
+          "primes": [
+            [
+              16
+            ],
+            "int64"
+          ],
+          "offsets": [
+            [
+              16
+            ],
+            "int64"
+          ],
+          "ngram_ids": [
+            [
+              1,
+              4096,
+              16
+            ],
+            "int64"
+          ],
+          "eos_token_id": 248044,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 276.3265940719739,
+      "samples": 15,
+      "sample_us": [
+        275.1367905117685,
+        281.8267828691717,
+        278.12577744377893,
+        276.39778683311187,
+        280.9427854967836,
+        275.65280354472327,
+        269.13680466583764,
+        275.9987989151214,
+        282.360801797987,
+        276.05678389018664,
+        271.56180857972805,
+        275.2697917630122,
+        276.3117899712312,
+        273.39480322940983,
+        276.72480156775816
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "measurement_id": "1496192fc6a08d7d18e52fcfdd70ca9c7d39907b9df51c8f3e58677bb934d692",
+      "profile_sha256": "98fa83a8fc6ac702755a4eb2d6814493fe8fc473ba04aa106692f65177cafa55",
+      "guard_exit": 0,
+      "checked_outputs": 2,
+      "seed": 1480458677
+    },
+    {
+      "op": "NGramHashFwdOp",
+      "case": "qwen3.8-flash-varlen",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input_ids": [
+            [
+              8192
+            ],
+            "int64"
+          ],
+          "context": [
+            [
+              64,
+              2
+            ],
+            "int64"
+          ],
+          "multipliers": [
+            [
+              3
+            ],
+            "int64"
+          ],
+          "primes": [
+            [
+              16
+            ],
+            "int64"
+          ],
+          "offsets": [
+            [
+              16
+            ],
+            "int64"
+          ],
+          "cu_seqlens": [
+            [
+              3
+            ],
+            "int32"
+          ],
+          "context_indices": [
+            [
+              2
+            ],
+            "int32"
+          ],
+          "ngram_ids": [
+            [
+              8192,
+              16
+            ],
+            "int64"
+          ],
+          "eos_token_id": 248044,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 298.553546368223,
+      "samples": 15,
+      "sample_us": [
+        294.01276276418736,
+        295.86675382029716,
+        297.4027446161482,
+        299.11674832483465,
+        297.4357524839688,
+        299.51474963613805,
+        298.48075430577967,
+        298.57474918068533,
+        296.77975060209826,
+        300.5197280046363,
+        301.69673365024806,
+        305.1327412127652,
+        298.03573907063594,
+        298.4557413879393,
+        297.27774646298394
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "measurement_id": "c7d8eb815ab0a35b28fed67fc4e6dc528c6e9bd8cb39c6c67958d3e1f65ad5f0",
+      "profile_sha256": "ab96ccb0ff524045edeea1f9119267ac3f87cbaf1fe57b59c11c77b69701fc0f",
+      "guard_exit": 0,
+      "checked_outputs": 2,
+      "seed": 2886771396
+    },
+    {
+      "op": "NGramHashFwdOp",
+      "case": "qwen3.8-flash-decode",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input_ids": [
+            [
+              64,
+              1
+            ],
+            "int64"
+          ],
+          "context": [
+            [
+              256,
+              2
+            ],
+            "int64"
+          ],
+          "multipliers": [
+            [
+              3
+            ],
+            "int64"
+          ],
+          "primes": [
+            [
+              16
+            ],
+            "int64"
+          ],
+          "offsets": [
+            [
+              16
+            ],
+            "int64"
+          ],
+          "context_indices": [
+            [
+              64
+            ],
+            "int32"
+          ],
+          "ngram_ids": [
+            [
+              64,
+              1,
+              16
+            ],
+            "int64"
+          ],
+          "eos_token_id": 248044,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 210.90183973202681,
+      "samples": 15,
+      "sample_us": [
+        210.3418437797169,
+        211.78983852949816,
+        208.65783645743852,
+        212.92283791889122,
+        211.42484043639362,
+        208.5318465925128,
+        210.0538400660255,
+        212.78884285880147,
+        209.82984156251297,
+        208.6448493102142,
+        212.3788275535881,
+        213.49683488087143,
+        208.8898466575775,
+        211.65382952054324,
+        212.12183985581655
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "measurement_id": "21c2c9ce75cd8f75202b5e41c20aba3865ed8146bd55b35bc18440d63f43e47d",
+      "profile_sha256": "10e81d9f435d781f1f6287860d5825f25ee6563b35b0e37283849777299c10cd",
+      "guard_exit": 0,
+      "checked_outputs": 2,
+      "seed": 2392745588
+    },
+    {
+      "op": "NGramHashFwdOp",
+      "case": "qwen3.8-flash-verify",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input_ids": [
+            [
+              64,
+              4
+            ],
+            "int64"
+          ],
+          "context": [
+            [
+              256,
+              5
+            ],
+            "int64"
+          ],
+          "multipliers": [
+            [
+              3
+            ],
+            "int64"
+          ],
+          "primes": [
+            [
+              16
+            ],
+            "int64"
+          ],
+          "offsets": [
+            [
+              16
+            ],
+            "int64"
+          ],
+          "context_indices": [
+            [
+              64
+            ],
+            "int32"
+          ],
+          "num_accepted_tokens": [
+            [
+              64
+            ],
+            "int32"
+          ],
+          "ngram_ids": [
+            [
+              64,
+              4,
+              16
+            ],
+            "int64"
+          ],
+          "eos_token_id": 248044,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 218.17577557852488,
+      "samples": 15,
+      "sample_us": [
+        216.37584402496066,
+        216.63283609708034,
+        216.05584905996548,
+        218.08083861458272,
+        219.48484636228397,
+        218.7798399809409,
+        219.63784274869204,
+        215.72485317405489,
+        217.5698464273486,
+        218.93884116211498,
+        217.6428439198562,
+        216.5258441300651,
+        220.55783969065234,
+        216.6288532841643,
+        223.99981500111093
+      ],
+      "protocol": "ascend950-isolated-ffts-v3",
+      "measurement_id": "7b3d8100e5c7aa98b058fe45ce56907f7e70f64238740ef4b3305bebdf98f8f0",
+      "profile_sha256": "811b2eeaae0a1957b58bebafdd74225f12b5cbb527fd7a18021d1f6ef84a8260",
+      "guard_exit": 0,
+      "checked_outputs": 2,
+      "seed": 732677417
     }
   ],
   "failed_or_invalid": [],
@@ -3668,14 +4000,13 @@
     "GatedPoolCompressFwdOp",
     "MoEGroupedGEMMMXFP4FwdOp",
     "FP4QuantPerGroupFwdOp",
-    "RoPECosSinFwdOp",
-    "NGramHashFwdOp"
+    "RoPECosSinFwdOp"
   ],
   "scope_cases": 100,
   "protocol": {
     "warmup": 3,
     "repeats": 15,
     "flush_bytes": 1073741824,
-    "timer": "ascend950-marker-session-v4"
+    "timer": "per-row protocol; automatic fallback to isolated v3 when marker topology is unsupported"
   }
 }
