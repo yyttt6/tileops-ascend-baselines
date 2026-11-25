@@ -1,0 +1,3680 @@
+{
+  "measured_source_tree": "b9a51c049d90518788ac2cd551cc900beb900f6b",
+  "rows": [
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-27b-prefill-int64-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 17.019266666666667,
+      "samples": 15,
+      "sample_us": [
+        17.571,
+        15.534,
+        16.877,
+        17.27,
+        17.247,
+        17.794,
+        16.617,
+        16.837,
+        16.14,
+        16.699,
+        16.672,
+        17.631,
+        16.925,
+        17.355,
+        18.12
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "91dfeecd666cfa4c733a8707dc10357560318fed78b3281f07c679c57b892c29",
+      "profile_sha256": "e50fd57489e4cad32f120891f3898c695ec197959e9f93cc0db01bde82ec1692",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3082034809
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-27b-prefill-32k-int64-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              32768
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              32768,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 183.85733333333334,
+      "samples": 15,
+      "sample_us": [
+        183.258,
+        183.438,
+        182.962,
+        183.367,
+        184.621,
+        183.884,
+        184.124,
+        183.443,
+        183.652,
+        185.169,
+        184.313,
+        183.21,
+        182.463,
+        184.447,
+        185.509
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "107f99fc0a2f1055285e4890602b12fe3fd4623df835538b70f1c7573121718d",
+      "profile_sha256": "466d563ba1f6c789229cc43ac9ee710c83d07cf0ff92e258fa50e84408a9d2ac",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 292009148
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-27b-decode-b64-int64-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              64,
+              1
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              64,
+              1,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 4.055599999999999,
+      "samples": 15,
+      "sample_us": [
+        4.654,
+        4.307,
+        3.058,
+        3.282,
+        3.499,
+        4.942,
+        3.96,
+        3.634,
+        4.456,
+        4.473,
+        4.126,
+        3.211,
+        3.571,
+        4.166,
+        5.495
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "6a81c894ca1967edfc306e8c33478875c98b3237b089ceb30a4141140a397e61",
+      "profile_sha256": "56edcd203be20d1f1a22970d568c0bdb85449eecbe68d3005905cd6ee9f99f5a",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3451579642
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "llama3-8b-prefill-int32-float16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int32"
+          ],
+          "weight": [
+            [
+              128256,
+              4096
+            ],
+            "float16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              4096
+            ],
+            "float16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 14.608600000000001,
+      "samples": 15,
+      "sample_us": [
+        15.005,
+        14.011,
+        14.493,
+        14.932,
+        13.201,
+        13.778,
+        13.083,
+        17.425,
+        15.413,
+        15.541,
+        13.932,
+        13.446,
+        17.226,
+        13.454,
+        14.189
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "3e4635b6abaa7c64aca6754c837f7cac4f7a34a518b7f2299d3f77f93c96365e",
+      "profile_sha256": "9de0d543e04bff34af1dafa27a86c5a5b85fe6f7d61f942fc69b81ecfb4b763b",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 2810943745
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "llama3-8b-prefill-int64-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              128256,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 14.062266666666666,
+      "samples": 15,
+      "sample_us": [
+        13.833,
+        13.71,
+        14.254,
+        14.4,
+        13.872,
+        14.324,
+        14.274,
+        13.827,
+        13.107,
+        13.725,
+        14.939,
+        14.467,
+        14.047,
+        13.641,
+        14.514
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "30b2aed5fcea6212e803c57fe8b359ff01db90b3a8578bab186fdb4e8846986c",
+      "profile_sha256": "df91c354378f7a30d338be40390a6daac5193a070c67039817a816871bed3552",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 4139491850
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-vision-pos-int64-float32",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              2304,
+              1152
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              4,
+              4096,
+              1152
+            ],
+            "float32"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 21.92826666666667,
+      "samples": 15,
+      "sample_us": [
+        21.74,
+        22.526,
+        22.275,
+        21.817,
+        20.907,
+        22.747,
+        21.861,
+        22.902,
+        21.65,
+        21.174,
+        22.342,
+        21.373,
+        21.644,
+        21.259,
+        22.707
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "fdfdf6231345749096879722f3c5d66264d9edfc1026fbb686422fb811073a4a",
+      "profile_sha256": "cfac729921f58783878ae795574f4bcafe0b8cb8093dc5c4517ab6894c313f7c",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3094844543
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.6-35b-a3b-prefill-int64-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              2048
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              2048
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 9.4102,
+      "samples": 15,
+      "sample_us": [
+        9.181,
+        9.787,
+        8.8,
+        9.473,
+        9.76,
+        9.553,
+        9.755,
+        9.326,
+        9.145,
+        8.501,
+        9.635,
+        10.013,
+        9.627,
+        9.022,
+        9.575
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "27a2898425e2190024059359d10486a639af037a0feb3032cecc57e99caba62d",
+      "profile_sha256": "5d5c06be943f4c5c59d2fe57b37b1ea880fbecd0b946876cf320096717717f52",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3286030708
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "dsv4-flash-prefill-int64-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              129280,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 14.2672,
+      "samples": 15,
+      "sample_us": [
+        13.541,
+        13.43,
+        15.061,
+        15.512,
+        14.761,
+        13.35,
+        15.767,
+        13.266,
+        14.092,
+        13.664,
+        14.6,
+        13.804,
+        13.991,
+        14.396,
+        14.773
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "82b93b44dfba9eb73ff8d51d816fd952ed7b919c7f71b6d173a7905c0ae02230",
+      "profile_sha256": "6ea6c7de1369c3cdcc0e631ef084921402ff5bfbc6344900d82d02384af84b0c",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 330769751
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "dsv4-flash-tid2eid-int64-int64",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              129280,
+              6
+            ],
+            "int64"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              6
+            ],
+            "int64"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 3.7892,
+      "samples": 15,
+      "sample_us": [
+        3.6,
+        4.299,
+        3.391,
+        3.593,
+        3.667,
+        3.999,
+        3.9119999999999995,
+        3.661,
+        3.69,
+        3.685,
+        3.665,
+        3.801,
+        3.454,
+        3.9909999999999997,
+        4.43
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "7b875e2453aa6407c3f187e684cf4424d0518450cd2989934e20426cb9a9ad85",
+      "profile_sha256": "8df77479b6ed8db9ea77da3c7c94e86adf2bace413e26f7e17ba4c6e4e0919cb",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 2350959795
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "glm-5.3-flash-prefill-int64-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              154880,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 14.957799999999999,
+      "samples": 15,
+      "sample_us": [
+        14.702,
+        15.206,
+        14.647,
+        15.414,
+        14.307,
+        16.012,
+        14.65,
+        17.723,
+        14.165,
+        13.878,
+        14.6,
+        13.649,
+        14.839,
+        15.195,
+        15.38
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "d9b1f01b43ef99f5df7969f87bd24832a7c588b6172e50ae50f697a0f183f2ff",
+      "profile_sha256": "5a8ef068901a00e93d706c0d85e80983173495b0d0463beeecf364dee61659ad",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3057916747
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "qwen3.8-flash-prefill-int64-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              248320,
+              2560
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              2560
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 10.712466666666666,
+      "samples": 15,
+      "sample_us": [
+        10.813,
+        10.885,
+        10.657,
+        10.454,
+        10.638,
+        11.266,
+        10.982,
+        10.798,
+        10.234,
+        10.959,
+        10.174,
+        10.435,
+        9.995,
+        10.907,
+        11.49
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "c0f357dea8b4a76340edced90d5844b0b57670e40b6afa379ef109a7af65ed1b",
+      "profile_sha256": "4120148626acdf1b9ea2b14b902879b951ede6575850a06b599b510ae52fed6f",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 1248885863
+    },
+    {
+      "op": "EmbeddingFwdOp",
+      "case": "ngram-table-64bit-int64-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              1,
+              4096
+            ],
+            "int64"
+          ],
+          "weight": [
+            [
+              16777216,
+              160
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              1,
+              4096,
+              160
+            ],
+            "bfloat16"
+          ],
+          "padding_idx": null,
+          "max_norm": null,
+          "norm_type": 2.0,
+          "scale_grad_by_freq": false,
+          "sparse": false,
+          "validate_inputs": false
+        }
+      },
+      "latency_us": 5.500733333333334,
+      "samples": 15,
+      "sample_us": [
+        7.387,
+        5.27,
+        5.95,
+        5.08,
+        5.5,
+        5.147,
+        5.375,
+        5.519,
+        5.409,
+        5.114,
+        5.414,
+        5.136,
+        5.404,
+        5.301,
+        5.505
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "928ad7b9862db88538d02daa7057d4185409829ff4018553c6df9713de8e4d07",
+      "profile_sha256": "e2e76f0866fb6d13fa6550bdb4ff4187eed90a6c79a0cb9eecb9f0cb66bae6a5",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3870709903
+    },
+    {
+      "op": "MaskedScatterFwdOp",
+      "case": "qwen3.6-27b-image-4k-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              4096,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "latency_us": 516.7473333333334,
+      "samples": 15,
+      "sample_us": [
+        518.385,
+        513.037,
+        517.345,
+        517.803,
+        518.594,
+        518.049,
+        517.175,
+        515.069,
+        516.0749999999999,
+        515.562,
+        517.617,
+        512.363,
+        518.3870000000001,
+        517.6229999999999,
+        518.126
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "ca1912539d1f01c584e1f6199d8a1f610925074b2a2847275c552caf8d3b69ff",
+      "profile_sha256": "a6256ef8c0fe6a0cadfdb0b7c18f8c748532bbf9e53abbd4129d2f0c129a9f2e",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 433474843
+    },
+    {
+      "op": "MaskedScatterFwdOp",
+      "case": "qwen3.6-27b-image-16k-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              16384,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              16384,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              16384,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              16384,
+              5120
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "latency_us": 2085.3188,
+      "samples": 15,
+      "sample_us": [
+        2088.372,
+        2083.602,
+        2087.759,
+        2085.524,
+        2087.7490000000003,
+        2082.897,
+        2086.806,
+        2083.989,
+        2086.6839999999997,
+        2088.855,
+        2081.16,
+        2083.7889999999998,
+        2080.299,
+        2085.567,
+        2086.73
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "3312d58677721b1784b0ff866e2628a85f1849e5a85a74e287b715df0f5a7fda",
+      "profile_sha256": "fe6de453b091dfca475dcf59631d6e6049acb677197079cc58d4819313eb5538",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3885104141
+    },
+    {
+      "op": "MaskedScatterFwdOp",
+      "case": "qwen3.6-35b-a3b-image-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4096,
+              2048
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              4096,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              4096,
+              2048
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              2048
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "latency_us": 211.068,
+      "samples": 15,
+      "sample_us": [
+        209.285,
+        212.24699999999999,
+        212.182,
+        208.52900000000002,
+        211.11499999999998,
+        211.21800000000002,
+        210.271,
+        214.184,
+        212.363,
+        210.701,
+        210.221,
+        209.63400000000001,
+        213.05200000000002,
+        211.554,
+        209.464
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "9432911b5f23ef11b8d18694f48edebda3d890d66c0087714805dffc3e414a3e",
+      "profile_sha256": "a424159dbcd24ac779595ffd5479a8127439bebc15081b8786291ae7d37782cc",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 2560126589
+    },
+    {
+      "op": "MaskedScatterFwdOp",
+      "case": "glm-5.3-flash-image-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              4096,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "latency_us": 403.6802,
+      "samples": 15,
+      "sample_us": [
+        403.44,
+        404.274,
+        403.051,
+        408.06,
+        403.202,
+        402.613,
+        403.359,
+        405.041,
+        400.443,
+        406.567,
+        402.534,
+        405.078,
+        402.675,
+        401.481,
+        403.385
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "4c2e0f3ecf1ada09345073e7770a4d15266d0afb7d326b995b2277e6d8b6a8c3",
+      "profile_sha256": "1091c1f8725cf5eb89ab1f3c4c3412559f1595058356947ffbfac44546bfcb24",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 1182224819
+    },
+    {
+      "op": "MaskedScatterFwdOp",
+      "case": "qwen3.8-flash-image-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              4096,
+              2560
+            ],
+            "bfloat16"
+          ],
+          "mask": [
+            [
+              4096,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              4096,
+              2560
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              2560
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "latency_us": 265.44759999999997,
+      "samples": 15,
+      "sample_us": [
+        262.094,
+        265.769,
+        265.772,
+        265.807,
+        263.55,
+        265.956,
+        267.09999999999997,
+        269.065,
+        262.762,
+        266.999,
+        265.22,
+        266.26,
+        266.501,
+        263.722,
+        265.137
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "6e40d3507fc0910e1020f70a271f4dc369c28acb8bde27d4407c911bc13f8d36",
+      "profile_sha256": "4dc6e13f1e95fbbf7f84999dfe6a81b735a90d51d6a43a9b8d0c28d3748331e0",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 1743698418
+    },
+    {
+      "op": "MaskedScatterFwdOp",
+      "case": "llava-image-3k-float16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              3000,
+              4096
+            ],
+            "float16"
+          ],
+          "mask": [
+            [
+              3000,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              3000,
+              4096
+            ],
+            "float16"
+          ],
+          "output": [
+            [
+              3000,
+              4096
+            ],
+            "float16"
+          ]
+        }
+      },
+      "latency_us": 315.7184666666667,
+      "samples": 15,
+      "sample_us": [
+        317.363,
+        315.99,
+        316.038,
+        315.41200000000003,
+        316.062,
+        315.941,
+        315.30199999999996,
+        316.23699999999997,
+        314.127,
+        316.637,
+        316.493,
+        316.217,
+        315.497,
+        315.085,
+        313.37600000000003
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "c2ecc99ae6642d020b7e73b4c16b696cdcf5b2ddbd153d7a7c1fbbf29a6c10a2",
+      "profile_sha256": "93ed326bda4ce78a579530aef35135d2cd69bd92e3c9822b60c8e6ff5f5c3d26",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 2080533590
+    },
+    {
+      "op": "MaskedScatterFwdOp",
+      "case": "llava-image-3k-float32",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "input": [
+            [
+              3000,
+              4096
+            ],
+            "float32"
+          ],
+          "mask": [
+            [
+              3000,
+              1
+            ],
+            "bool"
+          ],
+          "source": [
+            [
+              3000,
+              4096
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              3000,
+              4096
+            ],
+            "float32"
+          ]
+        }
+      },
+      "latency_us": 383.4139333333333,
+      "samples": 15,
+      "sample_us": [
+        385.075,
+        381.93,
+        381.493,
+        385.267,
+        381.975,
+        384.106,
+        382.464,
+        384.198,
+        384.18600000000004,
+        385.379,
+        383.341,
+        381.7,
+        383.659,
+        383.585,
+        382.851
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "9674d705911eb95cbf75827460646d853ccf94b972929c34388cf3cf0d39e423",
+      "profile_sha256": "ec566eaf6f0a30f8b7ad30d6e3a20404addae3d7f8913f12fcb3bb68b26b266d",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 4194362714
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "qwen36-mtp-prefill-float16.float16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                4096,
+                5120
+              ],
+              "float16"
+            ],
+            [
+              [
+                4096,
+                5120
+              ],
+              "float16"
+            ]
+          ],
+          "output": [
+            [
+              4096,
+              10240
+            ],
+            "float16"
+          ],
+          "dim": -1
+        }
+      },
+      "latency_us": 32.907733333333326,
+      "samples": 15,
+      "sample_us": [
+        33.693,
+        33.113,
+        31.489000000000004,
+        33.582,
+        32.66,
+        33.539,
+        32.897,
+        31.995999999999995,
+        32.666,
+        32.703,
+        32.038,
+        33.084,
+        33.466,
+        32.876,
+        33.814
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "616db11c975b69ed6d9d5093523c197fa9faba7591880c77ec5d9e08d68594ab",
+      "profile_sha256": "4e40c9c7316dac2589caddb1481c299b50b685bb5bd06185c3f2d6f2f3c60c00",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3620553821
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "qwen36-mtp-prefill-bfloat16.bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                4096,
+                5120
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                4096,
+                5120
+              ],
+              "bfloat16"
+            ]
+          ],
+          "output": [
+            [
+              4096,
+              10240
+            ],
+            "bfloat16"
+          ],
+          "dim": -1
+        }
+      },
+      "latency_us": 32.51953333333333,
+      "samples": 15,
+      "sample_us": [
+        33.944,
+        32.417,
+        32.076,
+        32.427,
+        31.653000000000002,
+        33.967,
+        33.425,
+        32.952,
+        32.065,
+        31.527,
+        31.886,
+        32.044,
+        32.302,
+        31.806,
+        33.302
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "068fef0d58c40a0300ec12044c9310a6349d304cf2507409abd023f0f0383409",
+      "profile_sha256": "2b7af84c9e166b463aa1413946547c20fdbe3485761a02e55ef578dab5212c50",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 2973754295
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "qwen36-mtp-prefill-float32.float32",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                4096,
+                5120
+              ],
+              "float32"
+            ],
+            [
+              [
+                4096,
+                5120
+              ],
+              "float32"
+            ]
+          ],
+          "output": [
+            [
+              4096,
+              10240
+            ],
+            "float32"
+          ],
+          "dim": -1
+        }
+      },
+      "latency_us": 81.30806666666666,
+      "samples": 15,
+      "sample_us": [
+        81.02,
+        80.304,
+        81.904,
+        81.056,
+        80.95,
+        80.473,
+        84.309,
+        81.473,
+        81.107,
+        81.683,
+        81.682,
+        81.09,
+        80.297,
+        80.301,
+        81.972
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "faa821759403e1a8fd69d23bb44f4ada406672276119250cb41fec3a4de341e7",
+      "profile_sha256": "c7959962578e589b0ea1d892c6437e8e081ad84cae40cb01aa05d92157d8eb88",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3992335870
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "qwen36-mtp-draft-bfloat16.bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                64,
+                5120
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                64,
+                5120
+              ],
+              "bfloat16"
+            ]
+          ],
+          "output": [
+            [
+              64,
+              10240
+            ],
+            "bfloat16"
+          ],
+          "dim": -1
+        }
+      },
+      "latency_us": 4.5566666666666675,
+      "samples": 15,
+      "sample_us": [
+        4.61,
+        4.537,
+        4.176,
+        5.278,
+        4.271,
+        4.753,
+        4.915,
+        4.714,
+        4.646,
+        4.367,
+        4.218,
+        4.359,
+        4.356,
+        4.641,
+        4.509
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "afbfa7891bc6eb895984612ee87efd41797f0a00d08d8cf5d29949f78426849d",
+      "profile_sha256": "fee6c69e6aadf0b5c392c25ad4603cd8d83c11e99c049f0da2b6b157641a8fca",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 49644356
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "qwen36-mtp-decode-4-bfloat16.bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                4,
+                5120
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                4,
+                5120
+              ],
+              "bfloat16"
+            ]
+          ],
+          "output": [
+            [
+              4,
+              10240
+            ],
+            "bfloat16"
+          ],
+          "dim": -1
+        }
+      },
+      "latency_us": 3.082666666666667,
+      "samples": 15,
+      "sample_us": [
+        2.963,
+        2.996,
+        2.99,
+        3.479,
+        3.271,
+        3.219,
+        3.107,
+        2.986,
+        2.938,
+        3.012,
+        2.914,
+        2.99,
+        3.015,
+        3.072,
+        3.288
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "18bfafbf852107ba129acf95eafce7e7842121c7716b4fad8163da074387a065",
+      "profile_sha256": "c8c6da7e462ddddeb5f75afbc1e523e2eccf17f1382416adbc4571637e9c4710",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 1284086272
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "qwen36-mtp-decode-bfloat16.bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                1,
+                5120
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                1,
+                5120
+              ],
+              "bfloat16"
+            ]
+          ],
+          "output": [
+            [
+              1,
+              10240
+            ],
+            "bfloat16"
+          ],
+          "dim": -1
+        }
+      },
+      "latency_us": 2.6323333333333334,
+      "samples": 15,
+      "sample_us": [
+        2.496,
+        3.324,
+        3.402,
+        2.521,
+        2.509,
+        2.49,
+        2.747,
+        2.415,
+        2.427,
+        2.622,
+        2.448,
+        2.451,
+        2.537,
+        2.503,
+        2.593
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "36d9416d29f748ff871aacc7b53bd141ffce3cc21bd17feecd80057cb6232760",
+      "profile_sha256": "5dbae9879a35f2fbdd8529bc43ea266cae077b2f67bd959c32e7cc9f4778b22a",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 2941225360
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "uneven-cols-bfloat16.bfloat16.bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                2048,
+                1024
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                2048,
+                4096
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                2048,
+                3000
+              ],
+              "bfloat16"
+            ]
+          ],
+          "output": [
+            [
+              2048,
+              8120
+            ],
+            "bfloat16"
+          ],
+          "dim": 1
+        }
+      },
+      "latency_us": 16.920133333333332,
+      "samples": 15,
+      "sample_us": [
+        16.81,
+        17.907,
+        16.29,
+        16.681,
+        16.466,
+        16.761,
+        17.047,
+        16.961,
+        16.45,
+        16.683,
+        17.352,
+        17.347,
+        17.101,
+        16.737,
+        17.209
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "5eb7fe49b0b564d2d9e64afe0dff9e5b729495fabab675ec7ec408727e27f8a2",
+      "profile_sha256": "f3580d109c3d672e8174bf543667ff186d4e3aac380c20ae292af5cc75a0b95f",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 557945671
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "uneven-cols-bfloat16.float16.bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                2048,
+                1024
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                2048,
+                4096
+              ],
+              "float16"
+            ],
+            [
+              [
+                2048,
+                3000
+              ],
+              "bfloat16"
+            ]
+          ],
+          "output": [
+            [
+              2048,
+              8120
+            ],
+            "float32"
+          ],
+          "dim": 1
+        }
+      },
+      "latency_us": 54.836000000000006,
+      "samples": 15,
+      "sample_us": [
+        54.878,
+        55.074,
+        54.78,
+        55.922,
+        55.859,
+        54.041,
+        54.541000000000004,
+        53.789,
+        55.172,
+        56.288000000000004,
+        54.506,
+        55.181000000000004,
+        53.26,
+        54.698,
+        54.551
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "bc130f3800c7745777c71e31402e6052f57d08b56b52b5715ab9cf8f9722ae1e",
+      "profile_sha256": "5feec0bbebc6f73b9926d2170eb4d9e1fd94789d46f1ac7c8b0c4a3dc11866ca",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 2762087255
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "uneven-rows-bfloat16.bfloat16.bfloat16.bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                512,
+                4096
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                1000,
+                4096
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                512,
+                4096
+              ],
+              "bfloat16"
+            ],
+            [
+              [
+                24,
+                4096
+              ],
+              "bfloat16"
+            ]
+          ],
+          "output": [
+            [
+              2048,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "dim": 0
+        }
+      },
+      "latency_us": 9.669666666666666,
+      "samples": 15,
+      "sample_us": [
+        10.179,
+        9.585,
+        9.596,
+        10.485,
+        9.987,
+        9.637,
+        9.313,
+        8.831,
+        9.466,
+        10.007,
+        9.12,
+        8.993,
+        9.86,
+        10.706,
+        9.28
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "865a3e8ac4ca6fcf051a3e8cdff5aa92cb77209f3295429231b91a7c890fc35a",
+      "profile_sha256": "f7c4a0fcc7f7975d9f453bff7c221916f6bc9df97f7de0387d90b56068393639",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 4229219497
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "uneven-rows-float16.float32.float16.float16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                512,
+                4096
+              ],
+              "float16"
+            ],
+            [
+              [
+                1000,
+                4096
+              ],
+              "float32"
+            ],
+            [
+              [
+                512,
+                4096
+              ],
+              "float16"
+            ],
+            [
+              [
+                24,
+                4096
+              ],
+              "float16"
+            ]
+          ],
+          "output": [
+            [
+              2048,
+              4096
+            ],
+            "float32"
+          ],
+          "dim": 0
+        }
+      },
+      "latency_us": 28.509,
+      "samples": 15,
+      "sample_us": [
+        26.925,
+        29.714,
+        27.709,
+        27.955000000000002,
+        28.711,
+        28.782,
+        28.204,
+        27.712,
+        28.255000000000003,
+        29.753,
+        28.019,
+        29.312,
+        28.366,
+        29.62,
+        28.598
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "66978e678bb82d965c198049dc77d6f11688cfe44d6871320ec9bcc881a9c61f",
+      "profile_sha256": "af9f76ca63995ddc53aec6da1f02e444f80b924ba1c79e398f5971ff9bd7cafb",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 778427135
+    },
+    {
+      "op": "ConcatFwdOp",
+      "case": "narrow-rows-float16.float16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "tensors": [
+            [
+              [
+                300000,
+                8
+              ],
+              "float16"
+            ],
+            [
+              [
+                300000,
+                8
+              ],
+              "float16"
+            ]
+          ],
+          "output": [
+            [
+              300000,
+              16
+            ],
+            "float16"
+          ],
+          "dim": -1
+        }
+      },
+      "latency_us": 8.144333333333334,
+      "samples": 15,
+      "sample_us": [
+        9.154,
+        8.006,
+        8.23,
+        7.980000000000001,
+        8.141,
+        8.519,
+        7.689,
+        8.123,
+        7.684,
+        7.681,
+        8.61,
+        7.613,
+        8.174,
+        8.353,
+        8.208
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "aeaefb3fa974b713cbb5a7643a4ff19876bfe683e35de8b6b668ce261790f27f",
+      "profile_sha256": "81b26d66a9e073ca97174c79a811e0bde99abcb78d904e1ce0d4ac4f02093c49",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 534349586
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "qwen3.6-27b-gdn-prefill-bfloat16-bfloat16-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              4096,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "bfloat16"
+          ],
+          "z": [
+            [
+              4096,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "silu"
+        }
+      },
+      "latency_us": 489.38439999999997,
+      "samples": 15,
+      "sample_us": [
+        492.957,
+        488.923,
+        491.147,
+        487.523,
+        489.61899999999997,
+        490.955,
+        488.832,
+        486.3,
+        489.741,
+        489.646,
+        489.025,
+        491.87600000000003,
+        485.593,
+        489.425,
+        489.204
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "ef3cef77c044265da79816840b6f55d17eefd631b58abff86bf57e75d871f17d",
+      "profile_sha256": "8fe6215d16f4bbc7c7a3c415c453fa598f3e44d2154e20f382250937ccbd6487",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 1077435108
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "qwen3.6-27b-gdn-decode-bfloat16-bfloat16-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              64,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "bfloat16"
+          ],
+          "z": [
+            [
+              64,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              64,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "silu"
+        }
+      },
+      "latency_us": 41.580933333333334,
+      "samples": 15,
+      "sample_us": [
+        43.397999999999996,
+        41.647999999999996,
+        41.308,
+        38.738,
+        41.642,
+        41.655,
+        42.838,
+        41.168,
+        40.944,
+        43.712,
+        39.178,
+        41.275999999999996,
+        41.518,
+        43.065,
+        41.626
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "47ee6a211c55c3add5ab1b6105f4a3fd653d9eeb9928b39cf8999a539413e1cb",
+      "profile_sha256": "662105eeae34faab719160f167a7a790e76838d68c944de763c5d97bf21e1047",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 271337323
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "qwen3.6-27b-gdn-decode-float16-float16-float16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              64,
+              48,
+              128
+            ],
+            "float16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "float16"
+          ],
+          "z": [
+            [
+              64,
+              48,
+              128
+            ],
+            "float16"
+          ],
+          "output": [
+            [
+              64,
+              48,
+              128
+            ],
+            "float16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "silu"
+        }
+      },
+      "latency_us": 41.662933333333335,
+      "samples": 15,
+      "sample_us": [
+        40.805,
+        41.95,
+        40.835,
+        45.435,
+        41.467999999999996,
+        41.53,
+        41.13,
+        40.464,
+        39.738,
+        42.467,
+        44.92,
+        41.883,
+        40.824,
+        40.007999999999996,
+        41.487
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "44cb8ebdf05a7f2b29d557d15441867345c45d09b76b34b553319d3b5e1bb7b5",
+      "profile_sha256": "732dd08ff6ec016b99b6f5c0c74d75ce9fdf16259c49979025a63f83496d2606",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 1055871766
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "qwen3-next-gdn-prefill-bfloat16-float32-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              4096,
+              32,
+              128
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "float32"
+          ],
+          "z": [
+            [
+              4096,
+              32,
+              128
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              32,
+              128
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "silu"
+        }
+      },
+      "latency_us": 275.4418,
+      "samples": 15,
+      "sample_us": [
+        275.768,
+        275.81600000000003,
+        274.874,
+        275.938,
+        275.652,
+        276.217,
+        276.632,
+        273.666,
+        272.98,
+        274.4,
+        274.491,
+        276.75600000000003,
+        276.963,
+        277.736,
+        273.738
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "5a7f0b3f7725e71bf8b1149ff26d097e6e98ffc6553070a0d0f91fdc07c2f3dd",
+      "profile_sha256": "33f0e8f00db2dad67d80440584e2594103092df13197ec0ea8dd5d811e4ef790",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3778705182
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "qwen3.6-35b-a3b-prefill-bfloat16-bfloat16-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              4096,
+              32,
+              128
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "bfloat16"
+          ],
+          "z": [
+            [
+              4096,
+              32,
+              128
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              32,
+              128
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "silu"
+        }
+      },
+      "latency_us": 276.22966666666673,
+      "samples": 15,
+      "sample_us": [
+        275.443,
+        275.47,
+        277.711,
+        278.916,
+        278.895,
+        273.809,
+        273.06100000000004,
+        277.406,
+        276.285,
+        278.188,
+        275.227,
+        279.61899999999997,
+        273.352,
+        276.143,
+        273.92
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "25e0590f1111234f2dfbea1018941ad12bdddf87a9bd0ec1737d563591f3563b",
+      "profile_sha256": "a6088eafed53d60183fe7a2c26cff1e04512e8982ccae9696b266d1572484152",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 56982466
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "qwen3.6-35b-a3b-decode-bfloat16-bfloat16-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              64,
+              32,
+              128
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "bfloat16"
+          ],
+          "z": [
+            [
+              64,
+              32,
+              128
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              64,
+              32,
+              128
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "silu"
+        }
+      },
+      "latency_us": 39.663466666666665,
+      "samples": 15,
+      "sample_us": [
+        40.953,
+        41.377,
+        37.606,
+        39.804,
+        36.772,
+        38.45,
+        38.88,
+        40.065,
+        40.817,
+        39.659,
+        43.371,
+        38.059,
+        38.698,
+        39.044,
+        41.397
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "85b366f894335165081d8328fec7f8f90f4f3568fd72bf07c5efc61a0290cf77",
+      "profile_sha256": "9809fb8d37b07877a85c5529cb20796123b4bbe3673f785f61cd1e863016df02",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 914409237
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "qwen3.8-flash-prefill-bfloat16-bfloat16-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              4096,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "bfloat16"
+          ],
+          "z": [
+            [
+              4096,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "sigmoid"
+        }
+      },
+      "latency_us": 490.9164666666667,
+      "samples": 15,
+      "sample_us": [
+        488.748,
+        488.754,
+        491.657,
+        492.639,
+        488.17900000000003,
+        495.161,
+        489.233,
+        489.282,
+        490.873,
+        490.514,
+        489.126,
+        491.708,
+        491.726,
+        491.951,
+        494.19599999999997
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "f93dadbf7c2fd946b9d7f47f9d0f6cab51c5c676c4ca7e403363d53735317342",
+      "profile_sha256": "9fbe171c1fcb7f981d6992014046e5946205282166f65410bd440fe8c2693f70",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 9065887
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "qwen3.8-flash-decode-bfloat16-bfloat16-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              64,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "bfloat16"
+          ],
+          "z": [
+            [
+              64,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              64,
+              48,
+              128
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "sigmoid"
+        }
+      },
+      "latency_us": 43.69226666666667,
+      "samples": 15,
+      "sample_us": [
+        43.732,
+        42.844,
+        44.153,
+        43.349000000000004,
+        45.866,
+        42.616,
+        42.649,
+        41.515,
+        43.592,
+        43.976,
+        45.253,
+        44.292,
+        43.504,
+        42.07,
+        45.973
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "06f3bf71b46339a2fab0351108477a9f850365779c3c1b83185d7e7c92c6e1fc",
+      "profile_sha256": "fca51ab99004752c0e09391105ca128e87ebd7bcdf95ccbd7698cd9c20934dfb",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 74419828
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "glm-5.3-flash-prefill-bfloat16-bfloat16-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              4096,
+              64,
+              128
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "bfloat16"
+          ],
+          "z": [
+            [
+              4096,
+              64,
+              128
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              64,
+              128
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "sigmoid"
+        }
+      },
+      "latency_us": 694.1878666666667,
+      "samples": 15,
+      "sample_us": [
+        695.998,
+        692.932,
+        692.602,
+        688.765,
+        695.618,
+        691.669,
+        694.625,
+        697.375,
+        694.163,
+        693.4309999999999,
+        696.793,
+        692.904,
+        696.188,
+        695.869,
+        693.886
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "ef397e2da86fa7e67f5dc085eaeb820b09a2260b6834686e33c733994abf1e97",
+      "profile_sha256": "e69bdc88b6a749b0189e30f51f03684f95547ac5e16a24f1a1e36799ac38cbc9",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3495514144
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "glm-5.3-flash-decode-bfloat16-bfloat16-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              64,
+              64,
+              128
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              128
+            ],
+            "bfloat16"
+          ],
+          "z": [
+            [
+              64,
+              64,
+              128
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              64,
+              64,
+              128
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "sigmoid"
+        }
+      },
+      "latency_us": 46.71973333333333,
+      "samples": 15,
+      "sample_us": [
+        46.952,
+        47.297,
+        47.372,
+        47.757999999999996,
+        44.601,
+        46.824,
+        46.068,
+        43.986,
+        49.008,
+        47.366,
+        45.07,
+        48.643,
+        46.246,
+        45.124,
+        48.481
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "36950c5c4a641802f3c32c27c36317791e7e26841a793f94c57b503a8f9b51e8",
+      "profile_sha256": "c7d2cc4e8d40725cb345de016e3fbb49c5f9e6b126033a3861f0ae67e24c2028",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 2614590477
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "mamba2-2.7b-bfloat16-float32-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              5120
+            ],
+            "float32"
+          ],
+          "z": [
+            [
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              5120
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": 5120,
+          "norm_before_gate": false,
+          "activation": "silu"
+        }
+      },
+      "latency_us": 358.73513333333335,
+      "samples": 15,
+      "sample_us": [
+        358.52,
+        356.887,
+        358.635,
+        359.854,
+        357.789,
+        356.169,
+        359.765,
+        356.815,
+        359.881,
+        357.411,
+        358.322,
+        359.371,
+        361.985,
+        359.916,
+        359.707
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "a85933d703080943c935944fb77ea7f4bda6e1275f55cffe5bb0c9f6b8574f86",
+      "profile_sha256": "51c58e0ed87f25d9a1ff6e31eba942a1e7e38169ddf3dd4812f1f2cc7a7c4333",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 1713456793
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "codestral-mamba-7b-bfloat16-bfloat16-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              4096,
+              8192
+            ],
+            "bfloat16"
+          ],
+          "weight": [
+            [
+              8192
+            ],
+            "bfloat16"
+          ],
+          "z": [
+            [
+              4096,
+              8192
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              4096,
+              8192
+            ],
+            "bfloat16"
+          ],
+          "eps": 1e-06,
+          "group_size": 1024,
+          "norm_before_gate": false,
+          "activation": "silu"
+        }
+      },
+      "latency_us": 672.0870666666666,
+      "samples": 15,
+      "sample_us": [
+        671.801,
+        669.621,
+        669.809,
+        669.285,
+        667.992,
+        672.6220000000001,
+        671.396,
+        674.5120000000001,
+        676.189,
+        675.677,
+        675.707,
+        673.4540000000001,
+        668.37,
+        672.053,
+        672.818
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "81f3c93adac4a41e585380b3ff53bdb6472a5d865d6285174bd86f334e25f8a2",
+      "profile_sha256": "96375b3fb6bc70de992e92cdf51d42d41da81caa18f3f73095f0e6271f477ed6",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 2537696535
+    },
+    {
+      "op": "RMSNormGatedFwdOp",
+      "case": "ungated-bias-float32-float32-float32",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              2048,
+              3000
+            ],
+            "float32"
+          ],
+          "weight": [
+            [
+              3000
+            ],
+            "float32"
+          ],
+          "bias": [
+            [
+              3000
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              2048,
+              3000
+            ],
+            "float32"
+          ],
+          "eps": 1e-05,
+          "group_size": null,
+          "norm_before_gate": true,
+          "activation": "silu"
+        }
+      },
+      "latency_us": 58.62066666666666,
+      "samples": 15,
+      "sample_us": [
+        58.016000000000005,
+        57.83,
+        58.05,
+        58.431,
+        58.24,
+        57.867,
+        60.2,
+        59.617,
+        58.623,
+        58.036,
+        57.255,
+        59.691,
+        56.939,
+        60.818,
+        59.697
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "329f2bfe9c7a7166e79eaa5bfbe78fc7572c9b1f1cb5b66abb38361e29820b6e",
+      "profile_sha256": "119fffcc20eaeb266d246a809cecefba7857f4bd5011a60ade21634403c1459f",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 4045255331
+    },
+    {
+      "op": "HyperConnectionPreFwdOp",
+      "case": "dsv4-flash-t1",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "residual": [
+            [
+              1,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "fn": [
+            [
+              24,
+              16384
+            ],
+            "float32"
+          ],
+          "hc_scale": [
+            [
+              3
+            ],
+            "float32"
+          ],
+          "hc_base": [
+            [
+              24
+            ],
+            "float32"
+          ],
+          "post_mix": [
+            [
+              1,
+              4,
+              1
+            ],
+            "float32"
+          ],
+          "comb_mix": [
+            [
+              1,
+              4,
+              4
+            ],
+            "float32"
+          ],
+          "layer_input": [
+            [
+              1,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "rms_eps": 1e-06,
+          "hc_pre_eps": 1e-06,
+          "hc_sinkhorn_eps": 1e-06,
+          "hc_post_mult_value": 2.0,
+          "sinkhorn_repeat": 20
+        }
+      },
+      "latency_us": 240.69126666666665,
+      "samples": 15,
+      "sample_us": [
+        240.744,
+        240.807,
+        241.012,
+        241.928,
+        240.74,
+        242.251,
+        240.024,
+        240.392,
+        239.908,
+        245.221,
+        238.266,
+        239.796,
+        238.79,
+        240.818,
+        239.672
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "27f80f92ae811c4ad9c4c5458ff4de521cad4f8e88f35ca7e19e213b8c4fa8b7",
+      "profile_sha256": "82e1355851acda421b7c7fa7925d75d36ba7eb2039dcf33bfa8744363179fdb2",
+      "guard_exit": 0,
+      "checked_outputs": 3,
+      "seed": 1593515997
+    },
+    {
+      "op": "HyperConnectionPreFwdOp",
+      "case": "dsv4-flash-t4096",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "residual": [
+            [
+              4096,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "fn": [
+            [
+              24,
+              16384
+            ],
+            "float32"
+          ],
+          "hc_scale": [
+            [
+              3
+            ],
+            "float32"
+          ],
+          "hc_base": [
+            [
+              24
+            ],
+            "float32"
+          ],
+          "post_mix": [
+            [
+              4096,
+              4,
+              1
+            ],
+            "float32"
+          ],
+          "comb_mix": [
+            [
+              4096,
+              4,
+              4
+            ],
+            "float32"
+          ],
+          "layer_input": [
+            [
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "rms_eps": 1e-06,
+          "hc_pre_eps": 1e-06,
+          "hc_sinkhorn_eps": 1e-06,
+          "hc_post_mult_value": 2.0,
+          "sinkhorn_repeat": 20
+        }
+      },
+      "latency_us": 1514.4466666666667,
+      "samples": 15,
+      "sample_us": [
+        1519.676,
+        1519.881,
+        1520.117,
+        1524.13,
+        1516.31,
+        1503.597,
+        1516.384,
+        1513.025,
+        1518.571,
+        1506.819,
+        1498.545,
+        1502.121,
+        1525.278,
+        1513.622,
+        1518.624
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "f1967f4bfd9081c66b3b365abffd61b50cd39ec59177f1e4e9ad85231ee87b27",
+      "profile_sha256": "d1f383d7f41481b827d591d6980c6045d21f2312d7aec00d930d3a03a6613447",
+      "guard_exit": 0,
+      "checked_outputs": 3,
+      "seed": 381932477
+    },
+    {
+      "op": "HyperConnectionPreFwdOp",
+      "case": "dsv4-flash-t32768",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "residual": [
+            [
+              32768,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "fn": [
+            [
+              24,
+              16384
+            ],
+            "float32"
+          ],
+          "hc_scale": [
+            [
+              3
+            ],
+            "float32"
+          ],
+          "hc_base": [
+            [
+              24
+            ],
+            "float32"
+          ],
+          "post_mix": [
+            [
+              32768,
+              4,
+              1
+            ],
+            "float32"
+          ],
+          "comb_mix": [
+            [
+              32768,
+              4,
+              4
+            ],
+            "float32"
+          ],
+          "layer_input": [
+            [
+              32768,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "rms_eps": 1e-06,
+          "hc_pre_eps": 1e-06,
+          "hc_sinkhorn_eps": 1e-06,
+          "hc_post_mult_value": 2.0,
+          "sinkhorn_repeat": 20
+        }
+      },
+      "latency_us": 8534.475066666666,
+      "samples": 15,
+      "sample_us": [
+        8527.207,
+        8530.128,
+        8538.096,
+        8540.851,
+        8541.342,
+        8514.36,
+        8531.023,
+        8537.7,
+        8544.168,
+        8561.392,
+        8541.823,
+        8524.106,
+        8547.806,
+        8522.382,
+        8514.742
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "8a78a50d5d711d9389eab640fbc0363e37f040cc390e44f0ddc8e9e2a90d26b9",
+      "profile_sha256": "f953d505046f328c92044dc0ee7f567f024182cb240b12573298e2e0320706d9",
+      "guard_exit": 0,
+      "checked_outputs": 3,
+      "seed": 339577460
+    },
+    {
+      "op": "HyperConnectionPreFwdOp",
+      "case": "glm-5.3-flash-t3000",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "residual": [
+            [
+              3000,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "fn": [
+            [
+              24,
+              16384
+            ],
+            "float32"
+          ],
+          "hc_scale": [
+            [
+              3
+            ],
+            "float32"
+          ],
+          "hc_base": [
+            [
+              24
+            ],
+            "float32"
+          ],
+          "post_mix": [
+            [
+              3000,
+              4,
+              1
+            ],
+            "float32"
+          ],
+          "comb_mix": [
+            [
+              3000,
+              4,
+              4
+            ],
+            "float32"
+          ],
+          "layer_input": [
+            [
+              3000,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "rms_eps": 1e-05,
+          "hc_pre_eps": 1e-06,
+          "hc_sinkhorn_eps": 1e-06,
+          "hc_post_mult_value": 2.0,
+          "sinkhorn_repeat": 20
+        }
+      },
+      "latency_us": 1277.5369333333333,
+      "samples": 15,
+      "sample_us": [
+        1268.005,
+        1281.31,
+        1280.9759999999999,
+        1270.638,
+        1271.421,
+        1281.812,
+        1274.968,
+        1279.632,
+        1281.894,
+        1281.812,
+        1276.903,
+        1276.805,
+        1279.637,
+        1282.785,
+        1274.456
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "d26b02d6fca2fdd97c730d6a4e7ba9577ffe006480a1e4eb7fa2470245e2ae35",
+      "profile_sha256": "4b86c5e178038a0599d936c81ec2e8b7afd7079a740fb569671b07289b33f9ea",
+      "guard_exit": 0,
+      "checked_outputs": 3,
+      "seed": 1157470703
+    },
+    {
+      "op": "HyperConnectionPostFwdOp",
+      "case": "dsv4-flash-t1-float32",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              1,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "residual": [
+            [
+              1,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "post_layer_mix": [
+            [
+              1,
+              4,
+              1
+            ],
+            "float32"
+          ],
+          "comb_res_mix": [
+            [
+              1,
+              4,
+              4
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              1,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "latency_us": 17.43166666666667,
+      "samples": 15,
+      "sample_us": [
+        18.749,
+        16.578,
+        17.899,
+        17.469,
+        17.738,
+        18.098,
+        16.412,
+        17.649,
+        16.409,
+        17.131999999999998,
+        17.586,
+        17.698,
+        17.137,
+        17.026,
+        17.895
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "b6d84f2ce7294b4ae24e06e24e1ec070c1d43e9f2401f9ba1f214c298755f7e3",
+      "profile_sha256": "f0e52bd5ebeff6c010b0938b3f1191671a3a088e10a1abce76f4232283eeefb4",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 4148064063
+    },
+    {
+      "op": "HyperConnectionPostFwdOp",
+      "case": "dsv4-flash-t4096-float32",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "residual": [
+            [
+              4096,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "post_layer_mix": [
+            [
+              4096,
+              4,
+              1
+            ],
+            "float32"
+          ],
+          "comb_res_mix": [
+            [
+              4096,
+              4,
+              4
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              4096,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "latency_us": 952.5351333333333,
+      "samples": 15,
+      "sample_us": [
+        955.426,
+        952.032,
+        954.099,
+        952.056,
+        951.3439999999999,
+        951.432,
+        951.85,
+        955.999,
+        949.306,
+        953.525,
+        954.4300000000001,
+        954.392,
+        952.257,
+        949.754,
+        950.125
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "7de050fc738307369c119b9bcc5580b54dd2f0d8a89f5ae0a1fd7e14620dce73",
+      "profile_sha256": "d9e2921b61444543227950bbdebac6d6fe1659fee225d95cdb6da3de6adc9071",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 1009625363
+    },
+    {
+      "op": "HyperConnectionPostFwdOp",
+      "case": "dsv4-flash-t32768-float32",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              32768,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "residual": [
+            [
+              32768,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "post_layer_mix": [
+            [
+              32768,
+              4,
+              1
+            ],
+            "float32"
+          ],
+          "comb_res_mix": [
+            [
+              32768,
+              4,
+              4
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              32768,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "latency_us": 7574.264133333334,
+      "samples": 15,
+      "sample_us": [
+        7572.675,
+        7583.2880000000005,
+        7572.684,
+        7577.130999999999,
+        7574.222,
+        7567.95,
+        7570.636,
+        7585.096,
+        7571.754999999999,
+        7566.21,
+        7567.362,
+        7582.338,
+        7577.523,
+        7567.804,
+        7577.2880000000005
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "3c476ec48b7128dcb990b4b5cadf8945586c633f047bf083aeb11940aea2c401",
+      "profile_sha256": "85e39f560ff85c5449b78eb113ec0a7e6142dca30705fef8146edabfbbcde1bc",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 162268953
+    },
+    {
+      "op": "HyperConnectionPostFwdOp",
+      "case": "glm-5.3-flash-t3000-bfloat16",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "x": [
+            [
+              3000,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "residual": [
+            [
+              3000,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "post_layer_mix": [
+            [
+              3000,
+              4,
+              1
+            ],
+            "bfloat16"
+          ],
+          "comb_res_mix": [
+            [
+              3000,
+              4,
+              4
+            ],
+            "bfloat16"
+          ],
+          "output": [
+            [
+              3000,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ]
+        }
+      },
+      "latency_us": 692.9520666666666,
+      "samples": 15,
+      "sample_us": [
+        692.72,
+        692.932,
+        691.966,
+        692.434,
+        691.263,
+        691.575,
+        698.66,
+        691.929,
+        692.769,
+        694.629,
+        692.674,
+        690.29,
+        693.917,
+        692.376,
+        694.147
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "56405948bbfb143b44427b36959cdd89aff999c5275aa5b14c718c910dffcc9a",
+      "profile_sha256": "2e7df75800ca961870b346577efd4ff1876d7e54f89d0734aa8a21cd33bde962",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3437044903
+    },
+    {
+      "op": "HyperConnectionHeadFwdOp",
+      "case": "dsv4-flash-t1",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "hidden_states": [
+            [
+              1,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "hc_fn": [
+            [
+              4,
+              16384
+            ],
+            "float32"
+          ],
+          "hc_scale": [
+            [
+              1
+            ],
+            "float32"
+          ],
+          "hc_base": [
+            [
+              4
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              1,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "rms_norm_eps": 1e-06,
+          "hc_eps": 1e-06
+        }
+      },
+      "latency_us": 41.3546,
+      "samples": 15,
+      "sample_us": [
+        42.523,
+        41.132,
+        40.497,
+        40.614,
+        42.777,
+        40.936,
+        39.795,
+        40.012,
+        42.441,
+        40.405,
+        40.574,
+        40.513999999999996,
+        43.815,
+        41.952,
+        42.332
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "37b49c534e01dddb99094b8dfc700b4852e79156c79c6466bf8a3ffa297a9fd1",
+      "profile_sha256": "78ecb9c177e46e439bd603f57938ed69e2a3a7ef5775d78692dc8350260c5300",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 1132586502
+    },
+    {
+      "op": "HyperConnectionHeadFwdOp",
+      "case": "dsv4-flash-b64",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "hidden_states": [
+            [
+              64,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "hc_fn": [
+            [
+              4,
+              16384
+            ],
+            "float32"
+          ],
+          "hc_scale": [
+            [
+              1
+            ],
+            "float32"
+          ],
+          "hc_base": [
+            [
+              4
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              64,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "rms_norm_eps": 1e-06,
+          "hc_eps": 1e-06
+        }
+      },
+      "latency_us": 64.44693333333333,
+      "samples": 15,
+      "sample_us": [
+        66.26,
+        63.80000000000001,
+        65.25,
+        62.295,
+        65.206,
+        62.793,
+        64.14,
+        63.846,
+        67.543,
+        64.497,
+        64.512,
+        63.342,
+        64.819,
+        64.798,
+        63.60300000000001
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "83842b3329c1a87aae94d86db6c6c9dbbdd7c2f63d6956b09cb99055b4cb77e3",
+      "profile_sha256": "aa798fec4b3c44b647cc71bc54f4a650c0b876fa3a3e2d9c07441a0347524b3a",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 4241754184
+    },
+    {
+      "op": "HyperConnectionHeadFwdOp",
+      "case": "dsv4-flash-t4096",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "hidden_states": [
+            [
+              4096,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "hc_fn": [
+            [
+              4,
+              16384
+            ],
+            "float32"
+          ],
+          "hc_scale": [
+            [
+              1
+            ],
+            "float32"
+          ],
+          "hc_base": [
+            [
+              4
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              4096,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "rms_norm_eps": 1e-06,
+          "hc_eps": 1e-06
+        }
+      },
+      "latency_us": 959.4431333333333,
+      "samples": 15,
+      "sample_us": [
+        959.631,
+        959.609,
+        958.49,
+        959.925,
+        963.182,
+        955.967,
+        960.408,
+        959.162,
+        962.356,
+        955.426,
+        954.642,
+        961.384,
+        962.692,
+        961.557,
+        957.216
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "422685cc80bd518763751a8a0c23d765d9360d3be2e9ce1565910d69a51c6117",
+      "profile_sha256": "a4d00f8dd0dda017434fdabbf7ca61b6255888eec5ad6e0b76718a507583e3e1",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 21865863
+    },
+    {
+      "op": "HyperConnectionHeadFwdOp",
+      "case": "glm-5.3-flash-t3000",
+      "library": "torch-eager",
+      "workload": {
+        "params": {
+          "hidden_states": [
+            [
+              3000,
+              4,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "hc_fn": [
+            [
+              4,
+              16384
+            ],
+            "float32"
+          ],
+          "hc_scale": [
+            [
+              1
+            ],
+            "float32"
+          ],
+          "hc_base": [
+            [
+              4
+            ],
+            "float32"
+          ],
+          "output": [
+            [
+              3000,
+              4096
+            ],
+            "bfloat16"
+          ],
+          "rms_norm_eps": 1e-05,
+          "hc_eps": 1e-06
+        }
+      },
+      "latency_us": 722.8649333333334,
+      "samples": 15,
+      "sample_us": [
+        723.14,
+        723.222,
+        722.479,
+        723.731,
+        725.018,
+        724.314,
+        721.9639999999999,
+        722.818,
+        722.208,
+        724.92,
+        720.59,
+        728.015,
+        721.088,
+        718.659,
+        720.808
+      ],
+      "protocol": "ascend950-marker-session-v4",
+      "measurement_id": "02118eb487f7bc0d7e9bc4287b9b0d15b0e7af548892fd163ff546bbbe8130eb",
+      "profile_sha256": "5660878dca6cbdba125cf2b2b4b27ebcc12afa6a34566f24c905206279862d32",
+      "guard_exit": 0,
+      "checked_outputs": 1,
+      "seed": 3608126672
+    }
+  ],
+  "failed_or_invalid": [],
+  "pending_operators": [
+    "GatedPoolCompressFwdOp",
+    "MoEGroupedGEMMMXFP4FwdOp",
+    "FP4QuantPerGroupFwdOp",
+    "RoPECosSinFwdOp",
+    "NGramHashFwdOp"
+  ],
+  "scope_cases": 100,
+  "protocol": {
+    "warmup": 3,
+    "repeats": 15,
+    "flush_bytes": 1073741824,
+    "timer": "ascend950-marker-session-v4"
+  }
+}
